@@ -37,10 +37,14 @@ package migration are separate decisions.
 - lossless compact persistence for the validated persistence candidate;
 - restart-and-continue parity under the tested scenarios;
 - guarded corruption/version fallback;
-- atomic checkpoint recovery;
-- migration and single-host writer exclusion;
+- local single-host writer exclusion for the private shadow-persistence path;
 - private, explicit opt-in shadow persistence where the full baseline remains
   authoritative.
+
+Separate Stage-9 research prototypes established two-slot atomic recovery and
+migration behavior under the tested fault-injection scenarios. Those
+authoritative checkpoint/migration protocols are retained as research evidence
+and are **not ported into the current Stage-10C production candidate**.
 
 CMI is infrastructure. It is not an LLM, does not require an LLM, and does not
 treat generated text as authoritative application state.
@@ -55,7 +59,7 @@ The final Stage-10C adjudication reported:
 - **3,640 passed / 1 skipped** in the full non-research regression lane
 - repeated real `GhostAPI` snapshot/mutation parity;
 - verified restore and deterministic continuation parity;
-- contention, corruption/version fallback, repair, and rollback;
+- contention, corruption/version fallback, and rollback;
 - actual process-exit recovery after baseline, candidate, and manifest atomic
   commit boundaries at each tested scale.
 
@@ -128,7 +132,7 @@ not the definition of CMI itself.
 ## Repository history
 
 The earlier `ghost-prototype` repository is the historical research and
-development record. Active maintained-package work is being extracted into
+development record. Active maintained-package work now lives in
 **GhoCentric-CMI**. The old repository should remain available rather than
 being rewritten to make the project appear cleaner in hindsight.
 
@@ -136,4 +140,5 @@ See `docs/legacy/README.md` and `EXTRACTION_PROVENANCE.md`.
 
 ## License
 
-See the repository license file.
+No license has been selected yet. Until one is added, this public repository
+should not be treated as granting an open-source license.
