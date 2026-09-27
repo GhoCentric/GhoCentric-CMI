@@ -1,0 +1,52 @@
+# Python bytecode / interpreter caches
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Test / coverage caches and reports
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.coverage_html/
+.pytype/
+.mypy_cache/
+.ruff_cache/
+
+# Build / packaging output
+build/
+dist/
+*.egg-info/
+.eggs/
+wheels/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Local environment / secrets
+.env
+.env.*
+!.env.example
+
+# Editor / OS noise
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*~
+*.swp
+*.swo
+
+# Local temporary / generated files
+*.tmp
+*.bak
+*.orig
+*.rej
+
+# Local benchmark / profiling scratch
+.prof/
+profile/
+profiles/
