@@ -66,6 +66,14 @@ def test_v190_license_metadata_contract():
     assert "Version 2.0, January 2004" in license_text
 
 
+def test_v190_openai_optional_dependency_contract():
+    config = _pyproject()
+    assert config["project"]["dependencies"] == []
+    assert config["project"]["optional-dependencies"] == {
+        "openai": ["httpx>=0.27,<1"],
+    }
+
+
 def test_v190_snapshot_schema_intentionally_remains_v1():
     assert GHOST_SNAPSHOT_SCHEMA_VERSION == "1.0"
 
