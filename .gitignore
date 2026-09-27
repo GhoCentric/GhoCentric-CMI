@@ -50,3 +50,6 @@ Thumbs.db
 .prof/
 profile/
 profiles/
+
+# Property-based testing cache
+.hypothesis/
