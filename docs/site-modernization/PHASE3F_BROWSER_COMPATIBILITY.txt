@@ -1,0 +1,16 @@
+GHOCENTRIC CMI — PHASE 3F MODULE-WORKER PROTOCOL COMPATIBILITY
+================================================================
+status=PASS
+user_agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36
+worker_mode=module
+pyodide=0.28.3
+candidate_diff=['ghost-worker.js']
+worker_types=9
+baselineRun1_statuses=4 baselineRun1_results=9
+baselineRun2_statuses=4 baselineRun2_results=9
+candidateRun1_statuses=4 candidateRun1_results=9
+candidateRun2_statuses=4 candidateRun2_results=9
+baseline_protocol_deterministic=True
+candidate_protocol_deterministic=True
+baseline_candidate_changed_result_types=[]
+ui_smoke_actions=7

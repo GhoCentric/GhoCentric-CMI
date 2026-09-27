@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0a0b0d">
+  <meta name="description" content="GhoCentric CMI is a deterministic state engine for systems that need to remember what happened.">
+  <link rel="icon" href="./assets/ghost-favicon.png">
+  <link rel="stylesheet" href="./site.css?v=1120-technical-1">
+  <title>GhoCentric CMI — Deterministic State Engine</title>
+</head>
+<body>
+<header class="masthead">
+  <a class="identity" href="#top" aria-label="GhoCentric CMI home">
+    <img src="./assets/ghost-brand-compact.png" alt="" width="38" height="38">
+    <span>GHOCENTRIC CMI</span>
+  </a>
+
+  <div class="release">v1.12.0</div>
+
+  <nav aria-label="Main navigation">
+    <a href="#model">Model</a>
+    <a href="#boundary">Boundary</a>
+    <a href="#evidence">Evidence</a>
+    <a href="#install">Install</a>
+    <a href="https://github.com/GhoCentric/GhoCentric-CMI" target="_blank" rel="noreferrer">GitHub ↗</a>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <p class="overline">DETERMINISTIC STATE ENGINE</p>
+    <h1>A system for software that needs to remember what happened.</h1>
+
+    <p class="lead">
+      GhoCentric CMI keeps an agent's changing state in one inspectable model.
+      Feed it ordered events, read the resulting state, snapshot it, restore it,
+      and continue from the same history.
+    </p>
+
+    <div class="quickstart" id="install">
+      <div>
+        <span>INSTALL</span>
+        <code>pip install ghocentric-ghost-engine</code>
+      </div>
+      <button type="button" aria-label="Copy core install command" aria-live="polite" data-copy="pip install ghocentric-ghost-engine">COPY</button>
+    </div>
+
+    <p class="heroNote">
+      Python package: <code>ghost</code> · Core dependencies: <strong>0</strong> ·
+      Snapshot schema: <strong>1.0</strong> · License: <strong>Apache-2.0</strong>
+    </p>
+  </section>
+
+  <section class="plainSection" id="model">
+    <div class="sectionNumber">01</div>
+    <div class="sectionBody">
+      <p class="overline">THE MODEL</p>
+      <h2>State is structured instead of flattened into one score or one prompt.</h2>
+      <p class="intro">
+        CMI separates different kinds of state so they can change independently.
+        A relationship can remain friendly while anger rises. A belief can change
+        without rewriting the fact it refers to. Attention can move without
+        deleting what was previously stored.
+      </p>
+
+      <dl class="stateList">
+        <div>
+          <dt>relationship</dt>
+          <dd>Accumulated interpersonal state affected by ordered interactions.</dd>
+        </div>
+        <div>
+          <dt>emotion</dt>
+          <dd>Emotional pressure and temperament-sensitive state kept separate from relationship history.</dd>
+        </div>
+        <div>
+          <dt>belief + evidence</dt>
+          <dd>Facts, observations, reports, evidence, and actor beliefs remain distinguishable and revisable.</dd>
+        </div>
+        <div>
+          <dt>interpretation</dt>
+          <dd>The meaning an event has to a particular agent without overwriting the source event.</dd>
+        </div>
+        <div>
+          <dt>attention</dt>
+          <dd>What is foregrounded now without treating everything outside focus as forgotten.</dd>
+        </div>
+        <div>
+          <dt>continuity</dt>
+          <dd>Ordered state that can be serialized, restored, and continued deterministically.</dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="plainSection architectureSection">
+    <div class="sectionNumber">02</div>
+    <div class="sectionBody">
+      <p class="overline">WHERE CMI SITS</p>
+      <h2>Events go in. Structured state changes. Your application decides what to do with it.</h2>
+
+      <div class="flow" aria-label="CMI data flow">
+        <div class="flowStep">
+          <span class="flowKey">INPUT</span>
+          <strong>events · observations · evidence</strong>
+        </div>
+
+        <div class="flowConnector" aria-hidden="true"></div>
+
+        <div class="flowStep flowCore">
+          <div>
+            <span class="flowKey">GHOCENTRIC CMI</span>
+            <strong>deterministic state transitions</strong>
+          </div>
+        </div>
+
+        <div class="flowConnector" aria-hidden="true"></div>
+
+        <div class="flowStep">
+          <span class="flowKey">STATE</span>
+          <strong>structured state · snapshot · restore</strong>
+        </div>
+
+        <div class="flowConnector" aria-hidden="true"></div>
+
+        <div class="flowStep">
+          <span class="flowKey">HOST</span>
+          <strong>game · app · agent · optional LLM</strong>
+        </div>
+      </div>
+
+      <div class="lifecycle">
+        <p class="overline">WHAT USING CMI LOOKS LIKE</p>
+        <p class="lifecycleIntro">The smallest useful loop is straightforward: apply an event, read the resulting state, snapshot it, and restore it later.</p>
+
+        <pre><code>from ghost import GhostAPI
+
+ghost = GhostAPI()
+
+ghost.apply_event(
+    "player",
+    "shopkeeper",
+    {"type": "help", "intensity": 1.0},
+)
+
+relationship = ghost.get_relationship(
+    "player",
+    "shopkeeper",
+)
+
+snapshot = ghost.snapshot()
+ghost = GhostAPI.from_snapshot(snapshot)</code></pre>
+
+        <p class="lifecycleNote">This exact lifecycle is executed against the current v1.12.0 source by the site-build gate before the example is accepted.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="plainSection" id="boundary">
+    <div class="sectionNumber">03</div>
+    <div class="sectionBody">
+      <p class="overline">PRODUCT BOUNDARY</p>
+      <h2>CMI owns state. Your application owns behavior.</h2>
+
+      <div class="boundaryRows">
+        <div class="boundaryRow">
+          <h3>CMI</h3>
+          <p>structured state · deterministic transitions · continuity · JSON-safe snapshot / restore</p>
+        </div>
+        <div class="boundaryRow">
+          <h3>YOUR HOST</h3>
+          <p>dialogue · rendering · animation · game rules · final actions · UI · orchestration · whether an LLM is used at all</p>
+        </div>
+      </div>
+
+      <p class="boundaryNote">
+        CMI does not generate a character's final line or decide what a game should render.
+        It gives the host a persistent, inspectable state model to use when making those decisions.
+      </p>
+    </div>
+  </section>
+
+  <section class="plainSection evidence" id="evidence">
+    <div class="sectionNumber">04</div>
+    <div class="sectionBody">
+      <p class="overline">v1.12.0 RELEASE EVIDENCE</p>
+      <h2>The evidence is presented as test results, not as a scorecard.</h2>
+
+      <div class="evidenceTable" role="table" aria-label="Release evidence">
+        <div class="evidenceRow" role="row">
+          <div role="cell">Maintained core</div>
+          <div role="cell"><strong>7,706 statements / 3,190 branches</strong></div>
+          <div role="cell">100% statement and branch coverage in the maintained core release gate.</div>
+        </div>
+        <div class="evidenceRow" role="row">
+          <div role="cell">Snapshot / restore</div>
+          <div role="cell"><strong>Deterministic continuation</strong></div>
+          <div role="cell">JSON-safe state can be restored and continued; the site gate verifies the restored runtime produces equivalent state for the same next event.</div>
+        </div>
+        <div class="evidenceRow" role="row">
+          <div role="cell">Distribution</div>
+          <div role="cell"><strong>Public PyPI v1.12.0</strong></div>
+          <div role="cell">Core install has no unconditional runtime dependencies; optional OpenAI transport uses httpx.</div>
+        </div>
+      </div>
+
+      <p class="methodNote">
+        Coverage measures exercised implementation paths under these tests. It is
+        necessary evidence for this release, not a claim that every possible use
+        of CMI is correct or production-ready.
+      </p>
+
+      <div class="textLinks">
+        <a href="https://github.com/GhoCentric/GhoCentric-CMI/blob/v1.12.0/QUALITY.md" target="_blank" rel="noreferrer">QUALITY.md ↗</a>
+        <a href="https://github.com/GhoCentric/GhoCentric-CMI/tree/v1.12.0/docs/evidence" target="_blank" rel="noreferrer">release evidence ↗</a>
+        <a href="https://pypi.org/project/ghocentric-ghost-engine/1.12.0/" target="_blank" rel="noreferrer">PyPI v1.12.0 ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="plainSection installSection">
+    <div class="sectionNumber">05</div>
+    <div class="sectionBody">
+      <p class="overline">START HERE</p>
+      <h2>Install the core before adding anything else.</h2>
+
+      <div class="terminal">
+        <div class="terminalLine">
+          <span>$</span>
+          <code>pip install ghocentric-ghost-engine</code>
+          <button type="button" aria-label="Copy core install command" aria-live="polite" data-copy="pip install ghocentric-ghost-engine">COPY</button>
+        </div>
+      </div>
+
+      <p class="installText">
+        The distribution name is <code>ghocentric-ghost-engine</code>. The Python
+        import package remains <code>ghost</code>. The core has zero unconditional
+        runtime dependencies.
+      </p>
+
+      <p class="integrationNote">LLM integrations are optional and belong in integration documentation, not in the core install path. CMI itself does not require an LLM.</p>
+
+      <div class="endLinks">
+        <a href="https://github.com/GhoCentric/GhoCentric-CMI" target="_blank" rel="noreferrer">SOURCE ↗</a>
+        <a href="https://github.com/GhoCentric/GhoCentric-CMI/releases/tag/v1.12.0" target="_blank" rel="noreferrer">v1.12.0 RELEASE ↗</a>
+        <a href="https://pypi.org/project/ghocentric-ghost-engine/1.12.0/" target="_blank" rel="noreferrer">PYPI ↗</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div>GHOCENTRIC CMI · v1.12.0 · Apache-2.0</div>
+  <nav aria-label="Footer links">
+    <a href="https://github.com/GhoCentric/GhoCentric-CMI" target="_blank" rel="noreferrer">GitHub</a>
+    <a href="https://pypi.org/project/ghocentric-ghost-engine/1.12.0/" target="_blank" rel="noreferrer">PyPI</a>
+    <a href="https://github.com/GhoCentric/GhoCentric-CMI/releases/tag/v1.12.0" target="_blank" rel="noreferrer">Release</a>
+  </nav>
+</footer>
+
+<script src="./site.js?v=1120-technical-1"></script>
+</body>
+</html>
