@@ -53,6 +53,19 @@ def test_v190_package_and_runtime_versions():
     assert GHOST_VERSION == "1.12.0"
 
 
+def test_v190_license_metadata_contract():
+    config = _pyproject()
+    assert config["build-system"]["requires"] == [
+        "setuptools>=77.0.3,<78",
+        "wheel",
+    ]
+    assert config["project"]["license"] == "Apache-2.0"
+    assert config["project"]["license-files"] == ["LICENSE"]
+    license_text = (ROOT / "LICENSE").read_text(encoding="utf-8")
+    assert "Apache License" in license_text
+    assert "Version 2.0, January 2004" in license_text
+
+
 def test_v190_snapshot_schema_intentionally_remains_v1():
     assert GHOST_SNAPSHOT_SCHEMA_VERSION == "1.0"
 

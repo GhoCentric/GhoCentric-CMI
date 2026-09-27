@@ -140,5 +140,5 @@ See `docs/legacy/README.md` and `EXTRACTION_PROVENANCE.md`.
 
 ## License
 
-No license has been selected yet. Until one is added, this public repository
-should not be treated as granting an open-source license.
+GhoCentric CMI is licensed under the Apache License, Version 2.0 (`Apache-2.0`).
+See [`LICENSE`](LICENSE) for the full license terms.
