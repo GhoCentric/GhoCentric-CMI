@@ -19,7 +19,7 @@ Stage-10C state.
 - Extraction source commit: `e76f93833d76d2bf759ffd191498762d0458b02d`
 - PyPI distribution name: `ghocentric-ghost-engine`
 - Python package/import: `ghost`
-- Current package producer version: `1.11.0`
+- Current package producer version: `1.12.0`
 - Runtime dependencies: **0**
 - Public API compatibility: preserved during extraction
 - Existing CLI compatibility: **13/13 commands preserved**

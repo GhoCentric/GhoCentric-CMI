@@ -90,7 +90,7 @@ def main() -> None:
     print("Action ranking / intent selection: NOT PERFORMED BY AFFORDANCE CONTRACT")
     print("Action execution: HOST OWNED")
     print("LLM calls: 0")
-    print("Package producer: 1.11.0")
+    print("Package producer: 1.12.0")
     print(f"Top-level snapshot schema: {GHOST_SNAPSHOT_SCHEMA_VERSION} (UNCHANGED)")
     print(f"Agent snapshot sub-schema: {AGENT_SNAPSHOT_SCHEMA_VERSION} (UNCHANGED)")
     print(f"Perception snapshot sub-schema: {PERCEPTION_SNAPSHOT_SCHEMA_VERSION} (UNCHANGED)")

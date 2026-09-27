@@ -76,7 +76,7 @@ def main() -> None:
     print("Snapshot restore + deterministic continuation:", "PASS" if restored_next == original_next else "FAIL")
     print("Action / intent selection: NOT PERFORMED BY MOTIVE FIELD")
     print("LLM calls: 0")
-    print("Package producer: 1.11.0")
+    print("Package producer: 1.12.0")
     print("Top-level snapshot schema: 1.0 (UNCHANGED)")
     print("Agent snapshot sub-schema: 1.1 (UNCHANGED)")
     print("Perception snapshot sub-schema: 1.0 (UNCHANGED)")

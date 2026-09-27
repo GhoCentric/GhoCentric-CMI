@@ -33,7 +33,7 @@ def main() -> None:
     print("Observation contract: AVAILABLE — see Phase 2 observation demo")
     print("Action selection / execution: OUTSIDE AGENT FOUNDATION")
     print("LLM calls: 0")
-    print("Package producer: 1.11.0")
+    print("Package producer: 1.12.0")
     print("Top-level snapshot schema: 1.0 (UNCHANGED)")
     print("Agent snapshot sub-schema: 1.1 (Phase 3 current; legacy 1.0 restore supported)")
     print("\nGHOST v1.11 AGENT RUNTIME FOUNDATION: PASS")

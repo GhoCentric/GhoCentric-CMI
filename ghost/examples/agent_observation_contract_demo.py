@@ -71,7 +71,7 @@ def main() -> None:
     print("Existing epistemic observe() API preserved: PASS")
     print("Action selection / execution: NOT PERFORMED BY OBSERVATION RECORDING")
     print("LLM calls: 0")
-    print("Package producer: 1.11.0")
+    print("Package producer: 1.12.0")
     print("Top-level snapshot schema: 1.0 (UNCHANGED)")
     print("Agent snapshot sub-schema: 1.1 (Phase 3 current; legacy 1.0 restore supported)")
     print("Perception snapshot sub-schema: 1.0")

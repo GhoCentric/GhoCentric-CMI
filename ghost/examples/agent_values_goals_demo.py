@@ -87,7 +87,7 @@ def main() -> None:
     print("Snapshot restore + transition history: PASS")
     print("Action selection / execution: OUTSIDE VALUES / GOALS CONTRACT")
     print("LLM calls: 0")
-    print("Package producer: 1.11.0")
+    print("Package producer: 1.12.0")
     print("Top-level snapshot schema: 1.0 (UNCHANGED)")
     print("Agent snapshot sub-schema: 1.1 (legacy 1.0 restore supported)")
     print("Perception snapshot sub-schema: 1.0 (UNCHANGED)")
