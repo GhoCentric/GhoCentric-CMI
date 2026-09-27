@@ -1,0 +1,197 @@
+{
+  "disabled_path_prepost_golden_exact": true,
+  "existing_production_files_modified": [
+    "ghost/api.py"
+  ],
+  "experiment": {
+    "all_gates_pass": true,
+    "claim_boundary": "Stage 10B wires the internal shadow candidate to real GhostAPI.snapshot() calls through an explicitly attached private runtime observer. The returned GhostAPI snapshot remains exact, persisted shadow state restores exactly and continues deterministically, configuration is not serialized into Ghost state, and expected shadow failures open a process-local circuit without blocking GhostAPI snapshot output. This does not expose a public persistence API, make the candidate authoritative, replace host saves, or establish release readiness.",
+    "constraints": {
+      "circuit_breaker_is_process_local": true,
+      "constructor_signature_unchanged": true,
+      "disabled_configuration_attaches_no_hook": true,
+      "host_persistence_not_replaced": true,
+      "integration_is_internal_only": true,
+      "public_api_method_count_unchanged": true,
+      "real_ghostapi_snapshot_hook_exercised": true,
+      "shadow_failure_never_blocks_snapshot_return": true,
+      "timing_is_telemetry_not_gate": true
+    },
+    "gates": {
+      "circuit_breaker_fail_open": true,
+      "configuration_not_serialized": true,
+      "continuation_parity": true,
+      "disabled_attach_inert": true,
+      "health_nominal": true,
+      "snapshot_output_parity": true,
+      "verified_restore": true
+    },
+    "levels": [
+      {
+        "circuit_breaker_fail_open": true,
+        "configuration_not_serialized": true,
+        "continuation_exact": true,
+        "disabled_attach_is_inert": true,
+        "enabled_snapshot_output_exact": true,
+        "health": {
+          "attempts": 2,
+          "circuit_open": false,
+          "consecutive_failures": 0,
+          "enabled": true,
+          "failure_threshold": 2,
+          "failures": 0,
+          "last_generation": 2,
+          "last_reason": null,
+          "last_source": "candidate",
+          "skipped_circuit_open": 0,
+          "skipped_disabled": 0,
+          "successes": 2,
+          "verify_load": true
+        },
+        "health_is_nominal": true,
+        "level": {
+          "ambient_events": 224,
+          "id": "events_224"
+        },
+        "timing": {
+          "control_snapshot_us": 6326.797,
+          "integrated_snapshot_us": 199501.172
+        },
+        "verified_shadow_restore_exact": true
+      },
+      {
+        "circuit_breaker_fail_open": true,
+        "configuration_not_serialized": true,
+        "continuation_exact": true,
+        "disabled_attach_is_inert": true,
+        "enabled_snapshot_output_exact": true,
+        "health": {
+          "attempts": 2,
+          "circuit_open": false,
+          "consecutive_failures": 0,
+          "enabled": true,
+          "failure_threshold": 2,
+          "failures": 0,
+          "last_generation": 2,
+          "last_reason": null,
+          "last_source": "candidate",
+          "skipped_circuit_open": 0,
+          "skipped_disabled": 0,
+          "successes": 2,
+          "verify_load": true
+        },
+        "health_is_nominal": true,
+        "level": {
+          "ambient_events": 1024,
+          "id": "events_1024"
+        },
+        "timing": {
+          "control_snapshot_us": 11112.383,
+          "integrated_snapshot_us": 400074.179
+        },
+        "verified_shadow_restore_exact": true
+      },
+      {
+        "circuit_breaker_fail_open": true,
+        "configuration_not_serialized": true,
+        "continuation_exact": true,
+        "disabled_attach_is_inert": true,
+        "enabled_snapshot_output_exact": true,
+        "health": {
+          "attempts": 2,
+          "circuit_open": false,
+          "consecutive_failures": 0,
+          "enabled": true,
+          "failure_threshold": 2,
+          "failures": 0,
+          "last_generation": 2,
+          "last_reason": null,
+          "last_source": "candidate",
+          "skipped_circuit_open": 0,
+          "skipped_disabled": 0,
+          "successes": 2,
+          "verify_load": true
+        },
+        "health_is_nominal": true,
+        "level": {
+          "ambient_events": 2048,
+          "id": "events_2048"
+        },
+        "timing": {
+          "control_snapshot_us": 31215.273,
+          "integrated_snapshot_us": 898093.906
+        },
+        "verified_shadow_restore_exact": true
+      },
+      {
+        "circuit_breaker_fail_open": true,
+        "configuration_not_serialized": true,
+        "continuation_exact": true,
+        "disabled_attach_is_inert": true,
+        "enabled_snapshot_output_exact": true,
+        "health": {
+          "attempts": 2,
+          "circuit_open": false,
+          "consecutive_failures": 0,
+          "enabled": true,
+          "failure_threshold": 2,
+          "failures": 0,
+          "last_generation": 2,
+          "last_reason": null,
+          "last_source": "candidate",
+          "skipped_circuit_open": 0,
+          "skipped_disabled": 0,
+          "successes": 2,
+          "verify_load": true
+        },
+        "health_is_nominal": true,
+        "level": {
+          "ambient_events": 4096,
+          "id": "events_4096"
+        },
+        "timing": {
+          "control_snapshot_us": 38874.726,
+          "integrated_snapshot_us": 1268687.735
+        },
+        "verified_shadow_restore_exact": true
+      }
+    ],
+    "schema": "ghost.v1.12-dev.persistence-runtime.stage10b.v1",
+    "strict_verdict": "V112_PERSISTENCE_RUNTIME_STAGE10B_EXPERIMENT_VALID"
+  },
+  "focused_coverage": {
+    "branch_percent": 100.0,
+    "branches": 42,
+    "statement_percent": 100.0,
+    "statements": 185
+  },
+  "focused_tests": "49 passed",
+  "full_nonresearch_regression": "3631 passed, 1 skipped",
+  "ghostapi_public_methods_added": [],
+  "ghostapi_public_signatures_changed": false,
+  "maintained_core_coverage": {
+    "branch_percent": 100.0,
+    "branches": 3190,
+    "statement_percent": 100.0,
+    "statements": 7706
+  },
+  "next_experiment": "If Stage 10B passes, perform integrated Stage-10C production adjudication: long-run real GhostAPI mutation with shadow enabled, restart/crash/corruption/version/fallback paths through the production-shaped modules, disabled-path regression isolation, performance/memory attribution, and rollback before the GitHub push gate.",
+  "non_claim": "Stage 10B does not expose a public persistence API, make candidate storage authoritative, replace host save/load behavior, prove distributed locking or sudden hardware power-loss durability, establish acceptable production latency, or establish release readiness.",
+  "patched_api_sha256": "3c579a3dfca396f7eb92c04f585c072b50126592f48afa53495a2ef1ef113dff",
+  "post_sha256": {
+    "docs/research/v1.12_persistence_runtime_stage10b.md": "ad132aadd8bc8cabd4a6ed2ae197f27c0ba52c3a90476e699eb8fbe4f7e0b91c",
+    "ghost/_persistence_runtime.py": "3ae390b3f26ffafd2307aaaf39925d89be1bad11450a5b2a548371fcb8e61d29",
+    "ghost/api.py": "3c579a3dfca396f7eb92c04f585c072b50126592f48afa53495a2ef1ef113dff",
+    "ghost_research/v112_persistence_runtime_stage10b.py": "f1ff12090d61368ee2a303c72ae35184d7fcf765da914d82665710e6c2268b61",
+    "tests/test_v112_persistence_runtime_stage10b.py": "677ac86f72b99a493cbc9ae9b5aebf95ad4ed0ef0c29ca50ed17048b5f676e29"
+  },
+  "predecessor_stage10a_commit": "d627a9c3cab2cd393bee80ed42393fb44f6efeef",
+  "production_files_added": [
+    "ghost/_persistence_runtime.py"
+  ],
+  "schema": "ghost.v1.12-dev.persistence-runtime.stage10b.evidence.v1",
+  "stage": "private_real_ghostapi_snapshot_shadow_integration_and_circuit_breaker_adjudication",
+  "strict_verdict": "V112_PERSISTENCE_RUNTIME_STAGE10B_PASS",
+  "supported_claim": "Stage 10B integrates the guarded shadow candidate with real GhostAPI.snapshot() calls through a private explicit opt-in observer. The unconfigured path exactly matches a pre-patch golden, enabled snapshot output remains exact, candidate state restores through GhostAPI.from_snapshot() and continues deterministically, configuration is not serialized, and expected persistence failures fail open into a process-local circuit breaker without blocking Ghost snapshot output.",
+  "top_level_public_exports_changed": false
+}

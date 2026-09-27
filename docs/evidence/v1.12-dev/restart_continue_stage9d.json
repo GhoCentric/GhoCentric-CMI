@@ -1,0 +1,440 @@
+{
+  "experiment": {
+    "all_correct": true,
+    "all_exact_final_roundtrips": true,
+    "all_exact_stage7_references": true,
+    "all_guarded_corruptions_rejected": true,
+    "claim_boundary": "Stage 9D tests whether the Stage-9C compact representation can cross a serialized restart boundary, restore the real GhostAPI runtime, rebuild the task-blind sidecar, and continue the same life without decision-relevant or final-state drift versus an uninterrupted shadow and the frozen Stage-7 reference. The SHA-256 envelope detects accidental payload corruption and malformed rehashed schemas, but it is not authentication against an attacker who can rewrite both payload and digest. This remains research-only and does not replace Ghost production persistence.",
+    "constraints": {
+      "checksum_is_integrity_not_authentication": true,
+      "compact_packet_is_only_ghost_restart_payload": true,
+      "full_ghost_restart_and_continue_tested": true,
+      "no_weighted_composite_score": true,
+      "production_ghost_modified": false,
+      "record_deletion_not_supported_by_current_public_epistemic_contract": true,
+      "research_only": true,
+      "timing_is_telemetry_not_gate": true,
+      "uninterrupted_shadow_compared": true
+    },
+    "corruption_rejection": {
+      "invalid_digest_encoding": true,
+      "rehashed_codec_schema": true,
+      "rehashed_ghost_schema": true,
+      "stale_payload_digest": true,
+      "truncated_json": true,
+      "wrong_envelope_schema": true
+    },
+    "levels": [
+      {
+        "all_correct": true,
+        "answers": [
+          {
+            "actual": "witness_c",
+            "expected": "witness_c",
+            "task": "recent_marker_source"
+          },
+          {
+            "actual": "positive",
+            "expected": "positive",
+            "task": "current_trust_sign"
+          },
+          {
+            "actual": "hostile",
+            "expected": "hostile",
+            "task": "current_belief_dominant"
+          },
+          {
+            "actual": "witness_a",
+            "expected": "witness_a",
+            "task": "early_marker_source"
+          },
+          {
+            "actual": 5,
+            "expected": 5,
+            "task": "relationship_event_count"
+          },
+          {
+            "actual": [
+              "witness_a",
+              "witness_b",
+              "witness_c"
+            ],
+            "expected": [
+              "witness_a",
+              "witness_b",
+              "witness_c"
+            ],
+            "task": "evidence_sources"
+          },
+          {
+            "actual": 4,
+            "expected": 4,
+            "task": "belief_revision_count"
+          },
+          {
+            "actual": "benign",
+            "expected": "benign",
+            "task": "counterfactual_without_a"
+          },
+          {
+            "actual": "witness_a",
+            "expected": "witness_a",
+            "task": "deeper_relationship"
+          },
+          {
+            "actual": "witness_a",
+            "expected": "witness_a",
+            "task": "novel_delegate_choice"
+          }
+        ],
+        "exact_final_roundtrip": true,
+        "exact_stage7_reference": true,
+        "level": {
+          "ambient_events": 224,
+          "id": "events_224"
+        },
+        "restart": {
+          "full_restarts": 3,
+          "packet_bytes": [
+            50251,
+            65344,
+            70380
+          ],
+          "requested_points": [
+            56,
+            112,
+            168
+          ],
+          "restart_parity_checks": 3,
+          "step_fingerprint_checks": 240
+        },
+        "storage": {
+          "compact_snapshot_bytes": 76006,
+          "current_snapshot_bytes": 146048,
+          "final_restart_envelope_bytes": 76155
+        },
+        "timing": {
+          "observed_restart_max_us": 46596.055,
+          "observed_restart_median_us": 38857.852,
+          "post_restart_query_battery_us": 85.664,
+          "samples": 5
+        }
+      },
+      {
+        "all_correct": true,
+        "answers": [
+          {
+            "actual": "witness_c",
+            "expected": "witness_c",
+            "task": "recent_marker_source"
+          },
+          {
+            "actual": "positive",
+            "expected": "positive",
+            "task": "current_trust_sign"
+          },
+          {
+            "actual": "hostile",
+            "expected": "hostile",
+            "task": "current_belief_dominant"
+          },
+          {
+            "actual": "witness_a",
+            "expected": "witness_a",
+            "task": "early_marker_source"
+          },
+          {
+            "actual": 5,
+            "expected": 5,
+            "task": "relationship_event_count"
+          },
+          {
+            "actual": [
+              "witness_a",
+              "witness_b",
+              "witness_c"
+            ],
+            "expected": [
+              "witness_a",
+              "witness_b",
+              "witness_c"
+            ],
+            "task": "evidence_sources"
+          },
+          {
+            "actual": 4,
+            "expected": 4,
+            "task": "belief_revision_count"
+          },
+          {
+            "actual": "benign",
+            "expected": "benign",
+            "task": "counterfactual_without_a"
+          },
+          {
+            "actual": "witness_a",
+            "expected": "witness_a",
+            "task": "deeper_relationship"
+          },
+          {
+            "actual": "witness_a",
+            "expected": "witness_a",
+            "task": "novel_delegate_choice"
+          }
+        ],
+        "exact_final_roundtrip": true,
+        "exact_stage7_reference": true,
+        "level": {
+          "ambient_events": 1024,
+          "id": "events_1024"
+        },
+        "restart": {
+          "full_restarts": 3,
+          "packet_bytes": [
+            77443,
+            97666,
+            117890
+          ],
+          "requested_points": [
+            256,
+            512,
+            768
+          ],
+          "restart_parity_checks": 3,
+          "step_fingerprint_checks": 1040
+        },
+        "storage": {
+          "compact_snapshot_bytes": 139649,
+          "current_snapshot_bytes": 447445,
+          "final_restart_envelope_bytes": 139798
+        },
+        "timing": {
+          "observed_restart_max_us": 128505.429,
+          "observed_restart_median_us": 93298.79,
+          "post_restart_query_battery_us": 85.937,
+          "samples": 5
+        }
+      },
+      {
+        "all_correct": true,
+        "answers": [
+          {
+            "actual": "witness_c",
+            "expected": "witness_c",
+            "task": "recent_marker_source"
+          },
+          {
+            "actual": "positive",
+            "expected": "positive",
+            "task": "current_trust_sign"
+          },
+          {
+            "actual": "hostile",
+            "expected": "hostile",
+            "task": "current_belief_dominant"
+          },
+          {
+            "actual": "witness_a",
+            "expected": "witness_a",
+            "task": "early_marker_source"
+          },
+          {
+            "actual": 5,
+            "expected": 5,
+            "task": "relationship_event_count"
+          },
+          {
+            "actual": [
+              "witness_a",
+              "witness_b",
+              "witness_c"
+            ],
+            "expected": [
+              "witness_a",
+              "witness_b",
+              "witness_c"
+            ],
+            "task": "evidence_sources"
+          },
+          {
+            "actual": 4,
+            "expected": 4,
+            "task": "belief_revision_count"
+          },
+          {
+            "actual": "benign",
+            "expected": "benign",
+            "task": "counterfactual_without_a"
+          },
+          {
+            "actual": "witness_a",
+            "expected": "witness_a",
+            "task": "deeper_relationship"
+          },
+          {
+            "actual": "witness_a",
+            "expected": "witness_a",
+            "task": "novel_delegate_choice"
+          }
+        ],
+        "exact_final_roundtrip": true,
+        "exact_stage7_reference": true,
+        "level": {
+          "ambient_events": 2048,
+          "id": "events_2048"
+        },
+        "restart": {
+          "full_restarts": 3,
+          "packet_bytes": [
+            97666,
+            138533,
+            182347
+          ],
+          "requested_points": [
+            512,
+            1024,
+            1536
+          ],
+          "restart_parity_checks": 3,
+          "step_fingerprint_checks": 2064
+        },
+        "storage": {
+          "compact_snapshot_bytes": 226978,
+          "current_snapshot_bytes": 837971,
+          "final_restart_envelope_bytes": 227127
+        },
+        "timing": {
+          "observed_restart_max_us": 233904.375,
+          "observed_restart_median_us": 163450.82,
+          "post_restart_query_battery_us": 95.39,
+          "samples": 5
+        }
+      },
+      {
+        "all_correct": true,
+        "answers": [
+          {
+            "actual": "witness_c",
+            "expected": "witness_c",
+            "task": "recent_marker_source"
+          },
+          {
+            "actual": "positive",
+            "expected": "positive",
+            "task": "current_trust_sign"
+          },
+          {
+            "actual": "hostile",
+            "expected": "hostile",
+            "task": "current_belief_dominant"
+          },
+          {
+            "actual": "witness_a",
+            "expected": "witness_a",
+            "task": "early_marker_source"
+          },
+          {
+            "actual": 5,
+            "expected": 5,
+            "task": "relationship_event_count"
+          },
+          {
+            "actual": [
+              "witness_a",
+              "witness_b",
+              "witness_c"
+            ],
+            "expected": [
+              "witness_a",
+              "witness_b",
+              "witness_c"
+            ],
+            "task": "evidence_sources"
+          },
+          {
+            "actual": 4,
+            "expected": 4,
+            "task": "belief_revision_count"
+          },
+          {
+            "actual": "benign",
+            "expected": "benign",
+            "task": "counterfactual_without_a"
+          },
+          {
+            "actual": "witness_a",
+            "expected": "witness_a",
+            "task": "deeper_relationship"
+          },
+          {
+            "actual": "witness_a",
+            "expected": "witness_a",
+            "task": "novel_delegate_choice"
+          }
+        ],
+        "exact_final_roundtrip": true,
+        "exact_stage7_reference": true,
+        "level": {
+          "ambient_events": 4096,
+          "id": "events_4096"
+        },
+        "restart": {
+          "full_restarts": 3,
+          "packet_bytes": [
+            138533,
+            225868,
+            312908
+          ],
+          "requested_points": [
+            1024,
+            2048,
+            3072
+          ],
+          "restart_parity_checks": 3,
+          "step_fingerprint_checks": 4112
+        },
+        "storage": {
+          "compact_snapshot_bytes": 401057,
+          "current_snapshot_bytes": 1618444,
+          "final_restart_envelope_bytes": 401206
+        },
+        "timing": {
+          "observed_restart_max_us": 446476.562,
+          "observed_restart_median_us": 281609.219,
+          "post_restart_query_battery_us": 84.336,
+          "samples": 5
+        }
+      }
+    ],
+    "schema": "ghost.v1.12-dev.restart-continue.stage9d.v1",
+    "strict_verdict": "V112_RESTART_CONTINUE_STAGE9D_EXPERIMENT_VALID"
+  },
+  "focused_tests": "36 passed",
+  "full_nonresearch_regression": "3370 passed, 1 skipped",
+  "ghostapi_public_methods_added": [],
+  "maintained_core_coverage": {
+    "branch_percent": 100.0,
+    "branches": 2984,
+    "statement_percent": 100.0,
+    "statements": 7112
+  },
+  "next_experiment": "If Stage 9D passes, separate productionization risk from representation value: test atomic write/crash recovery and migration compatibility around the compact envelope before any guarded production candidate touches ghost/*.",
+  "non_claim": "Stage 9D does not change production persistence, establish crash atomicity, concurrent-writer safety, authenticated tamper resistance, migration compatibility, deletion semantics, or production readiness. SHA-256 here detects accidental corruption; it is not a keyed authenticity mechanism.",
+  "post_sha256": {
+    "docs/research/v1.12_restart_continue_stage9d.md": "674278b7c871e466dd8ef86762c87cc71835d154987839d806d35da03be0c349",
+    "ghost_research/v112_restart_continue_stage9d.py": "197999698fa07134bd7ee8e0c92c60768bec25203b0de85ada1958d0a92edf0e",
+    "tests/test_v112_restart_continue_stage9d.py": "06a7dac2379d95e70c5d887309b0a1cab27b4acaac2ef35c871a4b147a5ec497"
+  },
+  "predecessor_stage9c_commit": "e775d650b6b428ec0a58b99396facbde5bdc257d",
+  "production_ghost_source_modified": false,
+  "research_coverage": {
+    "branch_percent": 100.0,
+    "branches": 46,
+    "statement_percent": 100.0,
+    "statements": 181
+  },
+  "schema": "ghost.v1.12-dev.restart-continue.stage9d.evidence.v1",
+  "stage": "compact_serialized_full_runtime_restart_continue_and_integrity_adjudication",
+  "strict_verdict": "V112_RESTART_CONTINUE_STAGE9D_PASS",
+  "supported_claim": "Stage 9D tests serialized compact full-Ghost restart-and-continue at three checkpoints per scale, exact parity against an uninterrupted shadow and frozen Stage-7 final state, exact compact reconstruction, retained 10/10 query correctness, and guarded rejection of six integrity/schema corruptions."
+}

@@ -1,0 +1,2248 @@
+{
+  "adjudication": {
+    "capacity_probe": {
+      "all_agree": true,
+      "history_limit": 128,
+      "rows": [
+        {
+          "agreement": true,
+          "fillers": 120,
+          "retained": {
+            "baseline": true,
+            "full": true
+          }
+        },
+        {
+          "agreement": true,
+          "fillers": 127,
+          "retained": {
+            "baseline": true,
+            "full": true
+          }
+        },
+        {
+          "agreement": true,
+          "fillers": 128,
+          "retained": {
+            "baseline": false,
+            "full": false
+          }
+        },
+        {
+          "agreement": true,
+          "fillers": 129,
+          "retained": {
+            "baseline": false,
+            "full": false
+          }
+        }
+      ]
+    },
+    "claim_boundary": "Stage 5 tests one positive lean policy construction, one unchanged strong flat baseline, and a pre-registered scale matrix. A channel that prevents a scored failure is requirement-sensitive on this matrix only. Full-vs-baseline results remain directional evidence, not a general Ghost-superiority claim. Lean Ghost still stores the full Ghost runtime state; this experiment adjudicates decision-path simplification, not production package deletion or memory savings.",
+    "frozen_replay": {
+      "full_decision_match": true,
+      "full_scores": {
+        "baseline": 30,
+        "ghost": 30
+      },
+      "lean_decision_match_to_full": true,
+      "lean_frozen_equivalent": true,
+      "lean_scores": {
+        "baseline": 30,
+        "ghost": 30
+      },
+      "stage3_scores": {
+        "baseline": 30,
+        "ghost": 30
+      }
+    },
+    "interpretation": {
+      "full_vs_baseline_outcome": "behavioral_parity_on_scored_constraints",
+      "lean_frozen_equivalent": true,
+      "lean_scaled_equivalent": false,
+      "recall_requirement_sensitive": true,
+      "values_requirement_sensitive": true
+    },
+    "lean_requirement_losses": {
+      "other": 0,
+      "recall": 3,
+      "values": 3
+    },
+    "scale_matrix": {
+      "decision_divergences": {
+        "full_vs_baseline": 0,
+        "lean_vs_full": 6
+      },
+      "first_failure_level": {
+        "baseline": null,
+        "full": null,
+        "lean": "light"
+      },
+      "full_vs_baseline_outcome": "behavioral_parity_on_scored_constraints",
+      "levels": [
+        {
+          "competitors": {
+            "baseline": {
+              "accuracy": 1.0,
+              "badge_remembered": true,
+              "checkpoint_count": 11,
+              "correct": 11,
+              "first_failure": null,
+              "hidden_information_boundary": true,
+              "level": "light",
+              "mode": "baseline",
+              "rows": [
+                {
+                  "checkpoint": "goal_initial",
+                  "correct": true,
+                  "decision": "hold",
+                  "expected": "hold",
+                  "requirement": "goals",
+                  "scores": {
+                    "hold": 0.9075000000000001,
+                    "retreat": 0.03999999999999998
+                  }
+                },
+                {
+                  "checkpoint": "value_preference",
+                  "correct": true,
+                  "decision": "protect",
+                  "expected": "protect",
+                  "requirement": "values",
+                  "scores": {
+                    "avoid": -0.65,
+                    "protect": 0.65
+                  }
+                },
+                {
+                  "checkpoint": "subject_0_hostile",
+                  "correct": true,
+                  "decision": "challenge",
+                  "expected": "challenge",
+                  "requirement": "beliefs",
+                  "scores": {
+                    "admit": -0.4218990052500078,
+                    "challenge": 0.4218990052500078
+                  }
+                },
+                {
+                  "checkpoint": "subject_0_hidden",
+                  "correct": true,
+                  "decision": "challenge",
+                  "expected": "challenge",
+                  "requirement": "information_boundary",
+                  "scores": {
+                    "admit": -0.4218990052500078,
+                    "challenge": 0.4218990052500078
+                  }
+                },
+                {
+                  "checkpoint": "subject_0_revised",
+                  "correct": true,
+                  "decision": "admit",
+                  "expected": "admit",
+                  "requirement": "belief_revision",
+                  "scores": {
+                    "admit": 0.4218990052500082,
+                    "challenge": -0.4218990052500082
+                  }
+                },
+                {
+                  "checkpoint": "memory_hostile",
+                  "correct": true,
+                  "decision": "challenge",
+                  "expected": "challenge",
+                  "requirement": "beliefs",
+                  "scores": {
+                    "admit": -0.4218990052500078,
+                    "challenge": 0.4218990052500078
+                  }
+                },
+                {
+                  "checkpoint": "delayed_badge",
+                  "correct": true,
+                  "decision": "admit",
+                  "expected": "admit",
+                  "requirement": "recall",
+                  "scores": {
+                    "admit": 0.5005202111902354,
+                    "challenge": -0.5005202111902354
+                  }
+                },
+                {
+                  "checkpoint": "memory_revised",
+                  "correct": true,
+                  "decision": "admit",
+                  "expected": "admit",
+                  "requirement": "belief_revision",
+                  "scores": {
+                    "admit": 0.8956928738431646,
+                    "challenge": -0.8956928738431646
+                  }
+                },
+                {
+                  "checkpoint": "conflict_shift",
+                  "correct": true,
+                  "decision": "assist",
+                  "expected": "assist",
+                  "requirement": "goals",
+                  "scores": {
+                    "assist": 0.84,
+                    "hold": 0.3975
+                  }
+                },
+                {
+                  "checkpoint": "goal_complete",
+                  "correct": true,
+                  "decision": "retreat",
+                  "expected": "retreat",
+                  "requirement": "goals",
+                  "scores": {
+                    "hold": 0.36000000000000004,
+                    "retreat": 0.5800000000000001
+                  }
+                },
+                {
+                  "checkpoint": "recurrence",
+                  "correct": true,
+                  "decision": "retreat",
+                  "expected": "retreat",
+                  "requirement": "goals",
+                  "scores": {
+                    "hold": 0.36000000000000004,
+                    "retreat": 0.5800000000000001
+                  }
+                }
+              ],
+              "snapshot_bytes": 14117
+            },
+            "full": {
+              "accuracy": 1.0,
+              "badge_remembered": true,
+              "checkpoint_count": 11,
+              "correct": 11,
+              "first_failure": null,
+              "hidden_information_boundary": true,
+              "level": "light",
+              "mode": "full",
+              "rows": [
+                {
+                  "checkpoint": "goal_initial",
+                  "correct": true,
+                  "decision": "hold",
+                  "expected": "hold",
+                  "requirement": "goals",
+                  "scores": {
+                    "hold": 0.9075000000000001,
+                    "retreat": 0.03999999999999998
+                  }
+                },
+                {
+                  "checkpoint": "value_preference",
+                  "correct": true,
+                  "decision": "protect",
+                  "expected": "protect",
+                  "requirement": "values",
+                  "scores": {
+                    "avoid": -0.65,
+                    "protect": 0.65
+                  }
+                },
+                {
+                  "checkpoint": "subject_0_hostile",
+                  "correct": true,
+                  "decision": "challenge",
+                  "expected": "challenge",
+                  "requirement": "beliefs",
+                  "scores": {
+                    "admit": -0.5510204081632651,
+                    "challenge": 0.5510204081632651
+                  }
+                },
+                {
+                  "checkpoint": "subject_0_hidden",
+                  "correct": true,
+                  "decision": "challenge",
+                  "expected": "challenge",
+                  "requirement": "information_boundary",
+                  "scores": {
+                    "admit": -0.5510204081632651,
+                    "challenge": 0.5510204081632651
+                  }
+                },
+                {
+                  "checkpoint": "subject_0_revised",
+                  "correct": true,
+                  "decision": "admit",
+                  "expected": "admit",
+                  "requirement": "belief_revision",
+                  "scores": {
+                    "admit": 0.4029850746268657,
+                    "challenge": -0.4029850746268657
+                  }
+                },
+                {
+                  "checkpoint": "memory_hostile",
+                  "correct": true,
+                  "decision": "challenge",
+                  "expected": "challenge",
+                  "requirement": "beliefs",
+                  "scores": {
+                    "admit": -0.5510204081632651,
+                    "challenge": 0.5510204081632651
+                  }
+                },
+                {
+                  "checkpoint": "delayed_badge",
+                  "correct": true,
+                  "decision": "admit",
+                  "expected": "admit",
+                  "requirement": "recall",
+                  "scores": {
+                    "admit": 0.47826086956521735,
+                    "challenge": -0.47826086956521735
+                  }
+                },
+                {
+                  "checkpoint": "memory_revised",
+                  "correct": true,
+                  "decision": "admit",
+                  "expected": "admit",
+                  "requirement": "belief_revision",
+                  "scores": {
+                    "admit": 1.0,
+                    "challenge": -1.0
+                  }
+                },
+                {
+                  "checkpoint": "conflict_shift",
+                  "correct": true,
+                  "decision": "assist",
+                  "expected": "assist",
+                  "requirement": "goals",
+                  "scores": {
+                    "assist": 0.84,
+                    "hold": 0.3975
+                  }
+                },
+                {
+                  "checkpoint": "goal_complete",
+                  "correct": true,
+                  "decision": "retreat",
+                  "expected": "retreat",
+                  "requirement": "goals",
+                  "scores": {
+                    "hold": 0.36000000000000004,
+                    "retreat": 0.5800000000000001
+                  }
+                },
+                {
+                  "checkpoint": "recurrence",
+                  "correct": true,
+                  "decision": "retreat",
+                  "expected": "retreat",
+                  "requirement": "goals",
+                  "scores": {
+                    "hold": 0.36000000000000004,
+                    "retreat": 0.5800000000000001
+                  }
+                }
+              ],
+              "snapshot_bytes": 24830
+            },
+            "lean": {
+              "accuracy": 0.8181818181818182,
+              "badge_remembered": true,
+              "checkpoint_count": 11,
+              "correct": 9,
+              "first_failure": "value_preference",
+              "hidden_information_boundary": true,
+              "level": "light",
+              "mode": "lean",
+              "rows": [
+                {
+                  "checkpoint": "goal_initial",
+                  "correct": true,
+                  "decision": "hold",
+                  "expected": "hold",
+                  "requirement": "goals",
+                  "scores": {
+                    "hold": 0.49750000000000005,
+                    "retreat": 0.10999999999999999
+                  }
+                },
+                {
+                  "checkpoint": "value_preference",
+                  "correct": false,
+                  "decision": "avoid",
+                  "expected": "protect",
+                  "requirement": "values",
+                  "scores": {
+                    "avoid": 0.0,
+                    "protect": 0.0
+                  }
+                },
+                {
+                  "checkpoint": "subject_0_hostile",
+                  "correct": true,
+                  "decision": "challenge",
+                  "expected": "challenge",
+                  "requirement": "beliefs",
+                  "scores": {
+                    "admit": -0.5510204081632651,
+                    "challenge": 0.5510204081632651
+                  }
+                },
+                {
+                  "checkpoint": "subject_0_hidden",
+                  "correct": true,
+                  "decision": "challenge",
+                  "expected": "challenge",
+                  "requirement": "information_boundary",
+                  "scores": {
+                    "admit": -0.5510204081632651,
+                    "challenge": 0.5510204081632651
+                  }
+                },
+                {
+                  "checkpoint": "subject_0_revised",
+                  "correct": true,
+                  "decision": "admit",
+                  "expected": "admit",
+                  "requirement": "belief_revision",
+                  "scores": {
+                    "admit": 0.4029850746268657,
+                    "challenge": -0.4029850746268657
+                  }
+                },
+                {
+                  "checkpoint": "memory_hostile",
+                  "correct": true,
+                  "decision": "challenge",
+                  "expected": "challenge",
+                  "requirement": "beliefs",
+                  "scores": {
+                    "admit": -0.5510204081632651,
+                    "challenge": 0.5510204081632651
+                  }
+                },
+                {
+                  "checkpoint": "delayed_badge",
+                  "correct": false,
+                  "decision": "challenge",
+                  "expected": "admit",
+                  "requirement": "recall",
+                  "scores": {
+                    "admit": -0.5510204081632651,
+                    "challenge": 0.5510204081632651
+                  }
+                },
+                {
+                  "checkpoint": "memory_revised",
+                  "correct": true,
+                  "decision": "admit",
+                  "expected": "admit",
+                  "requirement": "belief_revision",
+                  "scores": {
+                    "admit": 0.4029850746268657,
+                    "challenge": -0.4029850746268657
+                  }
+                },
+                {
+                  "checkpoint": "conflict_shift",
+                  "correct": true,
+                  "decision": "assist",
+                  "expected": "assist",
+                  "requirement": "goals",
+                  "scores": {
+                    "assist": 0.605,
+                    "hold": 0.012499999999999997
+                  }
+                },
+                {
+                  "checkpoint": "goal_complete",
+                  "correct": true,
+                  "decision": "retreat",
+                  "expected": "retreat",
+                  "requirement": "goals",
+                  "scores": {
+                    "hold": -0.04999999999999999,
+                    "retreat": 0.65
+                  }
+                },
+                {
+                  "checkpoint": "recurrence",
+                  "correct": true,
+                  "decision": "retreat",
+                  "expected": "retreat",
+                  "requirement": "goals",
+                  "scores": {
+                    "hold": -0.04999999999999999,
+                    "retreat": 0.65
+                  }
+                }
+              ],
+              "snapshot_bytes": 23952
+            }
+          },
+          "config": {
+            "contradiction": -0.9,
+            "fillers": 16,
+            "hostile": 0.45,
+            "id": "light",
+            "restarts": 0,
+            "subjects": 2
+          },
+          "level": "light"
+        },
+        {
+          "competitors": {
+            "baseline": {
+              "accuracy": 1.0,
+              "badge_remembered": true,
+              "checkpoint_count": 17,
+              "correct": 17,
+              "first_failure": null,
+              "hidden_information_boundary": true,
+              "level": "medium",
+              "mode": "baseline",
+              "rows": [
+                {
+                  "checkpoint": "goal_initial",
+                  "correct": true,
+                  "decision": "hold",
+                  "expected": "hold",
+                  "requirement": "goals",
+                  "scores": {
+                    "hold": 0.9075000000000001,
+                    "retreat": 0.03999999999999998
+                  }
+                },
+                {
+                  "checkpoint": "value_preference",
+                  "correct": true,
+                  "decision": "protect",
+                  "expected": "protect",
+                  "requirement": "values",
+                  "scores": {
+                    "avoid": -0.65,
+                    "protect": 0.65
+                  }
+                },
+                {
+                  "checkpoint": "subject_0_hostile",
+                  "correct": true,
+                  "decision": "challenge",
+                  "expected": "challenge",
+                  "requirement": "beliefs",
+                  "scores": {
+                    "admit": -0.5005202111902354,
+                    "challenge": 0.5005202111902354
+                  }
+                },
+                {
+                  "checkpoint": "subject_0_hidden",
+                  "correct": true,
+                  "decision": "challenge",
+                  "expected": "challenge",
+                  "requirement": "information_boundary",
+                  "scores": {
+                    "admit": -0.5005202111902354,
+                    "challenge": 0.5005202111902354
+                  }
+                },
+                {
+                  "checkpoint": "subject_0_revised",
+                  "correct": true,
+                  "decision": "admit",
+                  "expected": "admit",
+                  "requirement": "belief_revision",
+                  "scores": {
+                    "admit": 0.3363755443363321,
+                    "challenge": -0.3363755443363321
+                  }
+                },
+                {
+                  "checkpoint": "subject_1_hostile",
+                  "correct": true,
+                  "decision": "challenge",
+                  "expected": "challenge",
+                  "requirement": "beliefs",
+                  "scores": {
+                    "admit": -0.5005202111902354,
+                    "challenge": 0.5005202111902354
+                  }
+                },
+                {
+                  "checkpoint": "subject_1_hidden",
+                  "correct": true,
+                  "decision": "challenge",
+                  "expected": "challenge",
+                  "requirement": "information_boundary",
+                  "scores": {
+                    "admit": -0.5005202111902354,
+                    "challenge": 0.5005202111902354
+                  }
+                },
+                {
+                  "checkpoint": "subject_1_revised",
+                  "correct": true,
+                  "decision": "admit",
+                  "expected": "admit",
+                  "requirement": "belief_revision",
+                  "scores": {
+                    "admit": 0.3363755443363321,
+                    "challenge": -0.3363755443363321
+                  }
+                },
+                {
+                  "checkpoint": "subject_2_hostile",
+                  "correct": true,
+                  "decision": "challenge",
+                  "expected": "challenge",
+                  "requirement": "beliefs",
+                  "scores": {
+                    "admit": -0.5005202111902354,
+                    "challenge": 0.5005202111902354
+                  }
+                },
+                {
+                  "checkpoint": "subject_2_hidden",
+                  "correct": true,
+                  "decision": "challenge",
+                  "expected": "challenge",
+                  "requirement": "information_boundary",
+                  "scores": {
+                    "admit": -0.5005202111902354,
+                    "challenge": 0.5005202111902354
+                  }
+                },
+                {
+                  "checkpoint": "subject_2_revised",
+                  "correct": true,
+                  "decision": "admit",
+                  "expected": "admit",
+                  "requirement": "belief_revision",
+                  "scores": {
+                    "admit": 0.3363755443363321,
+                    "challenge": -0.3363755443363321
+                  }
+                },
+                {
+                  "checkpoint": "memory_hostile",
+                  "correct": true,
+                  "decision": "challenge",
+                  "expected": "challenge",
+                  "requirement": "beliefs",
+                  "scores": {
+                    "admit": -0.5005202111902354,
+                    "challenge": 0.5005202111902354
+                  }
+                },
+                {
+                  "checkpoint": "delayed_badge",
+                  "correct": true,
+                  "decision": "admit",
+                  "expected": "admit",
+                  "requirement": "recall",
+                  "scores": {
+                    "admit": 0.4218990052500078,
+                    "challenge": -0.4218990052500078
+                  }
+                },
+                {
+                  "checkpoint": "memory_revised",
+                  "correct": true,
+                  "decision": "admit",
+                  "expected": "admit",
+                  "requirement": "belief_revision",
+                  "scores": {
+                    "admit": 0.874053287886007,
+                    "challenge": -0.874053287886007
+                  }
+                },
+                {
+                  "checkpoint": "conflict_shift",
+                  "correct": true,
+                  "decision": "assist",
+                  "expected": "assist",
+                  "requirement": "goals",
+                  "scores": {
+                    "assist": 0.84,
+                    "hold": 0.3975
+                  }
+                },
+                {
+                  "checkpoint": "goal_complete",
+                  "correct": true,
+                  "decision": "retreat",
+                  "expected": "retreat",
+                  "requirement": "goals",
+                  "scores": {
+                    "hold": 0.36000000000000004,
+                    "retreat": 0.5800000000000001
+                  }
+                },
+                {
+                  "checkpoint": "recurrence",
+                  "correct": true,
+                  "decision": "retreat",
+                  "expected": "retreat",
+                  "requirement": "goals",
+                  "scores": {
+                    "hold": 0.36000000000000004,
+                    "retreat": 0.5800000000000001
+                  }
+                }
+              ],
+              "snapshot_bytes": 26504
+            },
+            "full": {
+              "accuracy": 1.0,
+              "badge_remembered": true,
+              "checkpoint_count": 17,
+              "correct": 17,
+              "first_failure": null,
+              "hidden_information_boundary": true,
+              "level": "medium",
+              "mode": "full",
+              "rows": [
+                {
+                  "checkpoint": "goal_initial",
+                  "correct": true,
+                  "decision": "hold",
+                  "expected": "hold",
+                  "requirement": "goals",
+                  "scores": {
+                    "hold": 0.9075000000000001,
+                    "retreat": 0.03999999999999998
+                  }
+                },
+                {
+                  "checkpoint": "value_preference",
+                  "correct": true,
+                  "decision": "protect",
+                  "expected": "protect",
+                  "requirement": "values",
+                  "scores": {
+                    "avoid": -0.65,
+                    "protect": 0.65
+                  }
+                },
+                {
+                  "checkpoint": "subject_0_hostile",
+                  "correct": true,
+                  "decision": "challenge",
+                  "expected": "challenge",
+                  "requirement": "beliefs",
+                  "scores": {
+                    "admit": -0.6470588235294119,
+                    "challenge": 0.6470588235294119
+                  }
+                },
+                {
+                  "checkpoint": "subject_0_hidden",
+                  "correct": true,
+                  "decision": "challenge",
+                  "expected": "challenge",
+                  "requirement": "information_boundary",
+                  "scores": {
+                    "admit": -0.6470588235294119,
+                    "challenge": 0.6470588235294119
+                  }
+                },
+                {
+                  "checkpoint": "subject_0_revised",
+                  "correct": true,
+                  "decision": "admit",
+                  "expected": "admit",
+                  "requirement": "belief_revision",
+                  "scores": {
+                    "admit": 0.3043478260869565,
+                    "challenge": -0.3043478260869565
+                  }
+                },
+                {
+                  "checkpoint": "subject_1_hostile",
+                  "correct": true,
+                  "decision": "challenge",
+                  "expected": "challenge",
+                  "requirement": "beliefs",
+                  "scores": {
+                    "admit": -0.6470588235294119,
+                    "challenge": 0.6470588235294119
+                  }
+                },
+                {
+                  "checkpoint": "subject_1_hidden",
+                  "correct": true,
+                  "decision": "challenge",
+                  "expected": "challenge",
+                  "requirement": "information_boundary",
+                  "scores": {
+                    "admit": -0.6470588235294119,
+                    "challenge": 0.6470588235294119
+                  }
+                },
+                {
+                  "checkpoint": "subject_1_revised",
+                  "correct": true,
+                  "decision": "admit",
+                  "expected": "admit",
+                  "requirement": "belief_revision",
+                  "scores": {
+                    "admit": 0.3043478260869565,
+                    "challenge": -0.3043478260869565
+                  }
+                },
+                {
+                  "checkpoint": "subject_2_hostile",
+                  "correct": true,
+                  "decision": "challenge",
+                  "expected": "challenge",
+                  "requirement": "beliefs",
+                  "scores": {
+                    "admit": -0.6470588235294119,
+                    "challenge": 0.6470588235294119
+                  }
+                },
+                {
+                  "checkpoint": "subject_2_hidden",
+                  "correct": true,
+                  "decision": "challenge",
+                  "expected": "challenge",
+                  "requirement": "information_boundary",
+                  "scores": {
+                    "admit": -0.6470588235294119,
+                    "challenge": 0.6470588235294119
+                  }
+                },
+                {
+                  "checkpoint": "subject_2_revised",
+                  "correct": true,
+                  "decision": "admit",
+                  "expected": "admit",
+                  "requirement": "belief_revision",
+                  "scores": {
+                    "admit": 0.3043478260869565,
+                    "challenge": -0.3043478260869565
+                  }
+                },
+                {
+                  "checkpoint": "memory_hostile",
+                  "correct": true,
+                  "decision": "challenge",
+                  "expected": "challenge",
+                  "requirement": "beliefs",
+                  "scores": {
+                    "admit": -0.6470588235294119,
+                    "challenge": 0.6470588235294119
+                  }
+                },
+                {
+                  "checkpoint": "delayed_badge",
+                  "correct": true,
+                  "decision": "admit",
+                  "expected": "admit",
+                  "requirement": "recall",
+                  "scores": {
+                    "admit": 0.38028169014084506,
+                    "challenge": -0.38028169014084506
+                  }
+                },
+                {
+                  "checkpoint": "memory_revised",
+                  "correct": true,
+                  "decision": "admit",
+                  "expected": "admit",
+                  "requirement": "belief_revision",
+                  "scores": {
+                    "admit": 0.9101123595505618,
+                    "challenge": -0.9101123595505618
+                  }
+                },
+                {
+                  "checkpoint": "conflict_shift",
+                  "correct": true,
+                  "decision": "assist",
+                  "expected": "assist",
+                  "requirement": "goals",
+                  "scores": {
+                    "assist": 0.84,
+                    "hold": 0.3975
+                  }
+                },
+                {
+                  "checkpoint": "goal_complete",
+                  "correct": true,
+                  "decision": "retreat",
+                  "expected": "retreat",
+                  "requirement": "goals",
+                  "scores": {
+                    "hold": 0.36000000000000004,
+                    "retreat": 0.5800000000000001
+                  }
+                },
+                {
+                  "checkpoint": "recurrence",
+                  "correct": true,
+                  "decision": "retreat",
+                  "expected": "retreat",
+                  "requirement": "goals",
+                  "scores": {
+                    "hold": 0.36000000000000004,
+                    "retreat": 0.5800000000000001
+                  }
+                }
+              ],
+              "snapshot_bytes": 58286
+            },
+            "lean": {
+              "accuracy": 0.8823529411764706,
+              "badge_remembered": true,
+              "checkpoint_count": 17,
+              "correct": 15,
+              "first_failure": "value_preference",
+              "hidden_information_boundary": true,
+              "level": "medium",
+              "mode": "lean",
+              "rows": [
+                {
+                  "checkpoint": "goal_initial",
+                  "correct": true,
+                  "decision": "hold",
+                  "expected": "hold",
+                  "requirement": "goals",
+                  "scores": {
+                    "hold": 0.49750000000000005,
+                    "retreat": 0.10999999999999999
+                  }
+                },
+                {
+                  "checkpoint": "value_preference",
+                  "correct": false,
+                  "decision": "avoid",
+                  "expected": "protect",
+                  "requirement": "values",
+                  "scores": {
+                    "avoid": 0.0,
+                    "protect": 0.0
+                  }
+                },
+                {
+                  "checkpoint": "subject_0_hostile",
+                  "correct": true,
+                  "decision": "challenge",
+                  "expected": "challenge",
+                  "requirement": "beliefs",
+                  "scores": {
+                    "admit": -0.6470588235294119,
+                    "challenge": 0.6470588235294119
+                  }
+                },
+                {
+                  "checkpoint": "subject_0_hidden",
+                  "correct": true,
+                  "decision": "challenge",
+                  "expected": "challenge",
+                  "requirement": "information_boundary",
+                  "scores": {
+                    "admit": -0.6470588235294119,
+                    "challenge": 0.6470588235294119
+                  }
+                },
+                {
+                  "checkpoint": "subject_0_revised",
+                  "correct": true,
+                  "decision": "admit",
+                  "expected": "admit",
+                  "requirement": "belief_revision",
+                  "scores": {
+                    "admit": 0.3043478260869565,
+                    "challenge": -0.3043478260869565
+                  }
+                },
+                {
+                  "checkpoint": "subject_1_hostile",
+                  "correct": true,
+                  "decision": "challenge",
+                  "expected": "challenge",
+                  "requirement": "beliefs",
+                  "scores": {
+                    "admit": -0.6470588235294119,
+                    "challenge": 0.6470588235294119
+                  }
+                },
+                {
+                  "checkpoint": "subject_1_hidden",
+                  "correct": true,
+                  "decision": "challenge",
+                  "expected": "challenge",
+                  "requirement": "information_boundary",
+                  "scores": {
+                    "admit": -0.6470588235294119,
+                    "challenge": 0.6470588235294119
+                  }
+                },
+                {
+                  "checkpoint": "subject_1_revised",
+                  "correct": true,
+                  "decision": "admit",
+                  "expected": "admit",
+                  "requirement": "belief_revision",
+                  "scores": {
+                    "admit": 0.3043478260869565,
+                    "challenge": -0.3043478260869565
+                  }
+                },
+                {
+                  "checkpoint": "subject_2_hostile",
+                  "correct": true,
+                  "decision": "challenge",
+                  "expected": "challenge",
+                  "requirement": "beliefs",
+                  "scores": {
+                    "admit": -0.6470588235294119,
+                    "challenge": 0.6470588235294119
+                  }
+                },
+                {
+                  "checkpoint": "subject_2_hidden",
+                  "correct": true,
+                  "decision": "challenge",
+                  "expected": "challenge",
+                  "requirement": "information_boundary",
+                  "scores": {
+                    "admit": -0.6470588235294119,
+                    "challenge": 0.6470588235294119
+                  }
+                },
+                {
+                  "checkpoint": "subject_2_revised",
+                  "correct": true,
+                  "decision": "admit",
+                  "expected": "admit",
+                  "requirement": "belief_revision",
+                  "scores": {
+                    "admit": 0.3043478260869565,
+                    "challenge": -0.3043478260869565
+                  }
+                },
+                {
+                  "checkpoint": "memory_hostile",
+                  "correct": true,
+                  "decision": "challenge",
+                  "expected": "challenge",
+                  "requirement": "beliefs",
+                  "scores": {
+                    "admit": -0.6470588235294119,
+                    "challenge": 0.6470588235294119
+                  }
+                },
+                {
+                  "checkpoint": "delayed_badge",
+                  "correct": false,
+                  "decision": "challenge",
+                  "expected": "admit",
+                  "requirement": "recall",
+                  "scores": {
+                    "admit": -0.6470588235294119,
+                    "challenge": 0.6470588235294119
+                  }
+                },
+                {
+                  "checkpoint": "memory_revised",
+                  "correct": true,
+                  "decision": "admit",
+                  "expected": "admit",
+                  "requirement": "belief_revision",
+                  "scores": {
+                    "admit": 0.3043478260869565,
+                    "challenge": -0.3043478260869565
+                  }
+                },
+                {
+                  "checkpoint": "conflict_shift",
+                  "correct": true,
+                  "decision": "assist",
+                  "expected": "assist",
+                  "requirement": "goals",
+                  "scores": {
+                    "assist": 0.605,
+                    "hold": 0.012499999999999997
+                  }
+                },
+                {
+                  "checkpoint": "goal_complete",
+                  "correct": true,
+                  "decision": "retreat",
+                  "expected": "retreat",
+                  "requirement": "goals",
+                  "scores": {
+                    "hold": -0.04999999999999999,
+                    "retreat": 0.65
+                  }
+                },
+                {
+                  "checkpoint": "recurrence",
+                  "correct": true,
+                  "decision": "retreat",
+                  "expected": "retreat",
+                  "requirement": "goals",
+                  "scores": {
+                    "hold": -0.04999999999999999,
+                    "retreat": 0.65
+                  }
+                }
+              ],
+              "snapshot_bytes": 57298
+            }
+          },
+          "config": {
+            "contradiction": -0.9,
+            "fillers": 64,
+            "hostile": 0.55,
+            "id": "medium",
+            "restarts": 1,
+            "subjects": 4
+          },
+          "level": "medium"
+        },
+        {
+          "competitors": {
+            "baseline": {
+              "accuracy": 1.0,
+              "badge_remembered": true,
+              "checkpoint_count": 29,
+              "correct": 29,
+              "first_failure": null,
+              "hidden_information_boundary": true,
+              "level": "heavy",
+              "mode": "baseline",
+              "rows": [
+                {
+                  "checkpoint": "goal_initial",
+                  "correct": true,
+                  "decision": "hold",
+                  "expected": "hold",
+                  "requirement": "goals",
+                  "scores": {
+                    "hold": 0.9075000000000001,
+                    "retreat": 0.03999999999999998
+                  }
+                },
+                {
+                  "checkpoint": "value_preference",
+                  "correct": true,
+                  "decision": "protect",
+                  "expected": "protect",
+                  "requirement": "values",
+                  "scores": {
+                    "avoid": -0.65,
+                    "protect": 0.65
+                  }
+                },
+                {
+                  "checkpoint": "subject_0_hostile",
+                  "correct": true,
+                  "decision": "challenge",
+                  "expected": "challenge",
+                  "requirement": "beliefs",
+                  "scores": {
+                    "admit": -0.5716699660851172,
+                    "challenge": 0.5716699660851172
+                  }
+                },
+                {
+                  "checkpoint": "subject_0_hidden",
+                  "correct": true,
+                  "decision": "challenge",
+                  "expected": "challenge",
+                  "requirement": "information_boundary",
+                  "scores": {
+                    "admit": -0.5716699660851172,
+                    "challenge": 0.5716699660851172
+                  }
+                },
+                {
+                  "checkpoint": "subject_0_revised",
+                  "correct": true,
+                  "decision": "admit",
+                  "expected": "admit",
+                  "requirement": "belief_revision",
+                  "scores": {
+                    "admit": 0.2913126124515908,
+                    "challenge": -0.2913126124515908
+                  }
+                },
+                {
+                  "checkpoint": "subject_1_hostile",
+                  "correct": true,
+                  "decision": "challenge",
+                  "expected": "challenge",
+                  "requirement": "beliefs",
+                  "scores": {
+                    "admit": -0.5716699660851172,
+                    "challenge": 0.5716699660851172
+                  }
+                },
+                {
+                  "checkpoint": "subject_1_hidden",
+                  "correct": true,
+                  "decision": "challenge",
+                  "expected": "challenge",
+                  "requirement": "information_boundary",
+                  "scores": {
+                    "admit": -0.5716699660851172,
+                    "challenge": 0.5716699660851172
+                  }
+                },
+                {
+                  "checkpoint": "subject_1_revised",
+                  "correct": true,
+                  "decision": "admit",
+                  "expected": "admit",
+                  "requirement": "belief_revision",
+                  "scores": {
+                    "admit": 0.2913126124515908,
+                    "challenge": -0.2913126124515908
+                  }
+                },
+                {
+                  "checkpoint": "subject_2_hostile",
+                  "correct": true,
+                  "decision": "challenge",
+                  "expected": "challenge",
+                  "requirement": "beliefs",
+                  "scores": {
+                    "admit": -0.5716699660851172,
+                    "challenge": 0.5716699660851172
+                  }
+                },
+                {
+                  "checkpoint": "subject_2_hidden",
+                  "correct": true,
+                  "decision": "challenge",
+                  "expected": "challenge",
+                  "requirement": "information_boundary",
+                  "scores": {
+                    "admit": -0.5716699660851172,
+                    "challenge": 0.5716699660851172
+                  }
+                },
+                {
+                  "checkpoint": "subject_2_revised",
+                  "correct": true,
+                  "decision": "admit",
+                  "expected": "admit",
+                  "requirement": "belief_revision",
+                  "scores": {
+                    "admit": 0.2913126124515908,
+                    "challenge": -0.2913126124515908
+                  }
+                },
+                {
+                  "checkpoint": "subject_3_hostile",
+                  "correct": true,
+                  "decision": "challenge",
+                  "expected": "challenge",
+                  "requirement": "beliefs",
+                  "scores": {
+                    "admit": -0.5716699660851172,
+                    "challenge": 0.5716699660851172
+                  }
+                },
+                {
+                  "checkpoint": "subject_3_hidden",
+                  "correct": true,
+                  "decision": "challenge",
+                  "expected": "challenge",
+                  "requirement": "information_boundary",
+                  "scores": {
+                    "admit": -0.5716699660851172,
+                    "challenge": 0.5716699660851172
+                  }
+                },
+                {
+                  "checkpoint": "subject_3_revised",
+                  "correct": true,
+                  "decision": "admit",
+                  "expected": "admit",
+                  "requirement": "belief_revision",
+                  "scores": {
+                    "admit": 0.2913126124515908,
+                    "challenge": -0.2913126124515908
+                  }
+                },
+                {
+                  "checkpoint": "subject_4_hostile",
+                  "correct": true,
+                  "decision": "challenge",
+                  "expected": "challenge",
+                  "requirement": "beliefs",
+                  "scores": {
+                    "admit": -0.5716699660851172,
+                    "challenge": 0.5716699660851172
+                  }
+                },
+                {
+                  "checkpoint": "subject_4_hidden",
+                  "correct": true,
+                  "decision": "challenge",
+                  "expected": "challenge",
+                  "requirement": "information_boundary",
+                  "scores": {
+                    "admit": -0.5716699660851172,
+                    "challenge": 0.5716699660851172
+                  }
+                },
+                {
+                  "checkpoint": "subject_4_revised",
+                  "correct": true,
+                  "decision": "admit",
+                  "expected": "admit",
+                  "requirement": "belief_revision",
+                  "scores": {
+                    "admit": 0.2913126124515908,
+                    "challenge": -0.2913126124515908
+                  }
+                },
+                {
+                  "checkpoint": "subject_5_hostile",
+                  "correct": true,
+                  "decision": "challenge",
+                  "expected": "challenge",
+                  "requirement": "beliefs",
+                  "scores": {
+                    "admit": -0.5716699660851172,
+                    "challenge": 0.5716699660851172
+                  }
+                },
+                {
+                  "checkpoint": "subject_5_hidden",
+                  "correct": true,
+                  "decision": "challenge",
+                  "expected": "challenge",
+                  "requirement": "information_boundary",
+                  "scores": {
+                    "admit": -0.5716699660851172,
+                    "challenge": 0.5716699660851172
+                  }
+                },
+                {
+                  "checkpoint": "subject_5_revised",
+                  "correct": true,
+                  "decision": "admit",
+                  "expected": "admit",
+                  "requirement": "belief_revision",
+                  "scores": {
+                    "admit": 0.2913126124515908,
+                    "challenge": -0.2913126124515908
+                  }
+                },
+                {
+                  "checkpoint": "subject_6_hostile",
+                  "correct": true,
+                  "decision": "challenge",
+                  "expected": "challenge",
+                  "requirement": "beliefs",
+                  "scores": {
+                    "admit": -0.5716699660851172,
+                    "challenge": 0.5716699660851172
+                  }
+                },
+                {
+                  "checkpoint": "subject_6_hidden",
+                  "correct": true,
+                  "decision": "challenge",
+                  "expected": "challenge",
+                  "requirement": "information_boundary",
+                  "scores": {
+                    "admit": -0.5716699660851172,
+                    "challenge": 0.5716699660851172
+                  }
+                },
+                {
+                  "checkpoint": "subject_6_revised",
+                  "correct": true,
+                  "decision": "admit",
+                  "expected": "admit",
+                  "requirement": "belief_revision",
+                  "scores": {
+                    "admit": 0.2913126124515908,
+                    "challenge": -0.2913126124515908
+                  }
+                },
+                {
+                  "checkpoint": "memory_hostile",
+                  "correct": true,
+                  "decision": "challenge",
+                  "expected": "challenge",
+                  "requirement": "beliefs",
+                  "scores": {
+                    "admit": -0.5716699660851172,
+                    "challenge": 0.5716699660851172
+                  }
+                },
+                {
+                  "checkpoint": "delayed_badge",
+                  "correct": true,
+                  "decision": "admit",
+                  "expected": "admit",
+                  "requirement": "recall",
+                  "scores": {
+                    "admit": 0.33637554433633227,
+                    "challenge": -0.33637554433633227
+                  }
+                },
+                {
+                  "checkpoint": "memory_revised",
+                  "correct": true,
+                  "decision": "admit",
+                  "expected": "admit",
+                  "requirement": "belief_revision",
+                  "scores": {
+                    "admit": 0.8617231593133063,
+                    "challenge": -0.8617231593133063
+                  }
+                },
+                {
+                  "checkpoint": "conflict_shift",
+                  "correct": true,
+                  "decision": "assist",
+                  "expected": "assist",
+                  "requirement": "goals",
+                  "scores": {
+                    "assist": 0.84,
+                    "hold": 0.3975
+                  }
+                },
+                {
+                  "checkpoint": "goal_complete",
+                  "correct": true,
+                  "decision": "retreat",
+                  "expected": "retreat",
+                  "requirement": "goals",
+                  "scores": {
+                    "hold": 0.36000000000000004,
+                    "retreat": 0.5800000000000001
+                  }
+                },
+                {
+                  "checkpoint": "recurrence",
+                  "correct": true,
+                  "decision": "retreat",
+                  "expected": "retreat",
+                  "requirement": "goals",
+                  "scores": {
+                    "hold": 0.36000000000000004,
+                    "retreat": 0.5800000000000001
+                  }
+                }
+              ],
+              "snapshot_bytes": 43785
+            },
+            "full": {
+              "accuracy": 1.0,
+              "badge_remembered": true,
+              "checkpoint_count": 29,
+              "correct": 29,
+              "first_failure": null,
+              "hidden_information_boundary": true,
+              "level": "heavy",
+              "mode": "full",
+              "rows": [
+                {
+                  "checkpoint": "goal_initial",
+                  "correct": true,
+                  "decision": "hold",
+                  "expected": "hold",
+                  "requirement": "goals",
+                  "scores": {
+                    "hold": 0.9075000000000001,
+                    "retreat": 0.03999999999999998
+                  }
+                },
+                {
+                  "checkpoint": "value_preference",
+                  "correct": true,
+                  "decision": "protect",
+                  "expected": "protect",
+                  "requirement": "values",
+                  "scores": {
+                    "avoid": -0.65,
+                    "protect": 0.65
+                  }
+                },
+                {
+                  "checkpoint": "subject_0_hostile",
+                  "correct": true,
+                  "decision": "challenge",
+                  "expected": "challenge",
+                  "requirement": "beliefs",
+                  "scores": {
+                    "admit": -0.7358490566037735,
+                    "challenge": 0.7358490566037735
+                  }
+                },
+                {
+                  "checkpoint": "subject_0_hidden",
+                  "correct": true,
+                  "decision": "challenge",
+                  "expected": "challenge",
+                  "requirement": "information_boundary",
+                  "scores": {
+                    "admit": -0.7358490566037735,
+                    "challenge": 0.7358490566037735
+                  }
+                },
+                {
+                  "checkpoint": "subject_0_revised",
+                  "correct": true,
+                  "decision": "admit",
+                  "expected": "admit",
+                  "requirement": "belief_revision",
+                  "scores": {
+                    "admit": 0.2500000000000001,
+                    "challenge": -0.2500000000000001
+                  }
+                },
+                {
+                  "checkpoint": "subject_1_hostile",
+                  "correct": true,
+                  "decision": "challenge",
+                  "expected": "challenge",
+                  "requirement": "beliefs",
+                  "scores": {
+                    "admit": -0.7358490566037735,
+                    "challenge": 0.7358490566037735
+                  }
+                },
+                {
+                  "checkpoint": "subject_1_hidden",
+                  "correct": true,
+                  "decision": "challenge",
+                  "expected": "challenge",
+                  "requirement": "information_boundary",
+                  "scores": {
+                    "admit": -0.7358490566037735,
+                    "challenge": 0.7358490566037735
+                  }
+                },
+                {
+                  "checkpoint": "subject_1_revised",
+                  "correct": true,
+                  "decision": "admit",
+                  "expected": "admit",
+                  "requirement": "belief_revision",
+                  "scores": {
+                    "admit": 0.2500000000000001,
+                    "challenge": -0.2500000000000001
+                  }
+                },
+                {
+                  "checkpoint": "subject_2_hostile",
+                  "correct": true,
+                  "decision": "challenge",
+                  "expected": "challenge",
+                  "requirement": "beliefs",
+                  "scores": {
+                    "admit": -0.7358490566037735,
+                    "challenge": 0.7358490566037735
+                  }
+                },
+                {
+                  "checkpoint": "subject_2_hidden",
+                  "correct": true,
+                  "decision": "challenge",
+                  "expected": "challenge",
+                  "requirement": "information_boundary",
+                  "scores": {
+                    "admit": -0.7358490566037735,
+                    "challenge": 0.7358490566037735
+                  }
+                },
+                {
+                  "checkpoint": "subject_2_revised",
+                  "correct": true,
+                  "decision": "admit",
+                  "expected": "admit",
+                  "requirement": "belief_revision",
+                  "scores": {
+                    "admit": 0.2500000000000001,
+                    "challenge": -0.2500000000000001
+                  }
+                },
+                {
+                  "checkpoint": "subject_3_hostile",
+                  "correct": true,
+                  "decision": "challenge",
+                  "expected": "challenge",
+                  "requirement": "beliefs",
+                  "scores": {
+                    "admit": -0.7358490566037735,
+                    "challenge": 0.7358490566037735
+                  }
+                },
+                {
+                  "checkpoint": "subject_3_hidden",
+                  "correct": true,
+                  "decision": "challenge",
+                  "expected": "challenge",
+                  "requirement": "information_boundary",
+                  "scores": {
+                    "admit": -0.7358490566037735,
+                    "challenge": 0.7358490566037735
+                  }
+                },
+                {
+                  "checkpoint": "subject_3_revised",
+                  "correct": true,
+                  "decision": "admit",
+                  "expected": "admit",
+                  "requirement": "belief_revision",
+                  "scores": {
+                    "admit": 0.2500000000000001,
+                    "challenge": -0.2500000000000001
+                  }
+                },
+                {
+                  "checkpoint": "subject_4_hostile",
+                  "correct": true,
+                  "decision": "challenge",
+                  "expected": "challenge",
+                  "requirement": "beliefs",
+                  "scores": {
+                    "admit": -0.7358490566037735,
+                    "challenge": 0.7358490566037735
+                  }
+                },
+                {
+                  "checkpoint": "subject_4_hidden",
+                  "correct": true,
+                  "decision": "challenge",
+                  "expected": "challenge",
+                  "requirement": "information_boundary",
+                  "scores": {
+                    "admit": -0.7358490566037735,
+                    "challenge": 0.7358490566037735
+                  }
+                },
+                {
+                  "checkpoint": "subject_4_revised",
+                  "correct": true,
+                  "decision": "admit",
+                  "expected": "admit",
+                  "requirement": "belief_revision",
+                  "scores": {
+                    "admit": 0.2500000000000001,
+                    "challenge": -0.2500000000000001
+                  }
+                },
+                {
+                  "checkpoint": "subject_5_hostile",
+                  "correct": true,
+                  "decision": "challenge",
+                  "expected": "challenge",
+                  "requirement": "beliefs",
+                  "scores": {
+                    "admit": -0.7358490566037735,
+                    "challenge": 0.7358490566037735
+                  }
+                },
+                {
+                  "checkpoint": "subject_5_hidden",
+                  "correct": true,
+                  "decision": "challenge",
+                  "expected": "challenge",
+                  "requirement": "information_boundary",
+                  "scores": {
+                    "admit": -0.7358490566037735,
+                    "challenge": 0.7358490566037735
+                  }
+                },
+                {
+                  "checkpoint": "subject_5_revised",
+                  "correct": true,
+                  "decision": "admit",
+                  "expected": "admit",
+                  "requirement": "belief_revision",
+                  "scores": {
+                    "admit": 0.2500000000000001,
+                    "challenge": -0.2500000000000001
+                  }
+                },
+                {
+                  "checkpoint": "subject_6_hostile",
+                  "correct": true,
+                  "decision": "challenge",
+                  "expected": "challenge",
+                  "requirement": "beliefs",
+                  "scores": {
+                    "admit": -0.7358490566037735,
+                    "challenge": 0.7358490566037735
+                  }
+                },
+                {
+                  "checkpoint": "subject_6_hidden",
+                  "correct": true,
+                  "decision": "challenge",
+                  "expected": "challenge",
+                  "requirement": "information_boundary",
+                  "scores": {
+                    "admit": -0.7358490566037735,
+                    "challenge": 0.7358490566037735
+                  }
+                },
+                {
+                  "checkpoint": "subject_6_revised",
+                  "correct": true,
+                  "decision": "admit",
+                  "expected": "admit",
+                  "requirement": "belief_revision",
+                  "scores": {
+                    "admit": 0.2500000000000001,
+                    "challenge": -0.2500000000000001
+                  }
+                },
+                {
+                  "checkpoint": "memory_hostile",
+                  "correct": true,
+                  "decision": "challenge",
+                  "expected": "challenge",
+                  "requirement": "beliefs",
+                  "scores": {
+                    "admit": -0.7358490566037735,
+                    "challenge": 0.7358490566037735
+                  }
+                },
+                {
+                  "checkpoint": "delayed_badge",
+                  "correct": true,
+                  "decision": "admit",
+                  "expected": "admit",
+                  "requirement": "recall",
+                  "scores": {
+                    "admit": 0.28767123287671237,
+                    "challenge": -0.28767123287671237
+                  }
+                },
+                {
+                  "checkpoint": "memory_revised",
+                  "correct": true,
+                  "decision": "admit",
+                  "expected": "admit",
+                  "requirement": "belief_revision",
+                  "scores": {
+                    "admit": 0.8478260869565218,
+                    "challenge": -0.8478260869565218
+                  }
+                },
+                {
+                  "checkpoint": "conflict_shift",
+                  "correct": true,
+                  "decision": "assist",
+                  "expected": "assist",
+                  "requirement": "goals",
+                  "scores": {
+                    "assist": 0.84,
+                    "hold": 0.3975
+                  }
+                },
+                {
+                  "checkpoint": "goal_complete",
+                  "correct": true,
+                  "decision": "retreat",
+                  "expected": "retreat",
+                  "requirement": "goals",
+                  "scores": {
+                    "hold": 0.36000000000000004,
+                    "retreat": 0.5800000000000001
+                  }
+                },
+                {
+                  "checkpoint": "recurrence",
+                  "correct": true,
+                  "decision": "retreat",
+                  "expected": "retreat",
+                  "requirement": "goals",
+                  "scores": {
+                    "hold": 0.36000000000000004,
+                    "retreat": 0.5800000000000001
+                  }
+                }
+              ],
+              "snapshot_bytes": 102530
+            },
+            "lean": {
+              "accuracy": 0.9310344827586207,
+              "badge_remembered": true,
+              "checkpoint_count": 29,
+              "correct": 27,
+              "first_failure": "value_preference",
+              "hidden_information_boundary": true,
+              "level": "heavy",
+              "mode": "lean",
+              "rows": [
+                {
+                  "checkpoint": "goal_initial",
+                  "correct": true,
+                  "decision": "hold",
+                  "expected": "hold",
+                  "requirement": "goals",
+                  "scores": {
+                    "hold": 0.49750000000000005,
+                    "retreat": 0.10999999999999999
+                  }
+                },
+                {
+                  "checkpoint": "value_preference",
+                  "correct": false,
+                  "decision": "avoid",
+                  "expected": "protect",
+                  "requirement": "values",
+                  "scores": {
+                    "avoid": 0.0,
+                    "protect": 0.0
+                  }
+                },
+                {
+                  "checkpoint": "subject_0_hostile",
+                  "correct": true,
+                  "decision": "challenge",
+                  "expected": "challenge",
+                  "requirement": "beliefs",
+                  "scores": {
+                    "admit": -0.7358490566037735,
+                    "challenge": 0.7358490566037735
+                  }
+                },
+                {
+                  "checkpoint": "subject_0_hidden",
+                  "correct": true,
+                  "decision": "challenge",
+                  "expected": "challenge",
+                  "requirement": "information_boundary",
+                  "scores": {
+                    "admit": -0.7358490566037735,
+                    "challenge": 0.7358490566037735
+                  }
+                },
+                {
+                  "checkpoint": "subject_0_revised",
+                  "correct": true,
+                  "decision": "admit",
+                  "expected": "admit",
+                  "requirement": "belief_revision",
+                  "scores": {
+                    "admit": 0.2500000000000001,
+                    "challenge": -0.2500000000000001
+                  }
+                },
+                {
+                  "checkpoint": "subject_1_hostile",
+                  "correct": true,
+                  "decision": "challenge",
+                  "expected": "challenge",
+                  "requirement": "beliefs",
+                  "scores": {
+                    "admit": -0.7358490566037735,
+                    "challenge": 0.7358490566037735
+                  }
+                },
+                {
+                  "checkpoint": "subject_1_hidden",
+                  "correct": true,
+                  "decision": "challenge",
+                  "expected": "challenge",
+                  "requirement": "information_boundary",
+                  "scores": {
+                    "admit": -0.7358490566037735,
+                    "challenge": 0.7358490566037735
+                  }
+                },
+                {
+                  "checkpoint": "subject_1_revised",
+                  "correct": true,
+                  "decision": "admit",
+                  "expected": "admit",
+                  "requirement": "belief_revision",
+                  "scores": {
+                    "admit": 0.2500000000000001,
+                    "challenge": -0.2500000000000001
+                  }
+                },
+                {
+                  "checkpoint": "subject_2_hostile",
+                  "correct": true,
+                  "decision": "challenge",
+                  "expected": "challenge",
+                  "requirement": "beliefs",
+                  "scores": {
+                    "admit": -0.7358490566037735,
+                    "challenge": 0.7358490566037735
+                  }
+                },
+                {
+                  "checkpoint": "subject_2_hidden",
+                  "correct": true,
+                  "decision": "challenge",
+                  "expected": "challenge",
+                  "requirement": "information_boundary",
+                  "scores": {
+                    "admit": -0.7358490566037735,
+                    "challenge": 0.7358490566037735
+                  }
+                },
+                {
+                  "checkpoint": "subject_2_revised",
+                  "correct": true,
+                  "decision": "admit",
+                  "expected": "admit",
+                  "requirement": "belief_revision",
+                  "scores": {
+                    "admit": 0.2500000000000001,
+                    "challenge": -0.2500000000000001
+                  }
+                },
+                {
+                  "checkpoint": "subject_3_hostile",
+                  "correct": true,
+                  "decision": "challenge",
+                  "expected": "challenge",
+                  "requirement": "beliefs",
+                  "scores": {
+                    "admit": -0.7358490566037735,
+                    "challenge": 0.7358490566037735
+                  }
+                },
+                {
+                  "checkpoint": "subject_3_hidden",
+                  "correct": true,
+                  "decision": "challenge",
+                  "expected": "challenge",
+                  "requirement": "information_boundary",
+                  "scores": {
+                    "admit": -0.7358490566037735,
+                    "challenge": 0.7358490566037735
+                  }
+                },
+                {
+                  "checkpoint": "subject_3_revised",
+                  "correct": true,
+                  "decision": "admit",
+                  "expected": "admit",
+                  "requirement": "belief_revision",
+                  "scores": {
+                    "admit": 0.2500000000000001,
+                    "challenge": -0.2500000000000001
+                  }
+                },
+                {
+                  "checkpoint": "subject_4_hostile",
+                  "correct": true,
+                  "decision": "challenge",
+                  "expected": "challenge",
+                  "requirement": "beliefs",
+                  "scores": {
+                    "admit": -0.7358490566037735,
+                    "challenge": 0.7358490566037735
+                  }
+                },
+                {
+                  "checkpoint": "subject_4_hidden",
+                  "correct": true,
+                  "decision": "challenge",
+                  "expected": "challenge",
+                  "requirement": "information_boundary",
+                  "scores": {
+                    "admit": -0.7358490566037735,
+                    "challenge": 0.7358490566037735
+                  }
+                },
+                {
+                  "checkpoint": "subject_4_revised",
+                  "correct": true,
+                  "decision": "admit",
+                  "expected": "admit",
+                  "requirement": "belief_revision",
+                  "scores": {
+                    "admit": 0.2500000000000001,
+                    "challenge": -0.2500000000000001
+                  }
+                },
+                {
+                  "checkpoint": "subject_5_hostile",
+                  "correct": true,
+                  "decision": "challenge",
+                  "expected": "challenge",
+                  "requirement": "beliefs",
+                  "scores": {
+                    "admit": -0.7358490566037735,
+                    "challenge": 0.7358490566037735
+                  }
+                },
+                {
+                  "checkpoint": "subject_5_hidden",
+                  "correct": true,
+                  "decision": "challenge",
+                  "expected": "challenge",
+                  "requirement": "information_boundary",
+                  "scores": {
+                    "admit": -0.7358490566037735,
+                    "challenge": 0.7358490566037735
+                  }
+                },
+                {
+                  "checkpoint": "subject_5_revised",
+                  "correct": true,
+                  "decision": "admit",
+                  "expected": "admit",
+                  "requirement": "belief_revision",
+                  "scores": {
+                    "admit": 0.2500000000000001,
+                    "challenge": -0.2500000000000001
+                  }
+                },
+                {
+                  "checkpoint": "subject_6_hostile",
+                  "correct": true,
+                  "decision": "challenge",
+                  "expected": "challenge",
+                  "requirement": "beliefs",
+                  "scores": {
+                    "admit": -0.7358490566037735,
+                    "challenge": 0.7358490566037735
+                  }
+                },
+                {
+                  "checkpoint": "subject_6_hidden",
+                  "correct": true,
+                  "decision": "challenge",
+                  "expected": "challenge",
+                  "requirement": "information_boundary",
+                  "scores": {
+                    "admit": -0.7358490566037735,
+                    "challenge": 0.7358490566037735
+                  }
+                },
+                {
+                  "checkpoint": "subject_6_revised",
+                  "correct": true,
+                  "decision": "admit",
+                  "expected": "admit",
+                  "requirement": "belief_revision",
+                  "scores": {
+                    "admit": 0.2500000000000001,
+                    "challenge": -0.2500000000000001
+                  }
+                },
+                {
+                  "checkpoint": "memory_hostile",
+                  "correct": true,
+                  "decision": "challenge",
+                  "expected": "challenge",
+                  "requirement": "beliefs",
+                  "scores": {
+                    "admit": -0.7358490566037735,
+                    "challenge": 0.7358490566037735
+                  }
+                },
+                {
+                  "checkpoint": "delayed_badge",
+                  "correct": false,
+                  "decision": "challenge",
+                  "expected": "admit",
+                  "requirement": "recall",
+                  "scores": {
+                    "admit": -0.7358490566037735,
+                    "challenge": 0.7358490566037735
+                  }
+                },
+                {
+                  "checkpoint": "memory_revised",
+                  "correct": true,
+                  "decision": "admit",
+                  "expected": "admit",
+                  "requirement": "belief_revision",
+                  "scores": {
+                    "admit": 0.2500000000000001,
+                    "challenge": -0.2500000000000001
+                  }
+                },
+                {
+                  "checkpoint": "conflict_shift",
+                  "correct": true,
+                  "decision": "assist",
+                  "expected": "assist",
+                  "requirement": "goals",
+                  "scores": {
+                    "assist": 0.605,
+                    "hold": 0.012499999999999997
+                  }
+                },
+                {
+                  "checkpoint": "goal_complete",
+                  "correct": true,
+                  "decision": "retreat",
+                  "expected": "retreat",
+                  "requirement": "goals",
+                  "scores": {
+                    "hold": -0.04999999999999999,
+                    "retreat": 0.65
+                  }
+                },
+                {
+                  "checkpoint": "recurrence",
+                  "correct": true,
+                  "decision": "retreat",
+                  "expected": "retreat",
+                  "requirement": "goals",
+                  "scores": {
+                    "hold": -0.04999999999999999,
+                    "retreat": 0.65
+                  }
+                }
+              ],
+              "snapshot_bytes": 101531
+            }
+          },
+          "config": {
+            "contradiction": -0.95,
+            "fillers": 120,
+            "hostile": 0.65,
+            "id": "heavy",
+            "restarts": 3,
+            "subjects": 8
+          },
+          "level": "heavy"
+        }
+      ],
+      "scored_checkpoints_per_contender": 57,
+      "totals": {
+        "baseline": 57,
+        "full": 57,
+        "lean": 51
+      }
+    },
+    "schema": "ghost.v1.12-dev.lean-adjudication.stage5.v1",
+    "strict_verdict": "V112_LEAN_ADJUDICATION_STAGE5_EXPERIMENT_VALID"
+  },
+  "baseline_rewritten_for_stage5": false,
+  "capacity_probe": {
+    "all_agree": true,
+    "history_limit": 128,
+    "rows": [
+      {
+        "agreement": true,
+        "fillers": 120,
+        "retained": {
+          "baseline": true,
+          "full": true
+        }
+      },
+      {
+        "agreement": true,
+        "fillers": 127,
+        "retained": {
+          "baseline": true,
+          "full": true
+        }
+      },
+      {
+        "agreement": true,
+        "fillers": 128,
+        "retained": {
+          "baseline": false,
+          "full": false
+        }
+      },
+      {
+        "agreement": true,
+        "fillers": 129,
+        "retained": {
+          "baseline": false,
+          "full": false
+        }
+      }
+    ]
+  },
+  "decision_divergences": {
+    "full_vs_baseline": 0,
+    "lean_vs_full": 6
+  },
+  "first_failure_level": {
+    "baseline": null,
+    "full": null,
+    "lean": "light"
+  },
+  "focused_tests": "57 passed",
+  "frozen_lean_equivalent": true,
+  "frozen_stage3_replayed_before_scale": true,
+  "full_nonresearch_regression": "2992 passed, 1 skipped",
+  "full_vs_baseline_outcome": "behavioral_parity_on_scored_constraints",
+  "ghostapi_public_methods_added": [],
+  "lean_requirement_losses": {
+    "other": 0,
+    "recall": 3,
+    "values": 3
+  },
+  "lean_semantics": "utility + goals + beliefs action scoring; value contribution disabled; delayed recall influence disabled; full Ghost storage retained",
+  "maintained_core_coverage": {
+    "branch_percent": 100.0,
+    "branches": 2984,
+    "statement_percent": 100.0,
+    "statements": 7112
+  },
+  "next_experiment": "Adjudicate whether the evidence supports retaining decision channels, simplifying policy, or increasing adversarial scale. Do not modify production subsystems solely from this one matrix.",
+  "packaged_runtime_surface_added": false,
+  "post_sha256": {
+    "docs/research/v1.12_lean_adjudication_stage5.md": "e57559b066002dedff9eb8ca7f377d5856073b62d35acccad941f6393f6d515e",
+    "ghost_research/v112_lean_adjudication_stage5.py": "86a73a77f95de16ad5a14a71f614368efd03288934c415196fb62454e4b2333b",
+    "tests/test_v112_lean_adjudication_stage5.py": "fe82347215c39707b1f3dcf1a711fd05c90356360a4f64fa3597426a777df515"
+  },
+  "predecessor_stage4_commit": "69a27b0e211e3621e33ea3261d2c3fe71dd00663",
+  "production_ghost_source_modified": false,
+  "recall_requirement_sensitive": true,
+  "research_coverage": {
+    "branch_percent": 100.0,
+    "branches": 78,
+    "statement_percent": 100.0,
+    "statements": 259
+  },
+  "research_module_metrics": {
+    "max_complexity": 9,
+    "max_function_lines": 38,
+    "module_lines": 402
+  },
+  "same_stage1_action_protocol": true,
+  "scaled_totals": {
+    "baseline": 57,
+    "full": 57,
+    "lean": 51
+  },
+  "schema": "ghost.v1.12-dev.lean-adjudication.stage5.evidence.v1",
+  "snapshot_bytes_by_level": {
+    "heavy": {
+      "baseline": 43785,
+      "full": 102530,
+      "lean": 101531
+    },
+    "light": {
+      "baseline": 14117,
+      "full": 24830,
+      "lean": 23952
+    },
+    "medium": {
+      "baseline": 26504,
+      "full": 58286,
+      "lean": 57298
+    }
+  },
+  "stage": "positive_lean_policy_adjudication_and_adversarial_scale",
+  "stage2_stage3_stage4_modified": false,
+  "stage5_non_claim": "Stage 5 does not establish general Ghost superiority, realism, intelligence, uniqueness, or production necessity. Lean Ghost retains full runtime storage, so decision-path findings do not prove package deletion or memory savings. Requirement-sensitive value/recall findings apply only to the scored Stage-5 requirements.",
+  "stage5_supported_claim": "Stage 5 can determine whether the Stage-4 decision-path simplification remains behaviorally sufficient on the frozen replay and broader pre-registered workload, and can record directional Full-Ghost-vs-baseline behavior, failure onset, and state burden on that workload.",
+  "strict_verdict": "V112_LEAN_ADJUDICATION_STAGE5_PASS",
+  "values_requirement_sensitive": true
+}

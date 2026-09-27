@@ -1,0 +1,637 @@
+{
+  "candidate_authoritative": false,
+  "candidate_private_opt_in": true,
+  "experiment": {
+    "all_gates_pass": true,
+    "claim_boundary": "Stage 10C adjudicates the Stage-10A/10B production-shaped persistence candidate as it exists in ghost/*: repeated real GhostAPI mutation/snapshot observation, verified restore and continuation, cross-process writer contention, candidate corruption/version fallback and repair, rollback to baseline authority, and actual child-process exit immediately after each production atomic file commit. It also attributes synchronous enabled-path cost and Python allocation telemetry. Passing Stage 10C supports advancing the still-private, explicit-opt-in candidate to a repository push/release-hygiene gate; it does not justify making candidate persistence authoritative or public, and it does not establish an acceptable product latency SLO, sudden hardware power-loss durability, or distributed locking.",
+    "constraints": {
+      "actual_process_exit_after_atomic_commits_exercised": true,
+      "candidate_remains_non_authoritative": true,
+      "candidate_remains_private_opt_in": true,
+      "cross_process_writer_contention_exercised": true,
+      "enabled_observer_is_synchronous": true,
+      "no_distributed_locking_claim": true,
+      "no_public_persistence_api_claim": true,
+      "no_release_latency_slo_claim": true,
+      "no_sudden_hardware_power_loss_claim": true,
+      "production_files_modified_by_stage10c": false,
+      "production_shadow_store_exercised": true,
+      "real_ghostapi_hook_exercised": true,
+      "timing_and_python_allocation_are_telemetry_not_gates": true
+    },
+    "gates": {
+      "candidate_corruption_fallback_repair": true,
+      "candidate_version_fallback_repair": true,
+      "long_run_return_parity": true,
+      "long_run_snapshot_parity": true,
+      "performance_telemetry_complete": true,
+      "production_atomic_crash_recovery": true,
+      "rollback_preserves_baseline_authority": true,
+      "verified_restore_continuation": true,
+      "writer_contention_fail_open_recovery": true
+    },
+    "levels": [
+      {
+        "candidate_corruption": {
+          "fallback_exact": true,
+          "fallback_source": "baseline",
+          "first_exact": true,
+          "generation": 2,
+          "repaired_exact": true,
+          "repaired_source": "candidate",
+          "second_exact": true
+        },
+        "candidate_version": {
+          "fallback_exact": true,
+          "fallback_source": "baseline",
+          "first_exact": true,
+          "generation": 2,
+          "repaired_exact": true,
+          "repaired_source": "candidate",
+          "second_exact": true
+        },
+        "cost": {
+          "baseline_file_bytes": 154110,
+          "candidate_file_bytes": 80012,
+          "compact_cpu_us": 15829.648,
+          "compact_peak_python_alloc_bytes": 911673,
+          "control_snapshot_us": 4301.133,
+          "full_wrapper_bytes": 153930,
+          "integrated_unverified_us": 146704.649,
+          "integrated_verified_us": 203222.148,
+          "manifest_file_bytes": 121,
+          "samples": 3,
+          "shadow_load_us": 43192.031,
+          "shadow_write_us": 131024.258,
+          "unverified_over_control_ratio": 34.108373072862435,
+          "verified_over_control_ratio": 47.2485152168045
+        },
+        "crash_matrix": [
+          {
+            "atomic_call": 1,
+            "expected_exit": true,
+            "generation": 2,
+            "initial_generation": 1,
+            "returncode": 83,
+            "source": "baseline",
+            "source_exact": true,
+            "state_exact": true
+          },
+          {
+            "atomic_call": 2,
+            "expected_exit": true,
+            "generation": 2,
+            "initial_generation": 1,
+            "returncode": 83,
+            "source": "baseline",
+            "source_exact": true,
+            "state_exact": true
+          },
+          {
+            "atomic_call": 3,
+            "expected_exit": true,
+            "generation": 2,
+            "initial_generation": 1,
+            "returncode": 83,
+            "source": "candidate",
+            "source_exact": true,
+            "state_exact": true
+          }
+        ],
+        "level": {
+          "ambient_events": 224,
+          "id": "events_224"
+        },
+        "long_run": {
+          "all_step_returns_exact": true,
+          "all_step_snapshots_exact": true,
+          "continuation_return_exact": true,
+          "continuation_snapshot_exact": true,
+          "generation_sequence": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "health": {
+            "attempts": 5,
+            "circuit_open": false,
+            "consecutive_failures": 0,
+            "enabled": true,
+            "failure_threshold": 2,
+            "failures": 0,
+            "last_generation": 5,
+            "last_reason": null,
+            "last_source": "candidate",
+            "skipped_circuit_open": 0,
+            "skipped_disabled": 0,
+            "successes": 5,
+            "verify_load": true
+          },
+          "health_nominal": true,
+          "steps": [
+            {
+              "generation": 1,
+              "return_exact": true,
+              "snapshot_exact": true
+            },
+            {
+              "generation": 2,
+              "return_exact": true,
+              "snapshot_exact": true
+            },
+            {
+              "generation": 3,
+              "return_exact": true,
+              "snapshot_exact": true
+            },
+            {
+              "generation": 4,
+              "return_exact": true,
+              "snapshot_exact": true
+            }
+          ],
+          "verified_restore_exact": true
+        },
+        "rollback": {
+          "baseline_exact": true,
+          "baseline_preserved": true,
+          "baseline_source": "baseline",
+          "candidate_removed": true,
+          "detached_disabled": true,
+          "first_exact": true,
+          "hook_removed": true,
+          "manifest_removed": true,
+          "post_detach_exact": true
+        },
+        "writer_contention": {
+          "contended_snapshot_exact": true,
+          "failure_opened_circuit": true,
+          "holder_ready": true,
+          "post_death_snapshot_exact": true,
+          "post_death_write_recovered": true
+        }
+      },
+      {
+        "candidate_corruption": {
+          "fallback_exact": true,
+          "fallback_source": "baseline",
+          "first_exact": true,
+          "generation": 2,
+          "repaired_exact": true,
+          "repaired_source": "candidate",
+          "second_exact": true
+        },
+        "candidate_version": {
+          "fallback_exact": true,
+          "fallback_source": "baseline",
+          "first_exact": true,
+          "generation": 2,
+          "repaired_exact": true,
+          "repaired_source": "candidate",
+          "second_exact": true
+        },
+        "cost": {
+          "baseline_file_bytes": 455568,
+          "candidate_file_bytes": 143753,
+          "compact_cpu_us": 51977.461,
+          "compact_peak_python_alloc_bytes": 2445697,
+          "control_snapshot_us": 17161.289,
+          "full_wrapper_bytes": 455388,
+          "integrated_unverified_us": 405836.25,
+          "integrated_verified_us": 537291.29,
+          "manifest_file_bytes": 121,
+          "samples": 3,
+          "shadow_load_us": 130892.266,
+          "shadow_write_us": 372172.187,
+          "unverified_over_control_ratio": 23.648354736057414,
+          "verified_over_control_ratio": 31.308329461732157
+        },
+        "crash_matrix": [
+          {
+            "atomic_call": 1,
+            "expected_exit": true,
+            "generation": 2,
+            "initial_generation": 1,
+            "returncode": 83,
+            "source": "baseline",
+            "source_exact": true,
+            "state_exact": true
+          },
+          {
+            "atomic_call": 2,
+            "expected_exit": true,
+            "generation": 2,
+            "initial_generation": 1,
+            "returncode": 83,
+            "source": "baseline",
+            "source_exact": true,
+            "state_exact": true
+          },
+          {
+            "atomic_call": 3,
+            "expected_exit": true,
+            "generation": 2,
+            "initial_generation": 1,
+            "returncode": 83,
+            "source": "candidate",
+            "source_exact": true,
+            "state_exact": true
+          }
+        ],
+        "level": {
+          "ambient_events": 1024,
+          "id": "events_1024"
+        },
+        "long_run": {
+          "all_step_returns_exact": true,
+          "all_step_snapshots_exact": true,
+          "continuation_return_exact": true,
+          "continuation_snapshot_exact": true,
+          "generation_sequence": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "health": {
+            "attempts": 5,
+            "circuit_open": false,
+            "consecutive_failures": 0,
+            "enabled": true,
+            "failure_threshold": 2,
+            "failures": 0,
+            "last_generation": 5,
+            "last_reason": null,
+            "last_source": "candidate",
+            "skipped_circuit_open": 0,
+            "skipped_disabled": 0,
+            "successes": 5,
+            "verify_load": true
+          },
+          "health_nominal": true,
+          "steps": [
+            {
+              "generation": 1,
+              "return_exact": true,
+              "snapshot_exact": true
+            },
+            {
+              "generation": 2,
+              "return_exact": true,
+              "snapshot_exact": true
+            },
+            {
+              "generation": 3,
+              "return_exact": true,
+              "snapshot_exact": true
+            },
+            {
+              "generation": 4,
+              "return_exact": true,
+              "snapshot_exact": true
+            }
+          ],
+          "verified_restore_exact": true
+        },
+        "rollback": {
+          "baseline_exact": true,
+          "baseline_preserved": true,
+          "baseline_source": "baseline",
+          "candidate_removed": true,
+          "detached_disabled": true,
+          "first_exact": true,
+          "hook_removed": true,
+          "manifest_removed": true,
+          "post_detach_exact": true
+        },
+        "writer_contention": {
+          "contended_snapshot_exact": true,
+          "failure_opened_circuit": true,
+          "holder_ready": true,
+          "post_death_snapshot_exact": true,
+          "post_death_write_recovered": true
+        }
+      },
+      {
+        "candidate_corruption": {
+          "fallback_exact": true,
+          "fallback_source": "baseline",
+          "first_exact": true,
+          "generation": 2,
+          "repaired_exact": true,
+          "repaired_source": "candidate",
+          "second_exact": true
+        },
+        "candidate_version": {
+          "fallback_exact": true,
+          "fallback_source": "baseline",
+          "first_exact": true,
+          "generation": 2,
+          "repaired_exact": true,
+          "repaired_source": "candidate",
+          "second_exact": true
+        },
+        "cost": {
+          "baseline_file_bytes": 846052,
+          "candidate_file_bytes": 231040,
+          "compact_cpu_us": 100795.156,
+          "compact_peak_python_alloc_bytes": 4545801,
+          "control_snapshot_us": 31491.719,
+          "full_wrapper_bytes": 845872,
+          "integrated_unverified_us": 746418.711,
+          "integrated_verified_us": 1056001.172,
+          "manifest_file_bytes": 121,
+          "samples": 3,
+          "shadow_load_us": 243400.547,
+          "shadow_write_us": 632075.586,
+          "unverified_over_control_ratio": 23.70206310427195,
+          "verified_over_control_ratio": 33.53266209443822
+        },
+        "crash_matrix": [
+          {
+            "atomic_call": 1,
+            "expected_exit": true,
+            "generation": 2,
+            "initial_generation": 1,
+            "returncode": 83,
+            "source": "baseline",
+            "source_exact": true,
+            "state_exact": true
+          },
+          {
+            "atomic_call": 2,
+            "expected_exit": true,
+            "generation": 2,
+            "initial_generation": 1,
+            "returncode": 83,
+            "source": "baseline",
+            "source_exact": true,
+            "state_exact": true
+          },
+          {
+            "atomic_call": 3,
+            "expected_exit": true,
+            "generation": 2,
+            "initial_generation": 1,
+            "returncode": 83,
+            "source": "candidate",
+            "source_exact": true,
+            "state_exact": true
+          }
+        ],
+        "level": {
+          "ambient_events": 2048,
+          "id": "events_2048"
+        },
+        "long_run": {
+          "all_step_returns_exact": true,
+          "all_step_snapshots_exact": true,
+          "continuation_return_exact": true,
+          "continuation_snapshot_exact": true,
+          "generation_sequence": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "health": {
+            "attempts": 5,
+            "circuit_open": false,
+            "consecutive_failures": 0,
+            "enabled": true,
+            "failure_threshold": 2,
+            "failures": 0,
+            "last_generation": 5,
+            "last_reason": null,
+            "last_source": "candidate",
+            "skipped_circuit_open": 0,
+            "skipped_disabled": 0,
+            "successes": 5,
+            "verify_load": true
+          },
+          "health_nominal": true,
+          "steps": [
+            {
+              "generation": 1,
+              "return_exact": true,
+              "snapshot_exact": true
+            },
+            {
+              "generation": 2,
+              "return_exact": true,
+              "snapshot_exact": true
+            },
+            {
+              "generation": 3,
+              "return_exact": true,
+              "snapshot_exact": true
+            },
+            {
+              "generation": 4,
+              "return_exact": true,
+              "snapshot_exact": true
+            }
+          ],
+          "verified_restore_exact": true
+        },
+        "rollback": {
+          "baseline_exact": true,
+          "baseline_preserved": true,
+          "baseline_source": "baseline",
+          "candidate_removed": true,
+          "detached_disabled": true,
+          "first_exact": true,
+          "hook_removed": true,
+          "manifest_removed": true,
+          "post_detach_exact": true
+        },
+        "writer_contention": {
+          "contended_snapshot_exact": true,
+          "failure_opened_circuit": true,
+          "holder_ready": true,
+          "post_death_snapshot_exact": true,
+          "post_death_write_recovered": true
+        }
+      },
+      {
+        "candidate_corruption": {
+          "fallback_exact": true,
+          "fallback_source": "baseline",
+          "first_exact": true,
+          "generation": 2,
+          "repaired_exact": true,
+          "repaired_source": "candidate",
+          "second_exact": true
+        },
+        "candidate_version": {
+          "fallback_exact": true,
+          "fallback_source": "baseline",
+          "first_exact": true,
+          "generation": 2,
+          "repaired_exact": true,
+          "repaired_source": "candidate",
+          "second_exact": true
+        },
+        "cost": {
+          "baseline_file_bytes": 1626526,
+          "candidate_file_bytes": 405120,
+          "compact_cpu_us": 203778.204,
+          "compact_peak_python_alloc_bytes": 8547425,
+          "control_snapshot_us": 39813.672,
+          "full_wrapper_bytes": 1626346,
+          "integrated_unverified_us": 1215572.617,
+          "integrated_verified_us": 1471221.445,
+          "manifest_file_bytes": 121,
+          "samples": 3,
+          "shadow_load_us": 475096.602,
+          "shadow_write_us": 1217514.336,
+          "unverified_over_control_ratio": 30.531537432668863,
+          "verified_over_control_ratio": 36.952669047959205
+        },
+        "crash_matrix": [
+          {
+            "atomic_call": 1,
+            "expected_exit": true,
+            "generation": 2,
+            "initial_generation": 1,
+            "returncode": 83,
+            "source": "baseline",
+            "source_exact": true,
+            "state_exact": true
+          },
+          {
+            "atomic_call": 2,
+            "expected_exit": true,
+            "generation": 2,
+            "initial_generation": 1,
+            "returncode": 83,
+            "source": "baseline",
+            "source_exact": true,
+            "state_exact": true
+          },
+          {
+            "atomic_call": 3,
+            "expected_exit": true,
+            "generation": 2,
+            "initial_generation": 1,
+            "returncode": 83,
+            "source": "candidate",
+            "source_exact": true,
+            "state_exact": true
+          }
+        ],
+        "level": {
+          "ambient_events": 4096,
+          "id": "events_4096"
+        },
+        "long_run": {
+          "all_step_returns_exact": true,
+          "all_step_snapshots_exact": true,
+          "continuation_return_exact": true,
+          "continuation_snapshot_exact": true,
+          "generation_sequence": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "health": {
+            "attempts": 5,
+            "circuit_open": false,
+            "consecutive_failures": 0,
+            "enabled": true,
+            "failure_threshold": 2,
+            "failures": 0,
+            "last_generation": 5,
+            "last_reason": null,
+            "last_source": "candidate",
+            "skipped_circuit_open": 0,
+            "skipped_disabled": 0,
+            "successes": 5,
+            "verify_load": true
+          },
+          "health_nominal": true,
+          "steps": [
+            {
+              "generation": 1,
+              "return_exact": true,
+              "snapshot_exact": true
+            },
+            {
+              "generation": 2,
+              "return_exact": true,
+              "snapshot_exact": true
+            },
+            {
+              "generation": 3,
+              "return_exact": true,
+              "snapshot_exact": true
+            },
+            {
+              "generation": 4,
+              "return_exact": true,
+              "snapshot_exact": true
+            }
+          ],
+          "verified_restore_exact": true
+        },
+        "rollback": {
+          "baseline_exact": true,
+          "baseline_preserved": true,
+          "baseline_source": "baseline",
+          "candidate_removed": true,
+          "detached_disabled": true,
+          "first_exact": true,
+          "hook_removed": true,
+          "manifest_removed": true,
+          "post_detach_exact": true
+        },
+        "writer_contention": {
+          "contended_snapshot_exact": true,
+          "failure_opened_circuit": true,
+          "holder_ready": true,
+          "post_death_snapshot_exact": true,
+          "post_death_write_recovered": true
+        }
+      }
+    ],
+    "schema": "ghost.v1.12-dev.integrated-production.stage10c.v1",
+    "strict_verdict": "V112_INTEGRATED_PRODUCTION_STAGE10C_EXPERIMENT_VALID"
+  },
+  "focused_coverage": {
+    "branch_percent": 100.0,
+    "branches": 210,
+    "statement_percent": 100.0,
+    "statements": 774
+  },
+  "focused_tests": "170 passed",
+  "frozen_production_sha256": {
+    "ghost/_persistence_codec.py": "cb9db3cdda40e7831c2452e674efcc5404e5df4a3ab79ec7bef94e39751f52bb",
+    "ghost/_persistence_runtime.py": "3ae390b3f26ffafd2307aaaf39925d89be1bad11450a5b2a548371fcb8e61d29",
+    "ghost/_persistence_shadow.py": "cd839ad057329c165e6618b6b54e22d7a8677a2996419f604044bc8e2abf6121",
+    "ghost/api.py": "3c579a3dfca396f7eb92c04f585c072b50126592f48afa53495a2ef1ef113dff"
+  },
+  "full_nonresearch_regression": "3640 passed, 1 skipped",
+  "ghostapi_public_methods_added": [],
+  "ghostapi_public_signatures_changed": false,
+  "maintained_core_coverage": {
+    "branch_percent": 100.0,
+    "branches": 3190,
+    "statement_percent": 100.0,
+    "statements": 7706
+  },
+  "next_experiment": "No further persistence architecture experiment is indicated if Stage 10C passes. Run the guarded GitHub push/release-hygiene gate: repository diff and history audit, documentation/research separation, package/wheel/sdist contents, version/schema boundaries, public-surface freeze, full regression/coverage reuse or rerun, and remote push only after all gates pass.",
+  "non_claim": "Stage 10C does not make candidate persistence authoritative or public, prove distributed locking or sudden hardware power-loss durability, or establish an acceptable product latency SLO. The enabled observer is synchronous and its measured overhead remains an explicit release boundary.",
+  "post_sha256": {
+    "docs/research/v1.12_integrated_production_stage10c.md": "59413a26eab1e3368483355a014c92bbea1f34915f90f0ba904ff10f6255bf72",
+    "ghost_research/v112_integrated_production_stage10c.py": "d9528b495e1424b64ef4ffdfc56a91aa04ba530e902e95b5644e4cc9925b1b1b",
+    "tests/test_v112_integrated_production_stage10c.py": "ec157ebc3f852244217092b61190ce81d07089acd7d516959b6eb6f76e2f006b"
+  },
+  "predecessor_stage10b_commit": "85faf11fdfbb74c0ef52d2bafaf001c506cefe9d",
+  "production_files_modified": false,
+  "schema": "ghost.v1.12-dev.integrated-production.stage10c.evidence.v1",
+  "stage": "final_integrated_private_persistence_candidate_adjudication_before_repository_push_gate",
+  "strict_verdict": "V112_INTEGRATED_PRODUCTION_STAGE10C_PASS",
+  "supported_claim": "Stage 10C validates the exact committed Stage-10A/10B private opt-in persistence candidate under repeated real GhostAPI mutation/snapshot use, verified restore and deterministic continuation, actual cross-process writer contention, corruption/version fallback and repair, rollback to baseline authority, and actual child-process exits immediately after each production atomic file commit. No production file is changed by Stage 10C."
+}

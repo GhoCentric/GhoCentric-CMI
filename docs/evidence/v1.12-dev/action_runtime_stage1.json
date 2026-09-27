@@ -1,0 +1,58 @@
+{
+  "action_runtime_metrics": {
+    "max_complexity": 14,
+    "max_function_lines": 42,
+    "module_lines": 386
+  },
+  "action_snapshot_schema": "1.0",
+  "backward_agent_state_layer_contract_preserved": true,
+  "deterministic_tie_break": "candidate_id ascending",
+  "final_statuses": [
+    "cancelled",
+    "failed",
+    "interrupted",
+    "succeeded"
+  ],
+  "focused_tests": "62 passed",
+  "full_nonresearch_regression": "2807 passed, 1 skipped",
+  "ghostagent_public_methods_added": [
+    "action_history",
+    "choose_action",
+    "pending_action",
+    "resolve_action"
+  ],
+  "ghostapi_public_methods_added": [],
+  "global_snapshot_schema_changed": false,
+  "host_owns_execution": true,
+  "host_owns_legal_actions": true,
+  "host_reports_outcome": true,
+  "maintained_core_coverage": {
+    "branch_percent": 100.0,
+    "branches": 2984,
+    "statement_percent": 100.0,
+    "statements": 7112
+  },
+  "next_experiment": "build Ghost-state and strong simpler baseline policies over the identical action protocol, then compare long-horizon behavioral coherence under matched scenarios and outcomes",
+  "one_pending_decision_per_agent": true,
+  "package_version_bump": false,
+  "policy_neutral": true,
+  "post_sha256": {
+    "docs/research/v1.12_action_runtime_stage1.md": "c8ca0638af50e67018f884eee543707190f11ea00963ab9afd2a9eb6e0310669",
+    "ghost/actions.py": "304b1ea630eb3de98bff5242122cbb239a6592e6453712d17b4571ca2a4bf563",
+    "ghost/agent.py": "ea8fbcbec50741a21b6539073d9e4b3ae2e610df72910b27dc5e5e36adda6121",
+    "ghost/api.py": "73704e4f253d403ac3ed02c44b7a29ae04ba9a6e211dbf7fa5fbc9bf4bdc6b75",
+    "tests/test_action_runtime_v1120.py": "1735268ecc3237e08106fef8e1655ba31c6d9dd0a4ff0cc5d5a396ebafb90a13",
+    "tests/test_agent_action_api_v1120.py": "cde7257b7ad4fa7ad9c2c98f6f7bd4c3d48f2369ac144a1f55718165af298988"
+  },
+  "purpose": "shared deterministic host-legal action selection/result protocol for later Ghost-vs-baseline policy experiments",
+  "quality_policy_repair_commit": "c1132515f4abf81accfbcef344364c44d9bb4a4b",
+  "quality_policy_repair_required": true,
+  "quality_policy_repair_sha256": "b54a26c2bb5c27a8a884e1edfefc564bc3de8631b683da5adae39e25c35114ce",
+  "release_hygiene_finding": "Public v1.11.0 QUALITY.md was synchronized after its full regression and omitted the performance command still required by test_quality_policy.py; v1.12-dev repairs the documentation contract without rewriting the v1.11.0 tag.",
+  "release_predecessor_commit": "32db195f587b4029d3a768c712f9bc13a25c8922",
+  "schema": "ghost.v1.12-dev.action-runtime.stage1.v1",
+  "scoring_owned_by_action_runtime": false,
+  "stage": "action_runtime_stage1_foundation",
+  "stage1_non_claim": "Stage 1 does not test whether Ghost produces better behavior; it creates the neutral action protocol used by later Ghost-state and baseline policies.",
+  "strict_verdict": "V112_ACTION_RUNTIME_STAGE1_PASS"
+}

@@ -1,0 +1,3909 @@
+{
+  "baseline_rewritten_for_stage6": false,
+  "comparative_outcome": "behavioral_parity_on_scored_constraints",
+  "decision_divergences": 0,
+  "duration_only_scaling": false,
+  "experiment": {
+    "claim_boundary": "Stage 6 increases simultaneous structural state: agents, sources, subjects, relationship edges, agent-specific beliefs, and overlapping unresolved actions. It does not claim realism, intelligence, uniqueness, or general Ghost superiority. A score difference is directional evidence on this pre-registered matrix only; parity remains a valid result.",
+    "interpretation": {
+      "baseline_rewritten_for_ghost": false,
+      "comparative_outcome": "behavioral_parity_on_scored_constraints",
+      "duration_only_scaling": false,
+      "structural_invariants_pass": true
+    },
+    "matrix": {
+      "comparative_outcome": "behavioral_parity_on_scored_constraints",
+      "decision_divergences": 0,
+      "first_failure_level": {
+        "baseline": null,
+        "full": null
+      },
+      "invariants": {
+        "badge_recall": true,
+        "hidden_information": true,
+        "pending_restart": true
+      },
+      "levels": [
+        {
+          "baseline": {
+            "accuracy": 1.0,
+            "all_badges_remembered": true,
+            "checkpoint_count": 37,
+            "config": {
+              "agents": 3,
+              "id": "light_mesh",
+              "pending": 1
+            },
+            "correct": 37,
+            "custom_baseline_bytes": 2790,
+            "first_failure": null,
+            "hidden_information_boundary": true,
+            "level": "light_mesh",
+            "mode": "baseline",
+            "pending_after_restart": {
+              "guard_00": "hold"
+            },
+            "pending_before_restart": {
+              "guard_00": "hold"
+            },
+            "pending_restart_ok": true,
+            "rows": [
+              {
+                "agent": "guard_00",
+                "checkpoint": "guard_00:goal_initial",
+                "correct": true,
+                "decision": "hold",
+                "expected": "hold",
+                "requirement": "goals",
+                "scores": {
+                  "hold": 0.9075000000000001,
+                  "retreat": 0.03999999999999998
+                }
+              },
+              {
+                "agent": "guard_00",
+                "checkpoint": "guard_00:value_preference",
+                "correct": true,
+                "decision": "protect",
+                "expected": "protect",
+                "requirement": "values",
+                "scores": {
+                  "avoid": -0.65,
+                  "protect": 0.65
+                }
+              },
+              {
+                "agent": "guard_00",
+                "checkpoint": "guard_00:trusted_primary",
+                "correct": true,
+                "decision": "challenge",
+                "expected": "challenge",
+                "requirement": "relationship_weighted_belief",
+                "scores": {
+                  "admit": -0.7615941559557646,
+                  "challenge": 0.7615941559557646
+                }
+              },
+              {
+                "agent": "guard_01",
+                "checkpoint": "guard_01:goal_initial",
+                "correct": true,
+                "decision": "hold",
+                "expected": "hold",
+                "requirement": "goals",
+                "scores": {
+                  "hold": 0.9075000000000001,
+                  "retreat": 0.03999999999999998
+                }
+              },
+              {
+                "agent": "guard_01",
+                "checkpoint": "guard_01:value_preference",
+                "correct": true,
+                "decision": "protect",
+                "expected": "protect",
+                "requirement": "values",
+                "scores": {
+                  "avoid": -0.65,
+                  "protect": 0.65
+                }
+              },
+              {
+                "agent": "guard_01",
+                "checkpoint": "guard_01:trusted_primary",
+                "correct": true,
+                "decision": "challenge",
+                "expected": "challenge",
+                "requirement": "relationship_weighted_belief",
+                "scores": {
+                  "admit": -0.7615941559557646,
+                  "challenge": 0.7615941559557646
+                }
+              },
+              {
+                "agent": "guard_02",
+                "checkpoint": "guard_02:goal_initial",
+                "correct": true,
+                "decision": "hold",
+                "expected": "hold",
+                "requirement": "goals",
+                "scores": {
+                  "hold": 0.9075000000000001,
+                  "retreat": 0.03999999999999998
+                }
+              },
+              {
+                "agent": "guard_02",
+                "checkpoint": "guard_02:value_preference",
+                "correct": true,
+                "decision": "protect",
+                "expected": "protect",
+                "requirement": "values",
+                "scores": {
+                  "avoid": -0.65,
+                  "protect": 0.65
+                }
+              },
+              {
+                "agent": "guard_02",
+                "checkpoint": "guard_02:trusted_primary",
+                "correct": true,
+                "decision": "challenge",
+                "expected": "challenge",
+                "requirement": "relationship_weighted_belief",
+                "scores": {
+                  "admit": -0.7615941559557646,
+                  "challenge": 0.7615941559557646
+                }
+              },
+              {
+                "agent": "guard_01",
+                "checkpoint": "guard_01:distrusted_relay_0",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "agent_specific_relationship",
+                "scores": {
+                  "admit": 0.7615941559557649,
+                  "challenge": -0.7615941559557649
+                }
+              },
+              {
+                "agent": "guard_01",
+                "checkpoint": "guard_01:hidden_relay_0",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "information_boundary",
+                "scores": {
+                  "admit": 0.7615941559557649,
+                  "challenge": -0.7615941559557649
+                }
+              },
+              {
+                "agent": "guard_02",
+                "checkpoint": "guard_02:distrusted_relay_1",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "agent_specific_relationship",
+                "scores": {
+                  "admit": 0.7615941559557649,
+                  "challenge": -0.7615941559557649
+                }
+              },
+              {
+                "agent": "guard_02",
+                "checkpoint": "guard_02:hidden_relay_1",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "information_boundary",
+                "scores": {
+                  "admit": 0.7615941559557649,
+                  "challenge": -0.7615941559557649
+                }
+              },
+              {
+                "agent": "guard_00",
+                "checkpoint": "guard_00:distrusted_relay_2",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "agent_specific_relationship",
+                "scores": {
+                  "admit": 0.7615941559557649,
+                  "challenge": -0.7615941559557649
+                }
+              },
+              {
+                "agent": "guard_00",
+                "checkpoint": "guard_00:hidden_relay_2",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "information_boundary",
+                "scores": {
+                  "admit": 0.7615941559557649,
+                  "challenge": -0.7615941559557649
+                }
+              },
+              {
+                "agent": "guard_00",
+                "checkpoint": "guard_00:pending_hold",
+                "correct": true,
+                "decision": "hold",
+                "expected": "hold",
+                "requirement": "overlapping_pending",
+                "scores": {
+                  "hold": 0.9075000000000001,
+                  "retreat": 0.03999999999999998
+                }
+              },
+              {
+                "agent": "guard_00",
+                "checkpoint": "guard_00:post_betrayal",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "relationship_reversal",
+                "scores": {
+                  "admit": 0.7615941559557649,
+                  "challenge": -0.7615941559557649
+                }
+              },
+              {
+                "agent": "guard_00",
+                "checkpoint": "guard_00:hidden_secondary",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "information_boundary",
+                "scores": {
+                  "admit": 0.7615941559557649,
+                  "challenge": -0.7615941559557649
+                }
+              },
+              {
+                "agent": "guard_00",
+                "checkpoint": "guard_00:multi_source_confirmed",
+                "correct": true,
+                "decision": "challenge",
+                "expected": "challenge",
+                "requirement": "multi_source_belief",
+                "scores": {
+                  "admit": -0.7615941559557646,
+                  "challenge": 0.7615941559557646
+                }
+              },
+              {
+                "agent": "guard_00",
+                "checkpoint": "guard_00:delayed_badge",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "recall",
+                "scores": {
+                  "admit": 4.440892098500626e-16,
+                  "challenge": -4.440892098500626e-16
+                }
+              },
+              {
+                "agent": "guard_00",
+                "checkpoint": "guard_00:recurrence_hostile",
+                "correct": true,
+                "decision": "challenge",
+                "expected": "challenge",
+                "requirement": "history_dependent_recurrence",
+                "scores": {
+                  "admit": -0.7615941559557646,
+                  "challenge": 0.7615941559557646
+                }
+              },
+              {
+                "agent": "guard_00",
+                "checkpoint": "guard_00:goal_shift",
+                "correct": true,
+                "decision": "assist",
+                "expected": "assist",
+                "requirement": "overlapping_consequence",
+                "scores": {
+                  "assist": 0.84,
+                  "hold": 0.3975
+                }
+              },
+              {
+                "agent": "guard_00",
+                "checkpoint": "guard_00:goal_complete",
+                "correct": true,
+                "decision": "retreat",
+                "expected": "retreat",
+                "requirement": "goals",
+                "scores": {
+                  "hold": 0.36000000000000004,
+                  "retreat": 0.5800000000000001
+                }
+              },
+              {
+                "agent": "guard_01",
+                "checkpoint": "guard_01:post_betrayal",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "relationship_reversal",
+                "scores": {
+                  "admit": 0.7615941559557649,
+                  "challenge": -0.7615941559557649
+                }
+              },
+              {
+                "agent": "guard_01",
+                "checkpoint": "guard_01:hidden_secondary",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "information_boundary",
+                "scores": {
+                  "admit": 0.7615941559557649,
+                  "challenge": -0.7615941559557649
+                }
+              },
+              {
+                "agent": "guard_01",
+                "checkpoint": "guard_01:multi_source_confirmed",
+                "correct": true,
+                "decision": "challenge",
+                "expected": "challenge",
+                "requirement": "multi_source_belief",
+                "scores": {
+                  "admit": -0.7615941559557646,
+                  "challenge": 0.7615941559557646
+                }
+              },
+              {
+                "agent": "guard_01",
+                "checkpoint": "guard_01:delayed_badge",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "recall",
+                "scores": {
+                  "admit": 4.440892098500626e-16,
+                  "challenge": -4.440892098500626e-16
+                }
+              },
+              {
+                "agent": "guard_01",
+                "checkpoint": "guard_01:recurrence_hostile",
+                "correct": true,
+                "decision": "challenge",
+                "expected": "challenge",
+                "requirement": "history_dependent_recurrence",
+                "scores": {
+                  "admit": -0.7615941559557646,
+                  "challenge": 0.7615941559557646
+                }
+              },
+              {
+                "agent": "guard_01",
+                "checkpoint": "guard_01:goal_shift",
+                "correct": true,
+                "decision": "hold",
+                "expected": "hold",
+                "requirement": "overlapping_consequence",
+                "scores": {
+                  "assist": 0.37999999999999995,
+                  "hold": 0.865
+                }
+              },
+              {
+                "agent": "guard_01",
+                "checkpoint": "guard_01:goal_complete",
+                "correct": true,
+                "decision": "retreat",
+                "expected": "retreat",
+                "requirement": "goals",
+                "scores": {
+                  "hold": 0.4575,
+                  "retreat": 0.5800000000000001
+                }
+              },
+              {
+                "agent": "guard_02",
+                "checkpoint": "guard_02:post_betrayal",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "relationship_reversal",
+                "scores": {
+                  "admit": 0.7615941559557649,
+                  "challenge": -0.7615941559557649
+                }
+              },
+              {
+                "agent": "guard_02",
+                "checkpoint": "guard_02:hidden_secondary",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "information_boundary",
+                "scores": {
+                  "admit": 0.7615941559557649,
+                  "challenge": -0.7615941559557649
+                }
+              },
+              {
+                "agent": "guard_02",
+                "checkpoint": "guard_02:multi_source_confirmed",
+                "correct": true,
+                "decision": "challenge",
+                "expected": "challenge",
+                "requirement": "multi_source_belief",
+                "scores": {
+                  "admit": -0.7615941559557646,
+                  "challenge": 0.7615941559557646
+                }
+              },
+              {
+                "agent": "guard_02",
+                "checkpoint": "guard_02:delayed_badge",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "recall",
+                "scores": {
+                  "admit": 4.440892098500626e-16,
+                  "challenge": -4.440892098500626e-16
+                }
+              },
+              {
+                "agent": "guard_02",
+                "checkpoint": "guard_02:recurrence_hostile",
+                "correct": true,
+                "decision": "challenge",
+                "expected": "challenge",
+                "requirement": "history_dependent_recurrence",
+                "scores": {
+                  "admit": -0.7615941559557646,
+                  "challenge": 0.7615941559557646
+                }
+              },
+              {
+                "agent": "guard_02",
+                "checkpoint": "guard_02:goal_shift",
+                "correct": true,
+                "decision": "hold",
+                "expected": "hold",
+                "requirement": "overlapping_consequence",
+                "scores": {
+                  "assist": 0.37999999999999995,
+                  "hold": 0.865
+                }
+              },
+              {
+                "agent": "guard_02",
+                "checkpoint": "guard_02:goal_complete",
+                "correct": true,
+                "decision": "retreat",
+                "expected": "retreat",
+                "requirement": "goals",
+                "scores": {
+                  "hold": 0.4575,
+                  "retreat": 0.5800000000000001
+                }
+              }
+            ],
+            "snapshot_bytes": 41068,
+            "structure": {
+              "agents": 3,
+              "overlapping_pending": 1,
+              "relationship_edges_seeded": 9,
+              "sources": 3,
+              "subjects": 6
+            }
+          },
+          "config": {
+            "agents": 3,
+            "id": "light_mesh",
+            "pending": 1
+          },
+          "full": {
+            "accuracy": 1.0,
+            "all_badges_remembered": true,
+            "checkpoint_count": 37,
+            "config": {
+              "agents": 3,
+              "id": "light_mesh",
+              "pending": 1
+            },
+            "correct": 37,
+            "custom_baseline_bytes": 0,
+            "first_failure": null,
+            "hidden_information_boundary": true,
+            "level": "light_mesh",
+            "mode": "full",
+            "pending_after_restart": {
+              "guard_00": "hold"
+            },
+            "pending_before_restart": {
+              "guard_00": "hold"
+            },
+            "pending_restart_ok": true,
+            "rows": [
+              {
+                "agent": "guard_00",
+                "checkpoint": "guard_00:goal_initial",
+                "correct": true,
+                "decision": "hold",
+                "expected": "hold",
+                "requirement": "goals",
+                "scores": {
+                  "hold": 0.9075000000000001,
+                  "retreat": 0.03999999999999998
+                }
+              },
+              {
+                "agent": "guard_00",
+                "checkpoint": "guard_00:value_preference",
+                "correct": true,
+                "decision": "protect",
+                "expected": "protect",
+                "requirement": "values",
+                "scores": {
+                  "avoid": -0.65,
+                  "protect": 0.65
+                }
+              },
+              {
+                "agent": "guard_00",
+                "checkpoint": "guard_00:trusted_primary",
+                "correct": true,
+                "decision": "challenge",
+                "expected": "challenge",
+                "requirement": "relationship_weighted_belief",
+                "scores": {
+                  "admit": -1.0,
+                  "challenge": 1.0
+                }
+              },
+              {
+                "agent": "guard_01",
+                "checkpoint": "guard_01:goal_initial",
+                "correct": true,
+                "decision": "hold",
+                "expected": "hold",
+                "requirement": "goals",
+                "scores": {
+                  "hold": 0.9075000000000001,
+                  "retreat": 0.03999999999999998
+                }
+              },
+              {
+                "agent": "guard_01",
+                "checkpoint": "guard_01:value_preference",
+                "correct": true,
+                "decision": "protect",
+                "expected": "protect",
+                "requirement": "values",
+                "scores": {
+                  "avoid": -0.65,
+                  "protect": 0.65
+                }
+              },
+              {
+                "agent": "guard_01",
+                "checkpoint": "guard_01:trusted_primary",
+                "correct": true,
+                "decision": "challenge",
+                "expected": "challenge",
+                "requirement": "relationship_weighted_belief",
+                "scores": {
+                  "admit": -1.0,
+                  "challenge": 1.0
+                }
+              },
+              {
+                "agent": "guard_02",
+                "checkpoint": "guard_02:goal_initial",
+                "correct": true,
+                "decision": "hold",
+                "expected": "hold",
+                "requirement": "goals",
+                "scores": {
+                  "hold": 0.9075000000000001,
+                  "retreat": 0.03999999999999998
+                }
+              },
+              {
+                "agent": "guard_02",
+                "checkpoint": "guard_02:value_preference",
+                "correct": true,
+                "decision": "protect",
+                "expected": "protect",
+                "requirement": "values",
+                "scores": {
+                  "avoid": -0.65,
+                  "protect": 0.65
+                }
+              },
+              {
+                "agent": "guard_02",
+                "checkpoint": "guard_02:trusted_primary",
+                "correct": true,
+                "decision": "challenge",
+                "expected": "challenge",
+                "requirement": "relationship_weighted_belief",
+                "scores": {
+                  "admit": -1.0,
+                  "challenge": 1.0
+                }
+              },
+              {
+                "agent": "guard_01",
+                "checkpoint": "guard_01:distrusted_relay_0",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "agent_specific_relationship",
+                "scores": {
+                  "admit": 1.0,
+                  "challenge": -1.0
+                }
+              },
+              {
+                "agent": "guard_01",
+                "checkpoint": "guard_01:hidden_relay_0",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "information_boundary",
+                "scores": {
+                  "admit": 1.0,
+                  "challenge": -1.0
+                }
+              },
+              {
+                "agent": "guard_02",
+                "checkpoint": "guard_02:distrusted_relay_1",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "agent_specific_relationship",
+                "scores": {
+                  "admit": 1.0,
+                  "challenge": -1.0
+                }
+              },
+              {
+                "agent": "guard_02",
+                "checkpoint": "guard_02:hidden_relay_1",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "information_boundary",
+                "scores": {
+                  "admit": 1.0,
+                  "challenge": -1.0
+                }
+              },
+              {
+                "agent": "guard_00",
+                "checkpoint": "guard_00:distrusted_relay_2",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "agent_specific_relationship",
+                "scores": {
+                  "admit": 1.0,
+                  "challenge": -1.0
+                }
+              },
+              {
+                "agent": "guard_00",
+                "checkpoint": "guard_00:hidden_relay_2",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "information_boundary",
+                "scores": {
+                  "admit": 1.0,
+                  "challenge": -1.0
+                }
+              },
+              {
+                "agent": "guard_00",
+                "checkpoint": "guard_00:pending_hold",
+                "correct": true,
+                "decision": "hold",
+                "expected": "hold",
+                "requirement": "overlapping_pending",
+                "scores": {
+                  "hold": 0.9075000000000001,
+                  "retreat": 0.03999999999999998
+                }
+              },
+              {
+                "agent": "guard_00",
+                "checkpoint": "guard_00:post_betrayal",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "relationship_reversal",
+                "scores": {
+                  "admit": 1.0,
+                  "challenge": -1.0
+                }
+              },
+              {
+                "agent": "guard_00",
+                "checkpoint": "guard_00:hidden_secondary",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "information_boundary",
+                "scores": {
+                  "admit": 1.0,
+                  "challenge": -1.0
+                }
+              },
+              {
+                "agent": "guard_00",
+                "checkpoint": "guard_00:multi_source_confirmed",
+                "correct": true,
+                "decision": "challenge",
+                "expected": "challenge",
+                "requirement": "multi_source_belief",
+                "scores": {
+                  "admit": -0.6000000000000001,
+                  "challenge": 0.6000000000000001
+                }
+              },
+              {
+                "agent": "guard_00",
+                "checkpoint": "guard_00:delayed_badge",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "recall",
+                "scores": {
+                  "admit": 0.0,
+                  "challenge": 0.0
+                }
+              },
+              {
+                "agent": "guard_00",
+                "checkpoint": "guard_00:recurrence_hostile",
+                "correct": true,
+                "decision": "challenge",
+                "expected": "challenge",
+                "requirement": "history_dependent_recurrence",
+                "scores": {
+                  "admit": -0.4285714285714286,
+                  "challenge": 0.4285714285714286
+                }
+              },
+              {
+                "agent": "guard_00",
+                "checkpoint": "guard_00:goal_shift",
+                "correct": true,
+                "decision": "assist",
+                "expected": "assist",
+                "requirement": "overlapping_consequence",
+                "scores": {
+                  "assist": 0.84,
+                  "hold": 0.3975
+                }
+              },
+              {
+                "agent": "guard_00",
+                "checkpoint": "guard_00:goal_complete",
+                "correct": true,
+                "decision": "retreat",
+                "expected": "retreat",
+                "requirement": "goals",
+                "scores": {
+                  "hold": 0.36000000000000004,
+                  "retreat": 0.5800000000000001
+                }
+              },
+              {
+                "agent": "guard_01",
+                "checkpoint": "guard_01:post_betrayal",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "relationship_reversal",
+                "scores": {
+                  "admit": 1.0,
+                  "challenge": -1.0
+                }
+              },
+              {
+                "agent": "guard_01",
+                "checkpoint": "guard_01:hidden_secondary",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "information_boundary",
+                "scores": {
+                  "admit": 1.0,
+                  "challenge": -1.0
+                }
+              },
+              {
+                "agent": "guard_01",
+                "checkpoint": "guard_01:multi_source_confirmed",
+                "correct": true,
+                "decision": "challenge",
+                "expected": "challenge",
+                "requirement": "multi_source_belief",
+                "scores": {
+                  "admit": -0.6000000000000001,
+                  "challenge": 0.6000000000000001
+                }
+              },
+              {
+                "agent": "guard_01",
+                "checkpoint": "guard_01:delayed_badge",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "recall",
+                "scores": {
+                  "admit": 0.0,
+                  "challenge": 0.0
+                }
+              },
+              {
+                "agent": "guard_01",
+                "checkpoint": "guard_01:recurrence_hostile",
+                "correct": true,
+                "decision": "challenge",
+                "expected": "challenge",
+                "requirement": "history_dependent_recurrence",
+                "scores": {
+                  "admit": -0.4285714285714286,
+                  "challenge": 0.4285714285714286
+                }
+              },
+              {
+                "agent": "guard_01",
+                "checkpoint": "guard_01:goal_shift",
+                "correct": true,
+                "decision": "hold",
+                "expected": "hold",
+                "requirement": "overlapping_consequence",
+                "scores": {
+                  "assist": 0.37999999999999995,
+                  "hold": 0.865
+                }
+              },
+              {
+                "agent": "guard_01",
+                "checkpoint": "guard_01:goal_complete",
+                "correct": true,
+                "decision": "retreat",
+                "expected": "retreat",
+                "requirement": "goals",
+                "scores": {
+                  "hold": 0.4575,
+                  "retreat": 0.5800000000000001
+                }
+              },
+              {
+                "agent": "guard_02",
+                "checkpoint": "guard_02:post_betrayal",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "relationship_reversal",
+                "scores": {
+                  "admit": 1.0,
+                  "challenge": -1.0
+                }
+              },
+              {
+                "agent": "guard_02",
+                "checkpoint": "guard_02:hidden_secondary",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "information_boundary",
+                "scores": {
+                  "admit": 1.0,
+                  "challenge": -1.0
+                }
+              },
+              {
+                "agent": "guard_02",
+                "checkpoint": "guard_02:multi_source_confirmed",
+                "correct": true,
+                "decision": "challenge",
+                "expected": "challenge",
+                "requirement": "multi_source_belief",
+                "scores": {
+                  "admit": -0.6000000000000001,
+                  "challenge": 0.6000000000000001
+                }
+              },
+              {
+                "agent": "guard_02",
+                "checkpoint": "guard_02:delayed_badge",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "recall",
+                "scores": {
+                  "admit": 0.0,
+                  "challenge": 0.0
+                }
+              },
+              {
+                "agent": "guard_02",
+                "checkpoint": "guard_02:recurrence_hostile",
+                "correct": true,
+                "decision": "challenge",
+                "expected": "challenge",
+                "requirement": "history_dependent_recurrence",
+                "scores": {
+                  "admit": -0.4285714285714286,
+                  "challenge": 0.4285714285714286
+                }
+              },
+              {
+                "agent": "guard_02",
+                "checkpoint": "guard_02:goal_shift",
+                "correct": true,
+                "decision": "hold",
+                "expected": "hold",
+                "requirement": "overlapping_consequence",
+                "scores": {
+                  "assist": 0.37999999999999995,
+                  "hold": 0.865
+                }
+              },
+              {
+                "agent": "guard_02",
+                "checkpoint": "guard_02:goal_complete",
+                "correct": true,
+                "decision": "retreat",
+                "expected": "retreat",
+                "requirement": "goals",
+                "scores": {
+                  "hold": 0.4575,
+                  "retreat": 0.5800000000000001
+                }
+              }
+            ],
+            "snapshot_bytes": 79907,
+            "structure": {
+              "agents": 3,
+              "overlapping_pending": 1,
+              "relationship_edges_seeded": 9,
+              "sources": 3,
+              "subjects": 6
+            }
+          },
+          "level": "light_mesh"
+        },
+        {
+          "baseline": {
+            "accuracy": 1.0,
+            "all_badges_remembered": true,
+            "checkpoint_count": 50,
+            "config": {
+              "agents": 4,
+              "id": "medium_mesh",
+              "pending": 2
+            },
+            "correct": 50,
+            "custom_baseline_bytes": 4134,
+            "first_failure": null,
+            "hidden_information_boundary": true,
+            "level": "medium_mesh",
+            "mode": "baseline",
+            "pending_after_restart": {
+              "guard_00": "hold",
+              "guard_01": "hold"
+            },
+            "pending_before_restart": {
+              "guard_00": "hold",
+              "guard_01": "hold"
+            },
+            "pending_restart_ok": true,
+            "rows": [
+              {
+                "agent": "guard_00",
+                "checkpoint": "guard_00:goal_initial",
+                "correct": true,
+                "decision": "hold",
+                "expected": "hold",
+                "requirement": "goals",
+                "scores": {
+                  "hold": 0.9075000000000001,
+                  "retreat": 0.03999999999999998
+                }
+              },
+              {
+                "agent": "guard_00",
+                "checkpoint": "guard_00:value_preference",
+                "correct": true,
+                "decision": "protect",
+                "expected": "protect",
+                "requirement": "values",
+                "scores": {
+                  "avoid": -0.65,
+                  "protect": 0.65
+                }
+              },
+              {
+                "agent": "guard_00",
+                "checkpoint": "guard_00:trusted_primary",
+                "correct": true,
+                "decision": "challenge",
+                "expected": "challenge",
+                "requirement": "relationship_weighted_belief",
+                "scores": {
+                  "admit": -0.7615941559557646,
+                  "challenge": 0.7615941559557646
+                }
+              },
+              {
+                "agent": "guard_01",
+                "checkpoint": "guard_01:goal_initial",
+                "correct": true,
+                "decision": "hold",
+                "expected": "hold",
+                "requirement": "goals",
+                "scores": {
+                  "hold": 0.9075000000000001,
+                  "retreat": 0.03999999999999998
+                }
+              },
+              {
+                "agent": "guard_01",
+                "checkpoint": "guard_01:value_preference",
+                "correct": true,
+                "decision": "protect",
+                "expected": "protect",
+                "requirement": "values",
+                "scores": {
+                  "avoid": -0.65,
+                  "protect": 0.65
+                }
+              },
+              {
+                "agent": "guard_01",
+                "checkpoint": "guard_01:trusted_primary",
+                "correct": true,
+                "decision": "challenge",
+                "expected": "challenge",
+                "requirement": "relationship_weighted_belief",
+                "scores": {
+                  "admit": -0.7615941559557646,
+                  "challenge": 0.7615941559557646
+                }
+              },
+              {
+                "agent": "guard_02",
+                "checkpoint": "guard_02:goal_initial",
+                "correct": true,
+                "decision": "hold",
+                "expected": "hold",
+                "requirement": "goals",
+                "scores": {
+                  "hold": 0.9075000000000001,
+                  "retreat": 0.03999999999999998
+                }
+              },
+              {
+                "agent": "guard_02",
+                "checkpoint": "guard_02:value_preference",
+                "correct": true,
+                "decision": "protect",
+                "expected": "protect",
+                "requirement": "values",
+                "scores": {
+                  "avoid": -0.65,
+                  "protect": 0.65
+                }
+              },
+              {
+                "agent": "guard_02",
+                "checkpoint": "guard_02:trusted_primary",
+                "correct": true,
+                "decision": "challenge",
+                "expected": "challenge",
+                "requirement": "relationship_weighted_belief",
+                "scores": {
+                  "admit": -0.7615941559557646,
+                  "challenge": 0.7615941559557646
+                }
+              },
+              {
+                "agent": "guard_03",
+                "checkpoint": "guard_03:goal_initial",
+                "correct": true,
+                "decision": "hold",
+                "expected": "hold",
+                "requirement": "goals",
+                "scores": {
+                  "hold": 0.9075000000000001,
+                  "retreat": 0.03999999999999998
+                }
+              },
+              {
+                "agent": "guard_03",
+                "checkpoint": "guard_03:value_preference",
+                "correct": true,
+                "decision": "protect",
+                "expected": "protect",
+                "requirement": "values",
+                "scores": {
+                  "avoid": -0.65,
+                  "protect": 0.65
+                }
+              },
+              {
+                "agent": "guard_03",
+                "checkpoint": "guard_03:trusted_primary",
+                "correct": true,
+                "decision": "challenge",
+                "expected": "challenge",
+                "requirement": "relationship_weighted_belief",
+                "scores": {
+                  "admit": -0.7615941559557646,
+                  "challenge": 0.7615941559557646
+                }
+              },
+              {
+                "agent": "guard_01",
+                "checkpoint": "guard_01:distrusted_relay_0",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "agent_specific_relationship",
+                "scores": {
+                  "admit": 0.7615941559557649,
+                  "challenge": -0.7615941559557649
+                }
+              },
+              {
+                "agent": "guard_01",
+                "checkpoint": "guard_01:hidden_relay_0",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "information_boundary",
+                "scores": {
+                  "admit": 0.7615941559557649,
+                  "challenge": -0.7615941559557649
+                }
+              },
+              {
+                "agent": "guard_02",
+                "checkpoint": "guard_02:distrusted_relay_1",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "agent_specific_relationship",
+                "scores": {
+                  "admit": 0.7615941559557649,
+                  "challenge": -0.7615941559557649
+                }
+              },
+              {
+                "agent": "guard_02",
+                "checkpoint": "guard_02:hidden_relay_1",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "information_boundary",
+                "scores": {
+                  "admit": 0.7615941559557649,
+                  "challenge": -0.7615941559557649
+                }
+              },
+              {
+                "agent": "guard_03",
+                "checkpoint": "guard_03:distrusted_relay_2",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "agent_specific_relationship",
+                "scores": {
+                  "admit": 0.7615941559557649,
+                  "challenge": -0.7615941559557649
+                }
+              },
+              {
+                "agent": "guard_03",
+                "checkpoint": "guard_03:hidden_relay_2",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "information_boundary",
+                "scores": {
+                  "admit": 0.7615941559557649,
+                  "challenge": -0.7615941559557649
+                }
+              },
+              {
+                "agent": "guard_00",
+                "checkpoint": "guard_00:distrusted_relay_3",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "agent_specific_relationship",
+                "scores": {
+                  "admit": 0.7615941559557649,
+                  "challenge": -0.7615941559557649
+                }
+              },
+              {
+                "agent": "guard_00",
+                "checkpoint": "guard_00:hidden_relay_3",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "information_boundary",
+                "scores": {
+                  "admit": 0.7615941559557649,
+                  "challenge": -0.7615941559557649
+                }
+              },
+              {
+                "agent": "guard_00",
+                "checkpoint": "guard_00:pending_hold",
+                "correct": true,
+                "decision": "hold",
+                "expected": "hold",
+                "requirement": "overlapping_pending",
+                "scores": {
+                  "hold": 0.9075000000000001,
+                  "retreat": 0.03999999999999998
+                }
+              },
+              {
+                "agent": "guard_01",
+                "checkpoint": "guard_01:pending_hold",
+                "correct": true,
+                "decision": "hold",
+                "expected": "hold",
+                "requirement": "overlapping_pending",
+                "scores": {
+                  "hold": 0.9075000000000001,
+                  "retreat": 0.03999999999999998
+                }
+              },
+              {
+                "agent": "guard_00",
+                "checkpoint": "guard_00:post_betrayal",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "relationship_reversal",
+                "scores": {
+                  "admit": 0.7615941559557649,
+                  "challenge": -0.7615941559557649
+                }
+              },
+              {
+                "agent": "guard_00",
+                "checkpoint": "guard_00:hidden_secondary",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "information_boundary",
+                "scores": {
+                  "admit": 0.7615941559557649,
+                  "challenge": -0.7615941559557649
+                }
+              },
+              {
+                "agent": "guard_00",
+                "checkpoint": "guard_00:multi_source_confirmed",
+                "correct": true,
+                "decision": "challenge",
+                "expected": "challenge",
+                "requirement": "multi_source_belief",
+                "scores": {
+                  "admit": -0.7615941559557646,
+                  "challenge": 0.7615941559557646
+                }
+              },
+              {
+                "agent": "guard_00",
+                "checkpoint": "guard_00:delayed_badge",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "recall",
+                "scores": {
+                  "admit": 4.440892098500626e-16,
+                  "challenge": -4.440892098500626e-16
+                }
+              },
+              {
+                "agent": "guard_00",
+                "checkpoint": "guard_00:recurrence_hostile",
+                "correct": true,
+                "decision": "challenge",
+                "expected": "challenge",
+                "requirement": "history_dependent_recurrence",
+                "scores": {
+                  "admit": -0.7615941559557646,
+                  "challenge": 0.7615941559557646
+                }
+              },
+              {
+                "agent": "guard_00",
+                "checkpoint": "guard_00:goal_shift",
+                "correct": true,
+                "decision": "assist",
+                "expected": "assist",
+                "requirement": "overlapping_consequence",
+                "scores": {
+                  "assist": 0.84,
+                  "hold": 0.3975
+                }
+              },
+              {
+                "agent": "guard_00",
+                "checkpoint": "guard_00:goal_complete",
+                "correct": true,
+                "decision": "retreat",
+                "expected": "retreat",
+                "requirement": "goals",
+                "scores": {
+                  "hold": 0.36000000000000004,
+                  "retreat": 0.5800000000000001
+                }
+              },
+              {
+                "agent": "guard_01",
+                "checkpoint": "guard_01:post_betrayal",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "relationship_reversal",
+                "scores": {
+                  "admit": 0.7615941559557649,
+                  "challenge": -0.7615941559557649
+                }
+              },
+              {
+                "agent": "guard_01",
+                "checkpoint": "guard_01:hidden_secondary",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "information_boundary",
+                "scores": {
+                  "admit": 0.7615941559557649,
+                  "challenge": -0.7615941559557649
+                }
+              },
+              {
+                "agent": "guard_01",
+                "checkpoint": "guard_01:multi_source_confirmed",
+                "correct": true,
+                "decision": "challenge",
+                "expected": "challenge",
+                "requirement": "multi_source_belief",
+                "scores": {
+                  "admit": -0.7615941559557646,
+                  "challenge": 0.7615941559557646
+                }
+              },
+              {
+                "agent": "guard_01",
+                "checkpoint": "guard_01:delayed_badge",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "recall",
+                "scores": {
+                  "admit": 4.440892098500626e-16,
+                  "challenge": -4.440892098500626e-16
+                }
+              },
+              {
+                "agent": "guard_01",
+                "checkpoint": "guard_01:recurrence_hostile",
+                "correct": true,
+                "decision": "challenge",
+                "expected": "challenge",
+                "requirement": "history_dependent_recurrence",
+                "scores": {
+                  "admit": -0.7615941559557646,
+                  "challenge": 0.7615941559557646
+                }
+              },
+              {
+                "agent": "guard_01",
+                "checkpoint": "guard_01:goal_shift",
+                "correct": true,
+                "decision": "assist",
+                "expected": "assist",
+                "requirement": "overlapping_consequence",
+                "scores": {
+                  "assist": 0.84,
+                  "hold": 0.3975
+                }
+              },
+              {
+                "agent": "guard_01",
+                "checkpoint": "guard_01:goal_complete",
+                "correct": true,
+                "decision": "retreat",
+                "expected": "retreat",
+                "requirement": "goals",
+                "scores": {
+                  "hold": 0.36000000000000004,
+                  "retreat": 0.5800000000000001
+                }
+              },
+              {
+                "agent": "guard_02",
+                "checkpoint": "guard_02:post_betrayal",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "relationship_reversal",
+                "scores": {
+                  "admit": 0.7615941559557649,
+                  "challenge": -0.7615941559557649
+                }
+              },
+              {
+                "agent": "guard_02",
+                "checkpoint": "guard_02:hidden_secondary",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "information_boundary",
+                "scores": {
+                  "admit": 0.7615941559557649,
+                  "challenge": -0.7615941559557649
+                }
+              },
+              {
+                "agent": "guard_02",
+                "checkpoint": "guard_02:multi_source_confirmed",
+                "correct": true,
+                "decision": "challenge",
+                "expected": "challenge",
+                "requirement": "multi_source_belief",
+                "scores": {
+                  "admit": -0.7615941559557646,
+                  "challenge": 0.7615941559557646
+                }
+              },
+              {
+                "agent": "guard_02",
+                "checkpoint": "guard_02:delayed_badge",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "recall",
+                "scores": {
+                  "admit": 4.440892098500626e-16,
+                  "challenge": -4.440892098500626e-16
+                }
+              },
+              {
+                "agent": "guard_02",
+                "checkpoint": "guard_02:recurrence_hostile",
+                "correct": true,
+                "decision": "challenge",
+                "expected": "challenge",
+                "requirement": "history_dependent_recurrence",
+                "scores": {
+                  "admit": -0.7615941559557646,
+                  "challenge": 0.7615941559557646
+                }
+              },
+              {
+                "agent": "guard_02",
+                "checkpoint": "guard_02:goal_shift",
+                "correct": true,
+                "decision": "hold",
+                "expected": "hold",
+                "requirement": "overlapping_consequence",
+                "scores": {
+                  "assist": 0.37999999999999995,
+                  "hold": 0.865
+                }
+              },
+              {
+                "agent": "guard_02",
+                "checkpoint": "guard_02:goal_complete",
+                "correct": true,
+                "decision": "retreat",
+                "expected": "retreat",
+                "requirement": "goals",
+                "scores": {
+                  "hold": 0.4575,
+                  "retreat": 0.5800000000000001
+                }
+              },
+              {
+                "agent": "guard_03",
+                "checkpoint": "guard_03:post_betrayal",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "relationship_reversal",
+                "scores": {
+                  "admit": 0.7615941559557649,
+                  "challenge": -0.7615941559557649
+                }
+              },
+              {
+                "agent": "guard_03",
+                "checkpoint": "guard_03:hidden_secondary",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "information_boundary",
+                "scores": {
+                  "admit": 0.7615941559557649,
+                  "challenge": -0.7615941559557649
+                }
+              },
+              {
+                "agent": "guard_03",
+                "checkpoint": "guard_03:multi_source_confirmed",
+                "correct": true,
+                "decision": "challenge",
+                "expected": "challenge",
+                "requirement": "multi_source_belief",
+                "scores": {
+                  "admit": -0.7615941559557646,
+                  "challenge": 0.7615941559557646
+                }
+              },
+              {
+                "agent": "guard_03",
+                "checkpoint": "guard_03:delayed_badge",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "recall",
+                "scores": {
+                  "admit": 4.440892098500626e-16,
+                  "challenge": -4.440892098500626e-16
+                }
+              },
+              {
+                "agent": "guard_03",
+                "checkpoint": "guard_03:recurrence_hostile",
+                "correct": true,
+                "decision": "challenge",
+                "expected": "challenge",
+                "requirement": "history_dependent_recurrence",
+                "scores": {
+                  "admit": -0.7615941559557646,
+                  "challenge": 0.7615941559557646
+                }
+              },
+              {
+                "agent": "guard_03",
+                "checkpoint": "guard_03:goal_shift",
+                "correct": true,
+                "decision": "hold",
+                "expected": "hold",
+                "requirement": "overlapping_consequence",
+                "scores": {
+                  "assist": 0.37999999999999995,
+                  "hold": 0.865
+                }
+              },
+              {
+                "agent": "guard_03",
+                "checkpoint": "guard_03:goal_complete",
+                "correct": true,
+                "decision": "retreat",
+                "expected": "retreat",
+                "requirement": "goals",
+                "scores": {
+                  "hold": 0.4575,
+                  "retreat": 0.5800000000000001
+                }
+              }
+            ],
+            "snapshot_bytes": 55395,
+            "structure": {
+              "agents": 4,
+              "overlapping_pending": 2,
+              "relationship_edges_seeded": 12,
+              "sources": 4,
+              "subjects": 8
+            }
+          },
+          "config": {
+            "agents": 4,
+            "id": "medium_mesh",
+            "pending": 2
+          },
+          "full": {
+            "accuracy": 1.0,
+            "all_badges_remembered": true,
+            "checkpoint_count": 50,
+            "config": {
+              "agents": 4,
+              "id": "medium_mesh",
+              "pending": 2
+            },
+            "correct": 50,
+            "custom_baseline_bytes": 0,
+            "first_failure": null,
+            "hidden_information_boundary": true,
+            "level": "medium_mesh",
+            "mode": "full",
+            "pending_after_restart": {
+              "guard_00": "hold",
+              "guard_01": "hold"
+            },
+            "pending_before_restart": {
+              "guard_00": "hold",
+              "guard_01": "hold"
+            },
+            "pending_restart_ok": true,
+            "rows": [
+              {
+                "agent": "guard_00",
+                "checkpoint": "guard_00:goal_initial",
+                "correct": true,
+                "decision": "hold",
+                "expected": "hold",
+                "requirement": "goals",
+                "scores": {
+                  "hold": 0.9075000000000001,
+                  "retreat": 0.03999999999999998
+                }
+              },
+              {
+                "agent": "guard_00",
+                "checkpoint": "guard_00:value_preference",
+                "correct": true,
+                "decision": "protect",
+                "expected": "protect",
+                "requirement": "values",
+                "scores": {
+                  "avoid": -0.65,
+                  "protect": 0.65
+                }
+              },
+              {
+                "agent": "guard_00",
+                "checkpoint": "guard_00:trusted_primary",
+                "correct": true,
+                "decision": "challenge",
+                "expected": "challenge",
+                "requirement": "relationship_weighted_belief",
+                "scores": {
+                  "admit": -1.0,
+                  "challenge": 1.0
+                }
+              },
+              {
+                "agent": "guard_01",
+                "checkpoint": "guard_01:goal_initial",
+                "correct": true,
+                "decision": "hold",
+                "expected": "hold",
+                "requirement": "goals",
+                "scores": {
+                  "hold": 0.9075000000000001,
+                  "retreat": 0.03999999999999998
+                }
+              },
+              {
+                "agent": "guard_01",
+                "checkpoint": "guard_01:value_preference",
+                "correct": true,
+                "decision": "protect",
+                "expected": "protect",
+                "requirement": "values",
+                "scores": {
+                  "avoid": -0.65,
+                  "protect": 0.65
+                }
+              },
+              {
+                "agent": "guard_01",
+                "checkpoint": "guard_01:trusted_primary",
+                "correct": true,
+                "decision": "challenge",
+                "expected": "challenge",
+                "requirement": "relationship_weighted_belief",
+                "scores": {
+                  "admit": -1.0,
+                  "challenge": 1.0
+                }
+              },
+              {
+                "agent": "guard_02",
+                "checkpoint": "guard_02:goal_initial",
+                "correct": true,
+                "decision": "hold",
+                "expected": "hold",
+                "requirement": "goals",
+                "scores": {
+                  "hold": 0.9075000000000001,
+                  "retreat": 0.03999999999999998
+                }
+              },
+              {
+                "agent": "guard_02",
+                "checkpoint": "guard_02:value_preference",
+                "correct": true,
+                "decision": "protect",
+                "expected": "protect",
+                "requirement": "values",
+                "scores": {
+                  "avoid": -0.65,
+                  "protect": 0.65
+                }
+              },
+              {
+                "agent": "guard_02",
+                "checkpoint": "guard_02:trusted_primary",
+                "correct": true,
+                "decision": "challenge",
+                "expected": "challenge",
+                "requirement": "relationship_weighted_belief",
+                "scores": {
+                  "admit": -1.0,
+                  "challenge": 1.0
+                }
+              },
+              {
+                "agent": "guard_03",
+                "checkpoint": "guard_03:goal_initial",
+                "correct": true,
+                "decision": "hold",
+                "expected": "hold",
+                "requirement": "goals",
+                "scores": {
+                  "hold": 0.9075000000000001,
+                  "retreat": 0.03999999999999998
+                }
+              },
+              {
+                "agent": "guard_03",
+                "checkpoint": "guard_03:value_preference",
+                "correct": true,
+                "decision": "protect",
+                "expected": "protect",
+                "requirement": "values",
+                "scores": {
+                  "avoid": -0.65,
+                  "protect": 0.65
+                }
+              },
+              {
+                "agent": "guard_03",
+                "checkpoint": "guard_03:trusted_primary",
+                "correct": true,
+                "decision": "challenge",
+                "expected": "challenge",
+                "requirement": "relationship_weighted_belief",
+                "scores": {
+                  "admit": -1.0,
+                  "challenge": 1.0
+                }
+              },
+              {
+                "agent": "guard_01",
+                "checkpoint": "guard_01:distrusted_relay_0",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "agent_specific_relationship",
+                "scores": {
+                  "admit": 1.0,
+                  "challenge": -1.0
+                }
+              },
+              {
+                "agent": "guard_01",
+                "checkpoint": "guard_01:hidden_relay_0",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "information_boundary",
+                "scores": {
+                  "admit": 1.0,
+                  "challenge": -1.0
+                }
+              },
+              {
+                "agent": "guard_02",
+                "checkpoint": "guard_02:distrusted_relay_1",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "agent_specific_relationship",
+                "scores": {
+                  "admit": 1.0,
+                  "challenge": -1.0
+                }
+              },
+              {
+                "agent": "guard_02",
+                "checkpoint": "guard_02:hidden_relay_1",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "information_boundary",
+                "scores": {
+                  "admit": 1.0,
+                  "challenge": -1.0
+                }
+              },
+              {
+                "agent": "guard_03",
+                "checkpoint": "guard_03:distrusted_relay_2",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "agent_specific_relationship",
+                "scores": {
+                  "admit": 1.0,
+                  "challenge": -1.0
+                }
+              },
+              {
+                "agent": "guard_03",
+                "checkpoint": "guard_03:hidden_relay_2",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "information_boundary",
+                "scores": {
+                  "admit": 1.0,
+                  "challenge": -1.0
+                }
+              },
+              {
+                "agent": "guard_00",
+                "checkpoint": "guard_00:distrusted_relay_3",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "agent_specific_relationship",
+                "scores": {
+                  "admit": 1.0,
+                  "challenge": -1.0
+                }
+              },
+              {
+                "agent": "guard_00",
+                "checkpoint": "guard_00:hidden_relay_3",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "information_boundary",
+                "scores": {
+                  "admit": 1.0,
+                  "challenge": -1.0
+                }
+              },
+              {
+                "agent": "guard_00",
+                "checkpoint": "guard_00:pending_hold",
+                "correct": true,
+                "decision": "hold",
+                "expected": "hold",
+                "requirement": "overlapping_pending",
+                "scores": {
+                  "hold": 0.9075000000000001,
+                  "retreat": 0.03999999999999998
+                }
+              },
+              {
+                "agent": "guard_01",
+                "checkpoint": "guard_01:pending_hold",
+                "correct": true,
+                "decision": "hold",
+                "expected": "hold",
+                "requirement": "overlapping_pending",
+                "scores": {
+                  "hold": 0.9075000000000001,
+                  "retreat": 0.03999999999999998
+                }
+              },
+              {
+                "agent": "guard_00",
+                "checkpoint": "guard_00:post_betrayal",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "relationship_reversal",
+                "scores": {
+                  "admit": 1.0,
+                  "challenge": -1.0
+                }
+              },
+              {
+                "agent": "guard_00",
+                "checkpoint": "guard_00:hidden_secondary",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "information_boundary",
+                "scores": {
+                  "admit": 1.0,
+                  "challenge": -1.0
+                }
+              },
+              {
+                "agent": "guard_00",
+                "checkpoint": "guard_00:multi_source_confirmed",
+                "correct": true,
+                "decision": "challenge",
+                "expected": "challenge",
+                "requirement": "multi_source_belief",
+                "scores": {
+                  "admit": -0.6000000000000001,
+                  "challenge": 0.6000000000000001
+                }
+              },
+              {
+                "agent": "guard_00",
+                "checkpoint": "guard_00:delayed_badge",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "recall",
+                "scores": {
+                  "admit": 0.0,
+                  "challenge": 0.0
+                }
+              },
+              {
+                "agent": "guard_00",
+                "checkpoint": "guard_00:recurrence_hostile",
+                "correct": true,
+                "decision": "challenge",
+                "expected": "challenge",
+                "requirement": "history_dependent_recurrence",
+                "scores": {
+                  "admit": -0.4285714285714286,
+                  "challenge": 0.4285714285714286
+                }
+              },
+              {
+                "agent": "guard_00",
+                "checkpoint": "guard_00:goal_shift",
+                "correct": true,
+                "decision": "assist",
+                "expected": "assist",
+                "requirement": "overlapping_consequence",
+                "scores": {
+                  "assist": 0.84,
+                  "hold": 0.3975
+                }
+              },
+              {
+                "agent": "guard_00",
+                "checkpoint": "guard_00:goal_complete",
+                "correct": true,
+                "decision": "retreat",
+                "expected": "retreat",
+                "requirement": "goals",
+                "scores": {
+                  "hold": 0.36000000000000004,
+                  "retreat": 0.5800000000000001
+                }
+              },
+              {
+                "agent": "guard_01",
+                "checkpoint": "guard_01:post_betrayal",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "relationship_reversal",
+                "scores": {
+                  "admit": 1.0,
+                  "challenge": -1.0
+                }
+              },
+              {
+                "agent": "guard_01",
+                "checkpoint": "guard_01:hidden_secondary",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "information_boundary",
+                "scores": {
+                  "admit": 1.0,
+                  "challenge": -1.0
+                }
+              },
+              {
+                "agent": "guard_01",
+                "checkpoint": "guard_01:multi_source_confirmed",
+                "correct": true,
+                "decision": "challenge",
+                "expected": "challenge",
+                "requirement": "multi_source_belief",
+                "scores": {
+                  "admit": -0.6000000000000001,
+                  "challenge": 0.6000000000000001
+                }
+              },
+              {
+                "agent": "guard_01",
+                "checkpoint": "guard_01:delayed_badge",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "recall",
+                "scores": {
+                  "admit": 0.0,
+                  "challenge": 0.0
+                }
+              },
+              {
+                "agent": "guard_01",
+                "checkpoint": "guard_01:recurrence_hostile",
+                "correct": true,
+                "decision": "challenge",
+                "expected": "challenge",
+                "requirement": "history_dependent_recurrence",
+                "scores": {
+                  "admit": -0.4285714285714286,
+                  "challenge": 0.4285714285714286
+                }
+              },
+              {
+                "agent": "guard_01",
+                "checkpoint": "guard_01:goal_shift",
+                "correct": true,
+                "decision": "assist",
+                "expected": "assist",
+                "requirement": "overlapping_consequence",
+                "scores": {
+                  "assist": 0.84,
+                  "hold": 0.3975
+                }
+              },
+              {
+                "agent": "guard_01",
+                "checkpoint": "guard_01:goal_complete",
+                "correct": true,
+                "decision": "retreat",
+                "expected": "retreat",
+                "requirement": "goals",
+                "scores": {
+                  "hold": 0.36000000000000004,
+                  "retreat": 0.5800000000000001
+                }
+              },
+              {
+                "agent": "guard_02",
+                "checkpoint": "guard_02:post_betrayal",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "relationship_reversal",
+                "scores": {
+                  "admit": 1.0,
+                  "challenge": -1.0
+                }
+              },
+              {
+                "agent": "guard_02",
+                "checkpoint": "guard_02:hidden_secondary",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "information_boundary",
+                "scores": {
+                  "admit": 1.0,
+                  "challenge": -1.0
+                }
+              },
+              {
+                "agent": "guard_02",
+                "checkpoint": "guard_02:multi_source_confirmed",
+                "correct": true,
+                "decision": "challenge",
+                "expected": "challenge",
+                "requirement": "multi_source_belief",
+                "scores": {
+                  "admit": -0.6000000000000001,
+                  "challenge": 0.6000000000000001
+                }
+              },
+              {
+                "agent": "guard_02",
+                "checkpoint": "guard_02:delayed_badge",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "recall",
+                "scores": {
+                  "admit": 0.0,
+                  "challenge": 0.0
+                }
+              },
+              {
+                "agent": "guard_02",
+                "checkpoint": "guard_02:recurrence_hostile",
+                "correct": true,
+                "decision": "challenge",
+                "expected": "challenge",
+                "requirement": "history_dependent_recurrence",
+                "scores": {
+                  "admit": -0.4285714285714286,
+                  "challenge": 0.4285714285714286
+                }
+              },
+              {
+                "agent": "guard_02",
+                "checkpoint": "guard_02:goal_shift",
+                "correct": true,
+                "decision": "hold",
+                "expected": "hold",
+                "requirement": "overlapping_consequence",
+                "scores": {
+                  "assist": 0.37999999999999995,
+                  "hold": 0.865
+                }
+              },
+              {
+                "agent": "guard_02",
+                "checkpoint": "guard_02:goal_complete",
+                "correct": true,
+                "decision": "retreat",
+                "expected": "retreat",
+                "requirement": "goals",
+                "scores": {
+                  "hold": 0.4575,
+                  "retreat": 0.5800000000000001
+                }
+              },
+              {
+                "agent": "guard_03",
+                "checkpoint": "guard_03:post_betrayal",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "relationship_reversal",
+                "scores": {
+                  "admit": 1.0,
+                  "challenge": -1.0
+                }
+              },
+              {
+                "agent": "guard_03",
+                "checkpoint": "guard_03:hidden_secondary",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "information_boundary",
+                "scores": {
+                  "admit": 1.0,
+                  "challenge": -1.0
+                }
+              },
+              {
+                "agent": "guard_03",
+                "checkpoint": "guard_03:multi_source_confirmed",
+                "correct": true,
+                "decision": "challenge",
+                "expected": "challenge",
+                "requirement": "multi_source_belief",
+                "scores": {
+                  "admit": -0.6000000000000001,
+                  "challenge": 0.6000000000000001
+                }
+              },
+              {
+                "agent": "guard_03",
+                "checkpoint": "guard_03:delayed_badge",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "recall",
+                "scores": {
+                  "admit": 0.0,
+                  "challenge": 0.0
+                }
+              },
+              {
+                "agent": "guard_03",
+                "checkpoint": "guard_03:recurrence_hostile",
+                "correct": true,
+                "decision": "challenge",
+                "expected": "challenge",
+                "requirement": "history_dependent_recurrence",
+                "scores": {
+                  "admit": -0.4285714285714286,
+                  "challenge": 0.4285714285714286
+                }
+              },
+              {
+                "agent": "guard_03",
+                "checkpoint": "guard_03:goal_shift",
+                "correct": true,
+                "decision": "hold",
+                "expected": "hold",
+                "requirement": "overlapping_consequence",
+                "scores": {
+                  "assist": 0.37999999999999995,
+                  "hold": 0.865
+                }
+              },
+              {
+                "agent": "guard_03",
+                "checkpoint": "guard_03:goal_complete",
+                "correct": true,
+                "decision": "retreat",
+                "expected": "retreat",
+                "requirement": "goals",
+                "scores": {
+                  "hold": 0.4575,
+                  "retreat": 0.5800000000000001
+                }
+              }
+            ],
+            "snapshot_bytes": 110208,
+            "structure": {
+              "agents": 4,
+              "overlapping_pending": 2,
+              "relationship_edges_seeded": 12,
+              "sources": 4,
+              "subjects": 8
+            }
+          },
+          "level": "medium_mesh"
+        },
+        {
+          "baseline": {
+            "accuracy": 1.0,
+            "all_badges_remembered": true,
+            "checkpoint_count": 63,
+            "config": {
+              "agents": 5,
+              "id": "heavy_mesh",
+              "pending": 3
+            },
+            "correct": 63,
+            "custom_baseline_bytes": 5690,
+            "first_failure": null,
+            "hidden_information_boundary": true,
+            "level": "heavy_mesh",
+            "mode": "baseline",
+            "pending_after_restart": {
+              "guard_00": "hold",
+              "guard_01": "hold",
+              "guard_02": "hold"
+            },
+            "pending_before_restart": {
+              "guard_00": "hold",
+              "guard_01": "hold",
+              "guard_02": "hold"
+            },
+            "pending_restart_ok": true,
+            "rows": [
+              {
+                "agent": "guard_00",
+                "checkpoint": "guard_00:goal_initial",
+                "correct": true,
+                "decision": "hold",
+                "expected": "hold",
+                "requirement": "goals",
+                "scores": {
+                  "hold": 0.9075000000000001,
+                  "retreat": 0.03999999999999998
+                }
+              },
+              {
+                "agent": "guard_00",
+                "checkpoint": "guard_00:value_preference",
+                "correct": true,
+                "decision": "protect",
+                "expected": "protect",
+                "requirement": "values",
+                "scores": {
+                  "avoid": -0.65,
+                  "protect": 0.65
+                }
+              },
+              {
+                "agent": "guard_00",
+                "checkpoint": "guard_00:trusted_primary",
+                "correct": true,
+                "decision": "challenge",
+                "expected": "challenge",
+                "requirement": "relationship_weighted_belief",
+                "scores": {
+                  "admit": -0.7615941559557646,
+                  "challenge": 0.7615941559557646
+                }
+              },
+              {
+                "agent": "guard_01",
+                "checkpoint": "guard_01:goal_initial",
+                "correct": true,
+                "decision": "hold",
+                "expected": "hold",
+                "requirement": "goals",
+                "scores": {
+                  "hold": 0.9075000000000001,
+                  "retreat": 0.03999999999999998
+                }
+              },
+              {
+                "agent": "guard_01",
+                "checkpoint": "guard_01:value_preference",
+                "correct": true,
+                "decision": "protect",
+                "expected": "protect",
+                "requirement": "values",
+                "scores": {
+                  "avoid": -0.65,
+                  "protect": 0.65
+                }
+              },
+              {
+                "agent": "guard_01",
+                "checkpoint": "guard_01:trusted_primary",
+                "correct": true,
+                "decision": "challenge",
+                "expected": "challenge",
+                "requirement": "relationship_weighted_belief",
+                "scores": {
+                  "admit": -0.7615941559557646,
+                  "challenge": 0.7615941559557646
+                }
+              },
+              {
+                "agent": "guard_02",
+                "checkpoint": "guard_02:goal_initial",
+                "correct": true,
+                "decision": "hold",
+                "expected": "hold",
+                "requirement": "goals",
+                "scores": {
+                  "hold": 0.9075000000000001,
+                  "retreat": 0.03999999999999998
+                }
+              },
+              {
+                "agent": "guard_02",
+                "checkpoint": "guard_02:value_preference",
+                "correct": true,
+                "decision": "protect",
+                "expected": "protect",
+                "requirement": "values",
+                "scores": {
+                  "avoid": -0.65,
+                  "protect": 0.65
+                }
+              },
+              {
+                "agent": "guard_02",
+                "checkpoint": "guard_02:trusted_primary",
+                "correct": true,
+                "decision": "challenge",
+                "expected": "challenge",
+                "requirement": "relationship_weighted_belief",
+                "scores": {
+                  "admit": -0.7615941559557646,
+                  "challenge": 0.7615941559557646
+                }
+              },
+              {
+                "agent": "guard_03",
+                "checkpoint": "guard_03:goal_initial",
+                "correct": true,
+                "decision": "hold",
+                "expected": "hold",
+                "requirement": "goals",
+                "scores": {
+                  "hold": 0.9075000000000001,
+                  "retreat": 0.03999999999999998
+                }
+              },
+              {
+                "agent": "guard_03",
+                "checkpoint": "guard_03:value_preference",
+                "correct": true,
+                "decision": "protect",
+                "expected": "protect",
+                "requirement": "values",
+                "scores": {
+                  "avoid": -0.65,
+                  "protect": 0.65
+                }
+              },
+              {
+                "agent": "guard_03",
+                "checkpoint": "guard_03:trusted_primary",
+                "correct": true,
+                "decision": "challenge",
+                "expected": "challenge",
+                "requirement": "relationship_weighted_belief",
+                "scores": {
+                  "admit": -0.7615941559557646,
+                  "challenge": 0.7615941559557646
+                }
+              },
+              {
+                "agent": "guard_04",
+                "checkpoint": "guard_04:goal_initial",
+                "correct": true,
+                "decision": "hold",
+                "expected": "hold",
+                "requirement": "goals",
+                "scores": {
+                  "hold": 0.9075000000000001,
+                  "retreat": 0.03999999999999998
+                }
+              },
+              {
+                "agent": "guard_04",
+                "checkpoint": "guard_04:value_preference",
+                "correct": true,
+                "decision": "protect",
+                "expected": "protect",
+                "requirement": "values",
+                "scores": {
+                  "avoid": -0.65,
+                  "protect": 0.65
+                }
+              },
+              {
+                "agent": "guard_04",
+                "checkpoint": "guard_04:trusted_primary",
+                "correct": true,
+                "decision": "challenge",
+                "expected": "challenge",
+                "requirement": "relationship_weighted_belief",
+                "scores": {
+                  "admit": -0.7615941559557646,
+                  "challenge": 0.7615941559557646
+                }
+              },
+              {
+                "agent": "guard_01",
+                "checkpoint": "guard_01:distrusted_relay_0",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "agent_specific_relationship",
+                "scores": {
+                  "admit": 0.7615941559557649,
+                  "challenge": -0.7615941559557649
+                }
+              },
+              {
+                "agent": "guard_01",
+                "checkpoint": "guard_01:hidden_relay_0",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "information_boundary",
+                "scores": {
+                  "admit": 0.7615941559557649,
+                  "challenge": -0.7615941559557649
+                }
+              },
+              {
+                "agent": "guard_02",
+                "checkpoint": "guard_02:distrusted_relay_1",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "agent_specific_relationship",
+                "scores": {
+                  "admit": 0.7615941559557649,
+                  "challenge": -0.7615941559557649
+                }
+              },
+              {
+                "agent": "guard_02",
+                "checkpoint": "guard_02:hidden_relay_1",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "information_boundary",
+                "scores": {
+                  "admit": 0.7615941559557649,
+                  "challenge": -0.7615941559557649
+                }
+              },
+              {
+                "agent": "guard_03",
+                "checkpoint": "guard_03:distrusted_relay_2",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "agent_specific_relationship",
+                "scores": {
+                  "admit": 0.7615941559557649,
+                  "challenge": -0.7615941559557649
+                }
+              },
+              {
+                "agent": "guard_03",
+                "checkpoint": "guard_03:hidden_relay_2",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "information_boundary",
+                "scores": {
+                  "admit": 0.7615941559557649,
+                  "challenge": -0.7615941559557649
+                }
+              },
+              {
+                "agent": "guard_04",
+                "checkpoint": "guard_04:distrusted_relay_3",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "agent_specific_relationship",
+                "scores": {
+                  "admit": 0.7615941559557649,
+                  "challenge": -0.7615941559557649
+                }
+              },
+              {
+                "agent": "guard_04",
+                "checkpoint": "guard_04:hidden_relay_3",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "information_boundary",
+                "scores": {
+                  "admit": 0.7615941559557649,
+                  "challenge": -0.7615941559557649
+                }
+              },
+              {
+                "agent": "guard_00",
+                "checkpoint": "guard_00:distrusted_relay_4",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "agent_specific_relationship",
+                "scores": {
+                  "admit": 0.7615941559557649,
+                  "challenge": -0.7615941559557649
+                }
+              },
+              {
+                "agent": "guard_00",
+                "checkpoint": "guard_00:hidden_relay_4",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "information_boundary",
+                "scores": {
+                  "admit": 0.7615941559557649,
+                  "challenge": -0.7615941559557649
+                }
+              },
+              {
+                "agent": "guard_00",
+                "checkpoint": "guard_00:pending_hold",
+                "correct": true,
+                "decision": "hold",
+                "expected": "hold",
+                "requirement": "overlapping_pending",
+                "scores": {
+                  "hold": 0.9075000000000001,
+                  "retreat": 0.03999999999999998
+                }
+              },
+              {
+                "agent": "guard_01",
+                "checkpoint": "guard_01:pending_hold",
+                "correct": true,
+                "decision": "hold",
+                "expected": "hold",
+                "requirement": "overlapping_pending",
+                "scores": {
+                  "hold": 0.9075000000000001,
+                  "retreat": 0.03999999999999998
+                }
+              },
+              {
+                "agent": "guard_02",
+                "checkpoint": "guard_02:pending_hold",
+                "correct": true,
+                "decision": "hold",
+                "expected": "hold",
+                "requirement": "overlapping_pending",
+                "scores": {
+                  "hold": 0.9075000000000001,
+                  "retreat": 0.03999999999999998
+                }
+              },
+              {
+                "agent": "guard_00",
+                "checkpoint": "guard_00:post_betrayal",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "relationship_reversal",
+                "scores": {
+                  "admit": 0.7615941559557649,
+                  "challenge": -0.7615941559557649
+                }
+              },
+              {
+                "agent": "guard_00",
+                "checkpoint": "guard_00:hidden_secondary",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "information_boundary",
+                "scores": {
+                  "admit": 0.7615941559557649,
+                  "challenge": -0.7615941559557649
+                }
+              },
+              {
+                "agent": "guard_00",
+                "checkpoint": "guard_00:multi_source_confirmed",
+                "correct": true,
+                "decision": "challenge",
+                "expected": "challenge",
+                "requirement": "multi_source_belief",
+                "scores": {
+                  "admit": -0.7615941559557646,
+                  "challenge": 0.7615941559557646
+                }
+              },
+              {
+                "agent": "guard_00",
+                "checkpoint": "guard_00:delayed_badge",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "recall",
+                "scores": {
+                  "admit": 4.440892098500626e-16,
+                  "challenge": -4.440892098500626e-16
+                }
+              },
+              {
+                "agent": "guard_00",
+                "checkpoint": "guard_00:recurrence_hostile",
+                "correct": true,
+                "decision": "challenge",
+                "expected": "challenge",
+                "requirement": "history_dependent_recurrence",
+                "scores": {
+                  "admit": -0.7615941559557646,
+                  "challenge": 0.7615941559557646
+                }
+              },
+              {
+                "agent": "guard_00",
+                "checkpoint": "guard_00:goal_shift",
+                "correct": true,
+                "decision": "assist",
+                "expected": "assist",
+                "requirement": "overlapping_consequence",
+                "scores": {
+                  "assist": 0.84,
+                  "hold": 0.3975
+                }
+              },
+              {
+                "agent": "guard_00",
+                "checkpoint": "guard_00:goal_complete",
+                "correct": true,
+                "decision": "retreat",
+                "expected": "retreat",
+                "requirement": "goals",
+                "scores": {
+                  "hold": 0.36000000000000004,
+                  "retreat": 0.5800000000000001
+                }
+              },
+              {
+                "agent": "guard_01",
+                "checkpoint": "guard_01:post_betrayal",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "relationship_reversal",
+                "scores": {
+                  "admit": 0.7615941559557649,
+                  "challenge": -0.7615941559557649
+                }
+              },
+              {
+                "agent": "guard_01",
+                "checkpoint": "guard_01:hidden_secondary",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "information_boundary",
+                "scores": {
+                  "admit": 0.7615941559557649,
+                  "challenge": -0.7615941559557649
+                }
+              },
+              {
+                "agent": "guard_01",
+                "checkpoint": "guard_01:multi_source_confirmed",
+                "correct": true,
+                "decision": "challenge",
+                "expected": "challenge",
+                "requirement": "multi_source_belief",
+                "scores": {
+                  "admit": -0.7615941559557646,
+                  "challenge": 0.7615941559557646
+                }
+              },
+              {
+                "agent": "guard_01",
+                "checkpoint": "guard_01:delayed_badge",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "recall",
+                "scores": {
+                  "admit": 4.440892098500626e-16,
+                  "challenge": -4.440892098500626e-16
+                }
+              },
+              {
+                "agent": "guard_01",
+                "checkpoint": "guard_01:recurrence_hostile",
+                "correct": true,
+                "decision": "challenge",
+                "expected": "challenge",
+                "requirement": "history_dependent_recurrence",
+                "scores": {
+                  "admit": -0.7615941559557646,
+                  "challenge": 0.7615941559557646
+                }
+              },
+              {
+                "agent": "guard_01",
+                "checkpoint": "guard_01:goal_shift",
+                "correct": true,
+                "decision": "assist",
+                "expected": "assist",
+                "requirement": "overlapping_consequence",
+                "scores": {
+                  "assist": 0.84,
+                  "hold": 0.3975
+                }
+              },
+              {
+                "agent": "guard_01",
+                "checkpoint": "guard_01:goal_complete",
+                "correct": true,
+                "decision": "retreat",
+                "expected": "retreat",
+                "requirement": "goals",
+                "scores": {
+                  "hold": 0.36000000000000004,
+                  "retreat": 0.5800000000000001
+                }
+              },
+              {
+                "agent": "guard_02",
+                "checkpoint": "guard_02:post_betrayal",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "relationship_reversal",
+                "scores": {
+                  "admit": 0.7615941559557649,
+                  "challenge": -0.7615941559557649
+                }
+              },
+              {
+                "agent": "guard_02",
+                "checkpoint": "guard_02:hidden_secondary",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "information_boundary",
+                "scores": {
+                  "admit": 0.7615941559557649,
+                  "challenge": -0.7615941559557649
+                }
+              },
+              {
+                "agent": "guard_02",
+                "checkpoint": "guard_02:multi_source_confirmed",
+                "correct": true,
+                "decision": "challenge",
+                "expected": "challenge",
+                "requirement": "multi_source_belief",
+                "scores": {
+                  "admit": -0.7615941559557646,
+                  "challenge": 0.7615941559557646
+                }
+              },
+              {
+                "agent": "guard_02",
+                "checkpoint": "guard_02:delayed_badge",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "recall",
+                "scores": {
+                  "admit": 4.440892098500626e-16,
+                  "challenge": -4.440892098500626e-16
+                }
+              },
+              {
+                "agent": "guard_02",
+                "checkpoint": "guard_02:recurrence_hostile",
+                "correct": true,
+                "decision": "challenge",
+                "expected": "challenge",
+                "requirement": "history_dependent_recurrence",
+                "scores": {
+                  "admit": -0.7615941559557646,
+                  "challenge": 0.7615941559557646
+                }
+              },
+              {
+                "agent": "guard_02",
+                "checkpoint": "guard_02:goal_shift",
+                "correct": true,
+                "decision": "assist",
+                "expected": "assist",
+                "requirement": "overlapping_consequence",
+                "scores": {
+                  "assist": 0.84,
+                  "hold": 0.3975
+                }
+              },
+              {
+                "agent": "guard_02",
+                "checkpoint": "guard_02:goal_complete",
+                "correct": true,
+                "decision": "retreat",
+                "expected": "retreat",
+                "requirement": "goals",
+                "scores": {
+                  "hold": 0.36000000000000004,
+                  "retreat": 0.5800000000000001
+                }
+              },
+              {
+                "agent": "guard_03",
+                "checkpoint": "guard_03:post_betrayal",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "relationship_reversal",
+                "scores": {
+                  "admit": 0.7615941559557649,
+                  "challenge": -0.7615941559557649
+                }
+              },
+              {
+                "agent": "guard_03",
+                "checkpoint": "guard_03:hidden_secondary",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "information_boundary",
+                "scores": {
+                  "admit": 0.7615941559557649,
+                  "challenge": -0.7615941559557649
+                }
+              },
+              {
+                "agent": "guard_03",
+                "checkpoint": "guard_03:multi_source_confirmed",
+                "correct": true,
+                "decision": "challenge",
+                "expected": "challenge",
+                "requirement": "multi_source_belief",
+                "scores": {
+                  "admit": -0.7615941559557646,
+                  "challenge": 0.7615941559557646
+                }
+              },
+              {
+                "agent": "guard_03",
+                "checkpoint": "guard_03:delayed_badge",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "recall",
+                "scores": {
+                  "admit": 4.440892098500626e-16,
+                  "challenge": -4.440892098500626e-16
+                }
+              },
+              {
+                "agent": "guard_03",
+                "checkpoint": "guard_03:recurrence_hostile",
+                "correct": true,
+                "decision": "challenge",
+                "expected": "challenge",
+                "requirement": "history_dependent_recurrence",
+                "scores": {
+                  "admit": -0.7615941559557646,
+                  "challenge": 0.7615941559557646
+                }
+              },
+              {
+                "agent": "guard_03",
+                "checkpoint": "guard_03:goal_shift",
+                "correct": true,
+                "decision": "hold",
+                "expected": "hold",
+                "requirement": "overlapping_consequence",
+                "scores": {
+                  "assist": 0.37999999999999995,
+                  "hold": 0.865
+                }
+              },
+              {
+                "agent": "guard_03",
+                "checkpoint": "guard_03:goal_complete",
+                "correct": true,
+                "decision": "retreat",
+                "expected": "retreat",
+                "requirement": "goals",
+                "scores": {
+                  "hold": 0.4575,
+                  "retreat": 0.5800000000000001
+                }
+              },
+              {
+                "agent": "guard_04",
+                "checkpoint": "guard_04:post_betrayal",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "relationship_reversal",
+                "scores": {
+                  "admit": 0.7615941559557649,
+                  "challenge": -0.7615941559557649
+                }
+              },
+              {
+                "agent": "guard_04",
+                "checkpoint": "guard_04:hidden_secondary",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "information_boundary",
+                "scores": {
+                  "admit": 0.7615941559557649,
+                  "challenge": -0.7615941559557649
+                }
+              },
+              {
+                "agent": "guard_04",
+                "checkpoint": "guard_04:multi_source_confirmed",
+                "correct": true,
+                "decision": "challenge",
+                "expected": "challenge",
+                "requirement": "multi_source_belief",
+                "scores": {
+                  "admit": -0.7615941559557646,
+                  "challenge": 0.7615941559557646
+                }
+              },
+              {
+                "agent": "guard_04",
+                "checkpoint": "guard_04:delayed_badge",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "recall",
+                "scores": {
+                  "admit": 4.440892098500626e-16,
+                  "challenge": -4.440892098500626e-16
+                }
+              },
+              {
+                "agent": "guard_04",
+                "checkpoint": "guard_04:recurrence_hostile",
+                "correct": true,
+                "decision": "challenge",
+                "expected": "challenge",
+                "requirement": "history_dependent_recurrence",
+                "scores": {
+                  "admit": -0.7615941559557646,
+                  "challenge": 0.7615941559557646
+                }
+              },
+              {
+                "agent": "guard_04",
+                "checkpoint": "guard_04:goal_shift",
+                "correct": true,
+                "decision": "hold",
+                "expected": "hold",
+                "requirement": "overlapping_consequence",
+                "scores": {
+                  "assist": 0.37999999999999995,
+                  "hold": 0.865
+                }
+              },
+              {
+                "agent": "guard_04",
+                "checkpoint": "guard_04:goal_complete",
+                "correct": true,
+                "decision": "retreat",
+                "expected": "retreat",
+                "requirement": "goals",
+                "scores": {
+                  "hold": 0.4575,
+                  "retreat": 0.5800000000000001
+                }
+              }
+            ],
+            "snapshot_bytes": 69971,
+            "structure": {
+              "agents": 5,
+              "overlapping_pending": 3,
+              "relationship_edges_seeded": 15,
+              "sources": 5,
+              "subjects": 10
+            }
+          },
+          "config": {
+            "agents": 5,
+            "id": "heavy_mesh",
+            "pending": 3
+          },
+          "full": {
+            "accuracy": 1.0,
+            "all_badges_remembered": true,
+            "checkpoint_count": 63,
+            "config": {
+              "agents": 5,
+              "id": "heavy_mesh",
+              "pending": 3
+            },
+            "correct": 63,
+            "custom_baseline_bytes": 0,
+            "first_failure": null,
+            "hidden_information_boundary": true,
+            "level": "heavy_mesh",
+            "mode": "full",
+            "pending_after_restart": {
+              "guard_00": "hold",
+              "guard_01": "hold",
+              "guard_02": "hold"
+            },
+            "pending_before_restart": {
+              "guard_00": "hold",
+              "guard_01": "hold",
+              "guard_02": "hold"
+            },
+            "pending_restart_ok": true,
+            "rows": [
+              {
+                "agent": "guard_00",
+                "checkpoint": "guard_00:goal_initial",
+                "correct": true,
+                "decision": "hold",
+                "expected": "hold",
+                "requirement": "goals",
+                "scores": {
+                  "hold": 0.9075000000000001,
+                  "retreat": 0.03999999999999998
+                }
+              },
+              {
+                "agent": "guard_00",
+                "checkpoint": "guard_00:value_preference",
+                "correct": true,
+                "decision": "protect",
+                "expected": "protect",
+                "requirement": "values",
+                "scores": {
+                  "avoid": -0.65,
+                  "protect": 0.65
+                }
+              },
+              {
+                "agent": "guard_00",
+                "checkpoint": "guard_00:trusted_primary",
+                "correct": true,
+                "decision": "challenge",
+                "expected": "challenge",
+                "requirement": "relationship_weighted_belief",
+                "scores": {
+                  "admit": -1.0,
+                  "challenge": 1.0
+                }
+              },
+              {
+                "agent": "guard_01",
+                "checkpoint": "guard_01:goal_initial",
+                "correct": true,
+                "decision": "hold",
+                "expected": "hold",
+                "requirement": "goals",
+                "scores": {
+                  "hold": 0.9075000000000001,
+                  "retreat": 0.03999999999999998
+                }
+              },
+              {
+                "agent": "guard_01",
+                "checkpoint": "guard_01:value_preference",
+                "correct": true,
+                "decision": "protect",
+                "expected": "protect",
+                "requirement": "values",
+                "scores": {
+                  "avoid": -0.65,
+                  "protect": 0.65
+                }
+              },
+              {
+                "agent": "guard_01",
+                "checkpoint": "guard_01:trusted_primary",
+                "correct": true,
+                "decision": "challenge",
+                "expected": "challenge",
+                "requirement": "relationship_weighted_belief",
+                "scores": {
+                  "admit": -1.0,
+                  "challenge": 1.0
+                }
+              },
+              {
+                "agent": "guard_02",
+                "checkpoint": "guard_02:goal_initial",
+                "correct": true,
+                "decision": "hold",
+                "expected": "hold",
+                "requirement": "goals",
+                "scores": {
+                  "hold": 0.9075000000000001,
+                  "retreat": 0.03999999999999998
+                }
+              },
+              {
+                "agent": "guard_02",
+                "checkpoint": "guard_02:value_preference",
+                "correct": true,
+                "decision": "protect",
+                "expected": "protect",
+                "requirement": "values",
+                "scores": {
+                  "avoid": -0.65,
+                  "protect": 0.65
+                }
+              },
+              {
+                "agent": "guard_02",
+                "checkpoint": "guard_02:trusted_primary",
+                "correct": true,
+                "decision": "challenge",
+                "expected": "challenge",
+                "requirement": "relationship_weighted_belief",
+                "scores": {
+                  "admit": -1.0,
+                  "challenge": 1.0
+                }
+              },
+              {
+                "agent": "guard_03",
+                "checkpoint": "guard_03:goal_initial",
+                "correct": true,
+                "decision": "hold",
+                "expected": "hold",
+                "requirement": "goals",
+                "scores": {
+                  "hold": 0.9075000000000001,
+                  "retreat": 0.03999999999999998
+                }
+              },
+              {
+                "agent": "guard_03",
+                "checkpoint": "guard_03:value_preference",
+                "correct": true,
+                "decision": "protect",
+                "expected": "protect",
+                "requirement": "values",
+                "scores": {
+                  "avoid": -0.65,
+                  "protect": 0.65
+                }
+              },
+              {
+                "agent": "guard_03",
+                "checkpoint": "guard_03:trusted_primary",
+                "correct": true,
+                "decision": "challenge",
+                "expected": "challenge",
+                "requirement": "relationship_weighted_belief",
+                "scores": {
+                  "admit": -1.0,
+                  "challenge": 1.0
+                }
+              },
+              {
+                "agent": "guard_04",
+                "checkpoint": "guard_04:goal_initial",
+                "correct": true,
+                "decision": "hold",
+                "expected": "hold",
+                "requirement": "goals",
+                "scores": {
+                  "hold": 0.9075000000000001,
+                  "retreat": 0.03999999999999998
+                }
+              },
+              {
+                "agent": "guard_04",
+                "checkpoint": "guard_04:value_preference",
+                "correct": true,
+                "decision": "protect",
+                "expected": "protect",
+                "requirement": "values",
+                "scores": {
+                  "avoid": -0.65,
+                  "protect": 0.65
+                }
+              },
+              {
+                "agent": "guard_04",
+                "checkpoint": "guard_04:trusted_primary",
+                "correct": true,
+                "decision": "challenge",
+                "expected": "challenge",
+                "requirement": "relationship_weighted_belief",
+                "scores": {
+                  "admit": -1.0,
+                  "challenge": 1.0
+                }
+              },
+              {
+                "agent": "guard_01",
+                "checkpoint": "guard_01:distrusted_relay_0",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "agent_specific_relationship",
+                "scores": {
+                  "admit": 1.0,
+                  "challenge": -1.0
+                }
+              },
+              {
+                "agent": "guard_01",
+                "checkpoint": "guard_01:hidden_relay_0",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "information_boundary",
+                "scores": {
+                  "admit": 1.0,
+                  "challenge": -1.0
+                }
+              },
+              {
+                "agent": "guard_02",
+                "checkpoint": "guard_02:distrusted_relay_1",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "agent_specific_relationship",
+                "scores": {
+                  "admit": 1.0,
+                  "challenge": -1.0
+                }
+              },
+              {
+                "agent": "guard_02",
+                "checkpoint": "guard_02:hidden_relay_1",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "information_boundary",
+                "scores": {
+                  "admit": 1.0,
+                  "challenge": -1.0
+                }
+              },
+              {
+                "agent": "guard_03",
+                "checkpoint": "guard_03:distrusted_relay_2",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "agent_specific_relationship",
+                "scores": {
+                  "admit": 1.0,
+                  "challenge": -1.0
+                }
+              },
+              {
+                "agent": "guard_03",
+                "checkpoint": "guard_03:hidden_relay_2",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "information_boundary",
+                "scores": {
+                  "admit": 1.0,
+                  "challenge": -1.0
+                }
+              },
+              {
+                "agent": "guard_04",
+                "checkpoint": "guard_04:distrusted_relay_3",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "agent_specific_relationship",
+                "scores": {
+                  "admit": 1.0,
+                  "challenge": -1.0
+                }
+              },
+              {
+                "agent": "guard_04",
+                "checkpoint": "guard_04:hidden_relay_3",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "information_boundary",
+                "scores": {
+                  "admit": 1.0,
+                  "challenge": -1.0
+                }
+              },
+              {
+                "agent": "guard_00",
+                "checkpoint": "guard_00:distrusted_relay_4",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "agent_specific_relationship",
+                "scores": {
+                  "admit": 1.0,
+                  "challenge": -1.0
+                }
+              },
+              {
+                "agent": "guard_00",
+                "checkpoint": "guard_00:hidden_relay_4",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "information_boundary",
+                "scores": {
+                  "admit": 1.0,
+                  "challenge": -1.0
+                }
+              },
+              {
+                "agent": "guard_00",
+                "checkpoint": "guard_00:pending_hold",
+                "correct": true,
+                "decision": "hold",
+                "expected": "hold",
+                "requirement": "overlapping_pending",
+                "scores": {
+                  "hold": 0.9075000000000001,
+                  "retreat": 0.03999999999999998
+                }
+              },
+              {
+                "agent": "guard_01",
+                "checkpoint": "guard_01:pending_hold",
+                "correct": true,
+                "decision": "hold",
+                "expected": "hold",
+                "requirement": "overlapping_pending",
+                "scores": {
+                  "hold": 0.9075000000000001,
+                  "retreat": 0.03999999999999998
+                }
+              },
+              {
+                "agent": "guard_02",
+                "checkpoint": "guard_02:pending_hold",
+                "correct": true,
+                "decision": "hold",
+                "expected": "hold",
+                "requirement": "overlapping_pending",
+                "scores": {
+                  "hold": 0.9075000000000001,
+                  "retreat": 0.03999999999999998
+                }
+              },
+              {
+                "agent": "guard_00",
+                "checkpoint": "guard_00:post_betrayal",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "relationship_reversal",
+                "scores": {
+                  "admit": 1.0,
+                  "challenge": -1.0
+                }
+              },
+              {
+                "agent": "guard_00",
+                "checkpoint": "guard_00:hidden_secondary",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "information_boundary",
+                "scores": {
+                  "admit": 1.0,
+                  "challenge": -1.0
+                }
+              },
+              {
+                "agent": "guard_00",
+                "checkpoint": "guard_00:multi_source_confirmed",
+                "correct": true,
+                "decision": "challenge",
+                "expected": "challenge",
+                "requirement": "multi_source_belief",
+                "scores": {
+                  "admit": -0.6000000000000001,
+                  "challenge": 0.6000000000000001
+                }
+              },
+              {
+                "agent": "guard_00",
+                "checkpoint": "guard_00:delayed_badge",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "recall",
+                "scores": {
+                  "admit": 0.0,
+                  "challenge": 0.0
+                }
+              },
+              {
+                "agent": "guard_00",
+                "checkpoint": "guard_00:recurrence_hostile",
+                "correct": true,
+                "decision": "challenge",
+                "expected": "challenge",
+                "requirement": "history_dependent_recurrence",
+                "scores": {
+                  "admit": -0.4285714285714286,
+                  "challenge": 0.4285714285714286
+                }
+              },
+              {
+                "agent": "guard_00",
+                "checkpoint": "guard_00:goal_shift",
+                "correct": true,
+                "decision": "assist",
+                "expected": "assist",
+                "requirement": "overlapping_consequence",
+                "scores": {
+                  "assist": 0.84,
+                  "hold": 0.3975
+                }
+              },
+              {
+                "agent": "guard_00",
+                "checkpoint": "guard_00:goal_complete",
+                "correct": true,
+                "decision": "retreat",
+                "expected": "retreat",
+                "requirement": "goals",
+                "scores": {
+                  "hold": 0.36000000000000004,
+                  "retreat": 0.5800000000000001
+                }
+              },
+              {
+                "agent": "guard_01",
+                "checkpoint": "guard_01:post_betrayal",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "relationship_reversal",
+                "scores": {
+                  "admit": 1.0,
+                  "challenge": -1.0
+                }
+              },
+              {
+                "agent": "guard_01",
+                "checkpoint": "guard_01:hidden_secondary",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "information_boundary",
+                "scores": {
+                  "admit": 1.0,
+                  "challenge": -1.0
+                }
+              },
+              {
+                "agent": "guard_01",
+                "checkpoint": "guard_01:multi_source_confirmed",
+                "correct": true,
+                "decision": "challenge",
+                "expected": "challenge",
+                "requirement": "multi_source_belief",
+                "scores": {
+                  "admit": -0.6000000000000001,
+                  "challenge": 0.6000000000000001
+                }
+              },
+              {
+                "agent": "guard_01",
+                "checkpoint": "guard_01:delayed_badge",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "recall",
+                "scores": {
+                  "admit": 0.0,
+                  "challenge": 0.0
+                }
+              },
+              {
+                "agent": "guard_01",
+                "checkpoint": "guard_01:recurrence_hostile",
+                "correct": true,
+                "decision": "challenge",
+                "expected": "challenge",
+                "requirement": "history_dependent_recurrence",
+                "scores": {
+                  "admit": -0.4285714285714286,
+                  "challenge": 0.4285714285714286
+                }
+              },
+              {
+                "agent": "guard_01",
+                "checkpoint": "guard_01:goal_shift",
+                "correct": true,
+                "decision": "assist",
+                "expected": "assist",
+                "requirement": "overlapping_consequence",
+                "scores": {
+                  "assist": 0.84,
+                  "hold": 0.3975
+                }
+              },
+              {
+                "agent": "guard_01",
+                "checkpoint": "guard_01:goal_complete",
+                "correct": true,
+                "decision": "retreat",
+                "expected": "retreat",
+                "requirement": "goals",
+                "scores": {
+                  "hold": 0.36000000000000004,
+                  "retreat": 0.5800000000000001
+                }
+              },
+              {
+                "agent": "guard_02",
+                "checkpoint": "guard_02:post_betrayal",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "relationship_reversal",
+                "scores": {
+                  "admit": 1.0,
+                  "challenge": -1.0
+                }
+              },
+              {
+                "agent": "guard_02",
+                "checkpoint": "guard_02:hidden_secondary",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "information_boundary",
+                "scores": {
+                  "admit": 1.0,
+                  "challenge": -1.0
+                }
+              },
+              {
+                "agent": "guard_02",
+                "checkpoint": "guard_02:multi_source_confirmed",
+                "correct": true,
+                "decision": "challenge",
+                "expected": "challenge",
+                "requirement": "multi_source_belief",
+                "scores": {
+                  "admit": -0.6000000000000001,
+                  "challenge": 0.6000000000000001
+                }
+              },
+              {
+                "agent": "guard_02",
+                "checkpoint": "guard_02:delayed_badge",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "recall",
+                "scores": {
+                  "admit": 0.0,
+                  "challenge": 0.0
+                }
+              },
+              {
+                "agent": "guard_02",
+                "checkpoint": "guard_02:recurrence_hostile",
+                "correct": true,
+                "decision": "challenge",
+                "expected": "challenge",
+                "requirement": "history_dependent_recurrence",
+                "scores": {
+                  "admit": -0.4285714285714286,
+                  "challenge": 0.4285714285714286
+                }
+              },
+              {
+                "agent": "guard_02",
+                "checkpoint": "guard_02:goal_shift",
+                "correct": true,
+                "decision": "assist",
+                "expected": "assist",
+                "requirement": "overlapping_consequence",
+                "scores": {
+                  "assist": 0.84,
+                  "hold": 0.3975
+                }
+              },
+              {
+                "agent": "guard_02",
+                "checkpoint": "guard_02:goal_complete",
+                "correct": true,
+                "decision": "retreat",
+                "expected": "retreat",
+                "requirement": "goals",
+                "scores": {
+                  "hold": 0.36000000000000004,
+                  "retreat": 0.5800000000000001
+                }
+              },
+              {
+                "agent": "guard_03",
+                "checkpoint": "guard_03:post_betrayal",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "relationship_reversal",
+                "scores": {
+                  "admit": 1.0,
+                  "challenge": -1.0
+                }
+              },
+              {
+                "agent": "guard_03",
+                "checkpoint": "guard_03:hidden_secondary",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "information_boundary",
+                "scores": {
+                  "admit": 1.0,
+                  "challenge": -1.0
+                }
+              },
+              {
+                "agent": "guard_03",
+                "checkpoint": "guard_03:multi_source_confirmed",
+                "correct": true,
+                "decision": "challenge",
+                "expected": "challenge",
+                "requirement": "multi_source_belief",
+                "scores": {
+                  "admit": -0.6000000000000001,
+                  "challenge": 0.6000000000000001
+                }
+              },
+              {
+                "agent": "guard_03",
+                "checkpoint": "guard_03:delayed_badge",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "recall",
+                "scores": {
+                  "admit": 0.0,
+                  "challenge": 0.0
+                }
+              },
+              {
+                "agent": "guard_03",
+                "checkpoint": "guard_03:recurrence_hostile",
+                "correct": true,
+                "decision": "challenge",
+                "expected": "challenge",
+                "requirement": "history_dependent_recurrence",
+                "scores": {
+                  "admit": -0.4285714285714286,
+                  "challenge": 0.4285714285714286
+                }
+              },
+              {
+                "agent": "guard_03",
+                "checkpoint": "guard_03:goal_shift",
+                "correct": true,
+                "decision": "hold",
+                "expected": "hold",
+                "requirement": "overlapping_consequence",
+                "scores": {
+                  "assist": 0.37999999999999995,
+                  "hold": 0.865
+                }
+              },
+              {
+                "agent": "guard_03",
+                "checkpoint": "guard_03:goal_complete",
+                "correct": true,
+                "decision": "retreat",
+                "expected": "retreat",
+                "requirement": "goals",
+                "scores": {
+                  "hold": 0.4575,
+                  "retreat": 0.5800000000000001
+                }
+              },
+              {
+                "agent": "guard_04",
+                "checkpoint": "guard_04:post_betrayal",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "relationship_reversal",
+                "scores": {
+                  "admit": 1.0,
+                  "challenge": -1.0
+                }
+              },
+              {
+                "agent": "guard_04",
+                "checkpoint": "guard_04:hidden_secondary",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "information_boundary",
+                "scores": {
+                  "admit": 1.0,
+                  "challenge": -1.0
+                }
+              },
+              {
+                "agent": "guard_04",
+                "checkpoint": "guard_04:multi_source_confirmed",
+                "correct": true,
+                "decision": "challenge",
+                "expected": "challenge",
+                "requirement": "multi_source_belief",
+                "scores": {
+                  "admit": -0.6000000000000001,
+                  "challenge": 0.6000000000000001
+                }
+              },
+              {
+                "agent": "guard_04",
+                "checkpoint": "guard_04:delayed_badge",
+                "correct": true,
+                "decision": "admit",
+                "expected": "admit",
+                "requirement": "recall",
+                "scores": {
+                  "admit": 0.0,
+                  "challenge": 0.0
+                }
+              },
+              {
+                "agent": "guard_04",
+                "checkpoint": "guard_04:recurrence_hostile",
+                "correct": true,
+                "decision": "challenge",
+                "expected": "challenge",
+                "requirement": "history_dependent_recurrence",
+                "scores": {
+                  "admit": -0.4285714285714286,
+                  "challenge": 0.4285714285714286
+                }
+              },
+              {
+                "agent": "guard_04",
+                "checkpoint": "guard_04:goal_shift",
+                "correct": true,
+                "decision": "hold",
+                "expected": "hold",
+                "requirement": "overlapping_consequence",
+                "scores": {
+                  "assist": 0.37999999999999995,
+                  "hold": 0.865
+                }
+              },
+              {
+                "agent": "guard_04",
+                "checkpoint": "guard_04:goal_complete",
+                "correct": true,
+                "decision": "retreat",
+                "expected": "retreat",
+                "requirement": "goals",
+                "scores": {
+                  "hold": 0.4575,
+                  "retreat": 0.5800000000000001
+                }
+              }
+            ],
+            "snapshot_bytes": 142318,
+            "structure": {
+              "agents": 5,
+              "overlapping_pending": 3,
+              "relationship_edges_seeded": 15,
+              "sources": 5,
+              "subjects": 10
+            }
+          },
+          "level": "heavy_mesh"
+        }
+      ],
+      "scored_checkpoints_per_contender": 150,
+      "totals": {
+        "baseline": 150,
+        "full": 150
+      }
+    },
+    "schema": "ghost.v1.12-dev.structural-complexity.stage6.v1",
+    "strict_verdict": "V112_STRUCTURAL_COMPLEXITY_STAGE6_EXPERIMENT_VALID"
+  },
+  "focused_tests": "39 passed",
+  "full_nonresearch_regression": "3068 passed, 1 skipped",
+  "ghostapi_public_methods_added": [],
+  "maintained_core_coverage": {
+    "branch_percent": 100.0,
+    "branches": 2984,
+    "statement_percent": 100.0,
+    "statements": 7112
+  },
+  "next_experiment": "Adjudicate the Stage-6 structural result before deciding whether to increase cross-agent causal coupling, reduce Ghost complexity, or investigate a detected divergence.",
+  "non_claim": "Stage 6 does not establish general Ghost superiority, intelligence, realism, uniqueness, universal production necessity, or an advantage outside this matrix. Ghost win, baseline win, and parity are all admissible comparative outcomes.",
+  "post_sha256": {
+    "docs/research/v1.12_structural_complexity_stage6.md": "7b6dd002e1cfd4916661be4d88116c75a0831daab38e3b84784de6b4becc7d2e",
+    "ghost_research/v112_structural_complexity_stage6.py": "ca6b919dd401568a5f23d71e10fc0dfde84035962c331b47b52012836c65f854",
+    "tests/test_v112_structural_complexity_stage6.py": "289883539c0babe692c5013181e24c4152abe3e869a1c11a62b7b571301e877a"
+  },
+  "predecessor_stage5a_commit": "d9f157f65357dbf2165f6590173384cd0f4e2ae9",
+  "production_ghost_source_modified": false,
+  "research_coverage": {
+    "branch_percent": 100.0,
+    "branches": 86,
+    "statement_percent": 100.0,
+    "statements": 327
+  },
+  "schema": "ghost.v1.12-dev.structural-complexity.stage6.evidence.v1",
+  "stage": "multi_agent_structural_complexity_stress",
+  "stage5a_attribution_modified": false,
+  "strict_verdict": "V112_STRUCTURAL_COMPLEXITY_STAGE6_PASS",
+  "structural_invariants": {
+    "badge_recall": true,
+    "hidden_information": true,
+    "pending_restart": true
+  },
+  "supported_claim": "Stage 6 validly exercised Full Ghost and the unchanged strong baseline across a pre-registered mesh that increases simultaneous agents, sources, subjects, relationship edges, agent-specific beliefs, and overlapping unresolved actions while preserving restart and information-boundary invariants.",
+  "totals": {
+    "baseline": 150,
+    "full": 150
+  }
+}

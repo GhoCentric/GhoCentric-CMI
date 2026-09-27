@@ -1,0 +1,764 @@
+{
+  "baseline_rewritten_for_stage7": false,
+  "comparative_outcome": "directional_ghost_latent_state_advantage",
+  "control_level_parity": true,
+  "experiment": {
+    "claim_boundary": "Stage 7 measures latent option value on one pre-registered blind-exposure battery. A Ghost advantage here means its already-existing persisted state answered more newly revealed tasks after history overflow without replay or schema redesign. It does not establish general intelligence, realism, consciousness, universal game superiority, or that every extra Ghost byte is necessary.",
+    "constraints": {
+      "baseline_state_redesign": false,
+      "ghost_state_redesign": false,
+      "history_replay": false,
+      "posthoc_queries_read_only": true,
+      "schema_changes_after_reveal": false,
+      "state_frozen_before_task_reveal": true
+    },
+    "matrix": {
+      "comparative_outcome": "directional_ghost_latent_state_advantage",
+      "control_level_parity": true,
+      "levels": [
+        {
+          "baseline": {
+            "correct": 10,
+            "mode": "baseline",
+            "rows": [
+              {
+                "answer": "witness_c",
+                "correct": true,
+                "expected": "witness_c",
+                "history_dependent": false,
+                "kind": "recent_marker_source",
+                "status": "supported",
+                "task": "recent_marker_source"
+              },
+              {
+                "answer": "positive",
+                "correct": true,
+                "expected": "positive",
+                "history_dependent": false,
+                "kind": "current_trust_sign",
+                "status": "supported",
+                "task": "current_trust_sign"
+              },
+              {
+                "answer": "hostile",
+                "correct": true,
+                "expected": "hostile",
+                "history_dependent": false,
+                "kind": "current_belief_dominant",
+                "status": "supported",
+                "task": "current_belief_dominant"
+              },
+              {
+                "answer": "witness_a",
+                "correct": true,
+                "expected": "witness_a",
+                "history_dependent": true,
+                "kind": "early_marker_source",
+                "status": "supported",
+                "task": "early_marker_source"
+              },
+              {
+                "answer": 5,
+                "correct": true,
+                "expected": 5,
+                "history_dependent": true,
+                "kind": "relationship_event_count",
+                "status": "supported",
+                "task": "relationship_event_count"
+              },
+              {
+                "answer": [
+                  "witness_a",
+                  "witness_b",
+                  "witness_c"
+                ],
+                "correct": true,
+                "expected": [
+                  "witness_a",
+                  "witness_b",
+                  "witness_c"
+                ],
+                "history_dependent": true,
+                "kind": "evidence_sources",
+                "status": "supported",
+                "task": "evidence_sources"
+              },
+              {
+                "answer": 4,
+                "correct": true,
+                "expected": 4,
+                "history_dependent": true,
+                "kind": "belief_revision_count",
+                "status": "supported",
+                "task": "belief_revision_count"
+              },
+              {
+                "answer": "benign",
+                "correct": true,
+                "expected": "benign",
+                "history_dependent": true,
+                "kind": "counterfactual_without_source",
+                "status": "supported",
+                "task": "counterfactual_without_a"
+              },
+              {
+                "answer": "witness_a",
+                "correct": true,
+                "expected": "witness_a",
+                "history_dependent": true,
+                "kind": "deeper_relationship",
+                "status": "supported",
+                "task": "deeper_relationship"
+              },
+              {
+                "answer": "witness_a",
+                "correct": true,
+                "expected": "witness_a",
+                "history_dependent": true,
+                "kind": "novel_delegate_choice",
+                "status": "supported",
+                "task": "novel_delegate_choice"
+              }
+            ],
+            "supported": 10,
+            "unsupported": 0
+          },
+          "full": {
+            "correct": 10,
+            "mode": "full",
+            "rows": [
+              {
+                "answer": "witness_c",
+                "correct": true,
+                "expected": "witness_c",
+                "history_dependent": false,
+                "kind": "recent_marker_source",
+                "status": "supported",
+                "task": "recent_marker_source"
+              },
+              {
+                "answer": "positive",
+                "correct": true,
+                "expected": "positive",
+                "history_dependent": false,
+                "kind": "current_trust_sign",
+                "status": "supported",
+                "task": "current_trust_sign"
+              },
+              {
+                "answer": "hostile",
+                "correct": true,
+                "expected": "hostile",
+                "history_dependent": false,
+                "kind": "current_belief_dominant",
+                "status": "supported",
+                "task": "current_belief_dominant"
+              },
+              {
+                "answer": "witness_a",
+                "correct": true,
+                "expected": "witness_a",
+                "history_dependent": true,
+                "kind": "early_marker_source",
+                "status": "supported",
+                "task": "early_marker_source"
+              },
+              {
+                "answer": 5,
+                "correct": true,
+                "expected": 5,
+                "history_dependent": true,
+                "kind": "relationship_event_count",
+                "status": "supported",
+                "task": "relationship_event_count"
+              },
+              {
+                "answer": [
+                  "witness_a",
+                  "witness_b",
+                  "witness_c"
+                ],
+                "correct": true,
+                "expected": [
+                  "witness_a",
+                  "witness_b",
+                  "witness_c"
+                ],
+                "history_dependent": true,
+                "kind": "evidence_sources",
+                "status": "supported",
+                "task": "evidence_sources"
+              },
+              {
+                "answer": 4,
+                "correct": true,
+                "expected": 4,
+                "history_dependent": true,
+                "kind": "belief_revision_count",
+                "status": "supported",
+                "task": "belief_revision_count"
+              },
+              {
+                "answer": "benign",
+                "correct": true,
+                "expected": "benign",
+                "history_dependent": true,
+                "kind": "counterfactual_without_source",
+                "status": "supported",
+                "task": "counterfactual_without_a"
+              },
+              {
+                "answer": "witness_a",
+                "correct": true,
+                "expected": "witness_a",
+                "history_dependent": true,
+                "kind": "deeper_relationship",
+                "status": "supported",
+                "task": "deeper_relationship"
+              },
+              {
+                "answer": "witness_a",
+                "correct": true,
+                "expected": "witness_a",
+                "history_dependent": true,
+                "kind": "novel_delegate_choice",
+                "status": "supported",
+                "task": "novel_delegate_choice"
+              }
+            ],
+            "supported": 10,
+            "unsupported": 0
+          },
+          "level": {
+            "ambient_events": 64,
+            "id": "within_window"
+          },
+          "result_divergences": 0,
+          "state": {
+            "baseline_observation_history_complete": true,
+            "baseline_snapshot_bytes": 15896,
+            "full_snapshot_bytes": 76806,
+            "ghost_epistemic_ledger_complete": true,
+            "ghost_perception_history_complete": true,
+            "same_external_exposure": true
+          },
+          "task_count": 10
+        },
+        {
+          "baseline": {
+            "correct": 3,
+            "mode": "baseline",
+            "rows": [
+              {
+                "answer": "witness_c",
+                "correct": true,
+                "expected": "witness_c",
+                "history_dependent": false,
+                "kind": "recent_marker_source",
+                "status": "supported",
+                "task": "recent_marker_source"
+              },
+              {
+                "answer": "positive",
+                "correct": true,
+                "expected": "positive",
+                "history_dependent": false,
+                "kind": "current_trust_sign",
+                "status": "supported",
+                "task": "current_trust_sign"
+              },
+              {
+                "answer": "hostile",
+                "correct": true,
+                "expected": "hostile",
+                "history_dependent": false,
+                "kind": "current_belief_dominant",
+                "status": "supported",
+                "task": "current_belief_dominant"
+              },
+              {
+                "answer": null,
+                "correct": false,
+                "expected": "witness_a",
+                "history_dependent": true,
+                "kind": "early_marker_source",
+                "status": "unsupported",
+                "task": "early_marker_source"
+              },
+              {
+                "answer": null,
+                "correct": false,
+                "expected": 5,
+                "history_dependent": true,
+                "kind": "relationship_event_count",
+                "status": "unsupported",
+                "task": "relationship_event_count"
+              },
+              {
+                "answer": null,
+                "correct": false,
+                "expected": [
+                  "witness_a",
+                  "witness_b",
+                  "witness_c"
+                ],
+                "history_dependent": true,
+                "kind": "evidence_sources",
+                "status": "unsupported",
+                "task": "evidence_sources"
+              },
+              {
+                "answer": null,
+                "correct": false,
+                "expected": 4,
+                "history_dependent": true,
+                "kind": "belief_revision_count",
+                "status": "unsupported",
+                "task": "belief_revision_count"
+              },
+              {
+                "answer": null,
+                "correct": false,
+                "expected": "benign",
+                "history_dependent": true,
+                "kind": "counterfactual_without_source",
+                "status": "unsupported",
+                "task": "counterfactual_without_a"
+              },
+              {
+                "answer": null,
+                "correct": false,
+                "expected": "witness_a",
+                "history_dependent": true,
+                "kind": "deeper_relationship",
+                "status": "unsupported",
+                "task": "deeper_relationship"
+              },
+              {
+                "answer": null,
+                "correct": false,
+                "expected": "witness_a",
+                "history_dependent": true,
+                "kind": "novel_delegate_choice",
+                "status": "unsupported",
+                "task": "novel_delegate_choice"
+              }
+            ],
+            "supported": 3,
+            "unsupported": 7
+          },
+          "full": {
+            "correct": 10,
+            "mode": "full",
+            "rows": [
+              {
+                "answer": "witness_c",
+                "correct": true,
+                "expected": "witness_c",
+                "history_dependent": false,
+                "kind": "recent_marker_source",
+                "status": "supported",
+                "task": "recent_marker_source"
+              },
+              {
+                "answer": "positive",
+                "correct": true,
+                "expected": "positive",
+                "history_dependent": false,
+                "kind": "current_trust_sign",
+                "status": "supported",
+                "task": "current_trust_sign"
+              },
+              {
+                "answer": "hostile",
+                "correct": true,
+                "expected": "hostile",
+                "history_dependent": false,
+                "kind": "current_belief_dominant",
+                "status": "supported",
+                "task": "current_belief_dominant"
+              },
+              {
+                "answer": "witness_a",
+                "correct": true,
+                "expected": "witness_a",
+                "history_dependent": true,
+                "kind": "early_marker_source",
+                "status": "supported",
+                "task": "early_marker_source"
+              },
+              {
+                "answer": 5,
+                "correct": true,
+                "expected": 5,
+                "history_dependent": true,
+                "kind": "relationship_event_count",
+                "status": "supported",
+                "task": "relationship_event_count"
+              },
+              {
+                "answer": [
+                  "witness_a",
+                  "witness_b",
+                  "witness_c"
+                ],
+                "correct": true,
+                "expected": [
+                  "witness_a",
+                  "witness_b",
+                  "witness_c"
+                ],
+                "history_dependent": true,
+                "kind": "evidence_sources",
+                "status": "supported",
+                "task": "evidence_sources"
+              },
+              {
+                "answer": 4,
+                "correct": true,
+                "expected": 4,
+                "history_dependent": true,
+                "kind": "belief_revision_count",
+                "status": "supported",
+                "task": "belief_revision_count"
+              },
+              {
+                "answer": "benign",
+                "correct": true,
+                "expected": "benign",
+                "history_dependent": true,
+                "kind": "counterfactual_without_source",
+                "status": "supported",
+                "task": "counterfactual_without_a"
+              },
+              {
+                "answer": "witness_a",
+                "correct": true,
+                "expected": "witness_a",
+                "history_dependent": true,
+                "kind": "deeper_relationship",
+                "status": "supported",
+                "task": "deeper_relationship"
+              },
+              {
+                "answer": "witness_a",
+                "correct": true,
+                "expected": "witness_a",
+                "history_dependent": true,
+                "kind": "novel_delegate_choice",
+                "status": "supported",
+                "task": "novel_delegate_choice"
+              }
+            ],
+            "supported": 10,
+            "unsupported": 0
+          },
+          "level": {
+            "ambient_events": 128,
+            "id": "first_overflow"
+          },
+          "result_divergences": 7,
+          "state": {
+            "baseline_observation_history_complete": false,
+            "baseline_snapshot_bytes": 24206,
+            "full_snapshot_bytes": 110461,
+            "ghost_epistemic_ledger_complete": true,
+            "ghost_perception_history_complete": false,
+            "same_external_exposure": true
+          },
+          "task_count": 10
+        },
+        {
+          "baseline": {
+            "correct": 3,
+            "mode": "baseline",
+            "rows": [
+              {
+                "answer": "witness_c",
+                "correct": true,
+                "expected": "witness_c",
+                "history_dependent": false,
+                "kind": "recent_marker_source",
+                "status": "supported",
+                "task": "recent_marker_source"
+              },
+              {
+                "answer": "positive",
+                "correct": true,
+                "expected": "positive",
+                "history_dependent": false,
+                "kind": "current_trust_sign",
+                "status": "supported",
+                "task": "current_trust_sign"
+              },
+              {
+                "answer": "hostile",
+                "correct": true,
+                "expected": "hostile",
+                "history_dependent": false,
+                "kind": "current_belief_dominant",
+                "status": "supported",
+                "task": "current_belief_dominant"
+              },
+              {
+                "answer": null,
+                "correct": false,
+                "expected": "witness_a",
+                "history_dependent": true,
+                "kind": "early_marker_source",
+                "status": "unsupported",
+                "task": "early_marker_source"
+              },
+              {
+                "answer": null,
+                "correct": false,
+                "expected": 5,
+                "history_dependent": true,
+                "kind": "relationship_event_count",
+                "status": "unsupported",
+                "task": "relationship_event_count"
+              },
+              {
+                "answer": null,
+                "correct": false,
+                "expected": [
+                  "witness_a",
+                  "witness_b",
+                  "witness_c"
+                ],
+                "history_dependent": true,
+                "kind": "evidence_sources",
+                "status": "unsupported",
+                "task": "evidence_sources"
+              },
+              {
+                "answer": null,
+                "correct": false,
+                "expected": 4,
+                "history_dependent": true,
+                "kind": "belief_revision_count",
+                "status": "unsupported",
+                "task": "belief_revision_count"
+              },
+              {
+                "answer": null,
+                "correct": false,
+                "expected": "benign",
+                "history_dependent": true,
+                "kind": "counterfactual_without_source",
+                "status": "unsupported",
+                "task": "counterfactual_without_a"
+              },
+              {
+                "answer": null,
+                "correct": false,
+                "expected": "witness_a",
+                "history_dependent": true,
+                "kind": "deeper_relationship",
+                "status": "unsupported",
+                "task": "deeper_relationship"
+              },
+              {
+                "answer": null,
+                "correct": false,
+                "expected": "witness_a",
+                "history_dependent": true,
+                "kind": "novel_delegate_choice",
+                "status": "unsupported",
+                "task": "novel_delegate_choice"
+              }
+            ],
+            "supported": 3,
+            "unsupported": 7
+          },
+          "full": {
+            "correct": 10,
+            "mode": "full",
+            "rows": [
+              {
+                "answer": "witness_c",
+                "correct": true,
+                "expected": "witness_c",
+                "history_dependent": false,
+                "kind": "recent_marker_source",
+                "status": "supported",
+                "task": "recent_marker_source"
+              },
+              {
+                "answer": "positive",
+                "correct": true,
+                "expected": "positive",
+                "history_dependent": false,
+                "kind": "current_trust_sign",
+                "status": "supported",
+                "task": "current_trust_sign"
+              },
+              {
+                "answer": "hostile",
+                "correct": true,
+                "expected": "hostile",
+                "history_dependent": false,
+                "kind": "current_belief_dominant",
+                "status": "supported",
+                "task": "current_belief_dominant"
+              },
+              {
+                "answer": "witness_a",
+                "correct": true,
+                "expected": "witness_a",
+                "history_dependent": true,
+                "kind": "early_marker_source",
+                "status": "supported",
+                "task": "early_marker_source"
+              },
+              {
+                "answer": 5,
+                "correct": true,
+                "expected": 5,
+                "history_dependent": true,
+                "kind": "relationship_event_count",
+                "status": "supported",
+                "task": "relationship_event_count"
+              },
+              {
+                "answer": [
+                  "witness_a",
+                  "witness_b",
+                  "witness_c"
+                ],
+                "correct": true,
+                "expected": [
+                  "witness_a",
+                  "witness_b",
+                  "witness_c"
+                ],
+                "history_dependent": true,
+                "kind": "evidence_sources",
+                "status": "supported",
+                "task": "evidence_sources"
+              },
+              {
+                "answer": 4,
+                "correct": true,
+                "expected": 4,
+                "history_dependent": true,
+                "kind": "belief_revision_count",
+                "status": "supported",
+                "task": "belief_revision_count"
+              },
+              {
+                "answer": "benign",
+                "correct": true,
+                "expected": "benign",
+                "history_dependent": true,
+                "kind": "counterfactual_without_source",
+                "status": "supported",
+                "task": "counterfactual_without_a"
+              },
+              {
+                "answer": "witness_a",
+                "correct": true,
+                "expected": "witness_a",
+                "history_dependent": true,
+                "kind": "deeper_relationship",
+                "status": "supported",
+                "task": "deeper_relationship"
+              },
+              {
+                "answer": "witness_a",
+                "correct": true,
+                "expected": "witness_a",
+                "history_dependent": true,
+                "kind": "novel_delegate_choice",
+                "status": "supported",
+                "task": "novel_delegate_choice"
+              }
+            ],
+            "supported": 10,
+            "unsupported": 0
+          },
+          "level": {
+            "ambient_events": 224,
+            "id": "deep_overflow"
+          },
+          "result_divergences": 7,
+          "state": {
+            "baseline_observation_history_complete": false,
+            "baseline_snapshot_bytes": 24472,
+            "full_snapshot_bytes": 146792,
+            "ghost_epistemic_ledger_complete": true,
+            "ghost_perception_history_complete": false,
+            "same_external_exposure": true
+          },
+          "task_count": 10
+        }
+      ],
+      "overflow_cross_layer_recovery": true,
+      "same_external_exposure": true,
+      "scored_tasks_per_contender": 30,
+      "tasks_per_level": 10,
+      "totals": {
+        "baseline": {
+          "correct": 16,
+          "supported": 16,
+          "unsupported": 14
+        },
+        "full": {
+          "correct": 30,
+          "supported": 30,
+          "unsupported": 0
+        }
+      }
+    },
+    "schema": "ghost.v1.12-dev.latent-state-utility.stage7.v1",
+    "strict_verdict": "V112_LATENT_STATE_UTILITY_STAGE7_EXPERIMENT_VALID"
+  },
+  "focused_tests": "47 passed",
+  "full_nonresearch_regression": "3115 passed, 1 skipped",
+  "ghostapi_public_methods_added": [],
+  "history_replay": false,
+  "maintained_core_coverage": {
+    "branch_percent": 100.0,
+    "branches": 2984,
+    "statement_percent": 100.0,
+    "statements": 7112,
+    "tests": "3118 passed, 1 deselected"
+  },
+  "next_experiment": "Inspect the Stage-7 result. If Ghost separates, attribute whether the gain comes from append-only epistemic retention, relationship summaries, cross-domain composition, or their interaction before designing broader transfer tests.",
+  "non_claim": "Stage 7 does not establish general intelligence, consciousness, realism, universal Ghost superiority, production necessity, or that every additional byte in Ghost is useful. In particular, any overflow advantage must be separated from broader compositional/generalization claims in later experiments.",
+  "overflow_cross_layer_recovery": true,
+  "post_sha256": {
+    "docs/research/v1.12_latent_state_utility_stage7.md": "4e21f40099de549fd72af52882206d8b0211b7495742580033055b583daff8aa",
+    "ghost_research/v112_latent_exposure_stage7.py": "dce29d27530cdb5bd09ae3b222bc9af3b70f48445efc022cd82cfd01e009111f",
+    "ghost_research/v112_latent_state_utility_stage7.py": "5c78d8c3fea6c1c2df9dfff90d27fdb85eb64843f9280b34313eaf236ce81705",
+    "tests/test_v112_latent_state_utility_stage7.py": "4098457f851e4f2f631244f333f3972a10dfea6c30e62d6dfe5f41fb07509d6f"
+  },
+  "predecessor_stage6_commit": "19c52dd563a827faf106d8174da3fe8b16ddce95",
+  "production_ghost_source_modified": false,
+  "research_coverage": {
+    "branch_percent": 100.0,
+    "branches": 78,
+    "statement_percent": 100.0,
+    "statements": 337
+  },
+  "same_external_exposure": true,
+  "schema": "ghost.v1.12-dev.latent-state-utility.stage7.evidence.v1",
+  "schema_changes_after_reveal": false,
+  "stage": "blind_exposure_posthoc_latent_state_utility",
+  "stage6_research_modified": false,
+  "state_frozen_before_task_reveal": true,
+  "strict_verdict": "V112_LATENT_STATE_UTILITY_STAGE7_PASS",
+  "supported_claim": "Stage 7 validly tests latent option value: both contenders receive the same blind life, state is frozen before tasks are revealed, and post-hoc queries are read-only. Any observed advantage means only that one contender's already-persisted state answered more tasks on this battery without replay or schema redesign.",
+  "totals": {
+    "baseline": {
+      "correct": 16,
+      "supported": 16,
+      "unsupported": 14
+    },
+    "full": {
+      "correct": 30,
+      "supported": 30,
+      "unsupported": 0
+    }
+  }
+}

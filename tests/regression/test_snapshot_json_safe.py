@@ -1,0 +1,38 @@
+import json
+
+import pytest
+
+from ghost.engine import GhostEngine
+
+
+def test_snapshot_json_safe_strict_mode():
+    engine = GhostEngine()
+
+    engine.step(
+        {
+            "source": "runtime",
+            "intent": "threat",
+            "actor": "a",
+            "target": "b",
+            "intensity": 0.5,
+        }
+    )
+
+    snapshot = engine.snapshot()
+
+    assert isinstance(snapshot["ghost_version"], str)
+    assert snapshot["ghost_version"]
+
+    assert isinstance(snapshot["schema_version"], str)
+    assert snapshot["schema_version"]
+
+    json.dumps(snapshot, allow_nan=False)
+
+
+def test_snapshot_rejects_non_finite_state_in_strict_mode():
+    engine = GhostEngine()
+
+    engine.state()["poison"] = float("inf")
+
+    with pytest.raises(ValueError):
+        engine.snapshot()

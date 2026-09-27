@@ -1,0 +1,428 @@
+{
+  "experiment": {
+    "all_correct": true,
+    "all_exact_reference_matches": true,
+    "all_exact_roundtrips": true,
+    "claim_boundary": "Stage 9C tests live incremental maintenance of the compact epistemic observation representation and task-blind query indexes alongside the unchanged Full-Ghost runtime. It requires exact final parity with the frozen Stage-7 reference, exact compact roundtrip, and sidecar restart continuity. It does not yet replace Ghost's in-memory epistemic runtime, test full Ghost restart-and-continue, or establish production readiness.",
+    "constraints": {
+      "full_ghost_restart_continuation_not_tested": true,
+      "no_periodic_full_rebuilds": true,
+      "no_weighted_composite_score": true,
+      "production_ghost_modified": false,
+      "record_deletion_not_supported_by_current_public_epistemic_contract": true,
+      "research_only": true,
+      "sidecar_restart_tested": true,
+      "timing_is_telemetry_not_gate": true,
+      "writer_never_receives_task_registry": true
+    },
+    "levels": [
+      {
+        "all_correct": true,
+        "answers": [
+          {
+            "expected": "witness_c",
+            "incremental": "witness_c",
+            "task": "recent_marker_source"
+          },
+          {
+            "expected": "positive",
+            "incremental": "positive",
+            "task": "current_trust_sign"
+          },
+          {
+            "expected": "hostile",
+            "incremental": "hostile",
+            "task": "current_belief_dominant"
+          },
+          {
+            "expected": "witness_a",
+            "incremental": "witness_a",
+            "task": "early_marker_source"
+          },
+          {
+            "expected": 5,
+            "incremental": 5,
+            "task": "relationship_event_count"
+          },
+          {
+            "expected": [
+              "witness_a",
+              "witness_b",
+              "witness_c"
+            ],
+            "incremental": [
+              "witness_a",
+              "witness_b",
+              "witness_c"
+            ],
+            "task": "evidence_sources"
+          },
+          {
+            "expected": 4,
+            "incremental": 4,
+            "task": "belief_revision_count"
+          },
+          {
+            "expected": "benign",
+            "incremental": "benign",
+            "task": "counterfactual_without_a"
+          },
+          {
+            "expected": "witness_a",
+            "incremental": "witness_a",
+            "task": "deeper_relationship"
+          },
+          {
+            "expected": "witness_a",
+            "incremental": "witness_a",
+            "task": "novel_delegate_choice"
+          }
+        ],
+        "exact_reference_match": true,
+        "exact_roundtrip": true,
+        "level": {
+          "ambient_events": 224,
+          "id": "events_224"
+        },
+        "storage": {
+          "archive_snapshot_bytes": 65573,
+          "current_snapshot_bytes": 146048,
+          "incremental_compact_plus_index_bytes": 83334,
+          "incremental_compact_snapshot_bytes": 76006,
+          "incremental_index_payload_bytes": 7328
+        },
+        "timing": {
+          "archive_append_us_total": 1921.794,
+          "archive_query_battery_us": 194.609,
+          "expand_us": 7273.789,
+          "ghost_update_us_total": 23858.245,
+          "incremental_100_batteries_us": 6337.617,
+          "incremental_query_battery_us": 67.032,
+          "samples": 5,
+          "sidecar_restart_us": 6642.266,
+          "sidecar_update_us_total": 3108.087
+        },
+        "write_work": {
+          "no_full_rebuilds": true,
+          "observation_rows": 240,
+          "other_records": 26,
+          "records_ingested": 266,
+          "sidecar_restarts": 2
+        }
+      },
+      {
+        "all_correct": true,
+        "answers": [
+          {
+            "expected": "witness_c",
+            "incremental": "witness_c",
+            "task": "recent_marker_source"
+          },
+          {
+            "expected": "positive",
+            "incremental": "positive",
+            "task": "current_trust_sign"
+          },
+          {
+            "expected": "hostile",
+            "incremental": "hostile",
+            "task": "current_belief_dominant"
+          },
+          {
+            "expected": "witness_a",
+            "incremental": "witness_a",
+            "task": "early_marker_source"
+          },
+          {
+            "expected": 5,
+            "incremental": 5,
+            "task": "relationship_event_count"
+          },
+          {
+            "expected": [
+              "witness_a",
+              "witness_b",
+              "witness_c"
+            ],
+            "incremental": [
+              "witness_a",
+              "witness_b",
+              "witness_c"
+            ],
+            "task": "evidence_sources"
+          },
+          {
+            "expected": 4,
+            "incremental": 4,
+            "task": "belief_revision_count"
+          },
+          {
+            "expected": "benign",
+            "incremental": "benign",
+            "task": "counterfactual_without_a"
+          },
+          {
+            "expected": "witness_a",
+            "incremental": "witness_a",
+            "task": "deeper_relationship"
+          },
+          {
+            "expected": "witness_a",
+            "incremental": "witness_a",
+            "task": "novel_delegate_choice"
+          }
+        ],
+        "exact_reference_match": true,
+        "exact_roundtrip": true,
+        "level": {
+          "ambient_events": 1024,
+          "id": "events_1024"
+        },
+        "storage": {
+          "archive_snapshot_bytes": 203475,
+          "current_snapshot_bytes": 447445,
+          "incremental_compact_plus_index_bytes": 166241,
+          "incremental_compact_snapshot_bytes": 139649,
+          "incremental_index_payload_bytes": 26592
+        },
+        "timing": {
+          "archive_append_us_total": 8244.637,
+          "archive_query_battery_us": 491.054,
+          "expand_us": 22301.289,
+          "ghost_update_us_total": 98168.369,
+          "incremental_100_batteries_us": 6276.094,
+          "incremental_query_battery_us": 64.765,
+          "samples": 5,
+          "sidecar_restart_us": 21843.711,
+          "sidecar_update_us_total": 11597.141
+        },
+        "write_work": {
+          "no_full_rebuilds": true,
+          "observation_rows": 1040,
+          "other_records": 26,
+          "records_ingested": 1066,
+          "sidecar_restarts": 2
+        }
+      },
+      {
+        "all_correct": true,
+        "answers": [
+          {
+            "expected": "witness_c",
+            "incremental": "witness_c",
+            "task": "recent_marker_source"
+          },
+          {
+            "expected": "positive",
+            "incremental": "positive",
+            "task": "current_trust_sign"
+          },
+          {
+            "expected": "hostile",
+            "incremental": "hostile",
+            "task": "current_belief_dominant"
+          },
+          {
+            "expected": "witness_a",
+            "incremental": "witness_a",
+            "task": "early_marker_source"
+          },
+          {
+            "expected": 5,
+            "incremental": 5,
+            "task": "relationship_event_count"
+          },
+          {
+            "expected": [
+              "witness_a",
+              "witness_b",
+              "witness_c"
+            ],
+            "incremental": [
+              "witness_a",
+              "witness_b",
+              "witness_c"
+            ],
+            "task": "evidence_sources"
+          },
+          {
+            "expected": 4,
+            "incremental": 4,
+            "task": "belief_revision_count"
+          },
+          {
+            "expected": "benign",
+            "incremental": "benign",
+            "task": "counterfactual_without_a"
+          },
+          {
+            "expected": "witness_a",
+            "incremental": "witness_a",
+            "task": "deeper_relationship"
+          },
+          {
+            "expected": "witness_a",
+            "incremental": "witness_a",
+            "task": "novel_delegate_choice"
+          }
+        ],
+        "exact_reference_match": true,
+        "exact_roundtrip": true,
+        "level": {
+          "ambient_events": 2048,
+          "id": "events_2048"
+        },
+        "storage": {
+          "archive_snapshot_bytes": 383141,
+          "current_snapshot_bytes": 837971,
+          "incremental_compact_plus_index_bytes": 280194,
+          "incremental_compact_snapshot_bytes": 226978,
+          "incremental_index_payload_bytes": 53216
+        },
+        "timing": {
+          "archive_append_us_total": 16038.816,
+          "archive_query_battery_us": 846.445,
+          "expand_us": 42718.906,
+          "ghost_update_us_total": 193938.466,
+          "incremental_100_batteries_us": 6358.594,
+          "incremental_query_battery_us": 65.156,
+          "samples": 5,
+          "sidecar_restart_us": 42241.172,
+          "sidecar_update_us_total": 22633.839
+        },
+        "write_work": {
+          "no_full_rebuilds": true,
+          "observation_rows": 2064,
+          "other_records": 26,
+          "records_ingested": 2090,
+          "sidecar_restarts": 2
+        }
+      },
+      {
+        "all_correct": true,
+        "answers": [
+          {
+            "expected": "witness_c",
+            "incremental": "witness_c",
+            "task": "recent_marker_source"
+          },
+          {
+            "expected": "positive",
+            "incremental": "positive",
+            "task": "current_trust_sign"
+          },
+          {
+            "expected": "hostile",
+            "incremental": "hostile",
+            "task": "current_belief_dominant"
+          },
+          {
+            "expected": "witness_a",
+            "incremental": "witness_a",
+            "task": "early_marker_source"
+          },
+          {
+            "expected": 5,
+            "incremental": 5,
+            "task": "relationship_event_count"
+          },
+          {
+            "expected": [
+              "witness_a",
+              "witness_b",
+              "witness_c"
+            ],
+            "incremental": [
+              "witness_a",
+              "witness_b",
+              "witness_c"
+            ],
+            "task": "evidence_sources"
+          },
+          {
+            "expected": 4,
+            "incremental": 4,
+            "task": "belief_revision_count"
+          },
+          {
+            "expected": "benign",
+            "incremental": "benign",
+            "task": "counterfactual_without_a"
+          },
+          {
+            "expected": "witness_a",
+            "incremental": "witness_a",
+            "task": "deeper_relationship"
+          },
+          {
+            "expected": "witness_a",
+            "incremental": "witness_a",
+            "task": "novel_delegate_choice"
+          }
+        ],
+        "exact_reference_match": true,
+        "exact_roundtrip": true,
+        "level": {
+          "ambient_events": 4096,
+          "id": "events_4096"
+        },
+        "storage": {
+          "archive_snapshot_bytes": 741726,
+          "current_snapshot_bytes": 1618444,
+          "incremental_compact_plus_index_bytes": 507521,
+          "incremental_compact_snapshot_bytes": 401057,
+          "incremental_index_payload_bytes": 106464
+        },
+        "timing": {
+          "archive_append_us_total": 32055.191,
+          "archive_query_battery_us": 1653.867,
+          "expand_us": 85073.984,
+          "ghost_update_us_total": 385709.856,
+          "incremental_100_batteries_us": 6332.109,
+          "incremental_query_battery_us": 66.758,
+          "samples": 5,
+          "sidecar_restart_us": 84152.774,
+          "sidecar_update_us_total": 46542.599
+        },
+        "write_work": {
+          "no_full_rebuilds": true,
+          "observation_rows": 4112,
+          "other_records": 26,
+          "records_ingested": 4138,
+          "sidecar_restarts": 2
+        }
+      }
+    ],
+    "schema": "ghost.v1.12-dev.incremental-compact.stage9c.v1",
+    "strict_verdict": "V112_INCREMENTAL_COMPACT_STAGE9C_EXPERIMENT_VALID"
+  },
+  "focused_tests": "32 passed",
+  "full_nonresearch_regression": "3334 passed, 1 skipped",
+  "ghostapi_public_methods_added": [],
+  "maintained_core_coverage": {
+    "branch_percent": 100.0,
+    "branches": 2984,
+    "statement_percent": 100.0,
+    "statements": 7112
+  },
+  "next_experiment": "If the incremental frontier remains favorable, isolate productionization risks: full Ghost restart-and-continue, incremental restore integration, corruption/adversarial mutation handling, and then a guarded production candidate without changing semantics.",
+  "non_claim": "Stage 9C does not replace the in-memory Ghost epistemic runtime, test full-process Ghost restart-and-continue, add record deletion semantics, establish production readiness, or make timing a pass/fail criterion.",
+  "post_sha256": {
+    "docs/research/v1.12_incremental_compact_stage9c.md": "c426d189566a42598c4d7c0c32f6531d8162e29a9ed5aaed6dea5e75790bf9c5",
+    "ghost_research/v112_incremental_compact_codec_stage9c.py": "e0a8bd2e2b977a3a629e448c3b6f377d07ff6b69a6bb03a080269f544ff247e7",
+    "ghost_research/v112_incremental_compact_stage9c.py": "de5ea21c966920c91e2d14799577e4067f55b0f9d8774a3766ba046f052e040d",
+    "tests/test_v112_incremental_compact_stage9c.py": "f07bee2bd7ecc69e5e45112bfa21fe23b79cff2692a072362219d177f50d0096"
+  },
+  "predecessor_stage9b_commit": "a470c2e6737eb4da67b8ac1f5ded5e77a6c41a26",
+  "production_ghost_source_modified": false,
+  "research_coverage": {
+    "branch_percent": 100.0,
+    "branches": 78,
+    "statement_percent": 100.0,
+    "statements": 320
+  },
+  "schema": "ghost.v1.12-dev.incremental-compact.stage9c.evidence.v1",
+  "stage": "live_incremental_compact_epistemic_sidecar_and_index_adjudication",
+  "strict_verdict": "V112_INCREMENTAL_COMPACT_STAGE9C_PASS",
+  "supported_claim": "Stage 9C tests live incremental maintenance of the compact epistemic observation representation and task-blind indexes alongside unchanged Full Ghost, with exact Stage-7 reference parity, exact full-snapshot reconstruction, and sidecar restart continuity."
+}

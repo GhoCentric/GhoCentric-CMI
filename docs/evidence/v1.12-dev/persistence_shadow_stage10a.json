@@ -1,0 +1,155 @@
+{
+  "default_behavior_changed": false,
+  "existing_production_files_modified": false,
+  "experiment": {
+    "all_gates_pass": true,
+    "claim_boundary": "Stage 10A ports the lossless compact representation into internal production-package code and tests an explicit opt-in shadow store. The canonical full snapshot remains the baseline authority. Candidate corruption, unsupported candidate versions, candidate encode/write failure, or explicit rollback must fall back to the exact baseline state. This does not activate persistence through GhostAPI, replace host persistence, establish distributed locking, or prove sudden-power-loss durability.",
+    "constraints": {
+      "candidate_is_never_required_for_baseline_load": true,
+      "default_path_is_inert": true,
+      "distributed_locking_not_claimed": true,
+      "existing_production_files_modified": false,
+      "power_loss_durability_not_claimed": true,
+      "production_candidate_added": true,
+      "production_modules_import_ghost_research": false,
+      "public_api_modified": false,
+      "single_host_advisory_lock_only": true,
+      "timing_is_telemetry_not_gate": true
+    },
+    "gates": {
+      "candidate_failure_fallback": true,
+      "compact_roundtrip": true,
+      "corruption_fallback": true,
+      "default_inert": true,
+      "research_representation_parity": true,
+      "rollback": true,
+      "shadow_dual_write": true,
+      "version_fallback": true
+    },
+    "levels": [
+      {
+        "candidate_failure_preserves_baseline": true,
+        "corrupt_candidate_falls_back": true,
+        "default_inert": true,
+        "exact_compact_roundtrip": true,
+        "exact_research_representation": true,
+        "level": {
+          "ambient_events": 224,
+          "id": "events_224"
+        },
+        "rollback_preserves_baseline": true,
+        "shadow_dual_write_exact": true,
+        "storage": {
+          "compact_json_bytes": 79717,
+          "full_json_bytes": 153897
+        },
+        "timing": {
+          "two_shadow_writes_us": 304371.875,
+          "verified_shadow_load_us": 43928.125
+        },
+        "unsupported_version_falls_back": true
+      },
+      {
+        "candidate_failure_preserves_baseline": true,
+        "corrupt_candidate_falls_back": true,
+        "default_inert": true,
+        "exact_compact_roundtrip": true,
+        "exact_research_representation": true,
+        "level": {
+          "ambient_events": 1024,
+          "id": "events_1024"
+        },
+        "rollback_preserves_baseline": true,
+        "shadow_dual_write_exact": true,
+        "storage": {
+          "compact_json_bytes": 143458,
+          "full_json_bytes": 455355
+        },
+        "timing": {
+          "two_shadow_writes_us": 713360.976,
+          "verified_shadow_load_us": 132347.304
+        },
+        "unsupported_version_falls_back": true
+      },
+      {
+        "candidate_failure_preserves_baseline": true,
+        "corrupt_candidate_falls_back": true,
+        "default_inert": true,
+        "exact_compact_roundtrip": true,
+        "exact_research_representation": true,
+        "level": {
+          "ambient_events": 2048,
+          "id": "events_2048"
+        },
+        "rollback_preserves_baseline": true,
+        "shadow_dual_write_exact": true,
+        "storage": {
+          "compact_json_bytes": 230745,
+          "full_json_bytes": 845839
+        },
+        "timing": {
+          "two_shadow_writes_us": 1195063.555,
+          "verified_shadow_load_us": 269023.906
+        },
+        "unsupported_version_falls_back": true
+      },
+      {
+        "candidate_failure_preserves_baseline": true,
+        "corrupt_candidate_falls_back": true,
+        "default_inert": true,
+        "exact_compact_roundtrip": true,
+        "exact_research_representation": true,
+        "level": {
+          "ambient_events": 4096,
+          "id": "events_4096"
+        },
+        "rollback_preserves_baseline": true,
+        "shadow_dual_write_exact": true,
+        "storage": {
+          "compact_json_bytes": 404825,
+          "full_json_bytes": 1626313
+        },
+        "timing": {
+          "two_shadow_writes_us": 2271458.672,
+          "verified_shadow_load_us": 492183.008
+        },
+        "unsupported_version_falls_back": true
+      }
+    ],
+    "schema": "ghost.v1.12-dev.persistence-shadow.stage10a.v1",
+    "strict_verdict": "V112_PERSISTENCE_SHADOW_STAGE10A_EXPERIMENT_VALID"
+  },
+  "focused_coverage": {
+    "branch_percent": 100.0,
+    "branches": 172,
+    "statement_percent": 100.0,
+    "statements": 565
+  },
+  "focused_tests": "112 passed",
+  "full_nonresearch_regression": "3582 passed, 1 skipped",
+  "ghostapi_public_methods_added": [],
+  "maintained_core_coverage": {
+    "branch_percent": 100.0,
+    "branches": 3150,
+    "statement_percent": 100.0,
+    "statements": 7587
+  },
+  "next_experiment": "If Stage 10A passes, test a guarded runtime integration boundary behind an explicit configuration object: shadow writes triggered from real GhostAPI snapshots, health telemetry and circuit-breaker disablement, exact restore comparison, and zero behavior/state change when disabled before considering any public persistence API or replacement.",
+  "non_claim": "Stage 10A does not activate persistence through GhostAPI, modify existing Ghost runtime behavior, replace host persistence, prove distributed/multi-host locking, prove sudden hardware power-loss durability, provide authenticated tamper resistance, or establish that the candidate should become the default persistence format.",
+  "post_sha256": {
+    "docs/research/v1.12_persistence_shadow_stage10a.md": "0ded939b2fe6aba99321e94955d1be9fe91ebf65d843a94d57959d3ad41dbc90",
+    "ghost/_persistence_codec.py": "cb9db3cdda40e7831c2452e674efcc5404e5df4a3ab79ec7bef94e39751f52bb",
+    "ghost/_persistence_shadow.py": "cd839ad057329c165e6618b6b54e22d7a8677a2996419f604044bc8e2abf6121",
+    "ghost_research/v112_persistence_shadow_stage10a.py": "17253ac96818a29ecf2cde5010526c66344f9d4cb6064b50ac9872b97efe36b1",
+    "tests/test_v112_persistence_shadow_stage10a.py": "f978e28d74a30ad980627729a32c3e46248ff6435ffd720fe2488262665cf6e3"
+  },
+  "predecessor_stage9f_commit": "9b16dc03becde1277134b057611420d3c19983dc",
+  "production_candidate_files_added": [
+    "ghost/_persistence_codec.py",
+    "ghost/_persistence_shadow.py"
+  ],
+  "schema": "ghost.v1.12-dev.persistence-shadow.stage10a.evidence.v1",
+  "stage": "guarded_internal_production_candidate_shadow_dual_write_and_fallback_adjudication",
+  "strict_verdict": "V112_PERSISTENCE_SHADOW_STAGE10A_PASS",
+  "supported_claim": "Stage 10A ports the validated lossless compact representation into internal production-package modules and exercises an explicit opt-in dual-write shadow store. With the full canonical snapshot retained as baseline authority, the candidate representation is exact across the frozen Stage-9C/9E states, verified candidate loads equal baseline state, and unsupported candidate versions, corruption, candidate encoding failure, and explicit rollback all recover the exact baseline rather than blocking it."
+}

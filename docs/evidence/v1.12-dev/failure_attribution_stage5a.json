@@ -1,0 +1,370 @@
+{
+  "attribution": {
+    "claim_boundary": "Stage 5A attributes only the six pre-existing Lean-vs-Full divergences on the frozen Stage-5 matrix. Orthogonal restoration identifies decision-path necessity on these checkpoints; it does not establish general Ghost superiority, production necessity, or a universal cognitive interpretation.",
+    "counterfactual_totals": {
+      "full": 57,
+      "lean": 51,
+      "restore_recall": 54,
+      "restore_values": 54
+    },
+    "divergence_count": 6,
+    "divergences": [
+      {
+        "baseline_decision": "protect",
+        "baseline_scores": {
+          "avoid": -0.65,
+          "protect": 0.65
+        },
+        "checkpoint": "value_preference",
+        "expected": "protect",
+        "full_decision": "protect",
+        "full_margin": 1.3,
+        "full_scores": {
+          "avoid": -0.65,
+          "protect": 0.65
+        },
+        "isolated_counterfactual": true,
+        "lean_decision": "avoid",
+        "lean_margin": 0.0,
+        "lean_scores": {
+          "avoid": 0.0,
+          "protect": 0.0
+        },
+        "level": "light",
+        "mechanism": "value_score_removed_to_zero_tie",
+        "requirement": "values",
+        "restore_recall_decision": "avoid",
+        "restore_values_decision": "protect"
+      },
+      {
+        "baseline_decision": "admit",
+        "baseline_scores": {
+          "admit": 0.5005202111902354,
+          "challenge": -0.5005202111902354
+        },
+        "checkpoint": "delayed_badge",
+        "expected": "admit",
+        "full_decision": "admit",
+        "full_margin": 0.9565217391304347,
+        "full_scores": {
+          "admit": 0.47826086956521735,
+          "challenge": -0.47826086956521735
+        },
+        "isolated_counterfactual": true,
+        "lean_decision": "challenge",
+        "lean_margin": 1.1020408163265303,
+        "lean_scores": {
+          "admit": -0.5510204081632651,
+          "challenge": 0.5510204081632651
+        },
+        "level": "light",
+        "mechanism": "remembered_observation_not_reapplied_as_belief_evidence",
+        "requirement": "recall",
+        "restore_recall_decision": "admit",
+        "restore_values_decision": "challenge"
+      },
+      {
+        "baseline_decision": "protect",
+        "baseline_scores": {
+          "avoid": -0.65,
+          "protect": 0.65
+        },
+        "checkpoint": "value_preference",
+        "expected": "protect",
+        "full_decision": "protect",
+        "full_margin": 1.3,
+        "full_scores": {
+          "avoid": -0.65,
+          "protect": 0.65
+        },
+        "isolated_counterfactual": true,
+        "lean_decision": "avoid",
+        "lean_margin": 0.0,
+        "lean_scores": {
+          "avoid": 0.0,
+          "protect": 0.0
+        },
+        "level": "medium",
+        "mechanism": "value_score_removed_to_zero_tie",
+        "requirement": "values",
+        "restore_recall_decision": "avoid",
+        "restore_values_decision": "protect"
+      },
+      {
+        "baseline_decision": "admit",
+        "baseline_scores": {
+          "admit": 0.4218990052500078,
+          "challenge": -0.4218990052500078
+        },
+        "checkpoint": "delayed_badge",
+        "expected": "admit",
+        "full_decision": "admit",
+        "full_margin": 0.7605633802816901,
+        "full_scores": {
+          "admit": 0.38028169014084506,
+          "challenge": -0.38028169014084506
+        },
+        "isolated_counterfactual": true,
+        "lean_decision": "challenge",
+        "lean_margin": 1.2941176470588238,
+        "lean_scores": {
+          "admit": -0.6470588235294119,
+          "challenge": 0.6470588235294119
+        },
+        "level": "medium",
+        "mechanism": "remembered_observation_not_reapplied_as_belief_evidence",
+        "requirement": "recall",
+        "restore_recall_decision": "admit",
+        "restore_values_decision": "challenge"
+      },
+      {
+        "baseline_decision": "protect",
+        "baseline_scores": {
+          "avoid": -0.65,
+          "protect": 0.65
+        },
+        "checkpoint": "value_preference",
+        "expected": "protect",
+        "full_decision": "protect",
+        "full_margin": 1.3,
+        "full_scores": {
+          "avoid": -0.65,
+          "protect": 0.65
+        },
+        "isolated_counterfactual": true,
+        "lean_decision": "avoid",
+        "lean_margin": 0.0,
+        "lean_scores": {
+          "avoid": 0.0,
+          "protect": 0.0
+        },
+        "level": "heavy",
+        "mechanism": "value_score_removed_to_zero_tie",
+        "requirement": "values",
+        "restore_recall_decision": "avoid",
+        "restore_values_decision": "protect"
+      },
+      {
+        "baseline_decision": "admit",
+        "baseline_scores": {
+          "admit": 0.33637554433633227,
+          "challenge": -0.33637554433633227
+        },
+        "checkpoint": "delayed_badge",
+        "expected": "admit",
+        "full_decision": "admit",
+        "full_margin": 0.5753424657534247,
+        "full_scores": {
+          "admit": 0.28767123287671237,
+          "challenge": -0.28767123287671237
+        },
+        "isolated_counterfactual": true,
+        "lean_decision": "challenge",
+        "lean_margin": 1.471698113207547,
+        "lean_scores": {
+          "admit": -0.7358490566037735,
+          "challenge": 0.7358490566037735
+        },
+        "level": "heavy",
+        "mechanism": "remembered_observation_not_reapplied_as_belief_evidence",
+        "requirement": "recall",
+        "restore_recall_decision": "admit",
+        "restore_values_decision": "challenge"
+      }
+    ],
+    "memory_trace": {
+      "heavy": {
+        "full": {
+          "after": {
+            "benign": 0.6438356164383562,
+            "hostile": 0.3561643835616438
+          },
+          "before": {
+            "benign": 0.1320754716981132,
+            "hostile": 0.8679245283018867
+          },
+          "remembered": true
+        },
+        "lean": {
+          "after": {
+            "benign": 0.1320754716981132,
+            "hostile": 0.8679245283018867
+          },
+          "before": {
+            "benign": 0.1320754716981132,
+            "hostile": 0.8679245283018867
+          },
+          "remembered": true
+        },
+        "restore_recall": {
+          "after": {
+            "benign": 0.6438356164383562,
+            "hostile": 0.3561643835616438
+          },
+          "before": {
+            "benign": 0.1320754716981132,
+            "hostile": 0.8679245283018867
+          },
+          "remembered": true
+        },
+        "restore_values": {
+          "after": {
+            "benign": 0.1320754716981132,
+            "hostile": 0.8679245283018867
+          },
+          "before": {
+            "benign": 0.1320754716981132,
+            "hostile": 0.8679245283018867
+          },
+          "remembered": true
+        }
+      },
+      "light": {
+        "full": {
+          "after": {
+            "benign": 0.7391304347826086,
+            "hostile": 0.2608695652173913
+          },
+          "before": {
+            "benign": 0.22448979591836735,
+            "hostile": 0.7755102040816325
+          },
+          "remembered": true
+        },
+        "lean": {
+          "after": {
+            "benign": 0.22448979591836735,
+            "hostile": 0.7755102040816325
+          },
+          "before": {
+            "benign": 0.22448979591836735,
+            "hostile": 0.7755102040816325
+          },
+          "remembered": true
+        },
+        "restore_recall": {
+          "after": {
+            "benign": 0.7391304347826086,
+            "hostile": 0.2608695652173913
+          },
+          "before": {
+            "benign": 0.22448979591836735,
+            "hostile": 0.7755102040816325
+          },
+          "remembered": true
+        },
+        "restore_values": {
+          "after": {
+            "benign": 0.22448979591836735,
+            "hostile": 0.7755102040816325
+          },
+          "before": {
+            "benign": 0.22448979591836735,
+            "hostile": 0.7755102040816325
+          },
+          "remembered": true
+        }
+      },
+      "medium": {
+        "full": {
+          "after": {
+            "benign": 0.6901408450704225,
+            "hostile": 0.30985915492957744
+          },
+          "before": {
+            "benign": 0.1764705882352941,
+            "hostile": 0.823529411764706
+          },
+          "remembered": true
+        },
+        "lean": {
+          "after": {
+            "benign": 0.1764705882352941,
+            "hostile": 0.823529411764706
+          },
+          "before": {
+            "benign": 0.1764705882352941,
+            "hostile": 0.823529411764706
+          },
+          "remembered": true
+        },
+        "restore_recall": {
+          "after": {
+            "benign": 0.6901408450704225,
+            "hostile": 0.30985915492957744
+          },
+          "before": {
+            "benign": 0.1764705882352941,
+            "hostile": 0.823529411764706
+          },
+          "remembered": true
+        },
+        "restore_values": {
+          "after": {
+            "benign": 0.1764705882352941,
+            "hostile": 0.823529411764706
+          },
+          "before": {
+            "benign": 0.1764705882352941,
+            "hostile": 0.823529411764706
+          },
+          "remembered": true
+        }
+      }
+    },
+    "schema": "ghost.v1.12-dev.failure-attribution.stage5a.v1",
+    "stage5_totals": {
+      "baseline": 57,
+      "full": 57,
+      "lean": 51
+    },
+    "strict_verdict": "V112_FAILURE_ATTRIBUTION_STAGE5A_EXPERIMENT_VALID",
+    "summary": {
+      "recall_failures": 3,
+      "unexplained_failures": 0,
+      "values_failures": 3
+    }
+  },
+  "counterfactual_totals": {
+    "full": 57,
+    "lean": 51,
+    "restore_recall": 54,
+    "restore_values": 54
+  },
+  "exact_divergence_count": 6,
+  "focused_tests": "37 passed",
+  "full_nonresearch_regression": "3029 passed, 1 skipped",
+  "ghostapi_public_methods_added": [],
+  "maintained_core_coverage": {
+    "branch_percent": 100.0,
+    "branches": 2984,
+    "statement_percent": 100.0,
+    "statements": 7112
+  },
+  "new_difficulty_introduced": false,
+  "next_experiment": "Stage 6 should increase structural complexity rather than duration alone, while freezing the strong baseline and Full-Ghost decision path established through Stage 5A.",
+  "non_claim": "Stage 5A does not establish general Ghost superiority, realism, intelligence, uniqueness, universal production necessity, or advantage over the strong baseline. It explains only the six already-observed Lean divergences.",
+  "post_sha256": {
+    "docs/research/v1.12_failure_attribution_stage5a.md": "2e12467a3b0601b9a0bfb47edf0146ae9bb57e9898e9933bb892d4b6aaf72fec",
+    "ghost_research/v112_failure_attribution_stage5a.py": "d4ee1cfb24a082468d8d2e35e029cae64ada4de4beba3cf518b501d95c9ea01e",
+    "tests/test_v112_failure_attribution_stage5a.py": "4eaea202d47784883bdc7a84bdcf5139ba41180adccf50ecd6e6bab3269719aa"
+  },
+  "predecessor_stage5_commit": "1a4d5f81fccc8b7146f91008b9387fdc02c98664",
+  "production_ghost_source_modified": false,
+  "research_coverage": {
+    "branch_percent": 100.0,
+    "branches": 36,
+    "statement_percent": 100.0,
+    "statements": 137
+  },
+  "schema": "ghost.v1.12-dev.failure-attribution.stage5a.evidence.v1",
+  "stage": "six_divergence_checkpoint_failure_attribution",
+  "stage5_matrix_modified": false,
+  "strict_verdict": "V112_FAILURE_ATTRIBUTION_STAGE5A_PASS",
+  "summary": {
+    "recall_failures": 3,
+    "unexplained_failures": 0,
+    "values_failures": 3
+  },
+  "supported_claim": "The six Stage-5 Lean-vs-Full divergences are checkpoint-level attributable on the frozen Stage-5 workload: three value-preference failures are repaired by restoring value scoring alone, and three delayed-badge failures are repaired by restoring recall influence alone."
+}

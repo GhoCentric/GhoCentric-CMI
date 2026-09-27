@@ -1,0 +1,71 @@
+[build-system]
+requires = ["setuptools>=61,<77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ghocentric-ghost-engine"
+version = "1.11.0"
+description = "Deterministic continuity and memory infrastructure for long-lived agents and reactive systems."
+readme = "README.md"
+requires-python = ">=3.9"
+
+authors = [
+  { name = "Shane Heckathorn" }
+]
+
+dependencies = []
+
+license = { text = "MIT" }
+
+keywords = [
+  "continuity",
+  "memory",
+  "persistence",
+  "deterministic-state",
+  "state-engine",
+  "recovery",
+  "simulation",
+  "agents",
+  "npc",
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+  "Topic :: Games/Entertainment",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/GhoCentric/GhoCentric-CMI"
+Source = "https://github.com/GhoCentric/GhoCentric-CMI"
+"Legacy research repository" = "https://github.com/GhoCentric/ghost-prototype"
+
+[tool.setuptools]
+package-dir = { "" = "." }
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["ghost", "ghost.*"]
+
+[project.scripts]
+ghost-demo = "ghost.examples.relationship_proof_demo:main"
+ghost-npc-demo = "ghost.examples.simple_npc_demo:main"
+ghost-shopkeeper-demo = "ghost.examples.shopkeeper_mini_game:main"
+ghost-math-demo = "ghost.examples.ghost_math_helper:main"
+ghost-diagnostics-demo = "ghost.examples.relationship_diagnostics_demo:main"
+ghost-social-demo = "ghost.examples.social_propagation_demo:main"
+ghost-temperament-demo = "ghost.examples.temperament_demo:main"
+ghost-threat-response-demo = "ghost.examples.threat_response_demo:main"
+ghost-epistemic-demo = "ghost.examples.epistemic_api_smoke_demo:main"
+ghost-revolution-demo = "ghost.examples.ghost_revolution.demo:main"
+ghost-revolution-dev = "ghost.examples.ghost_revolution.dev_shortcuts:main"
+ghost-revolution-llm-dev = "ghost.examples.ghost_revolution.live_llm_dev:main"
+ghost-order-coordination-demo = "ghost.examples.order_coordination_demo:main"
+
+[tool.pytest.ini_options]
+markers = [
+    "performance: local throughput regression checks that must run without coverage tracing",
+]

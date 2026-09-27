@@ -1,0 +1,103 @@
+{
+  "flat_baseline_scope": [
+    "values",
+    "goal_status_priority_progress"
+  ],
+  "focused_tests": "49 passed",
+  "full_nonresearch_regression": "2856 passed, 1 skipped",
+  "ghost_state_scope": [
+    "values",
+    "goals"
+  ],
+  "ghostapi_public_methods_added": [],
+  "host_effects_are_explicit_not_inferred_from_status": true,
+  "host_owns_execution": true,
+  "host_owns_legal_actions": true,
+  "maintained_core_coverage": {
+    "branch_percent": 100.0,
+    "branches": 2984,
+    "statement_percent": 100.0,
+    "statements": 7112
+  },
+  "next_experiment": "long-horizon matched trials with delayed consequences, conflicting pressures, contradictory observations, restarts, information boundaries, and ablations where the baseline must maintain its own compact state rather than receiving a continuously mirrored Ghost representation",
+  "packaged_runtime_surface_added": false,
+  "post_sha256": {
+    "docs/research/v1.12_action_policy_stage2.md": "048cf886ebf4bc66186599d2e874af11212013a6b7b3f94b0fc0d865d25a1360",
+    "ghost_research/__init__.py": "a15dc2f9b815678ad3bbe9a3525d0cc6fa2d055c556f879b1016382eb1049caa",
+    "ghost_research/v112_action_policy_stage2.py": "326c3dcce062848346dcb3bf3fa3dc005e33dc738c7d366015890b7accbdd71a",
+    "tests/test_v112_action_policy_stage2.py": "9ade03196fcac9f27c6023d7e81f9d36ec2fc63fba9e069f699a2dc32c2b02ca"
+  },
+  "predecessor_stage1_commit": "6b03a87f2d843428be5b2f04e63d9b1ce8b5eb41",
+  "probe": {
+    "after_effect": {
+      "baseline_decision": "retreat",
+      "baseline_scores": {
+        "hold": 0.51,
+        "retreat": 0.775
+      },
+      "ghost_decision": "retreat",
+      "ghost_scores": {
+        "hold": 0.51,
+        "retreat": 0.775
+      },
+      "max_score_delta": 0.0
+    },
+    "claim_boundary": "causal wiring/parity only; no Ghost superiority, realism, intelligence, or long-horizon continuity advantage is claimed",
+    "controls": {
+      "component_specificity": true,
+      "dominant_utility_decision": "retreat",
+      "irrelevant_value_score_delta": 0.0,
+      "state_ablation_scores": {
+        "hold": 0.1,
+        "retreat": 0.8
+      }
+    },
+    "host_effects": {
+      "goal_progress": {
+        "hold_gate": 1.0
+      }
+    },
+    "initial": {
+      "baseline_decision": "hold",
+      "baseline_scores": {
+        "hold": 1.4100000000000001,
+        "retreat": 0.32500000000000007
+      },
+      "ghost_decision": "hold",
+      "ghost_scores": {
+        "hold": 1.4100000000000001,
+        "retreat": 0.32500000000000007
+      },
+      "max_score_delta": 0.0
+    },
+    "schema": "ghost.v1.12-dev.action-policy.stage2.probe.v1",
+    "snapshot_restore": {
+      "decision": "retreat",
+      "matches_post_effect": true,
+      "scores": {
+        "hold": 0.51,
+        "retreat": 0.775
+      }
+    },
+    "strict_verdict": "V112_ACTION_POLICY_STAGE2_CAUSAL_PARITY_PASS"
+  },
+  "production_ghost_source_modified": false,
+  "research_coverage": {
+    "branch_percent": 100.0,
+    "branches": 102,
+    "statement_percent": 100.0,
+    "statements": 205
+  },
+  "research_module_metrics": {
+    "max_complexity": 9,
+    "max_function_lines": 31,
+    "module_lines": 307
+  },
+  "same_scoring_formula_between_conditions": true,
+  "same_stage1_action_protocol": true,
+  "schema": "ghost.v1.12-dev.action-policy.stage2.v1",
+  "stage": "causal_policy_parity_closed_loop_probe",
+  "stage2_non_claim": "Stage 2 does not show Ghost is more realistic, intelligent, coherent, or better than the baseline. It intentionally hands the baseline information equivalent to Ghost and holds the scoring formula constant.",
+  "stage2_supported_claim": "Persistent Ghost goal/value state can drive the neutral Stage-1 action protocol through an explicit deterministic policy; under information-equivalent state it matches a compact flat baseline exactly, and explicit relevant host effects produce explainable future action changes that survive snapshot restoration.",
+  "strict_verdict": "V112_ACTION_POLICY_STAGE2_PASS"
+}

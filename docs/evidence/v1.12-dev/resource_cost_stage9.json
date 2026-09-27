@@ -1,0 +1,1123 @@
+{
+  "experiment": {
+    "claim_boundary": "Stage 9 profiles the current Full-Ghost versus generic-archive storage/update/restore/query tradeoff after Stage 8 established equal task correctness. Deterministic work counts and byte sizes are primary structural evidence. Timing is device-specific telemetry and is never a validity gate. No universal winner is inferred from a single weighted score.",
+    "constraints": {
+      "archive_query_is_exact_stage8_read_only_scan_path": true,
+      "full_and_archive_must_remain_correct": true,
+      "ghost_cold_query_is_exact_stage7_path": true,
+      "ghost_warm_query_removes_only_repeated_snapshot_restore": true,
+      "same_external_exposure": true,
+      "stage8_behavioral_question_frozen": true,
+      "timing_thresholds": false,
+      "weighted_winner_score": false
+    },
+    "matrix": {
+      "all_full_and_archive_correct": true,
+      "levels": [
+        {
+          "correctness": {
+            "archive_correct": 10,
+            "archive_records_examined_per_battery": 0,
+            "archive_scans_per_battery": 0,
+            "full_correct": 10,
+            "rows": [
+              {
+                "archive": "witness_c",
+                "archive_correct": true,
+                "archive_records_examined": 0,
+                "cold_full": "witness_c",
+                "cold_full_correct": true,
+                "expected": "witness_c",
+                "task": "recent_marker_source",
+                "warm_full": "witness_c",
+                "warm_full_correct": true
+              },
+              {
+                "archive": "positive",
+                "archive_correct": true,
+                "archive_records_examined": 0,
+                "cold_full": "positive",
+                "cold_full_correct": true,
+                "expected": "positive",
+                "task": "current_trust_sign",
+                "warm_full": "positive",
+                "warm_full_correct": true
+              },
+              {
+                "archive": "hostile",
+                "archive_correct": true,
+                "archive_records_examined": 0,
+                "cold_full": "hostile",
+                "cold_full_correct": true,
+                "expected": "hostile",
+                "task": "current_belief_dominant",
+                "warm_full": "hostile",
+                "warm_full_correct": true
+              },
+              {
+                "archive": "witness_a",
+                "archive_correct": true,
+                "archive_records_examined": 0,
+                "cold_full": "witness_a",
+                "cold_full_correct": true,
+                "expected": "witness_a",
+                "task": "early_marker_source",
+                "warm_full": "witness_a",
+                "warm_full_correct": true
+              },
+              {
+                "archive": 5,
+                "archive_correct": true,
+                "archive_records_examined": 0,
+                "cold_full": 5,
+                "cold_full_correct": true,
+                "expected": 5,
+                "task": "relationship_event_count",
+                "warm_full": 5,
+                "warm_full_correct": true
+              },
+              {
+                "archive": [
+                  "witness_a",
+                  "witness_b",
+                  "witness_c"
+                ],
+                "archive_correct": true,
+                "archive_records_examined": 0,
+                "cold_full": [
+                  "witness_a",
+                  "witness_b",
+                  "witness_c"
+                ],
+                "cold_full_correct": true,
+                "expected": [
+                  "witness_a",
+                  "witness_b",
+                  "witness_c"
+                ],
+                "task": "evidence_sources",
+                "warm_full": [
+                  "witness_a",
+                  "witness_b",
+                  "witness_c"
+                ],
+                "warm_full_correct": true
+              },
+              {
+                "archive": 4,
+                "archive_correct": true,
+                "archive_records_examined": 0,
+                "cold_full": 4,
+                "cold_full_correct": true,
+                "expected": 4,
+                "task": "belief_revision_count",
+                "warm_full": 4,
+                "warm_full_correct": true
+              },
+              {
+                "archive": "benign",
+                "archive_correct": true,
+                "archive_records_examined": 0,
+                "cold_full": "benign",
+                "cold_full_correct": true,
+                "expected": "benign",
+                "task": "counterfactual_without_a",
+                "warm_full": "benign",
+                "warm_full_correct": true
+              },
+              {
+                "archive": "witness_a",
+                "archive_correct": true,
+                "archive_records_examined": 0,
+                "cold_full": "witness_a",
+                "cold_full_correct": true,
+                "expected": "witness_a",
+                "task": "deeper_relationship",
+                "warm_full": "witness_a",
+                "warm_full_correct": true
+              },
+              {
+                "archive": "witness_a",
+                "archive_correct": true,
+                "archive_records_examined": 0,
+                "cold_full": "witness_a",
+                "cold_full_correct": true,
+                "expected": "witness_a",
+                "task": "novel_delegate_choice",
+                "warm_full": "witness_a",
+                "warm_full_correct": true
+              }
+            ]
+          },
+          "deterministic_work": {
+            "archive": {
+              "records_examined_per_battery": 0,
+              "scans_per_battery": 0
+            },
+            "full": {
+              "agent_value_lookups_per_battery": 1,
+              "belief_lookups_per_battery": 3,
+              "cold_snapshot_rehydrates_per_battery": 10,
+              "epistemic_record_count": 106,
+              "epistemic_records_examined_per_battery": 407,
+              "relationship_lookups_per_battery": 6,
+              "warm_snapshot_rehydrates_per_session": 1
+            }
+          },
+          "level": {
+            "ambient_events": 64,
+            "id": "events_64"
+          },
+          "state": {
+            "archive_record_count": 80,
+            "archive_snapshot_bytes": 29513,
+            "full_epistemic_record_count": 106,
+            "full_over_archive_byte_ratio": 2.5905194321146614,
+            "full_snapshot_bytes": 76454
+          },
+          "task_count": 10,
+          "timing": {
+            "archive_100_batteries_us": 13526.679,
+            "archive_battery_us": 139.336,
+            "cold_full_battery_us": 83403.321,
+            "ingest_archive_us": 5859.375,
+            "ingest_full_us": 15691.953,
+            "query_repetitions": 100,
+            "restore_archive_us": 340.43,
+            "restore_full_us": 9226.289,
+            "samples": 7,
+            "serialize_archive_us": 444.766,
+            "serialize_full_us": 1114.922,
+            "warm_full_100_batteries_us": 33210.703,
+            "warm_full_battery_us": 340.743
+          }
+        },
+        {
+          "correctness": {
+            "archive_correct": 10,
+            "archive_records_examined_per_battery": 1007,
+            "archive_scans_per_battery": 7,
+            "full_correct": 10,
+            "rows": [
+              {
+                "archive": "witness_c",
+                "archive_correct": true,
+                "archive_records_examined": 0,
+                "cold_full": "witness_c",
+                "cold_full_correct": true,
+                "expected": "witness_c",
+                "task": "recent_marker_source",
+                "warm_full": "witness_c",
+                "warm_full_correct": true
+              },
+              {
+                "archive": "positive",
+                "archive_correct": true,
+                "archive_records_examined": 0,
+                "cold_full": "positive",
+                "cold_full_correct": true,
+                "expected": "positive",
+                "task": "current_trust_sign",
+                "warm_full": "positive",
+                "warm_full_correct": true
+              },
+              {
+                "archive": "hostile",
+                "archive_correct": true,
+                "archive_records_examined": 0,
+                "cold_full": "hostile",
+                "cold_full_correct": true,
+                "expected": "hostile",
+                "task": "current_belief_dominant",
+                "warm_full": "hostile",
+                "warm_full_correct": true
+              },
+              {
+                "archive": "witness_a",
+                "archive_correct": true,
+                "archive_records_examined": 143,
+                "cold_full": "witness_a",
+                "cold_full_correct": true,
+                "expected": "witness_a",
+                "task": "early_marker_source",
+                "warm_full": "witness_a",
+                "warm_full_correct": true
+              },
+              {
+                "archive": 5,
+                "archive_correct": true,
+                "archive_records_examined": 144,
+                "cold_full": 5,
+                "cold_full_correct": true,
+                "expected": 5,
+                "task": "relationship_event_count",
+                "warm_full": 5,
+                "warm_full_correct": true
+              },
+              {
+                "archive": [
+                  "witness_a",
+                  "witness_b",
+                  "witness_c"
+                ],
+                "archive_correct": true,
+                "archive_records_examined": 144,
+                "cold_full": [
+                  "witness_a",
+                  "witness_b",
+                  "witness_c"
+                ],
+                "cold_full_correct": true,
+                "expected": [
+                  "witness_a",
+                  "witness_b",
+                  "witness_c"
+                ],
+                "task": "evidence_sources",
+                "warm_full": [
+                  "witness_a",
+                  "witness_b",
+                  "witness_c"
+                ],
+                "warm_full_correct": true
+              },
+              {
+                "archive": 4,
+                "archive_correct": true,
+                "archive_records_examined": 144,
+                "cold_full": 4,
+                "cold_full_correct": true,
+                "expected": 4,
+                "task": "belief_revision_count",
+                "warm_full": 4,
+                "warm_full_correct": true
+              },
+              {
+                "archive": "benign",
+                "archive_correct": true,
+                "archive_records_examined": 144,
+                "cold_full": "benign",
+                "cold_full_correct": true,
+                "expected": "benign",
+                "task": "counterfactual_without_a",
+                "warm_full": "benign",
+                "warm_full_correct": true
+              },
+              {
+                "archive": "witness_a",
+                "archive_correct": true,
+                "archive_records_examined": 144,
+                "cold_full": "witness_a",
+                "cold_full_correct": true,
+                "expected": "witness_a",
+                "task": "deeper_relationship",
+                "warm_full": "witness_a",
+                "warm_full_correct": true
+              },
+              {
+                "archive": "witness_a",
+                "archive_correct": true,
+                "archive_records_examined": 144,
+                "cold_full": "witness_a",
+                "cold_full_correct": true,
+                "expected": "witness_a",
+                "task": "novel_delegate_choice",
+                "warm_full": "witness_a",
+                "warm_full_correct": true
+              }
+            ]
+          },
+          "deterministic_work": {
+            "archive": {
+              "records_examined_per_battery": 1007,
+              "scans_per_battery": 7
+            },
+            "full": {
+              "agent_value_lookups_per_battery": 1,
+              "belief_lookups_per_battery": 3,
+              "cold_snapshot_rehydrates_per_battery": 10,
+              "epistemic_record_count": 170,
+              "epistemic_records_examined_per_battery": 663,
+              "relationship_lookups_per_battery": 6,
+              "warm_snapshot_rehydrates_per_session": 1
+            }
+          },
+          "level": {
+            "ambient_events": 128,
+            "id": "events_128"
+          },
+          "state": {
+            "archive_record_count": 144,
+            "archive_snapshot_bytes": 48786,
+            "full_epistemic_record_count": 170,
+            "full_over_archive_byte_ratio": 2.2517320542778667,
+            "full_snapshot_bytes": 109853
+          },
+          "task_count": 10,
+          "timing": {
+            "archive_100_batteries_us": 15474.687,
+            "archive_battery_us": 155.625,
+            "cold_full_battery_us": 112162.696,
+            "ingest_archive_us": 9571.054,
+            "ingest_full_us": 23155.469,
+            "query_repetitions": 100,
+            "restore_archive_us": 552.813,
+            "restore_full_us": 12520.39,
+            "samples": 7,
+            "serialize_archive_us": 702.773,
+            "serialize_full_us": 1499.257,
+            "warm_full_100_batteries_us": 36312.07,
+            "warm_full_battery_us": 365.586
+          }
+        },
+        {
+          "correctness": {
+            "archive_correct": 10,
+            "archive_records_examined_per_battery": 1679,
+            "archive_scans_per_battery": 7,
+            "full_correct": 10,
+            "rows": [
+              {
+                "archive": "witness_c",
+                "archive_correct": true,
+                "archive_records_examined": 0,
+                "cold_full": "witness_c",
+                "cold_full_correct": true,
+                "expected": "witness_c",
+                "task": "recent_marker_source",
+                "warm_full": "witness_c",
+                "warm_full_correct": true
+              },
+              {
+                "archive": "positive",
+                "archive_correct": true,
+                "archive_records_examined": 0,
+                "cold_full": "positive",
+                "cold_full_correct": true,
+                "expected": "positive",
+                "task": "current_trust_sign",
+                "warm_full": "positive",
+                "warm_full_correct": true
+              },
+              {
+                "archive": "hostile",
+                "archive_correct": true,
+                "archive_records_examined": 0,
+                "cold_full": "hostile",
+                "cold_full_correct": true,
+                "expected": "hostile",
+                "task": "current_belief_dominant",
+                "warm_full": "hostile",
+                "warm_full_correct": true
+              },
+              {
+                "archive": "witness_a",
+                "archive_correct": true,
+                "archive_records_examined": 239,
+                "cold_full": "witness_a",
+                "cold_full_correct": true,
+                "expected": "witness_a",
+                "task": "early_marker_source",
+                "warm_full": "witness_a",
+                "warm_full_correct": true
+              },
+              {
+                "archive": 5,
+                "archive_correct": true,
+                "archive_records_examined": 240,
+                "cold_full": 5,
+                "cold_full_correct": true,
+                "expected": 5,
+                "task": "relationship_event_count",
+                "warm_full": 5,
+                "warm_full_correct": true
+              },
+              {
+                "archive": [
+                  "witness_a",
+                  "witness_b",
+                  "witness_c"
+                ],
+                "archive_correct": true,
+                "archive_records_examined": 240,
+                "cold_full": [
+                  "witness_a",
+                  "witness_b",
+                  "witness_c"
+                ],
+                "cold_full_correct": true,
+                "expected": [
+                  "witness_a",
+                  "witness_b",
+                  "witness_c"
+                ],
+                "task": "evidence_sources",
+                "warm_full": [
+                  "witness_a",
+                  "witness_b",
+                  "witness_c"
+                ],
+                "warm_full_correct": true
+              },
+              {
+                "archive": 4,
+                "archive_correct": true,
+                "archive_records_examined": 240,
+                "cold_full": 4,
+                "cold_full_correct": true,
+                "expected": 4,
+                "task": "belief_revision_count",
+                "warm_full": 4,
+                "warm_full_correct": true
+              },
+              {
+                "archive": "benign",
+                "archive_correct": true,
+                "archive_records_examined": 240,
+                "cold_full": "benign",
+                "cold_full_correct": true,
+                "expected": "benign",
+                "task": "counterfactual_without_a",
+                "warm_full": "benign",
+                "warm_full_correct": true
+              },
+              {
+                "archive": "witness_a",
+                "archive_correct": true,
+                "archive_records_examined": 240,
+                "cold_full": "witness_a",
+                "cold_full_correct": true,
+                "expected": "witness_a",
+                "task": "deeper_relationship",
+                "warm_full": "witness_a",
+                "warm_full_correct": true
+              },
+              {
+                "archive": "witness_a",
+                "archive_correct": true,
+                "archive_records_examined": 240,
+                "cold_full": "witness_a",
+                "cold_full_correct": true,
+                "expected": "witness_a",
+                "task": "novel_delegate_choice",
+                "warm_full": "witness_a",
+                "warm_full_correct": true
+              }
+            ]
+          },
+          "deterministic_work": {
+            "archive": {
+              "records_examined_per_battery": 1679,
+              "scans_per_battery": 7
+            },
+            "full": {
+              "agent_value_lookups_per_battery": 1,
+              "belief_lookups_per_battery": 3,
+              "cold_snapshot_rehydrates_per_battery": 10,
+              "epistemic_record_count": 266,
+              "epistemic_records_examined_per_battery": 1047,
+              "relationship_lookups_per_battery": 6,
+              "warm_snapshot_rehydrates_per_session": 1
+            }
+          },
+          "level": {
+            "ambient_events": 224,
+            "id": "events_224"
+          },
+          "state": {
+            "archive_record_count": 240,
+            "archive_snapshot_bytes": 65573,
+            "full_epistemic_record_count": 266,
+            "full_over_archive_byte_ratio": 2.227258170283501,
+            "full_snapshot_bytes": 146048
+          },
+          "task_count": 10,
+          "timing": {
+            "archive_100_batteries_us": 18367.227,
+            "archive_battery_us": 190.82,
+            "cold_full_battery_us": 143166.328,
+            "ingest_archive_us": 14024.414,
+            "ingest_full_us": 33599.258,
+            "query_repetitions": 100,
+            "restore_archive_us": 733.437,
+            "restore_full_us": 15976.757,
+            "samples": 7,
+            "serialize_archive_us": 945.469,
+            "serialize_full_us": 1933.75,
+            "warm_full_100_batteries_us": 40220.625,
+            "warm_full_battery_us": 405.625
+          }
+        },
+        {
+          "correctness": {
+            "archive_correct": 10,
+            "archive_records_examined_per_battery": 3695,
+            "archive_scans_per_battery": 7,
+            "full_correct": 10,
+            "rows": [
+              {
+                "archive": "witness_c",
+                "archive_correct": true,
+                "archive_records_examined": 0,
+                "cold_full": "witness_c",
+                "cold_full_correct": true,
+                "expected": "witness_c",
+                "task": "recent_marker_source",
+                "warm_full": "witness_c",
+                "warm_full_correct": true
+              },
+              {
+                "archive": "positive",
+                "archive_correct": true,
+                "archive_records_examined": 0,
+                "cold_full": "positive",
+                "cold_full_correct": true,
+                "expected": "positive",
+                "task": "current_trust_sign",
+                "warm_full": "positive",
+                "warm_full_correct": true
+              },
+              {
+                "archive": "hostile",
+                "archive_correct": true,
+                "archive_records_examined": 0,
+                "cold_full": "hostile",
+                "cold_full_correct": true,
+                "expected": "hostile",
+                "task": "current_belief_dominant",
+                "warm_full": "hostile",
+                "warm_full_correct": true
+              },
+              {
+                "archive": "witness_a",
+                "archive_correct": true,
+                "archive_records_examined": 527,
+                "cold_full": "witness_a",
+                "cold_full_correct": true,
+                "expected": "witness_a",
+                "task": "early_marker_source",
+                "warm_full": "witness_a",
+                "warm_full_correct": true
+              },
+              {
+                "archive": 5,
+                "archive_correct": true,
+                "archive_records_examined": 528,
+                "cold_full": 5,
+                "cold_full_correct": true,
+                "expected": 5,
+                "task": "relationship_event_count",
+                "warm_full": 5,
+                "warm_full_correct": true
+              },
+              {
+                "archive": [
+                  "witness_a",
+                  "witness_b",
+                  "witness_c"
+                ],
+                "archive_correct": true,
+                "archive_records_examined": 528,
+                "cold_full": [
+                  "witness_a",
+                  "witness_b",
+                  "witness_c"
+                ],
+                "cold_full_correct": true,
+                "expected": [
+                  "witness_a",
+                  "witness_b",
+                  "witness_c"
+                ],
+                "task": "evidence_sources",
+                "warm_full": [
+                  "witness_a",
+                  "witness_b",
+                  "witness_c"
+                ],
+                "warm_full_correct": true
+              },
+              {
+                "archive": 4,
+                "archive_correct": true,
+                "archive_records_examined": 528,
+                "cold_full": 4,
+                "cold_full_correct": true,
+                "expected": 4,
+                "task": "belief_revision_count",
+                "warm_full": 4,
+                "warm_full_correct": true
+              },
+              {
+                "archive": "benign",
+                "archive_correct": true,
+                "archive_records_examined": 528,
+                "cold_full": "benign",
+                "cold_full_correct": true,
+                "expected": "benign",
+                "task": "counterfactual_without_a",
+                "warm_full": "benign",
+                "warm_full_correct": true
+              },
+              {
+                "archive": "witness_a",
+                "archive_correct": true,
+                "archive_records_examined": 528,
+                "cold_full": "witness_a",
+                "cold_full_correct": true,
+                "expected": "witness_a",
+                "task": "deeper_relationship",
+                "warm_full": "witness_a",
+                "warm_full_correct": true
+              },
+              {
+                "archive": "witness_a",
+                "archive_correct": true,
+                "archive_records_examined": 528,
+                "cold_full": "witness_a",
+                "cold_full_correct": true,
+                "expected": "witness_a",
+                "task": "novel_delegate_choice",
+                "warm_full": "witness_a",
+                "warm_full_correct": true
+              }
+            ]
+          },
+          "deterministic_work": {
+            "archive": {
+              "records_examined_per_battery": 3695,
+              "scans_per_battery": 7
+            },
+            "full": {
+              "agent_value_lookups_per_battery": 1,
+              "belief_lookups_per_battery": 3,
+              "cold_snapshot_rehydrates_per_battery": 10,
+              "epistemic_record_count": 554,
+              "epistemic_records_examined_per_battery": 2199,
+              "relationship_lookups_per_battery": 6,
+              "warm_snapshot_rehydrates_per_session": 1
+            }
+          },
+          "level": {
+            "ambient_events": 512,
+            "id": "events_512"
+          },
+          "state": {
+            "archive_record_count": 528,
+            "archive_snapshot_bytes": 115136,
+            "full_epistemic_record_count": 554,
+            "full_over_archive_byte_ratio": 2.2067381183991106,
+            "full_snapshot_bytes": 254075
+          },
+          "task_count": 10,
+          "timing": {
+            "archive_100_batteries_us": 29779.218,
+            "archive_battery_us": 300.547,
+            "cold_full_battery_us": 237457.227,
+            "ingest_archive_us": 26974.258,
+            "ingest_full_us": 64746.172,
+            "query_repetitions": 100,
+            "restore_archive_us": 1278.086,
+            "restore_full_us": 26396.016,
+            "samples": 7,
+            "serialize_archive_us": 1629.218,
+            "serialize_full_us": 3236.601,
+            "warm_full_100_batteries_us": 51710.429,
+            "warm_full_battery_us": 518.203
+          }
+        },
+        {
+          "correctness": {
+            "archive_correct": 10,
+            "archive_records_examined_per_battery": 7279,
+            "archive_scans_per_battery": 7,
+            "full_correct": 10,
+            "rows": [
+              {
+                "archive": "witness_c",
+                "archive_correct": true,
+                "archive_records_examined": 0,
+                "cold_full": "witness_c",
+                "cold_full_correct": true,
+                "expected": "witness_c",
+                "task": "recent_marker_source",
+                "warm_full": "witness_c",
+                "warm_full_correct": true
+              },
+              {
+                "archive": "positive",
+                "archive_correct": true,
+                "archive_records_examined": 0,
+                "cold_full": "positive",
+                "cold_full_correct": true,
+                "expected": "positive",
+                "task": "current_trust_sign",
+                "warm_full": "positive",
+                "warm_full_correct": true
+              },
+              {
+                "archive": "hostile",
+                "archive_correct": true,
+                "archive_records_examined": 0,
+                "cold_full": "hostile",
+                "cold_full_correct": true,
+                "expected": "hostile",
+                "task": "current_belief_dominant",
+                "warm_full": "hostile",
+                "warm_full_correct": true
+              },
+              {
+                "archive": "witness_a",
+                "archive_correct": true,
+                "archive_records_examined": 1039,
+                "cold_full": "witness_a",
+                "cold_full_correct": true,
+                "expected": "witness_a",
+                "task": "early_marker_source",
+                "warm_full": "witness_a",
+                "warm_full_correct": true
+              },
+              {
+                "archive": 5,
+                "archive_correct": true,
+                "archive_records_examined": 1040,
+                "cold_full": 5,
+                "cold_full_correct": true,
+                "expected": 5,
+                "task": "relationship_event_count",
+                "warm_full": 5,
+                "warm_full_correct": true
+              },
+              {
+                "archive": [
+                  "witness_a",
+                  "witness_b",
+                  "witness_c"
+                ],
+                "archive_correct": true,
+                "archive_records_examined": 1040,
+                "cold_full": [
+                  "witness_a",
+                  "witness_b",
+                  "witness_c"
+                ],
+                "cold_full_correct": true,
+                "expected": [
+                  "witness_a",
+                  "witness_b",
+                  "witness_c"
+                ],
+                "task": "evidence_sources",
+                "warm_full": [
+                  "witness_a",
+                  "witness_b",
+                  "witness_c"
+                ],
+                "warm_full_correct": true
+              },
+              {
+                "archive": 4,
+                "archive_correct": true,
+                "archive_records_examined": 1040,
+                "cold_full": 4,
+                "cold_full_correct": true,
+                "expected": 4,
+                "task": "belief_revision_count",
+                "warm_full": 4,
+                "warm_full_correct": true
+              },
+              {
+                "archive": "benign",
+                "archive_correct": true,
+                "archive_records_examined": 1040,
+                "cold_full": "benign",
+                "cold_full_correct": true,
+                "expected": "benign",
+                "task": "counterfactual_without_a",
+                "warm_full": "benign",
+                "warm_full_correct": true
+              },
+              {
+                "archive": "witness_a",
+                "archive_correct": true,
+                "archive_records_examined": 1040,
+                "cold_full": "witness_a",
+                "cold_full_correct": true,
+                "expected": "witness_a",
+                "task": "deeper_relationship",
+                "warm_full": "witness_a",
+                "warm_full_correct": true
+              },
+              {
+                "archive": "witness_a",
+                "archive_correct": true,
+                "archive_records_examined": 1040,
+                "cold_full": "witness_a",
+                "cold_full_correct": true,
+                "expected": "witness_a",
+                "task": "novel_delegate_choice",
+                "warm_full": "witness_a",
+                "warm_full_correct": true
+              }
+            ]
+          },
+          "deterministic_work": {
+            "archive": {
+              "records_examined_per_battery": 7279,
+              "scans_per_battery": 7
+            },
+            "full": {
+              "agent_value_lookups_per_battery": 1,
+              "belief_lookups_per_battery": 3,
+              "cold_snapshot_rehydrates_per_battery": 10,
+              "epistemic_record_count": 1066,
+              "epistemic_records_examined_per_battery": 4247,
+              "relationship_lookups_per_battery": 6,
+              "warm_snapshot_rehydrates_per_session": 1
+            }
+          },
+          "level": {
+            "ambient_events": 1024,
+            "id": "events_1024"
+          },
+          "state": {
+            "archive_record_count": 1040,
+            "archive_snapshot_bytes": 203475,
+            "full_epistemic_record_count": 1066,
+            "full_over_archive_byte_ratio": 2.1990170782651433,
+            "full_snapshot_bytes": 447445
+          },
+          "task_count": 10,
+          "timing": {
+            "archive_100_batteries_us": 48221.054,
+            "archive_battery_us": 485.156,
+            "cold_full_battery_us": 403994.961,
+            "ingest_archive_us": 50235.273,
+            "ingest_full_us": 120354.882,
+            "query_repetitions": 100,
+            "restore_archive_us": 2342.657,
+            "restore_full_us": 45608.984,
+            "samples": 7,
+            "serialize_archive_us": 2890.781,
+            "serialize_full_us": 5823.555,
+            "warm_full_100_batteries_us": 71188.203,
+            "warm_full_battery_us": 727.657
+          }
+        },
+        {
+          "correctness": {
+            "archive_correct": 10,
+            "archive_records_examined_per_battery": 14447,
+            "archive_scans_per_battery": 7,
+            "full_correct": 10,
+            "rows": [
+              {
+                "archive": "witness_c",
+                "archive_correct": true,
+                "archive_records_examined": 0,
+                "cold_full": "witness_c",
+                "cold_full_correct": true,
+                "expected": "witness_c",
+                "task": "recent_marker_source",
+                "warm_full": "witness_c",
+                "warm_full_correct": true
+              },
+              {
+                "archive": "positive",
+                "archive_correct": true,
+                "archive_records_examined": 0,
+                "cold_full": "positive",
+                "cold_full_correct": true,
+                "expected": "positive",
+                "task": "current_trust_sign",
+                "warm_full": "positive",
+                "warm_full_correct": true
+              },
+              {
+                "archive": "hostile",
+                "archive_correct": true,
+                "archive_records_examined": 0,
+                "cold_full": "hostile",
+                "cold_full_correct": true,
+                "expected": "hostile",
+                "task": "current_belief_dominant",
+                "warm_full": "hostile",
+                "warm_full_correct": true
+              },
+              {
+                "archive": "witness_a",
+                "archive_correct": true,
+                "archive_records_examined": 2063,
+                "cold_full": "witness_a",
+                "cold_full_correct": true,
+                "expected": "witness_a",
+                "task": "early_marker_source",
+                "warm_full": "witness_a",
+                "warm_full_correct": true
+              },
+              {
+                "archive": 5,
+                "archive_correct": true,
+                "archive_records_examined": 2064,
+                "cold_full": 5,
+                "cold_full_correct": true,
+                "expected": 5,
+                "task": "relationship_event_count",
+                "warm_full": 5,
+                "warm_full_correct": true
+              },
+              {
+                "archive": [
+                  "witness_a",
+                  "witness_b",
+                  "witness_c"
+                ],
+                "archive_correct": true,
+                "archive_records_examined": 2064,
+                "cold_full": [
+                  "witness_a",
+                  "witness_b",
+                  "witness_c"
+                ],
+                "cold_full_correct": true,
+                "expected": [
+                  "witness_a",
+                  "witness_b",
+                  "witness_c"
+                ],
+                "task": "evidence_sources",
+                "warm_full": [
+                  "witness_a",
+                  "witness_b",
+                  "witness_c"
+                ],
+                "warm_full_correct": true
+              },
+              {
+                "archive": 4,
+                "archive_correct": true,
+                "archive_records_examined": 2064,
+                "cold_full": 4,
+                "cold_full_correct": true,
+                "expected": 4,
+                "task": "belief_revision_count",
+                "warm_full": 4,
+                "warm_full_correct": true
+              },
+              {
+                "archive": "benign",
+                "archive_correct": true,
+                "archive_records_examined": 2064,
+                "cold_full": "benign",
+                "cold_full_correct": true,
+                "expected": "benign",
+                "task": "counterfactual_without_a",
+                "warm_full": "benign",
+                "warm_full_correct": true
+              },
+              {
+                "archive": "witness_a",
+                "archive_correct": true,
+                "archive_records_examined": 2064,
+                "cold_full": "witness_a",
+                "cold_full_correct": true,
+                "expected": "witness_a",
+                "task": "deeper_relationship",
+                "warm_full": "witness_a",
+                "warm_full_correct": true
+              },
+              {
+                "archive": "witness_a",
+                "archive_correct": true,
+                "archive_records_examined": 2064,
+                "cold_full": "witness_a",
+                "cold_full_correct": true,
+                "expected": "witness_a",
+                "task": "novel_delegate_choice",
+                "warm_full": "witness_a",
+                "warm_full_correct": true
+              }
+            ]
+          },
+          "deterministic_work": {
+            "archive": {
+              "records_examined_per_battery": 14447,
+              "scans_per_battery": 7
+            },
+            "full": {
+              "agent_value_lookups_per_battery": 1,
+              "belief_lookups_per_battery": 3,
+              "cold_snapshot_rehydrates_per_battery": 10,
+              "epistemic_record_count": 2090,
+              "epistemic_records_examined_per_battery": 8343,
+              "relationship_lookups_per_battery": 6,
+              "warm_snapshot_rehydrates_per_session": 1
+            }
+          },
+          "level": {
+            "ambient_events": 2048,
+            "id": "events_2048"
+          },
+          "state": {
+            "archive_record_count": 2064,
+            "archive_snapshot_bytes": 383141,
+            "full_epistemic_record_count": 2090,
+            "full_over_archive_byte_ratio": 2.187108662346238,
+            "full_snapshot_bytes": 837971
+          },
+          "task_count": 10,
+          "timing": {
+            "archive_100_batteries_us": 80069.18,
+            "archive_battery_us": 825.898,
+            "cold_full_battery_us": 744712.187,
+            "ingest_archive_us": 97390.039,
+            "ingest_full_us": 231976.172,
+            "query_repetitions": 100,
+            "restore_archive_us": 4558.555,
+            "restore_full_us": 83533.203,
+            "samples": 7,
+            "serialize_archive_us": 5732.109,
+            "serialize_full_us": 11015.195,
+            "warm_full_100_batteries_us": 113863.437,
+            "warm_full_battery_us": 1168.945
+          }
+        }
+      ],
+      "no_weighted_composite_score": true,
+      "query_repetitions": 100,
+      "timing_enabled": true,
+      "timing_is_telemetry_not_gate": true
+    },
+    "schema": "ghost.v1.12-dev.resource-cost.stage9.v1",
+    "strict_verdict": "V112_RESOURCE_COST_STAGE9_EXPERIMENT_VALID"
+  },
+  "focused_tests": "34 passed",
+  "full_nonresearch_regression": "3239 passed, 1 skipped",
+  "ghostapi_public_methods_added": [],
+  "maintained_core_coverage": {
+    "branch_percent": 100.0,
+    "branches": 2984,
+    "statement_percent": 100.0,
+    "statements": 7112
+  },
+  "next_experiment": "Inspect the Pareto frontier. If Ghost current reads remain expensive, attribute cost to snapshot restoration versus epistemic scanning before deciding whether to optimize indexes/materialized views or revisit the architectural thesis.",
+  "non_claim": "Stage 9 does not declare a universal winner or combine incomparable costs into a weighted score. Wall-clock timings are device-specific telemetry and are not scientific validity gates. Any apparent performance crossover requires replication before production optimization claims.",
+  "post_sha256": {
+    "docs/research/v1.12_resource_cost_stage9.md": "b273082a827f3faf2bff59abc0e3202bbcc6b5ab9a2d8e49a39878650834a9ec",
+    "ghost_research/v112_resource_cost_stage9.py": "f2440b87c05c1ca9e99d80de1e4fae701d9a56a5ee29be7520b6b69274222f8e",
+    "tests/test_v112_resource_cost_stage9.py": "20b6652fa3bcb339f3d595521097a5568cf3f60e95d1da25e71a2b18d78e4364"
+  },
+  "predecessor_stage8_commit": "6549c7a05c30a15174d486c4f0a20664a17dde8f",
+  "production_ghost_source_modified": false,
+  "research_coverage": {
+    "branch_percent": 100.0,
+    "branches": 40,
+    "statement_percent": 100.0,
+    "statements": 153
+  },
+  "schema": "ghost.v1.12-dev.resource-cost.stage9.evidence.v1",
+  "stage": "resource_cost_frontier_after_equal_correctness",
+  "stage8_experiment_modified": false,
+  "strict_verdict": "V112_RESOURCE_COST_STAGE9_PASS",
+  "supported_claim": "Stage 9 preserves Stage-8 correctness parity while profiling storage, ingestion, restore, deterministic query work, cold Stage-7 query cost, warm Ghost query cost, archive scan cost, and repeated-query cost across histories from 64 to 2,048 ambient events."
+}

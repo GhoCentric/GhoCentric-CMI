@@ -1,0 +1,319 @@
+{
+  "experiment": {
+    "all_corruption_recovery_cases_pass": true,
+    "all_process_crash_cases_pass": true,
+    "all_queries_correct": true,
+    "all_stage9d_migrations_exact": true,
+    "claim_boundary": "Stage 9E tests a research-only two-slot checkpoint protocol around the Stage-9D compact envelope. It uses actual child-process termination at seven write boundaries, requires recovery to the last committed generation before head replacement and the new generation after it, validates exact Ghost state and post-recovery continuation, exercises fsync plus atomic replace, falls back from one corrupted committed slot or corrupted head, and imports the exact Stage-9D envelope format without semantic drift. It does not prove sudden-power-loss durability on every filesystem, multi-process/concurrent-writer safety, authenticated tamper resistance, or forward compatibility with unknown future schemas.",
+    "constraints": {
+      "actual_process_exit_fault_injection": true,
+      "backward_migration_from_stage9d_tested": true,
+      "checksum_is_integrity_not_authentication": true,
+      "concurrent_writer_safety_not_tested": true,
+      "forward_unknown_schema_compatibility_not_claimed": true,
+      "fsync_and_atomic_replace_exercised": true,
+      "no_weighted_composite_score": true,
+      "power_loss_durability_not_proven": true,
+      "production_ghost_modified": false,
+      "research_only": true,
+      "single_writer_only": true,
+      "timing_is_telemetry_not_gate": true
+    },
+    "levels": [
+      {
+        "all_process_crash_cases_pass": true,
+        "corruption_recovery": {
+          "active_slot_fallback": true,
+          "corrupt_head_highest_valid": true,
+          "dual_slot_corruption_fails_closed": true,
+          "unknown_predecessor_schema_rejected": true
+        },
+        "crash_recovery": {
+          "after_commit_dir_fsync": {
+            "expected": "new",
+            "pass": true,
+            "recovered_generation": 2
+          },
+          "after_head_fsync": {
+            "expected": "old",
+            "pass": true,
+            "recovered_generation": 1
+          },
+          "after_head_replace": {
+            "expected": "new",
+            "pass": true,
+            "recovered_generation": 2
+          },
+          "after_partial_slot_write": {
+            "expected": "old",
+            "pass": true,
+            "recovered_generation": 1
+          },
+          "after_slot_dir_fsync": {
+            "expected": "old",
+            "pass": true,
+            "recovered_generation": 1
+          },
+          "after_slot_fsync": {
+            "expected": "old",
+            "pass": true,
+            "recovered_generation": 1
+          },
+          "after_slot_replace": {
+            "expected": "old",
+            "pass": true,
+            "recovered_generation": 1
+          }
+        },
+        "level": {
+          "ambient_events": 224,
+          "id": "events_224"
+        },
+        "migration": {
+          "continuation_equal": true,
+          "exact_state": true,
+          "stage9d_raw_envelope_imported": true
+        },
+        "query_correct_after_new_checkpoint": true,
+        "storage": {
+          "compact_bytes": 79727,
+          "full_snapshot_bytes": 153897,
+          "slot_packet_bytes": 106663
+        },
+        "timing": {
+          "atomic_write_median_us": 20185.781,
+          "recover_median_us": 66808.164,
+          "samples": 3
+        }
+      },
+      {
+        "all_process_crash_cases_pass": true,
+        "corruption_recovery": {
+          "active_slot_fallback": true,
+          "corrupt_head_highest_valid": true,
+          "dual_slot_corruption_fails_closed": true,
+          "unknown_predecessor_schema_rejected": true
+        },
+        "crash_recovery": {
+          "after_commit_dir_fsync": {
+            "expected": "new",
+            "pass": true,
+            "recovered_generation": 2
+          },
+          "after_head_fsync": {
+            "expected": "old",
+            "pass": true,
+            "recovered_generation": 1
+          },
+          "after_head_replace": {
+            "expected": "new",
+            "pass": true,
+            "recovered_generation": 2
+          },
+          "after_partial_slot_write": {
+            "expected": "old",
+            "pass": true,
+            "recovered_generation": 1
+          },
+          "after_slot_dir_fsync": {
+            "expected": "old",
+            "pass": true,
+            "recovered_generation": 1
+          },
+          "after_slot_fsync": {
+            "expected": "old",
+            "pass": true,
+            "recovered_generation": 1
+          },
+          "after_slot_replace": {
+            "expected": "old",
+            "pass": true,
+            "recovered_generation": 1
+          }
+        },
+        "level": {
+          "ambient_events": 1024,
+          "id": "events_1024"
+        },
+        "migration": {
+          "continuation_equal": true,
+          "exact_state": true,
+          "stage9d_raw_envelope_imported": true
+        },
+        "query_correct_after_new_checkpoint": true,
+        "storage": {
+          "compact_bytes": 143468,
+          "full_snapshot_bytes": 455355,
+          "slot_packet_bytes": 191651
+        },
+        "timing": {
+          "atomic_write_median_us": 33797.188,
+          "recover_median_us": 189794.649,
+          "samples": 3
+        }
+      },
+      {
+        "all_process_crash_cases_pass": true,
+        "corruption_recovery": {
+          "active_slot_fallback": true,
+          "corrupt_head_highest_valid": true,
+          "dual_slot_corruption_fails_closed": true,
+          "unknown_predecessor_schema_rejected": true
+        },
+        "crash_recovery": {
+          "after_commit_dir_fsync": {
+            "expected": "new",
+            "pass": true,
+            "recovered_generation": 2
+          },
+          "after_head_fsync": {
+            "expected": "old",
+            "pass": true,
+            "recovered_generation": 1
+          },
+          "after_head_replace": {
+            "expected": "new",
+            "pass": true,
+            "recovered_generation": 2
+          },
+          "after_partial_slot_write": {
+            "expected": "old",
+            "pass": true,
+            "recovered_generation": 1
+          },
+          "after_slot_dir_fsync": {
+            "expected": "old",
+            "pass": true,
+            "recovered_generation": 1
+          },
+          "after_slot_fsync": {
+            "expected": "old",
+            "pass": true,
+            "recovered_generation": 1
+          },
+          "after_slot_replace": {
+            "expected": "old",
+            "pass": true,
+            "recovered_generation": 1
+          }
+        },
+        "level": {
+          "ambient_events": 2048,
+          "id": "events_2048"
+        },
+        "migration": {
+          "continuation_equal": true,
+          "exact_state": true,
+          "stage9d_raw_envelope_imported": true
+        },
+        "query_correct_after_new_checkpoint": true,
+        "storage": {
+          "compact_bytes": 230755,
+          "full_snapshot_bytes": 845839,
+          "slot_packet_bytes": 308031
+        },
+        "timing": {
+          "atomic_write_median_us": 53278.476,
+          "recover_median_us": 352752.773,
+          "samples": 3
+        }
+      },
+      {
+        "all_process_crash_cases_pass": true,
+        "corruption_recovery": {
+          "active_slot_fallback": true,
+          "corrupt_head_highest_valid": true,
+          "dual_slot_corruption_fails_closed": true,
+          "unknown_predecessor_schema_rejected": true
+        },
+        "crash_recovery": {
+          "after_commit_dir_fsync": {
+            "expected": "new",
+            "pass": true,
+            "recovered_generation": 2
+          },
+          "after_head_fsync": {
+            "expected": "old",
+            "pass": true,
+            "recovered_generation": 1
+          },
+          "after_head_replace": {
+            "expected": "new",
+            "pass": true,
+            "recovered_generation": 2
+          },
+          "after_partial_slot_write": {
+            "expected": "old",
+            "pass": true,
+            "recovered_generation": 1
+          },
+          "after_slot_dir_fsync": {
+            "expected": "old",
+            "pass": true,
+            "recovered_generation": 1
+          },
+          "after_slot_fsync": {
+            "expected": "old",
+            "pass": true,
+            "recovered_generation": 1
+          },
+          "after_slot_replace": {
+            "expected": "old",
+            "pass": true,
+            "recovered_generation": 1
+          }
+        },
+        "level": {
+          "ambient_events": 4096,
+          "id": "events_4096"
+        },
+        "migration": {
+          "continuation_equal": true,
+          "exact_state": true,
+          "stage9d_raw_envelope_imported": true
+        },
+        "query_correct_after_new_checkpoint": true,
+        "storage": {
+          "compact_bytes": 404835,
+          "full_snapshot_bytes": 1626313,
+          "slot_packet_bytes": 540139
+        },
+        "timing": {
+          "atomic_write_median_us": 83795.273,
+          "recover_median_us": 719293.828,
+          "samples": 3
+        }
+      }
+    ],
+    "schema": "ghost.v1.12-dev.atomic-recovery.stage9e.v1",
+    "strict_verdict": "V112_ATOMIC_RECOVERY_STAGE9E_EXPERIMENT_VALID"
+  },
+  "focused_tests": "60 passed",
+  "full_nonresearch_regression": "3430 passed, 1 skipped",
+  "ghostapi_public_methods_added": [],
+  "maintained_core_coverage": {
+    "branch_percent": 100.0,
+    "branches": 2984,
+    "statement_percent": 100.0,
+    "statements": 7112
+  },
+  "next_experiment": "If Stage 9E passes, test the remaining productionization boundary before touching ghost/*: multi-process writer exclusion/locking, bounded recovery under interrupted migration, and a guarded shadow-mode production candidate with rollback and persistence-version negotiation.",
+  "non_claim": "Stage 9E does not modify production persistence or prove sudden-power-loss durability across filesystems/hardware, concurrent-writer safety, authenticated tamper resistance, forward compatibility with unknown future schemas, or production readiness.",
+  "post_sha256": {
+    "docs/research/v1.12_atomic_recovery_stage9e.md": "c3b5588af357dca6f11651074bd6d48b0ffd607ef6436d61b318c0169558b5c7",
+    "ghost_research/v112_atomic_recovery_stage9e.py": "77d7ce4ca2b8ff1532abd9af82533afb75449e1600ae2306c6ceb03dcee075e0",
+    "tests/test_v112_atomic_recovery_stage9e.py": "38d579a3ceb4762df1509fe9f70e5f3c411fffbb5988e00e7f1b9c10796224b3"
+  },
+  "predecessor_stage9d_commit": "c31071201a8f7c8074c49a767b79f1afd6f45222",
+  "production_ghost_source_modified": false,
+  "research_coverage": {
+    "branch_percent": 100.0,
+    "branches": 72,
+    "statement_percent": 100.0,
+    "statements": 310
+  },
+  "schema": "ghost.v1.12-dev.atomic-recovery.stage9e.evidence.v1",
+  "stage": "two_slot_atomic_checkpoint_process_crash_recovery_and_stage9d_migration_adjudication",
+  "strict_verdict": "V112_ATOMIC_RECOVERY_STAGE9E_PASS",
+  "supported_claim": "Stage 9E tests a research-only two-slot checkpoint protocol using actual child-process termination at seven write boundaries per scale. It requires recovery of the prior committed generation before head replacement and the new generation afterward, exact restored Ghost state, exact post-recovery continuation parity, single-slot/head corruption recovery, dual-slot fail-closed behavior, and exact backward migration from the Stage-9D envelope."
+}

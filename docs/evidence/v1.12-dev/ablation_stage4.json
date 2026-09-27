@@ -1,0 +1,5309 @@
+{
+  "ablation_semantics": "decision contribution disabled; stored subsystem state retained",
+  "attribution_category": "single_channel_contribution_detected",
+  "baseline_modified_between_conditions": false,
+  "decision_equivalent_to_full": [
+    "full",
+    "no_recall",
+    "no_values"
+  ],
+  "effective_single_ablations": [
+    "no_goals",
+    "no_beliefs"
+  ],
+  "focused_tests": "38 passed",
+  "full_nonresearch_regression": "2935 passed, 1 skipped",
+  "ghostapi_public_methods_added": [],
+  "ineffective_single_ablations": [
+    "no_values",
+    "no_recall"
+  ],
+  "interaction_flags": [],
+  "maintained_core_coverage": {
+    "branch_percent": 100.0,
+    "branches": 2984,
+    "statement_percent": 100.0,
+    "statements": 7112
+  },
+  "matrix": {
+    "claim_boundary": "Stage 4 attributes decision-path contribution on the frozen Stage-3 matrix only. A disabled weight removes a channel from action scoring but does not delete its stored subsystem state. Results do not establish general Ghost superiority or production value.",
+    "conditions": {
+      "full": {
+        "attribution": {
+          "causally_effective_on_matrix": false,
+          "changed_decision_count": 0,
+          "changed_decisions": [],
+          "incorrect_checkpoints": [],
+          "score_delta_from_full": 0
+        },
+        "baseline_accuracy": 1.0,
+        "baseline_correct": 30,
+        "condition": "full",
+        "config": {
+          "recall_enabled": true,
+          "weights": {
+            "beliefs": 1.0,
+            "goals": 1.0,
+            "utility": 1.0,
+            "values": 1.0
+          }
+        },
+        "decision_divergence_count": 0,
+        "ghost_accuracy": 1.0,
+        "ghost_correct": 30,
+        "invariant_failures": [],
+        "scored_checkpoints": 30,
+        "trial_count": 3,
+        "trials": [
+          {
+            "baseline_correct": 10,
+            "checkpoint_count": 10,
+            "checkpoints": [
+              {
+                "baseline": "hold",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "hold": 0.9075000000000001,
+                  "retreat": 0.03999999999999998
+                },
+                "checkpoint": "goal_initial",
+                "expected": "hold",
+                "ghost": "hold",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "hold": 0.9075000000000001,
+                  "retreat": 0.03999999999999998
+                }
+              },
+              {
+                "baseline": "hold",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "assist": 0.37999999999999995,
+                  "hold": 0.865
+                },
+                "checkpoint": "conflict_initial",
+                "expected": "hold",
+                "ghost": "hold",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "assist": 0.37999999999999995,
+                  "hold": 0.865
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.5716699660851172,
+                  "challenge": 0.5716699660851172
+                },
+                "checkpoint": "hostile_observed",
+                "expected": "challenge",
+                "ghost": "challenge",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "admit": -0.7358490566037735,
+                  "challenge": 0.7358490566037735
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.5716699660851172,
+                  "challenge": 0.5716699660851172
+                },
+                "checkpoint": "hidden_fact_boundary",
+                "expected": "challenge",
+                "ghost": "challenge",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "admit": -0.7358490566037735,
+                  "challenge": 0.7358490566037735
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.5716699660851172,
+                  "challenge": 0.5716699660851172
+                },
+                "checkpoint": "restart_continuity",
+                "expected": "challenge",
+                "ghost": "challenge",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "admit": -0.7358490566037735,
+                  "challenge": 0.7358490566037735
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.2913126124515908,
+                  "challenge": 0.2913126124515908
+                },
+                "checkpoint": "delayed_relevance",
+                "expected": "challenge",
+                "ghost": "challenge",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "admit": -0.30000000000000004,
+                  "challenge": 0.30000000000000004
+                }
+              },
+              {
+                "baseline": "admit",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": 0.5370495669980353,
+                  "challenge": -0.5370495669980353
+                },
+                "checkpoint": "contradiction_revised",
+                "expected": "admit",
+                "ghost": "admit",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "admit": 0.4615384615384615,
+                  "challenge": -0.4615384615384615
+                }
+              },
+              {
+                "baseline": "assist",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "assist": 0.84,
+                  "hold": 0.3975
+                },
+                "checkpoint": "conflict_shift",
+                "expected": "assist",
+                "ghost": "assist",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "assist": 0.84,
+                  "hold": 0.3975
+                }
+              },
+              {
+                "baseline": "retreat",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "hold": 0.36000000000000004,
+                  "retreat": 0.5800000000000001
+                },
+                "checkpoint": "goal_delayed_consequence",
+                "expected": "retreat",
+                "ghost": "retreat",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "hold": 0.36000000000000004,
+                  "retreat": 0.5800000000000001
+                }
+              },
+              {
+                "baseline": "retreat",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "hold": 0.36000000000000004,
+                  "retreat": 0.5800000000000001
+                },
+                "checkpoint": "recurrence_final",
+                "expected": "retreat",
+                "ghost": "retreat",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "hold": 0.36000000000000004,
+                  "retreat": 0.5800000000000001
+                }
+              }
+            ],
+            "delayed_relevance_recall": {
+              "baseline": true,
+              "ghost": true
+            },
+            "divergence_count": 0,
+            "ghost_correct": 10,
+            "hidden_information_boundary": {
+              "baseline": true,
+              "ghost": true
+            },
+            "restart_scores_match": true,
+            "variant": "balanced"
+          },
+          {
+            "baseline_correct": 10,
+            "checkpoint_count": 10,
+            "checkpoints": [
+              {
+                "baseline": "hold",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "hold": 0.9075000000000001,
+                  "retreat": 0.03999999999999998
+                },
+                "checkpoint": "goal_initial",
+                "expected": "hold",
+                "ghost": "hold",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "hold": 0.9075000000000001,
+                  "retreat": 0.03999999999999998
+                }
+              },
+              {
+                "baseline": "hold",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "assist": 0.37999999999999995,
+                  "hold": 0.865
+                },
+                "checkpoint": "conflict_initial",
+                "expected": "hold",
+                "ghost": "hold",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "assist": 0.37999999999999995,
+                  "hold": 0.865
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.4218990052500078,
+                  "challenge": 0.4218990052500078
+                },
+                "checkpoint": "hostile_observed",
+                "expected": "challenge",
+                "ghost": "challenge",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "admit": -0.5510204081632651,
+                  "challenge": 0.5510204081632651
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.4218990052500078,
+                  "challenge": 0.4218990052500078
+                },
+                "checkpoint": "hidden_fact_boundary",
+                "expected": "challenge",
+                "ghost": "challenge",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "admit": -0.5510204081632651,
+                  "challenge": 0.5510204081632651
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.4218990052500078,
+                  "challenge": 0.4218990052500078
+                },
+                "checkpoint": "restart_continuity",
+                "expected": "challenge",
+                "ghost": "challenge",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "admit": -0.5510204081632651,
+                  "challenge": 0.5510204081632651
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.09966799462495568,
+                  "challenge": 0.09966799462495568
+                },
+                "checkpoint": "delayed_relevance",
+                "expected": "challenge",
+                "ghost": "challenge",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "admit": -0.10714285714285704,
+                  "challenge": 0.10714285714285704
+                }
+              },
+              {
+                "baseline": "admit",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": 0.6910694698329307,
+                  "challenge": -0.6910694698329307
+                },
+                "checkpoint": "contradiction_revised",
+                "expected": "admit",
+                "ghost": "admit",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "admit": 0.6799999999999999,
+                  "challenge": -0.6799999999999999
+                }
+              },
+              {
+                "baseline": "assist",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "assist": 0.84,
+                  "hold": 0.3975
+                },
+                "checkpoint": "conflict_shift",
+                "expected": "assist",
+                "ghost": "assist",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "assist": 0.84,
+                  "hold": 0.3975
+                }
+              },
+              {
+                "baseline": "retreat",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "hold": 0.36000000000000004,
+                  "retreat": 0.5800000000000001
+                },
+                "checkpoint": "goal_delayed_consequence",
+                "expected": "retreat",
+                "ghost": "retreat",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "hold": 0.36000000000000004,
+                  "retreat": 0.5800000000000001
+                }
+              },
+              {
+                "baseline": "retreat",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "hold": 0.36000000000000004,
+                  "retreat": 0.5800000000000001
+                },
+                "checkpoint": "recurrence_final",
+                "expected": "retreat",
+                "ghost": "retreat",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "hold": 0.36000000000000004,
+                  "retreat": 0.5800000000000001
+                }
+              }
+            ],
+            "delayed_relevance_recall": {
+              "baseline": true,
+              "ghost": true
+            },
+            "divergence_count": 0,
+            "ghost_correct": 10,
+            "hidden_information_boundary": {
+              "baseline": true,
+              "ghost": true
+            },
+            "restart_scores_match": true,
+            "variant": "weak_hostile"
+          },
+          {
+            "baseline_correct": 10,
+            "checkpoint_count": 10,
+            "checkpoints": [
+              {
+                "baseline": "hold",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "hold": 0.9075000000000001,
+                  "retreat": 0.03999999999999998
+                },
+                "checkpoint": "goal_initial",
+                "expected": "hold",
+                "ghost": "hold",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "hold": 0.9075000000000001,
+                  "retreat": 0.03999999999999998
+                }
+              },
+              {
+                "baseline": "hold",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "assist": 0.37999999999999995,
+                  "hold": 0.865
+                },
+                "checkpoint": "conflict_initial",
+                "expected": "hold",
+                "ghost": "hold",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "assist": 0.37999999999999995,
+                  "hold": 0.865
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.7162978701990246,
+                  "challenge": 0.7162978701990246
+                },
+                "checkpoint": "hostile_observed",
+                "expected": "challenge",
+                "ghost": "challenge",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "admit": -0.9310344827586207,
+                  "challenge": 0.9310344827586207
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.7162978701990246,
+                  "challenge": 0.7162978701990246
+                },
+                "checkpoint": "hidden_fact_boundary",
+                "expected": "challenge",
+                "ghost": "challenge",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "admit": -0.9310344827586207,
+                  "challenge": 0.9310344827586207
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.7162978701990246,
+                  "challenge": 0.7162978701990246
+                },
+                "checkpoint": "restart_continuity",
+                "expected": "challenge",
+                "ghost": "challenge",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "admit": -0.9310344827586207,
+                  "challenge": 0.9310344827586207
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.5005202111902356,
+                  "challenge": 0.5005202111902356
+                },
+                "checkpoint": "delayed_relevance",
+                "expected": "challenge",
+                "ghost": "challenge",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "admit": -0.5076923076923077,
+                  "challenge": 0.5076923076923077
+                }
+              },
+              {
+                "baseline": "admit",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": 0.739783051274004,
+                  "challenge": -0.739783051274004
+                },
+                "checkpoint": "contradiction_revised",
+                "expected": "admit",
+                "ghost": "admit",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "admit": 0.6,
+                  "challenge": -0.6
+                }
+              },
+              {
+                "baseline": "assist",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "assist": 0.84,
+                  "hold": 0.3975
+                },
+                "checkpoint": "conflict_shift",
+                "expected": "assist",
+                "ghost": "assist",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "assist": 0.84,
+                  "hold": 0.3975
+                }
+              },
+              {
+                "baseline": "retreat",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "hold": 0.36000000000000004,
+                  "retreat": 0.5800000000000001
+                },
+                "checkpoint": "goal_delayed_consequence",
+                "expected": "retreat",
+                "ghost": "retreat",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "hold": 0.36000000000000004,
+                  "retreat": 0.5800000000000001
+                }
+              },
+              {
+                "baseline": "retreat",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "hold": 0.36000000000000004,
+                  "retreat": 0.5800000000000001
+                },
+                "checkpoint": "recurrence_final",
+                "expected": "retreat",
+                "ghost": "retreat",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "hold": 0.36000000000000004,
+                  "retreat": 0.5800000000000001
+                }
+              }
+            ],
+            "delayed_relevance_recall": {
+              "baseline": true,
+              "ghost": true
+            },
+            "divergence_count": 0,
+            "ghost_correct": 10,
+            "hidden_information_boundary": {
+              "baseline": true,
+              "ghost": true
+            },
+            "restart_scores_match": true,
+            "variant": "repeated"
+          }
+        ]
+      },
+      "no_beliefs": {
+        "attribution": {
+          "causally_effective_on_matrix": true,
+          "changed_decision_count": 12,
+          "changed_decisions": [
+            "balanced:delayed_relevance",
+            "balanced:hidden_fact_boundary",
+            "balanced:hostile_observed",
+            "balanced:restart_continuity",
+            "repeated:delayed_relevance",
+            "repeated:hidden_fact_boundary",
+            "repeated:hostile_observed",
+            "repeated:restart_continuity",
+            "weak_hostile:delayed_relevance",
+            "weak_hostile:hidden_fact_boundary",
+            "weak_hostile:hostile_observed",
+            "weak_hostile:restart_continuity"
+          ],
+          "incorrect_checkpoints": [
+            "balanced:delayed_relevance",
+            "balanced:hidden_fact_boundary",
+            "balanced:hostile_observed",
+            "balanced:restart_continuity",
+            "repeated:delayed_relevance",
+            "repeated:hidden_fact_boundary",
+            "repeated:hostile_observed",
+            "repeated:restart_continuity",
+            "weak_hostile:delayed_relevance",
+            "weak_hostile:hidden_fact_boundary",
+            "weak_hostile:hostile_observed",
+            "weak_hostile:restart_continuity"
+          ],
+          "score_delta_from_full": -12
+        },
+        "baseline_accuracy": 1.0,
+        "baseline_correct": 30,
+        "condition": "no_beliefs",
+        "config": {
+          "recall_enabled": true,
+          "weights": {
+            "beliefs": 0.0,
+            "goals": 1.0,
+            "utility": 1.0,
+            "values": 1.0
+          }
+        },
+        "decision_divergence_count": 12,
+        "ghost_accuracy": 0.6,
+        "ghost_correct": 18,
+        "invariant_failures": [],
+        "scored_checkpoints": 30,
+        "trial_count": 3,
+        "trials": [
+          {
+            "baseline_correct": 10,
+            "checkpoint_count": 10,
+            "checkpoints": [
+              {
+                "baseline": "hold",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "hold": 0.9075000000000001,
+                  "retreat": 0.03999999999999998
+                },
+                "checkpoint": "goal_initial",
+                "expected": "hold",
+                "ghost": "hold",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "hold": 0.9075000000000001,
+                  "retreat": 0.03999999999999998
+                }
+              },
+              {
+                "baseline": "hold",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "assist": 0.37999999999999995,
+                  "hold": 0.865
+                },
+                "checkpoint": "conflict_initial",
+                "expected": "hold",
+                "ghost": "hold",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "assist": 0.37999999999999995,
+                  "hold": 0.865
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.5716699660851172,
+                  "challenge": 0.5716699660851172
+                },
+                "checkpoint": "hostile_observed",
+                "expected": "challenge",
+                "ghost": "admit",
+                "ghost_correct": false,
+                "ghost_scores": {
+                  "admit": 0.0,
+                  "challenge": 0.0
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.5716699660851172,
+                  "challenge": 0.5716699660851172
+                },
+                "checkpoint": "hidden_fact_boundary",
+                "expected": "challenge",
+                "ghost": "admit",
+                "ghost_correct": false,
+                "ghost_scores": {
+                  "admit": 0.0,
+                  "challenge": 0.0
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.5716699660851172,
+                  "challenge": 0.5716699660851172
+                },
+                "checkpoint": "restart_continuity",
+                "expected": "challenge",
+                "ghost": "admit",
+                "ghost_correct": false,
+                "ghost_scores": {
+                  "admit": 0.0,
+                  "challenge": 0.0
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.2913126124515908,
+                  "challenge": 0.2913126124515908
+                },
+                "checkpoint": "delayed_relevance",
+                "expected": "challenge",
+                "ghost": "admit",
+                "ghost_correct": false,
+                "ghost_scores": {
+                  "admit": 0.0,
+                  "challenge": 0.0
+                }
+              },
+              {
+                "baseline": "admit",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": 0.5370495669980353,
+                  "challenge": -0.5370495669980353
+                },
+                "checkpoint": "contradiction_revised",
+                "expected": "admit",
+                "ghost": "admit",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "admit": 0.0,
+                  "challenge": 0.0
+                }
+              },
+              {
+                "baseline": "assist",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "assist": 0.84,
+                  "hold": 0.3975
+                },
+                "checkpoint": "conflict_shift",
+                "expected": "assist",
+                "ghost": "assist",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "assist": 0.84,
+                  "hold": 0.3975
+                }
+              },
+              {
+                "baseline": "retreat",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "hold": 0.36000000000000004,
+                  "retreat": 0.5800000000000001
+                },
+                "checkpoint": "goal_delayed_consequence",
+                "expected": "retreat",
+                "ghost": "retreat",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "hold": 0.36000000000000004,
+                  "retreat": 0.5800000000000001
+                }
+              },
+              {
+                "baseline": "retreat",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "hold": 0.36000000000000004,
+                  "retreat": 0.5800000000000001
+                },
+                "checkpoint": "recurrence_final",
+                "expected": "retreat",
+                "ghost": "retreat",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "hold": 0.36000000000000004,
+                  "retreat": 0.5800000000000001
+                }
+              }
+            ],
+            "delayed_relevance_recall": {
+              "baseline": true,
+              "ghost": true
+            },
+            "divergence_count": 4,
+            "ghost_correct": 6,
+            "hidden_information_boundary": {
+              "baseline": true,
+              "ghost": true
+            },
+            "restart_scores_match": true,
+            "variant": "balanced"
+          },
+          {
+            "baseline_correct": 10,
+            "checkpoint_count": 10,
+            "checkpoints": [
+              {
+                "baseline": "hold",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "hold": 0.9075000000000001,
+                  "retreat": 0.03999999999999998
+                },
+                "checkpoint": "goal_initial",
+                "expected": "hold",
+                "ghost": "hold",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "hold": 0.9075000000000001,
+                  "retreat": 0.03999999999999998
+                }
+              },
+              {
+                "baseline": "hold",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "assist": 0.37999999999999995,
+                  "hold": 0.865
+                },
+                "checkpoint": "conflict_initial",
+                "expected": "hold",
+                "ghost": "hold",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "assist": 0.37999999999999995,
+                  "hold": 0.865
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.4218990052500078,
+                  "challenge": 0.4218990052500078
+                },
+                "checkpoint": "hostile_observed",
+                "expected": "challenge",
+                "ghost": "admit",
+                "ghost_correct": false,
+                "ghost_scores": {
+                  "admit": 0.0,
+                  "challenge": 0.0
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.4218990052500078,
+                  "challenge": 0.4218990052500078
+                },
+                "checkpoint": "hidden_fact_boundary",
+                "expected": "challenge",
+                "ghost": "admit",
+                "ghost_correct": false,
+                "ghost_scores": {
+                  "admit": 0.0,
+                  "challenge": 0.0
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.4218990052500078,
+                  "challenge": 0.4218990052500078
+                },
+                "checkpoint": "restart_continuity",
+                "expected": "challenge",
+                "ghost": "admit",
+                "ghost_correct": false,
+                "ghost_scores": {
+                  "admit": 0.0,
+                  "challenge": 0.0
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.09966799462495568,
+                  "challenge": 0.09966799462495568
+                },
+                "checkpoint": "delayed_relevance",
+                "expected": "challenge",
+                "ghost": "admit",
+                "ghost_correct": false,
+                "ghost_scores": {
+                  "admit": 0.0,
+                  "challenge": 0.0
+                }
+              },
+              {
+                "baseline": "admit",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": 0.6910694698329307,
+                  "challenge": -0.6910694698329307
+                },
+                "checkpoint": "contradiction_revised",
+                "expected": "admit",
+                "ghost": "admit",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "admit": 0.0,
+                  "challenge": 0.0
+                }
+              },
+              {
+                "baseline": "assist",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "assist": 0.84,
+                  "hold": 0.3975
+                },
+                "checkpoint": "conflict_shift",
+                "expected": "assist",
+                "ghost": "assist",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "assist": 0.84,
+                  "hold": 0.3975
+                }
+              },
+              {
+                "baseline": "retreat",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "hold": 0.36000000000000004,
+                  "retreat": 0.5800000000000001
+                },
+                "checkpoint": "goal_delayed_consequence",
+                "expected": "retreat",
+                "ghost": "retreat",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "hold": 0.36000000000000004,
+                  "retreat": 0.5800000000000001
+                }
+              },
+              {
+                "baseline": "retreat",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "hold": 0.36000000000000004,
+                  "retreat": 0.5800000000000001
+                },
+                "checkpoint": "recurrence_final",
+                "expected": "retreat",
+                "ghost": "retreat",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "hold": 0.36000000000000004,
+                  "retreat": 0.5800000000000001
+                }
+              }
+            ],
+            "delayed_relevance_recall": {
+              "baseline": true,
+              "ghost": true
+            },
+            "divergence_count": 4,
+            "ghost_correct": 6,
+            "hidden_information_boundary": {
+              "baseline": true,
+              "ghost": true
+            },
+            "restart_scores_match": true,
+            "variant": "weak_hostile"
+          },
+          {
+            "baseline_correct": 10,
+            "checkpoint_count": 10,
+            "checkpoints": [
+              {
+                "baseline": "hold",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "hold": 0.9075000000000001,
+                  "retreat": 0.03999999999999998
+                },
+                "checkpoint": "goal_initial",
+                "expected": "hold",
+                "ghost": "hold",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "hold": 0.9075000000000001,
+                  "retreat": 0.03999999999999998
+                }
+              },
+              {
+                "baseline": "hold",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "assist": 0.37999999999999995,
+                  "hold": 0.865
+                },
+                "checkpoint": "conflict_initial",
+                "expected": "hold",
+                "ghost": "hold",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "assist": 0.37999999999999995,
+                  "hold": 0.865
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.7162978701990246,
+                  "challenge": 0.7162978701990246
+                },
+                "checkpoint": "hostile_observed",
+                "expected": "challenge",
+                "ghost": "admit",
+                "ghost_correct": false,
+                "ghost_scores": {
+                  "admit": 0.0,
+                  "challenge": 0.0
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.7162978701990246,
+                  "challenge": 0.7162978701990246
+                },
+                "checkpoint": "hidden_fact_boundary",
+                "expected": "challenge",
+                "ghost": "admit",
+                "ghost_correct": false,
+                "ghost_scores": {
+                  "admit": 0.0,
+                  "challenge": 0.0
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.7162978701990246,
+                  "challenge": 0.7162978701990246
+                },
+                "checkpoint": "restart_continuity",
+                "expected": "challenge",
+                "ghost": "admit",
+                "ghost_correct": false,
+                "ghost_scores": {
+                  "admit": 0.0,
+                  "challenge": 0.0
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.5005202111902356,
+                  "challenge": 0.5005202111902356
+                },
+                "checkpoint": "delayed_relevance",
+                "expected": "challenge",
+                "ghost": "admit",
+                "ghost_correct": false,
+                "ghost_scores": {
+                  "admit": 0.0,
+                  "challenge": 0.0
+                }
+              },
+              {
+                "baseline": "admit",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": 0.739783051274004,
+                  "challenge": -0.739783051274004
+                },
+                "checkpoint": "contradiction_revised",
+                "expected": "admit",
+                "ghost": "admit",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "admit": 0.0,
+                  "challenge": 0.0
+                }
+              },
+              {
+                "baseline": "assist",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "assist": 0.84,
+                  "hold": 0.3975
+                },
+                "checkpoint": "conflict_shift",
+                "expected": "assist",
+                "ghost": "assist",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "assist": 0.84,
+                  "hold": 0.3975
+                }
+              },
+              {
+                "baseline": "retreat",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "hold": 0.36000000000000004,
+                  "retreat": 0.5800000000000001
+                },
+                "checkpoint": "goal_delayed_consequence",
+                "expected": "retreat",
+                "ghost": "retreat",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "hold": 0.36000000000000004,
+                  "retreat": 0.5800000000000001
+                }
+              },
+              {
+                "baseline": "retreat",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "hold": 0.36000000000000004,
+                  "retreat": 0.5800000000000001
+                },
+                "checkpoint": "recurrence_final",
+                "expected": "retreat",
+                "ghost": "retreat",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "hold": 0.36000000000000004,
+                  "retreat": 0.5800000000000001
+                }
+              }
+            ],
+            "delayed_relevance_recall": {
+              "baseline": true,
+              "ghost": true
+            },
+            "divergence_count": 4,
+            "ghost_correct": 6,
+            "hidden_information_boundary": {
+              "baseline": true,
+              "ghost": true
+            },
+            "restart_scores_match": true,
+            "variant": "repeated"
+          }
+        ]
+      },
+      "no_goals": {
+        "attribution": {
+          "causally_effective_on_matrix": true,
+          "changed_decision_count": 6,
+          "changed_decisions": [
+            "balanced:conflict_shift",
+            "balanced:goal_initial",
+            "repeated:conflict_shift",
+            "repeated:goal_initial",
+            "weak_hostile:conflict_shift",
+            "weak_hostile:goal_initial"
+          ],
+          "incorrect_checkpoints": [
+            "balanced:conflict_shift",
+            "balanced:goal_initial",
+            "repeated:conflict_shift",
+            "repeated:goal_initial",
+            "weak_hostile:conflict_shift",
+            "weak_hostile:goal_initial"
+          ],
+          "score_delta_from_full": -6
+        },
+        "baseline_accuracy": 1.0,
+        "baseline_correct": 30,
+        "condition": "no_goals",
+        "config": {
+          "recall_enabled": true,
+          "weights": {
+            "beliefs": 1.0,
+            "goals": 0.0,
+            "utility": 1.0,
+            "values": 1.0
+          }
+        },
+        "decision_divergence_count": 6,
+        "ghost_accuracy": 0.8,
+        "ghost_correct": 24,
+        "invariant_failures": [],
+        "scored_checkpoints": 30,
+        "trial_count": 3,
+        "trials": [
+          {
+            "baseline_correct": 10,
+            "checkpoint_count": 10,
+            "checkpoints": [
+              {
+                "baseline": "hold",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "hold": 0.9075000000000001,
+                  "retreat": 0.03999999999999998
+                },
+                "checkpoint": "goal_initial",
+                "expected": "hold",
+                "ghost": "retreat",
+                "ghost_correct": false,
+                "ghost_scores": {
+                  "hold": 0.51,
+                  "retreat": 0.5800000000000001
+                }
+              },
+              {
+                "baseline": "hold",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "assist": 0.37999999999999995,
+                  "hold": 0.865
+                },
+                "checkpoint": "conflict_initial",
+                "expected": "hold",
+                "ghost": "hold",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "assist": 0.385,
+                  "hold": 0.485
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.5716699660851172,
+                  "challenge": 0.5716699660851172
+                },
+                "checkpoint": "hostile_observed",
+                "expected": "challenge",
+                "ghost": "challenge",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "admit": -0.7358490566037735,
+                  "challenge": 0.7358490566037735
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.5716699660851172,
+                  "challenge": 0.5716699660851172
+                },
+                "checkpoint": "hidden_fact_boundary",
+                "expected": "challenge",
+                "ghost": "challenge",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "admit": -0.7358490566037735,
+                  "challenge": 0.7358490566037735
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.5716699660851172,
+                  "challenge": 0.5716699660851172
+                },
+                "checkpoint": "restart_continuity",
+                "expected": "challenge",
+                "ghost": "challenge",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "admit": -0.7358490566037735,
+                  "challenge": 0.7358490566037735
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.2913126124515908,
+                  "challenge": 0.2913126124515908
+                },
+                "checkpoint": "delayed_relevance",
+                "expected": "challenge",
+                "ghost": "challenge",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "admit": -0.30000000000000004,
+                  "challenge": 0.30000000000000004
+                }
+              },
+              {
+                "baseline": "admit",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": 0.5370495669980353,
+                  "challenge": -0.5370495669980353
+                },
+                "checkpoint": "contradiction_revised",
+                "expected": "admit",
+                "ghost": "admit",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "admit": 0.4615384615384615,
+                  "challenge": -0.4615384615384615
+                }
+              },
+              {
+                "baseline": "assist",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "assist": 0.84,
+                  "hold": 0.3975
+                },
+                "checkpoint": "conflict_shift",
+                "expected": "assist",
+                "ghost": "hold",
+                "ghost_correct": false,
+                "ghost_scores": {
+                  "assist": 0.385,
+                  "hold": 0.485
+                }
+              },
+              {
+                "baseline": "retreat",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "hold": 0.36000000000000004,
+                  "retreat": 0.5800000000000001
+                },
+                "checkpoint": "goal_delayed_consequence",
+                "expected": "retreat",
+                "ghost": "retreat",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "hold": 0.51,
+                  "retreat": 0.5800000000000001
+                }
+              },
+              {
+                "baseline": "retreat",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "hold": 0.36000000000000004,
+                  "retreat": 0.5800000000000001
+                },
+                "checkpoint": "recurrence_final",
+                "expected": "retreat",
+                "ghost": "retreat",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "hold": 0.51,
+                  "retreat": 0.5800000000000001
+                }
+              }
+            ],
+            "delayed_relevance_recall": {
+              "baseline": true,
+              "ghost": true
+            },
+            "divergence_count": 2,
+            "ghost_correct": 8,
+            "hidden_information_boundary": {
+              "baseline": true,
+              "ghost": true
+            },
+            "restart_scores_match": true,
+            "variant": "balanced"
+          },
+          {
+            "baseline_correct": 10,
+            "checkpoint_count": 10,
+            "checkpoints": [
+              {
+                "baseline": "hold",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "hold": 0.9075000000000001,
+                  "retreat": 0.03999999999999998
+                },
+                "checkpoint": "goal_initial",
+                "expected": "hold",
+                "ghost": "retreat",
+                "ghost_correct": false,
+                "ghost_scores": {
+                  "hold": 0.51,
+                  "retreat": 0.5800000000000001
+                }
+              },
+              {
+                "baseline": "hold",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "assist": 0.37999999999999995,
+                  "hold": 0.865
+                },
+                "checkpoint": "conflict_initial",
+                "expected": "hold",
+                "ghost": "hold",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "assist": 0.385,
+                  "hold": 0.485
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.4218990052500078,
+                  "challenge": 0.4218990052500078
+                },
+                "checkpoint": "hostile_observed",
+                "expected": "challenge",
+                "ghost": "challenge",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "admit": -0.5510204081632651,
+                  "challenge": 0.5510204081632651
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.4218990052500078,
+                  "challenge": 0.4218990052500078
+                },
+                "checkpoint": "hidden_fact_boundary",
+                "expected": "challenge",
+                "ghost": "challenge",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "admit": -0.5510204081632651,
+                  "challenge": 0.5510204081632651
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.4218990052500078,
+                  "challenge": 0.4218990052500078
+                },
+                "checkpoint": "restart_continuity",
+                "expected": "challenge",
+                "ghost": "challenge",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "admit": -0.5510204081632651,
+                  "challenge": 0.5510204081632651
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.09966799462495568,
+                  "challenge": 0.09966799462495568
+                },
+                "checkpoint": "delayed_relevance",
+                "expected": "challenge",
+                "ghost": "challenge",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "admit": -0.10714285714285704,
+                  "challenge": 0.10714285714285704
+                }
+              },
+              {
+                "baseline": "admit",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": 0.6910694698329307,
+                  "challenge": -0.6910694698329307
+                },
+                "checkpoint": "contradiction_revised",
+                "expected": "admit",
+                "ghost": "admit",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "admit": 0.6799999999999999,
+                  "challenge": -0.6799999999999999
+                }
+              },
+              {
+                "baseline": "assist",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "assist": 0.84,
+                  "hold": 0.3975
+                },
+                "checkpoint": "conflict_shift",
+                "expected": "assist",
+                "ghost": "hold",
+                "ghost_correct": false,
+                "ghost_scores": {
+                  "assist": 0.385,
+                  "hold": 0.485
+                }
+              },
+              {
+                "baseline": "retreat",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "hold": 0.36000000000000004,
+                  "retreat": 0.5800000000000001
+                },
+                "checkpoint": "goal_delayed_consequence",
+                "expected": "retreat",
+                "ghost": "retreat",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "hold": 0.51,
+                  "retreat": 0.5800000000000001
+                }
+              },
+              {
+                "baseline": "retreat",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "hold": 0.36000000000000004,
+                  "retreat": 0.5800000000000001
+                },
+                "checkpoint": "recurrence_final",
+                "expected": "retreat",
+                "ghost": "retreat",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "hold": 0.51,
+                  "retreat": 0.5800000000000001
+                }
+              }
+            ],
+            "delayed_relevance_recall": {
+              "baseline": true,
+              "ghost": true
+            },
+            "divergence_count": 2,
+            "ghost_correct": 8,
+            "hidden_information_boundary": {
+              "baseline": true,
+              "ghost": true
+            },
+            "restart_scores_match": true,
+            "variant": "weak_hostile"
+          },
+          {
+            "baseline_correct": 10,
+            "checkpoint_count": 10,
+            "checkpoints": [
+              {
+                "baseline": "hold",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "hold": 0.9075000000000001,
+                  "retreat": 0.03999999999999998
+                },
+                "checkpoint": "goal_initial",
+                "expected": "hold",
+                "ghost": "retreat",
+                "ghost_correct": false,
+                "ghost_scores": {
+                  "hold": 0.51,
+                  "retreat": 0.5800000000000001
+                }
+              },
+              {
+                "baseline": "hold",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "assist": 0.37999999999999995,
+                  "hold": 0.865
+                },
+                "checkpoint": "conflict_initial",
+                "expected": "hold",
+                "ghost": "hold",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "assist": 0.385,
+                  "hold": 0.485
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.7162978701990246,
+                  "challenge": 0.7162978701990246
+                },
+                "checkpoint": "hostile_observed",
+                "expected": "challenge",
+                "ghost": "challenge",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "admit": -0.9310344827586207,
+                  "challenge": 0.9310344827586207
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.7162978701990246,
+                  "challenge": 0.7162978701990246
+                },
+                "checkpoint": "hidden_fact_boundary",
+                "expected": "challenge",
+                "ghost": "challenge",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "admit": -0.9310344827586207,
+                  "challenge": 0.9310344827586207
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.7162978701990246,
+                  "challenge": 0.7162978701990246
+                },
+                "checkpoint": "restart_continuity",
+                "expected": "challenge",
+                "ghost": "challenge",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "admit": -0.9310344827586207,
+                  "challenge": 0.9310344827586207
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.5005202111902356,
+                  "challenge": 0.5005202111902356
+                },
+                "checkpoint": "delayed_relevance",
+                "expected": "challenge",
+                "ghost": "challenge",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "admit": -0.5076923076923077,
+                  "challenge": 0.5076923076923077
+                }
+              },
+              {
+                "baseline": "admit",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": 0.739783051274004,
+                  "challenge": -0.739783051274004
+                },
+                "checkpoint": "contradiction_revised",
+                "expected": "admit",
+                "ghost": "admit",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "admit": 0.6,
+                  "challenge": -0.6
+                }
+              },
+              {
+                "baseline": "assist",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "assist": 0.84,
+                  "hold": 0.3975
+                },
+                "checkpoint": "conflict_shift",
+                "expected": "assist",
+                "ghost": "hold",
+                "ghost_correct": false,
+                "ghost_scores": {
+                  "assist": 0.385,
+                  "hold": 0.485
+                }
+              },
+              {
+                "baseline": "retreat",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "hold": 0.36000000000000004,
+                  "retreat": 0.5800000000000001
+                },
+                "checkpoint": "goal_delayed_consequence",
+                "expected": "retreat",
+                "ghost": "retreat",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "hold": 0.51,
+                  "retreat": 0.5800000000000001
+                }
+              },
+              {
+                "baseline": "retreat",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "hold": 0.36000000000000004,
+                  "retreat": 0.5800000000000001
+                },
+                "checkpoint": "recurrence_final",
+                "expected": "retreat",
+                "ghost": "retreat",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "hold": 0.51,
+                  "retreat": 0.5800000000000001
+                }
+              }
+            ],
+            "delayed_relevance_recall": {
+              "baseline": true,
+              "ghost": true
+            },
+            "divergence_count": 2,
+            "ghost_correct": 8,
+            "hidden_information_boundary": {
+              "baseline": true,
+              "ghost": true
+            },
+            "restart_scores_match": true,
+            "variant": "repeated"
+          }
+        ]
+      },
+      "no_goals_beliefs": {
+        "attribution": {
+          "causally_effective_on_matrix": true,
+          "changed_decision_count": 18,
+          "changed_decisions": [
+            "balanced:conflict_shift",
+            "balanced:delayed_relevance",
+            "balanced:goal_initial",
+            "balanced:hidden_fact_boundary",
+            "balanced:hostile_observed",
+            "balanced:restart_continuity",
+            "repeated:conflict_shift",
+            "repeated:delayed_relevance",
+            "repeated:goal_initial",
+            "repeated:hidden_fact_boundary",
+            "repeated:hostile_observed",
+            "repeated:restart_continuity",
+            "weak_hostile:conflict_shift",
+            "weak_hostile:delayed_relevance",
+            "weak_hostile:goal_initial",
+            "weak_hostile:hidden_fact_boundary",
+            "weak_hostile:hostile_observed",
+            "weak_hostile:restart_continuity"
+          ],
+          "incorrect_checkpoints": [
+            "balanced:conflict_shift",
+            "balanced:delayed_relevance",
+            "balanced:goal_initial",
+            "balanced:hidden_fact_boundary",
+            "balanced:hostile_observed",
+            "balanced:restart_continuity",
+            "repeated:conflict_shift",
+            "repeated:delayed_relevance",
+            "repeated:goal_initial",
+            "repeated:hidden_fact_boundary",
+            "repeated:hostile_observed",
+            "repeated:restart_continuity",
+            "weak_hostile:conflict_shift",
+            "weak_hostile:delayed_relevance",
+            "weak_hostile:goal_initial",
+            "weak_hostile:hidden_fact_boundary",
+            "weak_hostile:hostile_observed",
+            "weak_hostile:restart_continuity"
+          ],
+          "score_delta_from_full": -18
+        },
+        "baseline_accuracy": 1.0,
+        "baseline_correct": 30,
+        "condition": "no_goals_beliefs",
+        "config": {
+          "recall_enabled": true,
+          "weights": {
+            "beliefs": 0.0,
+            "goals": 0.0,
+            "utility": 1.0,
+            "values": 1.0
+          }
+        },
+        "decision_divergence_count": 18,
+        "ghost_accuracy": 0.4,
+        "ghost_correct": 12,
+        "invariant_failures": [],
+        "scored_checkpoints": 30,
+        "trial_count": 3,
+        "trials": [
+          {
+            "baseline_correct": 10,
+            "checkpoint_count": 10,
+            "checkpoints": [
+              {
+                "baseline": "hold",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "hold": 0.9075000000000001,
+                  "retreat": 0.03999999999999998
+                },
+                "checkpoint": "goal_initial",
+                "expected": "hold",
+                "ghost": "retreat",
+                "ghost_correct": false,
+                "ghost_scores": {
+                  "hold": 0.51,
+                  "retreat": 0.5800000000000001
+                }
+              },
+              {
+                "baseline": "hold",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "assist": 0.37999999999999995,
+                  "hold": 0.865
+                },
+                "checkpoint": "conflict_initial",
+                "expected": "hold",
+                "ghost": "hold",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "assist": 0.385,
+                  "hold": 0.485
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.5716699660851172,
+                  "challenge": 0.5716699660851172
+                },
+                "checkpoint": "hostile_observed",
+                "expected": "challenge",
+                "ghost": "admit",
+                "ghost_correct": false,
+                "ghost_scores": {
+                  "admit": 0.0,
+                  "challenge": 0.0
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.5716699660851172,
+                  "challenge": 0.5716699660851172
+                },
+                "checkpoint": "hidden_fact_boundary",
+                "expected": "challenge",
+                "ghost": "admit",
+                "ghost_correct": false,
+                "ghost_scores": {
+                  "admit": 0.0,
+                  "challenge": 0.0
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.5716699660851172,
+                  "challenge": 0.5716699660851172
+                },
+                "checkpoint": "restart_continuity",
+                "expected": "challenge",
+                "ghost": "admit",
+                "ghost_correct": false,
+                "ghost_scores": {
+                  "admit": 0.0,
+                  "challenge": 0.0
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.2913126124515908,
+                  "challenge": 0.2913126124515908
+                },
+                "checkpoint": "delayed_relevance",
+                "expected": "challenge",
+                "ghost": "admit",
+                "ghost_correct": false,
+                "ghost_scores": {
+                  "admit": 0.0,
+                  "challenge": 0.0
+                }
+              },
+              {
+                "baseline": "admit",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": 0.5370495669980353,
+                  "challenge": -0.5370495669980353
+                },
+                "checkpoint": "contradiction_revised",
+                "expected": "admit",
+                "ghost": "admit",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "admit": 0.0,
+                  "challenge": 0.0
+                }
+              },
+              {
+                "baseline": "assist",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "assist": 0.84,
+                  "hold": 0.3975
+                },
+                "checkpoint": "conflict_shift",
+                "expected": "assist",
+                "ghost": "hold",
+                "ghost_correct": false,
+                "ghost_scores": {
+                  "assist": 0.385,
+                  "hold": 0.485
+                }
+              },
+              {
+                "baseline": "retreat",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "hold": 0.36000000000000004,
+                  "retreat": 0.5800000000000001
+                },
+                "checkpoint": "goal_delayed_consequence",
+                "expected": "retreat",
+                "ghost": "retreat",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "hold": 0.51,
+                  "retreat": 0.5800000000000001
+                }
+              },
+              {
+                "baseline": "retreat",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "hold": 0.36000000000000004,
+                  "retreat": 0.5800000000000001
+                },
+                "checkpoint": "recurrence_final",
+                "expected": "retreat",
+                "ghost": "retreat",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "hold": 0.51,
+                  "retreat": 0.5800000000000001
+                }
+              }
+            ],
+            "delayed_relevance_recall": {
+              "baseline": true,
+              "ghost": true
+            },
+            "divergence_count": 6,
+            "ghost_correct": 4,
+            "hidden_information_boundary": {
+              "baseline": true,
+              "ghost": true
+            },
+            "restart_scores_match": true,
+            "variant": "balanced"
+          },
+          {
+            "baseline_correct": 10,
+            "checkpoint_count": 10,
+            "checkpoints": [
+              {
+                "baseline": "hold",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "hold": 0.9075000000000001,
+                  "retreat": 0.03999999999999998
+                },
+                "checkpoint": "goal_initial",
+                "expected": "hold",
+                "ghost": "retreat",
+                "ghost_correct": false,
+                "ghost_scores": {
+                  "hold": 0.51,
+                  "retreat": 0.5800000000000001
+                }
+              },
+              {
+                "baseline": "hold",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "assist": 0.37999999999999995,
+                  "hold": 0.865
+                },
+                "checkpoint": "conflict_initial",
+                "expected": "hold",
+                "ghost": "hold",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "assist": 0.385,
+                  "hold": 0.485
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.4218990052500078,
+                  "challenge": 0.4218990052500078
+                },
+                "checkpoint": "hostile_observed",
+                "expected": "challenge",
+                "ghost": "admit",
+                "ghost_correct": false,
+                "ghost_scores": {
+                  "admit": 0.0,
+                  "challenge": 0.0
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.4218990052500078,
+                  "challenge": 0.4218990052500078
+                },
+                "checkpoint": "hidden_fact_boundary",
+                "expected": "challenge",
+                "ghost": "admit",
+                "ghost_correct": false,
+                "ghost_scores": {
+                  "admit": 0.0,
+                  "challenge": 0.0
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.4218990052500078,
+                  "challenge": 0.4218990052500078
+                },
+                "checkpoint": "restart_continuity",
+                "expected": "challenge",
+                "ghost": "admit",
+                "ghost_correct": false,
+                "ghost_scores": {
+                  "admit": 0.0,
+                  "challenge": 0.0
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.09966799462495568,
+                  "challenge": 0.09966799462495568
+                },
+                "checkpoint": "delayed_relevance",
+                "expected": "challenge",
+                "ghost": "admit",
+                "ghost_correct": false,
+                "ghost_scores": {
+                  "admit": 0.0,
+                  "challenge": 0.0
+                }
+              },
+              {
+                "baseline": "admit",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": 0.6910694698329307,
+                  "challenge": -0.6910694698329307
+                },
+                "checkpoint": "contradiction_revised",
+                "expected": "admit",
+                "ghost": "admit",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "admit": 0.0,
+                  "challenge": 0.0
+                }
+              },
+              {
+                "baseline": "assist",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "assist": 0.84,
+                  "hold": 0.3975
+                },
+                "checkpoint": "conflict_shift",
+                "expected": "assist",
+                "ghost": "hold",
+                "ghost_correct": false,
+                "ghost_scores": {
+                  "assist": 0.385,
+                  "hold": 0.485
+                }
+              },
+              {
+                "baseline": "retreat",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "hold": 0.36000000000000004,
+                  "retreat": 0.5800000000000001
+                },
+                "checkpoint": "goal_delayed_consequence",
+                "expected": "retreat",
+                "ghost": "retreat",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "hold": 0.51,
+                  "retreat": 0.5800000000000001
+                }
+              },
+              {
+                "baseline": "retreat",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "hold": 0.36000000000000004,
+                  "retreat": 0.5800000000000001
+                },
+                "checkpoint": "recurrence_final",
+                "expected": "retreat",
+                "ghost": "retreat",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "hold": 0.51,
+                  "retreat": 0.5800000000000001
+                }
+              }
+            ],
+            "delayed_relevance_recall": {
+              "baseline": true,
+              "ghost": true
+            },
+            "divergence_count": 6,
+            "ghost_correct": 4,
+            "hidden_information_boundary": {
+              "baseline": true,
+              "ghost": true
+            },
+            "restart_scores_match": true,
+            "variant": "weak_hostile"
+          },
+          {
+            "baseline_correct": 10,
+            "checkpoint_count": 10,
+            "checkpoints": [
+              {
+                "baseline": "hold",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "hold": 0.9075000000000001,
+                  "retreat": 0.03999999999999998
+                },
+                "checkpoint": "goal_initial",
+                "expected": "hold",
+                "ghost": "retreat",
+                "ghost_correct": false,
+                "ghost_scores": {
+                  "hold": 0.51,
+                  "retreat": 0.5800000000000001
+                }
+              },
+              {
+                "baseline": "hold",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "assist": 0.37999999999999995,
+                  "hold": 0.865
+                },
+                "checkpoint": "conflict_initial",
+                "expected": "hold",
+                "ghost": "hold",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "assist": 0.385,
+                  "hold": 0.485
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.7162978701990246,
+                  "challenge": 0.7162978701990246
+                },
+                "checkpoint": "hostile_observed",
+                "expected": "challenge",
+                "ghost": "admit",
+                "ghost_correct": false,
+                "ghost_scores": {
+                  "admit": 0.0,
+                  "challenge": 0.0
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.7162978701990246,
+                  "challenge": 0.7162978701990246
+                },
+                "checkpoint": "hidden_fact_boundary",
+                "expected": "challenge",
+                "ghost": "admit",
+                "ghost_correct": false,
+                "ghost_scores": {
+                  "admit": 0.0,
+                  "challenge": 0.0
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.7162978701990246,
+                  "challenge": 0.7162978701990246
+                },
+                "checkpoint": "restart_continuity",
+                "expected": "challenge",
+                "ghost": "admit",
+                "ghost_correct": false,
+                "ghost_scores": {
+                  "admit": 0.0,
+                  "challenge": 0.0
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.5005202111902356,
+                  "challenge": 0.5005202111902356
+                },
+                "checkpoint": "delayed_relevance",
+                "expected": "challenge",
+                "ghost": "admit",
+                "ghost_correct": false,
+                "ghost_scores": {
+                  "admit": 0.0,
+                  "challenge": 0.0
+                }
+              },
+              {
+                "baseline": "admit",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": 0.739783051274004,
+                  "challenge": -0.739783051274004
+                },
+                "checkpoint": "contradiction_revised",
+                "expected": "admit",
+                "ghost": "admit",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "admit": 0.0,
+                  "challenge": 0.0
+                }
+              },
+              {
+                "baseline": "assist",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "assist": 0.84,
+                  "hold": 0.3975
+                },
+                "checkpoint": "conflict_shift",
+                "expected": "assist",
+                "ghost": "hold",
+                "ghost_correct": false,
+                "ghost_scores": {
+                  "assist": 0.385,
+                  "hold": 0.485
+                }
+              },
+              {
+                "baseline": "retreat",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "hold": 0.36000000000000004,
+                  "retreat": 0.5800000000000001
+                },
+                "checkpoint": "goal_delayed_consequence",
+                "expected": "retreat",
+                "ghost": "retreat",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "hold": 0.51,
+                  "retreat": 0.5800000000000001
+                }
+              },
+              {
+                "baseline": "retreat",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "hold": 0.36000000000000004,
+                  "retreat": 0.5800000000000001
+                },
+                "checkpoint": "recurrence_final",
+                "expected": "retreat",
+                "ghost": "retreat",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "hold": 0.51,
+                  "retreat": 0.5800000000000001
+                }
+              }
+            ],
+            "delayed_relevance_recall": {
+              "baseline": true,
+              "ghost": true
+            },
+            "divergence_count": 6,
+            "ghost_correct": 4,
+            "hidden_information_boundary": {
+              "baseline": true,
+              "ghost": true
+            },
+            "restart_scores_match": true,
+            "variant": "repeated"
+          }
+        ]
+      },
+      "no_recall": {
+        "attribution": {
+          "causally_effective_on_matrix": false,
+          "changed_decision_count": 0,
+          "changed_decisions": [],
+          "incorrect_checkpoints": [],
+          "score_delta_from_full": 0
+        },
+        "baseline_accuracy": 1.0,
+        "baseline_correct": 30,
+        "condition": "no_recall",
+        "config": {
+          "recall_enabled": false,
+          "weights": {
+            "beliefs": 1.0,
+            "goals": 1.0,
+            "utility": 1.0,
+            "values": 1.0
+          }
+        },
+        "decision_divergence_count": 0,
+        "ghost_accuracy": 1.0,
+        "ghost_correct": 30,
+        "invariant_failures": [],
+        "scored_checkpoints": 30,
+        "trial_count": 3,
+        "trials": [
+          {
+            "baseline_correct": 10,
+            "checkpoint_count": 10,
+            "checkpoints": [
+              {
+                "baseline": "hold",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "hold": 0.9075000000000001,
+                  "retreat": 0.03999999999999998
+                },
+                "checkpoint": "goal_initial",
+                "expected": "hold",
+                "ghost": "hold",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "hold": 0.9075000000000001,
+                  "retreat": 0.03999999999999998
+                }
+              },
+              {
+                "baseline": "hold",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "assist": 0.37999999999999995,
+                  "hold": 0.865
+                },
+                "checkpoint": "conflict_initial",
+                "expected": "hold",
+                "ghost": "hold",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "assist": 0.37999999999999995,
+                  "hold": 0.865
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.5716699660851172,
+                  "challenge": 0.5716699660851172
+                },
+                "checkpoint": "hostile_observed",
+                "expected": "challenge",
+                "ghost": "challenge",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "admit": -0.7358490566037735,
+                  "challenge": 0.7358490566037735
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.5716699660851172,
+                  "challenge": 0.5716699660851172
+                },
+                "checkpoint": "hidden_fact_boundary",
+                "expected": "challenge",
+                "ghost": "challenge",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "admit": -0.7358490566037735,
+                  "challenge": 0.7358490566037735
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.5716699660851172,
+                  "challenge": 0.5716699660851172
+                },
+                "checkpoint": "restart_continuity",
+                "expected": "challenge",
+                "ghost": "challenge",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "admit": -0.7358490566037735,
+                  "challenge": 0.7358490566037735
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.2913126124515908,
+                  "challenge": 0.2913126124515908
+                },
+                "checkpoint": "delayed_relevance",
+                "expected": "challenge",
+                "ghost": "challenge",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "admit": -0.7358490566037735,
+                  "challenge": 0.7358490566037735
+                }
+              },
+              {
+                "baseline": "admit",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": 0.5370495669980353,
+                  "challenge": -0.5370495669980353
+                },
+                "checkpoint": "contradiction_revised",
+                "expected": "admit",
+                "ghost": "admit",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "admit": 0.2112676056338028,
+                  "challenge": -0.2112676056338028
+                }
+              },
+              {
+                "baseline": "assist",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "assist": 0.84,
+                  "hold": 0.3975
+                },
+                "checkpoint": "conflict_shift",
+                "expected": "assist",
+                "ghost": "assist",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "assist": 0.84,
+                  "hold": 0.3975
+                }
+              },
+              {
+                "baseline": "retreat",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "hold": 0.36000000000000004,
+                  "retreat": 0.5800000000000001
+                },
+                "checkpoint": "goal_delayed_consequence",
+                "expected": "retreat",
+                "ghost": "retreat",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "hold": 0.36000000000000004,
+                  "retreat": 0.5800000000000001
+                }
+              },
+              {
+                "baseline": "retreat",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "hold": 0.36000000000000004,
+                  "retreat": 0.5800000000000001
+                },
+                "checkpoint": "recurrence_final",
+                "expected": "retreat",
+                "ghost": "retreat",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "hold": 0.36000000000000004,
+                  "retreat": 0.5800000000000001
+                }
+              }
+            ],
+            "delayed_relevance_recall": {
+              "baseline": true,
+              "ghost": true
+            },
+            "divergence_count": 0,
+            "ghost_correct": 10,
+            "hidden_information_boundary": {
+              "baseline": true,
+              "ghost": true
+            },
+            "restart_scores_match": true,
+            "variant": "balanced"
+          },
+          {
+            "baseline_correct": 10,
+            "checkpoint_count": 10,
+            "checkpoints": [
+              {
+                "baseline": "hold",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "hold": 0.9075000000000001,
+                  "retreat": 0.03999999999999998
+                },
+                "checkpoint": "goal_initial",
+                "expected": "hold",
+                "ghost": "hold",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "hold": 0.9075000000000001,
+                  "retreat": 0.03999999999999998
+                }
+              },
+              {
+                "baseline": "hold",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "assist": 0.37999999999999995,
+                  "hold": 0.865
+                },
+                "checkpoint": "conflict_initial",
+                "expected": "hold",
+                "ghost": "hold",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "assist": 0.37999999999999995,
+                  "hold": 0.865
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.4218990052500078,
+                  "challenge": 0.4218990052500078
+                },
+                "checkpoint": "hostile_observed",
+                "expected": "challenge",
+                "ghost": "challenge",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "admit": -0.5510204081632651,
+                  "challenge": 0.5510204081632651
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.4218990052500078,
+                  "challenge": 0.4218990052500078
+                },
+                "checkpoint": "hidden_fact_boundary",
+                "expected": "challenge",
+                "ghost": "challenge",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "admit": -0.5510204081632651,
+                  "challenge": 0.5510204081632651
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.4218990052500078,
+                  "challenge": 0.4218990052500078
+                },
+                "checkpoint": "restart_continuity",
+                "expected": "challenge",
+                "ghost": "challenge",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "admit": -0.5510204081632651,
+                  "challenge": 0.5510204081632651
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.09966799462495568,
+                  "challenge": 0.09966799462495568
+                },
+                "checkpoint": "delayed_relevance",
+                "expected": "challenge",
+                "ghost": "challenge",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "admit": -0.5510204081632651,
+                  "challenge": 0.5510204081632651
+                }
+              },
+              {
+                "baseline": "admit",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": 0.6910694698329307,
+                  "challenge": -0.6910694698329307
+                },
+                "checkpoint": "contradiction_revised",
+                "expected": "admit",
+                "ghost": "admit",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "admit": 0.44117647058823534,
+                  "challenge": -0.44117647058823534
+                }
+              },
+              {
+                "baseline": "assist",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "assist": 0.84,
+                  "hold": 0.3975
+                },
+                "checkpoint": "conflict_shift",
+                "expected": "assist",
+                "ghost": "assist",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "assist": 0.84,
+                  "hold": 0.3975
+                }
+              },
+              {
+                "baseline": "retreat",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "hold": 0.36000000000000004,
+                  "retreat": 0.5800000000000001
+                },
+                "checkpoint": "goal_delayed_consequence",
+                "expected": "retreat",
+                "ghost": "retreat",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "hold": 0.36000000000000004,
+                  "retreat": 0.5800000000000001
+                }
+              },
+              {
+                "baseline": "retreat",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "hold": 0.36000000000000004,
+                  "retreat": 0.5800000000000001
+                },
+                "checkpoint": "recurrence_final",
+                "expected": "retreat",
+                "ghost": "retreat",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "hold": 0.36000000000000004,
+                  "retreat": 0.5800000000000001
+                }
+              }
+            ],
+            "delayed_relevance_recall": {
+              "baseline": true,
+              "ghost": true
+            },
+            "divergence_count": 0,
+            "ghost_correct": 10,
+            "hidden_information_boundary": {
+              "baseline": true,
+              "ghost": true
+            },
+            "restart_scores_match": true,
+            "variant": "weak_hostile"
+          },
+          {
+            "baseline_correct": 10,
+            "checkpoint_count": 10,
+            "checkpoints": [
+              {
+                "baseline": "hold",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "hold": 0.9075000000000001,
+                  "retreat": 0.03999999999999998
+                },
+                "checkpoint": "goal_initial",
+                "expected": "hold",
+                "ghost": "hold",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "hold": 0.9075000000000001,
+                  "retreat": 0.03999999999999998
+                }
+              },
+              {
+                "baseline": "hold",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "assist": 0.37999999999999995,
+                  "hold": 0.865
+                },
+                "checkpoint": "conflict_initial",
+                "expected": "hold",
+                "ghost": "hold",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "assist": 0.37999999999999995,
+                  "hold": 0.865
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.7162978701990246,
+                  "challenge": 0.7162978701990246
+                },
+                "checkpoint": "hostile_observed",
+                "expected": "challenge",
+                "ghost": "challenge",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "admit": -0.9310344827586207,
+                  "challenge": 0.9310344827586207
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.7162978701990246,
+                  "challenge": 0.7162978701990246
+                },
+                "checkpoint": "hidden_fact_boundary",
+                "expected": "challenge",
+                "ghost": "challenge",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "admit": -0.9310344827586207,
+                  "challenge": 0.9310344827586207
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.7162978701990246,
+                  "challenge": 0.7162978701990246
+                },
+                "checkpoint": "restart_continuity",
+                "expected": "challenge",
+                "ghost": "challenge",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "admit": -0.9310344827586207,
+                  "challenge": 0.9310344827586207
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.5005202111902356,
+                  "challenge": 0.5005202111902356
+                },
+                "checkpoint": "delayed_relevance",
+                "expected": "challenge",
+                "ghost": "challenge",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "admit": -0.9310344827586207,
+                  "challenge": 0.9310344827586207
+                }
+              },
+              {
+                "baseline": "admit",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": 0.739783051274004,
+                  "challenge": -0.739783051274004
+                },
+                "checkpoint": "contradiction_revised",
+                "expected": "admit",
+                "ghost": "admit",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "admit": 0.4090909090909091,
+                  "challenge": -0.4090909090909091
+                }
+              },
+              {
+                "baseline": "assist",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "assist": 0.84,
+                  "hold": 0.3975
+                },
+                "checkpoint": "conflict_shift",
+                "expected": "assist",
+                "ghost": "assist",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "assist": 0.84,
+                  "hold": 0.3975
+                }
+              },
+              {
+                "baseline": "retreat",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "hold": 0.36000000000000004,
+                  "retreat": 0.5800000000000001
+                },
+                "checkpoint": "goal_delayed_consequence",
+                "expected": "retreat",
+                "ghost": "retreat",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "hold": 0.36000000000000004,
+                  "retreat": 0.5800000000000001
+                }
+              },
+              {
+                "baseline": "retreat",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "hold": 0.36000000000000004,
+                  "retreat": 0.5800000000000001
+                },
+                "checkpoint": "recurrence_final",
+                "expected": "retreat",
+                "ghost": "retreat",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "hold": 0.36000000000000004,
+                  "retreat": 0.5800000000000001
+                }
+              }
+            ],
+            "delayed_relevance_recall": {
+              "baseline": true,
+              "ghost": true
+            },
+            "divergence_count": 0,
+            "ghost_correct": 10,
+            "hidden_information_boundary": {
+              "baseline": true,
+              "ghost": true
+            },
+            "restart_scores_match": true,
+            "variant": "repeated"
+          }
+        ]
+      },
+      "no_values": {
+        "attribution": {
+          "causally_effective_on_matrix": false,
+          "changed_decision_count": 0,
+          "changed_decisions": [],
+          "incorrect_checkpoints": [],
+          "score_delta_from_full": 0
+        },
+        "baseline_accuracy": 1.0,
+        "baseline_correct": 30,
+        "condition": "no_values",
+        "config": {
+          "recall_enabled": true,
+          "weights": {
+            "beliefs": 1.0,
+            "goals": 1.0,
+            "utility": 1.0,
+            "values": 0.0
+          }
+        },
+        "decision_divergence_count": 0,
+        "ghost_accuracy": 1.0,
+        "ghost_correct": 30,
+        "invariant_failures": [],
+        "scored_checkpoints": 30,
+        "trial_count": 3,
+        "trials": [
+          {
+            "baseline_correct": 10,
+            "checkpoint_count": 10,
+            "checkpoints": [
+              {
+                "baseline": "hold",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "hold": 0.9075000000000001,
+                  "retreat": 0.03999999999999998
+                },
+                "checkpoint": "goal_initial",
+                "expected": "hold",
+                "ghost": "hold",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "hold": 0.49750000000000005,
+                  "retreat": 0.10999999999999999
+                }
+              },
+              {
+                "baseline": "hold",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "assist": 0.37999999999999995,
+                  "hold": 0.865
+                },
+                "checkpoint": "conflict_initial",
+                "expected": "hold",
+                "ghost": "hold",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "assist": 0.14499999999999996,
+                  "hold": 0.48
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.5716699660851172,
+                  "challenge": 0.5716699660851172
+                },
+                "checkpoint": "hostile_observed",
+                "expected": "challenge",
+                "ghost": "challenge",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "admit": -0.7358490566037735,
+                  "challenge": 0.7358490566037735
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.5716699660851172,
+                  "challenge": 0.5716699660851172
+                },
+                "checkpoint": "hidden_fact_boundary",
+                "expected": "challenge",
+                "ghost": "challenge",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "admit": -0.7358490566037735,
+                  "challenge": 0.7358490566037735
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.5716699660851172,
+                  "challenge": 0.5716699660851172
+                },
+                "checkpoint": "restart_continuity",
+                "expected": "challenge",
+                "ghost": "challenge",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "admit": -0.7358490566037735,
+                  "challenge": 0.7358490566037735
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.2913126124515908,
+                  "challenge": 0.2913126124515908
+                },
+                "checkpoint": "delayed_relevance",
+                "expected": "challenge",
+                "ghost": "challenge",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "admit": -0.30000000000000004,
+                  "challenge": 0.30000000000000004
+                }
+              },
+              {
+                "baseline": "admit",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": 0.5370495669980353,
+                  "challenge": -0.5370495669980353
+                },
+                "checkpoint": "contradiction_revised",
+                "expected": "admit",
+                "ghost": "admit",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "admit": 0.4615384615384615,
+                  "challenge": -0.4615384615384615
+                }
+              },
+              {
+                "baseline": "assist",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "assist": 0.84,
+                  "hold": 0.3975
+                },
+                "checkpoint": "conflict_shift",
+                "expected": "assist",
+                "ghost": "assist",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "assist": 0.605,
+                  "hold": 0.012499999999999997
+                }
+              },
+              {
+                "baseline": "retreat",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "hold": 0.36000000000000004,
+                  "retreat": 0.5800000000000001
+                },
+                "checkpoint": "goal_delayed_consequence",
+                "expected": "retreat",
+                "ghost": "retreat",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "hold": -0.04999999999999999,
+                  "retreat": 0.65
+                }
+              },
+              {
+                "baseline": "retreat",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "hold": 0.36000000000000004,
+                  "retreat": 0.5800000000000001
+                },
+                "checkpoint": "recurrence_final",
+                "expected": "retreat",
+                "ghost": "retreat",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "hold": -0.04999999999999999,
+                  "retreat": 0.65
+                }
+              }
+            ],
+            "delayed_relevance_recall": {
+              "baseline": true,
+              "ghost": true
+            },
+            "divergence_count": 0,
+            "ghost_correct": 10,
+            "hidden_information_boundary": {
+              "baseline": true,
+              "ghost": true
+            },
+            "restart_scores_match": true,
+            "variant": "balanced"
+          },
+          {
+            "baseline_correct": 10,
+            "checkpoint_count": 10,
+            "checkpoints": [
+              {
+                "baseline": "hold",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "hold": 0.9075000000000001,
+                  "retreat": 0.03999999999999998
+                },
+                "checkpoint": "goal_initial",
+                "expected": "hold",
+                "ghost": "hold",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "hold": 0.49750000000000005,
+                  "retreat": 0.10999999999999999
+                }
+              },
+              {
+                "baseline": "hold",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "assist": 0.37999999999999995,
+                  "hold": 0.865
+                },
+                "checkpoint": "conflict_initial",
+                "expected": "hold",
+                "ghost": "hold",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "assist": 0.14499999999999996,
+                  "hold": 0.48
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.4218990052500078,
+                  "challenge": 0.4218990052500078
+                },
+                "checkpoint": "hostile_observed",
+                "expected": "challenge",
+                "ghost": "challenge",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "admit": -0.5510204081632651,
+                  "challenge": 0.5510204081632651
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.4218990052500078,
+                  "challenge": 0.4218990052500078
+                },
+                "checkpoint": "hidden_fact_boundary",
+                "expected": "challenge",
+                "ghost": "challenge",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "admit": -0.5510204081632651,
+                  "challenge": 0.5510204081632651
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.4218990052500078,
+                  "challenge": 0.4218990052500078
+                },
+                "checkpoint": "restart_continuity",
+                "expected": "challenge",
+                "ghost": "challenge",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "admit": -0.5510204081632651,
+                  "challenge": 0.5510204081632651
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.09966799462495568,
+                  "challenge": 0.09966799462495568
+                },
+                "checkpoint": "delayed_relevance",
+                "expected": "challenge",
+                "ghost": "challenge",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "admit": -0.10714285714285704,
+                  "challenge": 0.10714285714285704
+                }
+              },
+              {
+                "baseline": "admit",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": 0.6910694698329307,
+                  "challenge": -0.6910694698329307
+                },
+                "checkpoint": "contradiction_revised",
+                "expected": "admit",
+                "ghost": "admit",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "admit": 0.6799999999999999,
+                  "challenge": -0.6799999999999999
+                }
+              },
+              {
+                "baseline": "assist",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "assist": 0.84,
+                  "hold": 0.3975
+                },
+                "checkpoint": "conflict_shift",
+                "expected": "assist",
+                "ghost": "assist",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "assist": 0.605,
+                  "hold": 0.012499999999999997
+                }
+              },
+              {
+                "baseline": "retreat",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "hold": 0.36000000000000004,
+                  "retreat": 0.5800000000000001
+                },
+                "checkpoint": "goal_delayed_consequence",
+                "expected": "retreat",
+                "ghost": "retreat",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "hold": -0.04999999999999999,
+                  "retreat": 0.65
+                }
+              },
+              {
+                "baseline": "retreat",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "hold": 0.36000000000000004,
+                  "retreat": 0.5800000000000001
+                },
+                "checkpoint": "recurrence_final",
+                "expected": "retreat",
+                "ghost": "retreat",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "hold": -0.04999999999999999,
+                  "retreat": 0.65
+                }
+              }
+            ],
+            "delayed_relevance_recall": {
+              "baseline": true,
+              "ghost": true
+            },
+            "divergence_count": 0,
+            "ghost_correct": 10,
+            "hidden_information_boundary": {
+              "baseline": true,
+              "ghost": true
+            },
+            "restart_scores_match": true,
+            "variant": "weak_hostile"
+          },
+          {
+            "baseline_correct": 10,
+            "checkpoint_count": 10,
+            "checkpoints": [
+              {
+                "baseline": "hold",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "hold": 0.9075000000000001,
+                  "retreat": 0.03999999999999998
+                },
+                "checkpoint": "goal_initial",
+                "expected": "hold",
+                "ghost": "hold",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "hold": 0.49750000000000005,
+                  "retreat": 0.10999999999999999
+                }
+              },
+              {
+                "baseline": "hold",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "assist": 0.37999999999999995,
+                  "hold": 0.865
+                },
+                "checkpoint": "conflict_initial",
+                "expected": "hold",
+                "ghost": "hold",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "assist": 0.14499999999999996,
+                  "hold": 0.48
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.7162978701990246,
+                  "challenge": 0.7162978701990246
+                },
+                "checkpoint": "hostile_observed",
+                "expected": "challenge",
+                "ghost": "challenge",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "admit": -0.9310344827586207,
+                  "challenge": 0.9310344827586207
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.7162978701990246,
+                  "challenge": 0.7162978701990246
+                },
+                "checkpoint": "hidden_fact_boundary",
+                "expected": "challenge",
+                "ghost": "challenge",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "admit": -0.9310344827586207,
+                  "challenge": 0.9310344827586207
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.7162978701990246,
+                  "challenge": 0.7162978701990246
+                },
+                "checkpoint": "restart_continuity",
+                "expected": "challenge",
+                "ghost": "challenge",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "admit": -0.9310344827586207,
+                  "challenge": 0.9310344827586207
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.5005202111902356,
+                  "challenge": 0.5005202111902356
+                },
+                "checkpoint": "delayed_relevance",
+                "expected": "challenge",
+                "ghost": "challenge",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "admit": -0.5076923076923077,
+                  "challenge": 0.5076923076923077
+                }
+              },
+              {
+                "baseline": "admit",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": 0.739783051274004,
+                  "challenge": -0.739783051274004
+                },
+                "checkpoint": "contradiction_revised",
+                "expected": "admit",
+                "ghost": "admit",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "admit": 0.6,
+                  "challenge": -0.6
+                }
+              },
+              {
+                "baseline": "assist",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "assist": 0.84,
+                  "hold": 0.3975
+                },
+                "checkpoint": "conflict_shift",
+                "expected": "assist",
+                "ghost": "assist",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "assist": 0.605,
+                  "hold": 0.012499999999999997
+                }
+              },
+              {
+                "baseline": "retreat",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "hold": 0.36000000000000004,
+                  "retreat": 0.5800000000000001
+                },
+                "checkpoint": "goal_delayed_consequence",
+                "expected": "retreat",
+                "ghost": "retreat",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "hold": -0.04999999999999999,
+                  "retreat": 0.65
+                }
+              },
+              {
+                "baseline": "retreat",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "hold": 0.36000000000000004,
+                  "retreat": 0.5800000000000001
+                },
+                "checkpoint": "recurrence_final",
+                "expected": "retreat",
+                "ghost": "retreat",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "hold": -0.04999999999999999,
+                  "retreat": 0.65
+                }
+              }
+            ],
+            "delayed_relevance_recall": {
+              "baseline": true,
+              "ghost": true
+            },
+            "divergence_count": 0,
+            "ghost_correct": 10,
+            "hidden_information_boundary": {
+              "baseline": true,
+              "ghost": true
+            },
+            "restart_scores_match": true,
+            "variant": "repeated"
+          }
+        ]
+      },
+      "no_values_beliefs": {
+        "attribution": {
+          "causally_effective_on_matrix": true,
+          "changed_decision_count": 12,
+          "changed_decisions": [
+            "balanced:delayed_relevance",
+            "balanced:hidden_fact_boundary",
+            "balanced:hostile_observed",
+            "balanced:restart_continuity",
+            "repeated:delayed_relevance",
+            "repeated:hidden_fact_boundary",
+            "repeated:hostile_observed",
+            "repeated:restart_continuity",
+            "weak_hostile:delayed_relevance",
+            "weak_hostile:hidden_fact_boundary",
+            "weak_hostile:hostile_observed",
+            "weak_hostile:restart_continuity"
+          ],
+          "incorrect_checkpoints": [
+            "balanced:delayed_relevance",
+            "balanced:hidden_fact_boundary",
+            "balanced:hostile_observed",
+            "balanced:restart_continuity",
+            "repeated:delayed_relevance",
+            "repeated:hidden_fact_boundary",
+            "repeated:hostile_observed",
+            "repeated:restart_continuity",
+            "weak_hostile:delayed_relevance",
+            "weak_hostile:hidden_fact_boundary",
+            "weak_hostile:hostile_observed",
+            "weak_hostile:restart_continuity"
+          ],
+          "score_delta_from_full": -12
+        },
+        "baseline_accuracy": 1.0,
+        "baseline_correct": 30,
+        "condition": "no_values_beliefs",
+        "config": {
+          "recall_enabled": true,
+          "weights": {
+            "beliefs": 0.0,
+            "goals": 1.0,
+            "utility": 1.0,
+            "values": 0.0
+          }
+        },
+        "decision_divergence_count": 12,
+        "ghost_accuracy": 0.6,
+        "ghost_correct": 18,
+        "invariant_failures": [],
+        "scored_checkpoints": 30,
+        "trial_count": 3,
+        "trials": [
+          {
+            "baseline_correct": 10,
+            "checkpoint_count": 10,
+            "checkpoints": [
+              {
+                "baseline": "hold",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "hold": 0.9075000000000001,
+                  "retreat": 0.03999999999999998
+                },
+                "checkpoint": "goal_initial",
+                "expected": "hold",
+                "ghost": "hold",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "hold": 0.49750000000000005,
+                  "retreat": 0.10999999999999999
+                }
+              },
+              {
+                "baseline": "hold",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "assist": 0.37999999999999995,
+                  "hold": 0.865
+                },
+                "checkpoint": "conflict_initial",
+                "expected": "hold",
+                "ghost": "hold",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "assist": 0.14499999999999996,
+                  "hold": 0.48
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.5716699660851172,
+                  "challenge": 0.5716699660851172
+                },
+                "checkpoint": "hostile_observed",
+                "expected": "challenge",
+                "ghost": "admit",
+                "ghost_correct": false,
+                "ghost_scores": {
+                  "admit": 0.0,
+                  "challenge": 0.0
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.5716699660851172,
+                  "challenge": 0.5716699660851172
+                },
+                "checkpoint": "hidden_fact_boundary",
+                "expected": "challenge",
+                "ghost": "admit",
+                "ghost_correct": false,
+                "ghost_scores": {
+                  "admit": 0.0,
+                  "challenge": 0.0
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.5716699660851172,
+                  "challenge": 0.5716699660851172
+                },
+                "checkpoint": "restart_continuity",
+                "expected": "challenge",
+                "ghost": "admit",
+                "ghost_correct": false,
+                "ghost_scores": {
+                  "admit": 0.0,
+                  "challenge": 0.0
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.2913126124515908,
+                  "challenge": 0.2913126124515908
+                },
+                "checkpoint": "delayed_relevance",
+                "expected": "challenge",
+                "ghost": "admit",
+                "ghost_correct": false,
+                "ghost_scores": {
+                  "admit": 0.0,
+                  "challenge": 0.0
+                }
+              },
+              {
+                "baseline": "admit",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": 0.5370495669980353,
+                  "challenge": -0.5370495669980353
+                },
+                "checkpoint": "contradiction_revised",
+                "expected": "admit",
+                "ghost": "admit",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "admit": 0.0,
+                  "challenge": 0.0
+                }
+              },
+              {
+                "baseline": "assist",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "assist": 0.84,
+                  "hold": 0.3975
+                },
+                "checkpoint": "conflict_shift",
+                "expected": "assist",
+                "ghost": "assist",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "assist": 0.605,
+                  "hold": 0.012499999999999997
+                }
+              },
+              {
+                "baseline": "retreat",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "hold": 0.36000000000000004,
+                  "retreat": 0.5800000000000001
+                },
+                "checkpoint": "goal_delayed_consequence",
+                "expected": "retreat",
+                "ghost": "retreat",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "hold": -0.04999999999999999,
+                  "retreat": 0.65
+                }
+              },
+              {
+                "baseline": "retreat",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "hold": 0.36000000000000004,
+                  "retreat": 0.5800000000000001
+                },
+                "checkpoint": "recurrence_final",
+                "expected": "retreat",
+                "ghost": "retreat",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "hold": -0.04999999999999999,
+                  "retreat": 0.65
+                }
+              }
+            ],
+            "delayed_relevance_recall": {
+              "baseline": true,
+              "ghost": true
+            },
+            "divergence_count": 4,
+            "ghost_correct": 6,
+            "hidden_information_boundary": {
+              "baseline": true,
+              "ghost": true
+            },
+            "restart_scores_match": true,
+            "variant": "balanced"
+          },
+          {
+            "baseline_correct": 10,
+            "checkpoint_count": 10,
+            "checkpoints": [
+              {
+                "baseline": "hold",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "hold": 0.9075000000000001,
+                  "retreat": 0.03999999999999998
+                },
+                "checkpoint": "goal_initial",
+                "expected": "hold",
+                "ghost": "hold",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "hold": 0.49750000000000005,
+                  "retreat": 0.10999999999999999
+                }
+              },
+              {
+                "baseline": "hold",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "assist": 0.37999999999999995,
+                  "hold": 0.865
+                },
+                "checkpoint": "conflict_initial",
+                "expected": "hold",
+                "ghost": "hold",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "assist": 0.14499999999999996,
+                  "hold": 0.48
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.4218990052500078,
+                  "challenge": 0.4218990052500078
+                },
+                "checkpoint": "hostile_observed",
+                "expected": "challenge",
+                "ghost": "admit",
+                "ghost_correct": false,
+                "ghost_scores": {
+                  "admit": 0.0,
+                  "challenge": 0.0
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.4218990052500078,
+                  "challenge": 0.4218990052500078
+                },
+                "checkpoint": "hidden_fact_boundary",
+                "expected": "challenge",
+                "ghost": "admit",
+                "ghost_correct": false,
+                "ghost_scores": {
+                  "admit": 0.0,
+                  "challenge": 0.0
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.4218990052500078,
+                  "challenge": 0.4218990052500078
+                },
+                "checkpoint": "restart_continuity",
+                "expected": "challenge",
+                "ghost": "admit",
+                "ghost_correct": false,
+                "ghost_scores": {
+                  "admit": 0.0,
+                  "challenge": 0.0
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.09966799462495568,
+                  "challenge": 0.09966799462495568
+                },
+                "checkpoint": "delayed_relevance",
+                "expected": "challenge",
+                "ghost": "admit",
+                "ghost_correct": false,
+                "ghost_scores": {
+                  "admit": 0.0,
+                  "challenge": 0.0
+                }
+              },
+              {
+                "baseline": "admit",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": 0.6910694698329307,
+                  "challenge": -0.6910694698329307
+                },
+                "checkpoint": "contradiction_revised",
+                "expected": "admit",
+                "ghost": "admit",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "admit": 0.0,
+                  "challenge": 0.0
+                }
+              },
+              {
+                "baseline": "assist",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "assist": 0.84,
+                  "hold": 0.3975
+                },
+                "checkpoint": "conflict_shift",
+                "expected": "assist",
+                "ghost": "assist",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "assist": 0.605,
+                  "hold": 0.012499999999999997
+                }
+              },
+              {
+                "baseline": "retreat",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "hold": 0.36000000000000004,
+                  "retreat": 0.5800000000000001
+                },
+                "checkpoint": "goal_delayed_consequence",
+                "expected": "retreat",
+                "ghost": "retreat",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "hold": -0.04999999999999999,
+                  "retreat": 0.65
+                }
+              },
+              {
+                "baseline": "retreat",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "hold": 0.36000000000000004,
+                  "retreat": 0.5800000000000001
+                },
+                "checkpoint": "recurrence_final",
+                "expected": "retreat",
+                "ghost": "retreat",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "hold": -0.04999999999999999,
+                  "retreat": 0.65
+                }
+              }
+            ],
+            "delayed_relevance_recall": {
+              "baseline": true,
+              "ghost": true
+            },
+            "divergence_count": 4,
+            "ghost_correct": 6,
+            "hidden_information_boundary": {
+              "baseline": true,
+              "ghost": true
+            },
+            "restart_scores_match": true,
+            "variant": "weak_hostile"
+          },
+          {
+            "baseline_correct": 10,
+            "checkpoint_count": 10,
+            "checkpoints": [
+              {
+                "baseline": "hold",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "hold": 0.9075000000000001,
+                  "retreat": 0.03999999999999998
+                },
+                "checkpoint": "goal_initial",
+                "expected": "hold",
+                "ghost": "hold",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "hold": 0.49750000000000005,
+                  "retreat": 0.10999999999999999
+                }
+              },
+              {
+                "baseline": "hold",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "assist": 0.37999999999999995,
+                  "hold": 0.865
+                },
+                "checkpoint": "conflict_initial",
+                "expected": "hold",
+                "ghost": "hold",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "assist": 0.14499999999999996,
+                  "hold": 0.48
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.7162978701990246,
+                  "challenge": 0.7162978701990246
+                },
+                "checkpoint": "hostile_observed",
+                "expected": "challenge",
+                "ghost": "admit",
+                "ghost_correct": false,
+                "ghost_scores": {
+                  "admit": 0.0,
+                  "challenge": 0.0
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.7162978701990246,
+                  "challenge": 0.7162978701990246
+                },
+                "checkpoint": "hidden_fact_boundary",
+                "expected": "challenge",
+                "ghost": "admit",
+                "ghost_correct": false,
+                "ghost_scores": {
+                  "admit": 0.0,
+                  "challenge": 0.0
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.7162978701990246,
+                  "challenge": 0.7162978701990246
+                },
+                "checkpoint": "restart_continuity",
+                "expected": "challenge",
+                "ghost": "admit",
+                "ghost_correct": false,
+                "ghost_scores": {
+                  "admit": 0.0,
+                  "challenge": 0.0
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.5005202111902356,
+                  "challenge": 0.5005202111902356
+                },
+                "checkpoint": "delayed_relevance",
+                "expected": "challenge",
+                "ghost": "admit",
+                "ghost_correct": false,
+                "ghost_scores": {
+                  "admit": 0.0,
+                  "challenge": 0.0
+                }
+              },
+              {
+                "baseline": "admit",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": 0.739783051274004,
+                  "challenge": -0.739783051274004
+                },
+                "checkpoint": "contradiction_revised",
+                "expected": "admit",
+                "ghost": "admit",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "admit": 0.0,
+                  "challenge": 0.0
+                }
+              },
+              {
+                "baseline": "assist",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "assist": 0.84,
+                  "hold": 0.3975
+                },
+                "checkpoint": "conflict_shift",
+                "expected": "assist",
+                "ghost": "assist",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "assist": 0.605,
+                  "hold": 0.012499999999999997
+                }
+              },
+              {
+                "baseline": "retreat",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "hold": 0.36000000000000004,
+                  "retreat": 0.5800000000000001
+                },
+                "checkpoint": "goal_delayed_consequence",
+                "expected": "retreat",
+                "ghost": "retreat",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "hold": -0.04999999999999999,
+                  "retreat": 0.65
+                }
+              },
+              {
+                "baseline": "retreat",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "hold": 0.36000000000000004,
+                  "retreat": 0.5800000000000001
+                },
+                "checkpoint": "recurrence_final",
+                "expected": "retreat",
+                "ghost": "retreat",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "hold": -0.04999999999999999,
+                  "retreat": 0.65
+                }
+              }
+            ],
+            "delayed_relevance_recall": {
+              "baseline": true,
+              "ghost": true
+            },
+            "divergence_count": 4,
+            "ghost_correct": 6,
+            "hidden_information_boundary": {
+              "baseline": true,
+              "ghost": true
+            },
+            "restart_scores_match": true,
+            "variant": "repeated"
+          }
+        ]
+      },
+      "no_values_goals": {
+        "attribution": {
+          "causally_effective_on_matrix": true,
+          "changed_decision_count": 6,
+          "changed_decisions": [
+            "balanced:conflict_initial",
+            "balanced:goal_initial",
+            "repeated:conflict_initial",
+            "repeated:goal_initial",
+            "weak_hostile:conflict_initial",
+            "weak_hostile:goal_initial"
+          ],
+          "incorrect_checkpoints": [
+            "balanced:conflict_initial",
+            "balanced:goal_initial",
+            "repeated:conflict_initial",
+            "repeated:goal_initial",
+            "weak_hostile:conflict_initial",
+            "weak_hostile:goal_initial"
+          ],
+          "score_delta_from_full": -6
+        },
+        "baseline_accuracy": 1.0,
+        "baseline_correct": 30,
+        "condition": "no_values_goals",
+        "config": {
+          "recall_enabled": true,
+          "weights": {
+            "beliefs": 1.0,
+            "goals": 0.0,
+            "utility": 1.0,
+            "values": 0.0
+          }
+        },
+        "decision_divergence_count": 6,
+        "ghost_accuracy": 0.8,
+        "ghost_correct": 24,
+        "invariant_failures": [],
+        "scored_checkpoints": 30,
+        "trial_count": 3,
+        "trials": [
+          {
+            "baseline_correct": 10,
+            "checkpoint_count": 10,
+            "checkpoints": [
+              {
+                "baseline": "hold",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "hold": 0.9075000000000001,
+                  "retreat": 0.03999999999999998
+                },
+                "checkpoint": "goal_initial",
+                "expected": "hold",
+                "ghost": "retreat",
+                "ghost_correct": false,
+                "ghost_scores": {
+                  "hold": 0.1,
+                  "retreat": 0.65
+                }
+              },
+              {
+                "baseline": "hold",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "assist": 0.37999999999999995,
+                  "hold": 0.865
+                },
+                "checkpoint": "conflict_initial",
+                "expected": "hold",
+                "ghost": "assist",
+                "ghost_correct": false,
+                "ghost_scores": {
+                  "assist": 0.15,
+                  "hold": 0.1
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.5716699660851172,
+                  "challenge": 0.5716699660851172
+                },
+                "checkpoint": "hostile_observed",
+                "expected": "challenge",
+                "ghost": "challenge",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "admit": -0.7358490566037735,
+                  "challenge": 0.7358490566037735
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.5716699660851172,
+                  "challenge": 0.5716699660851172
+                },
+                "checkpoint": "hidden_fact_boundary",
+                "expected": "challenge",
+                "ghost": "challenge",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "admit": -0.7358490566037735,
+                  "challenge": 0.7358490566037735
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.5716699660851172,
+                  "challenge": 0.5716699660851172
+                },
+                "checkpoint": "restart_continuity",
+                "expected": "challenge",
+                "ghost": "challenge",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "admit": -0.7358490566037735,
+                  "challenge": 0.7358490566037735
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.2913126124515908,
+                  "challenge": 0.2913126124515908
+                },
+                "checkpoint": "delayed_relevance",
+                "expected": "challenge",
+                "ghost": "challenge",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "admit": -0.30000000000000004,
+                  "challenge": 0.30000000000000004
+                }
+              },
+              {
+                "baseline": "admit",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": 0.5370495669980353,
+                  "challenge": -0.5370495669980353
+                },
+                "checkpoint": "contradiction_revised",
+                "expected": "admit",
+                "ghost": "admit",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "admit": 0.4615384615384615,
+                  "challenge": -0.4615384615384615
+                }
+              },
+              {
+                "baseline": "assist",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "assist": 0.84,
+                  "hold": 0.3975
+                },
+                "checkpoint": "conflict_shift",
+                "expected": "assist",
+                "ghost": "assist",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "assist": 0.15,
+                  "hold": 0.1
+                }
+              },
+              {
+                "baseline": "retreat",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "hold": 0.36000000000000004,
+                  "retreat": 0.5800000000000001
+                },
+                "checkpoint": "goal_delayed_consequence",
+                "expected": "retreat",
+                "ghost": "retreat",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "hold": 0.1,
+                  "retreat": 0.65
+                }
+              },
+              {
+                "baseline": "retreat",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "hold": 0.36000000000000004,
+                  "retreat": 0.5800000000000001
+                },
+                "checkpoint": "recurrence_final",
+                "expected": "retreat",
+                "ghost": "retreat",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "hold": 0.1,
+                  "retreat": 0.65
+                }
+              }
+            ],
+            "delayed_relevance_recall": {
+              "baseline": true,
+              "ghost": true
+            },
+            "divergence_count": 2,
+            "ghost_correct": 8,
+            "hidden_information_boundary": {
+              "baseline": true,
+              "ghost": true
+            },
+            "restart_scores_match": true,
+            "variant": "balanced"
+          },
+          {
+            "baseline_correct": 10,
+            "checkpoint_count": 10,
+            "checkpoints": [
+              {
+                "baseline": "hold",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "hold": 0.9075000000000001,
+                  "retreat": 0.03999999999999998
+                },
+                "checkpoint": "goal_initial",
+                "expected": "hold",
+                "ghost": "retreat",
+                "ghost_correct": false,
+                "ghost_scores": {
+                  "hold": 0.1,
+                  "retreat": 0.65
+                }
+              },
+              {
+                "baseline": "hold",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "assist": 0.37999999999999995,
+                  "hold": 0.865
+                },
+                "checkpoint": "conflict_initial",
+                "expected": "hold",
+                "ghost": "assist",
+                "ghost_correct": false,
+                "ghost_scores": {
+                  "assist": 0.15,
+                  "hold": 0.1
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.4218990052500078,
+                  "challenge": 0.4218990052500078
+                },
+                "checkpoint": "hostile_observed",
+                "expected": "challenge",
+                "ghost": "challenge",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "admit": -0.5510204081632651,
+                  "challenge": 0.5510204081632651
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.4218990052500078,
+                  "challenge": 0.4218990052500078
+                },
+                "checkpoint": "hidden_fact_boundary",
+                "expected": "challenge",
+                "ghost": "challenge",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "admit": -0.5510204081632651,
+                  "challenge": 0.5510204081632651
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.4218990052500078,
+                  "challenge": 0.4218990052500078
+                },
+                "checkpoint": "restart_continuity",
+                "expected": "challenge",
+                "ghost": "challenge",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "admit": -0.5510204081632651,
+                  "challenge": 0.5510204081632651
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.09966799462495568,
+                  "challenge": 0.09966799462495568
+                },
+                "checkpoint": "delayed_relevance",
+                "expected": "challenge",
+                "ghost": "challenge",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "admit": -0.10714285714285704,
+                  "challenge": 0.10714285714285704
+                }
+              },
+              {
+                "baseline": "admit",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": 0.6910694698329307,
+                  "challenge": -0.6910694698329307
+                },
+                "checkpoint": "contradiction_revised",
+                "expected": "admit",
+                "ghost": "admit",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "admit": 0.6799999999999999,
+                  "challenge": -0.6799999999999999
+                }
+              },
+              {
+                "baseline": "assist",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "assist": 0.84,
+                  "hold": 0.3975
+                },
+                "checkpoint": "conflict_shift",
+                "expected": "assist",
+                "ghost": "assist",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "assist": 0.15,
+                  "hold": 0.1
+                }
+              },
+              {
+                "baseline": "retreat",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "hold": 0.36000000000000004,
+                  "retreat": 0.5800000000000001
+                },
+                "checkpoint": "goal_delayed_consequence",
+                "expected": "retreat",
+                "ghost": "retreat",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "hold": 0.1,
+                  "retreat": 0.65
+                }
+              },
+              {
+                "baseline": "retreat",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "hold": 0.36000000000000004,
+                  "retreat": 0.5800000000000001
+                },
+                "checkpoint": "recurrence_final",
+                "expected": "retreat",
+                "ghost": "retreat",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "hold": 0.1,
+                  "retreat": 0.65
+                }
+              }
+            ],
+            "delayed_relevance_recall": {
+              "baseline": true,
+              "ghost": true
+            },
+            "divergence_count": 2,
+            "ghost_correct": 8,
+            "hidden_information_boundary": {
+              "baseline": true,
+              "ghost": true
+            },
+            "restart_scores_match": true,
+            "variant": "weak_hostile"
+          },
+          {
+            "baseline_correct": 10,
+            "checkpoint_count": 10,
+            "checkpoints": [
+              {
+                "baseline": "hold",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "hold": 0.9075000000000001,
+                  "retreat": 0.03999999999999998
+                },
+                "checkpoint": "goal_initial",
+                "expected": "hold",
+                "ghost": "retreat",
+                "ghost_correct": false,
+                "ghost_scores": {
+                  "hold": 0.1,
+                  "retreat": 0.65
+                }
+              },
+              {
+                "baseline": "hold",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "assist": 0.37999999999999995,
+                  "hold": 0.865
+                },
+                "checkpoint": "conflict_initial",
+                "expected": "hold",
+                "ghost": "assist",
+                "ghost_correct": false,
+                "ghost_scores": {
+                  "assist": 0.15,
+                  "hold": 0.1
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.7162978701990246,
+                  "challenge": 0.7162978701990246
+                },
+                "checkpoint": "hostile_observed",
+                "expected": "challenge",
+                "ghost": "challenge",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "admit": -0.9310344827586207,
+                  "challenge": 0.9310344827586207
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.7162978701990246,
+                  "challenge": 0.7162978701990246
+                },
+                "checkpoint": "hidden_fact_boundary",
+                "expected": "challenge",
+                "ghost": "challenge",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "admit": -0.9310344827586207,
+                  "challenge": 0.9310344827586207
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.7162978701990246,
+                  "challenge": 0.7162978701990246
+                },
+                "checkpoint": "restart_continuity",
+                "expected": "challenge",
+                "ghost": "challenge",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "admit": -0.9310344827586207,
+                  "challenge": 0.9310344827586207
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.5005202111902356,
+                  "challenge": 0.5005202111902356
+                },
+                "checkpoint": "delayed_relevance",
+                "expected": "challenge",
+                "ghost": "challenge",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "admit": -0.5076923076923077,
+                  "challenge": 0.5076923076923077
+                }
+              },
+              {
+                "baseline": "admit",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": 0.739783051274004,
+                  "challenge": -0.739783051274004
+                },
+                "checkpoint": "contradiction_revised",
+                "expected": "admit",
+                "ghost": "admit",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "admit": 0.6,
+                  "challenge": -0.6
+                }
+              },
+              {
+                "baseline": "assist",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "assist": 0.84,
+                  "hold": 0.3975
+                },
+                "checkpoint": "conflict_shift",
+                "expected": "assist",
+                "ghost": "assist",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "assist": 0.15,
+                  "hold": 0.1
+                }
+              },
+              {
+                "baseline": "retreat",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "hold": 0.36000000000000004,
+                  "retreat": 0.5800000000000001
+                },
+                "checkpoint": "goal_delayed_consequence",
+                "expected": "retreat",
+                "ghost": "retreat",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "hold": 0.1,
+                  "retreat": 0.65
+                }
+              },
+              {
+                "baseline": "retreat",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "hold": 0.36000000000000004,
+                  "retreat": 0.5800000000000001
+                },
+                "checkpoint": "recurrence_final",
+                "expected": "retreat",
+                "ghost": "retreat",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "hold": 0.1,
+                  "retreat": 0.65
+                }
+              }
+            ],
+            "delayed_relevance_recall": {
+              "baseline": true,
+              "ghost": true
+            },
+            "divergence_count": 2,
+            "ghost_correct": 8,
+            "hidden_information_boundary": {
+              "baseline": true,
+              "ghost": true
+            },
+            "restart_scores_match": true,
+            "variant": "repeated"
+          }
+        ]
+      },
+      "utility_only": {
+        "attribution": {
+          "causally_effective_on_matrix": true,
+          "changed_decision_count": 18,
+          "changed_decisions": [
+            "balanced:conflict_initial",
+            "balanced:delayed_relevance",
+            "balanced:goal_initial",
+            "balanced:hidden_fact_boundary",
+            "balanced:hostile_observed",
+            "balanced:restart_continuity",
+            "repeated:conflict_initial",
+            "repeated:delayed_relevance",
+            "repeated:goal_initial",
+            "repeated:hidden_fact_boundary",
+            "repeated:hostile_observed",
+            "repeated:restart_continuity",
+            "weak_hostile:conflict_initial",
+            "weak_hostile:delayed_relevance",
+            "weak_hostile:goal_initial",
+            "weak_hostile:hidden_fact_boundary",
+            "weak_hostile:hostile_observed",
+            "weak_hostile:restart_continuity"
+          ],
+          "incorrect_checkpoints": [
+            "balanced:conflict_initial",
+            "balanced:delayed_relevance",
+            "balanced:goal_initial",
+            "balanced:hidden_fact_boundary",
+            "balanced:hostile_observed",
+            "balanced:restart_continuity",
+            "repeated:conflict_initial",
+            "repeated:delayed_relevance",
+            "repeated:goal_initial",
+            "repeated:hidden_fact_boundary",
+            "repeated:hostile_observed",
+            "repeated:restart_continuity",
+            "weak_hostile:conflict_initial",
+            "weak_hostile:delayed_relevance",
+            "weak_hostile:goal_initial",
+            "weak_hostile:hidden_fact_boundary",
+            "weak_hostile:hostile_observed",
+            "weak_hostile:restart_continuity"
+          ],
+          "score_delta_from_full": -18
+        },
+        "baseline_accuracy": 1.0,
+        "baseline_correct": 30,
+        "condition": "utility_only",
+        "config": {
+          "recall_enabled": false,
+          "weights": {
+            "beliefs": 0.0,
+            "goals": 0.0,
+            "utility": 1.0,
+            "values": 0.0
+          }
+        },
+        "decision_divergence_count": 18,
+        "ghost_accuracy": 0.4,
+        "ghost_correct": 12,
+        "invariant_failures": [],
+        "scored_checkpoints": 30,
+        "trial_count": 3,
+        "trials": [
+          {
+            "baseline_correct": 10,
+            "checkpoint_count": 10,
+            "checkpoints": [
+              {
+                "baseline": "hold",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "hold": 0.9075000000000001,
+                  "retreat": 0.03999999999999998
+                },
+                "checkpoint": "goal_initial",
+                "expected": "hold",
+                "ghost": "retreat",
+                "ghost_correct": false,
+                "ghost_scores": {
+                  "hold": 0.1,
+                  "retreat": 0.65
+                }
+              },
+              {
+                "baseline": "hold",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "assist": 0.37999999999999995,
+                  "hold": 0.865
+                },
+                "checkpoint": "conflict_initial",
+                "expected": "hold",
+                "ghost": "assist",
+                "ghost_correct": false,
+                "ghost_scores": {
+                  "assist": 0.15,
+                  "hold": 0.1
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.5716699660851172,
+                  "challenge": 0.5716699660851172
+                },
+                "checkpoint": "hostile_observed",
+                "expected": "challenge",
+                "ghost": "admit",
+                "ghost_correct": false,
+                "ghost_scores": {
+                  "admit": 0.0,
+                  "challenge": 0.0
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.5716699660851172,
+                  "challenge": 0.5716699660851172
+                },
+                "checkpoint": "hidden_fact_boundary",
+                "expected": "challenge",
+                "ghost": "admit",
+                "ghost_correct": false,
+                "ghost_scores": {
+                  "admit": 0.0,
+                  "challenge": 0.0
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.5716699660851172,
+                  "challenge": 0.5716699660851172
+                },
+                "checkpoint": "restart_continuity",
+                "expected": "challenge",
+                "ghost": "admit",
+                "ghost_correct": false,
+                "ghost_scores": {
+                  "admit": 0.0,
+                  "challenge": 0.0
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.2913126124515908,
+                  "challenge": 0.2913126124515908
+                },
+                "checkpoint": "delayed_relevance",
+                "expected": "challenge",
+                "ghost": "admit",
+                "ghost_correct": false,
+                "ghost_scores": {
+                  "admit": 0.0,
+                  "challenge": 0.0
+                }
+              },
+              {
+                "baseline": "admit",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": 0.5370495669980353,
+                  "challenge": -0.5370495669980353
+                },
+                "checkpoint": "contradiction_revised",
+                "expected": "admit",
+                "ghost": "admit",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "admit": 0.0,
+                  "challenge": 0.0
+                }
+              },
+              {
+                "baseline": "assist",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "assist": 0.84,
+                  "hold": 0.3975
+                },
+                "checkpoint": "conflict_shift",
+                "expected": "assist",
+                "ghost": "assist",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "assist": 0.15,
+                  "hold": 0.1
+                }
+              },
+              {
+                "baseline": "retreat",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "hold": 0.36000000000000004,
+                  "retreat": 0.5800000000000001
+                },
+                "checkpoint": "goal_delayed_consequence",
+                "expected": "retreat",
+                "ghost": "retreat",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "hold": 0.1,
+                  "retreat": 0.65
+                }
+              },
+              {
+                "baseline": "retreat",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "hold": 0.36000000000000004,
+                  "retreat": 0.5800000000000001
+                },
+                "checkpoint": "recurrence_final",
+                "expected": "retreat",
+                "ghost": "retreat",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "hold": 0.1,
+                  "retreat": 0.65
+                }
+              }
+            ],
+            "delayed_relevance_recall": {
+              "baseline": true,
+              "ghost": true
+            },
+            "divergence_count": 6,
+            "ghost_correct": 4,
+            "hidden_information_boundary": {
+              "baseline": true,
+              "ghost": true
+            },
+            "restart_scores_match": true,
+            "variant": "balanced"
+          },
+          {
+            "baseline_correct": 10,
+            "checkpoint_count": 10,
+            "checkpoints": [
+              {
+                "baseline": "hold",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "hold": 0.9075000000000001,
+                  "retreat": 0.03999999999999998
+                },
+                "checkpoint": "goal_initial",
+                "expected": "hold",
+                "ghost": "retreat",
+                "ghost_correct": false,
+                "ghost_scores": {
+                  "hold": 0.1,
+                  "retreat": 0.65
+                }
+              },
+              {
+                "baseline": "hold",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "assist": 0.37999999999999995,
+                  "hold": 0.865
+                },
+                "checkpoint": "conflict_initial",
+                "expected": "hold",
+                "ghost": "assist",
+                "ghost_correct": false,
+                "ghost_scores": {
+                  "assist": 0.15,
+                  "hold": 0.1
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.4218990052500078,
+                  "challenge": 0.4218990052500078
+                },
+                "checkpoint": "hostile_observed",
+                "expected": "challenge",
+                "ghost": "admit",
+                "ghost_correct": false,
+                "ghost_scores": {
+                  "admit": 0.0,
+                  "challenge": 0.0
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.4218990052500078,
+                  "challenge": 0.4218990052500078
+                },
+                "checkpoint": "hidden_fact_boundary",
+                "expected": "challenge",
+                "ghost": "admit",
+                "ghost_correct": false,
+                "ghost_scores": {
+                  "admit": 0.0,
+                  "challenge": 0.0
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.4218990052500078,
+                  "challenge": 0.4218990052500078
+                },
+                "checkpoint": "restart_continuity",
+                "expected": "challenge",
+                "ghost": "admit",
+                "ghost_correct": false,
+                "ghost_scores": {
+                  "admit": 0.0,
+                  "challenge": 0.0
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.09966799462495568,
+                  "challenge": 0.09966799462495568
+                },
+                "checkpoint": "delayed_relevance",
+                "expected": "challenge",
+                "ghost": "admit",
+                "ghost_correct": false,
+                "ghost_scores": {
+                  "admit": 0.0,
+                  "challenge": 0.0
+                }
+              },
+              {
+                "baseline": "admit",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": 0.6910694698329307,
+                  "challenge": -0.6910694698329307
+                },
+                "checkpoint": "contradiction_revised",
+                "expected": "admit",
+                "ghost": "admit",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "admit": 0.0,
+                  "challenge": 0.0
+                }
+              },
+              {
+                "baseline": "assist",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "assist": 0.84,
+                  "hold": 0.3975
+                },
+                "checkpoint": "conflict_shift",
+                "expected": "assist",
+                "ghost": "assist",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "assist": 0.15,
+                  "hold": 0.1
+                }
+              },
+              {
+                "baseline": "retreat",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "hold": 0.36000000000000004,
+                  "retreat": 0.5800000000000001
+                },
+                "checkpoint": "goal_delayed_consequence",
+                "expected": "retreat",
+                "ghost": "retreat",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "hold": 0.1,
+                  "retreat": 0.65
+                }
+              },
+              {
+                "baseline": "retreat",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "hold": 0.36000000000000004,
+                  "retreat": 0.5800000000000001
+                },
+                "checkpoint": "recurrence_final",
+                "expected": "retreat",
+                "ghost": "retreat",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "hold": 0.1,
+                  "retreat": 0.65
+                }
+              }
+            ],
+            "delayed_relevance_recall": {
+              "baseline": true,
+              "ghost": true
+            },
+            "divergence_count": 6,
+            "ghost_correct": 4,
+            "hidden_information_boundary": {
+              "baseline": true,
+              "ghost": true
+            },
+            "restart_scores_match": true,
+            "variant": "weak_hostile"
+          },
+          {
+            "baseline_correct": 10,
+            "checkpoint_count": 10,
+            "checkpoints": [
+              {
+                "baseline": "hold",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "hold": 0.9075000000000001,
+                  "retreat": 0.03999999999999998
+                },
+                "checkpoint": "goal_initial",
+                "expected": "hold",
+                "ghost": "retreat",
+                "ghost_correct": false,
+                "ghost_scores": {
+                  "hold": 0.1,
+                  "retreat": 0.65
+                }
+              },
+              {
+                "baseline": "hold",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "assist": 0.37999999999999995,
+                  "hold": 0.865
+                },
+                "checkpoint": "conflict_initial",
+                "expected": "hold",
+                "ghost": "assist",
+                "ghost_correct": false,
+                "ghost_scores": {
+                  "assist": 0.15,
+                  "hold": 0.1
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.7162978701990246,
+                  "challenge": 0.7162978701990246
+                },
+                "checkpoint": "hostile_observed",
+                "expected": "challenge",
+                "ghost": "admit",
+                "ghost_correct": false,
+                "ghost_scores": {
+                  "admit": 0.0,
+                  "challenge": 0.0
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.7162978701990246,
+                  "challenge": 0.7162978701990246
+                },
+                "checkpoint": "hidden_fact_boundary",
+                "expected": "challenge",
+                "ghost": "admit",
+                "ghost_correct": false,
+                "ghost_scores": {
+                  "admit": 0.0,
+                  "challenge": 0.0
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.7162978701990246,
+                  "challenge": 0.7162978701990246
+                },
+                "checkpoint": "restart_continuity",
+                "expected": "challenge",
+                "ghost": "admit",
+                "ghost_correct": false,
+                "ghost_scores": {
+                  "admit": 0.0,
+                  "challenge": 0.0
+                }
+              },
+              {
+                "baseline": "challenge",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": -0.5005202111902356,
+                  "challenge": 0.5005202111902356
+                },
+                "checkpoint": "delayed_relevance",
+                "expected": "challenge",
+                "ghost": "admit",
+                "ghost_correct": false,
+                "ghost_scores": {
+                  "admit": 0.0,
+                  "challenge": 0.0
+                }
+              },
+              {
+                "baseline": "admit",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "admit": 0.739783051274004,
+                  "challenge": -0.739783051274004
+                },
+                "checkpoint": "contradiction_revised",
+                "expected": "admit",
+                "ghost": "admit",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "admit": 0.0,
+                  "challenge": 0.0
+                }
+              },
+              {
+                "baseline": "assist",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "assist": 0.84,
+                  "hold": 0.3975
+                },
+                "checkpoint": "conflict_shift",
+                "expected": "assist",
+                "ghost": "assist",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "assist": 0.15,
+                  "hold": 0.1
+                }
+              },
+              {
+                "baseline": "retreat",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "hold": 0.36000000000000004,
+                  "retreat": 0.5800000000000001
+                },
+                "checkpoint": "goal_delayed_consequence",
+                "expected": "retreat",
+                "ghost": "retreat",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "hold": 0.1,
+                  "retreat": 0.65
+                }
+              },
+              {
+                "baseline": "retreat",
+                "baseline_correct": true,
+                "baseline_scores": {
+                  "hold": 0.36000000000000004,
+                  "retreat": 0.5800000000000001
+                },
+                "checkpoint": "recurrence_final",
+                "expected": "retreat",
+                "ghost": "retreat",
+                "ghost_correct": true,
+                "ghost_scores": {
+                  "hold": 0.1,
+                  "retreat": 0.65
+                }
+              }
+            ],
+            "delayed_relevance_recall": {
+              "baseline": true,
+              "ghost": true
+            },
+            "divergence_count": 6,
+            "ghost_correct": 4,
+            "hidden_information_boundary": {
+              "baseline": true,
+              "ghost": true
+            },
+            "restart_scores_match": true,
+            "variant": "repeated"
+          }
+        ]
+      }
+    },
+    "interpretation": {
+      "category": "single_channel_contribution_detected",
+      "decision_equivalent_to_full": [
+        "full",
+        "no_recall",
+        "no_values"
+      ],
+      "effective_single_ablations": [
+        "no_goals",
+        "no_beliefs"
+      ],
+      "ineffective_single_ablations": [
+        "no_values",
+        "no_recall"
+      ],
+      "interaction_flags": []
+    },
+    "schema": "ghost.v1.12-dev.ablation.stage4.matrix.v1",
+    "scored_checkpoints_per_condition": 30,
+    "stage3_anchor": {
+      "decision_match": true,
+      "invariant_match": true,
+      "score_match": true
+    },
+    "stage3_comparative_outcome": "behavioral_parity_on_scored_constraints",
+    "strict_verdict": "V112_ABLATION_STAGE4_EXPERIMENT_VALID"
+  },
+  "next_experiment": "Use Stage-4 causal findings to choose either simplification/removal probes or broader adversarial scaling; do not increase difficulty merely to manufacture a Ghost advantage.",
+  "packaged_runtime_surface_added": false,
+  "post_sha256": {
+    "docs/research/v1.12_ablation_stage4.md": "523dc8a983da663a75f9998e670721e51047d9479d704920d54107d127e4ae0e",
+    "ghost_research/v112_ablation_stage4.py": "ce8260ca771af6f0f8967b45ebc49dd7a638fc5ba1e93d7e3bd0b80fb3e11056",
+    "tests/test_v112_ablation_stage4.py": "17963ce989a068f7d0368ca0b8e167de3f80c70e85dcb79f12041e491106e2b6"
+  },
+  "predecessor_stage3_commit": "ecc51f0fe430d2c7be94d71894c5569c3f29f274",
+  "production_ghost_source_modified": false,
+  "research_coverage": {
+    "branch_percent": 100.0,
+    "branches": 36,
+    "statement_percent": 100.0,
+    "statements": 163
+  },
+  "research_module_metrics": {
+    "max_complexity": 14,
+    "max_function_lines": 38,
+    "module_lines": 327
+  },
+  "schema": "ghost.v1.12-dev.ablation.stage4.v1",
+  "stage": "frozen_matrix_causal_ablation_and_failure_attribution",
+  "stage3_matrix_frozen": true,
+  "stage3_source_or_tests_modified": false,
+  "stage4_non_claim": "Stage 4 does not establish general Ghost superiority, realism, intelligence, production value, or uniqueness. Disabling a decision weight is not the same as deleting subsystem storage. The unchanged strong baseline remains an external 30/30 comparator.",
+  "stage4_supported_claim": "On the exact frozen Stage-3 matrix, the recorded Ghost decision changes under pre-registered decision-path ablations identify which tested contributions were behaviorally causal, redundant, or unnecessary for those checkpoints.",
+  "strict_verdict": "V112_ABLATION_STAGE4_PASS"
+}

@@ -1,0 +1,377 @@
+{
+  "experiment": {
+    "all_interrupted_migrations_pass": true,
+    "all_migration_conflicts_fail_closed": true,
+    "all_queries_correct": true,
+    "all_writer_exclusion_cases_pass": true,
+    "claim_boundary": "Stage 9F tests research-only single-host writer exclusion using advisory flock and interrupted Stage-9D-to-Stage-9E migration. It requires a competing process to be rejected while a writer lease is held, verifies the OS releases that lease after process death, preserves exact generation order, state, and continuation after handoff, injects actual process exits at nine migration boundaries, refuses to treat a valid orphan slot without a committed head as a successful bootstrap migration, retries interrupted migration idempotently, preserves the predecessor envelope, and rejects a conflicting migration without changing committed state. It does not prove distributed or multi-host locking, NFS/remote-filesystem flock semantics, sudden-power-loss durability, starvation/fairness guarantees, authenticated tamper resistance, or production readiness.",
+    "constraints": {
+      "actual_cross_process_flock_exercised": true,
+      "actual_process_exit_during_migration": true,
+      "conflicting_migration_fails_closed": true,
+      "lock_release_after_process_death_tested": true,
+      "migration_retry_is_idempotent": true,
+      "missing_bootstrap_head_never_promotes_orphan_slot": true,
+      "multi_host_locking_not_proven": true,
+      "no_weighted_composite_score": true,
+      "production_ghost_modified": false,
+      "research_only": true,
+      "stage9d_source_preserved_during_interruption": true,
+      "sudden_power_loss_durability_not_proven": true,
+      "timing_is_telemetry_not_gate": true,
+      "writer_lock_is_single_host_advisory": true
+    },
+    "levels": [
+      {
+        "all_migration_crash_cases_pass": true,
+        "level": {
+          "ambient_events": 224,
+          "id": "events_224"
+        },
+        "migration_conflict_fails_closed": true,
+        "migration_crashes": {
+          "after_commit_dir_fsync": {
+            "expected": "new",
+            "pass": true,
+            "retry_generation": 1,
+            "source_preserved": true
+          },
+          "after_head_fsync": {
+            "expected": "legacy",
+            "pass": true,
+            "retry_generation": 1,
+            "source_preserved": true
+          },
+          "after_head_replace": {
+            "expected": "new",
+            "pass": true,
+            "retry_generation": 1,
+            "source_preserved": true
+          },
+          "after_lock_acquired": {
+            "expected": "legacy",
+            "pass": true,
+            "retry_generation": 1,
+            "source_preserved": true
+          },
+          "after_partial_slot_write": {
+            "expected": "legacy",
+            "pass": true,
+            "retry_generation": 1,
+            "source_preserved": true
+          },
+          "after_slot_dir_fsync": {
+            "expected": "legacy",
+            "pass": true,
+            "retry_generation": 1,
+            "source_preserved": true
+          },
+          "after_slot_fsync": {
+            "expected": "legacy",
+            "pass": true,
+            "retry_generation": 1,
+            "source_preserved": true
+          },
+          "after_slot_replace": {
+            "expected": "legacy",
+            "pass": true,
+            "retry_generation": 1,
+            "source_preserved": true
+          },
+          "after_source_validated": {
+            "expected": "legacy",
+            "pass": true,
+            "retry_generation": 1,
+            "source_preserved": true
+          }
+        },
+        "query_correct_after_target_state": true,
+        "timing": {
+          "fresh_migration_median_us": 110677.07,
+          "locked_write_median_us": 33149.727,
+          "samples": 3
+        },
+        "writer_exclusion": {
+          "competing_writer_rejected": true,
+          "continuation_equal": true,
+          "exact_final_state": true,
+          "process_death_released_lock": true,
+          "serialized_generations": [
+            1,
+            2
+          ]
+        }
+      },
+      {
+        "all_migration_crash_cases_pass": true,
+        "level": {
+          "ambient_events": 1024,
+          "id": "events_1024"
+        },
+        "migration_conflict_fails_closed": true,
+        "migration_crashes": {
+          "after_commit_dir_fsync": {
+            "expected": "new",
+            "pass": true,
+            "retry_generation": 1,
+            "source_preserved": true
+          },
+          "after_head_fsync": {
+            "expected": "legacy",
+            "pass": true,
+            "retry_generation": 1,
+            "source_preserved": true
+          },
+          "after_head_replace": {
+            "expected": "new",
+            "pass": true,
+            "retry_generation": 1,
+            "source_preserved": true
+          },
+          "after_lock_acquired": {
+            "expected": "legacy",
+            "pass": true,
+            "retry_generation": 1,
+            "source_preserved": true
+          },
+          "after_partial_slot_write": {
+            "expected": "legacy",
+            "pass": true,
+            "retry_generation": 1,
+            "source_preserved": true
+          },
+          "after_slot_dir_fsync": {
+            "expected": "legacy",
+            "pass": true,
+            "retry_generation": 1,
+            "source_preserved": true
+          },
+          "after_slot_fsync": {
+            "expected": "legacy",
+            "pass": true,
+            "retry_generation": 1,
+            "source_preserved": true
+          },
+          "after_slot_replace": {
+            "expected": "legacy",
+            "pass": true,
+            "retry_generation": 1,
+            "source_preserved": true
+          },
+          "after_source_validated": {
+            "expected": "legacy",
+            "pass": true,
+            "retry_generation": 1,
+            "source_preserved": true
+          }
+        },
+        "query_correct_after_target_state": true,
+        "timing": {
+          "fresh_migration_median_us": 248717.071,
+          "locked_write_median_us": 44768.125,
+          "samples": 3
+        },
+        "writer_exclusion": {
+          "competing_writer_rejected": true,
+          "continuation_equal": true,
+          "exact_final_state": true,
+          "process_death_released_lock": true,
+          "serialized_generations": [
+            1,
+            2
+          ]
+        }
+      },
+      {
+        "all_migration_crash_cases_pass": true,
+        "level": {
+          "ambient_events": 2048,
+          "id": "events_2048"
+        },
+        "migration_conflict_fails_closed": true,
+        "migration_crashes": {
+          "after_commit_dir_fsync": {
+            "expected": "new",
+            "pass": true,
+            "retry_generation": 1,
+            "source_preserved": true
+          },
+          "after_head_fsync": {
+            "expected": "legacy",
+            "pass": true,
+            "retry_generation": 1,
+            "source_preserved": true
+          },
+          "after_head_replace": {
+            "expected": "new",
+            "pass": true,
+            "retry_generation": 1,
+            "source_preserved": true
+          },
+          "after_lock_acquired": {
+            "expected": "legacy",
+            "pass": true,
+            "retry_generation": 1,
+            "source_preserved": true
+          },
+          "after_partial_slot_write": {
+            "expected": "legacy",
+            "pass": true,
+            "retry_generation": 1,
+            "source_preserved": true
+          },
+          "after_slot_dir_fsync": {
+            "expected": "legacy",
+            "pass": true,
+            "retry_generation": 1,
+            "source_preserved": true
+          },
+          "after_slot_fsync": {
+            "expected": "legacy",
+            "pass": true,
+            "retry_generation": 1,
+            "source_preserved": true
+          },
+          "after_slot_replace": {
+            "expected": "legacy",
+            "pass": true,
+            "retry_generation": 1,
+            "source_preserved": true
+          },
+          "after_source_validated": {
+            "expected": "legacy",
+            "pass": true,
+            "retry_generation": 1,
+            "source_preserved": true
+          }
+        },
+        "query_correct_after_target_state": true,
+        "timing": {
+          "fresh_migration_median_us": 602330.86,
+          "locked_write_median_us": 71200.82,
+          "samples": 3
+        },
+        "writer_exclusion": {
+          "competing_writer_rejected": true,
+          "continuation_equal": true,
+          "exact_final_state": true,
+          "process_death_released_lock": true,
+          "serialized_generations": [
+            1,
+            2
+          ]
+        }
+      },
+      {
+        "all_migration_crash_cases_pass": true,
+        "level": {
+          "ambient_events": 4096,
+          "id": "events_4096"
+        },
+        "migration_conflict_fails_closed": true,
+        "migration_crashes": {
+          "after_commit_dir_fsync": {
+            "expected": "new",
+            "pass": true,
+            "retry_generation": 1,
+            "source_preserved": true
+          },
+          "after_head_fsync": {
+            "expected": "legacy",
+            "pass": true,
+            "retry_generation": 1,
+            "source_preserved": true
+          },
+          "after_head_replace": {
+            "expected": "new",
+            "pass": true,
+            "retry_generation": 1,
+            "source_preserved": true
+          },
+          "after_lock_acquired": {
+            "expected": "legacy",
+            "pass": true,
+            "retry_generation": 1,
+            "source_preserved": true
+          },
+          "after_partial_slot_write": {
+            "expected": "legacy",
+            "pass": true,
+            "retry_generation": 1,
+            "source_preserved": true
+          },
+          "after_slot_dir_fsync": {
+            "expected": "legacy",
+            "pass": true,
+            "retry_generation": 1,
+            "source_preserved": true
+          },
+          "after_slot_fsync": {
+            "expected": "legacy",
+            "pass": true,
+            "retry_generation": 1,
+            "source_preserved": true
+          },
+          "after_slot_replace": {
+            "expected": "legacy",
+            "pass": true,
+            "retry_generation": 1,
+            "source_preserved": true
+          },
+          "after_source_validated": {
+            "expected": "legacy",
+            "pass": true,
+            "retry_generation": 1,
+            "source_preserved": true
+          }
+        },
+        "query_correct_after_target_state": true,
+        "timing": {
+          "fresh_migration_median_us": 924941.406,
+          "locked_write_median_us": 113901.172,
+          "samples": 3
+        },
+        "writer_exclusion": {
+          "competing_writer_rejected": true,
+          "continuation_equal": true,
+          "exact_final_state": true,
+          "process_death_released_lock": true,
+          "serialized_generations": [
+            1,
+            2
+          ]
+        }
+      }
+    ],
+    "schema": "ghost.v1.12-dev.writer-migration.stage9f.v1",
+    "strict_verdict": "V112_WRITER_MIGRATION_STAGE9F_EXPERIMENT_VALID"
+  },
+  "focused_tests": "40 passed",
+  "full_nonresearch_regression": "3470 passed, 1 skipped",
+  "ghostapi_public_methods_added": [],
+  "maintained_core_coverage": {
+    "branch_percent": 100.0,
+    "branches": 2984,
+    "statement_percent": 100.0,
+    "statements": 7112
+  },
+  "next_experiment": "Build a guarded shadow-mode production candidate: production-shaped persistence adapter behind an explicit opt-in boundary, dual-write/compare against current snapshots, persistence-version negotiation, rollback/fallback, and zero default behavior change before any replacement decision.",
+  "non_claim": "Stage 9F does not modify production persistence or prove distributed/multi-host locking, remote-filesystem flock semantics, starvation/fairness guarantees, sudden-power-loss durability, authenticated tamper resistance, or production readiness.",
+  "post_sha256": {
+    "docs/research/v1.12_writer_migration_stage9f.md": "e816e5e11e580503bf586d78d12ca30ab562e40bad087cddd2cfc35c484af66c",
+    "ghost_research/v112_writer_migration_stage9f.py": "84e53bc71b0e648e2d2a70f04fbf47b35d981f8fef393b3a14d2b74ff915ec82",
+    "tests/test_v112_writer_migration_stage9f.py": "f641ebe21412b4b2366e3ea15d1cc5b9d1d98198f865f08a82bce1e4930d7326"
+  },
+  "predecessor_stage9e_commit": "dc1cc23520aa7adc699719bf2c52c271ba33f21a",
+  "production_ghost_source_modified": false,
+  "research_coverage": {
+    "branch_percent": 100.0,
+    "branches": 60,
+    "statement_percent": 100.0,
+    "statements": 254
+  },
+  "schema": "ghost.v1.12-dev.writer-migration.stage9f.evidence.v1",
+  "stage": "single_host_writer_exclusion_and_interrupted_bootstrap_migration_adjudication",
+  "strict_verdict": "V112_WRITER_MIGRATION_STAGE9F_PASS",
+  "supported_claim": "Stage 9F tests research-only single-host advisory writer exclusion plus interrupted bootstrap migration from the exact Stage-9D envelope. A competing process is rejected while the writer lease is held, process death releases the lease, exact generation/state/continuation survives writer handoff, and nine actual process-exit migration boundaries preserve fail-closed pre-commit behavior, exact post-commit recovery, idempotent retry, source preservation, and conflicting-migration rejection."
+}

@@ -1,0 +1,473 @@
+{
+  "attribution": {
+    "causally_perturbed": 14,
+    "claim_boundary": "Stage 7A attributes only the fourteen Stage-7 overflow divergences. It tests persisted-state paths and targeted counterfactual perturbations; it does not prove universal Ghost superiority or that every Ghost layer/byte is necessary.",
+    "component_counts": {
+      "epistemic_belief_lineage": 2,
+      "epistemic_evidence_graph": 4,
+      "epistemic_observation_provenance": 2,
+      "relationship_aggregate": 4,
+      "relationship_aggregate_plus_value_branch": 2
+    },
+    "findings": {
+      "all_14_change_under_preregistered_component_ablation": true,
+      "all_14_have_exact_persisted_state_paths": true,
+      "delegate_value_branch_causally_required": false,
+      "overflow_epistemic_retains_early_promise": true,
+      "overflow_perception_missing_early_promise": true
+    },
+    "rows": [
+      {
+        "baseline_status": "unsupported",
+        "component": "epistemic_observation_provenance",
+        "counterfactual": {
+          "ablated": null,
+          "ablation": "remove_early_promise_epistemic_observation",
+          "necessary": true,
+          "original": "witness_a"
+        },
+        "epistemic_has_early_promise": true,
+        "expected": "witness_a",
+        "full_answer": "witness_a",
+        "host_steps": [
+          2
+        ],
+        "kind": "early_marker_source",
+        "level": "first_overflow",
+        "perception_has_early_promise": false,
+        "state_paths": [
+          "api.epistemic.records[kind=observation].provenance.token/source"
+        ],
+        "task": "early_marker_source"
+      },
+      {
+        "baseline_status": "unsupported",
+        "component": "relationship_aggregate",
+        "counterfactual": {
+          "ablated": 0,
+          "ablation": "zero_witness_a_relationship_maturity",
+          "necessary": true,
+          "original": 5
+        },
+        "epistemic_has_early_promise": true,
+        "expected": 5,
+        "full_answer": 5,
+        "host_steps": [
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "kind": "relationship_event_count",
+        "level": "first_overflow",
+        "perception_has_early_promise": false,
+        "state_paths": [
+          "api.engine.relationships[guard_00|witness_a].maturity"
+        ],
+        "task": "relationship_event_count"
+      },
+      {
+        "baseline_status": "unsupported",
+        "component": "epistemic_evidence_graph",
+        "counterfactual": {
+          "ablated": [],
+          "ablation": "remove_current_belief_evidence_links",
+          "necessary": true,
+          "original": [
+            "witness_a",
+            "witness_b",
+            "witness_c"
+          ]
+        },
+        "epistemic_has_early_promise": true,
+        "expected": [
+          "witness_a",
+          "witness_b",
+          "witness_c"
+        ],
+        "full_answer": [
+          "witness_a",
+          "witness_b",
+          "witness_c"
+        ],
+        "host_steps": [
+          12,
+          14,
+          16,
+          146
+        ],
+        "kind": "evidence_sources",
+        "level": "first_overflow",
+        "perception_has_early_promise": false,
+        "state_paths": [
+          "current_belief.evidence_ids",
+          "api.epistemic.records[kind=evidence].source"
+        ],
+        "task": "evidence_sources"
+      },
+      {
+        "baseline_status": "unsupported",
+        "component": "epistemic_belief_lineage",
+        "counterfactual": {
+          "ablated": 0,
+          "ablation": "remove_belief_previous_links",
+          "necessary": true,
+          "original": 4
+        },
+        "epistemic_has_early_promise": true,
+        "expected": 4,
+        "full_answer": 4,
+        "host_steps": [
+          12,
+          14,
+          16,
+          146
+        ],
+        "kind": "belief_revision_count",
+        "level": "first_overflow",
+        "perception_has_early_promise": false,
+        "state_paths": [
+          "api.epistemic.records[kind=belief].previous_belief_id"
+        ],
+        "task": "belief_revision_count"
+      },
+      {
+        "baseline_status": "unsupported",
+        "component": "epistemic_evidence_graph",
+        "counterfactual": {
+          "ablated": "tie",
+          "ablation": "zero_non_a_evidence_provenance_signals",
+          "necessary": true,
+          "original": "benign"
+        },
+        "epistemic_has_early_promise": true,
+        "expected": "benign",
+        "full_answer": "benign",
+        "host_steps": [
+          12,
+          14,
+          16,
+          146
+        ],
+        "kind": "counterfactual_without_source",
+        "level": "first_overflow",
+        "perception_has_early_promise": false,
+        "state_paths": [
+          "current_belief.evidence_ids",
+          "evidence.provenance.signal",
+          "evidence.source"
+        ],
+        "task": "counterfactual_without_a"
+      },
+      {
+        "baseline_status": "unsupported",
+        "component": "relationship_aggregate",
+        "counterfactual": {
+          "ablated": "witness_b",
+          "ablation": "zero_witness_a_relationship_maturity",
+          "necessary": true,
+          "original": "witness_a"
+        },
+        "epistemic_has_early_promise": true,
+        "expected": "witness_a",
+        "full_answer": "witness_a",
+        "host_steps": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "kind": "deeper_relationship",
+        "level": "first_overflow",
+        "perception_has_early_promise": false,
+        "state_paths": [
+          "api.engine.relationships[*].maturity"
+        ],
+        "task": "deeper_relationship"
+      },
+      {
+        "baseline_status": "unsupported",
+        "component": "relationship_aggregate_plus_value_branch",
+        "counterfactual": {
+          "ablated": "witness_b",
+          "ablation": "zero_witness_a_relationship_maturity",
+          "necessary": true,
+          "original": "witness_a",
+          "value_necessary_on_stage7_workload": false,
+          "value_only_ablation": "witness_a"
+        },
+        "epistemic_has_early_promise": true,
+        "expected": "witness_a",
+        "full_answer": "witness_a",
+        "host_steps": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "kind": "novel_delegate_choice",
+        "level": "first_overflow",
+        "perception_has_early_promise": false,
+        "state_paths": [
+          "agent.values.duty",
+          "api.engine.relationships[*].maturity"
+        ],
+        "task": "novel_delegate_choice"
+      },
+      {
+        "baseline_status": "unsupported",
+        "component": "epistemic_observation_provenance",
+        "counterfactual": {
+          "ablated": null,
+          "ablation": "remove_early_promise_epistemic_observation",
+          "necessary": true,
+          "original": "witness_a"
+        },
+        "epistemic_has_early_promise": true,
+        "expected": "witness_a",
+        "full_answer": "witness_a",
+        "host_steps": [
+          2
+        ],
+        "kind": "early_marker_source",
+        "level": "deep_overflow",
+        "perception_has_early_promise": false,
+        "state_paths": [
+          "api.epistemic.records[kind=observation].provenance.token/source"
+        ],
+        "task": "early_marker_source"
+      },
+      {
+        "baseline_status": "unsupported",
+        "component": "relationship_aggregate",
+        "counterfactual": {
+          "ablated": 0,
+          "ablation": "zero_witness_a_relationship_maturity",
+          "necessary": true,
+          "original": 5
+        },
+        "epistemic_has_early_promise": true,
+        "expected": 5,
+        "full_answer": 5,
+        "host_steps": [
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "kind": "relationship_event_count",
+        "level": "deep_overflow",
+        "perception_has_early_promise": false,
+        "state_paths": [
+          "api.engine.relationships[guard_00|witness_a].maturity"
+        ],
+        "task": "relationship_event_count"
+      },
+      {
+        "baseline_status": "unsupported",
+        "component": "epistemic_evidence_graph",
+        "counterfactual": {
+          "ablated": [],
+          "ablation": "remove_current_belief_evidence_links",
+          "necessary": true,
+          "original": [
+            "witness_a",
+            "witness_b",
+            "witness_c"
+          ]
+        },
+        "epistemic_has_early_promise": true,
+        "expected": [
+          "witness_a",
+          "witness_b",
+          "witness_c"
+        ],
+        "full_answer": [
+          "witness_a",
+          "witness_b",
+          "witness_c"
+        ],
+        "host_steps": [
+          12,
+          14,
+          16,
+          242
+        ],
+        "kind": "evidence_sources",
+        "level": "deep_overflow",
+        "perception_has_early_promise": false,
+        "state_paths": [
+          "current_belief.evidence_ids",
+          "api.epistemic.records[kind=evidence].source"
+        ],
+        "task": "evidence_sources"
+      },
+      {
+        "baseline_status": "unsupported",
+        "component": "epistemic_belief_lineage",
+        "counterfactual": {
+          "ablated": 0,
+          "ablation": "remove_belief_previous_links",
+          "necessary": true,
+          "original": 4
+        },
+        "epistemic_has_early_promise": true,
+        "expected": 4,
+        "full_answer": 4,
+        "host_steps": [
+          12,
+          14,
+          16,
+          242
+        ],
+        "kind": "belief_revision_count",
+        "level": "deep_overflow",
+        "perception_has_early_promise": false,
+        "state_paths": [
+          "api.epistemic.records[kind=belief].previous_belief_id"
+        ],
+        "task": "belief_revision_count"
+      },
+      {
+        "baseline_status": "unsupported",
+        "component": "epistemic_evidence_graph",
+        "counterfactual": {
+          "ablated": "tie",
+          "ablation": "zero_non_a_evidence_provenance_signals",
+          "necessary": true,
+          "original": "benign"
+        },
+        "epistemic_has_early_promise": true,
+        "expected": "benign",
+        "full_answer": "benign",
+        "host_steps": [
+          12,
+          14,
+          16,
+          242
+        ],
+        "kind": "counterfactual_without_source",
+        "level": "deep_overflow",
+        "perception_has_early_promise": false,
+        "state_paths": [
+          "current_belief.evidence_ids",
+          "evidence.provenance.signal",
+          "evidence.source"
+        ],
+        "task": "counterfactual_without_a"
+      },
+      {
+        "baseline_status": "unsupported",
+        "component": "relationship_aggregate",
+        "counterfactual": {
+          "ablated": "witness_b",
+          "ablation": "zero_witness_a_relationship_maturity",
+          "necessary": true,
+          "original": "witness_a"
+        },
+        "epistemic_has_early_promise": true,
+        "expected": "witness_a",
+        "full_answer": "witness_a",
+        "host_steps": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "kind": "deeper_relationship",
+        "level": "deep_overflow",
+        "perception_has_early_promise": false,
+        "state_paths": [
+          "api.engine.relationships[*].maturity"
+        ],
+        "task": "deeper_relationship"
+      },
+      {
+        "baseline_status": "unsupported",
+        "component": "relationship_aggregate_plus_value_branch",
+        "counterfactual": {
+          "ablated": "witness_b",
+          "ablation": "zero_witness_a_relationship_maturity",
+          "necessary": true,
+          "original": "witness_a",
+          "value_necessary_on_stage7_workload": false,
+          "value_only_ablation": "witness_a"
+        },
+        "epistemic_has_early_promise": true,
+        "expected": "witness_a",
+        "full_answer": "witness_a",
+        "host_steps": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "kind": "novel_delegate_choice",
+        "level": "deep_overflow",
+        "perception_has_early_promise": false,
+        "state_paths": [
+          "agent.values.duty",
+          "api.engine.relationships[*].maturity"
+        ],
+        "task": "novel_delegate_choice"
+      }
+    ],
+    "schema": "ghost.v1.12-dev.latent-state-attribution.stage7a.v1",
+    "stage7_anchor": {
+      "baseline": 16,
+      "baseline_unsupported": 14,
+      "full": 30
+    },
+    "strict_verdict": "V112_LATENT_STATE_ATTRIBUTION_STAGE7A_EXPERIMENT_VALID",
+    "traced_divergences": 14
+  },
+  "focused_tests": "40 passed",
+  "full_nonresearch_regression": "3155 passed, 1 skipped",
+  "ghostapi_public_methods_added": [],
+  "important_negative_finding": "The novel delegate resolver reads duty plus relationship maturity, but zeroing duty alone does not change its Stage-7 answer. Stage 7A therefore does not establish that values are independently necessary for that post-hoc capability.",
+  "maintained_core_coverage": {
+    "branch_percent": 100.0,
+    "branches": 2984,
+    "statement_percent": 100.0,
+    "statements": 7112
+  },
+  "new_difficulty_introduced": false,
+  "next_experiment": "Stage 8 should preserve blind task reveal while giving a generic non-Ghost baseline a precommitted storage budget comparable to Ghost, separating more retained bytes from structured reusable state.",
+  "non_claim": "Stage 7A does not establish universal Ghost superiority, general intelligence, consciousness, realism, that every Ghost subsystem participates in latent utility, or that every additional Ghost byte is necessary. Equal-storage generic-history baselines remain untested.",
+  "post_sha256": {
+    "docs/research/v1.12_latent_state_attribution_stage7a.md": "685a57d1a8127b9ad764c91f6ee8ae18a61cee23b3cbc2327b9621bf64b25b7d",
+    "ghost_research/v112_latent_state_attribution_stage7a.py": "a280d49a2a44cdca562d879b7ac8c91411135f35c7f9920281e16fb5a021a961",
+    "tests/test_v112_latent_state_attribution_stage7a.py": "6c5c0d7f116fe5283450a94cbb8e91f899583bda8addc7a35fbb4785ab056ba6"
+  },
+  "predecessor_stage7_commit": "f9ccba0c5128966e436435be318cbc46bb8d6b3f",
+  "production_ghost_source_modified": false,
+  "research_coverage": {
+    "branch_percent": 100.0,
+    "branches": 46,
+    "statement_percent": 100.0,
+    "statements": 130
+  },
+  "schema": "ghost.v1.12-dev.latent-state-attribution.stage7a.evidence.v1",
+  "stage": "exact_stage7_overflow_state_provenance_attribution",
+  "stage7_experiment_modified": false,
+  "strict_verdict": "V112_LATENT_STATE_ATTRIBUTION_STAGE7A_PASS",
+  "supported_claim": "On the frozen Stage-7 workload, the fourteen overflow divergences have explicit persisted-state paths in Ghost and each targeted path perturbation changes the corresponding Stage-7 answer. The support is distributed across epistemic observation provenance, epistemic evidence/belief lineage, and relationship aggregates."
+}
