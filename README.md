@@ -11,6 +11,33 @@ must survive mutation, serialization, restart, recovery, and continued
 execution without making a language model or other non-deterministic component
 the authoritative source of truth.
 
+## Continuity research — stages 1–18 complete
+
+The first closed CMI continuity research program is public. The experiments
+progressively attacked the architecture with stronger LLM reconstruction
+baselines, tiny deterministic reducers, cross-family transfer, prospective
+holdouts, and final downstream behavior substitution.
+
+Key findings from the frozen evidence:
+
+- the final composed CMI pipeline reproduced state, full snapshot, and host
+  decision across restart in **32/32** cases;
+- the frozen compact relationship challenger matched the final live CMI
+  relationship state in **16/32** cases;
+- substituting that compact relationship approximation changed the deterministic
+  host decision in **13/32** cases;
+- the tested fear dimension was simpler: the tiny reducer family reproduced it
+  exactly across the combined Stage-3 + Stage-6 benchmark.
+
+The conclusion is intentionally narrow: persistent deterministic state is
+earning its place, while individual state dimensions should be simplified when
+a smaller mechanism survives the same adversarial tests.
+
+- [`research/continuity-2026/README.md`](research/continuity-2026/README.md) — full research arc
+- [`research/continuity-2026/METHODOLOGY.md`](research/continuity-2026/METHODOLOGY.md) — methodology
+- [`research/continuity-2026/LIMITATIONS.md`](research/continuity-2026/LIMITATIONS.md) — claim boundaries
+- [`ROADMAP.md`](ROADMAP.md) — post-research production direction
+
 ## Current status
 
 This working tree is a clean extraction from the validated Ghost v1.12-dev
