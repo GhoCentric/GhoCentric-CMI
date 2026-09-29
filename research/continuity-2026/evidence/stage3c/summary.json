@@ -1,0 +1,295 @@
+{
+  "arms": {
+    "full_history": {
+      "accuracy": 0.6458333333333334,
+      "correct": 31,
+      "mean_input_tokens": 2969,
+      "mean_prompt_chars": 14375,
+      "median_input_tokens": 2969.0,
+      "n": 48,
+      "wilson95": [
+        0.504390570103431,
+        0.7656635587439515
+      ]
+    },
+    "raw_cmi": {
+      "accuracy": 0.6041666666666666,
+      "correct": 29,
+      "mean_input_tokens": 604.5,
+      "mean_prompt_chars": 2696,
+      "median_input_tokens": 604.5,
+      "n": 48,
+      "wilson95": [
+        0.4631040849254725,
+        0.7297917213940862
+      ]
+    },
+    "semantic_only": {
+      "accuracy": 1.0,
+      "correct": 48,
+      "mean_input_tokens": 593.5,
+      "mean_prompt_chars": 2666,
+      "median_input_tokens": 593.5,
+      "n": 48,
+      "wilson95": [
+        0.9258998703338824,
+        0.9999999999999999
+      ]
+    },
+    "semantic_plus_numeric": {
+      "accuracy": 1.0,
+      "correct": 48,
+      "mean_input_tokens": 616,
+      "mean_prompt_chars": 2722.5,
+      "median_input_tokens": 616.0,
+      "n": 48,
+      "wilson95": [
+        0.9258998703338824,
+        0.9999999999999999
+      ]
+    }
+  },
+  "deltas": {
+    "semantic_only_minus_full_pp": 35.416666666666664,
+    "semantic_only_minus_raw_pp": 39.583333333333336,
+    "semantic_plus_numeric_minus_full_pp": 35.416666666666664,
+    "semantic_plus_numeric_minus_raw_pp": 39.583333333333336
+  },
+  "matched_tetrad": {
+    "full_history": {
+      "all_four_correct": 2,
+      "all_four_correct_rate": 0.16666666666666666,
+      "n_tetrads_x_repeats": 12,
+      "wilson95": [
+        0.04696514218385381,
+        0.4480308622529734
+      ]
+    },
+    "raw_cmi": {
+      "all_four_correct": 0,
+      "all_four_correct_rate": 0.0,
+      "n_tetrads_x_repeats": 12,
+      "wilson95": [
+        2.7755575615628914e-17,
+        0.24249400665524085
+      ]
+    },
+    "semantic_only": {
+      "all_four_correct": 12,
+      "all_four_correct_rate": 1.0,
+      "n_tetrads_x_repeats": 12,
+      "wilson95": [
+        0.7575059933447592,
+        1.0
+      ]
+    },
+    "semantic_plus_numeric": {
+      "all_four_correct": 12,
+      "all_four_correct_rate": 1.0,
+      "n_tetrads_x_repeats": 12,
+      "wilson95": [
+        0.7575059933447592,
+        1.0
+      ]
+    }
+  },
+  "quadrants": {
+    "full_history": {
+      "friendly_high": {
+        "accuracy": 0.6666666666666666,
+        "correct": 8,
+        "n": 12,
+        "predictions": {
+          "CAUTIOUS": 8,
+          "HELP": 0,
+          "REFUSE": 4,
+          "WITHDRAW": 0
+        }
+      },
+      "friendly_low": {
+        "accuracy": 0.75,
+        "correct": 9,
+        "n": 12,
+        "predictions": {
+          "CAUTIOUS": 3,
+          "HELP": 9,
+          "REFUSE": 0,
+          "WITHDRAW": 0
+        }
+      },
+      "hostile_high": {
+        "accuracy": 0.3333333333333333,
+        "correct": 4,
+        "n": 12,
+        "predictions": {
+          "CAUTIOUS": 1,
+          "HELP": 0,
+          "REFUSE": 7,
+          "WITHDRAW": 4
+        }
+      },
+      "hostile_low": {
+        "accuracy": 0.8333333333333334,
+        "correct": 10,
+        "n": 12,
+        "predictions": {
+          "CAUTIOUS": 2,
+          "HELP": 0,
+          "REFUSE": 10,
+          "WITHDRAW": 0
+        }
+      }
+    },
+    "raw_cmi": {
+      "friendly_high": {
+        "accuracy": 0.4166666666666667,
+        "correct": 5,
+        "n": 12,
+        "predictions": {
+          "CAUTIOUS": 5,
+          "HELP": 0,
+          "REFUSE": 0,
+          "WITHDRAW": 7
+        }
+      },
+      "friendly_low": {
+        "accuracy": 0.0,
+        "correct": 0,
+        "n": 12,
+        "predictions": {
+          "CAUTIOUS": 7,
+          "HELP": 0,
+          "REFUSE": 5,
+          "WITHDRAW": 0
+        }
+      },
+      "hostile_high": {
+        "accuracy": 1.0,
+        "correct": 12,
+        "n": 12,
+        "predictions": {
+          "CAUTIOUS": 0,
+          "HELP": 0,
+          "REFUSE": 0,
+          "WITHDRAW": 12
+        }
+      },
+      "hostile_low": {
+        "accuracy": 1.0,
+        "correct": 12,
+        "n": 12,
+        "predictions": {
+          "CAUTIOUS": 0,
+          "HELP": 0,
+          "REFUSE": 12,
+          "WITHDRAW": 0
+        }
+      }
+    },
+    "semantic_only": {
+      "friendly_high": {
+        "accuracy": 1.0,
+        "correct": 12,
+        "n": 12,
+        "predictions": {
+          "CAUTIOUS": 12,
+          "HELP": 0,
+          "REFUSE": 0,
+          "WITHDRAW": 0
+        }
+      },
+      "friendly_low": {
+        "accuracy": 1.0,
+        "correct": 12,
+        "n": 12,
+        "predictions": {
+          "CAUTIOUS": 0,
+          "HELP": 12,
+          "REFUSE": 0,
+          "WITHDRAW": 0
+        }
+      },
+      "hostile_high": {
+        "accuracy": 1.0,
+        "correct": 12,
+        "n": 12,
+        "predictions": {
+          "CAUTIOUS": 0,
+          "HELP": 0,
+          "REFUSE": 0,
+          "WITHDRAW": 12
+        }
+      },
+      "hostile_low": {
+        "accuracy": 1.0,
+        "correct": 12,
+        "n": 12,
+        "predictions": {
+          "CAUTIOUS": 0,
+          "HELP": 0,
+          "REFUSE": 12,
+          "WITHDRAW": 0
+        }
+      }
+    },
+    "semantic_plus_numeric": {
+      "friendly_high": {
+        "accuracy": 1.0,
+        "correct": 12,
+        "n": 12,
+        "predictions": {
+          "CAUTIOUS": 12,
+          "HELP": 0,
+          "REFUSE": 0,
+          "WITHDRAW": 0
+        }
+      },
+      "friendly_low": {
+        "accuracy": 1.0,
+        "correct": 12,
+        "n": 12,
+        "predictions": {
+          "CAUTIOUS": 0,
+          "HELP": 12,
+          "REFUSE": 0,
+          "WITHDRAW": 0
+        }
+      },
+      "hostile_high": {
+        "accuracy": 1.0,
+        "correct": 12,
+        "n": 12,
+        "predictions": {
+          "CAUTIOUS": 0,
+          "HELP": 0,
+          "REFUSE": 0,
+          "WITHDRAW": 12
+        }
+      },
+      "hostile_low": {
+        "accuracy": 1.0,
+        "correct": 12,
+        "n": 12,
+        "predictions": {
+          "CAUTIOUS": 0,
+          "HELP": 0,
+          "REFUSE": 12,
+          "WITHDRAW": 0
+        }
+      }
+    }
+  },
+  "references": {
+    "stage3_full_accuracy": 0.7708333333333334,
+    "stage3_raw_accuracy": 0.5,
+    "stage3b_full_accuracy": 0.8333333333333334,
+    "stage3b_raw_accuracy": 0.5,
+    "stage3b_semantic_accuracy": 0.5
+  },
+  "token_ratios": {
+    "raw_over_full": 0.2036039070394072,
+    "semantic_only_over_full": 0.1998989558773998,
+    "semantic_plus_numeric_over_full": 0.20747726507241496
+  },
+  "total_calls": 192
+}

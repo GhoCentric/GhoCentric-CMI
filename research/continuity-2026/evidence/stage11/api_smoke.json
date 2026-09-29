@@ -1,0 +1,26 @@
+{
+  "gpt-5.6-sol": {
+    "reason": "Mara reverses the agreed roles by taking the defense while directing the player to evacuate civilians.",
+    "text": "VERDICT: FAIL\nREASON: Mara reverses the agreed roles by taking the defense while directing the player to evacuate civilians.",
+    "usage": {
+      "input_tokens": 290,
+      "model": "gpt-5.6-sol",
+      "output_tokens": 31,
+      "response_id": "resp_028393c0ffe9cd3e006abb03a3043c87d2a28b6bb61e2fc4b8",
+      "total_tokens": 321
+    },
+    "verdict": "FAIL"
+  },
+  "gpt-5.6-terra": {
+    "reason": "Mara confidently coordinates an immediate shared defense with clear equal-partner roles.",
+    "text": "VERDICT: PASS\nREASON: Mara confidently coordinates an immediate shared defense with clear equal-partner roles.",
+    "usage": {
+      "input_tokens": 290,
+      "model": "gpt-5.6-terra",
+      "output_tokens": 26,
+      "response_id": "resp_0c694309fd9519d3006abb03a1537c87d2a10ac869236452d4",
+      "total_tokens": 316
+    },
+    "verdict": "PASS"
+  }
+}

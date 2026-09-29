@@ -1,0 +1,27 @@
+{
+  "arms": [
+    "full_history",
+    "raw_cmi",
+    "semantic_plus_numeric",
+    "semantic_only"
+  ],
+  "controlled_changes": [
+    "global system contract explicitly states relationship.state is authoritative when present",
+    "semantic_plus_numeric retains public state plus raw trust/attachment",
+    "semantic_only removes raw trust/attachment and retains public state plus numeric emotions"
+  ],
+  "model": "gpt-5.6-luna",
+  "repeats": 3,
+  "source_stage3": "/storage/emulated/0/Download/ghost_cmi_llm_continuity_stage3_20260928_152045",
+  "source_stage3b": "/storage/emulated/0/Download/ghost_cmi_llm_continuity_stage3b_20260928_154140",
+  "stage": "CMI_LLM_CONTINUITY_STAGE3C_EXPLICIT_SEMANTIC_CONTRACT",
+  "unchanged": [
+    "exact frozen Stage-3 scenarios",
+    "full-history user memory",
+    "raw-CMI user memory",
+    "recent tail",
+    "expected actions",
+    "model"
+  ],
+  "winner_gate": null
+}

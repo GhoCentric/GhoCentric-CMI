@@ -1,0 +1,67 @@
+{
+  "compact_relationship_challenger": {
+    "fit": {
+      "complexity_rank": 1,
+      "params": {
+        "clock": "channel",
+        "decay": 1.0,
+        "last_weight": 8.0,
+        "positive_weight": 1.0
+      },
+      "stage16_all32_correct": 30,
+      "stage16_loocv_correct": 30,
+      "threshold": 72.5
+    },
+    "name": "L1_last_salient"
+  },
+  "episode_multiset": [
+    "kept_promise",
+    "kept_promise",
+    "kept_promise",
+    "broke_promise",
+    "broke_promise",
+    "broke_promise",
+    "shared_risk",
+    "shared_risk",
+    "concealed_fact",
+    "concealed_fact",
+    "routine_patrol",
+    "routine_patrol",
+    "routine_patrol",
+    "routine_patrol",
+    "warned_ambush",
+    "warned_ambush"
+  ],
+  "episode_order": "deterministic SHA-256-derived shuffle per frozen Stage-17 history",
+  "ghost_version": "1.12.0",
+  "interpretive_boundary": "This final stage does not claim psychological realism or universal superiority. It tests whether the validated components compose deterministically and whether the frozen compact relationship approximation remains behaviorally interchangeable when relationship feeds a richer shared CMI/host pipeline.",
+  "layers": [
+    "relationship",
+    "emotion",
+    "interpretation",
+    "attention",
+    "continuity foreground",
+    "snapshot/restart"
+  ],
+  "primary_endpoints": [
+    "full composed state restart parity",
+    "Ghost vs compact relationship agreement after continuation",
+    "shared host-selector decision divergence caused by relationship substitution"
+  ],
+  "restart_points": [
+    "halfway through source history",
+    "halfway through composed continuation"
+  ],
+  "secondary_endpoints": [
+    "state diversity across cases",
+    "serialized source-history bytes",
+    "serialized final snapshot bytes",
+    "serialized host-state bytes",
+    "runtime telemetry"
+  ],
+  "shared_host_selector": "The host selector consumes identical emotion, interpretation, attention, and continuity state in both arms. The only substituted field is relationship_state: Ghost live state vs frozen compact relationship prediction.",
+  "source_cases": 32,
+  "source_stage17_v2": "/storage/emulated/0/Download/ghost_cmi_llm_continuity_stage17_v2_20260928_213353",
+  "stage": "CMI_STAGE18_COMPOSED_END_TO_END_CONTINUITY_GATE",
+  "winner_gate": null
+}

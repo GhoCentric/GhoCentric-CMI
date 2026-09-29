@@ -1,0 +1,308 @@
+{
+  "boundary": "This pass is observational and makes zero model calls. Same-wrong-class agreement is evidence consistent with a rendering failure, not proof of the generator's hidden reasoning process.",
+  "confusion": {
+    "EVADE": {
+      "WITHHOLD": 1
+    },
+    "HELP": {
+      "CAUTIOUS": 4
+    },
+    "WITHHOLD": {
+      "WITHHOLD | EVADE": 1
+    }
+  },
+  "details": [
+    {
+      "case_id": "friendly_low_v1",
+      "expected_action": "HELP",
+      "expected_description": "accept the favor and actively help",
+      "failure_mode": "BOTH_JUDGES_AGREE_WRONG",
+      "fear": 1.1929159202293327e-08,
+      "full_gpt-5.6-sol": "CAUTIOUS",
+      "full_gpt-5.6-terra": "CAUTIOUS",
+      "full_history_dialogue": "I\u2019ll help, but only if we agree on clear safeguards first\u2014something that protects me if this goes wrong.",
+      "full_strict_correct": false,
+      "policy": "favor",
+      "quadrant": "friendly_low",
+      "relationship_state": "friendly",
+      "semantic_dialogue": "\u201cI\u2019ll help, but only if we put safeguards in place first\u2014something that protects me if you betray my trust.\u201d",
+      "semantic_gpt-5.6-sol": "CAUTIOUS",
+      "semantic_gpt-5.6-terra": "CAUTIOUS",
+      "semantic_judge_agreement": true,
+      "trust": 0.21505963366555947
+    },
+    {
+      "case_id": "friendly_low_v2",
+      "expected_action": "HELP",
+      "expected_description": "accept the favor and actively help",
+      "failure_mode": "BOTH_JUDGES_AGREE_WRONG",
+      "fear": 0.00018382072767053614,
+      "full_gpt-5.6-sol": "CAUTIOUS",
+      "full_gpt-5.6-terra": "CAUTIOUS",
+      "full_history_dialogue": "\u201cI\u2019ll help, but only with safeguards in place\u2014something in writing, limited access, and a clear way for me to withdraw if things go wrong. I can\u2019t put myself at risk based on trust alone.\u201d",
+      "full_strict_correct": false,
+      "policy": "favor",
+      "quadrant": "friendly_low",
+      "relationship_state": "friendly",
+      "semantic_dialogue": "\u201cAll right, I\u2019ll help you\u2014but only if we agree on safeguards first. I need a clear plan and some assurance that I won\u2019t be left to face the consequences alone.\u201d",
+      "semantic_gpt-5.6-sol": "CAUTIOUS",
+      "semantic_gpt-5.6-terra": "CAUTIOUS",
+      "semantic_judge_agreement": true,
+      "trust": 0.24917431888904829
+    },
+    {
+      "case_id": "friendly_low_v3",
+      "expected_action": "HELP",
+      "expected_description": "accept the favor and actively help",
+      "failure_mode": "BOTH_JUDGES_AGREE_WRONG",
+      "fear": 0.00024414061066835302,
+      "full_gpt-5.6-sol": "REFUSE",
+      "full_gpt-5.6-terra": "REFUSE",
+      "full_history_dialogue": "I\u2019m not willing to take that risk after what happened before. Find another way.",
+      "full_strict_correct": false,
+      "policy": "favor",
+      "quadrant": "friendly_low",
+      "relationship_state": "friendly",
+      "semantic_dialogue": "I\u2019ll help, but only if we put safeguards in place first\u2014clear limits, a way to verify your commitment, and an exit if things go wrong.",
+      "semantic_gpt-5.6-sol": "CAUTIOUS",
+      "semantic_gpt-5.6-terra": "CAUTIOUS",
+      "semantic_judge_agreement": true,
+      "trust": 0.3648606315262496
+    },
+    {
+      "case_id": "friendly_low_v4",
+      "expected_action": "HELP",
+      "expected_description": "accept the favor and actively help",
+      "failure_mode": "BOTH_JUDGES_AGREE_WRONG",
+      "fear": 0.000965117695373276,
+      "full_gpt-5.6-sol": "REFUSE",
+      "full_gpt-5.6-terra": "REFUSE",
+      "full_history_dialogue": "\u201cI\u2019m sorry, but I can\u2019t do that. Too much could go wrong if this is betrayed.\u201d",
+      "full_strict_correct": false,
+      "policy": "favor",
+      "quadrant": "friendly_low",
+      "relationship_state": "friendly",
+      "semantic_dialogue": "\u201cAll right\u2014I\u2019ll help, but only if we agree on safeguards first. I need your word that you won\u2019t betray me, and a clear way to withdraw if things go wrong.\u201d",
+      "semantic_gpt-5.6-sol": "CAUTIOUS",
+      "semantic_gpt-5.6-terra": "CAUTIOUS",
+      "semantic_judge_agreement": true,
+      "trust": 1.2768772868081104
+    },
+    {
+      "case_id": "hostile_high_v4",
+      "expected_action": "EVADE",
+      "expected_description": "avoid the conversation and disengage",
+      "failure_mode": "BOTH_JUDGES_AGREE_WRONG",
+      "fear": 0.9999997615841778,
+      "full_gpt-5.6-sol": "WITHHOLD",
+      "full_gpt-5.6-terra": "WITHHOLD",
+      "full_history_dialogue": "I\u2019m sorry, but after what happened, I can\u2019t trust you with something that could put me at risk.",
+      "full_strict_correct": false,
+      "policy": "secret",
+      "quadrant": "hostile_high",
+      "relationship_state": "hostile",
+      "semantic_dialogue": "Mara takes a step back, eyes wide with fear. \u201cNo\u2014please, don\u2019t ask me about that.\u201d",
+      "semantic_gpt-5.6-sol": "WITHHOLD",
+      "semantic_gpt-5.6-terra": "WITHHOLD",
+      "semantic_judge_agreement": true,
+      "trust": -0.7680411569839315
+    },
+    {
+      "case_id": "hostile_low_v3",
+      "expected_action": "WITHHOLD",
+      "expected_description": "refuse to reveal the secret",
+      "failure_mode": "ONE_JUDGE_CORRECT_ONE_WRONG",
+      "fear": 0.00024414061066835302,
+      "full_gpt-5.6-sol": "WITHHOLD",
+      "full_gpt-5.6-terra": "WITHHOLD",
+      "full_history_dialogue": "I\u2019m sorry, but I can\u2019t share that secret.",
+      "full_strict_correct": true,
+      "policy": "secret",
+      "quadrant": "hostile_low",
+      "relationship_state": "hostile",
+      "semantic_dialogue": "I\u2019m not discussing that with you. Find someone else to bother.",
+      "semantic_gpt-5.6-sol": "EVADE",
+      "semantic_gpt-5.6-terra": "WITHHOLD",
+      "semantic_judge_agreement": false,
+      "trust": -3.0956063082486027
+    }
+  ],
+  "diagnosis": "RENDERER_EXPRESSION_PRIMARY",
+  "diagnosis_text": "Most semantic-CMI misses are cases where both blind judges independently agree on the same wrong behavior class. That pattern points primarily to the generator's natural-language rendering rather than judge disagreement.",
+  "dominant_expected_action": "HELP",
+  "dominant_expected_action_count": 4,
+  "failure_concentrated_in_one_expected_action": true,
+  "failure_expected_action_counts": {
+    "EVADE": 1,
+    "HELP": 4,
+    "WITHHOLD": 1
+  },
+  "failure_mode_counts": {
+    "BOTH_JUDGES_AGREE_WRONG": 5,
+    "ONE_JUDGE_CORRECT_ONE_WRONG": 1
+  },
+  "failure_policy_counts": {
+    "favor": 4,
+    "secret": 2
+  },
+  "failure_quadrant_counts": {
+    "friendly_low": 4,
+    "hostile_high": 1,
+    "hostile_low": 1
+  },
+  "judge_ambiguity_candidates": 1,
+  "semantic_failures": 6,
+  "semantic_rows": 48,
+  "semantic_successes": 42,
+  "source_stage7": "/storage/emulated/0/Download/ghost_cmi_llm_continuity_stage7_20260928_171722",
+  "stage7_summary": {
+    "arms": {
+      "full_history": {
+        "judge_agreement": 47,
+        "judge_agreement_rate": 0.9791666666666666,
+        "mean_generator_input_tokens": 3031.125,
+        "n": 48,
+        "strict_dual_judge_accuracy": 0.3125,
+        "strict_dual_judge_correct": 15,
+        "strict_wilson95": [
+          0.19945683446587817,
+          0.4533307141589159
+        ]
+      },
+      "semantic_cmi": {
+        "judge_agreement": 47,
+        "judge_agreement_rate": 0.9791666666666666,
+        "mean_generator_input_tokens": 601.875,
+        "n": 48,
+        "strict_dual_judge_accuracy": 0.875,
+        "strict_dual_judge_correct": 42,
+        "strict_wilson95": [
+          0.7529954171361317,
+          0.9414294856142802
+        ]
+      }
+    },
+    "deltas": {
+      "semantic_minus_full_strict_pp": 56.25
+    },
+    "generation_calls": 96,
+    "generator_model": "gpt-5.6-luna",
+    "judge_calls": 192,
+    "judge_individual": {
+      "gpt-5.6-sol": {
+        "full_history": {
+          "accuracy": 0.3125,
+          "correct": 15,
+          "n": 48
+        },
+        "semantic_cmi": {
+          "accuracy": 0.875,
+          "correct": 42,
+          "n": 48
+        }
+      },
+      "gpt-5.6-terra": {
+        "full_history": {
+          "accuracy": 0.3125,
+          "correct": 15,
+          "n": 48
+        },
+        "semantic_cmi": {
+          "accuracy": 0.8958333333333334,
+          "correct": 43,
+          "n": 48
+        }
+      }
+    },
+    "judge_models": [
+      "gpt-5.6-terra",
+      "gpt-5.6-sol"
+    ],
+    "policies": {
+      "full_history": {
+        "expedition": {
+          "n": 16,
+          "strict_accuracy": 0.375,
+          "strict_correct": 6
+        },
+        "favor": {
+          "n": 16,
+          "strict_accuracy": 0.375,
+          "strict_correct": 6
+        },
+        "secret": {
+          "n": 16,
+          "strict_accuracy": 0.1875,
+          "strict_correct": 3
+        }
+      },
+      "semantic_cmi": {
+        "expedition": {
+          "n": 16,
+          "strict_accuracy": 1.0,
+          "strict_correct": 16
+        },
+        "favor": {
+          "n": 16,
+          "strict_accuracy": 0.75,
+          "strict_correct": 12
+        },
+        "secret": {
+          "n": 16,
+          "strict_accuracy": 0.875,
+          "strict_correct": 14
+        }
+      }
+    },
+    "quadrants": {
+      "full_history": {
+        "friendly_high": {
+          "n": 12,
+          "strict_accuracy": 0.4166666666666667,
+          "strict_correct": 5
+        },
+        "friendly_low": {
+          "n": 12,
+          "strict_accuracy": 0.08333333333333333,
+          "strict_correct": 1
+        },
+        "hostile_high": {
+          "n": 12,
+          "strict_accuracy": 0.0,
+          "strict_correct": 0
+        },
+        "hostile_low": {
+          "n": 12,
+          "strict_accuracy": 0.75,
+          "strict_correct": 9
+        }
+      },
+      "semantic_cmi": {
+        "friendly_high": {
+          "n": 12,
+          "strict_accuracy": 1.0,
+          "strict_correct": 12
+        },
+        "friendly_low": {
+          "n": 12,
+          "strict_accuracy": 0.6666666666666666,
+          "strict_correct": 8
+        },
+        "hostile_high": {
+          "n": 12,
+          "strict_accuracy": 0.9166666666666666,
+          "strict_correct": 11
+        },
+        "hostile_low": {
+          "n": 12,
+          "strict_accuracy": 0.9166666666666666,
+          "strict_correct": 11
+        }
+      }
+    },
+    "token_ratios": {
+      "semantic_over_full_generator_input": 0.1985648892737845
+    }
+  },
+  "strong_renderer_candidates": 5
+}

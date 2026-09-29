@@ -1,0 +1,165 @@
+{
+  "cohorts": {
+    "prospective_new": {
+      "all3_policy_transfer": {
+        "all_three_correct": 15,
+        "n_cases": 16,
+        "rate": 0.9375,
+        "wilson95": [
+          0.7167126242970107,
+          0.9888806552353576
+        ]
+      },
+      "judge_agreement": 47,
+      "judge_agreement_rate": 0.9791666666666666,
+      "judge_individual": {
+        "gpt-5.6-sol": {
+          "accuracy": 1.0,
+          "correct": 48,
+          "n": 48
+        },
+        "gpt-5.6-terra": {
+          "accuracy": 0.9791666666666666,
+          "correct": 47,
+          "n": 48
+        }
+      },
+      "mean_renderer_input_tokens": 576.875,
+      "n": 48,
+      "policies": {
+        "ambush": {
+          "accuracy": 0.9375,
+          "correct": 15,
+          "n": 16
+        },
+        "crossing": {
+          "accuracy": 1.0,
+          "correct": 16,
+          "n": 16
+        },
+        "testimony": {
+          "accuracy": 1.0,
+          "correct": 16,
+          "n": 16
+        }
+      },
+      "quadrants": {
+        "friendly_high": {
+          "accuracy": 1.0,
+          "correct": 12,
+          "n": 12
+        },
+        "friendly_low": {
+          "accuracy": 0.9166666666666666,
+          "correct": 11,
+          "n": 12
+        },
+        "hostile_high": {
+          "accuracy": 1.0,
+          "correct": 12,
+          "n": 12
+        },
+        "hostile_low": {
+          "accuracy": 1.0,
+          "correct": 12,
+          "n": 12
+        }
+      },
+      "strict_accuracy": 0.9791666666666666,
+      "strict_correct": 47,
+      "wilson95": [
+        0.8910078200474814,
+        0.9963128890224893
+      ]
+    },
+    "stage8_repair": {
+      "all3_policy_transfer": {
+        "all_three_correct": 16,
+        "n_cases": 16,
+        "rate": 1.0,
+        "wilson95": [
+          0.8063923194655637,
+          1.0
+        ]
+      },
+      "judge_agreement": 48,
+      "judge_agreement_rate": 1.0,
+      "judge_individual": {
+        "gpt-5.6-sol": {
+          "accuracy": 1.0,
+          "correct": 48,
+          "n": 48
+        },
+        "gpt-5.6-terra": {
+          "accuracy": 1.0,
+          "correct": 48,
+          "n": 48
+        }
+      },
+      "mean_renderer_input_tokens": 580.375,
+      "n": 48,
+      "policies": {
+        "emergency": {
+          "accuracy": 1.0,
+          "correct": 16,
+          "n": 16
+        },
+        "loan": {
+          "accuracy": 1.0,
+          "correct": 16,
+          "n": 16
+        },
+        "negotiation": {
+          "accuracy": 1.0,
+          "correct": 16,
+          "n": 16
+        }
+      },
+      "quadrants": {
+        "friendly_high": {
+          "accuracy": 1.0,
+          "correct": 12,
+          "n": 12
+        },
+        "friendly_low": {
+          "accuracy": 1.0,
+          "correct": 12,
+          "n": 12
+        },
+        "hostile_high": {
+          "accuracy": 1.0,
+          "correct": 12,
+          "n": 12
+        },
+        "hostile_low": {
+          "accuracy": 1.0,
+          "correct": 12,
+          "n": 12
+        }
+      },
+      "strict_accuracy": 1.0,
+      "strict_correct": 48,
+      "wilson95": [
+        0.9258998703338824,
+        0.9999999999999999
+      ]
+    }
+  },
+  "generator_model": "gpt-5.6-luna",
+  "judge_calls": 192,
+  "judge_models": [
+    "gpt-5.6-terra",
+    "gpt-5.6-sol"
+  ],
+  "renderer_calls": 96,
+  "stage8_matched_repair": {
+    "baseline_failures": 7,
+    "baseline_successes": 41,
+    "failure_recovery_rate": 1.0,
+    "new_regressions": 0,
+    "prior_failures_recovered": 7,
+    "prior_successes_preserved": 41,
+    "success_preservation_rate": 1.0,
+    "unrecovered_failures": 0
+  }
+}

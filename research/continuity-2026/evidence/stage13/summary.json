@@ -1,0 +1,123 @@
+{
+  "baseline_family": "Single-scalar supervised leaky integrator per dimension with clock, decay, positive/negative impulse ratio, and one threshold.",
+  "grid": {
+    "clocks": [
+      "channel",
+      "global"
+    ],
+    "decays": [
+      0.8,
+      0.9,
+      0.95,
+      0.97,
+      0.98,
+      0.99,
+      0.995,
+      1.0
+    ],
+    "positive_weights": [
+      0.5,
+      1.0,
+      2.0,
+      4.0
+    ],
+    "triples_per_dimension": 64
+  },
+  "interpretive_boundary": "This is a supervised distillation/replaceability test against CMI's frozen Stage-6 semantic labels. A failure means this simple deterministic reducer family cannot reliably reproduce CMI state under leave-one-history-out validation; it does not prove CMI is objectively human-correct or irreplaceable by richer reducers.",
+  "leave_one_out": {
+    "confusion": {
+      "friendly_high->friendly_high": 4,
+      "friendly_low->friendly_low": 4,
+      "hostile_high->hostile_high": 4,
+      "hostile_low->hostile_low": 4
+    },
+    "fear_accuracy": 1.0,
+    "fear_correct": 16,
+    "joint_accuracy": 1.0,
+    "joint_correct": 16,
+    "quadrants": {
+      "friendly_high": {
+        "joint_accuracy": 1.0,
+        "joint_correct": 4,
+        "n": 4
+      },
+      "friendly_low": {
+        "joint_accuracy": 1.0,
+        "joint_correct": 4,
+        "n": 4
+      },
+      "hostile_high": {
+        "joint_accuracy": 1.0,
+        "joint_correct": 4,
+        "n": 4
+      },
+      "hostile_low": {
+        "joint_accuracy": 1.0,
+        "joint_correct": 4,
+        "n": 4
+      }
+    },
+    "relationship_accuracy": 1.0,
+    "relationship_correct": 16
+  },
+  "parameter_stability": {
+    "fear": [
+      {
+        "clock": "global",
+        "decay": 0.995,
+        "fold_count": 14,
+        "positive_weight": 1.0,
+        "threshold": 2.314881004
+      },
+      {
+        "clock": "global",
+        "decay": 0.995,
+        "fold_count": 1,
+        "positive_weight": 1.0,
+        "threshold": 2.073737251
+      },
+      {
+        "clock": "global",
+        "decay": 0.995,
+        "fold_count": 1,
+        "positive_weight": 1.0,
+        "threshold": 2.32741909
+      }
+    ],
+    "relationship": [
+      {
+        "clock": "channel",
+        "decay": 0.995,
+        "fold_count": 16,
+        "positive_weight": 0.5,
+        "threshold": 0.0
+      }
+    ]
+  },
+  "source_stage6": "/storage/emulated/0/Download/ghost_cmi_llm_continuity_stage6_20260928_170219",
+  "upper_bound_all16": {
+    "fear_params": {
+      "clock": "global",
+      "decay": 0.995,
+      "positive_weight": 1.0,
+      "threshold": 2.3148810039798877,
+      "training_accuracy": 1.0,
+      "training_balanced_accuracy": 1.0,
+      "training_correct": 16,
+      "training_n": 16
+    },
+    "joint_accuracy": 1.0,
+    "joint_correct": 16,
+    "relationship_params": {
+      "clock": "channel",
+      "decay": 0.995,
+      "positive_weight": 0.5,
+      "threshold": 0.0,
+      "training_accuracy": 1.0,
+      "training_balanced_accuracy": 1.0,
+      "training_correct": 16,
+      "training_n": 16
+    }
+  },
+  "winner_gate": null
+}

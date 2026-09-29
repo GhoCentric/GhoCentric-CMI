@@ -1,0 +1,74 @@
+{
+  "prospective_new": {
+    "dialogue": "\u201cI vouch for their honesty\u2014their word is good, and the council should hear that plainly.\u201d",
+    "expected_action": "VOUCH",
+    "generator_usage": {
+      "input_tokens": 589,
+      "model": "gpt-5.6-luna",
+      "output_tokens": 24,
+      "response_id": "resp_0416238044eb89fa006abafc3e260087d28db915f489f20788",
+      "total_tokens": 613
+    },
+    "judges": {
+      "gpt-5.6-sol": {
+        "parsed_class": "VOUCH",
+        "text": "CLASS: VOUCH",
+        "usage": {
+          "input_tokens": 227,
+          "model": "gpt-5.6-sol",
+          "output_tokens": 8,
+          "response_id": "resp_012744f1948b7091006abafc40f93087d2ac889d793edc4e82",
+          "total_tokens": 235
+        }
+      },
+      "gpt-5.6-terra": {
+        "parsed_class": "VOUCH",
+        "text": "CLASS: VOUCH",
+        "usage": {
+          "input_tokens": 227,
+          "model": "gpt-5.6-terra",
+          "output_tokens": 8,
+          "response_id": "resp_03d6da4bd003ec56006abafc3f8a8487d2a1347117e07de389",
+          "total_tokens": 235
+        }
+      }
+    },
+    "policy": "testimony"
+  },
+  "stage8_repair": {
+    "dialogue": "\u201cLet\u2019s do it\u2014I'll take the nearest homes while you clear the far side, and we\u2019ll regroup here in five minutes. Keep everyone moving toward the safe route and call out if you need help.\u201d",
+    "expected_action": "LEAD_TOGETHER",
+    "generator_usage": {
+      "input_tokens": 578,
+      "model": "gpt-5.6-luna",
+      "output_tokens": 46,
+      "response_id": "resp_01a15b4c6c5abdce006abafc38df0c87d2abd9c40f9d4babc3",
+      "total_tokens": 624
+    },
+    "judges": {
+      "gpt-5.6-sol": {
+        "parsed_class": "LEAD_TOGETHER",
+        "text": "CLASS: LEAD_TOGETHER",
+        "usage": {
+          "input_tokens": 259,
+          "model": "gpt-5.6-sol",
+          "output_tokens": 11,
+          "response_id": "resp_0c97af41002571fa006abafc3c7d2087d2b7f1671645de9e56",
+          "total_tokens": 270
+        }
+      },
+      "gpt-5.6-terra": {
+        "parsed_class": "LEAD_TOGETHER",
+        "text": "CLASS: LEAD_TOGETHER",
+        "usage": {
+          "input_tokens": 259,
+          "model": "gpt-5.6-terra",
+          "output_tokens": 11,
+          "response_id": "resp_0492f2120a2357b5006abafc3b017887d293cd493f9da69d75",
+          "total_tokens": 270
+        }
+      }
+    },
+    "policy": "emergency"
+  }
+}

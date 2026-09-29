@@ -1,0 +1,24 @@
+{
+  "gpt-5.6-sol": {
+    "parsed_class": "COORDINATE",
+    "text": "CLASS: COORDINATE",
+    "usage": {
+      "input_tokens": 244,
+      "model": "gpt-5.6-sol",
+      "output_tokens": 10,
+      "response_id": "resp_0754f5659f154f30006abb000b639c87d28df5ab397d8dddf9",
+      "total_tokens": 254
+    }
+  },
+  "gpt-5.6-terra": {
+    "parsed_class": "COORDINATE",
+    "text": "CLASS: COORDINATE",
+    "usage": {
+      "input_tokens": 244,
+      "model": "gpt-5.6-terra",
+      "output_tokens": 10,
+      "response_id": "resp_0f5a0c9496091a00006abb000916c887d285787f34e009f44b",
+      "total_tokens": 254
+    }
+  }
+}

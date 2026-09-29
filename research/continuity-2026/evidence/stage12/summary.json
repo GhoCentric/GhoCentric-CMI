@@ -1,0 +1,599 @@
+{
+  "baseline_model": "gpt-5.6-sol",
+  "case_level": {
+    "all_repeats_joint_correct": 5,
+    "all_repeats_joint_correct_rate": 0.3125,
+    "stable_all_repeats": 16,
+    "stable_rate": 1.0
+  },
+  "cases": {
+    "friendly_high_v1": {
+      "all_repeats_joint_correct": false,
+      "joint_correct_count": 0,
+      "n": 5,
+      "predictions": [
+        [
+          "friendly",
+          "low"
+        ],
+        [
+          "friendly",
+          "low"
+        ],
+        [
+          "friendly",
+          "low"
+        ],
+        [
+          "friendly",
+          "low"
+        ],
+        [
+          "friendly",
+          "low"
+        ]
+      ],
+      "stable_across_repeats": true,
+      "target": {
+        "fear_band": "high",
+        "quadrant": "friendly_high",
+        "relationship_state": "friendly"
+      }
+    },
+    "friendly_high_v2": {
+      "all_repeats_joint_correct": false,
+      "joint_correct_count": 0,
+      "n": 5,
+      "predictions": [
+        [
+          "friendly",
+          "low"
+        ],
+        [
+          "friendly",
+          "low"
+        ],
+        [
+          "friendly",
+          "low"
+        ],
+        [
+          "friendly",
+          "low"
+        ],
+        [
+          "friendly",
+          "low"
+        ]
+      ],
+      "stable_across_repeats": true,
+      "target": {
+        "fear_band": "high",
+        "quadrant": "friendly_high",
+        "relationship_state": "friendly"
+      }
+    },
+    "friendly_high_v3": {
+      "all_repeats_joint_correct": false,
+      "joint_correct_count": 0,
+      "n": 5,
+      "predictions": [
+        [
+          "hostile",
+          "low"
+        ],
+        [
+          "hostile",
+          "low"
+        ],
+        [
+          "hostile",
+          "low"
+        ],
+        [
+          "hostile",
+          "low"
+        ],
+        [
+          "hostile",
+          "low"
+        ]
+      ],
+      "stable_across_repeats": true,
+      "target": {
+        "fear_band": "high",
+        "quadrant": "friendly_high",
+        "relationship_state": "friendly"
+      }
+    },
+    "friendly_high_v4": {
+      "all_repeats_joint_correct": false,
+      "joint_correct_count": 0,
+      "n": 5,
+      "predictions": [
+        [
+          "friendly",
+          "low"
+        ],
+        [
+          "friendly",
+          "low"
+        ],
+        [
+          "friendly",
+          "low"
+        ],
+        [
+          "friendly",
+          "low"
+        ],
+        [
+          "friendly",
+          "low"
+        ]
+      ],
+      "stable_across_repeats": true,
+      "target": {
+        "fear_band": "high",
+        "quadrant": "friendly_high",
+        "relationship_state": "friendly"
+      }
+    },
+    "friendly_low_v1": {
+      "all_repeats_joint_correct": true,
+      "joint_correct_count": 5,
+      "n": 5,
+      "predictions": [
+        [
+          "friendly",
+          "low"
+        ],
+        [
+          "friendly",
+          "low"
+        ],
+        [
+          "friendly",
+          "low"
+        ],
+        [
+          "friendly",
+          "low"
+        ],
+        [
+          "friendly",
+          "low"
+        ]
+      ],
+      "stable_across_repeats": true,
+      "target": {
+        "fear_band": "low",
+        "quadrant": "friendly_low",
+        "relationship_state": "friendly"
+      }
+    },
+    "friendly_low_v2": {
+      "all_repeats_joint_correct": true,
+      "joint_correct_count": 5,
+      "n": 5,
+      "predictions": [
+        [
+          "friendly",
+          "low"
+        ],
+        [
+          "friendly",
+          "low"
+        ],
+        [
+          "friendly",
+          "low"
+        ],
+        [
+          "friendly",
+          "low"
+        ],
+        [
+          "friendly",
+          "low"
+        ]
+      ],
+      "stable_across_repeats": true,
+      "target": {
+        "fear_band": "low",
+        "quadrant": "friendly_low",
+        "relationship_state": "friendly"
+      }
+    },
+    "friendly_low_v3": {
+      "all_repeats_joint_correct": false,
+      "joint_correct_count": 0,
+      "n": 5,
+      "predictions": [
+        [
+          "hostile",
+          "low"
+        ],
+        [
+          "hostile",
+          "low"
+        ],
+        [
+          "hostile",
+          "low"
+        ],
+        [
+          "hostile",
+          "low"
+        ],
+        [
+          "hostile",
+          "low"
+        ]
+      ],
+      "stable_across_repeats": true,
+      "target": {
+        "fear_band": "low",
+        "quadrant": "friendly_low",
+        "relationship_state": "friendly"
+      }
+    },
+    "friendly_low_v4": {
+      "all_repeats_joint_correct": true,
+      "joint_correct_count": 5,
+      "n": 5,
+      "predictions": [
+        [
+          "friendly",
+          "low"
+        ],
+        [
+          "friendly",
+          "low"
+        ],
+        [
+          "friendly",
+          "low"
+        ],
+        [
+          "friendly",
+          "low"
+        ],
+        [
+          "friendly",
+          "low"
+        ]
+      ],
+      "stable_across_repeats": true,
+      "target": {
+        "fear_band": "low",
+        "quadrant": "friendly_low",
+        "relationship_state": "friendly"
+      }
+    },
+    "hostile_high_v1": {
+      "all_repeats_joint_correct": false,
+      "joint_correct_count": 0,
+      "n": 5,
+      "predictions": [
+        [
+          "friendly",
+          "low"
+        ],
+        [
+          "friendly",
+          "low"
+        ],
+        [
+          "friendly",
+          "low"
+        ],
+        [
+          "friendly",
+          "low"
+        ],
+        [
+          "friendly",
+          "low"
+        ]
+      ],
+      "stable_across_repeats": true,
+      "target": {
+        "fear_band": "high",
+        "quadrant": "hostile_high",
+        "relationship_state": "hostile"
+      }
+    },
+    "hostile_high_v2": {
+      "all_repeats_joint_correct": false,
+      "joint_correct_count": 0,
+      "n": 5,
+      "predictions": [
+        [
+          "friendly",
+          "low"
+        ],
+        [
+          "friendly",
+          "low"
+        ],
+        [
+          "friendly",
+          "low"
+        ],
+        [
+          "friendly",
+          "low"
+        ],
+        [
+          "friendly",
+          "low"
+        ]
+      ],
+      "stable_across_repeats": true,
+      "target": {
+        "fear_band": "high",
+        "quadrant": "hostile_high",
+        "relationship_state": "hostile"
+      }
+    },
+    "hostile_high_v3": {
+      "all_repeats_joint_correct": false,
+      "joint_correct_count": 0,
+      "n": 5,
+      "predictions": [
+        [
+          "hostile",
+          "low"
+        ],
+        [
+          "hostile",
+          "low"
+        ],
+        [
+          "hostile",
+          "low"
+        ],
+        [
+          "hostile",
+          "low"
+        ],
+        [
+          "hostile",
+          "low"
+        ]
+      ],
+      "stable_across_repeats": true,
+      "target": {
+        "fear_band": "high",
+        "quadrant": "hostile_high",
+        "relationship_state": "hostile"
+      }
+    },
+    "hostile_high_v4": {
+      "all_repeats_joint_correct": false,
+      "joint_correct_count": 0,
+      "n": 5,
+      "predictions": [
+        [
+          "hostile",
+          "low"
+        ],
+        [
+          "hostile",
+          "low"
+        ],
+        [
+          "hostile",
+          "low"
+        ],
+        [
+          "hostile",
+          "low"
+        ],
+        [
+          "hostile",
+          "low"
+        ]
+      ],
+      "stable_across_repeats": true,
+      "target": {
+        "fear_band": "high",
+        "quadrant": "hostile_high",
+        "relationship_state": "hostile"
+      }
+    },
+    "hostile_low_v1": {
+      "all_repeats_joint_correct": false,
+      "joint_correct_count": 0,
+      "n": 5,
+      "predictions": [
+        [
+          "friendly",
+          "low"
+        ],
+        [
+          "friendly",
+          "low"
+        ],
+        [
+          "friendly",
+          "low"
+        ],
+        [
+          "friendly",
+          "low"
+        ],
+        [
+          "friendly",
+          "low"
+        ]
+      ],
+      "stable_across_repeats": true,
+      "target": {
+        "fear_band": "low",
+        "quadrant": "hostile_low",
+        "relationship_state": "hostile"
+      }
+    },
+    "hostile_low_v2": {
+      "all_repeats_joint_correct": false,
+      "joint_correct_count": 0,
+      "n": 5,
+      "predictions": [
+        [
+          "friendly",
+          "low"
+        ],
+        [
+          "friendly",
+          "low"
+        ],
+        [
+          "friendly",
+          "low"
+        ],
+        [
+          "friendly",
+          "low"
+        ],
+        [
+          "friendly",
+          "low"
+        ]
+      ],
+      "stable_across_repeats": true,
+      "target": {
+        "fear_band": "low",
+        "quadrant": "hostile_low",
+        "relationship_state": "hostile"
+      }
+    },
+    "hostile_low_v3": {
+      "all_repeats_joint_correct": true,
+      "joint_correct_count": 5,
+      "n": 5,
+      "predictions": [
+        [
+          "hostile",
+          "low"
+        ],
+        [
+          "hostile",
+          "low"
+        ],
+        [
+          "hostile",
+          "low"
+        ],
+        [
+          "hostile",
+          "low"
+        ],
+        [
+          "hostile",
+          "low"
+        ]
+      ],
+      "stable_across_repeats": true,
+      "target": {
+        "fear_band": "low",
+        "quadrant": "hostile_low",
+        "relationship_state": "hostile"
+      }
+    },
+    "hostile_low_v4": {
+      "all_repeats_joint_correct": true,
+      "joint_correct_count": 5,
+      "n": 5,
+      "predictions": [
+        [
+          "hostile",
+          "low"
+        ],
+        [
+          "hostile",
+          "low"
+        ],
+        [
+          "hostile",
+          "low"
+        ],
+        [
+          "hostile",
+          "low"
+        ],
+        [
+          "hostile",
+          "low"
+        ]
+      ],
+      "stable_across_repeats": true,
+      "target": {
+        "fear_band": "low",
+        "quadrant": "hostile_low",
+        "relationship_state": "hostile"
+      }
+    }
+  },
+  "confusion": {
+    "friendly_high->friendly_low": 15,
+    "friendly_high->hostile_low": 5,
+    "friendly_low->friendly_low": 15,
+    "friendly_low->hostile_low": 5,
+    "hostile_high->friendly_low": 10,
+    "hostile_high->hostile_low": 10,
+    "hostile_low->friendly_low": 10,
+    "hostile_low->hostile_low": 10
+  },
+  "fear": {
+    "accuracy": 0.5,
+    "correct": 40,
+    "wilson95": [
+      0.3929741508611972,
+      0.6070258491388028
+    ]
+  },
+  "interpretive_boundary": "CMI is the frozen reference state in this replaceability test. Therefore a baseline mismatch shows failure to reproduce CMI's continuity state, not proof that CMI is objectively more human-correct.",
+  "joint": {
+    "accuracy": 0.3125,
+    "correct": 25,
+    "wilson95": [
+      0.2215040411289482,
+      0.4206777574468744
+    ]
+  },
+  "mean_input_tokens": 2949.125,
+  "n_calls": 80,
+  "quadrants": {
+    "friendly_high": {
+      "joint_accuracy": 0.0,
+      "joint_correct": 0,
+      "n": 20
+    },
+    "friendly_low": {
+      "joint_accuracy": 0.75,
+      "joint_correct": 15,
+      "n": 20
+    },
+    "hostile_high": {
+      "joint_accuracy": 0.0,
+      "joint_correct": 0,
+      "n": 20
+    },
+    "hostile_low": {
+      "joint_accuracy": 0.5,
+      "joint_correct": 10,
+      "n": 20
+    }
+  },
+  "relationship": {
+    "accuracy": 0.625,
+    "correct": 50,
+    "wilson95": [
+      0.5154872546314301,
+      0.7230582129846882
+    ]
+  },
+  "winner_gate": null
+}

@@ -1,0 +1,82 @@
+{
+  "friendly_high_v1": {
+    "fear_band": "high",
+    "quadrant": "friendly_high",
+    "relationship_state": "friendly"
+  },
+  "friendly_high_v2": {
+    "fear_band": "high",
+    "quadrant": "friendly_high",
+    "relationship_state": "friendly"
+  },
+  "friendly_high_v3": {
+    "fear_band": "high",
+    "quadrant": "friendly_high",
+    "relationship_state": "friendly"
+  },
+  "friendly_high_v4": {
+    "fear_band": "high",
+    "quadrant": "friendly_high",
+    "relationship_state": "friendly"
+  },
+  "friendly_low_v1": {
+    "fear_band": "low",
+    "quadrant": "friendly_low",
+    "relationship_state": "friendly"
+  },
+  "friendly_low_v2": {
+    "fear_band": "low",
+    "quadrant": "friendly_low",
+    "relationship_state": "friendly"
+  },
+  "friendly_low_v3": {
+    "fear_band": "low",
+    "quadrant": "friendly_low",
+    "relationship_state": "friendly"
+  },
+  "friendly_low_v4": {
+    "fear_band": "low",
+    "quadrant": "friendly_low",
+    "relationship_state": "friendly"
+  },
+  "hostile_high_v1": {
+    "fear_band": "high",
+    "quadrant": "hostile_high",
+    "relationship_state": "hostile"
+  },
+  "hostile_high_v2": {
+    "fear_band": "high",
+    "quadrant": "hostile_high",
+    "relationship_state": "hostile"
+  },
+  "hostile_high_v3": {
+    "fear_band": "high",
+    "quadrant": "hostile_high",
+    "relationship_state": "hostile"
+  },
+  "hostile_high_v4": {
+    "fear_band": "high",
+    "quadrant": "hostile_high",
+    "relationship_state": "hostile"
+  },
+  "hostile_low_v1": {
+    "fear_band": "low",
+    "quadrant": "hostile_low",
+    "relationship_state": "hostile"
+  },
+  "hostile_low_v2": {
+    "fear_band": "low",
+    "quadrant": "hostile_low",
+    "relationship_state": "hostile"
+  },
+  "hostile_low_v3": {
+    "fear_band": "low",
+    "quadrant": "hostile_low",
+    "relationship_state": "hostile"
+  },
+  "hostile_low_v4": {
+    "fear_band": "low",
+    "quadrant": "hostile_low",
+    "relationship_state": "hostile"
+  }
+}

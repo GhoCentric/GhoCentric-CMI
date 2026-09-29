@@ -1,0 +1,153 @@
+{
+  "arms": {
+    "full_history": {
+      "accuracy": 0.28125,
+      "correct": 27,
+      "mean_input_tokens": 3059.4583333333335,
+      "n": 96,
+      "wilson95": [
+        0.20107410838369372,
+        0.3782589613040394
+      ]
+    },
+    "semantic_cmi": {
+      "accuracy": 1.0,
+      "correct": 96,
+      "mean_input_tokens": 630.2083333333334,
+      "n": 96,
+      "wilson95": [
+        0.9615244121423243,
+        1.0
+      ]
+    }
+  },
+  "case_consistency": {
+    "full_history": {
+      "all_four_history_variants_correct": 0,
+      "all_four_history_variants_correct_rate": 0.0,
+      "n_quadrant_policy_repeat_units": 24,
+      "wilson95": [
+        1.3877787807814457e-17,
+        0.13797620467498017
+      ]
+    },
+    "semantic_cmi": {
+      "all_four_history_variants_correct": 24,
+      "all_four_history_variants_correct_rate": 1.0,
+      "n_quadrant_policy_repeat_units": 24,
+      "wilson95": [
+        0.8620237953250198,
+        1.0
+      ]
+    }
+  },
+  "deltas": {
+    "semantic_minus_full_accuracy_pp": 71.875
+  },
+  "policies": {
+    "full_history": {
+      "expedition": {
+        "accuracy": 0.28125,
+        "correct": 9,
+        "n": 32
+      },
+      "favor": {
+        "accuracy": 0.3125,
+        "correct": 10,
+        "n": 32
+      },
+      "secret": {
+        "accuracy": 0.25,
+        "correct": 8,
+        "n": 32
+      }
+    },
+    "semantic_cmi": {
+      "expedition": {
+        "accuracy": 1.0,
+        "correct": 32,
+        "n": 32
+      },
+      "favor": {
+        "accuracy": 1.0,
+        "correct": 32,
+        "n": 32
+      },
+      "secret": {
+        "accuracy": 1.0,
+        "correct": 32,
+        "n": 32
+      }
+    }
+  },
+  "policy_transfer": {
+    "full_history": {
+      "all_three_policies_correct": 2,
+      "all_three_policies_correct_rate": 0.0625,
+      "n_case_repeat_units": 32,
+      "wilson95": [
+        0.017310567031640967,
+        0.2014712314415458
+      ]
+    },
+    "semantic_cmi": {
+      "all_three_policies_correct": 32,
+      "all_three_policies_correct_rate": 1.0,
+      "n_case_repeat_units": 32,
+      "wilson95": [
+        0.8928208017449293,
+        1.0
+      ]
+    }
+  },
+  "quadrants": {
+    "full_history": {
+      "friendly_high": {
+        "accuracy": 0.16666666666666666,
+        "correct": 4,
+        "n": 24
+      },
+      "friendly_low": {
+        "accuracy": 0.5833333333333334,
+        "correct": 14,
+        "n": 24
+      },
+      "hostile_high": {
+        "accuracy": 0.0,
+        "correct": 0,
+        "n": 24
+      },
+      "hostile_low": {
+        "accuracy": 0.375,
+        "correct": 9,
+        "n": 24
+      }
+    },
+    "semantic_cmi": {
+      "friendly_high": {
+        "accuracy": 1.0,
+        "correct": 24,
+        "n": 24
+      },
+      "friendly_low": {
+        "accuracy": 1.0,
+        "correct": 24,
+        "n": 24
+      },
+      "hostile_high": {
+        "accuracy": 1.0,
+        "correct": 24,
+        "n": 24
+      },
+      "hostile_low": {
+        "accuracy": 1.0,
+        "correct": 24,
+        "n": 24
+      }
+    }
+  },
+  "token_ratios": {
+    "semantic_over_full": 0.20598689855230365
+  },
+  "total_calls": 192
+}

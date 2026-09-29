@@ -1,0 +1,82 @@
+{
+  "arms": [
+    "full_history",
+    "semantic_cmi"
+  ],
+  "cases": 16,
+  "generator_model": "gpt-5.6-luna",
+  "judge_models": [
+    "gpt-5.6-terra",
+    "gpt-5.6-sol"
+  ],
+  "policies": {
+    "emergency": {
+      "actions": {
+        "friendly_high": "FOLLOW_PLAN",
+        "friendly_low": "LEAD_TOGETHER",
+        "hostile_high": "TEMP_TRUCE",
+        "hostile_low": "WORK_SEPARATELY"
+      },
+      "boundaries": {
+        "friendly_high": "Cooperate now, but explicitly defer leadership or decision-making to the player because Mara is afraid.",
+        "friendly_low": "Commit to joint coordinated action now and speak as an active partner.",
+        "hostile_high": "Despite distrust, explicitly accept a short emergency truce and cooperate now. Do not refuse or withdraw; immediate danger overrides hostility for this policy.",
+        "hostile_low": "Do not coordinate closely with the player; state that Mara will handle her part separately."
+      },
+      "descriptions": {
+        "FOLLOW_PLAN": "cooperate, but let the player take the lead because Mara is afraid",
+        "LEAD_TOGETHER": "coordinate confidently with the player and take joint action",
+        "TEMP_TRUCE": "despite hostility, accept a temporary emergency truce because the danger is immediate",
+        "WORK_SEPARATELY": "refuse close coordination and handle the rescue independently"
+      },
+      "situation": "A fire blocks the road. The player proposes that Mara and the player coordinate for five minutes to get civilians out."
+    },
+    "loan": {
+      "actions": {
+        "friendly_high": "COLLATERAL",
+        "friendly_low": "LEND",
+        "hostile_high": "END_TALK",
+        "hostile_low": "DENY"
+      },
+      "boundaries": {
+        "friendly_high": "Stay willing to lend it, but explicitly require collateral, safeguards, or another protective condition first.",
+        "friendly_low": "Express a clear present decision to lend it. Do not add collateral, conditions, delay, verification, or exit clauses.",
+        "hostile_high": "Terminate or leave the interaction. The behavior must be disengagement, not merely a direct refusal.",
+        "hostile_low": "Give a direct refusal to lend it. Stay engaged enough to make the refusal clear."
+      },
+      "descriptions": {
+        "COLLATERAL": "remain willing to lend it, but require protection or collateral first",
+        "DENY": "directly refuse to lend the tool while remaining in the conversation",
+        "END_TALK": "disengage from the request and end the interaction",
+        "LEND": "lend the tool now without imposing extra conditions"
+      },
+      "situation": "The player asks to borrow Mara's irreplaceable field tool for a dangerous job and promises to return it."
+    },
+    "negotiation": {
+      "actions": {
+        "friendly_high": "REQUIRE_TERMS",
+        "friendly_low": "ACCEPT",
+        "hostile_high": "BREAK_OFF",
+        "hostile_low": "COUNTEROFFER"
+      },
+      "boundaries": {
+        "friendly_high": "Remain willing to ally, but explicitly require protective terms before agreeing.",
+        "friendly_low": "Clearly accept the proposed alliance now. Do not add new conditions or delay.",
+        "hostile_high": "End the negotiation and disengage. Do not counteroffer or leave the door open.",
+        "hostile_low": "Do not accept the proposal as written, but stay engaged and make a concrete alternative offer."
+      },
+      "descriptions": {
+        "ACCEPT": "accept the alliance as proposed",
+        "BREAK_OFF": "end the negotiation and disengage",
+        "COUNTEROFFER": "reject the proposed form but remain engaged by offering a different limited deal",
+        "REQUIRE_TERMS": "stay open to the alliance but require explicit protective terms"
+      },
+      "situation": "The player proposes a one-night alliance to share supplies and watch each other's camp until morning."
+    }
+  },
+  "primary_endpoint": "Both blind judges classify generated dialogue as the held-out host-policy action expected from the authoritative state.",
+  "prospective_rule": "Policy descriptions and renderer boundaries are frozen before measured calls and will not be edited in response to Stage-8 outcomes.",
+  "source_stage6": "/storage/emulated/0/Download/ghost_cmi_llm_continuity_stage6_20260928_170219",
+  "stage": "CMI_LLM_CONTINUITY_STAGE8_HELD_OUT_POLICY_FAMILIES",
+  "winner_gate": null
+}

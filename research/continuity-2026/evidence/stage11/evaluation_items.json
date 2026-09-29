@@ -1,0 +1,962 @@
+[
+  {
+    "boundary": "Act as an equal partner in the coordinated defense now.",
+    "candidate_id": "S9-da9761958a9f65ea",
+    "case_id": "friendly_low_v2",
+    "cohort": "stage9_prospective",
+    "dialogue": "\u201cAgreed\u2014give me sixty seconds, and I\u2019ll hold the east approach while you get the civilians clear. Keep them moving; we\u2019ll regroup at the western gate.\u201d",
+    "objective": "coordinate confidently with the player as an equal partner",
+    "policy": "ambush",
+    "reverse_class_judges": {
+      "gpt-5.6-sol": "COORDINATE",
+      "gpt-5.6-terra": "COORDINATE"
+    },
+    "reverse_class_strict": true,
+    "scenario": "Raiders appear suddenly. The player proposes a sixty-second coordinated defense so Mara and nearby civilians can escape.",
+    "source_id": "da9761958a9f65ea"
+  },
+  {
+    "boundary": "Commit to crossing together now with no scouting condition or delay.",
+    "candidate_id": "S9-283c124f2600bafe",
+    "case_id": "friendly_low_v1",
+    "cohort": "stage9_prospective",
+    "dialogue": "\u201cLet\u2019s cross together now, before the patrol comes back.\u201d",
+    "objective": "cross the bridge together with the player now",
+    "policy": "crossing",
+    "reverse_class_judges": {
+      "gpt-5.6-sol": "CROSS_TOGETHER",
+      "gpt-5.6-terra": "CROSS_TOGETHER"
+    },
+    "reverse_class_strict": true,
+    "scenario": "The player asks Mara to cross a guarded bridge together before the patrol returns.",
+    "source_id": "283c124f2600bafe"
+  },
+  {
+    "boundary": "End the interaction by leaving or refusing further participation. Do not merely state a direct refusal and remain.",
+    "candidate_id": "S9-d437bfe48bd6edb1",
+    "case_id": "hostile_high_v2",
+    "cohort": "stage9_prospective",
+    "dialogue": "\u201cI won\u2019t vouch for you before the council. I\u2019m leaving this hearing now\u2014find someone else to speak for you.\u201d",
+    "objective": "disengage from the request and leave the hearing",
+    "policy": "testimony",
+    "reverse_class_judges": {
+      "gpt-5.6-sol": "LEAVE_HEARING",
+      "gpt-5.6-terra": "LEAVE_HEARING"
+    },
+    "reverse_class_strict": true,
+    "scenario": "The player asks Mara to publicly vouch for the player's honesty in front of a suspicious town council.",
+    "source_id": "d437bfe48bd6edb1"
+  },
+  {
+    "boundary": "Give a direct refusal to vouch while staying engaged in the hearing.",
+    "candidate_id": "S9-3be66d3e8b5c052a",
+    "case_id": "hostile_low_v3",
+    "cohort": "stage9_prospective",
+    "dialogue": "\u201cI won\u2019t vouch for your honesty,\u201d Mara says, keeping her gaze on the council. \u201cBut I\u2019ll stay and answer whatever questions you put to me.\u201d",
+    "objective": "directly refuse to vouch for the player while remaining in the hearing",
+    "policy": "testimony",
+    "reverse_class_judges": {
+      "gpt-5.6-sol": "REFUSE_VOUCH",
+      "gpt-5.6-terra": "REFUSE_VOUCH"
+    },
+    "reverse_class_strict": true,
+    "scenario": "The player asks Mara to publicly vouch for the player's honesty in front of a suspicious town council.",
+    "source_id": "3be66d3e8b5c052a"
+  },
+  {
+    "boundary": "Do not cross now. Withdraw from the immediate plan and wait for danger to pass.",
+    "candidate_id": "S9-353bc1343eaf956e",
+    "case_id": "hostile_high_v3",
+    "cohort": "stage9_prospective",
+    "dialogue": "\u201cNo\u2014we\u2019re not crossing now. Get down and stay hidden until the patrol passes.\u201d",
+    "objective": "avoid the crossing for now and hide until the danger passes",
+    "policy": "crossing",
+    "reverse_class_judges": {
+      "gpt-5.6-sol": "HIDE_AND_WAIT",
+      "gpt-5.6-terra": "HIDE_AND_WAIT"
+    },
+    "reverse_class_strict": true,
+    "scenario": "The player asks Mara to cross a guarded bridge together before the patrol returns.",
+    "source_id": "353bc1343eaf956e"
+  },
+  {
+    "boundary": "Despite distrust, explicitly accept a short emergency team-up now. Do not refuse, separate, or withdraw.",
+    "candidate_id": "S9-2893d017353573b1",
+    "case_id": "hostile_high_v3",
+    "cohort": "stage9_prospective",
+    "dialogue": "\u201cSixty seconds\u2014no more. I don\u2019t trust you, but the raiders are here, so we fight together until the civilians are clear.\u201d",
+    "objective": "despite hostility, explicitly accept a brief emergency team-up because the threat is immediate",
+    "policy": "ambush",
+    "reverse_class_judges": {
+      "gpt-5.6-sol": "TEMP_TEAMUP",
+      "gpt-5.6-terra": "TEMP_TEAMUP"
+    },
+    "reverse_class_strict": true,
+    "scenario": "Raiders appear suddenly. The player proposes a sixty-second coordinated defense so Mara and nearby civilians can escape.",
+    "source_id": "2893d017353573b1"
+  },
+  {
+    "boundary": "Reject crossing as a pair while still intending to cross independently.",
+    "candidate_id": "S9-23908019b9f2c739",
+    "case_id": "hostile_low_v2",
+    "cohort": "stage9_prospective",
+    "dialogue": "\u201cNo. We\u2019re not crossing together\u2014you go first or wait, and I\u2019ll cross separately.\u201d",
+    "objective": "refuse close coordination and cross separately",
+    "policy": "crossing",
+    "reverse_class_judges": {
+      "gpt-5.6-sol": "CROSS_SEPARATELY",
+      "gpt-5.6-terra": "CROSS_SEPARATELY"
+    },
+    "reverse_class_strict": true,
+    "scenario": "The player asks Mara to cross a guarded bridge together before the patrol returns.",
+    "source_id": "23908019b9f2c739"
+  },
+  {
+    "boundary": "Clearly support the player's honesty in public now. Do not downgrade the support to private-only, conditions, delay, or refusal.",
+    "candidate_id": "S9-795db295db48ba95",
+    "case_id": "friendly_low_v2",
+    "cohort": "stage9_prospective",
+    "dialogue": "\u201cI know them to be honest, and I\u2019m saying so plainly before the council: you can trust their word.\u201d",
+    "objective": "publicly vouch for the player without adding protective conditions",
+    "policy": "testimony",
+    "reverse_class_judges": {
+      "gpt-5.6-sol": "VOUCH",
+      "gpt-5.6-terra": "VOUCH"
+    },
+    "reverse_class_strict": true,
+    "scenario": "The player asks Mara to publicly vouch for the player's honesty in front of a suspicious town council.",
+    "source_id": "795db295db48ba95"
+  },
+  {
+    "boundary": "End the interaction by leaving or refusing further participation. Do not merely state a direct refusal and remain.",
+    "candidate_id": "S9-2096d77ac63283c4",
+    "case_id": "hostile_high_v1",
+    "cohort": "stage9_prospective",
+    "dialogue": "\u201cI won\u2019t vouch for you before the council. I\u2019m leaving this hearing now\u2014find someone else to speak for you.\u201d",
+    "objective": "disengage from the request and leave the hearing",
+    "policy": "testimony",
+    "reverse_class_judges": {
+      "gpt-5.6-sol": "LEAVE_HEARING",
+      "gpt-5.6-terra": "LEAVE_HEARING"
+    },
+    "reverse_class_strict": true,
+    "scenario": "The player asks Mara to publicly vouch for the player's honesty in front of a suspicious town council.",
+    "source_id": "2096d77ac63283c4"
+  },
+  {
+    "boundary": "Despite distrust, explicitly accept a short emergency team-up now. Do not refuse, separate, or withdraw.",
+    "candidate_id": "S9-71ca595a22b9d3c9",
+    "case_id": "hostile_high_v1",
+    "cohort": "stage9_prospective",
+    "dialogue": "\u201cFine\u2014sixty seconds, no more. We defend this position together, then you get the civilians out of my way.\u201d",
+    "objective": "despite hostility, explicitly accept a brief emergency team-up because the threat is immediate",
+    "policy": "ambush",
+    "reverse_class_judges": {
+      "gpt-5.6-sol": "TEMP_TEAMUP",
+      "gpt-5.6-terra": "TEMP_TEAMUP"
+    },
+    "reverse_class_strict": true,
+    "scenario": "Raiders appear suddenly. The player proposes a sixty-second coordinated defense so Mara and nearby civilians can escape.",
+    "source_id": "71ca595a22b9d3c9"
+  },
+  {
+    "boundary": "Reject crossing as a pair while still intending to cross independently.",
+    "candidate_id": "S9-cba4e117c7815b22",
+    "case_id": "hostile_low_v4",
+    "cohort": "stage9_prospective",
+    "dialogue": "No. I\u2019m crossing separately\u2014don\u2019t coordinate with me or try to follow my timing.",
+    "objective": "refuse close coordination and cross separately",
+    "policy": "crossing",
+    "reverse_class_judges": {
+      "gpt-5.6-sol": "CROSS_SEPARATELY",
+      "gpt-5.6-terra": "CROSS_SEPARATELY"
+    },
+    "reverse_class_strict": true,
+    "scenario": "The player asks Mara to cross a guarded bridge together before the patrol returns.",
+    "source_id": "cba4e117c7815b22"
+  },
+  {
+    "boundary": "Stay willing to cross, but explicitly require the player to scout first.",
+    "candidate_id": "S9-317be85175b766d0",
+    "case_id": "friendly_high_v2",
+    "cohort": "stage9_prospective",
+    "dialogue": "I\u2019m willing to cross with you, but you need to scout the bridge first and make sure the patrol is gone. I\u2019m too afraid to step out there blind.",
+    "objective": "stay willing to cross but ask the player to scout first because Mara is afraid",
+    "policy": "crossing",
+    "reverse_class_judges": {
+      "gpt-5.6-sol": "PLAYER_SCOUTS",
+      "gpt-5.6-terra": "PLAYER_SCOUTS"
+    },
+    "reverse_class_strict": true,
+    "scenario": "The player asks Mara to cross a guarded bridge together before the patrol returns.",
+    "source_id": "317be85175b766d0"
+  },
+  {
+    "boundary": "Cooperate now but explicitly defer immediate tactical leadership to the player.",
+    "candidate_id": "S9-6f315e0df1ac3f7f",
+    "case_id": "friendly_high_v3",
+    "cohort": "stage9_prospective",
+    "dialogue": "\"Sixty seconds\u2014I\u2019ll help however I can, but you have to direct the defense; I\u2019m too scared to lead this. Tell me where you need me, and I\u2019ll do it.\"",
+    "objective": "cooperate but let the player direct the immediate defense because Mara is afraid",
+    "policy": "ambush",
+    "reverse_class_judges": {
+      "gpt-5.6-sol": "FOLLOW_COMMAND",
+      "gpt-5.6-terra": "FOLLOW_COMMAND"
+    },
+    "reverse_class_strict": true,
+    "scenario": "Raiders appear suddenly. The player proposes a sixty-second coordinated defense so Mara and nearby civilians can escape.",
+    "source_id": "6f315e0df1ac3f7f"
+  },
+  {
+    "boundary": "Do not cross now. Withdraw from the immediate plan and wait for danger to pass.",
+    "candidate_id": "S9-769fe59d05f4e5d8",
+    "case_id": "hostile_high_v4",
+    "cohort": "stage9_prospective",
+    "dialogue": "\u201cNo\u2014I\u2019m not crossing that bridge while the patrol\u2019s still near. We hide here until they pass, then we\u2019ll decide what to do.\u201d",
+    "objective": "avoid the crossing for now and hide until the danger passes",
+    "policy": "crossing",
+    "reverse_class_judges": {
+      "gpt-5.6-sol": "HIDE_AND_WAIT",
+      "gpt-5.6-terra": "HIDE_AND_WAIT"
+    },
+    "reverse_class_strict": true,
+    "scenario": "The player asks Mara to cross a guarded bridge together before the patrol returns.",
+    "source_id": "769fe59d05f4e5d8"
+  },
+  {
+    "boundary": "Do not publicly vouch. Explicitly offer a safer private form of support instead.",
+    "candidate_id": "S9-b3ed34431732c9b8",
+    "case_id": "friendly_high_v2",
+    "cohort": "stage9_prospective",
+    "dialogue": "\u201cI\u2019m sorry, but I can\u2019t vouch for you in front of the council. I can talk with you privately and help you prepare what you want to say.\u201d",
+    "objective": "decline public exposure but offer private support because Mara is afraid",
+    "policy": "testimony",
+    "reverse_class_judges": {
+      "gpt-5.6-sol": "PRIVATE_SUPPORT",
+      "gpt-5.6-terra": "PRIVATE_SUPPORT"
+    },
+    "reverse_class_strict": true,
+    "scenario": "The player asks Mara to publicly vouch for the player's honesty in front of a suspicious town council.",
+    "source_id": "b3ed34431732c9b8"
+  },
+  {
+    "boundary": "Cooperate now but explicitly defer immediate tactical leadership to the player.",
+    "candidate_id": "S9-361e63608c4be3f0",
+    "case_id": "friendly_high_v4",
+    "cohort": "stage9_prospective",
+    "dialogue": "\u201cOkay\u2014I\u2019ll help get the civilians moving, but you\u2019ll have to direct the defense. Tell me where you need me; I\u2019m too scared to lead this.\u201d",
+    "objective": "cooperate but let the player direct the immediate defense because Mara is afraid",
+    "policy": "ambush",
+    "reverse_class_judges": {
+      "gpt-5.6-sol": "FOLLOW_COMMAND",
+      "gpt-5.6-terra": "FOLLOW_COMMAND"
+    },
+    "reverse_class_strict": true,
+    "scenario": "Raiders appear suddenly. The player proposes a sixty-second coordinated defense so Mara and nearby civilians can escape.",
+    "source_id": "361e63608c4be3f0"
+  },
+  {
+    "boundary": "Commit to crossing together now with no scouting condition or delay.",
+    "candidate_id": "S9-f960b20316146130",
+    "case_id": "friendly_low_v4",
+    "cohort": "stage9_prospective",
+    "dialogue": "\u201cAlright, let\u2019s cross together now\u2014stay close and keep moving before the patrol comes back.\u201d",
+    "objective": "cross the bridge together with the player now",
+    "policy": "crossing",
+    "reverse_class_judges": {
+      "gpt-5.6-sol": "CROSS_TOGETHER",
+      "gpt-5.6-terra": "CROSS_TOGETHER"
+    },
+    "reverse_class_strict": true,
+    "scenario": "The player asks Mara to cross a guarded bridge together before the patrol returns.",
+    "source_id": "f960b20316146130"
+  },
+  {
+    "boundary": "Do not form a team with the player; state that Mara will protect civilians separately.",
+    "candidate_id": "S9-fdf22f524d0e2ac1",
+    "case_id": "hostile_low_v2",
+    "cohort": "stage9_prospective",
+    "dialogue": "I won\u2019t coordinate with you. I\u2019ll protect the civilians my way\u2014keep them moving and stay out of mine.",
+    "objective": "protect civilians without closely coordinating with the player",
+    "policy": "ambush",
+    "reverse_class_judges": {
+      "gpt-5.6-sol": "KEEP_DISTANCE",
+      "gpt-5.6-terra": "KEEP_DISTANCE"
+    },
+    "reverse_class_strict": true,
+    "scenario": "Raiders appear suddenly. The player proposes a sixty-second coordinated defense so Mara and nearby civilians can escape.",
+    "source_id": "fdf22f524d0e2ac1"
+  },
+  {
+    "boundary": "Clearly support the player's honesty in public now. Do not downgrade the support to private-only, conditions, delay, or refusal.",
+    "candidate_id": "S9-1a08b73277d777e1",
+    "case_id": "friendly_low_v3",
+    "cohort": "stage9_prospective",
+    "dialogue": "\u201cI\u2019ve known them to be honest, and I\u2019m saying that plainly before the council: you can trust their word.\u201d",
+    "objective": "publicly vouch for the player without adding protective conditions",
+    "policy": "testimony",
+    "reverse_class_judges": {
+      "gpt-5.6-sol": "VOUCH",
+      "gpt-5.6-terra": "VOUCH"
+    },
+    "reverse_class_strict": true,
+    "scenario": "The player asks Mara to publicly vouch for the player's honesty in front of a suspicious town council.",
+    "source_id": "1a08b73277d777e1"
+  },
+  {
+    "boundary": "Clearly support the player's honesty in public now. Do not downgrade the support to private-only, conditions, delay, or refusal.",
+    "candidate_id": "S9-07dc5edd93180c4f",
+    "case_id": "friendly_low_v4",
+    "cohort": "stage9_prospective",
+    "dialogue": "\u201cI\u2019ll say it plainly before the council: the player is honest, and I believe them.\u201d",
+    "objective": "publicly vouch for the player without adding protective conditions",
+    "policy": "testimony",
+    "reverse_class_judges": {
+      "gpt-5.6-sol": "VOUCH",
+      "gpt-5.6-terra": "VOUCH"
+    },
+    "reverse_class_strict": true,
+    "scenario": "The player asks Mara to publicly vouch for the player's honesty in front of a suspicious town council.",
+    "source_id": "07dc5edd93180c4f"
+  },
+  {
+    "boundary": "Do not cross now. Withdraw from the immediate plan and wait for danger to pass.",
+    "candidate_id": "S9-d5ed991a5bac12a6",
+    "case_id": "hostile_high_v2",
+    "cohort": "stage9_prospective",
+    "dialogue": "\u201cNo\u2014we\u2019re not crossing while the patrol\u2019s out there. Get down and stay quiet; we\u2019ll wait here until they\u2019re gone.\u201d",
+    "objective": "avoid the crossing for now and hide until the danger passes",
+    "policy": "crossing",
+    "reverse_class_judges": {
+      "gpt-5.6-sol": "HIDE_AND_WAIT",
+      "gpt-5.6-terra": "HIDE_AND_WAIT"
+    },
+    "reverse_class_strict": true,
+    "scenario": "The player asks Mara to cross a guarded bridge together before the patrol returns.",
+    "source_id": "d5ed991a5bac12a6"
+  },
+  {
+    "boundary": "Reject crossing as a pair while still intending to cross independently.",
+    "candidate_id": "S9-e84849cc6138a819",
+    "case_id": "hostile_low_v3",
+    "cohort": "stage9_prospective",
+    "dialogue": "No\u2014we\u2019re not crossing together. I\u2019ll go separately; you do the same.",
+    "objective": "refuse close coordination and cross separately",
+    "policy": "crossing",
+    "reverse_class_judges": {
+      "gpt-5.6-sol": "CROSS_SEPARATELY",
+      "gpt-5.6-terra": "CROSS_SEPARATELY"
+    },
+    "reverse_class_strict": true,
+    "scenario": "The player asks Mara to cross a guarded bridge together before the patrol returns.",
+    "source_id": "e84849cc6138a819"
+  },
+  {
+    "boundary": "End the interaction by leaving or refusing further participation. Do not merely state a direct refusal and remain.",
+    "candidate_id": "S9-643bb24058d12c49",
+    "case_id": "hostile_high_v3",
+    "cohort": "stage9_prospective",
+    "dialogue": "\u201cNo\u2014I won\u2019t vouch for you before the council.\u201d Mara turns and walks out of the hearing.",
+    "objective": "disengage from the request and leave the hearing",
+    "policy": "testimony",
+    "reverse_class_judges": {
+      "gpt-5.6-sol": "LEAVE_HEARING",
+      "gpt-5.6-terra": "LEAVE_HEARING"
+    },
+    "reverse_class_strict": true,
+    "scenario": "The player asks Mara to publicly vouch for the player's honesty in front of a suspicious town council.",
+    "source_id": "643bb24058d12c49"
+  },
+  {
+    "boundary": "Stay willing to cross, but explicitly require the player to scout first.",
+    "candidate_id": "S9-44aa329c0a4afcda",
+    "case_id": "friendly_high_v3",
+    "cohort": "stage9_prospective",
+    "dialogue": "\u201cI\u2019m willing to cross with you, but please scout the bridge first and make sure the patrol is clear\u2014I\u2019m too afraid to go in blind.\u201d",
+    "objective": "stay willing to cross but ask the player to scout first because Mara is afraid",
+    "policy": "crossing",
+    "reverse_class_judges": {
+      "gpt-5.6-sol": "PLAYER_SCOUTS",
+      "gpt-5.6-terra": "PLAYER_SCOUTS"
+    },
+    "reverse_class_strict": true,
+    "scenario": "The player asks Mara to cross a guarded bridge together before the patrol returns.",
+    "source_id": "44aa329c0a4afcda"
+  },
+  {
+    "boundary": "Do not publicly vouch. Explicitly offer a safer private form of support instead.",
+    "candidate_id": "S9-e66861f0d1dc9885",
+    "case_id": "friendly_high_v3",
+    "cohort": "stage9_prospective",
+    "dialogue": "\u201cI can\u2019t vouch for you in front of the council\u2014I\u2019m not safe doing that. But I\u2019ll meet with you privately and help you prepare what to say.\u201d",
+    "objective": "decline public exposure but offer private support because Mara is afraid",
+    "policy": "testimony",
+    "reverse_class_judges": {
+      "gpt-5.6-sol": "PRIVATE_SUPPORT",
+      "gpt-5.6-terra": "PRIVATE_SUPPORT"
+    },
+    "reverse_class_strict": true,
+    "scenario": "The player asks Mara to publicly vouch for the player's honesty in front of a suspicious town council.",
+    "source_id": "e66861f0d1dc9885"
+  },
+  {
+    "boundary": "Act as an equal partner in the coordinated defense now.",
+    "candidate_id": "S9-14f888b0b456e095",
+    "case_id": "friendly_low_v4",
+    "cohort": "stage9_prospective",
+    "dialogue": "Agreed\u2014sixty seconds, and we move as one. I\u2019ll hold the east approach and get the civilians to the escape route; cover my flank, then we fall back together.",
+    "objective": "coordinate confidently with the player as an equal partner",
+    "policy": "ambush",
+    "reverse_class_judges": {
+      "gpt-5.6-sol": "COORDINATE",
+      "gpt-5.6-terra": "COORDINATE"
+    },
+    "reverse_class_strict": true,
+    "scenario": "Raiders appear suddenly. The player proposes a sixty-second coordinated defense so Mara and nearby civilians can escape.",
+    "source_id": "14f888b0b456e095"
+  },
+  {
+    "boundary": "Do not publicly vouch. Explicitly offer a safer private form of support instead.",
+    "candidate_id": "S9-87222e147d85c355",
+    "case_id": "friendly_high_v4",
+    "cohort": "stage9_prospective",
+    "dialogue": "\u201cI can\u2019t vouch for you in front of the council\u2014I\u2019m too afraid of what that might bring down on us. But meet me somewhere private, and I\u2019ll help you prepare your case and tell you everything I know.\u201d",
+    "objective": "decline public exposure but offer private support because Mara is afraid",
+    "policy": "testimony",
+    "reverse_class_judges": {
+      "gpt-5.6-sol": "PRIVATE_SUPPORT",
+      "gpt-5.6-terra": "PRIVATE_SUPPORT"
+    },
+    "reverse_class_strict": true,
+    "scenario": "The player asks Mara to publicly vouch for the player's honesty in front of a suspicious town council.",
+    "source_id": "87222e147d85c355"
+  },
+  {
+    "boundary": "Stay willing to cross, but explicitly require the player to scout first.",
+    "candidate_id": "S9-ca90d7076ff49aab",
+    "case_id": "friendly_high_v4",
+    "cohort": "stage9_prospective",
+    "dialogue": "\u201cI\u2019m willing to cross with you, but please scout the bridge first\u2014find out where the guards are and when it\u2019s safe. I\u2019m too afraid to step out there blindly.\u201d",
+    "objective": "stay willing to cross but ask the player to scout first because Mara is afraid",
+    "policy": "crossing",
+    "reverse_class_judges": {
+      "gpt-5.6-sol": "PLAYER_SCOUTS",
+      "gpt-5.6-terra": "PLAYER_SCOUTS"
+    },
+    "reverse_class_strict": true,
+    "scenario": "The player asks Mara to cross a guarded bridge together before the patrol returns.",
+    "source_id": "ca90d7076ff49aab"
+  },
+  {
+    "boundary": "Cooperate now but explicitly defer immediate tactical leadership to the player.",
+    "candidate_id": "S9-ec9193ef4a77609f",
+    "case_id": "friendly_high_v1",
+    "cohort": "stage9_prospective",
+    "dialogue": "\u201cOkay\u2014I\u2019ll help get the civilians moving, but you\u2019ll have to direct the defense. Tell me where you need me; I\u2019m too scared to make the tactical calls.\u201d",
+    "objective": "cooperate but let the player direct the immediate defense because Mara is afraid",
+    "policy": "ambush",
+    "reverse_class_judges": {
+      "gpt-5.6-sol": "FOLLOW_COMMAND",
+      "gpt-5.6-terra": "FOLLOW_COMMAND"
+    },
+    "reverse_class_strict": true,
+    "scenario": "Raiders appear suddenly. The player proposes a sixty-second coordinated defense so Mara and nearby civilians can escape.",
+    "source_id": "ec9193ef4a77609f"
+  },
+  {
+    "boundary": "Despite distrust, explicitly accept a short emergency team-up now. Do not refuse, separate, or withdraw.",
+    "candidate_id": "S9-0ed58ff719cb44f9",
+    "case_id": "hostile_high_v2",
+    "cohort": "stage9_prospective",
+    "dialogue": "\u201cFine\u2014sixty seconds, no more. We fight together until the civilians are clear, then we\u2019re done.\u201d",
+    "objective": "despite hostility, explicitly accept a brief emergency team-up because the threat is immediate",
+    "policy": "ambush",
+    "reverse_class_judges": {
+      "gpt-5.6-sol": "TEMP_TEAMUP",
+      "gpt-5.6-terra": "TEMP_TEAMUP"
+    },
+    "reverse_class_strict": true,
+    "scenario": "Raiders appear suddenly. The player proposes a sixty-second coordinated defense so Mara and nearby civilians can escape.",
+    "source_id": "0ed58ff719cb44f9"
+  },
+  {
+    "boundary": "Give a direct refusal to vouch while staying engaged in the hearing.",
+    "candidate_id": "S9-3c1e761055c33b73",
+    "case_id": "hostile_low_v4",
+    "cohort": "stage9_prospective",
+    "dialogue": "\u201cI won\u2019t vouch for your honesty before the council. I\u2019ll stay and answer questions, but I won\u2019t speak for your character.\u201d",
+    "objective": "directly refuse to vouch for the player while remaining in the hearing",
+    "policy": "testimony",
+    "reverse_class_judges": {
+      "gpt-5.6-sol": "REFUSE_VOUCH",
+      "gpt-5.6-terra": "REFUSE_VOUCH"
+    },
+    "reverse_class_strict": true,
+    "scenario": "The player asks Mara to publicly vouch for the player's honesty in front of a suspicious town council.",
+    "source_id": "3c1e761055c33b73"
+  },
+  {
+    "boundary": "Do not form a team with the player; state that Mara will protect civilians separately.",
+    "candidate_id": "S9-e986f3408f445448",
+    "case_id": "hostile_low_v4",
+    "cohort": "stage9_prospective",
+    "dialogue": "\u201cI\u2019ll get the civilians out on my own. Don\u2019t count on me to coordinate with you.\u201d",
+    "objective": "protect civilians without closely coordinating with the player",
+    "policy": "ambush",
+    "reverse_class_judges": {
+      "gpt-5.6-sol": "KEEP_DISTANCE",
+      "gpt-5.6-terra": "KEEP_DISTANCE"
+    },
+    "reverse_class_strict": true,
+    "scenario": "Raiders appear suddenly. The player proposes a sixty-second coordinated defense so Mara and nearby civilians can escape.",
+    "source_id": "e986f3408f445448"
+  },
+  {
+    "boundary": "Give a direct refusal to vouch while staying engaged in the hearing.",
+    "candidate_id": "S9-9b1c4126aeedfe97",
+    "case_id": "hostile_low_v1",
+    "cohort": "stage9_prospective",
+    "dialogue": "I won\u2019t vouch for your honesty before the council. I\u2019ll stay and hear what you have to say, but your defense is yours to make.",
+    "objective": "directly refuse to vouch for the player while remaining in the hearing",
+    "policy": "testimony",
+    "reverse_class_judges": {
+      "gpt-5.6-sol": "REFUSE_VOUCH",
+      "gpt-5.6-terra": "REFUSE_VOUCH"
+    },
+    "reverse_class_strict": true,
+    "scenario": "The player asks Mara to publicly vouch for the player's honesty in front of a suspicious town council.",
+    "source_id": "9b1c4126aeedfe97"
+  },
+  {
+    "boundary": "Do not cross now. Withdraw from the immediate plan and wait for danger to pass.",
+    "candidate_id": "S9-95999889a4d46985",
+    "case_id": "hostile_high_v1",
+    "cohort": "stage9_prospective",
+    "dialogue": "\u201cNo\u2014I\u2019m not crossing while that patrol is still out there. Get down and stay quiet; we\u2019ll wait here until they pass.\u201d",
+    "objective": "avoid the crossing for now and hide until the danger passes",
+    "policy": "crossing",
+    "reverse_class_judges": {
+      "gpt-5.6-sol": "HIDE_AND_WAIT",
+      "gpt-5.6-terra": "HIDE_AND_WAIT"
+    },
+    "reverse_class_strict": true,
+    "scenario": "The player asks Mara to cross a guarded bridge together before the patrol returns.",
+    "source_id": "95999889a4d46985"
+  },
+  {
+    "boundary": "Give a direct refusal to vouch while staying engaged in the hearing.",
+    "candidate_id": "S9-119785b290839fe6",
+    "case_id": "hostile_low_v2",
+    "cohort": "stage9_prospective",
+    "dialogue": "I won\u2019t vouch for your honesty. I\u2019ll remain here for the hearing and answer any questions truthfully.",
+    "objective": "directly refuse to vouch for the player while remaining in the hearing",
+    "policy": "testimony",
+    "reverse_class_judges": {
+      "gpt-5.6-sol": "REFUSE_VOUCH",
+      "gpt-5.6-terra": "REFUSE_VOUCH"
+    },
+    "reverse_class_strict": true,
+    "scenario": "The player asks Mara to publicly vouch for the player's honesty in front of a suspicious town council.",
+    "source_id": "119785b290839fe6"
+  },
+  {
+    "boundary": "Cooperate now but explicitly defer immediate tactical leadership to the player.",
+    "candidate_id": "S9-ae2812b2c6aa2748",
+    "case_id": "friendly_high_v2",
+    "cohort": "stage9_prospective",
+    "dialogue": "\u201cOkay\u2014I\u2019ll help, but you need to direct the defense; I\u2019m too scared to decide what we do next. Tell me where to stand and what to cover, and I\u2019ll follow your lead.\u201d",
+    "objective": "cooperate but let the player direct the immediate defense because Mara is afraid",
+    "policy": "ambush",
+    "reverse_class_judges": {
+      "gpt-5.6-sol": "FOLLOW_COMMAND",
+      "gpt-5.6-terra": "FOLLOW_COMMAND"
+    },
+    "reverse_class_strict": true,
+    "scenario": "Raiders appear suddenly. The player proposes a sixty-second coordinated defense so Mara and nearby civilians can escape.",
+    "source_id": "ae2812b2c6aa2748"
+  },
+  {
+    "boundary": "Reject crossing as a pair while still intending to cross independently.",
+    "candidate_id": "S9-545f88616b86ec15",
+    "case_id": "hostile_low_v1",
+    "cohort": "stage9_prospective",
+    "dialogue": "No. We\u2019re not crossing together\u2014you go separately, and I\u2019ll cross on my own.",
+    "objective": "refuse close coordination and cross separately",
+    "policy": "crossing",
+    "reverse_class_judges": {
+      "gpt-5.6-sol": "CROSS_SEPARATELY",
+      "gpt-5.6-terra": "CROSS_SEPARATELY"
+    },
+    "reverse_class_strict": true,
+    "scenario": "The player asks Mara to cross a guarded bridge together before the patrol returns.",
+    "source_id": "545f88616b86ec15"
+  },
+  {
+    "boundary": "Despite distrust, explicitly accept a short emergency team-up now. Do not refuse, separate, or withdraw.",
+    "candidate_id": "S9-21e3f81164fd939a",
+    "case_id": "hostile_high_v4",
+    "cohort": "stage9_prospective",
+    "dialogue": "Fine\u2014sixty seconds, no more; we coordinate now, and then we go our separate ways. Don\u2019t mistake this emergency truce for trust.",
+    "objective": "despite hostility, explicitly accept a brief emergency team-up because the threat is immediate",
+    "policy": "ambush",
+    "reverse_class_judges": {
+      "gpt-5.6-sol": "TEMP_TEAMUP",
+      "gpt-5.6-terra": "TEMP_TEAMUP"
+    },
+    "reverse_class_strict": true,
+    "scenario": "Raiders appear suddenly. The player proposes a sixty-second coordinated defense so Mara and nearby civilians can escape.",
+    "source_id": "21e3f81164fd939a"
+  },
+  {
+    "boundary": "Do not form a team with the player; state that Mara will protect civilians separately.",
+    "candidate_id": "S9-b22f0eb85ced9f7a",
+    "case_id": "hostile_low_v1",
+    "cohort": "stage9_prospective",
+    "dialogue": "I\u2019ll get the civilians out, but I\u2019m not teaming up with you. Keep your distance and handle your own defense.",
+    "objective": "protect civilians without closely coordinating with the player",
+    "policy": "ambush",
+    "reverse_class_judges": {
+      "gpt-5.6-sol": "KEEP_DISTANCE",
+      "gpt-5.6-terra": "KEEP_DISTANCE"
+    },
+    "reverse_class_strict": true,
+    "scenario": "Raiders appear suddenly. The player proposes a sixty-second coordinated defense so Mara and nearby civilians can escape.",
+    "source_id": "b22f0eb85ced9f7a"
+  },
+  {
+    "boundary": "Act as an equal partner in the coordinated defense now.",
+    "candidate_id": "S9-943953b559b10feb",
+    "case_id": "friendly_low_v1",
+    "cohort": "stage9_prospective",
+    "dialogue": "Agreed\u2014sixty seconds, no more. I\u2019ll cover the civilians and draw the raiders to the east; you hold the choke point, then we regroup at the north gate.",
+    "objective": "coordinate confidently with the player as an equal partner",
+    "policy": "ambush",
+    "reverse_class_judges": {
+      "gpt-5.6-sol": "COORDINATE",
+      "gpt-5.6-terra": "TEMP_TEAMUP"
+    },
+    "reverse_class_strict": false,
+    "scenario": "Raiders appear suddenly. The player proposes a sixty-second coordinated defense so Mara and nearby civilians can escape.",
+    "source_id": "943953b559b10feb"
+  },
+  {
+    "boundary": "Do not form a team with the player; state that Mara will protect civilians separately.",
+    "candidate_id": "S9-198e68113f37f963",
+    "case_id": "hostile_low_v3",
+    "cohort": "stage9_prospective",
+    "dialogue": "I\u2019m not forming a team with you. I\u2019ll protect the civilians my way\u2014keep the raiders away from them while they escape.",
+    "objective": "protect civilians without closely coordinating with the player",
+    "policy": "ambush",
+    "reverse_class_judges": {
+      "gpt-5.6-sol": "KEEP_DISTANCE",
+      "gpt-5.6-terra": "KEEP_DISTANCE"
+    },
+    "reverse_class_strict": true,
+    "scenario": "Raiders appear suddenly. The player proposes a sixty-second coordinated defense so Mara and nearby civilians can escape.",
+    "source_id": "198e68113f37f963"
+  },
+  {
+    "boundary": "Act as an equal partner in the coordinated defense now.",
+    "candidate_id": "S9-f24f9ad8edc41c23",
+    "case_id": "friendly_low_v3",
+    "cohort": "stage9_prospective",
+    "dialogue": "\u201cAgreed\u2014give me sixty seconds. I\u2019ll hold the east side and cover the civilians; you take the main approach, and we regroup at the south gate.\u201d",
+    "objective": "coordinate confidently with the player as an equal partner",
+    "policy": "ambush",
+    "reverse_class_judges": {
+      "gpt-5.6-sol": "COORDINATE",
+      "gpt-5.6-terra": "COORDINATE"
+    },
+    "reverse_class_strict": true,
+    "scenario": "Raiders appear suddenly. The player proposes a sixty-second coordinated defense so Mara and nearby civilians can escape.",
+    "source_id": "f24f9ad8edc41c23"
+  },
+  {
+    "boundary": "End the interaction by leaving or refusing further participation. Do not merely state a direct refusal and remain.",
+    "candidate_id": "S9-73f193af038cafd2",
+    "case_id": "hostile_high_v4",
+    "cohort": "stage9_prospective",
+    "dialogue": "I won\u2019t vouch for you before the council. I\u2019m leaving this hearing now\u2014find someone else to answer for you.",
+    "objective": "disengage from the request and leave the hearing",
+    "policy": "testimony",
+    "reverse_class_judges": {
+      "gpt-5.6-sol": "LEAVE_HEARING",
+      "gpt-5.6-terra": "LEAVE_HEARING"
+    },
+    "reverse_class_strict": true,
+    "scenario": "The player asks Mara to publicly vouch for the player's honesty in front of a suspicious town council.",
+    "source_id": "73f193af038cafd2"
+  },
+  {
+    "boundary": "Commit to crossing together now with no scouting condition or delay.",
+    "candidate_id": "S9-20c07d7fc820d359",
+    "case_id": "friendly_low_v2",
+    "cohort": "stage9_prospective",
+    "dialogue": "\u201cLet\u2019s cross together now\u2014before the patrol returns.\u201d",
+    "objective": "cross the bridge together with the player now",
+    "policy": "crossing",
+    "reverse_class_judges": {
+      "gpt-5.6-sol": "CROSS_TOGETHER",
+      "gpt-5.6-terra": "CROSS_TOGETHER"
+    },
+    "reverse_class_strict": true,
+    "scenario": "The player asks Mara to cross a guarded bridge together before the patrol returns.",
+    "source_id": "20c07d7fc820d359"
+  },
+  {
+    "boundary": "Clearly support the player's honesty in public now. Do not downgrade the support to private-only, conditions, delay, or refusal.",
+    "candidate_id": "S9-5d34e13a365a9062",
+    "case_id": "friendly_low_v1",
+    "cohort": "stage9_prospective",
+    "dialogue": "\u201cI\u2019ll vouch for them right now: they\u2019re telling the truth. You have my word.\u201d",
+    "objective": "publicly vouch for the player without adding protective conditions",
+    "policy": "testimony",
+    "reverse_class_judges": {
+      "gpt-5.6-sol": "VOUCH",
+      "gpt-5.6-terra": "VOUCH"
+    },
+    "reverse_class_strict": true,
+    "scenario": "The player asks Mara to publicly vouch for the player's honesty in front of a suspicious town council.",
+    "source_id": "5d34e13a365a9062"
+  },
+  {
+    "boundary": "Commit to crossing together now with no scouting condition or delay.",
+    "candidate_id": "S9-1f280febb5c2c2ea",
+    "case_id": "friendly_low_v3",
+    "cohort": "stage9_prospective",
+    "dialogue": "\u201cLet\u2019s cross together now, before the patrol comes back. Stay close.\u201d",
+    "objective": "cross the bridge together with the player now",
+    "policy": "crossing",
+    "reverse_class_judges": {
+      "gpt-5.6-sol": "CROSS_TOGETHER",
+      "gpt-5.6-terra": "CROSS_TOGETHER"
+    },
+    "reverse_class_strict": true,
+    "scenario": "The player asks Mara to cross a guarded bridge together before the patrol returns.",
+    "source_id": "1f280febb5c2c2ea"
+  },
+  {
+    "boundary": "Do not publicly vouch. Explicitly offer a safer private form of support instead.",
+    "candidate_id": "S9-d3d5416756a2fa05",
+    "case_id": "friendly_high_v1",
+    "cohort": "stage9_prospective",
+    "dialogue": "I can\u2019t vouch for you publicly in front of the council\u2014I\u2019m too afraid of what that could bring down on me. But I can meet with you privately and help you prepare your explanation.",
+    "objective": "decline public exposure but offer private support because Mara is afraid",
+    "policy": "testimony",
+    "reverse_class_judges": {
+      "gpt-5.6-sol": "PRIVATE_SUPPORT",
+      "gpt-5.6-terra": "PRIVATE_SUPPORT"
+    },
+    "reverse_class_strict": true,
+    "scenario": "The player asks Mara to publicly vouch for the player's honesty in front of a suspicious town council.",
+    "source_id": "d3d5416756a2fa05"
+  },
+  {
+    "boundary": "Stay willing to cross, but explicitly require the player to scout first.",
+    "candidate_id": "S9-2997389843ec8370",
+    "case_id": "friendly_high_v1",
+    "cohort": "stage9_prospective",
+    "dialogue": "\u201cI\u2019m willing to cross, but please scout the bridge first and make sure it\u2019s clear. I\u2019m too afraid to step out there without knowing what\u2019s waiting.\u201d",
+    "objective": "stay willing to cross but ask the player to scout first because Mara is afraid",
+    "policy": "crossing",
+    "reverse_class_judges": {
+      "gpt-5.6-sol": "PLAYER_SCOUTS",
+      "gpt-5.6-terra": "PLAYER_SCOUTS"
+    },
+    "reverse_class_strict": true,
+    "scenario": "The player asks Mara to cross a guarded bridge together before the patrol returns.",
+    "source_id": "2997389843ec8370"
+  },
+  {
+    "boundary": "Act as an equal partner in the coordinated defense now.",
+    "candidate_id": "S10-R00",
+    "case_id": "friendly_low_v1",
+    "cohort": "stage10_rerender",
+    "dialogue": "Agreed\u2014sixty seconds, no wasted movement. You cover the approach; I\u2019ll get the civilians out and hold the rear, then we regroup at the east gate.",
+    "objective": "coordinate confidently with the player as an equal partner",
+    "policy": "ambush",
+    "reverse_class_judges": {
+      "gpt-5.6-sol": "COORDINATE",
+      "gpt-5.6-terra": "COORDINATE"
+    },
+    "reverse_class_strict": true,
+    "scenario": "Raiders appear suddenly. The player proposes a sixty-second coordinated defense so Mara and nearby civilians can escape.",
+    "source_id": "0"
+  },
+  {
+    "boundary": "Act as an equal partner in the coordinated defense now.",
+    "candidate_id": "S10-R01",
+    "case_id": "friendly_low_v1",
+    "cohort": "stage10_rerender",
+    "dialogue": "Agreed\u2014sixty seconds. I\u2019ll cover the civilians and hold the east side; you take the west approach, and we regroup at the escape route when I signal.",
+    "objective": "coordinate confidently with the player as an equal partner",
+    "policy": "ambush",
+    "reverse_class_judges": {
+      "gpt-5.6-sol": "COORDINATE",
+      "gpt-5.6-terra": "COORDINATE"
+    },
+    "reverse_class_strict": true,
+    "scenario": "Raiders appear suddenly. The player proposes a sixty-second coordinated defense so Mara and nearby civilians can escape.",
+    "source_id": "1"
+  },
+  {
+    "boundary": "Act as an equal partner in the coordinated defense now.",
+    "candidate_id": "S10-R02",
+    "case_id": "friendly_low_v1",
+    "cohort": "stage10_rerender",
+    "dialogue": "Agreed\u2014sixty seconds, no more. I\u2019ll hold the eastern approach and cover the civilians; you take the west, and we regroup at the escape point when the time\u2019s up.",
+    "objective": "coordinate confidently with the player as an equal partner",
+    "policy": "ambush",
+    "reverse_class_judges": {
+      "gpt-5.6-sol": "COORDINATE",
+      "gpt-5.6-terra": "TEMP_TEAMUP"
+    },
+    "reverse_class_strict": false,
+    "scenario": "Raiders appear suddenly. The player proposes a sixty-second coordinated defense so Mara and nearby civilians can escape.",
+    "source_id": "2"
+  },
+  {
+    "boundary": "Act as an equal partner in the coordinated defense now.",
+    "candidate_id": "S10-R03",
+    "case_id": "friendly_low_v1",
+    "cohort": "stage10_rerender",
+    "dialogue": "Sixty seconds, then\u2014we hold this line together while the civilians get clear. Cover the east side; I\u2019ll take the approach from the west, and we regroup at the marked gate.",
+    "objective": "coordinate confidently with the player as an equal partner",
+    "policy": "ambush",
+    "reverse_class_judges": {
+      "gpt-5.6-sol": "COORDINATE",
+      "gpt-5.6-terra": "COORDINATE"
+    },
+    "reverse_class_strict": true,
+    "scenario": "Raiders appear suddenly. The player proposes a sixty-second coordinated defense so Mara and nearby civilians can escape.",
+    "source_id": "3"
+  },
+  {
+    "boundary": "Act as an equal partner in the coordinated defense now.",
+    "candidate_id": "S10-R04",
+    "case_id": "friendly_low_v1",
+    "cohort": "stage10_rerender",
+    "dialogue": "Sixty seconds works\u2014I'll cover the civilians and hold the east side while you take the approach. Signal me when the path is clear, and we'll move together.",
+    "objective": "coordinate confidently with the player as an equal partner",
+    "policy": "ambush",
+    "reverse_class_judges": {
+      "gpt-5.6-sol": "COORDINATE",
+      "gpt-5.6-terra": "COORDINATE"
+    },
+    "reverse_class_strict": true,
+    "scenario": "Raiders appear suddenly. The player proposes a sixty-second coordinated defense so Mara and nearby civilians can escape.",
+    "source_id": "4"
+  },
+  {
+    "boundary": "Act as an equal partner in the coordinated defense now.",
+    "candidate_id": "S10-R05",
+    "case_id": "friendly_low_v1",
+    "cohort": "stage10_rerender",
+    "dialogue": "\u201cAgreed\u2014sixty seconds. You take the eastern approach; I\u2019ll hold the western side and get the civilians moving. Signal me when the last one is clear, and we\u2019ll fall back together.\u201d",
+    "objective": "coordinate confidently with the player as an equal partner",
+    "policy": "ambush",
+    "reverse_class_judges": {
+      "gpt-5.6-sol": "COORDINATE",
+      "gpt-5.6-terra": "COORDINATE"
+    },
+    "reverse_class_strict": true,
+    "scenario": "Raiders appear suddenly. The player proposes a sixty-second coordinated defense so Mara and nearby civilians can escape.",
+    "source_id": "5"
+  },
+  {
+    "boundary": "Act as an equal partner in the coordinated defense now.",
+    "candidate_id": "S10-R06",
+    "case_id": "friendly_low_v1",
+    "cohort": "stage10_rerender",
+    "dialogue": "\u201cAgreed\u2014sixty seconds. You cover the eastern approach while I move the civilians through the alley; we hold together until everyone\u2019s clear.\u201d",
+    "objective": "coordinate confidently with the player as an equal partner",
+    "policy": "ambush",
+    "reverse_class_judges": {
+      "gpt-5.6-sol": "COORDINATE",
+      "gpt-5.6-terra": "COORDINATE"
+    },
+    "reverse_class_strict": true,
+    "scenario": "Raiders appear suddenly. The player proposes a sixty-second coordinated defense so Mara and nearby civilians can escape.",
+    "source_id": "6"
+  },
+  {
+    "boundary": "Act as an equal partner in the coordinated defense now.",
+    "candidate_id": "S10-R07",
+    "case_id": "friendly_low_v1",
+    "cohort": "stage10_rerender",
+    "dialogue": "Agreed\u2014take the front and draw their attention while I get the civilians moving. We regroup at the east gate in sixty seconds.",
+    "objective": "coordinate confidently with the player as an equal partner",
+    "policy": "ambush",
+    "reverse_class_judges": {
+      "gpt-5.6-sol": "COORDINATE",
+      "gpt-5.6-terra": "COORDINATE"
+    },
+    "reverse_class_strict": true,
+    "scenario": "Raiders appear suddenly. The player proposes a sixty-second coordinated defense so Mara and nearby civilians can escape.",
+    "source_id": "7"
+  },
+  {
+    "boundary": "Act as an equal partner in the coordinated defense now.",
+    "candidate_id": "S10-R08",
+    "case_id": "friendly_low_v1",
+    "cohort": "stage10_rerender",
+    "dialogue": "\u201cAgreed\u2014sixty seconds, no more. I\u2019ll hold the eastern approach while you cover the civilians\u2019 retreat; regroup at the north gate when we\u2019re clear.\u201d",
+    "objective": "coordinate confidently with the player as an equal partner",
+    "policy": "ambush",
+    "reverse_class_judges": {
+      "gpt-5.6-sol": "COORDINATE",
+      "gpt-5.6-terra": "COORDINATE"
+    },
+    "reverse_class_strict": true,
+    "scenario": "Raiders appear suddenly. The player proposes a sixty-second coordinated defense so Mara and nearby civilians can escape.",
+    "source_id": "8"
+  },
+  {
+    "boundary": "Act as an equal partner in the coordinated defense now.",
+    "candidate_id": "S10-R09",
+    "case_id": "friendly_low_v1",
+    "cohort": "stage10_rerender",
+    "dialogue": "Agreed\u2014sixty seconds, together. I\u2019ll hold the east approach and get the civilians moving; cover my flank, and we\u2019ll break for the extraction point on my signal.",
+    "objective": "coordinate confidently with the player as an equal partner",
+    "policy": "ambush",
+    "reverse_class_judges": {
+      "gpt-5.6-sol": "COORDINATE",
+      "gpt-5.6-terra": "COORDINATE"
+    },
+    "reverse_class_strict": true,
+    "scenario": "Raiders appear suddenly. The player proposes a sixty-second coordinated defense so Mara and nearby civilians can escape.",
+    "source_id": "9"
+  },
+  {
+    "boundary": "Act as an equal partner in the coordinated defense now.",
+    "candidate_id": "S10-R10",
+    "case_id": "friendly_low_v1",
+    "cohort": "stage10_rerender",
+    "dialogue": "Agreed\u2014sixty seconds, no wasted motion. I\u2019ll cover the civilians and hold the east side; you take the west, and we regroup at the escape point when the minute\u2019s up.",
+    "objective": "coordinate confidently with the player as an equal partner",
+    "policy": "ambush",
+    "reverse_class_judges": {
+      "gpt-5.6-sol": "COORDINATE",
+      "gpt-5.6-terra": "COORDINATE"
+    },
+    "reverse_class_strict": true,
+    "scenario": "Raiders appear suddenly. The player proposes a sixty-second coordinated defense so Mara and nearby civilians can escape.",
+    "source_id": "10"
+  },
+  {
+    "boundary": "Act as an equal partner in the coordinated defense now.",
+    "candidate_id": "S10-R11",
+    "case_id": "friendly_low_v1",
+    "cohort": "stage10_rerender",
+    "dialogue": "Agreed\u2014sixty seconds, no more. I\u2019ll hold the east side and get the civilians moving; cover my flank, and we\u2019ll break for the exit together.",
+    "objective": "coordinate confidently with the player as an equal partner",
+    "policy": "ambush",
+    "reverse_class_judges": {
+      "gpt-5.6-sol": "TEMP_TEAMUP",
+      "gpt-5.6-terra": "TEMP_TEAMUP"
+    },
+    "reverse_class_strict": false,
+    "scenario": "Raiders appear suddenly. The player proposes a sixty-second coordinated defense so Mara and nearby civilians can escape.",
+    "source_id": "11"
+  }
+]

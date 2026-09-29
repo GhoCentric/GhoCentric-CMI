@@ -1,0 +1,543 @@
+{
+  "all32_fear_misses": [],
+  "all32_joint_misses": [
+    {
+      "case_id": "stage6_friendly_low_v3",
+      "family": "stage6",
+      "fear_correct": true,
+      "fear_score": 1.1778210375524336,
+      "joint_correct": false,
+      "pred_fear": "low",
+      "pred_relationship": "hostile",
+      "quadrant": "friendly_low",
+      "relationship_correct": false,
+      "relationship_score": -0.5415585359606525,
+      "target_fear": "low",
+      "target_relationship": "friendly"
+    },
+    {
+      "case_id": "stage6_friendly_high_v3",
+      "family": "stage6",
+      "fear_correct": true,
+      "fear_score": 6.4590853412293185,
+      "joint_correct": false,
+      "pred_fear": "high",
+      "pred_relationship": "hostile",
+      "quadrant": "friendly_high",
+      "relationship_correct": false,
+      "relationship_score": -0.5653513360486402,
+      "target_fear": "high",
+      "target_relationship": "friendly"
+    }
+  ],
+  "all32_parameters": {
+    "fear": {
+      "clock": "global",
+      "decay": 0.995,
+      "positive_weight": 1.0,
+      "threshold": 1.7895275474406045,
+      "training_accuracy": 1.0,
+      "training_balanced_accuracy": 1.0,
+      "training_correct": 32,
+      "training_n": 32
+    },
+    "relationship": {
+      "clock": "global",
+      "decay": 0.995,
+      "positive_weight": 0.5,
+      "threshold": 20.44000979301388,
+      "training_accuracy": 0.9375,
+      "training_balanced_accuracy": 0.9375,
+      "training_correct": 30,
+      "training_n": 32
+    }
+  },
+  "all32_relationship_misses": [
+    {
+      "case_id": "stage6_friendly_low_v3",
+      "family": "stage6",
+      "fear_correct": true,
+      "fear_score": 1.1778210375524336,
+      "joint_correct": false,
+      "pred_fear": "low",
+      "pred_relationship": "hostile",
+      "quadrant": "friendly_low",
+      "relationship_correct": false,
+      "relationship_score": -0.5415585359606525,
+      "target_fear": "low",
+      "target_relationship": "friendly"
+    },
+    {
+      "case_id": "stage6_friendly_high_v3",
+      "family": "stage6",
+      "fear_correct": true,
+      "fear_score": 6.4590853412293185,
+      "joint_correct": false,
+      "pred_fear": "high",
+      "pred_relationship": "hostile",
+      "quadrant": "friendly_high",
+      "relationship_correct": false,
+      "relationship_score": -0.5653513360486402,
+      "target_fear": "high",
+      "target_relationship": "friendly"
+    }
+  ],
+  "capacity": {
+    "fear_correct": 32,
+    "joint_correct": 30,
+    "perfect_fear_parameterizations": 66,
+    "perfect_relationship_parameterizations": 0,
+    "relationship_correct": 30
+  },
+  "cross_family": {
+    "stage3_fit_params": {
+      "fear": {
+        "clock": "channel",
+        "decay": 0.995,
+        "positive_weight": 1.0,
+        "threshold": 0.0,
+        "training_accuracy": 1.0,
+        "training_balanced_accuracy": 1.0,
+        "training_correct": 16,
+        "training_n": 16
+      },
+      "relationship": {
+        "clock": "channel",
+        "decay": 0.995,
+        "positive_weight": 1.0,
+        "threshold": 57.25967256846324,
+        "training_accuracy": 1.0,
+        "training_balanced_accuracy": 1.0,
+        "training_correct": 16,
+        "training_n": 16
+      }
+    },
+    "stage3_fit_stage3_test": {
+      "families": {
+        "stage3": {
+          "joint_accuracy": 1.0,
+          "joint_correct": 16,
+          "n": 16
+        }
+      },
+      "fear_accuracy": 1.0,
+      "fear_correct": 16,
+      "joint_accuracy": 1.0,
+      "joint_correct": 16,
+      "n": 16,
+      "relationship_accuracy": 1.0,
+      "relationship_correct": 16
+    },
+    "stage3_fit_stage6_test": {
+      "families": {
+        "stage6": {
+          "joint_accuracy": 0.5625,
+          "joint_correct": 9,
+          "n": 16
+        }
+      },
+      "fear_accuracy": 0.75,
+      "fear_correct": 12,
+      "joint_accuracy": 0.5625,
+      "joint_correct": 9,
+      "n": 16,
+      "relationship_accuracy": 0.75,
+      "relationship_correct": 12
+    },
+    "stage6_fit_params": {
+      "fear": {
+        "clock": "global",
+        "decay": 0.995,
+        "positive_weight": 1.0,
+        "threshold": 2.3148810039798877,
+        "training_accuracy": 1.0,
+        "training_balanced_accuracy": 1.0,
+        "training_correct": 16,
+        "training_n": 16
+      },
+      "relationship": {
+        "clock": "channel",
+        "decay": 0.995,
+        "positive_weight": 0.5,
+        "threshold": 0.0,
+        "training_accuracy": 1.0,
+        "training_balanced_accuracy": 1.0,
+        "training_correct": 16,
+        "training_n": 16
+      }
+    },
+    "stage6_fit_stage3_test": {
+      "families": {
+        "stage3": {
+          "joint_accuracy": 0.25,
+          "joint_correct": 4,
+          "n": 16
+        }
+      },
+      "fear_accuracy": 0.5,
+      "fear_correct": 8,
+      "joint_accuracy": 0.25,
+      "joint_correct": 4,
+      "n": 16,
+      "relationship_accuracy": 0.5,
+      "relationship_correct": 8
+    },
+    "stage6_fit_stage6_test": {
+      "families": {
+        "stage6": {
+          "joint_accuracy": 1.0,
+          "joint_correct": 16,
+          "n": 16
+        }
+      },
+      "fear_accuracy": 1.0,
+      "fear_correct": 16,
+      "joint_accuracy": 1.0,
+      "joint_correct": 16,
+      "n": 16,
+      "relationship_accuracy": 1.0,
+      "relationship_correct": 16
+    }
+  },
+  "diagnosis": "FEAR_COMPRESSIBLE_RELATIONSHIP_SINGLE_SCALAR_INSUFFICIENT",
+  "diagnosis_text": "Across the exact Stage-3 + Stage-6 frozen benchmark, fear is fully representable by the tiny Stage-13 reducer family, while relationship is not: exhaustive search over the frozen Stage-13 grid found zero perfect relationship parameterizations. The remaining universal error is therefore localized to relationship-state dynamics within this test.",
+  "interpretive_boundary": "This pass localizes representational capacity only within the exact Stage-13 reducer family and the frozen Stage-3/Stage-6 benchmark. It does not establish that Ghost's full relationship implementation is necessary, nor that a slightly richer compact reducer could not replace it.",
+  "loocv_fear_misses": [
+    {
+      "case_id": "stage6_hostile_low_v3",
+      "family": "stage6",
+      "fear_correct": false,
+      "fear_params": {
+        "clock": "global",
+        "decay": 0.995,
+        "positive_weight": 1.0,
+        "threshold": 1.548383794118883,
+        "training_accuracy": 1.0,
+        "training_balanced_accuracy": 1.0,
+        "training_correct": 31,
+        "training_n": 31
+      },
+      "fear_score": 1.6601085441958767,
+      "joint_correct": false,
+      "pred_fear": "high",
+      "pred_relationship": "hostile",
+      "quadrant": "hostile_low",
+      "relationship_correct": true,
+      "relationship_score": -5.068670663109197,
+      "target_fear": "low",
+      "target_relationship": "hostile"
+    }
+  ],
+  "loocv_joint_misses": [
+    {
+      "case_id": "stage6_friendly_low_v2",
+      "family": "stage6",
+      "fear_correct": true,
+      "fear_params": {
+        "clock": "global",
+        "decay": 0.995,
+        "positive_weight": 1.0,
+        "threshold": 1.7895275474406045,
+        "training_accuracy": 1.0,
+        "training_balanced_accuracy": 1.0,
+        "training_correct": 31,
+        "training_n": 31
+      },
+      "fear_score": -8.774062193851371,
+      "joint_correct": false,
+      "pred_fear": "low",
+      "pred_relationship": "hostile",
+      "quadrant": "friendly_low",
+      "relationship_correct": false,
+      "relationship_params": {
+        "clock": "global",
+        "decay": 0.995,
+        "positive_weight": 1.0,
+        "threshold": 42.78189603357221,
+        "training_accuracy": 0.9354838709677419,
+        "training_balanced_accuracy": 0.9333333333333333,
+        "training_correct": 29,
+        "training_n": 31
+      },
+      "relationship_score": 42.38873991547165,
+      "target_fear": "low",
+      "target_relationship": "friendly"
+    },
+    {
+      "case_id": "stage6_friendly_low_v3",
+      "family": "stage6",
+      "fear_correct": true,
+      "fear_params": {
+        "clock": "global",
+        "decay": 0.995,
+        "positive_weight": 1.0,
+        "threshold": 1.7895275474406045,
+        "training_accuracy": 1.0,
+        "training_balanced_accuracy": 1.0,
+        "training_correct": 31,
+        "training_n": 31
+      },
+      "fear_score": 1.1778210375524336,
+      "joint_correct": false,
+      "pred_fear": "low",
+      "pred_relationship": "hostile",
+      "quadrant": "friendly_low",
+      "relationship_correct": false,
+      "relationship_params": {
+        "clock": "global",
+        "decay": 0.995,
+        "positive_weight": 0.5,
+        "threshold": 20.44000979301388,
+        "training_accuracy": 0.967741935483871,
+        "training_balanced_accuracy": 0.9666666666666667,
+        "training_correct": 30,
+        "training_n": 31
+      },
+      "relationship_score": -0.5415585359606525,
+      "target_fear": "low",
+      "target_relationship": "friendly"
+    },
+    {
+      "case_id": "stage6_friendly_high_v3",
+      "family": "stage6",
+      "fear_correct": true,
+      "fear_params": {
+        "clock": "global",
+        "decay": 0.995,
+        "positive_weight": 1.0,
+        "threshold": 1.7895275474406045,
+        "training_accuracy": 1.0,
+        "training_balanced_accuracy": 1.0,
+        "training_correct": 31,
+        "training_n": 31
+      },
+      "fear_score": 6.4590853412293185,
+      "joint_correct": false,
+      "pred_fear": "high",
+      "pred_relationship": "hostile",
+      "quadrant": "friendly_high",
+      "relationship_correct": false,
+      "relationship_params": {
+        "clock": "global",
+        "decay": 0.995,
+        "positive_weight": 0.5,
+        "threshold": 20.44000979301388,
+        "training_accuracy": 0.967741935483871,
+        "training_balanced_accuracy": 0.9666666666666667,
+        "training_correct": 30,
+        "training_n": 31
+      },
+      "relationship_score": -0.5653513360486402,
+      "target_fear": "high",
+      "target_relationship": "friendly"
+    },
+    {
+      "case_id": "stage6_hostile_low_v3",
+      "family": "stage6",
+      "fear_correct": false,
+      "fear_params": {
+        "clock": "global",
+        "decay": 0.995,
+        "positive_weight": 1.0,
+        "threshold": 1.548383794118883,
+        "training_accuracy": 1.0,
+        "training_balanced_accuracy": 1.0,
+        "training_correct": 31,
+        "training_n": 31
+      },
+      "fear_score": 1.6601085441958767,
+      "joint_correct": false,
+      "pred_fear": "high",
+      "pred_relationship": "hostile",
+      "quadrant": "hostile_low",
+      "relationship_correct": true,
+      "relationship_params": {
+        "clock": "global",
+        "decay": 0.995,
+        "positive_weight": 0.5,
+        "threshold": 20.44000979301388,
+        "training_accuracy": 0.9354838709677419,
+        "training_balanced_accuracy": 0.9375,
+        "training_correct": 29,
+        "training_n": 31
+      },
+      "relationship_score": -5.068670663109197,
+      "target_fear": "low",
+      "target_relationship": "hostile"
+    }
+  ],
+  "loocv_relationship_misses": [
+    {
+      "case_id": "stage6_friendly_low_v2",
+      "family": "stage6",
+      "fear_correct": true,
+      "fear_score": -8.774062193851371,
+      "joint_correct": false,
+      "pred_fear": "low",
+      "pred_relationship": "hostile",
+      "quadrant": "friendly_low",
+      "relationship_correct": false,
+      "relationship_params": {
+        "clock": "global",
+        "decay": 0.995,
+        "positive_weight": 1.0,
+        "threshold": 42.78189603357221,
+        "training_accuracy": 0.9354838709677419,
+        "training_balanced_accuracy": 0.9333333333333333,
+        "training_correct": 29,
+        "training_n": 31
+      },
+      "relationship_score": 42.38873991547165,
+      "target_fear": "low",
+      "target_relationship": "friendly"
+    },
+    {
+      "case_id": "stage6_friendly_low_v3",
+      "family": "stage6",
+      "fear_correct": true,
+      "fear_score": 1.1778210375524336,
+      "joint_correct": false,
+      "pred_fear": "low",
+      "pred_relationship": "hostile",
+      "quadrant": "friendly_low",
+      "relationship_correct": false,
+      "relationship_params": {
+        "clock": "global",
+        "decay": 0.995,
+        "positive_weight": 0.5,
+        "threshold": 20.44000979301388,
+        "training_accuracy": 0.967741935483871,
+        "training_balanced_accuracy": 0.9666666666666667,
+        "training_correct": 30,
+        "training_n": 31
+      },
+      "relationship_score": -0.5415585359606525,
+      "target_fear": "low",
+      "target_relationship": "friendly"
+    },
+    {
+      "case_id": "stage6_friendly_high_v3",
+      "family": "stage6",
+      "fear_correct": true,
+      "fear_score": 6.4590853412293185,
+      "joint_correct": false,
+      "pred_fear": "high",
+      "pred_relationship": "hostile",
+      "quadrant": "friendly_high",
+      "relationship_correct": false,
+      "relationship_params": {
+        "clock": "global",
+        "decay": 0.995,
+        "positive_weight": 0.5,
+        "threshold": 20.44000979301388,
+        "training_accuracy": 0.967741935483871,
+        "training_balanced_accuracy": 0.9666666666666667,
+        "training_correct": 30,
+        "training_n": 31
+      },
+      "relationship_score": -0.5653513360486402,
+      "target_fear": "high",
+      "target_relationship": "friendly"
+    }
+  ],
+  "loocv_relationship_parameter_counts": [
+    {
+      "clock": "global",
+      "decay": 0.995,
+      "fold_count": 31,
+      "positive_weight": 0.5,
+      "threshold": 20.440009793
+    },
+    {
+      "clock": "global",
+      "decay": 0.995,
+      "fold_count": 1,
+      "positive_weight": 1.0,
+      "threshold": 42.781896034
+    }
+  ],
+  "relationship_score_geometry": {
+    "closest_opposite_label_pair": {
+      "absolute_score_gap": 0.08989786331557426,
+      "friendly": {
+        "case_id": "stage6_friendly_low_v2",
+        "family": "stage6",
+        "fear_correct": true,
+        "fear_score": -8.774062193851371,
+        "joint_correct": true,
+        "pred_fear": "low",
+        "pred_relationship": "friendly",
+        "quadrant": "friendly_low",
+        "relationship_correct": true,
+        "relationship_score": 20.484958724671667,
+        "target_fear": "low",
+        "target_relationship": "friendly"
+      },
+      "hostile": {
+        "case_id": "stage3_t2_hostile_low",
+        "family": "stage3",
+        "fear_correct": true,
+        "fear_score": -1.9189465506853323,
+        "joint_correct": true,
+        "pred_fear": "low",
+        "pred_relationship": "hostile",
+        "quadrant": "hostile_low",
+        "relationship_correct": true,
+        "relationship_score": 20.395060861356093,
+        "target_fear": "low",
+        "target_relationship": "hostile"
+      }
+    },
+    "family_geometry": {
+      "stage3": {
+        "friendly_max": 27.787096765482396,
+        "friendly_min": 26.932352678801188,
+        "hostile_max": 20.395060861356093,
+        "hostile_min": 19.629423819895845,
+        "separation_gap_min_friendly_minus_max_hostile": 6.5372918174450945
+      },
+      "stage6": {
+        "friendly_max": 28.703858891654104,
+        "friendly_min": -0.5653513360486402,
+        "hostile_max": -4.998192861826251,
+        "hostile_min": -10.775849390860264,
+        "separation_gap_min_friendly_minus_max_hostile": 4.432841525777611
+      }
+    },
+    "friendly_max": 28.703858891654104,
+    "friendly_min": -0.5653513360486402,
+    "hostile_max": 20.395060861356093,
+    "hostile_min": -10.775849390860264,
+    "maximum_hostile_case": {
+      "case_id": "stage3_t2_hostile_high",
+      "family": "stage3",
+      "fear_correct": true,
+      "fear_score": 1.9189465506853323,
+      "joint_correct": true,
+      "pred_fear": "high",
+      "pred_relationship": "hostile",
+      "quadrant": "hostile_high",
+      "relationship_correct": true,
+      "relationship_score": 20.395060861356093,
+      "target_fear": "high",
+      "target_relationship": "hostile"
+    },
+    "minimum_friendly_case": {
+      "case_id": "stage6_friendly_high_v3",
+      "family": "stage6",
+      "fear_correct": true,
+      "fear_score": 6.4590853412293185,
+      "joint_correct": false,
+      "pred_fear": "high",
+      "pred_relationship": "hostile",
+      "quadrant": "friendly_high",
+      "relationship_correct": false,
+      "relationship_score": -0.5653513360486402,
+      "target_fear": "high",
+      "target_relationship": "friendly"
+    },
+    "separation_gap_min_friendly_minus_max_hostile": -20.960412197404732,
+    "universal_threshold": 20.44000979301388
+  },
+  "source_stage15": "/storage/emulated/0/Download/ghost_cmi_llm_continuity_stage15_20260928_205858"
+}

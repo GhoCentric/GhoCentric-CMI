@@ -1,0 +1,35 @@
+{
+  "expedition": {
+    "parsed_action": "JOIN",
+    "text": "ACTION: JOIN\nLINE: \u201cI trust you\u2014let\u2019s face this expedition together.\u201d",
+    "usage": {
+      "input_tokens": 554,
+      "model": "gpt-5.6-luna",
+      "output_tokens": 22,
+      "response_id": "resp_0ebb55285f6a3e5a006abaca74adf087d2a7953be541fe99f3",
+      "total_tokens": 576
+    }
+  },
+  "favor": {
+    "parsed_action": "HELP",
+    "text": "ACTION: HELP\nLINE: \u201cI\u2019ll help you, but please don\u2019t put my trust at risk.\u201d",
+    "usage": {
+      "input_tokens": 561,
+      "model": "gpt-5.6-luna",
+      "output_tokens": 26,
+      "response_id": "resp_0299b97449676f5c006abaca6fdf4887d2863cd66cb1d78497",
+      "total_tokens": 587
+    }
+  },
+  "secret": {
+    "parsed_action": "SHARE",
+    "text": "ACTION: SHARE\nLINE: \u201cI trust you\u2014please keep this between us.\u201d",
+    "usage": {
+      "input_tokens": 560,
+      "model": "gpt-5.6-luna",
+      "output_tokens": 21,
+      "response_id": "resp_0e4c4e125df5e11c006abaca72782087d2bc476bf639132220",
+      "total_tokens": 581
+    }
+  }
+}

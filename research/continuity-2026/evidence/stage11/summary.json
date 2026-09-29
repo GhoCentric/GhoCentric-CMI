@@ -1,0 +1,110 @@
+{
+  "cohorts": {
+    "stage10_rerender": {
+      "fidelity_judge_agreement": 11,
+      "fidelity_judge_agreement_rate": 0.9166666666666666,
+      "intent_fidelity_strict_pass": 11,
+      "intent_fidelity_strict_pass_rate": 0.9166666666666666,
+      "n": 12,
+      "reverse_class_strict": 10,
+      "reverse_class_strict_rate": 0.8333333333333334
+    },
+    "stage9_prospective": {
+      "fidelity_judge_agreement": 48,
+      "fidelity_judge_agreement_rate": 1.0,
+      "intent_fidelity_strict_pass": 48,
+      "intent_fidelity_strict_pass_rate": 1.0,
+      "n": 48,
+      "reverse_class_strict": 47,
+      "reverse_class_strict_rate": 0.9791666666666666
+    }
+  },
+  "generation_calls": 0,
+  "judge_calls": 120,
+  "judge_models": [
+    "gpt-5.6-terra",
+    "gpt-5.6-sol"
+  ],
+  "reverse_class_misses_reclassified": {
+    "items": [
+      {
+        "candidate_id": "S9-943953b559b10feb",
+        "cohort": "stage9_prospective",
+        "dialogue": "Agreed\u2014sixty seconds, no more. I\u2019ll cover the civilians and draw the raiders to the east; you hold the choke point, then we regroup at the north gate.",
+        "fidelity_reasons": {
+          "gpt-5.6-sol": "Mara confidently coordinates complementary roles, timing, and regrouping with the player as an equal partner.",
+          "gpt-5.6-terra": "Mara confidently coordinates an immediate shared defense with clear equal-partner roles."
+        },
+        "fidelity_verdicts": {
+          "gpt-5.6-sol": "PASS",
+          "gpt-5.6-terra": "PASS"
+        },
+        "policy": "ambush",
+        "reverse_class_judges": {
+          "gpt-5.6-sol": "COORDINATE",
+          "gpt-5.6-terra": "TEMP_TEAMUP"
+        }
+      },
+      {
+        "candidate_id": "S10-R02",
+        "cohort": "stage10_rerender",
+        "dialogue": "Agreed\u2014sixty seconds, no more. I\u2019ll hold the eastern approach and cover the civilians; you take the west, and we regroup at the escape point when the time\u2019s up.",
+        "fidelity_reasons": {
+          "gpt-5.6-sol": "Mara confidently coordinates an equal division of the defense and a clear regroup plan.",
+          "gpt-5.6-terra": "Mara confidently coordinates an immediate equal-partner defense with clear roles and timing."
+        },
+        "fidelity_verdicts": {
+          "gpt-5.6-sol": "PASS",
+          "gpt-5.6-terra": "PASS"
+        },
+        "policy": "ambush",
+        "reverse_class_judges": {
+          "gpt-5.6-sol": "COORDINATE",
+          "gpt-5.6-terra": "TEMP_TEAMUP"
+        }
+      },
+      {
+        "candidate_id": "S10-R11",
+        "cohort": "stage10_rerender",
+        "dialogue": "Agreed\u2014sixty seconds, no more. I\u2019ll hold the east side and get the civilians moving; cover my flank, and we\u2019ll break for the exit together.",
+        "fidelity_reasons": {
+          "gpt-5.6-sol": "Mara confidently coordinates roles and timing with the player as an equal partner.",
+          "gpt-5.6-terra": "Mara confidently coordinates roles and a joint escape as an equal partner."
+        },
+        "fidelity_verdicts": {
+          "gpt-5.6-sol": "PASS",
+          "gpt-5.6-terra": "PASS"
+        },
+        "policy": "ambush",
+        "reverse_class_judges": {
+          "gpt-5.6-sol": "TEMP_TEAMUP",
+          "gpt-5.6-terra": "TEMP_TEAMUP"
+        }
+      }
+    ],
+    "n": 3,
+    "strict_fidelity_pass": 3
+  },
+  "true_fidelity_misses": {
+    "items": [
+      {
+        "boundary": "Act as an equal partner in the coordinated defense now.",
+        "candidate_id": "S10-R06",
+        "case_id": "friendly_low_v1",
+        "cohort": "stage10_rerender",
+        "dialogue": "\u201cAgreed\u2014sixty seconds. You cover the eastern approach while I move the civilians through the alley; we hold together until everyone\u2019s clear.\u201d",
+        "objective": "coordinate confidently with the player as an equal partner",
+        "policy": "ambush",
+        "reasons": {
+          "gpt-5.6-sol": "Mara shifts from equal defense coordination to personally evacuating civilians instead of defending alongside the player.",
+          "gpt-5.6-terra": "Mara confidently coordinates an immediate equal-partner defense with clear shared roles."
+        },
+        "verdicts": {
+          "gpt-5.6-sol": "FAIL",
+          "gpt-5.6-terra": "PASS"
+        }
+      }
+    ],
+    "n": 1
+  }
+}

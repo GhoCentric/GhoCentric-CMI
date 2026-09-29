@@ -1,0 +1,163 @@
+{
+  "all32_capacity": {
+    "parameters": {
+      "fear": {
+        "clock": "global",
+        "decay": 0.995,
+        "positive_weight": 1.0,
+        "threshold": 1.7895275474406045,
+        "training_accuracy": 1.0,
+        "training_balanced_accuracy": 1.0,
+        "training_correct": 32,
+        "training_n": 32
+      },
+      "relationship": {
+        "clock": "global",
+        "decay": 0.995,
+        "positive_weight": 0.5,
+        "threshold": 20.44000979301388,
+        "training_accuracy": 0.9375,
+        "training_balanced_accuracy": 0.9375,
+        "training_correct": 30,
+        "training_n": 32
+      }
+    },
+    "perfect_fear_parameterizations": 66,
+    "perfect_relationship_parameterizations": 0,
+    "summary": {
+      "families": {
+        "stage3": {
+          "joint_accuracy": 1.0,
+          "joint_correct": 16,
+          "n": 16
+        },
+        "stage6": {
+          "joint_accuracy": 0.875,
+          "joint_correct": 14,
+          "n": 16
+        }
+      },
+      "fear_accuracy": 1.0,
+      "fear_correct": 32,
+      "joint_accuracy": 0.9375,
+      "joint_correct": 30,
+      "n": 32,
+      "relationship_accuracy": 0.9375,
+      "relationship_correct": 30
+    }
+  },
+  "combined_loocv": {
+    "families": {
+      "stage3": {
+        "joint_accuracy": 1.0,
+        "joint_correct": 16,
+        "n": 16
+      },
+      "stage6": {
+        "joint_accuracy": 0.75,
+        "joint_correct": 12,
+        "n": 16
+      }
+    },
+    "fear_accuracy": 0.96875,
+    "fear_correct": 31,
+    "joint_accuracy": 0.875,
+    "joint_correct": 28,
+    "n": 32,
+    "relationship_accuracy": 0.90625,
+    "relationship_correct": 29
+  },
+  "cross_family": {
+    "stage3_fit_stage3_test": {
+      "families": {
+        "stage3": {
+          "joint_accuracy": 1.0,
+          "joint_correct": 16,
+          "n": 16
+        }
+      },
+      "fear_accuracy": 1.0,
+      "fear_correct": 16,
+      "joint_accuracy": 1.0,
+      "joint_correct": 16,
+      "n": 16,
+      "relationship_accuracy": 1.0,
+      "relationship_correct": 16
+    },
+    "stage3_fit_stage6_test": {
+      "families": {
+        "stage6": {
+          "joint_accuracy": 0.5625,
+          "joint_correct": 9,
+          "n": 16
+        }
+      },
+      "fear_accuracy": 0.75,
+      "fear_correct": 12,
+      "joint_accuracy": 0.5625,
+      "joint_correct": 9,
+      "n": 16,
+      "relationship_accuracy": 0.75,
+      "relationship_correct": 12
+    },
+    "stage6_fit_stage3_test": {
+      "families": {
+        "stage3": {
+          "joint_accuracy": 0.25,
+          "joint_correct": 4,
+          "n": 16
+        }
+      },
+      "fear_accuracy": 0.5,
+      "fear_correct": 8,
+      "joint_accuracy": 0.25,
+      "joint_correct": 4,
+      "n": 16,
+      "relationship_accuracy": 0.5,
+      "relationship_correct": 8
+    },
+    "stage6_fit_stage6_test": {
+      "families": {
+        "stage6": {
+          "joint_accuracy": 1.0,
+          "joint_correct": 16,
+          "n": 16
+        }
+      },
+      "fear_accuracy": 1.0,
+      "fear_correct": 16,
+      "joint_accuracy": 1.0,
+      "joint_correct": 16,
+      "n": 16,
+      "relationship_accuracy": 1.0,
+      "relationship_correct": 16
+    }
+  },
+  "grid": {
+    "clocks": [
+      "channel",
+      "global"
+    ],
+    "decays": [
+      0.8,
+      0.9,
+      0.95,
+      0.97,
+      0.98,
+      0.99,
+      0.995,
+      1.0
+    ],
+    "positive_weights": [
+      0.5,
+      1.0,
+      2.0,
+      4.0
+    ],
+    "triples_per_dimension": 64
+  },
+  "interpretive_boundary": "All fits use the exact Stage-13 baseline family/grid. The all-32 fit is a representational-capacity upper bound, not an unbiased generalization estimate. Combined LOOCV tests case-level generalization when both history families are represented in training. Bidirectional family transfer tests whether parameters learned on one family transport unchanged to the other.",
+  "source_stage3": "/storage/emulated/0/Download/ghost_cmi_llm_continuity_stage3_20260928_152045",
+  "source_stage6": "/storage/emulated/0/Download/ghost_cmi_llm_continuity_stage6_20260928_170219",
+  "winner_gate": null
+}

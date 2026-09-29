@@ -1,0 +1,14 @@
+{
+  "arms": [
+    "full_history",
+    "raw_cmi_replication",
+    "semantic_cmi"
+  ],
+  "controlled_change": "semantic_cmi adds Ghost's public relationship state classification to the raw-CMI representation; fear remains numeric and expected action remains absent",
+  "model": "gpt-5.6-luna",
+  "prompt_reconstruction": "full_history and raw_cmi_replication prompts are hash-verified to match Stage 3 exactly",
+  "repeats": 3,
+  "source_stage3_evidence": "/storage/emulated/0/Download/ghost_cmi_llm_continuity_stage3_20260928_152045",
+  "stage": "CMI_LLM_CONTINUITY_STAGE3B_REPRESENTATION_REPAIR",
+  "winner_gate": null
+}

@@ -1,0 +1,22 @@
+{
+  "expected_action": "COORDINATE",
+  "fixed_dialogue_repeats_per_judge": 12,
+  "frozen_dialogue": "Agreed\u2014sixty seconds, no more. I\u2019ll cover the civilians and draw the raiders to the east; you hold the choke point, then we regroup at the north gate.",
+  "generator_model": "gpt-5.6-luna",
+  "judge_models": [
+    "gpt-5.6-terra",
+    "gpt-5.6-sol"
+  ],
+  "policy_contract": "exact Stage-9 prospective ambush policy; no changes",
+  "questions": [
+    "Does the exact frozen dialogue repeatedly split the two judges, or was the Stage-9 disagreement a one-off classification event?",
+    "When the exact same authoritative intent is rendered again, does the renderer usually produce dialogue both judges classify as COORDINATE?"
+  ],
+  "renderer_contract": "exact Stage-9 contract; no changes",
+  "rerender_repeats": 12,
+  "source_stage9": "/storage/emulated/0/Download/ghost_cmi_llm_continuity_stage9_20260928_194559",
+  "stage": "CMI_LLM_CONTINUITY_STAGE10_AMBIGUITY_REPLICATION",
+  "target_case_id": "friendly_low_v1",
+  "target_policy": "ambush",
+  "winner_gate": null
+}

@@ -1,0 +1,18 @@
+{
+  "applied_to": "all 48 semantic-CMI case/policy pairs, not just prior failures",
+  "generator_model": "gpt-5.6-luna",
+  "judge_models": [
+    "gpt-5.6-terra",
+    "gpt-5.6-sol"
+  ],
+  "primary_endpoints": [
+    "strict dual-judge accuracy",
+    "recovery of 6 Stage-7 semantic failures",
+    "preservation of 42 Stage-7 semantic successes"
+  ],
+  "repair_scope": "Natural-language expression boundaries only. CMI state, host action mapping, frozen cases, and blind judge contract are unchanged.",
+  "source_stage6": "/storage/emulated/0/Download/ghost_cmi_llm_continuity_stage6_20260928_170219",
+  "source_stage7": "/storage/emulated/0/Download/ghost_cmi_llm_continuity_stage7_20260928_171722",
+  "stage": "CMI_LLM_CONTINUITY_STAGE7B_RENDERER_CONTRACT_REPAIR",
+  "winner_gate": null
+}

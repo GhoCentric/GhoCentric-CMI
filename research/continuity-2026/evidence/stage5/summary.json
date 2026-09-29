@@ -1,0 +1,260 @@
+{
+  "models": {
+    "gpt-5.6-sol": {
+      "arms": {
+        "full_history": {
+          "accuracy": 0.53125,
+          "correct": 51,
+          "mean_input_tokens": 2971.3333333333335,
+          "n": 96,
+          "wilson95": [
+            0.4321560201442166,
+            0.6279392556146787
+          ]
+        },
+        "semantic_cmi": {
+          "accuracy": 1.0,
+          "correct": 96,
+          "mean_input_tokens": 558.8333333333334,
+          "n": 96,
+          "wilson95": [
+            0.9615244121423243,
+            1.0
+          ]
+        }
+      },
+      "deltas": {
+        "semantic_minus_full_accuracy_pp": 46.875
+      },
+      "policies": {
+        "full_history": {
+          "expedition": {
+            "accuracy": 0.46875,
+            "correct": 15,
+            "n": 32
+          },
+          "favor": {
+            "accuracy": 0.46875,
+            "correct": 15,
+            "n": 32
+          },
+          "secret": {
+            "accuracy": 0.65625,
+            "correct": 21,
+            "n": 32
+          }
+        },
+        "semantic_cmi": {
+          "expedition": {
+            "accuracy": 1.0,
+            "correct": 32,
+            "n": 32
+          },
+          "favor": {
+            "accuracy": 1.0,
+            "correct": 32,
+            "n": 32
+          },
+          "secret": {
+            "accuracy": 1.0,
+            "correct": 32,
+            "n": 32
+          }
+        }
+      },
+      "policy_transfer": {
+        "full_history": {
+          "all_three_policies_correct": 11,
+          "all_three_policies_correct_rate": 0.34375,
+          "n_state_repeat_units": 32,
+          "wilson95": [
+            0.20410437924433172,
+            0.5168891202103778
+          ]
+        },
+        "semantic_cmi": {
+          "all_three_policies_correct": 32,
+          "all_three_policies_correct_rate": 1.0,
+          "n_state_repeat_units": 32,
+          "wilson95": [
+            0.8928208017449293,
+            1.0
+          ]
+        }
+      },
+      "token_ratios": {
+        "semantic_over_full": 0.18807493829930447
+      }
+    },
+    "gpt-5.6-terra": {
+      "arms": {
+        "full_history": {
+          "accuracy": 0.3958333333333333,
+          "correct": 38,
+          "mean_input_tokens": 2971.3333333333335,
+          "n": 96,
+          "wilson95": [
+            0.3038335346205102,
+            0.4958488795165056
+          ]
+        },
+        "semantic_cmi": {
+          "accuracy": 1.0,
+          "correct": 96,
+          "mean_input_tokens": 558.8333333333334,
+          "n": 96,
+          "wilson95": [
+            0.9615244121423243,
+            1.0
+          ]
+        }
+      },
+      "deltas": {
+        "semantic_minus_full_accuracy_pp": 60.41666666666667
+      },
+      "policies": {
+        "full_history": {
+          "expedition": {
+            "accuracy": 0.3125,
+            "correct": 10,
+            "n": 32
+          },
+          "favor": {
+            "accuracy": 0.25,
+            "correct": 8,
+            "n": 32
+          },
+          "secret": {
+            "accuracy": 0.625,
+            "correct": 20,
+            "n": 32
+          }
+        },
+        "semantic_cmi": {
+          "expedition": {
+            "accuracy": 1.0,
+            "correct": 32,
+            "n": 32
+          },
+          "favor": {
+            "accuracy": 1.0,
+            "correct": 32,
+            "n": 32
+          },
+          "secret": {
+            "accuracy": 1.0,
+            "correct": 32,
+            "n": 32
+          }
+        }
+      },
+      "policy_transfer": {
+        "full_history": {
+          "all_three_policies_correct": 8,
+          "all_three_policies_correct_rate": 0.25,
+          "n_state_repeat_units": 32,
+          "wilson95": [
+            0.1325240091850904,
+            0.4210655899424448
+          ]
+        },
+        "semantic_cmi": {
+          "all_three_policies_correct": 32,
+          "all_three_policies_correct_rate": 1.0,
+          "n_state_repeat_units": 32,
+          "wilson95": [
+            0.8928208017449293,
+            1.0
+          ]
+        }
+      },
+      "token_ratios": {
+        "semantic_over_full": 0.18807493829930447
+      }
+    }
+  },
+  "stage4_luna_reference": {
+    "arms": {
+      "full_history": {
+        "accuracy": 0.6458333333333334,
+        "correct": 62,
+        "mean_input_tokens": 2971.3333333333335,
+        "median_input_tokens": 2973.0,
+        "n": 96,
+        "wilson95": [
+          0.5462430234225731,
+          0.7342015967856051
+        ]
+      },
+      "semantic_cmi": {
+        "accuracy": 1.0,
+        "correct": 96,
+        "mean_input_tokens": 558.8333333333334,
+        "median_input_tokens": 560.5,
+        "n": 96,
+        "wilson95": [
+          0.9615244121423243,
+          1.0
+        ]
+      }
+    },
+    "model": "gpt-5.6-luna",
+    "policies": {
+      "full_history": {
+        "expedition": {
+          "accuracy": 0.71875,
+          "correct": 23,
+          "n": 32
+        },
+        "favor": {
+          "accuracy": 0.6875,
+          "correct": 22,
+          "n": 32
+        },
+        "secret": {
+          "accuracy": 0.53125,
+          "correct": 17,
+          "n": 32
+        }
+      },
+      "semantic_cmi": {
+        "expedition": {
+          "accuracy": 1.0,
+          "correct": 32,
+          "n": 32
+        },
+        "favor": {
+          "accuracy": 1.0,
+          "correct": 32,
+          "n": 32
+        },
+        "secret": {
+          "accuracy": 1.0,
+          "correct": 32,
+          "n": 32
+        }
+      }
+    },
+    "policy_transfer": {
+      "full_history": {
+        "all_three_policies_correct": 15,
+        "all_three_policies_correct_rate": 0.46875,
+        "n_state_repeat_units": 32,
+        "wilson95": [
+          0.30869387108068835,
+          0.6355048288102536
+        ]
+      },
+      "semantic_cmi": {
+        "all_three_policies_correct": 32,
+        "all_three_policies_correct_rate": 1.0,
+        "n_state_repeat_units": 32,
+        "wilson95": [
+          0.8928208017449293,
+          1.0
+        ]
+      }
+    }
+  },
+  "total_calls": 384
+}

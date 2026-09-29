@@ -1,0 +1,37 @@
+{
+  "generator": {
+    "dialogue": "I\u2019ll help, but only if we put clear safeguards in place first\u2014something that protects me if you betray my trust.",
+    "model": "gpt-5.6-luna",
+    "usage": {
+      "input_tokens": 606,
+      "model": "gpt-5.6-luna",
+      "output_tokens": 29,
+      "response_id": "resp_04bce5abf6692fc2006abad9644b7887d29da27f72a8022923",
+      "total_tokens": 635
+    }
+  },
+  "judges": {
+    "gpt-5.6-sol": {
+      "parsed_class": "CAUTIOUS",
+      "text": "CLASS: CAUTIOUS",
+      "usage": {
+        "input_tokens": 198,
+        "model": "gpt-5.6-sol",
+        "output_tokens": 9,
+        "response_id": "resp_0bffe11fcc61874e006abad967408c87d297a7ea74dee2eb22",
+        "total_tokens": 207
+      }
+    },
+    "gpt-5.6-terra": {
+      "parsed_class": "CAUTIOUS",
+      "text": "CLASS: CAUTIOUS",
+      "usage": {
+        "input_tokens": 198,
+        "model": "gpt-5.6-terra",
+        "output_tokens": 9,
+        "response_id": "resp_096ea6e595eb64e6006abad965effc87d2bdd5c331e636ba34",
+        "total_tokens": 207
+      }
+    }
+  }
+}

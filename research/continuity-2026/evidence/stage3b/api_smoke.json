@@ -1,0 +1,10 @@
+{
+  "text": "ACTION: CAUTIOUS\nLINE: I might help, but I need safeguards before I risk myself for you.",
+  "usage": {
+    "input_tokens": 273,
+    "model": "gpt-5.6-luna",
+    "output_tokens": 27,
+    "response_id": "resp_0f9283f9c45e0d2d006abac2f5f42487d28a3d72a93a8824cb",
+    "total_tokens": 300
+  }
+}

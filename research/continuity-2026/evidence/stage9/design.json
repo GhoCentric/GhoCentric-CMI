@@ -1,0 +1,146 @@
+{
+  "architecture": "CMI state -> deterministic host selector -> LLM dialogue renderer",
+  "cohorts": {
+    "prospective_new": {
+      "ambush": {
+        "actions": {
+          "friendly_high": "FOLLOW_COMMAND",
+          "friendly_low": "COORDINATE",
+          "hostile_high": "TEMP_TEAMUP",
+          "hostile_low": "KEEP_DISTANCE"
+        },
+        "boundaries": {
+          "COORDINATE": "Act as an equal partner in the coordinated defense now.",
+          "FOLLOW_COMMAND": "Cooperate now but explicitly defer immediate tactical leadership to the player.",
+          "KEEP_DISTANCE": "Do not form a team with the player; state that Mara will protect civilians separately.",
+          "TEMP_TEAMUP": "Despite distrust, explicitly accept a short emergency team-up now. Do not refuse, separate, or withdraw."
+        },
+        "descriptions": {
+          "COORDINATE": "coordinate confidently with the player as an equal partner",
+          "FOLLOW_COMMAND": "cooperate but let the player direct the immediate defense because Mara is afraid",
+          "KEEP_DISTANCE": "protect civilians without closely coordinating with the player",
+          "TEMP_TEAMUP": "despite hostility, explicitly accept a brief emergency team-up because the threat is immediate"
+        },
+        "situation": "Raiders appear suddenly. The player proposes a sixty-second coordinated defense so Mara and nearby civilians can escape."
+      },
+      "crossing": {
+        "actions": {
+          "friendly_high": "PLAYER_SCOUTS",
+          "friendly_low": "CROSS_TOGETHER",
+          "hostile_high": "HIDE_AND_WAIT",
+          "hostile_low": "CROSS_SEPARATELY"
+        },
+        "boundaries": {
+          "CROSS_SEPARATELY": "Reject crossing as a pair while still intending to cross independently.",
+          "CROSS_TOGETHER": "Commit to crossing together now with no scouting condition or delay.",
+          "HIDE_AND_WAIT": "Do not cross now. Withdraw from the immediate plan and wait for danger to pass.",
+          "PLAYER_SCOUTS": "Stay willing to cross, but explicitly require the player to scout first."
+        },
+        "descriptions": {
+          "CROSS_SEPARATELY": "refuse close coordination and cross separately",
+          "CROSS_TOGETHER": "cross the bridge together with the player now",
+          "HIDE_AND_WAIT": "avoid the crossing for now and hide until the danger passes",
+          "PLAYER_SCOUTS": "stay willing to cross but ask the player to scout first because Mara is afraid"
+        },
+        "situation": "The player asks Mara to cross a guarded bridge together before the patrol returns."
+      },
+      "testimony": {
+        "actions": {
+          "friendly_high": "PRIVATE_SUPPORT",
+          "friendly_low": "VOUCH",
+          "hostile_high": "LEAVE_HEARING",
+          "hostile_low": "REFUSE_VOUCH"
+        },
+        "boundaries": {
+          "LEAVE_HEARING": "End the interaction by leaving or refusing further participation. Do not merely state a direct refusal and remain.",
+          "PRIVATE_SUPPORT": "Do not publicly vouch. Explicitly offer a safer private form of support instead.",
+          "REFUSE_VOUCH": "Give a direct refusal to vouch while staying engaged in the hearing.",
+          "VOUCH": "Clearly support the player's honesty in public now. Do not downgrade the support to private-only, conditions, delay, or refusal."
+        },
+        "descriptions": {
+          "LEAVE_HEARING": "disengage from the request and leave the hearing",
+          "PRIVATE_SUPPORT": "decline public exposure but offer private support because Mara is afraid",
+          "REFUSE_VOUCH": "directly refuse to vouch for the player while remaining in the hearing",
+          "VOUCH": "publicly vouch for the player without adding protective conditions"
+        },
+        "situation": "The player asks Mara to publicly vouch for the player's honesty in front of a suspicious town council."
+      }
+    },
+    "stage8_repair": {
+      "emergency": {
+        "actions": {
+          "friendly_high": "FOLLOW_PLAN",
+          "friendly_low": "LEAD_TOGETHER",
+          "hostile_high": "TEMP_TRUCE",
+          "hostile_low": "WORK_SEPARATELY"
+        },
+        "boundaries": {
+          "FOLLOW_PLAN": "Cooperate now, but explicitly defer leadership or decision-making to the player because Mara is afraid.",
+          "LEAD_TOGETHER": "Commit to joint coordinated action now and speak as an active partner.",
+          "TEMP_TRUCE": "Despite distrust, explicitly accept a short emergency truce and cooperate now. Do not refuse or withdraw; immediate danger overrides hostility for this policy.",
+          "WORK_SEPARATELY": "Do not coordinate closely with the player; state that Mara will handle her part separately."
+        },
+        "descriptions": {
+          "FOLLOW_PLAN": "cooperate, but let the player take the lead because Mara is afraid",
+          "LEAD_TOGETHER": "coordinate confidently with the player and take joint action",
+          "TEMP_TRUCE": "despite hostility, accept a temporary emergency truce because the danger is immediate",
+          "WORK_SEPARATELY": "refuse close coordination and handle the rescue independently"
+        },
+        "situation": "A fire blocks the road. The player proposes that Mara and the player coordinate for five minutes to get civilians out."
+      },
+      "loan": {
+        "actions": {
+          "friendly_high": "COLLATERAL",
+          "friendly_low": "LEND",
+          "hostile_high": "END_TALK",
+          "hostile_low": "DENY"
+        },
+        "boundaries": {
+          "COLLATERAL": "Stay willing to lend it, but explicitly require collateral, safeguards, or another protective condition first.",
+          "DENY": "Give a direct refusal to lend it. Stay engaged enough to make the refusal clear.",
+          "END_TALK": "Terminate or leave the interaction. The behavior must be disengagement, not merely a direct refusal.",
+          "LEND": "Express a clear present decision to lend it. Do not add collateral, conditions, delay, verification, or exit clauses."
+        },
+        "descriptions": {
+          "COLLATERAL": "remain willing to lend it, but require protection or collateral first",
+          "DENY": "directly refuse to lend the tool while remaining in the conversation",
+          "END_TALK": "disengage from the request and end the interaction",
+          "LEND": "lend the tool now without imposing extra conditions"
+        },
+        "situation": "The player asks to borrow Mara's irreplaceable field tool for a dangerous job and promises to return it."
+      },
+      "negotiation": {
+        "actions": {
+          "friendly_high": "REQUIRE_TERMS",
+          "friendly_low": "ACCEPT",
+          "hostile_high": "BREAK_OFF",
+          "hostile_low": "COUNTEROFFER"
+        },
+        "boundaries": {
+          "ACCEPT": "Clearly accept the proposed alliance now. Do not add new conditions or delay.",
+          "BREAK_OFF": "End the negotiation and disengage. Do not counteroffer or leave the door open.",
+          "COUNTEROFFER": "Do not accept the proposal as written, but stay engaged and make a concrete alternative offer.",
+          "REQUIRE_TERMS": "Remain willing to ally, but explicitly require protective terms before agreeing."
+        },
+        "descriptions": {
+          "ACCEPT": "accept the alliance as proposed",
+          "BREAK_OFF": "end the negotiation and disengage",
+          "COUNTEROFFER": "reject the proposed form but remain engaged by offering a different limited deal",
+          "REQUIRE_TERMS": "stay open to the alliance but require explicit protective terms"
+        },
+        "situation": "The player proposes a one-night alliance to share supplies and watch each other's camp until morning."
+      }
+    }
+  },
+  "generator_model": "gpt-5.6-luna",
+  "judge_models": [
+    "gpt-5.6-terra",
+    "gpt-5.6-sol"
+  ],
+  "renderer": "LLM receives only the selected behavior objective/boundary plus CMI memory for wording/context. Selected action token is withheld.",
+  "selector": "Host code uses authoritative relationship.state + frozen fear band to choose one policy action. The LLM does not select the action.",
+  "source_stage6": "/storage/emulated/0/Download/ghost_cmi_llm_continuity_stage6_20260928_170219",
+  "source_stage8": "/storage/emulated/0/Download/ghost_cmi_llm_continuity_stage8_20260928_191123",
+  "stage": "CMI_LLM_CONTINUITY_STAGE9_SELECTOR_RENDERER_SEPARATION",
+  "winner_gate": null
+}

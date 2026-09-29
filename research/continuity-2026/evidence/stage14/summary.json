@@ -1,0 +1,225 @@
+{
+  "confusion": {
+    "friendly_high->friendly_low": 4,
+    "friendly_low->friendly_low": 4,
+    "hostile_high->friendly_low": 4,
+    "hostile_low->friendly_low": 4
+  },
+  "fear": {
+    "accuracy": 0.5,
+    "correct": 8
+  },
+  "frozen_parameters": {
+    "fear": {
+      "clock": "global",
+      "decay": 0.995,
+      "positive_weight": 1.0,
+      "threshold": 2.3148810039798877,
+      "training_accuracy": 1.0,
+      "training_balanced_accuracy": 1.0,
+      "training_correct": 16,
+      "training_n": 16
+    },
+    "relationship": {
+      "clock": "channel",
+      "decay": 0.995,
+      "positive_weight": 0.5,
+      "threshold": 0.0,
+      "training_accuracy": 1.0,
+      "training_balanced_accuracy": 1.0,
+      "training_correct": 16,
+      "training_n": 16
+    }
+  },
+  "interpretive_boundary": "This is a prospective transfer test of the exact Stage-13 fitted reducer onto an older, separately generated Stage-3 history family. No Stage-3 labels are used for fitting, threshold tuning, or parameter selection. Success would show that the relationship/fear slice tested here is reproducible by a very small deterministic reducer across both families; failure would show Stage-13's perfect LOOCV was family-specific.",
+  "joint": {
+    "accuracy": 0.25,
+    "correct": 4
+  },
+  "n_cases": 16,
+  "quadrants": {
+    "friendly_high": {
+      "joint_accuracy": 0.0,
+      "joint_correct": 0,
+      "n": 4
+    },
+    "friendly_low": {
+      "joint_accuracy": 1.0,
+      "joint_correct": 4,
+      "n": 4
+    },
+    "hostile_high": {
+      "joint_accuracy": 0.0,
+      "joint_correct": 0,
+      "n": 4
+    },
+    "hostile_low": {
+      "joint_accuracy": 0.0,
+      "joint_correct": 0,
+      "n": 4
+    }
+  },
+  "refitting_on_stage3": false,
+  "relationship": {
+    "accuracy": 0.5,
+    "correct": 8
+  },
+  "source_stage13": "/storage/emulated/0/Download/ghost_cmi_llm_continuity_stage13_20260928_204619",
+  "source_stage3": "/storage/emulated/0/Download/ghost_cmi_llm_continuity_stage3_20260928_152045",
+  "tetrad": {
+    "all_four_correct": 0,
+    "all_four_correct_rate": 0.0,
+    "n": 4
+  },
+  "tetrads": {
+    "0": {
+      "all_four_joint_correct": false,
+      "rows": [
+        {
+          "fear_score": -2.0060051179779563,
+          "joint_correct": true,
+          "pred_fear": "low",
+          "pred_relationship": "friendly",
+          "quadrant": "friendly_low",
+          "relationship_score": 30.632456571941834
+        },
+        {
+          "fear_score": 2.0060051179779563,
+          "joint_correct": false,
+          "pred_fear": "low",
+          "pred_relationship": "friendly",
+          "quadrant": "friendly_high",
+          "relationship_score": 30.632456571941834
+        },
+        {
+          "fear_score": -2.0060051179779563,
+          "joint_correct": false,
+          "pred_fear": "low",
+          "pred_relationship": "friendly",
+          "quadrant": "hostile_low",
+          "relationship_score": 25.116800931330186
+        },
+        {
+          "fear_score": 2.0060051179779563,
+          "joint_correct": false,
+          "pred_fear": "low",
+          "pred_relationship": "friendly",
+          "quadrant": "hostile_high",
+          "relationship_score": 25.116800931330186
+        }
+      ]
+    },
+    "1": {
+      "all_four_joint_correct": false,
+      "rows": [
+        {
+          "fear_score": -1.96476354124621,
+          "joint_correct": true,
+          "pred_fear": "low",
+          "pred_relationship": "friendly",
+          "quadrant": "friendly_low",
+          "relationship_score": 30.632456571941834
+        },
+        {
+          "fear_score": 1.96476354124621,
+          "joint_correct": false,
+          "pred_fear": "low",
+          "pred_relationship": "friendly",
+          "quadrant": "friendly_high",
+          "relationship_score": 30.632456571941834
+        },
+        {
+          "fear_score": -1.96476354124621,
+          "joint_correct": false,
+          "pred_fear": "low",
+          "pred_relationship": "friendly",
+          "quadrant": "hostile_low",
+          "relationship_score": 25.116800931330186
+        },
+        {
+          "fear_score": 1.96476354124621,
+          "joint_correct": false,
+          "pred_fear": "low",
+          "pred_relationship": "friendly",
+          "quadrant": "hostile_high",
+          "relationship_score": 25.116800931330186
+        }
+      ]
+    },
+    "2": {
+      "all_four_joint_correct": false,
+      "rows": [
+        {
+          "fear_score": -1.9189465506853323,
+          "joint_correct": true,
+          "pred_fear": "low",
+          "pred_relationship": "friendly",
+          "quadrant": "friendly_low",
+          "relationship_score": 30.632456571941834
+        },
+        {
+          "fear_score": 1.9189465506853323,
+          "joint_correct": false,
+          "pred_fear": "low",
+          "pred_relationship": "friendly",
+          "quadrant": "friendly_high",
+          "relationship_score": 30.632456571941834
+        },
+        {
+          "fear_score": -1.9189465506853323,
+          "joint_correct": false,
+          "pred_fear": "low",
+          "pred_relationship": "friendly",
+          "quadrant": "hostile_low",
+          "relationship_score": 25.116800931330186
+        },
+        {
+          "fear_score": 1.9189465506853323,
+          "joint_correct": false,
+          "pred_fear": "low",
+          "pred_relationship": "friendly",
+          "quadrant": "hostile_high",
+          "relationship_score": 25.116800931330186
+        }
+      ]
+    },
+    "3": {
+      "all_four_joint_correct": false,
+      "rows": [
+        {
+          "fear_score": -2.028086835473895,
+          "joint_correct": true,
+          "pred_fear": "low",
+          "pred_relationship": "friendly",
+          "quadrant": "friendly_low",
+          "relationship_score": 30.632456571941834
+        },
+        {
+          "fear_score": 2.028086835473895,
+          "joint_correct": false,
+          "pred_fear": "low",
+          "pred_relationship": "friendly",
+          "quadrant": "friendly_high",
+          "relationship_score": 30.632456571941834
+        },
+        {
+          "fear_score": -2.028086835473895,
+          "joint_correct": false,
+          "pred_fear": "low",
+          "pred_relationship": "friendly",
+          "quadrant": "hostile_low",
+          "relationship_score": 25.116800931330186
+        },
+        {
+          "fear_score": 2.028086835473895,
+          "joint_correct": false,
+          "pred_fear": "low",
+          "pred_relationship": "friendly",
+          "quadrant": "hostile_high",
+          "relationship_score": 25.116800931330186
+        }
+      ]
+    }
+  },
+  "winner_gate": null
+}

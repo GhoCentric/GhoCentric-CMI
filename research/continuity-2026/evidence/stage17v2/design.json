@@ -1,0 +1,61 @@
+{
+  "baseline_prediction_used_for_generation": false,
+  "baseline_prediction_used_for_selection": false,
+  "baseline_refitting": false,
+  "candidate_order": [
+    "L0_one_scalar",
+    "L1_last_salient",
+    "L2_dual_trace"
+  ],
+  "frozen_fits": {
+    "L0_one_scalar": {
+      "complexity_rank": 0,
+      "params": {
+        "clock": "global",
+        "decay": 0.995,
+        "positive_weight": 0.5
+      },
+      "stage16_all32_correct": 30,
+      "stage16_loocv_correct": 29,
+      "threshold": 20.44000979301388
+    },
+    "L1_last_salient": {
+      "complexity_rank": 1,
+      "params": {
+        "clock": "channel",
+        "decay": 1.0,
+        "last_weight": 8.0,
+        "positive_weight": 1.0
+      },
+      "stage16_all32_correct": 30,
+      "stage16_loocv_correct": 30,
+      "threshold": 72.5
+    },
+    "L2_dual_trace": {
+      "complexity_rank": 2,
+      "params": {
+        "betrayal_decay": 0.995,
+        "clock": "global",
+        "help_decay": 0.995,
+        "positive_weight": 0.5
+      },
+      "stage16_all32_correct": 30,
+      "stage16_loocv_correct": 29,
+      "threshold": 20.440009793013882
+    }
+  },
+  "ghost_version": "1.12.0",
+  "interpretive_boundary": "Ghost's relationship state is the benchmark reference, not objective psychological truth. The v2 repair addresses only the v1 failure to generate both reference classes. Since no v1 baseline predictions were ever produced, Stage-16 compact parameters remain prospectively frozen.",
+  "per_relationship_state": 16,
+  "pool_per_stratum": 512,
+  "primary_compact_challenger": "L1_last_salient",
+  "primary_endpoint": "exact relationship-state match to frozen Ghost state",
+  "restart_parity_required": true,
+  "seed": 20260928171,
+  "selection_rule": "Generate both fixed-seed strata without evaluating any compact baseline. Run Ghost to obtain reference labels. Pool all friendly and all hostile cases across strata, sort each label by a SHA-256 selection key over the raw history, and take the first N from each label.",
+  "source_stage16": "/storage/emulated/0/Download/ghost_cmi_llm_continuity_stage16_20260928_211456",
+  "stage": "CMI_STAGE17V2_PROSPECTIVE_THIRD_FAMILY_HOLDOUT",
+  "v1_failure_boundary": "Stage-17 v1 generated 768/768 hostile cases and aborted before any compact baseline was scored. Therefore v1 produced no baseline performance result and revealed only a generator support failure.",
+  "v2_generator_repair": "Two predeclared count-spectrum strata broaden social evidence support: low-betrayal/high-help and high-betrayal/lower-help. Histories still vary in length, social density, burst placement, burst order, and interleaved emotional records.",
+  "winner_gate": null
+}

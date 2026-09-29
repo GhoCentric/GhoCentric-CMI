@@ -1,0 +1,31 @@
+{
+  "baseline_family": "Single-scalar supervised leaky integrator per dimension with clock, decay, positive/negative impulse ratio, and one threshold.",
+  "grid": {
+    "clocks": [
+      "channel",
+      "global"
+    ],
+    "decays": [
+      0.8,
+      0.9,
+      0.95,
+      0.97,
+      0.98,
+      0.99,
+      0.995,
+      1.0
+    ],
+    "positive_weights": [
+      0.5,
+      1.0,
+      2.0,
+      4.0
+    ],
+    "triples_per_dimension": 64
+  },
+  "source_stage6": "/storage/emulated/0/Download/ghost_cmi_llm_continuity_stage6_20260928_170219",
+  "stage": "CMI_STAGE13_SIMPLE_DETERMINISTIC_REDUCER_CHALLENGE",
+  "training_protocol": "leave-one-history-out; held-out target never used to fit its fold",
+  "upper_bound_protocol": "fit all 16 to measure representational capacity of baseline family",
+  "winner_gate": null
+}

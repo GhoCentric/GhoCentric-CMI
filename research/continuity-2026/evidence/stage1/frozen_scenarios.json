@@ -1,0 +1,1906 @@
+[
+  {
+    "construction_attempts": [
+      {
+        "depth": 4,
+        "negative_action": "REFUSE",
+        "negative_state": "hostile",
+        "negative_trust": -2.270097838509739,
+        "positive_action": "HELP",
+        "positive_state": "friendly",
+        "positive_trust": 0.555430846853943
+      }
+    ],
+    "negative": {
+      "deep_count": 4,
+      "events": [
+        {
+          "intensity": 1.0,
+          "type": "betrayal"
+        },
+        {
+          "intensity": 1.0,
+          "type": "betrayal"
+        },
+        {
+          "intensity": 1.0,
+          "type": "betrayal"
+        },
+        {
+          "intensity": 1.0,
+          "type": "betrayal"
+        },
+        {
+          "intensity": 1.0,
+          "type": "greet"
+        },
+        {
+          "intensity": 1.0,
+          "type": "neutral"
+        },
+        {
+          "intensity": 1.0,
+          "type": "neutral"
+        },
+        {
+          "intensity": 1.0,
+          "type": "neutral"
+        },
+        {
+          "intensity": 1.0,
+          "type": "greet"
+        },
+        {
+          "intensity": 1.0,
+          "type": "cooperate"
+        },
+        {
+          "intensity": 1.0,
+          "type": "greet"
+        },
+        {
+          "intensity": 1.0,
+          "type": "disengage"
+        }
+      ],
+      "expected_action": "REFUSE",
+      "relationship": {
+        "diagnostics": {
+          "abs_delta": 0.010000000000000231,
+          "base_amount": 0.01,
+          "channel": "pos",
+          "delta": 0.010000000000000231,
+          "direction": "positive",
+          "effective_gain": 0.01,
+          "event": "disengage",
+          "event_maturity_modifier": 0.89,
+          "from_state": "hostile",
+          "high_severity_shock": false,
+          "maturity": 0.10999999999999999,
+          "maturity_modifier": 0.89,
+          "near_break": false,
+          "negative_volatility": 1.0,
+          "positive_volatility": 1.0,
+          "pressure": "minor_positive_shift",
+          "recent_event_magnitude": 0.114688249856,
+          "relative_shock": false,
+          "severity": 0.010000000000000231,
+          "shock_applied": false,
+          "shock_multiplier": 1.0,
+          "stability_breach": 0.0,
+          "to_state": "hostile",
+          "transition": null,
+          "trigger": null,
+          "trust_after": -2.270097838509739,
+          "trust_before": -2.280097838509739,
+          "volatility": 1.0
+        },
+        "maturity": 0.11999999999999998,
+        "negative_volatility": 1.0,
+        "positive_volatility": 1.0,
+        "state": "hostile",
+        "transition": null,
+        "trigger": null,
+        "trust": -2.270097838509739,
+        "volatility": 1.0
+      },
+      "snapshot_sha256": "61f3d0872ac84e324aef87747348b0fc974415d1404aae89a5ee6439a71d6250"
+    },
+    "pair_id": 0,
+    "positive": {
+      "deep_count": 4,
+      "events": [
+        {
+          "intensity": 1.0,
+          "type": "help"
+        },
+        {
+          "intensity": 1.0,
+          "type": "help"
+        },
+        {
+          "intensity": 1.0,
+          "type": "help"
+        },
+        {
+          "intensity": 1.0,
+          "type": "help"
+        },
+        {
+          "intensity": 1.0,
+          "type": "greet"
+        },
+        {
+          "intensity": 1.0,
+          "type": "neutral"
+        },
+        {
+          "intensity": 1.0,
+          "type": "neutral"
+        },
+        {
+          "intensity": 1.0,
+          "type": "neutral"
+        },
+        {
+          "intensity": 1.0,
+          "type": "greet"
+        },
+        {
+          "intensity": 1.0,
+          "type": "cooperate"
+        },
+        {
+          "intensity": 1.0,
+          "type": "greet"
+        },
+        {
+          "intensity": 1.0,
+          "type": "disengage"
+        }
+      ],
+      "expected_action": "HELP",
+      "relationship": {
+        "diagnostics": {
+          "abs_delta": 0.010000000000000009,
+          "base_amount": 0.01,
+          "channel": "pos",
+          "delta": 0.010000000000000009,
+          "direction": "positive",
+          "effective_gain": 0.01,
+          "event": "disengage",
+          "event_maturity_modifier": 0.89,
+          "from_state": "friendly",
+          "high_severity_shock": false,
+          "maturity": 0.10999999999999999,
+          "maturity_modifier": 0.89,
+          "near_break": false,
+          "negative_volatility": 1.0,
+          "positive_volatility": 1.0,
+          "pressure": "minor_positive_shift",
+          "recent_event_magnitude": 0.0428750544896,
+          "relative_shock": false,
+          "severity": 0.010000000000000009,
+          "shock_applied": false,
+          "shock_multiplier": 1.0,
+          "stability_breach": 0.0,
+          "to_state": "friendly",
+          "transition": null,
+          "trigger": null,
+          "trust_after": 0.555430846853943,
+          "trust_before": 0.5454308468539429,
+          "volatility": 1.0
+        },
+        "maturity": 0.11999999999999998,
+        "negative_volatility": 1.0,
+        "positive_volatility": 1.0,
+        "state": "friendly",
+        "transition": null,
+        "trigger": null,
+        "trust": 0.555430846853943,
+        "volatility": 1.0
+      },
+      "snapshot_sha256": "3a674fba7f287aa23899175313b0c311811c4504c9114f7d5d511b15f0ab4e86"
+    },
+    "tail": [
+      {
+        "intensity": 1.0,
+        "type": "greet"
+      },
+      {
+        "intensity": 1.0,
+        "type": "neutral"
+      },
+      {
+        "intensity": 1.0,
+        "type": "neutral"
+      },
+      {
+        "intensity": 1.0,
+        "type": "neutral"
+      },
+      {
+        "intensity": 1.0,
+        "type": "greet"
+      },
+      {
+        "intensity": 1.0,
+        "type": "cooperate"
+      },
+      {
+        "intensity": 1.0,
+        "type": "greet"
+      },
+      {
+        "intensity": 1.0,
+        "type": "disengage"
+      }
+    ]
+  },
+  {
+    "construction_attempts": [
+      {
+        "depth": 4,
+        "negative_action": "REFUSE",
+        "negative_state": "hostile",
+        "negative_trust": -2.271581064325694,
+        "positive_action": "HELP",
+        "positive_state": "friendly",
+        "positive_trust": 0.5528335871915879
+      }
+    ],
+    "negative": {
+      "deep_count": 4,
+      "events": [
+        {
+          "intensity": 1.0,
+          "type": "betrayal"
+        },
+        {
+          "intensity": 1.0,
+          "type": "betrayal"
+        },
+        {
+          "intensity": 1.0,
+          "type": "betrayal"
+        },
+        {
+          "intensity": 1.0,
+          "type": "betrayal"
+        },
+        {
+          "intensity": 1.0,
+          "type": "cooperate"
+        },
+        {
+          "intensity": 1.0,
+          "type": "neutral"
+        },
+        {
+          "intensity": 1.0,
+          "type": "greet"
+        },
+        {
+          "intensity": 1.0,
+          "type": "disengage"
+        },
+        {
+          "intensity": 1.0,
+          "type": "neutral"
+        },
+        {
+          "intensity": 1.0,
+          "type": "greet"
+        },
+        {
+          "intensity": 1.0,
+          "type": "greet"
+        },
+        {
+          "intensity": 1.0,
+          "type": "neutral"
+        }
+      ],
+      "expected_action": "REFUSE",
+      "relationship": {
+        "diagnostics": {
+          "abs_delta": 0.0,
+          "base_amount": 0.0,
+          "channel": "pos",
+          "delta": 0.0,
+          "direction": "stable",
+          "effective_gain": 0.0,
+          "event": "neutral",
+          "event_maturity_modifier": 0.89,
+          "from_state": "hostile",
+          "high_severity_shock": false,
+          "maturity": 0.10999999999999999,
+          "maturity_modifier": 0.89,
+          "near_break": false,
+          "negative_volatility": 1.0,
+          "positive_volatility": 1.0,
+          "pressure": "stable",
+          "recent_event_magnitude": 0.10956620185600001,
+          "relative_shock": false,
+          "severity": 0.0,
+          "shock_applied": false,
+          "shock_multiplier": 1.0,
+          "stability_breach": 0.0,
+          "to_state": "hostile",
+          "transition": null,
+          "trigger": null,
+          "trust_after": -2.271581064325694,
+          "trust_before": -2.271581064325694,
+          "volatility": 1.0
+        },
+        "maturity": 0.11999999999999998,
+        "negative_volatility": 1.0,
+        "positive_volatility": 1.0,
+        "state": "hostile",
+        "transition": null,
+        "trigger": null,
+        "trust": -2.271581064325694,
+        "volatility": 1.0
+      },
+      "snapshot_sha256": "d19c891366c1ab94a7a549715a69943d30cae9e6c860a4ffcfd2405871dc9a3f"
+    },
+    "pair_id": 1,
+    "positive": {
+      "deep_count": 4,
+      "events": [
+        {
+          "intensity": 1.0,
+          "type": "help"
+        },
+        {
+          "intensity": 1.0,
+          "type": "help"
+        },
+        {
+          "intensity": 1.0,
+          "type": "help"
+        },
+        {
+          "intensity": 1.0,
+          "type": "help"
+        },
+        {
+          "intensity": 1.0,
+          "type": "cooperate"
+        },
+        {
+          "intensity": 1.0,
+          "type": "neutral"
+        },
+        {
+          "intensity": 1.0,
+          "type": "greet"
+        },
+        {
+          "intensity": 1.0,
+          "type": "disengage"
+        },
+        {
+          "intensity": 1.0,
+          "type": "neutral"
+        },
+        {
+          "intensity": 1.0,
+          "type": "greet"
+        },
+        {
+          "intensity": 1.0,
+          "type": "greet"
+        },
+        {
+          "intensity": 1.0,
+          "type": "neutral"
+        }
+      ],
+      "expected_action": "HELP",
+      "relationship": {
+        "diagnostics": {
+          "abs_delta": 0.0,
+          "base_amount": 0.0,
+          "channel": "pos",
+          "delta": 0.0,
+          "direction": "stable",
+          "effective_gain": 0.0,
+          "event": "neutral",
+          "event_maturity_modifier": 0.89,
+          "from_state": "friendly",
+          "high_severity_shock": false,
+          "maturity": 0.10999999999999999,
+          "maturity_modifier": 0.89,
+          "near_break": false,
+          "negative_volatility": 1.0,
+          "positive_volatility": 1.0,
+          "pressure": "stable",
+          "recent_event_magnitude": 0.037753006489600005,
+          "relative_shock": false,
+          "severity": 0.0,
+          "shock_applied": false,
+          "shock_multiplier": 1.0,
+          "stability_breach": 0.0,
+          "to_state": "friendly",
+          "transition": null,
+          "trigger": null,
+          "trust_after": 0.5528335871915879,
+          "trust_before": 0.5528335871915879,
+          "volatility": 1.0
+        },
+        "maturity": 0.11999999999999998,
+        "negative_volatility": 1.0,
+        "positive_volatility": 1.0,
+        "state": "friendly",
+        "transition": null,
+        "trigger": null,
+        "trust": 0.5528335871915879,
+        "volatility": 1.0
+      },
+      "snapshot_sha256": "a3c615d0ccb0bcd96b8b1ddb43cb4648b176f090956f256b36ec5fe73f022650"
+    },
+    "tail": [
+      {
+        "intensity": 1.0,
+        "type": "cooperate"
+      },
+      {
+        "intensity": 1.0,
+        "type": "neutral"
+      },
+      {
+        "intensity": 1.0,
+        "type": "greet"
+      },
+      {
+        "intensity": 1.0,
+        "type": "disengage"
+      },
+      {
+        "intensity": 1.0,
+        "type": "neutral"
+      },
+      {
+        "intensity": 1.0,
+        "type": "greet"
+      },
+      {
+        "intensity": 1.0,
+        "type": "greet"
+      },
+      {
+        "intensity": 1.0,
+        "type": "neutral"
+      }
+    ]
+  },
+  {
+    "construction_attempts": [
+      {
+        "depth": 4,
+        "negative_action": "REFUSE",
+        "negative_state": "hostile",
+        "negative_trust": -2.2693725629792247,
+        "positive_action": "HELP",
+        "positive_state": "friendly",
+        "positive_trust": 0.5565985631036439
+      }
+    ],
+    "negative": {
+      "deep_count": 4,
+      "events": [
+        {
+          "intensity": 1.0,
+          "type": "betrayal"
+        },
+        {
+          "intensity": 1.0,
+          "type": "betrayal"
+        },
+        {
+          "intensity": 1.0,
+          "type": "betrayal"
+        },
+        {
+          "intensity": 1.0,
+          "type": "betrayal"
+        },
+        {
+          "intensity": 1.0,
+          "type": "greet"
+        },
+        {
+          "intensity": 1.0,
+          "type": "greet"
+        },
+        {
+          "intensity": 1.0,
+          "type": "cooperate"
+        },
+        {
+          "intensity": 1.0,
+          "type": "neutral"
+        },
+        {
+          "intensity": 1.0,
+          "type": "neutral"
+        },
+        {
+          "intensity": 1.0,
+          "type": "greet"
+        },
+        {
+          "intensity": 1.0,
+          "type": "disengage"
+        },
+        {
+          "intensity": 1.0,
+          "type": "neutral"
+        }
+      ],
+      "expected_action": "REFUSE",
+      "relationship": {
+        "diagnostics": {
+          "abs_delta": 0.0,
+          "base_amount": 0.0,
+          "channel": "pos",
+          "delta": 0.0,
+          "direction": "stable",
+          "effective_gain": 0.0,
+          "event": "neutral",
+          "event_maturity_modifier": 0.89,
+          "from_state": "hostile",
+          "high_severity_shock": false,
+          "maturity": 0.10999999999999999,
+          "maturity_modifier": 0.89,
+          "near_break": false,
+          "negative_volatility": 1.0,
+          "positive_volatility": 1.0,
+          "pressure": "stable",
+          "recent_event_magnitude": 0.10634328985600001,
+          "relative_shock": false,
+          "severity": 0.0,
+          "shock_applied": false,
+          "shock_multiplier": 1.0,
+          "stability_breach": 0.0,
+          "to_state": "hostile",
+          "transition": null,
+          "trigger": null,
+          "trust_after": -2.2693725629792247,
+          "trust_before": -2.2693725629792247,
+          "volatility": 1.0
+        },
+        "maturity": 0.11999999999999998,
+        "negative_volatility": 1.0,
+        "positive_volatility": 1.0,
+        "state": "hostile",
+        "transition": null,
+        "trigger": null,
+        "trust": -2.2693725629792247,
+        "volatility": 1.0
+      },
+      "snapshot_sha256": "c6bdda25a6c7e1a01d368cc8cc80179662d5b80b488fcd84d9ccba39dd407b9b"
+    },
+    "pair_id": 2,
+    "positive": {
+      "deep_count": 4,
+      "events": [
+        {
+          "intensity": 1.0,
+          "type": "help"
+        },
+        {
+          "intensity": 1.0,
+          "type": "help"
+        },
+        {
+          "intensity": 1.0,
+          "type": "help"
+        },
+        {
+          "intensity": 1.0,
+          "type": "help"
+        },
+        {
+          "intensity": 1.0,
+          "type": "greet"
+        },
+        {
+          "intensity": 1.0,
+          "type": "greet"
+        },
+        {
+          "intensity": 1.0,
+          "type": "cooperate"
+        },
+        {
+          "intensity": 1.0,
+          "type": "neutral"
+        },
+        {
+          "intensity": 1.0,
+          "type": "neutral"
+        },
+        {
+          "intensity": 1.0,
+          "type": "greet"
+        },
+        {
+          "intensity": 1.0,
+          "type": "disengage"
+        },
+        {
+          "intensity": 1.0,
+          "type": "neutral"
+        }
+      ],
+      "expected_action": "HELP",
+      "relationship": {
+        "diagnostics": {
+          "abs_delta": 0.0,
+          "base_amount": 0.0,
+          "channel": "pos",
+          "delta": 0.0,
+          "direction": "stable",
+          "effective_gain": 0.0,
+          "event": "neutral",
+          "event_maturity_modifier": 0.89,
+          "from_state": "friendly",
+          "high_severity_shock": false,
+          "maturity": 0.10999999999999999,
+          "maturity_modifier": 0.89,
+          "near_break": false,
+          "negative_volatility": 1.0,
+          "positive_volatility": 1.0,
+          "pressure": "stable",
+          "recent_event_magnitude": 0.034530094489600004,
+          "relative_shock": false,
+          "severity": 0.0,
+          "shock_applied": false,
+          "shock_multiplier": 1.0,
+          "stability_breach": 0.0,
+          "to_state": "friendly",
+          "transition": null,
+          "trigger": null,
+          "trust_after": 0.5565985631036439,
+          "trust_before": 0.5565985631036439,
+          "volatility": 1.0
+        },
+        "maturity": 0.11999999999999998,
+        "negative_volatility": 1.0,
+        "positive_volatility": 1.0,
+        "state": "friendly",
+        "transition": null,
+        "trigger": null,
+        "trust": 0.5565985631036439,
+        "volatility": 1.0
+      },
+      "snapshot_sha256": "5d4a71dcff5c08abd0f3041e95004775535e919fa71c8ad0ae2a3530ba586987"
+    },
+    "tail": [
+      {
+        "intensity": 1.0,
+        "type": "greet"
+      },
+      {
+        "intensity": 1.0,
+        "type": "greet"
+      },
+      {
+        "intensity": 1.0,
+        "type": "cooperate"
+      },
+      {
+        "intensity": 1.0,
+        "type": "neutral"
+      },
+      {
+        "intensity": 1.0,
+        "type": "neutral"
+      },
+      {
+        "intensity": 1.0,
+        "type": "greet"
+      },
+      {
+        "intensity": 1.0,
+        "type": "disengage"
+      },
+      {
+        "intensity": 1.0,
+        "type": "neutral"
+      }
+    ]
+  },
+  {
+    "construction_attempts": [
+      {
+        "depth": 4,
+        "negative_action": "REFUSE",
+        "negative_state": "hostile",
+        "negative_trust": -2.2705637875090487,
+        "positive_action": "HELP",
+        "positive_state": "friendly",
+        "positive_trust": 0.5545751100275261
+      }
+    ],
+    "negative": {
+      "deep_count": 4,
+      "events": [
+        {
+          "intensity": 1.0,
+          "type": "betrayal"
+        },
+        {
+          "intensity": 1.0,
+          "type": "betrayal"
+        },
+        {
+          "intensity": 1.0,
+          "type": "betrayal"
+        },
+        {
+          "intensity": 1.0,
+          "type": "betrayal"
+        },
+        {
+          "intensity": 1.0,
+          "type": "greet"
+        },
+        {
+          "intensity": 1.0,
+          "type": "cooperate"
+        },
+        {
+          "intensity": 1.0,
+          "type": "neutral"
+        },
+        {
+          "intensity": 1.0,
+          "type": "greet"
+        },
+        {
+          "intensity": 1.0,
+          "type": "neutral"
+        },
+        {
+          "intensity": 1.0,
+          "type": "neutral"
+        },
+        {
+          "intensity": 1.0,
+          "type": "disengage"
+        },
+        {
+          "intensity": 1.0,
+          "type": "greet"
+        }
+      ],
+      "expected_action": "REFUSE",
+      "relationship": {
+        "diagnostics": {
+          "abs_delta": 0.01578439605760229,
+          "base_amount": 0.04,
+          "channel": "pos",
+          "delta": 0.01578439605760229,
+          "direction": "positive",
+          "effective_gain": 0.015784396057602266,
+          "event": "greet",
+          "event_maturity_modifier": 0.89,
+          "from_state": "hostile",
+          "high_severity_shock": false,
+          "maturity": 0.10999999999999999,
+          "maturity_modifier": 0.89,
+          "near_break": false,
+          "negative_volatility": 1.0,
+          "positive_volatility": 1.0,
+          "pressure": "minor_positive_shift",
+          "recent_event_magnitude": 0.10010712985600001,
+          "relative_shock": false,
+          "severity": 0.01578439605760229,
+          "shock_applied": false,
+          "shock_multiplier": 1.0,
+          "stability_breach": 0.0,
+          "to_state": "hostile",
+          "transition": null,
+          "trigger": null,
+          "trust_after": -2.2705637875090487,
+          "trust_before": -2.286348183566651,
+          "volatility": 1.0
+        },
+        "maturity": 0.11999999999999998,
+        "negative_volatility": 1.0,
+        "positive_volatility": 1.0,
+        "state": "hostile",
+        "transition": null,
+        "trigger": null,
+        "trust": -2.2705637875090487,
+        "volatility": 1.0
+      },
+      "snapshot_sha256": "831741ad785ee097fe38531bd9647145abd88ddaebadfb3b62ff052efa029704"
+    },
+    "pair_id": 3,
+    "positive": {
+      "deep_count": 4,
+      "events": [
+        {
+          "intensity": 1.0,
+          "type": "help"
+        },
+        {
+          "intensity": 1.0,
+          "type": "help"
+        },
+        {
+          "intensity": 1.0,
+          "type": "help"
+        },
+        {
+          "intensity": 1.0,
+          "type": "help"
+        },
+        {
+          "intensity": 1.0,
+          "type": "greet"
+        },
+        {
+          "intensity": 1.0,
+          "type": "cooperate"
+        },
+        {
+          "intensity": 1.0,
+          "type": "neutral"
+        },
+        {
+          "intensity": 1.0,
+          "type": "greet"
+        },
+        {
+          "intensity": 1.0,
+          "type": "neutral"
+        },
+        {
+          "intensity": 1.0,
+          "type": "neutral"
+        },
+        {
+          "intensity": 1.0,
+          "type": "disengage"
+        },
+        {
+          "intensity": 1.0,
+          "type": "greet"
+        }
+      ],
+      "expected_action": "HELP",
+      "relationship": {
+        "diagnostics": {
+          "abs_delta": 0.02533234272660745,
+          "base_amount": 0.04,
+          "channel": "pos",
+          "delta": 0.02533234272660745,
+          "direction": "positive",
+          "effective_gain": 0.025332342726607445,
+          "event": "greet",
+          "event_maturity_modifier": 0.89,
+          "from_state": "friendly",
+          "high_severity_shock": false,
+          "maturity": 0.10999999999999999,
+          "maturity_modifier": 0.89,
+          "near_break": false,
+          "negative_volatility": 1.0,
+          "positive_volatility": 1.0,
+          "pressure": "minor_positive_shift",
+          "recent_event_magnitude": 0.028293934489600003,
+          "relative_shock": false,
+          "severity": 0.02533234272660745,
+          "shock_applied": false,
+          "shock_multiplier": 1.0,
+          "stability_breach": 0.0,
+          "to_state": "friendly",
+          "transition": null,
+          "trigger": null,
+          "trust_after": 0.5545751100275261,
+          "trust_before": 0.5292427673009187,
+          "volatility": 1.0
+        },
+        "maturity": 0.11999999999999998,
+        "negative_volatility": 1.0,
+        "positive_volatility": 1.0,
+        "state": "friendly",
+        "transition": null,
+        "trigger": null,
+        "trust": 0.5545751100275261,
+        "volatility": 1.0
+      },
+      "snapshot_sha256": "4c9ba689f9782d3a4f414013ef847571646b8303b2ec06888409e33c9fb5d634"
+    },
+    "tail": [
+      {
+        "intensity": 1.0,
+        "type": "greet"
+      },
+      {
+        "intensity": 1.0,
+        "type": "cooperate"
+      },
+      {
+        "intensity": 1.0,
+        "type": "neutral"
+      },
+      {
+        "intensity": 1.0,
+        "type": "greet"
+      },
+      {
+        "intensity": 1.0,
+        "type": "neutral"
+      },
+      {
+        "intensity": 1.0,
+        "type": "neutral"
+      },
+      {
+        "intensity": 1.0,
+        "type": "disengage"
+      },
+      {
+        "intensity": 1.0,
+        "type": "greet"
+      }
+    ]
+  },
+  {
+    "construction_attempts": [
+      {
+        "depth": 4,
+        "negative_action": "REFUSE",
+        "negative_state": "hostile",
+        "negative_trust": -2.2700282045787974,
+        "positive_action": "HELP",
+        "positive_state": "friendly",
+        "positive_trust": 0.5556027741469232
+      }
+    ],
+    "negative": {
+      "deep_count": 4,
+      "events": [
+        {
+          "intensity": 1.0,
+          "type": "betrayal"
+        },
+        {
+          "intensity": 1.0,
+          "type": "betrayal"
+        },
+        {
+          "intensity": 1.0,
+          "type": "betrayal"
+        },
+        {
+          "intensity": 1.0,
+          "type": "betrayal"
+        },
+        {
+          "intensity": 1.0,
+          "type": "disengage"
+        },
+        {
+          "intensity": 1.0,
+          "type": "neutral"
+        },
+        {
+          "intensity": 1.0,
+          "type": "greet"
+        },
+        {
+          "intensity": 1.0,
+          "type": "neutral"
+        },
+        {
+          "intensity": 1.0,
+          "type": "greet"
+        },
+        {
+          "intensity": 1.0,
+          "type": "greet"
+        },
+        {
+          "intensity": 1.0,
+          "type": "cooperate"
+        },
+        {
+          "intensity": 1.0,
+          "type": "neutral"
+        }
+      ],
+      "expected_action": "REFUSE",
+      "relationship": {
+        "diagnostics": {
+          "abs_delta": 0.0,
+          "base_amount": 0.0,
+          "channel": "pos",
+          "delta": 0.0,
+          "direction": "stable",
+          "effective_gain": 0.0,
+          "event": "neutral",
+          "event_maturity_modifier": 0.89,
+          "from_state": "hostile",
+          "high_severity_shock": false,
+          "maturity": 0.10999999999999999,
+          "maturity_modifier": 0.89,
+          "near_break": false,
+          "negative_volatility": 1.0,
+          "positive_volatility": 1.0,
+          "pressure": "stable",
+          "recent_event_magnitude": 0.117992185856,
+          "relative_shock": false,
+          "severity": 0.0,
+          "shock_applied": false,
+          "shock_multiplier": 1.0,
+          "stability_breach": 0.0,
+          "to_state": "hostile",
+          "transition": null,
+          "trigger": null,
+          "trust_after": -2.2700282045787974,
+          "trust_before": -2.2700282045787974,
+          "volatility": 1.0
+        },
+        "maturity": 0.11999999999999998,
+        "negative_volatility": 1.0,
+        "positive_volatility": 1.0,
+        "state": "hostile",
+        "transition": null,
+        "trigger": null,
+        "trust": -2.2700282045787974,
+        "volatility": 1.0
+      },
+      "snapshot_sha256": "9a5efb09976ea74cc151aa873676d4d915a59611ee63c9aef424054e8171ce40"
+    },
+    "pair_id": 4,
+    "positive": {
+      "deep_count": 4,
+      "events": [
+        {
+          "intensity": 1.0,
+          "type": "help"
+        },
+        {
+          "intensity": 1.0,
+          "type": "help"
+        },
+        {
+          "intensity": 1.0,
+          "type": "help"
+        },
+        {
+          "intensity": 1.0,
+          "type": "help"
+        },
+        {
+          "intensity": 1.0,
+          "type": "disengage"
+        },
+        {
+          "intensity": 1.0,
+          "type": "neutral"
+        },
+        {
+          "intensity": 1.0,
+          "type": "greet"
+        },
+        {
+          "intensity": 1.0,
+          "type": "neutral"
+        },
+        {
+          "intensity": 1.0,
+          "type": "greet"
+        },
+        {
+          "intensity": 1.0,
+          "type": "greet"
+        },
+        {
+          "intensity": 1.0,
+          "type": "cooperate"
+        },
+        {
+          "intensity": 1.0,
+          "type": "neutral"
+        }
+      ],
+      "expected_action": "HELP",
+      "relationship": {
+        "diagnostics": {
+          "abs_delta": 0.0,
+          "base_amount": 0.0,
+          "channel": "pos",
+          "delta": 0.0,
+          "direction": "stable",
+          "effective_gain": 0.0,
+          "event": "neutral",
+          "event_maturity_modifier": 0.89,
+          "from_state": "friendly",
+          "high_severity_shock": false,
+          "maturity": 0.10999999999999999,
+          "maturity_modifier": 0.89,
+          "near_break": false,
+          "negative_volatility": 1.0,
+          "positive_volatility": 1.0,
+          "pressure": "stable",
+          "recent_event_magnitude": 0.0461789904896,
+          "relative_shock": false,
+          "severity": 0.0,
+          "shock_applied": false,
+          "shock_multiplier": 1.0,
+          "stability_breach": 0.0,
+          "to_state": "friendly",
+          "transition": null,
+          "trigger": null,
+          "trust_after": 0.5556027741469232,
+          "trust_before": 0.5556027741469232,
+          "volatility": 1.0
+        },
+        "maturity": 0.11999999999999998,
+        "negative_volatility": 1.0,
+        "positive_volatility": 1.0,
+        "state": "friendly",
+        "transition": null,
+        "trigger": null,
+        "trust": 0.5556027741469232,
+        "volatility": 1.0
+      },
+      "snapshot_sha256": "d4ad2cabfce1cf956721d73819271438305be0c94a33aef2dfd46b49a83649c9"
+    },
+    "tail": [
+      {
+        "intensity": 1.0,
+        "type": "disengage"
+      },
+      {
+        "intensity": 1.0,
+        "type": "neutral"
+      },
+      {
+        "intensity": 1.0,
+        "type": "greet"
+      },
+      {
+        "intensity": 1.0,
+        "type": "neutral"
+      },
+      {
+        "intensity": 1.0,
+        "type": "greet"
+      },
+      {
+        "intensity": 1.0,
+        "type": "greet"
+      },
+      {
+        "intensity": 1.0,
+        "type": "cooperate"
+      },
+      {
+        "intensity": 1.0,
+        "type": "neutral"
+      }
+    ]
+  },
+  {
+    "construction_attempts": [
+      {
+        "depth": 4,
+        "negative_action": "REFUSE",
+        "negative_state": "hostile",
+        "negative_trust": -2.269506920907123,
+        "positive_action": "HELP",
+        "positive_state": "friendly",
+        "positive_trust": 0.5564778892890886
+      }
+    ],
+    "negative": {
+      "deep_count": 4,
+      "events": [
+        {
+          "intensity": 1.0,
+          "type": "betrayal"
+        },
+        {
+          "intensity": 1.0,
+          "type": "betrayal"
+        },
+        {
+          "intensity": 1.0,
+          "type": "betrayal"
+        },
+        {
+          "intensity": 1.0,
+          "type": "betrayal"
+        },
+        {
+          "intensity": 1.0,
+          "type": "neutral"
+        },
+        {
+          "intensity": 1.0,
+          "type": "neutral"
+        },
+        {
+          "intensity": 1.0,
+          "type": "greet"
+        },
+        {
+          "intensity": 1.0,
+          "type": "greet"
+        },
+        {
+          "intensity": 1.0,
+          "type": "greet"
+        },
+        {
+          "intensity": 1.0,
+          "type": "cooperate"
+        },
+        {
+          "intensity": 1.0,
+          "type": "disengage"
+        },
+        {
+          "intensity": 1.0,
+          "type": "neutral"
+        }
+      ],
+      "expected_action": "REFUSE",
+      "relationship": {
+        "diagnostics": {
+          "abs_delta": 0.0,
+          "base_amount": 0.0,
+          "channel": "pos",
+          "delta": 0.0,
+          "direction": "stable",
+          "effective_gain": 0.0,
+          "event": "neutral",
+          "event_maturity_modifier": 0.89,
+          "from_state": "hostile",
+          "high_severity_shock": false,
+          "maturity": 0.10999999999999999,
+          "maturity_modifier": 0.89,
+          "near_break": false,
+          "negative_volatility": 1.0,
+          "positive_volatility": 1.0,
+          "pressure": "stable",
+          "recent_event_magnitude": 0.11396389785600002,
+          "relative_shock": false,
+          "severity": 0.0,
+          "shock_applied": false,
+          "shock_multiplier": 1.0,
+          "stability_breach": 0.0,
+          "to_state": "hostile",
+          "transition": null,
+          "trigger": null,
+          "trust_after": -2.269506920907123,
+          "trust_before": -2.269506920907123,
+          "volatility": 1.0
+        },
+        "maturity": 0.11999999999999998,
+        "negative_volatility": 1.0,
+        "positive_volatility": 1.0,
+        "state": "hostile",
+        "transition": null,
+        "trigger": null,
+        "trust": -2.269506920907123,
+        "volatility": 1.0
+      },
+      "snapshot_sha256": "1c6570f1ce9edca82c196954c12c2b5f6cf0d0e696f75ac51955743a55a57a65"
+    },
+    "pair_id": 5,
+    "positive": {
+      "deep_count": 4,
+      "events": [
+        {
+          "intensity": 1.0,
+          "type": "help"
+        },
+        {
+          "intensity": 1.0,
+          "type": "help"
+        },
+        {
+          "intensity": 1.0,
+          "type": "help"
+        },
+        {
+          "intensity": 1.0,
+          "type": "help"
+        },
+        {
+          "intensity": 1.0,
+          "type": "neutral"
+        },
+        {
+          "intensity": 1.0,
+          "type": "neutral"
+        },
+        {
+          "intensity": 1.0,
+          "type": "greet"
+        },
+        {
+          "intensity": 1.0,
+          "type": "greet"
+        },
+        {
+          "intensity": 1.0,
+          "type": "greet"
+        },
+        {
+          "intensity": 1.0,
+          "type": "cooperate"
+        },
+        {
+          "intensity": 1.0,
+          "type": "disengage"
+        },
+        {
+          "intensity": 1.0,
+          "type": "neutral"
+        }
+      ],
+      "expected_action": "HELP",
+      "relationship": {
+        "diagnostics": {
+          "abs_delta": 0.0,
+          "base_amount": 0.0,
+          "channel": "pos",
+          "delta": 0.0,
+          "direction": "stable",
+          "effective_gain": 0.0,
+          "event": "neutral",
+          "event_maturity_modifier": 0.89,
+          "from_state": "friendly",
+          "high_severity_shock": false,
+          "maturity": 0.10999999999999999,
+          "maturity_modifier": 0.89,
+          "near_break": false,
+          "negative_volatility": 1.0,
+          "positive_volatility": 1.0,
+          "pressure": "stable",
+          "recent_event_magnitude": 0.042150702489600005,
+          "relative_shock": false,
+          "severity": 0.0,
+          "shock_applied": false,
+          "shock_multiplier": 1.0,
+          "stability_breach": 0.0,
+          "to_state": "friendly",
+          "transition": null,
+          "trigger": null,
+          "trust_after": 0.5564778892890886,
+          "trust_before": 0.5564778892890886,
+          "volatility": 1.0
+        },
+        "maturity": 0.11999999999999998,
+        "negative_volatility": 1.0,
+        "positive_volatility": 1.0,
+        "state": "friendly",
+        "transition": null,
+        "trigger": null,
+        "trust": 0.5564778892890886,
+        "volatility": 1.0
+      },
+      "snapshot_sha256": "00761b82b5e6618d4c8cfdfb5bb5ba5d58e015f7c22959815fc508eb5b8fcaec"
+    },
+    "tail": [
+      {
+        "intensity": 1.0,
+        "type": "neutral"
+      },
+      {
+        "intensity": 1.0,
+        "type": "neutral"
+      },
+      {
+        "intensity": 1.0,
+        "type": "greet"
+      },
+      {
+        "intensity": 1.0,
+        "type": "greet"
+      },
+      {
+        "intensity": 1.0,
+        "type": "greet"
+      },
+      {
+        "intensity": 1.0,
+        "type": "cooperate"
+      },
+      {
+        "intensity": 1.0,
+        "type": "disengage"
+      },
+      {
+        "intensity": 1.0,
+        "type": "neutral"
+      }
+    ]
+  },
+  {
+    "construction_attempts": [
+      {
+        "depth": 4,
+        "negative_action": "REFUSE",
+        "negative_state": "hostile",
+        "negative_trust": -2.2698370358967246,
+        "positive_action": "HELP",
+        "positive_state": "friendly",
+        "positive_trust": 0.5558274008199746
+      }
+    ],
+    "negative": {
+      "deep_count": 4,
+      "events": [
+        {
+          "intensity": 1.0,
+          "type": "betrayal"
+        },
+        {
+          "intensity": 1.0,
+          "type": "betrayal"
+        },
+        {
+          "intensity": 1.0,
+          "type": "betrayal"
+        },
+        {
+          "intensity": 1.0,
+          "type": "betrayal"
+        },
+        {
+          "intensity": 1.0,
+          "type": "greet"
+        },
+        {
+          "intensity": 1.0,
+          "type": "disengage"
+        },
+        {
+          "intensity": 1.0,
+          "type": "greet"
+        },
+        {
+          "intensity": 1.0,
+          "type": "neutral"
+        },
+        {
+          "intensity": 1.0,
+          "type": "neutral"
+        },
+        {
+          "intensity": 1.0,
+          "type": "cooperate"
+        },
+        {
+          "intensity": 1.0,
+          "type": "greet"
+        },
+        {
+          "intensity": 1.0,
+          "type": "neutral"
+        }
+      ],
+      "expected_action": "REFUSE",
+      "relationship": {
+        "diagnostics": {
+          "abs_delta": 0.0,
+          "base_amount": 0.0,
+          "channel": "pos",
+          "delta": 0.0,
+          "direction": "stable",
+          "effective_gain": 0.0,
+          "event": "neutral",
+          "event_maturity_modifier": 0.89,
+          "from_state": "hostile",
+          "high_severity_shock": false,
+          "maturity": 0.10999999999999999,
+          "maturity_modifier": 0.89,
+          "near_break": false,
+          "negative_volatility": 1.0,
+          "positive_volatility": 1.0,
+          "pressure": "stable",
+          "recent_event_magnitude": 0.113500409856,
+          "relative_shock": false,
+          "severity": 0.0,
+          "shock_applied": false,
+          "shock_multiplier": 1.0,
+          "stability_breach": 0.0,
+          "to_state": "hostile",
+          "transition": null,
+          "trigger": null,
+          "trust_after": -2.2698370358967246,
+          "trust_before": -2.2698370358967246,
+          "volatility": 1.0
+        },
+        "maturity": 0.11999999999999998,
+        "negative_volatility": 1.0,
+        "positive_volatility": 1.0,
+        "state": "hostile",
+        "transition": null,
+        "trigger": null,
+        "trust": -2.2698370358967246,
+        "volatility": 1.0
+      },
+      "snapshot_sha256": "2938d13eb26272558ce855a32c4938165a80e65905a3a1c4a876f3159cf3d2d1"
+    },
+    "pair_id": 6,
+    "positive": {
+      "deep_count": 4,
+      "events": [
+        {
+          "intensity": 1.0,
+          "type": "help"
+        },
+        {
+          "intensity": 1.0,
+          "type": "help"
+        },
+        {
+          "intensity": 1.0,
+          "type": "help"
+        },
+        {
+          "intensity": 1.0,
+          "type": "help"
+        },
+        {
+          "intensity": 1.0,
+          "type": "greet"
+        },
+        {
+          "intensity": 1.0,
+          "type": "disengage"
+        },
+        {
+          "intensity": 1.0,
+          "type": "greet"
+        },
+        {
+          "intensity": 1.0,
+          "type": "neutral"
+        },
+        {
+          "intensity": 1.0,
+          "type": "neutral"
+        },
+        {
+          "intensity": 1.0,
+          "type": "cooperate"
+        },
+        {
+          "intensity": 1.0,
+          "type": "greet"
+        },
+        {
+          "intensity": 1.0,
+          "type": "neutral"
+        }
+      ],
+      "expected_action": "HELP",
+      "relationship": {
+        "diagnostics": {
+          "abs_delta": 0.0,
+          "base_amount": 0.0,
+          "channel": "pos",
+          "delta": 0.0,
+          "direction": "stable",
+          "effective_gain": 0.0,
+          "event": "neutral",
+          "event_maturity_modifier": 0.89,
+          "from_state": "friendly",
+          "high_severity_shock": false,
+          "maturity": 0.10999999999999999,
+          "maturity_modifier": 0.89,
+          "near_break": false,
+          "negative_volatility": 1.0,
+          "positive_volatility": 1.0,
+          "pressure": "stable",
+          "recent_event_magnitude": 0.04168721448960001,
+          "relative_shock": false,
+          "severity": 0.0,
+          "shock_applied": false,
+          "shock_multiplier": 1.0,
+          "stability_breach": 0.0,
+          "to_state": "friendly",
+          "transition": null,
+          "trigger": null,
+          "trust_after": 0.5558274008199746,
+          "trust_before": 0.5558274008199746,
+          "volatility": 1.0
+        },
+        "maturity": 0.11999999999999998,
+        "negative_volatility": 1.0,
+        "positive_volatility": 1.0,
+        "state": "friendly",
+        "transition": null,
+        "trigger": null,
+        "trust": 0.5558274008199746,
+        "volatility": 1.0
+      },
+      "snapshot_sha256": "80eac071d512cae48c527a903452e04e53020c15fb0c25d1f6cca5b07c214945"
+    },
+    "tail": [
+      {
+        "intensity": 1.0,
+        "type": "greet"
+      },
+      {
+        "intensity": 1.0,
+        "type": "disengage"
+      },
+      {
+        "intensity": 1.0,
+        "type": "greet"
+      },
+      {
+        "intensity": 1.0,
+        "type": "neutral"
+      },
+      {
+        "intensity": 1.0,
+        "type": "neutral"
+      },
+      {
+        "intensity": 1.0,
+        "type": "cooperate"
+      },
+      {
+        "intensity": 1.0,
+        "type": "greet"
+      },
+      {
+        "intensity": 1.0,
+        "type": "neutral"
+      }
+    ]
+  },
+  {
+    "construction_attempts": [
+      {
+        "depth": 4,
+        "negative_action": "REFUSE",
+        "negative_state": "hostile",
+        "negative_trust": -2.271566353920216,
+        "positive_action": "HELP",
+        "positive_state": "friendly",
+        "positive_trust": 0.5529393719958774
+      }
+    ],
+    "negative": {
+      "deep_count": 4,
+      "events": [
+        {
+          "intensity": 1.0,
+          "type": "betrayal"
+        },
+        {
+          "intensity": 1.0,
+          "type": "betrayal"
+        },
+        {
+          "intensity": 1.0,
+          "type": "betrayal"
+        },
+        {
+          "intensity": 1.0,
+          "type": "betrayal"
+        },
+        {
+          "intensity": 1.0,
+          "type": "disengage"
+        },
+        {
+          "intensity": 1.0,
+          "type": "neutral"
+        },
+        {
+          "intensity": 1.0,
+          "type": "greet"
+        },
+        {
+          "intensity": 1.0,
+          "type": "neutral"
+        },
+        {
+          "intensity": 1.0,
+          "type": "cooperate"
+        },
+        {
+          "intensity": 1.0,
+          "type": "neutral"
+        },
+        {
+          "intensity": 1.0,
+          "type": "greet"
+        },
+        {
+          "intensity": 1.0,
+          "type": "greet"
+        }
+      ],
+      "expected_action": "REFUSE",
+      "relationship": {
+        "diagnostics": {
+          "abs_delta": 0.015789484651040464,
+          "base_amount": 0.04,
+          "channel": "pos",
+          "delta": 0.015789484651040464,
+          "direction": "positive",
+          "effective_gain": 0.015789484651040187,
+          "event": "greet",
+          "event_maturity_modifier": 0.89,
+          "from_state": "hostile",
+          "high_severity_shock": false,
+          "maturity": 0.10999999999999999,
+          "maturity_modifier": 0.89,
+          "near_break": false,
+          "negative_volatility": 1.0,
+          "positive_volatility": 1.0,
+          "pressure": "minor_positive_shift",
+          "recent_event_magnitude": 0.108712185856,
+          "relative_shock": false,
+          "severity": 0.015789484651040464,
+          "shock_applied": false,
+          "shock_multiplier": 1.0,
+          "stability_breach": 0.0,
+          "to_state": "hostile",
+          "transition": null,
+          "trigger": null,
+          "trust_after": -2.271566353920216,
+          "trust_before": -2.2873558385712567,
+          "volatility": 1.0
+        },
+        "maturity": 0.11999999999999998,
+        "negative_volatility": 1.0,
+        "positive_volatility": 1.0,
+        "state": "hostile",
+        "transition": null,
+        "trigger": null,
+        "trust": -2.271566353920216,
+        "volatility": 1.0
+      },
+      "snapshot_sha256": "f68b749bbb775f1d0e3529f2d5d4f9ec80e76bba7c39ca2d0d6e27a9b2240d7b"
+    },
+    "pair_id": 7,
+    "positive": {
+      "deep_count": 4,
+      "events": [
+        {
+          "intensity": 1.0,
+          "type": "help"
+        },
+        {
+          "intensity": 1.0,
+          "type": "help"
+        },
+        {
+          "intensity": 1.0,
+          "type": "help"
+        },
+        {
+          "intensity": 1.0,
+          "type": "help"
+        },
+        {
+          "intensity": 1.0,
+          "type": "disengage"
+        },
+        {
+          "intensity": 1.0,
+          "type": "neutral"
+        },
+        {
+          "intensity": 1.0,
+          "type": "greet"
+        },
+        {
+          "intensity": 1.0,
+          "type": "neutral"
+        },
+        {
+          "intensity": 1.0,
+          "type": "cooperate"
+        },
+        {
+          "intensity": 1.0,
+          "type": "neutral"
+        },
+        {
+          "intensity": 1.0,
+          "type": "greet"
+        },
+        {
+          "intensity": 1.0,
+          "type": "greet"
+        }
+      ],
+      "expected_action": "HELP",
+      "relationship": {
+        "diagnostics": {
+          "abs_delta": 0.02534771584146689,
+          "base_amount": 0.04,
+          "channel": "pos",
+          "delta": 0.02534771584146689,
+          "direction": "positive",
+          "effective_gain": 0.025347715841466938,
+          "event": "greet",
+          "event_maturity_modifier": 0.89,
+          "from_state": "friendly",
+          "high_severity_shock": false,
+          "maturity": 0.10999999999999999,
+          "maturity_modifier": 0.89,
+          "near_break": false,
+          "negative_volatility": 1.0,
+          "positive_volatility": 1.0,
+          "pressure": "minor_positive_shift",
+          "recent_event_magnitude": 0.0368989904896,
+          "relative_shock": false,
+          "severity": 0.02534771584146689,
+          "shock_applied": false,
+          "shock_multiplier": 1.0,
+          "stability_breach": 0.0,
+          "to_state": "friendly",
+          "transition": null,
+          "trigger": null,
+          "trust_after": 0.5529393719958774,
+          "trust_before": 0.5275916561544105,
+          "volatility": 1.0
+        },
+        "maturity": 0.11999999999999998,
+        "negative_volatility": 1.0,
+        "positive_volatility": 1.0,
+        "state": "friendly",
+        "transition": null,
+        "trigger": null,
+        "trust": 0.5529393719958774,
+        "volatility": 1.0
+      },
+      "snapshot_sha256": "6200e008f729e66160b8b27990740e4595b36290333a5024090a15f80d35828a"
+    },
+    "tail": [
+      {
+        "intensity": 1.0,
+        "type": "disengage"
+      },
+      {
+        "intensity": 1.0,
+        "type": "neutral"
+      },
+      {
+        "intensity": 1.0,
+        "type": "greet"
+      },
+      {
+        "intensity": 1.0,
+        "type": "neutral"
+      },
+      {
+        "intensity": 1.0,
+        "type": "cooperate"
+      },
+      {
+        "intensity": 1.0,
+        "type": "neutral"
+      },
+      {
+        "intensity": 1.0,
+        "type": "greet"
+      },
+      {
+        "intensity": 1.0,
+        "type": "greet"
+      }
+    ]
+  }
+]

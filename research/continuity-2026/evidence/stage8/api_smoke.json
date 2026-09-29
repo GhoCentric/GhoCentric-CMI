@@ -1,0 +1,104 @@
+{
+  "emergency": {
+    "dialogue": "\u201cLet\u2019s coordinate and get everyone out together. I\u2019ll take the nearest group while you clear a safe path\u2014keep me updated.\u201d",
+    "generator_usage": {
+      "input_tokens": 737,
+      "model": "gpt-5.6-luna",
+      "output_tokens": 31,
+      "response_id": "resp_085f48385427c274006abaf421860887d2ab4f58158dc890f3",
+      "total_tokens": 768
+    },
+    "judges": {
+      "gpt-5.6-sol": {
+        "parsed_class": "LEAD_TOGETHER",
+        "text": "CLASS: LEAD_TOGETHER",
+        "usage": {
+          "input_tokens": 239,
+          "model": "gpt-5.6-sol",
+          "output_tokens": 11,
+          "response_id": "resp_082c54acfba6e1d6006abaf425260887d293926b308d0b76ff",
+          "total_tokens": 250
+        }
+      },
+      "gpt-5.6-terra": {
+        "parsed_class": "LEAD_TOGETHER",
+        "text": "CLASS: LEAD_TOGETHER",
+        "usage": {
+          "input_tokens": 239,
+          "model": "gpt-5.6-terra",
+          "output_tokens": 11,
+          "response_id": "resp_0f6633d28cb706ac006abaf42343b887d2bd1c8d60a929d844",
+          "total_tokens": 250
+        }
+      }
+    }
+  },
+  "loan": {
+    "dialogue": "\u201cOf course\u2014you can borrow it for the job. Just bring it back when you\u2019re done.\u201d",
+    "generator_usage": {
+      "input_tokens": 735,
+      "model": "gpt-5.6-luna",
+      "output_tokens": 24,
+      "response_id": "resp_048aaee2a50e66f9006abaf41c918487d2b113ad1450cfae6d",
+      "total_tokens": 759
+    },
+    "judges": {
+      "gpt-5.6-sol": {
+        "parsed_class": "LEND",
+        "text": "CLASS: LEND",
+        "usage": {
+          "input_tokens": 218,
+          "model": "gpt-5.6-sol",
+          "output_tokens": 8,
+          "response_id": "resp_0f62467fb91a9ed9006abaf41f72c487d2963f772b0bc72bdc",
+          "total_tokens": 226
+        }
+      },
+      "gpt-5.6-terra": {
+        "parsed_class": "LEND",
+        "text": "CLASS: LEND",
+        "usage": {
+          "input_tokens": 218,
+          "model": "gpt-5.6-terra",
+          "output_tokens": 8,
+          "response_id": "resp_00b146aa63e9e987006abaf41e3db487d2ab667f6fee54549b",
+          "total_tokens": 226
+        }
+      }
+    }
+  },
+  "negotiation": {
+    "dialogue": "All right, I\u2019ll accept your alliance for tonight\u2014we\u2019ll share supplies and watch each other\u2019s camp until morning.",
+    "generator_usage": {
+      "input_tokens": 709,
+      "model": "gpt-5.6-luna",
+      "output_tokens": 27,
+      "response_id": "resp_09bc85b48bcf87db006abaf4263bfc87d2828a008dc82d8e37",
+      "total_tokens": 736
+    },
+    "judges": {
+      "gpt-5.6-sol": {
+        "parsed_class": "ACCEPT",
+        "text": "CLASS: ACCEPT",
+        "usage": {
+          "input_tokens": 212,
+          "model": "gpt-5.6-sol",
+          "output_tokens": 7,
+          "response_id": "resp_000ed3a9421828dc006abaf429694887d29b738e7611b3663b",
+          "total_tokens": 219
+        }
+      },
+      "gpt-5.6-terra": {
+        "parsed_class": "ACCEPT",
+        "text": "CLASS: ACCEPT",
+        "usage": {
+          "input_tokens": 212,
+          "model": "gpt-5.6-terra",
+          "output_tokens": 7,
+          "response_id": "resp_05ef02582940e025006abaf427f4f487d29e03d28415bd7efc",
+          "total_tokens": 219
+        }
+      }
+    }
+  }
+}

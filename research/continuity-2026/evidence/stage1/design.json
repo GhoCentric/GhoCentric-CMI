@@ -1,0 +1,28 @@
+{
+  "action_policy": {
+    "CAUTIOUS": "relationship state == neutral",
+    "HELP": "relationship state == friendly",
+    "REFUSE": "relationship state == hostile"
+  },
+  "arms": [
+    "recent8",
+    "full_history",
+    "cmi_state"
+  ],
+  "ghost_version": "1.12.0",
+  "interpretation_limit": "This tests whether different memory representations preserve enough deep-history information for an LLM to act consistently with Ghost's public relationship classification. It is not a psychological-realism test.",
+  "model": "gpt-5.6-luna",
+  "pairs": 8,
+  "primary_endpoint": "exact action consistency with Ghost's public relationship-state classification",
+  "recent_window": 8,
+  "repeats": 3,
+  "secondary_endpoints": [
+    "matched-pair both-correct discrimination",
+    "parse rate",
+    "input token usage",
+    "prompt characters"
+  ],
+  "seed": 20260928,
+  "stage": "CMI_LLM_CONTINUITY_STAGE1_V2",
+  "winner_gate": null
+}

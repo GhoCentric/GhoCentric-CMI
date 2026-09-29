@@ -1,0 +1,13 @@
+{
+  "n_cases": 32,
+  "questions": [
+    "Can one parameterization fit all 32 cases?",
+    "Does combined-family LOOCV stay exact?",
+    "How asymmetric is cross-family transfer?"
+  ],
+  "reducer_family": "exact Stage-13 leaky-integrator family/grid",
+  "source_stage3": "/storage/emulated/0/Download/ghost_cmi_llm_continuity_stage3_20260928_152045",
+  "source_stage6": "/storage/emulated/0/Download/ghost_cmi_llm_continuity_stage6_20260928_170219",
+  "stage": "CMI_STAGE15_UNIVERSAL_SIMPLE_REDUCER_CAPACITY",
+  "winner_gate": null
+}

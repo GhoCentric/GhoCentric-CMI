@@ -1,0 +1,49 @@
+{
+  "arms": [
+    "recent16",
+    "full_history",
+    "cmi_state"
+  ],
+  "cmi_prompt_withholds": [
+    "relationship_state",
+    "friendly/hostile labels",
+    "high/low fear labels",
+    "expected action",
+    "policy thresholds"
+  ],
+  "deep_records": 176,
+  "emotion_signal_records": 20,
+  "ghost_version": "1.12.0",
+  "interpretation_boundary": "This stage tests whether compact lower-level CMI state preserves two independent consequences of long history for an LLM decision. It does not establish psychological realism, arbitrary-agent superiority, or a production SLO.",
+  "matched_tetrads": 4,
+  "model": "gpt-5.6-luna",
+  "policy": {
+    "friendly + fear <= 0.20": "HELP",
+    "friendly + fear >= 0.80": "CAUTIOUS",
+    "hostile + fear <= 0.20": "REFUSE",
+    "hostile + fear >= 0.80": "WITHDRAW"
+  },
+  "primary_endpoint": "exact four-way action consistency",
+  "quadrants": [
+    "friendly_low",
+    "friendly_high",
+    "hostile_low",
+    "hostile_high"
+  ],
+  "recent_records": 16,
+  "records_per_case": 192,
+  "repeats": 3,
+  "restart_after_record": 96,
+  "secondary_endpoints": [
+    "matched-tetrad all-four-correct rate",
+    "per-quadrant accuracy",
+    "factor contrast correctness",
+    "parse rate",
+    "input token usage",
+    "prompt character count"
+  ],
+  "seed": 202609282,
+  "social_signal_records": 20,
+  "stage": "CMI_LLM_CONTINUITY_STAGE2",
+  "winner_gate": null
+}

@@ -1,0 +1,251 @@
+{
+  "adjudication": "COMPACT_RELATIONSHIP_NOT_BEHAVIORALLY_INTERCHANGEABLE_IN_COMPOSED_PIPELINE",
+  "adjudication_text": "The frozen compact relationship approximation changed at least one deterministic host decision when substituted into an otherwise identical multi-layer CMI pipeline. The compact reducer therefore is not behaviorally interchangeable with Ghost relationship state on this final composed test.",
+  "compact_relationship": {
+    "accuracy": 0.5,
+    "correct": 16,
+    "misses": [
+      {
+        "case_id": "stage17v2_friendly_00",
+        "compact": "friendly",
+        "ghost": "hostile",
+        "score": 111.0
+      },
+      {
+        "case_id": "stage17v2_friendly_01",
+        "compact": "friendly",
+        "ghost": "hostile",
+        "score": 120.0
+      },
+      {
+        "case_id": "stage17v2_friendly_02",
+        "compact": "friendly",
+        "ghost": "hostile",
+        "score": 112.0
+      },
+      {
+        "case_id": "stage17v2_friendly_03",
+        "compact": "friendly",
+        "ghost": "hostile",
+        "score": 83.0
+      },
+      {
+        "case_id": "stage17v2_friendly_04",
+        "compact": "friendly",
+        "ghost": "hostile",
+        "score": 78.0
+      },
+      {
+        "case_id": "stage17v2_friendly_05",
+        "compact": "friendly",
+        "ghost": "hostile",
+        "score": 130.0
+      },
+      {
+        "case_id": "stage17v2_friendly_07",
+        "compact": "friendly",
+        "ghost": "hostile",
+        "score": 118.0
+      },
+      {
+        "case_id": "stage17v2_friendly_08",
+        "compact": "friendly",
+        "ghost": "hostile",
+        "score": 99.0
+      },
+      {
+        "case_id": "stage17v2_friendly_11",
+        "compact": "friendly",
+        "ghost": "hostile",
+        "score": 108.0
+      },
+      {
+        "case_id": "stage17v2_friendly_12",
+        "compact": "friendly",
+        "ghost": "hostile",
+        "score": 86.0
+      },
+      {
+        "case_id": "stage17v2_friendly_13",
+        "compact": "friendly",
+        "ghost": "hostile",
+        "score": 146.0
+      },
+      {
+        "case_id": "stage17v2_friendly_15",
+        "compact": "friendly",
+        "ghost": "hostile",
+        "score": 199.0
+      },
+      {
+        "case_id": "stage17v2_hostile_17",
+        "compact": "friendly",
+        "ghost": "hostile",
+        "score": 162.0
+      },
+      {
+        "case_id": "stage17v2_hostile_22",
+        "compact": "friendly",
+        "ghost": "hostile",
+        "score": 116.0
+      },
+      {
+        "case_id": "stage17v2_hostile_30",
+        "compact": "friendly",
+        "ghost": "hostile",
+        "score": 104.0
+      },
+      {
+        "case_id": "stage17v2_hostile_31",
+        "compact": "friendly",
+        "ghost": "hostile",
+        "score": 171.0
+      }
+    ]
+  },
+  "host_decision_substitution": {
+    "cases": [
+      {
+        "case_id": "stage17v2_friendly_01",
+        "compact_decision": "GUARD",
+        "compact_relationship": "friendly",
+        "ghost_decision": "DISENGAGE",
+        "ghost_relationship": "hostile"
+      },
+      {
+        "case_id": "stage17v2_friendly_02",
+        "compact_decision": "GUARD",
+        "compact_relationship": "friendly",
+        "ghost_decision": "DISENGAGE",
+        "ghost_relationship": "hostile"
+      },
+      {
+        "case_id": "stage17v2_friendly_03",
+        "compact_decision": "HOLD",
+        "compact_relationship": "friendly",
+        "ghost_decision": "DISENGAGE",
+        "ghost_relationship": "hostile"
+      },
+      {
+        "case_id": "stage17v2_friendly_04",
+        "compact_decision": "GUARD",
+        "compact_relationship": "friendly",
+        "ghost_decision": "DISENGAGE",
+        "ghost_relationship": "hostile"
+      },
+      {
+        "case_id": "stage17v2_friendly_05",
+        "compact_decision": "GUARD",
+        "compact_relationship": "friendly",
+        "ghost_decision": "DISENGAGE",
+        "ghost_relationship": "hostile"
+      },
+      {
+        "case_id": "stage17v2_friendly_07",
+        "compact_decision": "GUARD",
+        "compact_relationship": "friendly",
+        "ghost_decision": "DISENGAGE",
+        "ghost_relationship": "hostile"
+      },
+      {
+        "case_id": "stage17v2_friendly_08",
+        "compact_decision": "GUARD",
+        "compact_relationship": "friendly",
+        "ghost_decision": "DISENGAGE",
+        "ghost_relationship": "hostile"
+      },
+      {
+        "case_id": "stage17v2_friendly_11",
+        "compact_decision": "GUARD",
+        "compact_relationship": "friendly",
+        "ghost_decision": "DISENGAGE",
+        "ghost_relationship": "hostile"
+      },
+      {
+        "case_id": "stage17v2_friendly_13",
+        "compact_decision": "GUARD",
+        "compact_relationship": "friendly",
+        "ghost_decision": "DISENGAGE",
+        "ghost_relationship": "hostile"
+      },
+      {
+        "case_id": "stage17v2_friendly_15",
+        "compact_decision": "GUARD",
+        "compact_relationship": "friendly",
+        "ghost_decision": "DISENGAGE",
+        "ghost_relationship": "hostile"
+      },
+      {
+        "case_id": "stage17v2_hostile_17",
+        "compact_decision": "GUARD",
+        "compact_relationship": "friendly",
+        "ghost_decision": "DISENGAGE",
+        "ghost_relationship": "hostile"
+      },
+      {
+        "case_id": "stage17v2_hostile_30",
+        "compact_decision": "COOPERATE",
+        "compact_relationship": "friendly",
+        "ghost_decision": "HOLD",
+        "ghost_relationship": "hostile"
+      },
+      {
+        "case_id": "stage17v2_hostile_31",
+        "compact_decision": "GUARD",
+        "compact_relationship": "friendly",
+        "ghost_decision": "DISENGAGE",
+        "ghost_relationship": "hostile"
+      }
+    ],
+    "divergence": 13,
+    "divergence_rate": 0.40625,
+    "match": 19,
+    "match_rate": 0.59375
+  },
+  "interpretive_boundary": "This final stage does not claim psychological realism or universal superiority. It tests whether the validated components compose deterministically and whether the frozen compact relationship approximation remains behaviorally interchangeable when relationship feeds a richer shared CMI/host pipeline.",
+  "n": 32,
+  "primary_compact_challenger": "L1_last_salient",
+  "restart_parity": {
+    "host_decision": 32,
+    "snapshot": 32,
+    "state": 32
+  },
+  "source_stage17_v2": "/storage/emulated/0/Download/ghost_cmi_llm_continuity_stage17_v2_20260928_213353",
+  "state_diversity": {
+    "compact_host_decisions": {
+      "COOPERATE": 1,
+      "DISENGAGE": 10,
+      "GUARD": 18,
+      "HOLD": 3
+    },
+    "flow": {
+      "inactive": 32
+    },
+    "foregrounds": {
+      "interpretation:betrayal": 15,
+      "interpretation:cooperation": 13,
+      "interpretation:threat": 4
+    },
+    "ghost_host_decisions": {
+      "DISENGAGE": 22,
+      "GUARD": 7,
+      "HOLD": 3
+    },
+    "strongest_interpretations": {
+      "betrayal": 19,
+      "cooperation": 6,
+      "threat": 7
+    }
+  },
+  "telemetry": {
+    "host_state_over_source_history_ratio": 0.03121988984680375,
+    "mean_final_snapshot_bytes": 85800.0625,
+    "mean_host_state_bytes": 231.875,
+    "mean_source_history_bytes": 7427.15625,
+    "median_restarted_elapsed_us": 592834.6485,
+    "median_uninterrupted_elapsed_us": 588348.1055000001,
+    "snapshot_over_source_history_ratio": 11.552209164846909,
+    "timing_boundary": "timing is telemetry only; no performance SLO was predeclared"
+  },
+  "winner_gate": null
+}

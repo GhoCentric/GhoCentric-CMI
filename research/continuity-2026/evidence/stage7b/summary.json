@@ -1,0 +1,87 @@
+{
+  "baseline_stage7": {
+    "strict_accuracy": 0.875,
+    "strict_correct": 42,
+    "strict_failures": 6
+  },
+  "generator_model": "gpt-5.6-luna",
+  "judge_individual": {
+    "gpt-5.6-sol": {
+      "accuracy": 1.0,
+      "correct": 48,
+      "n": 48
+    },
+    "gpt-5.6-terra": {
+      "accuracy": 1.0,
+      "correct": 48,
+      "n": 48
+    }
+  },
+  "judge_models": [
+    "gpt-5.6-terra",
+    "gpt-5.6-sol"
+  ],
+  "matched_repair": {
+    "baseline_failure_recovery_rate": 1.0,
+    "baseline_failures": 6,
+    "baseline_failures_recovered": 6,
+    "baseline_success_preservation_rate": 1.0,
+    "baseline_successes": 42,
+    "baseline_successes_preserved": 42,
+    "new_regressions": 0,
+    "unrecovered_failures": 0
+  },
+  "n": 48,
+  "new_regression_cases": [],
+  "policies": {
+    "expedition": {
+      "accuracy": 1.0,
+      "correct": 16,
+      "n": 16
+    },
+    "favor": {
+      "accuracy": 1.0,
+      "correct": 16,
+      "n": 16
+    },
+    "secret": {
+      "accuracy": 1.0,
+      "correct": 16,
+      "n": 16
+    }
+  },
+  "quadrants": {
+    "friendly_high": {
+      "accuracy": 1.0,
+      "correct": 12,
+      "n": 12
+    },
+    "friendly_low": {
+      "accuracy": 1.0,
+      "correct": 12,
+      "n": 12
+    },
+    "hostile_high": {
+      "accuracy": 1.0,
+      "correct": 12,
+      "n": 12
+    },
+    "hostile_low": {
+      "accuracy": 1.0,
+      "correct": 12,
+      "n": 12
+    }
+  },
+  "repaired_renderer": {
+    "judge_agreement": 48,
+    "judge_agreement_rate": 1.0,
+    "mean_generator_input_tokens": 705.2083333333334,
+    "strict_accuracy": 1.0,
+    "strict_correct": 48,
+    "strict_wilson95": [
+      0.9258998703338824,
+      0.9999999999999999
+    ]
+  },
+  "unrecovered_cases": []
+}

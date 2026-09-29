@@ -1,0 +1,63 @@
+{
+  "arms": [
+    "full_history",
+    "semantic_cmi"
+  ],
+  "cases": 16,
+  "model": "gpt-5.6-luna",
+  "policies": {
+    "expedition": {
+      "actions": {
+        "friendly_high": "WAIT",
+        "friendly_low": "JOIN",
+        "hostile_high": "RETREAT",
+        "hostile_low": "DECLINE"
+      },
+      "descriptions": {
+        "DECLINE": "decline to join",
+        "JOIN": "join the expedition",
+        "RETREAT": "leave and avoid further exposure",
+        "WAIT": "postpone joining until conditions feel safer"
+      },
+      "situation": "The player asks Mara to join an expedition into a dangerous area where Mara would need to rely on the player."
+    },
+    "favor": {
+      "actions": {
+        "friendly_high": "CAUTIOUS",
+        "friendly_low": "HELP",
+        "hostile_high": "WITHDRAW",
+        "hostile_low": "REFUSE"
+      },
+      "descriptions": {
+        "CAUTIOUS": "stay cooperative but insist on safeguards",
+        "HELP": "accept the favor and actively help",
+        "REFUSE": "firmly refuse the favor",
+        "WITHDRAW": "end the interaction and create distance"
+      },
+      "situation": "The player asks Mara for a risky personal favor that could expose Mara to consequences if the player betrays her."
+    },
+    "secret": {
+      "actions": {
+        "friendly_high": "DELAY",
+        "friendly_low": "SHARE",
+        "hostile_high": "EVADE",
+        "hostile_low": "WITHHOLD"
+      },
+      "descriptions": {
+        "DELAY": "delay and ask for reassurance before sharing",
+        "EVADE": "avoid the conversation and disengage",
+        "SHARE": "share the secret",
+        "WITHHOLD": "refuse to reveal the secret"
+      },
+      "situation": "The player asks Mara to reveal a sensitive secret that could put Mara at risk if the information is misused."
+    }
+  },
+  "primary_question": "Does the semantic-CMI advantage survive newly generated history families with varied event counts/order and varied terminal values?",
+  "repeats": 2,
+  "source_stage3": "/storage/emulated/0/Download/ghost_cmi_llm_continuity_stage3_20260928_152045",
+  "stage": "CMI_LLM_CONTINUITY_STAGE6_HISTORY_FAMILY_GENERALIZATION",
+  "stage3_count_fingerprints_excluded": true,
+  "terminal_state_unique_tuples": 16,
+  "variants_per_quadrant": 4,
+  "winner_gate": null
+}

@@ -1,0 +1,11 @@
+{
+  "parsed_action": "CAUTIOUS",
+  "text": "ACTION: CAUTIOUS\nLINE: I\u2019m not ready to take that risk for you, but tell me exactly what you\u2019re asking.",
+  "usage": {
+    "input_tokens": 159,
+    "model": "gpt-5.6-luna",
+    "output_tokens": 32,
+    "response_id": "resp_05df32c0091212fb006abaa6306a1087d2b12e7ba37e7a781d",
+    "total_tokens": 191
+  }
+}

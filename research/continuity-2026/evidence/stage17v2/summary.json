@@ -1,0 +1,97 @@
+{
+  "adjudication": "PRIMARY_COMPACT_CHALLENGER_DEGRADES_PROSPECTIVELY",
+  "adjudication_text": "The Stage-16-selected compact challenger lost substantial agreement with Ghost on the prospectively frozen third family, strengthening the evidence that the compact relationship reducers are family-limited.",
+  "candidate_results": {
+    "L0_one_scalar": {
+      "accuracy": 0.78125,
+      "by_state": {
+        "friendly": {
+          "accuracy": 0.8125,
+          "correct": 13,
+          "n": 16
+        },
+        "hostile": {
+          "accuracy": 0.75,
+          "correct": 12,
+          "n": 16
+        }
+      },
+      "correct": 25,
+      "n": 32,
+      "stage16_all32_correct": 30,
+      "stage16_loocv_correct": 29
+    },
+    "L1_last_salient": {
+      "accuracy": 0.75,
+      "by_state": {
+        "friendly": {
+          "accuracy": 0.75,
+          "correct": 12,
+          "n": 16
+        },
+        "hostile": {
+          "accuracy": 0.75,
+          "correct": 12,
+          "n": 16
+        }
+      },
+      "correct": 24,
+      "n": 32,
+      "stage16_all32_correct": 30,
+      "stage16_loocv_correct": 30
+    },
+    "L2_dual_trace": {
+      "accuracy": 0.78125,
+      "by_state": {
+        "friendly": {
+          "accuracy": 0.8125,
+          "correct": 13,
+          "n": 16
+        },
+        "hostile": {
+          "accuracy": 0.75,
+          "correct": 12,
+          "n": 16
+        }
+      },
+      "correct": 25,
+      "n": 32,
+      "stage16_all32_correct": 30,
+      "stage16_loocv_correct": 29
+    }
+  },
+  "interpretive_boundary": "Ghost's relationship state is the benchmark reference, not objective psychological truth. The v2 repair addresses only the v1 failure to generate both reference classes. Since no v1 baseline predictions were ever produced, Stage-16 compact parameters remain prospectively frozen.",
+  "new_history_hash_overlap_with_stage3_stage6": 0,
+  "pool_state_counts": {
+    "friendly": 292,
+    "hostile": 653,
+    "neutral": 79
+  },
+  "pool_state_counts_by_stratum": {
+    "high_betrayal": {
+      "hostile": 512
+    },
+    "low_betrayal": {
+      "friendly": 292,
+      "hostile": 141,
+      "neutral": 79
+    }
+  },
+  "primary_compact_challenger": "L1_last_salient",
+  "restart_parity": 32,
+  "selected_by_state": {
+    "friendly": 16,
+    "hostile": 16
+  },
+  "selected_cases": 32,
+  "selected_family_telemetry": {
+    "ghost_trust_max": 2.9726755353739094,
+    "ghost_trust_min": -4.907667527571728,
+    "history_length_max": 312,
+    "history_length_mean": 204,
+    "history_length_min": 120
+  },
+  "source_stage16": "/storage/emulated/0/Download/ghost_cmi_llm_continuity_stage16_20260928_211456",
+  "v1_failure_invalidates_no_baseline_result": true,
+  "winner_gate": null
+}

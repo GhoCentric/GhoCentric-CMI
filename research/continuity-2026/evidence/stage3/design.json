@@ -1,0 +1,39 @@
+{
+  "arms": [
+    "recent16",
+    "event_counts",
+    "full_history",
+    "cmi_state"
+  ],
+  "cmi_contract": "CMI prompt receives lower-level current trust/attachment and emotional levels, not categorical state labels.",
+  "emotion_calibration": {
+    "neutrals": 56,
+    "signals_each": 4
+  },
+  "ghost_version": "1.12.0",
+  "interpretation_boundary": "Stage 3 tests path-dependent continuity under identical event counts. It does not establish psychological realism, general NPC quality, consciousness, or arbitrary-task superiority.",
+  "matched_tetrads": 4,
+  "model": "gpt-5.6-luna",
+  "negative_controls": [
+    "recent16 prompt is byte-identical across all four cases",
+    "event_counts prompt is byte-identical across all four cases"
+  ],
+  "primary_endpoint": "exact four-way action consistency",
+  "records_per_case": 192,
+  "relationship_calibration": {
+    "betrayals": 2,
+    "helps": 80,
+    "neutrals": 30
+  },
+  "repeats": 3,
+  "same_count_contract": "Within each tetrad all four cases contain exactly the same multiset of event types. Only event order differs.",
+  "secondary_endpoints": [
+    "matched-tetrad all-four-correct rate",
+    "per-quadrant accuracy",
+    "input token usage",
+    "confusion matrices"
+  ],
+  "seed": 202609283,
+  "stage": "CMI_LLM_CONTINUITY_STAGE3_SAME_COUNTS_DIFFERENT_ORDER",
+  "winner_gate": null
+}

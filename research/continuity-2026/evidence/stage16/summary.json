@@ -1,0 +1,2866 @@
+{
+  "adjudication": "NO_PREDECLARED_MINIMAL_REPLACEMENT_CLEARS_BOTH_GATES",
+  "adjudication_text": "None of the three predeclared compact relationship reducers achieved both exact all-32 representational capacity and exact combined-family leave-one-history-out generalization.",
+  "families": {
+    "L0_one_scalar": {
+      "all32_fit": {
+        "fit_params": {
+          "clock": "global",
+          "decay": 0.995,
+          "positive_weight": 0.5
+        },
+        "perfect_parameterizations": 0,
+        "rows": [
+          {
+            "case_id": "stage3_t0_friendly_low",
+            "correct": true,
+            "family_name": "L0_one_scalar",
+            "pred_relationship": "friendly",
+            "quadrant": "friendly_low",
+            "score": 27.011428401575916,
+            "source_family": "stage3",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage3_t0_friendly_high",
+            "correct": true,
+            "family_name": "L0_one_scalar",
+            "pred_relationship": "friendly",
+            "quadrant": "friendly_high",
+            "score": 27.011428401575916,
+            "source_family": "stage3",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage3_t0_hostile_low",
+            "correct": true,
+            "family_name": "L0_one_scalar",
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_low",
+            "score": 19.753268614548837,
+            "source_family": "stage3",
+            "target_relationship": "hostile"
+          },
+          {
+            "case_id": "stage3_t0_hostile_high",
+            "correct": true,
+            "family_name": "L0_one_scalar",
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_high",
+            "score": 19.753268614548837,
+            "source_family": "stage3",
+            "target_relationship": "hostile"
+          },
+          {
+            "case_id": "stage3_t1_friendly_low",
+            "correct": true,
+            "family_name": "L0_one_scalar",
+            "pred_relationship": "friendly",
+            "quadrant": "friendly_low",
+            "score": 26.932352678801188,
+            "source_family": "stage3",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage3_t1_friendly_high",
+            "correct": true,
+            "family_name": "L0_one_scalar",
+            "pred_relationship": "friendly",
+            "quadrant": "friendly_high",
+            "score": 26.932352678801188,
+            "source_family": "stage3",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage3_t1_hostile_low",
+            "correct": true,
+            "family_name": "L0_one_scalar",
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_low",
+            "score": 19.629423819895845,
+            "source_family": "stage3",
+            "target_relationship": "hostile"
+          },
+          {
+            "case_id": "stage3_t1_hostile_high",
+            "correct": true,
+            "family_name": "L0_one_scalar",
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_high",
+            "score": 19.629423819895845,
+            "source_family": "stage3",
+            "target_relationship": "hostile"
+          },
+          {
+            "case_id": "stage3_t2_friendly_low",
+            "correct": true,
+            "family_name": "L0_one_scalar",
+            "pred_relationship": "friendly",
+            "quadrant": "friendly_low",
+            "score": 27.787096765482396,
+            "source_family": "stage3",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage3_t2_friendly_high",
+            "correct": true,
+            "family_name": "L0_one_scalar",
+            "pred_relationship": "friendly",
+            "quadrant": "friendly_high",
+            "score": 27.787096765482396,
+            "source_family": "stage3",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage3_t2_hostile_low",
+            "correct": true,
+            "family_name": "L0_one_scalar",
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_low",
+            "score": 20.395060861356093,
+            "source_family": "stage3",
+            "target_relationship": "hostile"
+          },
+          {
+            "case_id": "stage3_t2_hostile_high",
+            "correct": true,
+            "family_name": "L0_one_scalar",
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_high",
+            "score": 20.395060861356093,
+            "source_family": "stage3",
+            "target_relationship": "hostile"
+          },
+          {
+            "case_id": "stage3_t3_friendly_low",
+            "correct": true,
+            "family_name": "L0_one_scalar",
+            "pred_relationship": "friendly",
+            "quadrant": "friendly_low",
+            "score": 27.235032109392098,
+            "source_family": "stage3",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage3_t3_friendly_high",
+            "correct": true,
+            "family_name": "L0_one_scalar",
+            "pred_relationship": "friendly",
+            "quadrant": "friendly_high",
+            "score": 27.235032109392098,
+            "source_family": "stage3",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage3_t3_hostile_low",
+            "correct": true,
+            "family_name": "L0_one_scalar",
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_low",
+            "score": 19.911185292990854,
+            "source_family": "stage3",
+            "target_relationship": "hostile"
+          },
+          {
+            "case_id": "stage3_t3_hostile_high",
+            "correct": true,
+            "family_name": "L0_one_scalar",
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_high",
+            "score": 19.911185292990854,
+            "source_family": "stage3",
+            "target_relationship": "hostile"
+          },
+          {
+            "case_id": "stage6_friendly_low_v1",
+            "correct": true,
+            "family_name": "L0_one_scalar",
+            "pred_relationship": "friendly",
+            "quadrant": "friendly_low",
+            "score": 27.879690344449422,
+            "source_family": "stage6",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage6_friendly_low_v2",
+            "correct": true,
+            "family_name": "L0_one_scalar",
+            "pred_relationship": "friendly",
+            "quadrant": "friendly_low",
+            "score": 20.484958724671667,
+            "source_family": "stage6",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage6_friendly_low_v3",
+            "correct": false,
+            "family_name": "L0_one_scalar",
+            "pred_relationship": "hostile",
+            "quadrant": "friendly_low",
+            "score": -0.5415585359606525,
+            "source_family": "stage6",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage6_friendly_low_v4",
+            "correct": true,
+            "family_name": "L0_one_scalar",
+            "pred_relationship": "friendly",
+            "quadrant": "friendly_low",
+            "score": 27.649610749834657,
+            "source_family": "stage6",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage6_friendly_high_v1",
+            "correct": true,
+            "family_name": "L0_one_scalar",
+            "pred_relationship": "friendly",
+            "quadrant": "friendly_high",
+            "score": 28.326885116856648,
+            "source_family": "stage6",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage6_friendly_high_v2",
+            "correct": true,
+            "family_name": "L0_one_scalar",
+            "pred_relationship": "friendly",
+            "quadrant": "friendly_high",
+            "score": 20.762311471420663,
+            "source_family": "stage6",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage6_friendly_high_v3",
+            "correct": false,
+            "family_name": "L0_one_scalar",
+            "pred_relationship": "hostile",
+            "quadrant": "friendly_high",
+            "score": -0.5653513360486402,
+            "source_family": "stage6",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage6_friendly_high_v4",
+            "correct": true,
+            "family_name": "L0_one_scalar",
+            "pred_relationship": "friendly",
+            "quadrant": "friendly_high",
+            "score": 28.703858891654104,
+            "source_family": "stage6",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage6_hostile_low_v1",
+            "correct": true,
+            "family_name": "L0_one_scalar",
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_low",
+            "score": -10.775849390860264,
+            "source_family": "stage6",
+            "target_relationship": "hostile"
+          },
+          {
+            "case_id": "stage6_hostile_low_v2",
+            "correct": true,
+            "family_name": "L0_one_scalar",
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_low",
+            "score": -5.416058663273929,
+            "source_family": "stage6",
+            "target_relationship": "hostile"
+          },
+          {
+            "case_id": "stage6_hostile_low_v3",
+            "correct": true,
+            "family_name": "L0_one_scalar",
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_low",
+            "score": -5.068670663109197,
+            "source_family": "stage6",
+            "target_relationship": "hostile"
+          },
+          {
+            "case_id": "stage6_hostile_low_v4",
+            "correct": true,
+            "family_name": "L0_one_scalar",
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_low",
+            "score": -7.410975221581612,
+            "source_family": "stage6",
+            "target_relationship": "hostile"
+          },
+          {
+            "case_id": "stage6_hostile_high_v1",
+            "correct": true,
+            "family_name": "L0_one_scalar",
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_high",
+            "score": -10.625637357095599,
+            "source_family": "stage6",
+            "target_relationship": "hostile"
+          },
+          {
+            "case_id": "stage6_hostile_high_v2",
+            "correct": true,
+            "family_name": "L0_one_scalar",
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_high",
+            "score": -5.585138213691318,
+            "source_family": "stage6",
+            "target_relationship": "hostile"
+          },
+          {
+            "case_id": "stage6_hostile_high_v3",
+            "correct": true,
+            "family_name": "L0_one_scalar",
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_high",
+            "score": -4.998192861826251,
+            "source_family": "stage6",
+            "target_relationship": "hostile"
+          },
+          {
+            "case_id": "stage6_hostile_high_v4",
+            "correct": true,
+            "family_name": "L0_one_scalar",
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_high",
+            "score": -7.4585191203107275,
+            "source_family": "stage6",
+            "target_relationship": "hostile"
+          }
+        ],
+        "summary": {
+          "accuracy": 0.9375,
+          "by_source_family": {
+            "stage3": {
+              "accuracy": 1.0,
+              "correct": 16,
+              "n": 16
+            },
+            "stage6": {
+              "accuracy": 0.875,
+              "correct": 14,
+              "n": 16
+            }
+          },
+          "correct": 30,
+          "n": 32
+        },
+        "threshold": 20.44000979301388
+      },
+      "combined_loocv": {
+        "rows": [
+          {
+            "case_id": "stage3_t0_friendly_low",
+            "correct": true,
+            "family_name": "L0_one_scalar",
+            "fit_params": {
+              "clock": "global",
+              "decay": 0.995,
+              "positive_weight": 0.5
+            },
+            "fit_threshold": 20.44000979301388,
+            "pred_relationship": "friendly",
+            "quadrant": "friendly_low",
+            "score": 27.011428401575916,
+            "source_family": "stage3",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage3_t0_friendly_high",
+            "correct": true,
+            "family_name": "L0_one_scalar",
+            "fit_params": {
+              "clock": "global",
+              "decay": 0.995,
+              "positive_weight": 0.5
+            },
+            "fit_threshold": 20.44000979301388,
+            "pred_relationship": "friendly",
+            "quadrant": "friendly_high",
+            "score": 27.011428401575916,
+            "source_family": "stage3",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage3_t0_hostile_low",
+            "correct": true,
+            "family_name": "L0_one_scalar",
+            "fit_params": {
+              "clock": "global",
+              "decay": 0.995,
+              "positive_weight": 0.5
+            },
+            "fit_threshold": 20.44000979301388,
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_low",
+            "score": 19.753268614548837,
+            "source_family": "stage3",
+            "target_relationship": "hostile"
+          },
+          {
+            "case_id": "stage3_t0_hostile_high",
+            "correct": true,
+            "family_name": "L0_one_scalar",
+            "fit_params": {
+              "clock": "global",
+              "decay": 0.995,
+              "positive_weight": 0.5
+            },
+            "fit_threshold": 20.44000979301388,
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_high",
+            "score": 19.753268614548837,
+            "source_family": "stage3",
+            "target_relationship": "hostile"
+          },
+          {
+            "case_id": "stage3_t1_friendly_low",
+            "correct": true,
+            "family_name": "L0_one_scalar",
+            "fit_params": {
+              "clock": "global",
+              "decay": 0.995,
+              "positive_weight": 0.5
+            },
+            "fit_threshold": 20.44000979301388,
+            "pred_relationship": "friendly",
+            "quadrant": "friendly_low",
+            "score": 26.932352678801188,
+            "source_family": "stage3",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage3_t1_friendly_high",
+            "correct": true,
+            "family_name": "L0_one_scalar",
+            "fit_params": {
+              "clock": "global",
+              "decay": 0.995,
+              "positive_weight": 0.5
+            },
+            "fit_threshold": 20.44000979301388,
+            "pred_relationship": "friendly",
+            "quadrant": "friendly_high",
+            "score": 26.932352678801188,
+            "source_family": "stage3",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage3_t1_hostile_low",
+            "correct": true,
+            "family_name": "L0_one_scalar",
+            "fit_params": {
+              "clock": "global",
+              "decay": 0.995,
+              "positive_weight": 0.5
+            },
+            "fit_threshold": 20.44000979301388,
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_low",
+            "score": 19.629423819895845,
+            "source_family": "stage3",
+            "target_relationship": "hostile"
+          },
+          {
+            "case_id": "stage3_t1_hostile_high",
+            "correct": true,
+            "family_name": "L0_one_scalar",
+            "fit_params": {
+              "clock": "global",
+              "decay": 0.995,
+              "positive_weight": 0.5
+            },
+            "fit_threshold": 20.44000979301388,
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_high",
+            "score": 19.629423819895845,
+            "source_family": "stage3",
+            "target_relationship": "hostile"
+          },
+          {
+            "case_id": "stage3_t2_friendly_low",
+            "correct": true,
+            "family_name": "L0_one_scalar",
+            "fit_params": {
+              "clock": "global",
+              "decay": 0.995,
+              "positive_weight": 0.5
+            },
+            "fit_threshold": 20.44000979301388,
+            "pred_relationship": "friendly",
+            "quadrant": "friendly_low",
+            "score": 27.787096765482396,
+            "source_family": "stage3",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage3_t2_friendly_high",
+            "correct": true,
+            "family_name": "L0_one_scalar",
+            "fit_params": {
+              "clock": "global",
+              "decay": 0.995,
+              "positive_weight": 0.5
+            },
+            "fit_threshold": 20.44000979301388,
+            "pred_relationship": "friendly",
+            "quadrant": "friendly_high",
+            "score": 27.787096765482396,
+            "source_family": "stage3",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage3_t2_hostile_low",
+            "correct": true,
+            "family_name": "L0_one_scalar",
+            "fit_params": {
+              "clock": "global",
+              "decay": 0.995,
+              "positive_weight": 0.5
+            },
+            "fit_threshold": 20.44000979301388,
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_low",
+            "score": 20.395060861356093,
+            "source_family": "stage3",
+            "target_relationship": "hostile"
+          },
+          {
+            "case_id": "stage3_t2_hostile_high",
+            "correct": true,
+            "family_name": "L0_one_scalar",
+            "fit_params": {
+              "clock": "global",
+              "decay": 0.995,
+              "positive_weight": 0.5
+            },
+            "fit_threshold": 20.44000979301388,
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_high",
+            "score": 20.395060861356093,
+            "source_family": "stage3",
+            "target_relationship": "hostile"
+          },
+          {
+            "case_id": "stage3_t3_friendly_low",
+            "correct": true,
+            "family_name": "L0_one_scalar",
+            "fit_params": {
+              "clock": "global",
+              "decay": 0.995,
+              "positive_weight": 0.5
+            },
+            "fit_threshold": 20.44000979301388,
+            "pred_relationship": "friendly",
+            "quadrant": "friendly_low",
+            "score": 27.235032109392098,
+            "source_family": "stage3",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage3_t3_friendly_high",
+            "correct": true,
+            "family_name": "L0_one_scalar",
+            "fit_params": {
+              "clock": "global",
+              "decay": 0.995,
+              "positive_weight": 0.5
+            },
+            "fit_threshold": 20.44000979301388,
+            "pred_relationship": "friendly",
+            "quadrant": "friendly_high",
+            "score": 27.235032109392098,
+            "source_family": "stage3",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage3_t3_hostile_low",
+            "correct": true,
+            "family_name": "L0_one_scalar",
+            "fit_params": {
+              "clock": "global",
+              "decay": 0.995,
+              "positive_weight": 0.5
+            },
+            "fit_threshold": 20.44000979301388,
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_low",
+            "score": 19.911185292990854,
+            "source_family": "stage3",
+            "target_relationship": "hostile"
+          },
+          {
+            "case_id": "stage3_t3_hostile_high",
+            "correct": true,
+            "family_name": "L0_one_scalar",
+            "fit_params": {
+              "clock": "global",
+              "decay": 0.995,
+              "positive_weight": 0.5
+            },
+            "fit_threshold": 20.44000979301388,
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_high",
+            "score": 19.911185292990854,
+            "source_family": "stage3",
+            "target_relationship": "hostile"
+          },
+          {
+            "case_id": "stage6_friendly_low_v1",
+            "correct": true,
+            "family_name": "L0_one_scalar",
+            "fit_params": {
+              "clock": "global",
+              "decay": 0.995,
+              "positive_weight": 0.5
+            },
+            "fit_threshold": 20.44000979301388,
+            "pred_relationship": "friendly",
+            "quadrant": "friendly_low",
+            "score": 27.879690344449422,
+            "source_family": "stage6",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage6_friendly_low_v2",
+            "correct": false,
+            "family_name": "L0_one_scalar",
+            "fit_params": {
+              "clock": "global",
+              "decay": 0.995,
+              "positive_weight": 1.0
+            },
+            "fit_threshold": 42.78189603357221,
+            "pred_relationship": "hostile",
+            "quadrant": "friendly_low",
+            "score": 42.38873991547165,
+            "source_family": "stage6",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage6_friendly_low_v3",
+            "correct": false,
+            "family_name": "L0_one_scalar",
+            "fit_params": {
+              "clock": "global",
+              "decay": 0.995,
+              "positive_weight": 0.5
+            },
+            "fit_threshold": 20.44000979301388,
+            "pred_relationship": "hostile",
+            "quadrant": "friendly_low",
+            "score": -0.5415585359606525,
+            "source_family": "stage6",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage6_friendly_low_v4",
+            "correct": true,
+            "family_name": "L0_one_scalar",
+            "fit_params": {
+              "clock": "global",
+              "decay": 0.995,
+              "positive_weight": 0.5
+            },
+            "fit_threshold": 20.44000979301388,
+            "pred_relationship": "friendly",
+            "quadrant": "friendly_low",
+            "score": 27.649610749834657,
+            "source_family": "stage6",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage6_friendly_high_v1",
+            "correct": true,
+            "family_name": "L0_one_scalar",
+            "fit_params": {
+              "clock": "global",
+              "decay": 0.995,
+              "positive_weight": 0.5
+            },
+            "fit_threshold": 20.44000979301388,
+            "pred_relationship": "friendly",
+            "quadrant": "friendly_high",
+            "score": 28.326885116856648,
+            "source_family": "stage6",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage6_friendly_high_v2",
+            "correct": true,
+            "family_name": "L0_one_scalar",
+            "fit_params": {
+              "clock": "global",
+              "decay": 0.995,
+              "positive_weight": 0.5
+            },
+            "fit_threshold": 20.44000979301388,
+            "pred_relationship": "friendly",
+            "quadrant": "friendly_high",
+            "score": 20.762311471420663,
+            "source_family": "stage6",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage6_friendly_high_v3",
+            "correct": false,
+            "family_name": "L0_one_scalar",
+            "fit_params": {
+              "clock": "global",
+              "decay": 0.995,
+              "positive_weight": 0.5
+            },
+            "fit_threshold": 20.44000979301388,
+            "pred_relationship": "hostile",
+            "quadrant": "friendly_high",
+            "score": -0.5653513360486402,
+            "source_family": "stage6",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage6_friendly_high_v4",
+            "correct": true,
+            "family_name": "L0_one_scalar",
+            "fit_params": {
+              "clock": "global",
+              "decay": 0.995,
+              "positive_weight": 0.5
+            },
+            "fit_threshold": 20.44000979301388,
+            "pred_relationship": "friendly",
+            "quadrant": "friendly_high",
+            "score": 28.703858891654104,
+            "source_family": "stage6",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage6_hostile_low_v1",
+            "correct": true,
+            "family_name": "L0_one_scalar",
+            "fit_params": {
+              "clock": "global",
+              "decay": 0.995,
+              "positive_weight": 0.5
+            },
+            "fit_threshold": 20.44000979301388,
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_low",
+            "score": -10.775849390860264,
+            "source_family": "stage6",
+            "target_relationship": "hostile"
+          },
+          {
+            "case_id": "stage6_hostile_low_v2",
+            "correct": true,
+            "family_name": "L0_one_scalar",
+            "fit_params": {
+              "clock": "global",
+              "decay": 0.995,
+              "positive_weight": 0.5
+            },
+            "fit_threshold": 20.44000979301388,
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_low",
+            "score": -5.416058663273929,
+            "source_family": "stage6",
+            "target_relationship": "hostile"
+          },
+          {
+            "case_id": "stage6_hostile_low_v3",
+            "correct": true,
+            "family_name": "L0_one_scalar",
+            "fit_params": {
+              "clock": "global",
+              "decay": 0.995,
+              "positive_weight": 0.5
+            },
+            "fit_threshold": 20.44000979301388,
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_low",
+            "score": -5.068670663109197,
+            "source_family": "stage6",
+            "target_relationship": "hostile"
+          },
+          {
+            "case_id": "stage6_hostile_low_v4",
+            "correct": true,
+            "family_name": "L0_one_scalar",
+            "fit_params": {
+              "clock": "global",
+              "decay": 0.995,
+              "positive_weight": 0.5
+            },
+            "fit_threshold": 20.44000979301388,
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_low",
+            "score": -7.410975221581612,
+            "source_family": "stage6",
+            "target_relationship": "hostile"
+          },
+          {
+            "case_id": "stage6_hostile_high_v1",
+            "correct": true,
+            "family_name": "L0_one_scalar",
+            "fit_params": {
+              "clock": "global",
+              "decay": 0.995,
+              "positive_weight": 0.5
+            },
+            "fit_threshold": 20.44000979301388,
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_high",
+            "score": -10.625637357095599,
+            "source_family": "stage6",
+            "target_relationship": "hostile"
+          },
+          {
+            "case_id": "stage6_hostile_high_v2",
+            "correct": true,
+            "family_name": "L0_one_scalar",
+            "fit_params": {
+              "clock": "global",
+              "decay": 0.995,
+              "positive_weight": 0.5
+            },
+            "fit_threshold": 20.44000979301388,
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_high",
+            "score": -5.585138213691318,
+            "source_family": "stage6",
+            "target_relationship": "hostile"
+          },
+          {
+            "case_id": "stage6_hostile_high_v3",
+            "correct": true,
+            "family_name": "L0_one_scalar",
+            "fit_params": {
+              "clock": "global",
+              "decay": 0.995,
+              "positive_weight": 0.5
+            },
+            "fit_threshold": 20.44000979301388,
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_high",
+            "score": -4.998192861826251,
+            "source_family": "stage6",
+            "target_relationship": "hostile"
+          },
+          {
+            "case_id": "stage6_hostile_high_v4",
+            "correct": true,
+            "family_name": "L0_one_scalar",
+            "fit_params": {
+              "clock": "global",
+              "decay": 0.995,
+              "positive_weight": 0.5
+            },
+            "fit_threshold": 20.44000979301388,
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_high",
+            "score": -7.4585191203107275,
+            "source_family": "stage6",
+            "target_relationship": "hostile"
+          }
+        ],
+        "summary": {
+          "accuracy": 0.90625,
+          "by_source_family": {
+            "stage3": {
+              "accuracy": 1.0,
+              "correct": 16,
+              "n": 16
+            },
+            "stage6": {
+              "accuracy": 0.8125,
+              "correct": 13,
+              "n": 16
+            }
+          },
+          "correct": 29,
+          "n": 32
+        }
+      },
+      "complexity_rank": 0,
+      "cross_family": {
+        "stage3_fit": {
+          "params": {
+            "clock": "channel",
+            "decay": 0.995,
+            "positive_weight": 1.0
+          },
+          "threshold": 57.25967256846324
+        },
+        "stage3_fit_stage6_test": {
+          "accuracy": 0.75,
+          "by_source_family": {
+            "stage6": {
+              "accuracy": 0.75,
+              "correct": 12,
+              "n": 16
+            }
+          },
+          "correct": 12,
+          "n": 16
+        },
+        "stage6_fit": {
+          "params": {
+            "clock": "channel",
+            "decay": 0.995,
+            "positive_weight": 0.5
+          },
+          "threshold": 0.0
+        },
+        "stage6_fit_stage3_test": {
+          "accuracy": 0.5,
+          "by_source_family": {
+            "stage3": {
+              "accuracy": 0.5,
+              "correct": 8,
+              "n": 16
+            }
+          },
+          "correct": 8,
+          "n": 16
+        }
+      },
+      "description": "exact Stage-13 one-scalar leaky reducer",
+      "grid_size": 64
+    },
+    "L1_last_salient": {
+      "all32_fit": {
+        "fit_params": {
+          "clock": "channel",
+          "decay": 1.0,
+          "last_weight": 8.0,
+          "positive_weight": 1.0
+        },
+        "perfect_parameterizations": 0,
+        "rows": [
+          {
+            "case_id": "stage3_t0_friendly_low",
+            "correct": true,
+            "family_name": "L1_last_salient",
+            "pred_relationship": "friendly",
+            "quadrant": "friendly_low",
+            "score": 86.0,
+            "source_family": "stage3",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage3_t0_friendly_high",
+            "correct": true,
+            "family_name": "L1_last_salient",
+            "pred_relationship": "friendly",
+            "quadrant": "friendly_high",
+            "score": 86.0,
+            "source_family": "stage3",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage3_t0_hostile_low",
+            "correct": true,
+            "family_name": "L1_last_salient",
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_low",
+            "score": 70.0,
+            "source_family": "stage3",
+            "target_relationship": "hostile"
+          },
+          {
+            "case_id": "stage3_t0_hostile_high",
+            "correct": true,
+            "family_name": "L1_last_salient",
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_high",
+            "score": 70.0,
+            "source_family": "stage3",
+            "target_relationship": "hostile"
+          },
+          {
+            "case_id": "stage3_t1_friendly_low",
+            "correct": true,
+            "family_name": "L1_last_salient",
+            "pred_relationship": "friendly",
+            "quadrant": "friendly_low",
+            "score": 86.0,
+            "source_family": "stage3",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage3_t1_friendly_high",
+            "correct": true,
+            "family_name": "L1_last_salient",
+            "pred_relationship": "friendly",
+            "quadrant": "friendly_high",
+            "score": 86.0,
+            "source_family": "stage3",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage3_t1_hostile_low",
+            "correct": true,
+            "family_name": "L1_last_salient",
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_low",
+            "score": 70.0,
+            "source_family": "stage3",
+            "target_relationship": "hostile"
+          },
+          {
+            "case_id": "stage3_t1_hostile_high",
+            "correct": true,
+            "family_name": "L1_last_salient",
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_high",
+            "score": 70.0,
+            "source_family": "stage3",
+            "target_relationship": "hostile"
+          },
+          {
+            "case_id": "stage3_t2_friendly_low",
+            "correct": true,
+            "family_name": "L1_last_salient",
+            "pred_relationship": "friendly",
+            "quadrant": "friendly_low",
+            "score": 86.0,
+            "source_family": "stage3",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage3_t2_friendly_high",
+            "correct": true,
+            "family_name": "L1_last_salient",
+            "pred_relationship": "friendly",
+            "quadrant": "friendly_high",
+            "score": 86.0,
+            "source_family": "stage3",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage3_t2_hostile_low",
+            "correct": true,
+            "family_name": "L1_last_salient",
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_low",
+            "score": 70.0,
+            "source_family": "stage3",
+            "target_relationship": "hostile"
+          },
+          {
+            "case_id": "stage3_t2_hostile_high",
+            "correct": true,
+            "family_name": "L1_last_salient",
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_high",
+            "score": 70.0,
+            "source_family": "stage3",
+            "target_relationship": "hostile"
+          },
+          {
+            "case_id": "stage3_t3_friendly_low",
+            "correct": true,
+            "family_name": "L1_last_salient",
+            "pred_relationship": "friendly",
+            "quadrant": "friendly_low",
+            "score": 86.0,
+            "source_family": "stage3",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage3_t3_friendly_high",
+            "correct": true,
+            "family_name": "L1_last_salient",
+            "pred_relationship": "friendly",
+            "quadrant": "friendly_high",
+            "score": 86.0,
+            "source_family": "stage3",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage3_t3_hostile_low",
+            "correct": true,
+            "family_name": "L1_last_salient",
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_low",
+            "score": 70.0,
+            "source_family": "stage3",
+            "target_relationship": "hostile"
+          },
+          {
+            "case_id": "stage3_t3_hostile_high",
+            "correct": true,
+            "family_name": "L1_last_salient",
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_high",
+            "score": 70.0,
+            "source_family": "stage3",
+            "target_relationship": "hostile"
+          },
+          {
+            "case_id": "stage6_friendly_low_v1",
+            "correct": true,
+            "family_name": "L1_last_salient",
+            "pred_relationship": "friendly",
+            "quadrant": "friendly_low",
+            "score": 91.0,
+            "source_family": "stage6",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage6_friendly_low_v2",
+            "correct": true,
+            "family_name": "L1_last_salient",
+            "pred_relationship": "friendly",
+            "quadrant": "friendly_low",
+            "score": 75.0,
+            "source_family": "stage6",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage6_friendly_low_v3",
+            "correct": false,
+            "family_name": "L1_last_salient",
+            "pred_relationship": "hostile",
+            "quadrant": "friendly_low",
+            "score": 0.0,
+            "source_family": "stage6",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage6_friendly_low_v4",
+            "correct": true,
+            "family_name": "L1_last_salient",
+            "pred_relationship": "friendly",
+            "quadrant": "friendly_low",
+            "score": 99.0,
+            "source_family": "stage6",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage6_friendly_high_v1",
+            "correct": true,
+            "family_name": "L1_last_salient",
+            "pred_relationship": "friendly",
+            "quadrant": "friendly_high",
+            "score": 91.0,
+            "source_family": "stage6",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage6_friendly_high_v2",
+            "correct": true,
+            "family_name": "L1_last_salient",
+            "pred_relationship": "friendly",
+            "quadrant": "friendly_high",
+            "score": 75.0,
+            "source_family": "stage6",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage6_friendly_high_v3",
+            "correct": false,
+            "family_name": "L1_last_salient",
+            "pred_relationship": "hostile",
+            "quadrant": "friendly_high",
+            "score": 0.0,
+            "source_family": "stage6",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage6_friendly_high_v4",
+            "correct": true,
+            "family_name": "L1_last_salient",
+            "pred_relationship": "friendly",
+            "quadrant": "friendly_high",
+            "score": 99.0,
+            "source_family": "stage6",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage6_hostile_low_v1",
+            "correct": true,
+            "family_name": "L1_last_salient",
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_low",
+            "score": -16.0,
+            "source_family": "stage6",
+            "target_relationship": "hostile"
+          },
+          {
+            "case_id": "stage6_hostile_low_v2",
+            "correct": true,
+            "family_name": "L1_last_salient",
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_low",
+            "score": 26.0,
+            "source_family": "stage6",
+            "target_relationship": "hostile"
+          },
+          {
+            "case_id": "stage6_hostile_low_v3",
+            "correct": true,
+            "family_name": "L1_last_salient",
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_low",
+            "score": 11.0,
+            "source_family": "stage6",
+            "target_relationship": "hostile"
+          },
+          {
+            "case_id": "stage6_hostile_low_v4",
+            "correct": true,
+            "family_name": "L1_last_salient",
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_low",
+            "score": -7.0,
+            "source_family": "stage6",
+            "target_relationship": "hostile"
+          },
+          {
+            "case_id": "stage6_hostile_high_v1",
+            "correct": true,
+            "family_name": "L1_last_salient",
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_high",
+            "score": -16.0,
+            "source_family": "stage6",
+            "target_relationship": "hostile"
+          },
+          {
+            "case_id": "stage6_hostile_high_v2",
+            "correct": true,
+            "family_name": "L1_last_salient",
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_high",
+            "score": 26.0,
+            "source_family": "stage6",
+            "target_relationship": "hostile"
+          },
+          {
+            "case_id": "stage6_hostile_high_v3",
+            "correct": true,
+            "family_name": "L1_last_salient",
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_high",
+            "score": 11.0,
+            "source_family": "stage6",
+            "target_relationship": "hostile"
+          },
+          {
+            "case_id": "stage6_hostile_high_v4",
+            "correct": true,
+            "family_name": "L1_last_salient",
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_high",
+            "score": -7.0,
+            "source_family": "stage6",
+            "target_relationship": "hostile"
+          }
+        ],
+        "summary": {
+          "accuracy": 0.9375,
+          "by_source_family": {
+            "stage3": {
+              "accuracy": 1.0,
+              "correct": 16,
+              "n": 16
+            },
+            "stage6": {
+              "accuracy": 0.875,
+              "correct": 14,
+              "n": 16
+            }
+          },
+          "correct": 30,
+          "n": 32
+        },
+        "threshold": 72.5
+      },
+      "combined_loocv": {
+        "rows": [
+          {
+            "case_id": "stage3_t0_friendly_low",
+            "correct": true,
+            "family_name": "L1_last_salient",
+            "fit_params": {
+              "clock": "channel",
+              "decay": 1.0,
+              "last_weight": 8.0,
+              "positive_weight": 1.0
+            },
+            "fit_threshold": 72.5,
+            "pred_relationship": "friendly",
+            "quadrant": "friendly_low",
+            "score": 86.0,
+            "source_family": "stage3",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage3_t0_friendly_high",
+            "correct": true,
+            "family_name": "L1_last_salient",
+            "fit_params": {
+              "clock": "channel",
+              "decay": 1.0,
+              "last_weight": 8.0,
+              "positive_weight": 1.0
+            },
+            "fit_threshold": 72.5,
+            "pred_relationship": "friendly",
+            "quadrant": "friendly_high",
+            "score": 86.0,
+            "source_family": "stage3",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage3_t0_hostile_low",
+            "correct": true,
+            "family_name": "L1_last_salient",
+            "fit_params": {
+              "clock": "channel",
+              "decay": 1.0,
+              "last_weight": 8.0,
+              "positive_weight": 1.0
+            },
+            "fit_threshold": 72.5,
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_low",
+            "score": 70.0,
+            "source_family": "stage3",
+            "target_relationship": "hostile"
+          },
+          {
+            "case_id": "stage3_t0_hostile_high",
+            "correct": true,
+            "family_name": "L1_last_salient",
+            "fit_params": {
+              "clock": "channel",
+              "decay": 1.0,
+              "last_weight": 8.0,
+              "positive_weight": 1.0
+            },
+            "fit_threshold": 72.5,
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_high",
+            "score": 70.0,
+            "source_family": "stage3",
+            "target_relationship": "hostile"
+          },
+          {
+            "case_id": "stage3_t1_friendly_low",
+            "correct": true,
+            "family_name": "L1_last_salient",
+            "fit_params": {
+              "clock": "channel",
+              "decay": 1.0,
+              "last_weight": 8.0,
+              "positive_weight": 1.0
+            },
+            "fit_threshold": 72.5,
+            "pred_relationship": "friendly",
+            "quadrant": "friendly_low",
+            "score": 86.0,
+            "source_family": "stage3",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage3_t1_friendly_high",
+            "correct": true,
+            "family_name": "L1_last_salient",
+            "fit_params": {
+              "clock": "channel",
+              "decay": 1.0,
+              "last_weight": 8.0,
+              "positive_weight": 1.0
+            },
+            "fit_threshold": 72.5,
+            "pred_relationship": "friendly",
+            "quadrant": "friendly_high",
+            "score": 86.0,
+            "source_family": "stage3",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage3_t1_hostile_low",
+            "correct": true,
+            "family_name": "L1_last_salient",
+            "fit_params": {
+              "clock": "channel",
+              "decay": 1.0,
+              "last_weight": 8.0,
+              "positive_weight": 1.0
+            },
+            "fit_threshold": 72.5,
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_low",
+            "score": 70.0,
+            "source_family": "stage3",
+            "target_relationship": "hostile"
+          },
+          {
+            "case_id": "stage3_t1_hostile_high",
+            "correct": true,
+            "family_name": "L1_last_salient",
+            "fit_params": {
+              "clock": "channel",
+              "decay": 1.0,
+              "last_weight": 8.0,
+              "positive_weight": 1.0
+            },
+            "fit_threshold": 72.5,
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_high",
+            "score": 70.0,
+            "source_family": "stage3",
+            "target_relationship": "hostile"
+          },
+          {
+            "case_id": "stage3_t2_friendly_low",
+            "correct": true,
+            "family_name": "L1_last_salient",
+            "fit_params": {
+              "clock": "channel",
+              "decay": 1.0,
+              "last_weight": 8.0,
+              "positive_weight": 1.0
+            },
+            "fit_threshold": 72.5,
+            "pred_relationship": "friendly",
+            "quadrant": "friendly_low",
+            "score": 86.0,
+            "source_family": "stage3",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage3_t2_friendly_high",
+            "correct": true,
+            "family_name": "L1_last_salient",
+            "fit_params": {
+              "clock": "channel",
+              "decay": 1.0,
+              "last_weight": 8.0,
+              "positive_weight": 1.0
+            },
+            "fit_threshold": 72.5,
+            "pred_relationship": "friendly",
+            "quadrant": "friendly_high",
+            "score": 86.0,
+            "source_family": "stage3",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage3_t2_hostile_low",
+            "correct": true,
+            "family_name": "L1_last_salient",
+            "fit_params": {
+              "clock": "channel",
+              "decay": 1.0,
+              "last_weight": 8.0,
+              "positive_weight": 1.0
+            },
+            "fit_threshold": 72.5,
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_low",
+            "score": 70.0,
+            "source_family": "stage3",
+            "target_relationship": "hostile"
+          },
+          {
+            "case_id": "stage3_t2_hostile_high",
+            "correct": true,
+            "family_name": "L1_last_salient",
+            "fit_params": {
+              "clock": "channel",
+              "decay": 1.0,
+              "last_weight": 8.0,
+              "positive_weight": 1.0
+            },
+            "fit_threshold": 72.5,
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_high",
+            "score": 70.0,
+            "source_family": "stage3",
+            "target_relationship": "hostile"
+          },
+          {
+            "case_id": "stage3_t3_friendly_low",
+            "correct": true,
+            "family_name": "L1_last_salient",
+            "fit_params": {
+              "clock": "channel",
+              "decay": 1.0,
+              "last_weight": 8.0,
+              "positive_weight": 1.0
+            },
+            "fit_threshold": 72.5,
+            "pred_relationship": "friendly",
+            "quadrant": "friendly_low",
+            "score": 86.0,
+            "source_family": "stage3",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage3_t3_friendly_high",
+            "correct": true,
+            "family_name": "L1_last_salient",
+            "fit_params": {
+              "clock": "channel",
+              "decay": 1.0,
+              "last_weight": 8.0,
+              "positive_weight": 1.0
+            },
+            "fit_threshold": 72.5,
+            "pred_relationship": "friendly",
+            "quadrant": "friendly_high",
+            "score": 86.0,
+            "source_family": "stage3",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage3_t3_hostile_low",
+            "correct": true,
+            "family_name": "L1_last_salient",
+            "fit_params": {
+              "clock": "channel",
+              "decay": 1.0,
+              "last_weight": 8.0,
+              "positive_weight": 1.0
+            },
+            "fit_threshold": 72.5,
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_low",
+            "score": 70.0,
+            "source_family": "stage3",
+            "target_relationship": "hostile"
+          },
+          {
+            "case_id": "stage3_t3_hostile_high",
+            "correct": true,
+            "family_name": "L1_last_salient",
+            "fit_params": {
+              "clock": "channel",
+              "decay": 1.0,
+              "last_weight": 8.0,
+              "positive_weight": 1.0
+            },
+            "fit_threshold": 72.5,
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_high",
+            "score": 70.0,
+            "source_family": "stage3",
+            "target_relationship": "hostile"
+          },
+          {
+            "case_id": "stage6_friendly_low_v1",
+            "correct": true,
+            "family_name": "L1_last_salient",
+            "fit_params": {
+              "clock": "channel",
+              "decay": 1.0,
+              "last_weight": 8.0,
+              "positive_weight": 1.0
+            },
+            "fit_threshold": 72.5,
+            "pred_relationship": "friendly",
+            "quadrant": "friendly_low",
+            "score": 91.0,
+            "source_family": "stage6",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage6_friendly_low_v2",
+            "correct": true,
+            "family_name": "L1_last_salient",
+            "fit_params": {
+              "clock": "channel",
+              "decay": 1.0,
+              "last_weight": 8.0,
+              "positive_weight": 1.0
+            },
+            "fit_threshold": 72.5,
+            "pred_relationship": "friendly",
+            "quadrant": "friendly_low",
+            "score": 75.0,
+            "source_family": "stage6",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage6_friendly_low_v3",
+            "correct": false,
+            "family_name": "L1_last_salient",
+            "fit_params": {
+              "clock": "channel",
+              "decay": 1.0,
+              "last_weight": 8.0,
+              "positive_weight": 1.0
+            },
+            "fit_threshold": 72.5,
+            "pred_relationship": "hostile",
+            "quadrant": "friendly_low",
+            "score": 0.0,
+            "source_family": "stage6",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage6_friendly_low_v4",
+            "correct": true,
+            "family_name": "L1_last_salient",
+            "fit_params": {
+              "clock": "channel",
+              "decay": 1.0,
+              "last_weight": 8.0,
+              "positive_weight": 1.0
+            },
+            "fit_threshold": 72.5,
+            "pred_relationship": "friendly",
+            "quadrant": "friendly_low",
+            "score": 99.0,
+            "source_family": "stage6",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage6_friendly_high_v1",
+            "correct": true,
+            "family_name": "L1_last_salient",
+            "fit_params": {
+              "clock": "channel",
+              "decay": 1.0,
+              "last_weight": 8.0,
+              "positive_weight": 1.0
+            },
+            "fit_threshold": 72.5,
+            "pred_relationship": "friendly",
+            "quadrant": "friendly_high",
+            "score": 91.0,
+            "source_family": "stage6",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage6_friendly_high_v2",
+            "correct": true,
+            "family_name": "L1_last_salient",
+            "fit_params": {
+              "clock": "channel",
+              "decay": 1.0,
+              "last_weight": 8.0,
+              "positive_weight": 1.0
+            },
+            "fit_threshold": 72.5,
+            "pred_relationship": "friendly",
+            "quadrant": "friendly_high",
+            "score": 75.0,
+            "source_family": "stage6",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage6_friendly_high_v3",
+            "correct": false,
+            "family_name": "L1_last_salient",
+            "fit_params": {
+              "clock": "channel",
+              "decay": 1.0,
+              "last_weight": 8.0,
+              "positive_weight": 1.0
+            },
+            "fit_threshold": 72.5,
+            "pred_relationship": "hostile",
+            "quadrant": "friendly_high",
+            "score": 0.0,
+            "source_family": "stage6",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage6_friendly_high_v4",
+            "correct": true,
+            "family_name": "L1_last_salient",
+            "fit_params": {
+              "clock": "channel",
+              "decay": 1.0,
+              "last_weight": 8.0,
+              "positive_weight": 1.0
+            },
+            "fit_threshold": 72.5,
+            "pred_relationship": "friendly",
+            "quadrant": "friendly_high",
+            "score": 99.0,
+            "source_family": "stage6",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage6_hostile_low_v1",
+            "correct": true,
+            "family_name": "L1_last_salient",
+            "fit_params": {
+              "clock": "channel",
+              "decay": 1.0,
+              "last_weight": 8.0,
+              "positive_weight": 1.0
+            },
+            "fit_threshold": 72.5,
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_low",
+            "score": -16.0,
+            "source_family": "stage6",
+            "target_relationship": "hostile"
+          },
+          {
+            "case_id": "stage6_hostile_low_v2",
+            "correct": true,
+            "family_name": "L1_last_salient",
+            "fit_params": {
+              "clock": "channel",
+              "decay": 1.0,
+              "last_weight": 8.0,
+              "positive_weight": 1.0
+            },
+            "fit_threshold": 72.5,
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_low",
+            "score": 26.0,
+            "source_family": "stage6",
+            "target_relationship": "hostile"
+          },
+          {
+            "case_id": "stage6_hostile_low_v3",
+            "correct": true,
+            "family_name": "L1_last_salient",
+            "fit_params": {
+              "clock": "channel",
+              "decay": 1.0,
+              "last_weight": 8.0,
+              "positive_weight": 1.0
+            },
+            "fit_threshold": 72.5,
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_low",
+            "score": 11.0,
+            "source_family": "stage6",
+            "target_relationship": "hostile"
+          },
+          {
+            "case_id": "stage6_hostile_low_v4",
+            "correct": true,
+            "family_name": "L1_last_salient",
+            "fit_params": {
+              "clock": "channel",
+              "decay": 1.0,
+              "last_weight": 8.0,
+              "positive_weight": 1.0
+            },
+            "fit_threshold": 72.5,
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_low",
+            "score": -7.0,
+            "source_family": "stage6",
+            "target_relationship": "hostile"
+          },
+          {
+            "case_id": "stage6_hostile_high_v1",
+            "correct": true,
+            "family_name": "L1_last_salient",
+            "fit_params": {
+              "clock": "channel",
+              "decay": 1.0,
+              "last_weight": 8.0,
+              "positive_weight": 1.0
+            },
+            "fit_threshold": 72.5,
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_high",
+            "score": -16.0,
+            "source_family": "stage6",
+            "target_relationship": "hostile"
+          },
+          {
+            "case_id": "stage6_hostile_high_v2",
+            "correct": true,
+            "family_name": "L1_last_salient",
+            "fit_params": {
+              "clock": "channel",
+              "decay": 1.0,
+              "last_weight": 8.0,
+              "positive_weight": 1.0
+            },
+            "fit_threshold": 72.5,
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_high",
+            "score": 26.0,
+            "source_family": "stage6",
+            "target_relationship": "hostile"
+          },
+          {
+            "case_id": "stage6_hostile_high_v3",
+            "correct": true,
+            "family_name": "L1_last_salient",
+            "fit_params": {
+              "clock": "channel",
+              "decay": 1.0,
+              "last_weight": 8.0,
+              "positive_weight": 1.0
+            },
+            "fit_threshold": 72.5,
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_high",
+            "score": 11.0,
+            "source_family": "stage6",
+            "target_relationship": "hostile"
+          },
+          {
+            "case_id": "stage6_hostile_high_v4",
+            "correct": true,
+            "family_name": "L1_last_salient",
+            "fit_params": {
+              "clock": "channel",
+              "decay": 1.0,
+              "last_weight": 8.0,
+              "positive_weight": 1.0
+            },
+            "fit_threshold": 72.5,
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_high",
+            "score": -7.0,
+            "source_family": "stage6",
+            "target_relationship": "hostile"
+          }
+        ],
+        "summary": {
+          "accuracy": 0.9375,
+          "by_source_family": {
+            "stage3": {
+              "accuracy": 1.0,
+              "correct": 16,
+              "n": 16
+            },
+            "stage6": {
+              "accuracy": 0.875,
+              "correct": 14,
+              "n": 16
+            }
+          },
+          "correct": 30,
+          "n": 32
+        }
+      },
+      "complexity_rank": 1,
+      "cross_family": {
+        "stage3_fit": {
+          "params": {
+            "clock": "channel",
+            "decay": 1.0,
+            "last_weight": 0.5,
+            "positive_weight": 1.0
+          },
+          "threshold": 78.0
+        },
+        "stage3_fit_stage6_test": {
+          "accuracy": 0.75,
+          "by_source_family": {
+            "stage6": {
+              "accuracy": 0.75,
+              "correct": 12,
+              "n": 16
+            }
+          },
+          "correct": 12,
+          "n": 16
+        },
+        "stage6_fit": {
+          "params": {
+            "clock": "channel",
+            "decay": 0.995,
+            "last_weight": 0.0,
+            "positive_weight": 0.5
+          },
+          "threshold": 0.0
+        },
+        "stage6_fit_stage3_test": {
+          "accuracy": 0.5,
+          "by_source_family": {
+            "stage3": {
+              "accuracy": 0.5,
+              "correct": 8,
+              "n": 16
+            }
+          },
+          "correct": 8,
+          "n": 16
+        }
+      },
+      "description": "one scalar plus last salient social-event sign",
+      "grid_size": 704
+    },
+    "L2_dual_trace": {
+      "all32_fit": {
+        "fit_params": {
+          "betrayal_decay": 0.995,
+          "clock": "global",
+          "help_decay": 0.995,
+          "positive_weight": 0.5
+        },
+        "perfect_parameterizations": 0,
+        "rows": [
+          {
+            "case_id": "stage3_t0_friendly_low",
+            "correct": true,
+            "family_name": "L2_dual_trace",
+            "pred_relationship": "friendly",
+            "quadrant": "friendly_low",
+            "score": 27.01142840157592,
+            "source_family": "stage3",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage3_t0_friendly_high",
+            "correct": true,
+            "family_name": "L2_dual_trace",
+            "pred_relationship": "friendly",
+            "quadrant": "friendly_high",
+            "score": 27.01142840157592,
+            "source_family": "stage3",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage3_t0_hostile_low",
+            "correct": true,
+            "family_name": "L2_dual_trace",
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_low",
+            "score": 19.75326861454883,
+            "source_family": "stage3",
+            "target_relationship": "hostile"
+          },
+          {
+            "case_id": "stage3_t0_hostile_high",
+            "correct": true,
+            "family_name": "L2_dual_trace",
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_high",
+            "score": 19.75326861454883,
+            "source_family": "stage3",
+            "target_relationship": "hostile"
+          },
+          {
+            "case_id": "stage3_t1_friendly_low",
+            "correct": true,
+            "family_name": "L2_dual_trace",
+            "pred_relationship": "friendly",
+            "quadrant": "friendly_low",
+            "score": 26.93235267880121,
+            "source_family": "stage3",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage3_t1_friendly_high",
+            "correct": true,
+            "family_name": "L2_dual_trace",
+            "pred_relationship": "friendly",
+            "quadrant": "friendly_high",
+            "score": 26.93235267880121,
+            "source_family": "stage3",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage3_t1_hostile_low",
+            "correct": true,
+            "family_name": "L2_dual_trace",
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_low",
+            "score": 19.629423819895838,
+            "source_family": "stage3",
+            "target_relationship": "hostile"
+          },
+          {
+            "case_id": "stage3_t1_hostile_high",
+            "correct": true,
+            "family_name": "L2_dual_trace",
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_high",
+            "score": 19.629423819895838,
+            "source_family": "stage3",
+            "target_relationship": "hostile"
+          },
+          {
+            "case_id": "stage3_t2_friendly_low",
+            "correct": true,
+            "family_name": "L2_dual_trace",
+            "pred_relationship": "friendly",
+            "quadrant": "friendly_low",
+            "score": 27.7870967654824,
+            "source_family": "stage3",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage3_t2_friendly_high",
+            "correct": true,
+            "family_name": "L2_dual_trace",
+            "pred_relationship": "friendly",
+            "quadrant": "friendly_high",
+            "score": 27.7870967654824,
+            "source_family": "stage3",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage3_t2_hostile_low",
+            "correct": true,
+            "family_name": "L2_dual_trace",
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_low",
+            "score": 20.395060861356093,
+            "source_family": "stage3",
+            "target_relationship": "hostile"
+          },
+          {
+            "case_id": "stage3_t2_hostile_high",
+            "correct": true,
+            "family_name": "L2_dual_trace",
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_high",
+            "score": 20.395060861356093,
+            "source_family": "stage3",
+            "target_relationship": "hostile"
+          },
+          {
+            "case_id": "stage3_t3_friendly_low",
+            "correct": true,
+            "family_name": "L2_dual_trace",
+            "pred_relationship": "friendly",
+            "quadrant": "friendly_low",
+            "score": 27.235032109392098,
+            "source_family": "stage3",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage3_t3_friendly_high",
+            "correct": true,
+            "family_name": "L2_dual_trace",
+            "pred_relationship": "friendly",
+            "quadrant": "friendly_high",
+            "score": 27.235032109392098,
+            "source_family": "stage3",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage3_t3_hostile_low",
+            "correct": true,
+            "family_name": "L2_dual_trace",
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_low",
+            "score": 19.911185292990854,
+            "source_family": "stage3",
+            "target_relationship": "hostile"
+          },
+          {
+            "case_id": "stage3_t3_hostile_high",
+            "correct": true,
+            "family_name": "L2_dual_trace",
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_high",
+            "score": 19.911185292990854,
+            "source_family": "stage3",
+            "target_relationship": "hostile"
+          },
+          {
+            "case_id": "stage6_friendly_low_v1",
+            "correct": true,
+            "family_name": "L2_dual_trace",
+            "pred_relationship": "friendly",
+            "quadrant": "friendly_low",
+            "score": 27.879690344449415,
+            "source_family": "stage6",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage6_friendly_low_v2",
+            "correct": true,
+            "family_name": "L2_dual_trace",
+            "pred_relationship": "friendly",
+            "quadrant": "friendly_low",
+            "score": 20.48495872467167,
+            "source_family": "stage6",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage6_friendly_low_v3",
+            "correct": false,
+            "family_name": "L2_dual_trace",
+            "pred_relationship": "hostile",
+            "quadrant": "friendly_low",
+            "score": -0.5415585359606538,
+            "source_family": "stage6",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage6_friendly_low_v4",
+            "correct": true,
+            "family_name": "L2_dual_trace",
+            "pred_relationship": "friendly",
+            "quadrant": "friendly_low",
+            "score": 27.64961074983465,
+            "source_family": "stage6",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage6_friendly_high_v1",
+            "correct": true,
+            "family_name": "L2_dual_trace",
+            "pred_relationship": "friendly",
+            "quadrant": "friendly_high",
+            "score": 28.326885116856644,
+            "source_family": "stage6",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage6_friendly_high_v2",
+            "correct": true,
+            "family_name": "L2_dual_trace",
+            "pred_relationship": "friendly",
+            "quadrant": "friendly_high",
+            "score": 20.76231147142067,
+            "source_family": "stage6",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage6_friendly_high_v3",
+            "correct": false,
+            "family_name": "L2_dual_trace",
+            "pred_relationship": "hostile",
+            "quadrant": "friendly_high",
+            "score": -0.5653513360486406,
+            "source_family": "stage6",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage6_friendly_high_v4",
+            "correct": true,
+            "family_name": "L2_dual_trace",
+            "pred_relationship": "friendly",
+            "quadrant": "friendly_high",
+            "score": 28.7038588916541,
+            "source_family": "stage6",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage6_hostile_low_v1",
+            "correct": true,
+            "family_name": "L2_dual_trace",
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_low",
+            "score": -10.775849390860271,
+            "source_family": "stage6",
+            "target_relationship": "hostile"
+          },
+          {
+            "case_id": "stage6_hostile_low_v2",
+            "correct": true,
+            "family_name": "L2_dual_trace",
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_low",
+            "score": -5.416058663273919,
+            "source_family": "stage6",
+            "target_relationship": "hostile"
+          },
+          {
+            "case_id": "stage6_hostile_low_v3",
+            "correct": true,
+            "family_name": "L2_dual_trace",
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_low",
+            "score": -5.068670663109195,
+            "source_family": "stage6",
+            "target_relationship": "hostile"
+          },
+          {
+            "case_id": "stage6_hostile_low_v4",
+            "correct": true,
+            "family_name": "L2_dual_trace",
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_low",
+            "score": -7.410975221581615,
+            "source_family": "stage6",
+            "target_relationship": "hostile"
+          },
+          {
+            "case_id": "stage6_hostile_high_v1",
+            "correct": true,
+            "family_name": "L2_dual_trace",
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_high",
+            "score": -10.625637357095599,
+            "source_family": "stage6",
+            "target_relationship": "hostile"
+          },
+          {
+            "case_id": "stage6_hostile_high_v2",
+            "correct": true,
+            "family_name": "L2_dual_trace",
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_high",
+            "score": -5.585138213691327,
+            "source_family": "stage6",
+            "target_relationship": "hostile"
+          },
+          {
+            "case_id": "stage6_hostile_high_v3",
+            "correct": true,
+            "family_name": "L2_dual_trace",
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_high",
+            "score": -4.998192861826248,
+            "source_family": "stage6",
+            "target_relationship": "hostile"
+          },
+          {
+            "case_id": "stage6_hostile_high_v4",
+            "correct": true,
+            "family_name": "L2_dual_trace",
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_high",
+            "score": -7.458519120310723,
+            "source_family": "stage6",
+            "target_relationship": "hostile"
+          }
+        ],
+        "summary": {
+          "accuracy": 0.9375,
+          "by_source_family": {
+            "stage3": {
+              "accuracy": 1.0,
+              "correct": 16,
+              "n": 16
+            },
+            "stage6": {
+              "accuracy": 0.875,
+              "correct": 14,
+              "n": 16
+            }
+          },
+          "correct": 30,
+          "n": 32
+        },
+        "threshold": 20.440009793013882
+      },
+      "combined_loocv": {
+        "rows": [
+          {
+            "case_id": "stage3_t0_friendly_low",
+            "correct": true,
+            "family_name": "L2_dual_trace",
+            "fit_params": {
+              "betrayal_decay": 0.995,
+              "clock": "global",
+              "help_decay": 0.995,
+              "positive_weight": 0.5
+            },
+            "fit_threshold": 20.440009793013882,
+            "pred_relationship": "friendly",
+            "quadrant": "friendly_low",
+            "score": 27.01142840157592,
+            "source_family": "stage3",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage3_t0_friendly_high",
+            "correct": true,
+            "family_name": "L2_dual_trace",
+            "fit_params": {
+              "betrayal_decay": 0.995,
+              "clock": "global",
+              "help_decay": 0.995,
+              "positive_weight": 0.5
+            },
+            "fit_threshold": 20.440009793013882,
+            "pred_relationship": "friendly",
+            "quadrant": "friendly_high",
+            "score": 27.01142840157592,
+            "source_family": "stage3",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage3_t0_hostile_low",
+            "correct": true,
+            "family_name": "L2_dual_trace",
+            "fit_params": {
+              "betrayal_decay": 0.995,
+              "clock": "global",
+              "help_decay": 0.995,
+              "positive_weight": 0.5
+            },
+            "fit_threshold": 20.440009793013882,
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_low",
+            "score": 19.75326861454883,
+            "source_family": "stage3",
+            "target_relationship": "hostile"
+          },
+          {
+            "case_id": "stage3_t0_hostile_high",
+            "correct": true,
+            "family_name": "L2_dual_trace",
+            "fit_params": {
+              "betrayal_decay": 0.995,
+              "clock": "global",
+              "help_decay": 0.995,
+              "positive_weight": 0.5
+            },
+            "fit_threshold": 20.440009793013882,
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_high",
+            "score": 19.75326861454883,
+            "source_family": "stage3",
+            "target_relationship": "hostile"
+          },
+          {
+            "case_id": "stage3_t1_friendly_low",
+            "correct": true,
+            "family_name": "L2_dual_trace",
+            "fit_params": {
+              "betrayal_decay": 0.995,
+              "clock": "global",
+              "help_decay": 0.995,
+              "positive_weight": 0.5
+            },
+            "fit_threshold": 20.440009793013882,
+            "pred_relationship": "friendly",
+            "quadrant": "friendly_low",
+            "score": 26.93235267880121,
+            "source_family": "stage3",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage3_t1_friendly_high",
+            "correct": true,
+            "family_name": "L2_dual_trace",
+            "fit_params": {
+              "betrayal_decay": 0.995,
+              "clock": "global",
+              "help_decay": 0.995,
+              "positive_weight": 0.5
+            },
+            "fit_threshold": 20.440009793013882,
+            "pred_relationship": "friendly",
+            "quadrant": "friendly_high",
+            "score": 26.93235267880121,
+            "source_family": "stage3",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage3_t1_hostile_low",
+            "correct": true,
+            "family_name": "L2_dual_trace",
+            "fit_params": {
+              "betrayal_decay": 0.995,
+              "clock": "global",
+              "help_decay": 0.995,
+              "positive_weight": 0.5
+            },
+            "fit_threshold": 20.440009793013882,
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_low",
+            "score": 19.629423819895838,
+            "source_family": "stage3",
+            "target_relationship": "hostile"
+          },
+          {
+            "case_id": "stage3_t1_hostile_high",
+            "correct": true,
+            "family_name": "L2_dual_trace",
+            "fit_params": {
+              "betrayal_decay": 0.995,
+              "clock": "global",
+              "help_decay": 0.995,
+              "positive_weight": 0.5
+            },
+            "fit_threshold": 20.440009793013882,
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_high",
+            "score": 19.629423819895838,
+            "source_family": "stage3",
+            "target_relationship": "hostile"
+          },
+          {
+            "case_id": "stage3_t2_friendly_low",
+            "correct": true,
+            "family_name": "L2_dual_trace",
+            "fit_params": {
+              "betrayal_decay": 0.995,
+              "clock": "global",
+              "help_decay": 0.995,
+              "positive_weight": 0.5
+            },
+            "fit_threshold": 20.440009793013882,
+            "pred_relationship": "friendly",
+            "quadrant": "friendly_low",
+            "score": 27.7870967654824,
+            "source_family": "stage3",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage3_t2_friendly_high",
+            "correct": true,
+            "family_name": "L2_dual_trace",
+            "fit_params": {
+              "betrayal_decay": 0.995,
+              "clock": "global",
+              "help_decay": 0.995,
+              "positive_weight": 0.5
+            },
+            "fit_threshold": 20.440009793013882,
+            "pred_relationship": "friendly",
+            "quadrant": "friendly_high",
+            "score": 27.7870967654824,
+            "source_family": "stage3",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage3_t2_hostile_low",
+            "correct": true,
+            "family_name": "L2_dual_trace",
+            "fit_params": {
+              "betrayal_decay": 0.995,
+              "clock": "global",
+              "help_decay": 0.995,
+              "positive_weight": 0.5
+            },
+            "fit_threshold": 20.440009793013882,
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_low",
+            "score": 20.395060861356093,
+            "source_family": "stage3",
+            "target_relationship": "hostile"
+          },
+          {
+            "case_id": "stage3_t2_hostile_high",
+            "correct": true,
+            "family_name": "L2_dual_trace",
+            "fit_params": {
+              "betrayal_decay": 0.995,
+              "clock": "global",
+              "help_decay": 0.995,
+              "positive_weight": 0.5
+            },
+            "fit_threshold": 20.440009793013882,
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_high",
+            "score": 20.395060861356093,
+            "source_family": "stage3",
+            "target_relationship": "hostile"
+          },
+          {
+            "case_id": "stage3_t3_friendly_low",
+            "correct": true,
+            "family_name": "L2_dual_trace",
+            "fit_params": {
+              "betrayal_decay": 0.995,
+              "clock": "global",
+              "help_decay": 0.995,
+              "positive_weight": 0.5
+            },
+            "fit_threshold": 20.440009793013882,
+            "pred_relationship": "friendly",
+            "quadrant": "friendly_low",
+            "score": 27.235032109392098,
+            "source_family": "stage3",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage3_t3_friendly_high",
+            "correct": true,
+            "family_name": "L2_dual_trace",
+            "fit_params": {
+              "betrayal_decay": 0.995,
+              "clock": "global",
+              "help_decay": 0.995,
+              "positive_weight": 0.5
+            },
+            "fit_threshold": 20.440009793013882,
+            "pred_relationship": "friendly",
+            "quadrant": "friendly_high",
+            "score": 27.235032109392098,
+            "source_family": "stage3",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage3_t3_hostile_low",
+            "correct": true,
+            "family_name": "L2_dual_trace",
+            "fit_params": {
+              "betrayal_decay": 0.995,
+              "clock": "global",
+              "help_decay": 0.995,
+              "positive_weight": 0.5
+            },
+            "fit_threshold": 20.440009793013882,
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_low",
+            "score": 19.911185292990854,
+            "source_family": "stage3",
+            "target_relationship": "hostile"
+          },
+          {
+            "case_id": "stage3_t3_hostile_high",
+            "correct": true,
+            "family_name": "L2_dual_trace",
+            "fit_params": {
+              "betrayal_decay": 0.995,
+              "clock": "global",
+              "help_decay": 0.995,
+              "positive_weight": 0.5
+            },
+            "fit_threshold": 20.440009793013882,
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_high",
+            "score": 19.911185292990854,
+            "source_family": "stage3",
+            "target_relationship": "hostile"
+          },
+          {
+            "case_id": "stage6_friendly_low_v1",
+            "correct": true,
+            "family_name": "L2_dual_trace",
+            "fit_params": {
+              "betrayal_decay": 0.995,
+              "clock": "global",
+              "help_decay": 0.995,
+              "positive_weight": 0.5
+            },
+            "fit_threshold": 20.440009793013882,
+            "pred_relationship": "friendly",
+            "quadrant": "friendly_low",
+            "score": 27.879690344449415,
+            "source_family": "stage6",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage6_friendly_low_v2",
+            "correct": false,
+            "family_name": "L2_dual_trace",
+            "fit_params": {
+              "betrayal_decay": 0.995,
+              "clock": "global",
+              "help_decay": 0.995,
+              "positive_weight": 1.0
+            },
+            "fit_threshold": 42.78189603357221,
+            "pred_relationship": "hostile",
+            "quadrant": "friendly_low",
+            "score": 42.388739915471646,
+            "source_family": "stage6",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage6_friendly_low_v3",
+            "correct": false,
+            "family_name": "L2_dual_trace",
+            "fit_params": {
+              "betrayal_decay": 0.995,
+              "clock": "global",
+              "help_decay": 0.995,
+              "positive_weight": 0.5
+            },
+            "fit_threshold": 20.440009793013882,
+            "pred_relationship": "hostile",
+            "quadrant": "friendly_low",
+            "score": -0.5415585359606538,
+            "source_family": "stage6",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage6_friendly_low_v4",
+            "correct": true,
+            "family_name": "L2_dual_trace",
+            "fit_params": {
+              "betrayal_decay": 0.995,
+              "clock": "global",
+              "help_decay": 0.995,
+              "positive_weight": 0.5
+            },
+            "fit_threshold": 20.440009793013882,
+            "pred_relationship": "friendly",
+            "quadrant": "friendly_low",
+            "score": 27.64961074983465,
+            "source_family": "stage6",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage6_friendly_high_v1",
+            "correct": true,
+            "family_name": "L2_dual_trace",
+            "fit_params": {
+              "betrayal_decay": 0.995,
+              "clock": "global",
+              "help_decay": 0.995,
+              "positive_weight": 0.5
+            },
+            "fit_threshold": 20.440009793013882,
+            "pred_relationship": "friendly",
+            "quadrant": "friendly_high",
+            "score": 28.326885116856644,
+            "source_family": "stage6",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage6_friendly_high_v2",
+            "correct": true,
+            "family_name": "L2_dual_trace",
+            "fit_params": {
+              "betrayal_decay": 0.995,
+              "clock": "global",
+              "help_decay": 0.995,
+              "positive_weight": 0.5
+            },
+            "fit_threshold": 20.440009793013882,
+            "pred_relationship": "friendly",
+            "quadrant": "friendly_high",
+            "score": 20.76231147142067,
+            "source_family": "stage6",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage6_friendly_high_v3",
+            "correct": false,
+            "family_name": "L2_dual_trace",
+            "fit_params": {
+              "betrayal_decay": 0.995,
+              "clock": "global",
+              "help_decay": 0.995,
+              "positive_weight": 0.5
+            },
+            "fit_threshold": 20.440009793013882,
+            "pred_relationship": "hostile",
+            "quadrant": "friendly_high",
+            "score": -0.5653513360486406,
+            "source_family": "stage6",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage6_friendly_high_v4",
+            "correct": true,
+            "family_name": "L2_dual_trace",
+            "fit_params": {
+              "betrayal_decay": 0.995,
+              "clock": "global",
+              "help_decay": 0.995,
+              "positive_weight": 0.5
+            },
+            "fit_threshold": 20.440009793013882,
+            "pred_relationship": "friendly",
+            "quadrant": "friendly_high",
+            "score": 28.7038588916541,
+            "source_family": "stage6",
+            "target_relationship": "friendly"
+          },
+          {
+            "case_id": "stage6_hostile_low_v1",
+            "correct": true,
+            "family_name": "L2_dual_trace",
+            "fit_params": {
+              "betrayal_decay": 0.995,
+              "clock": "global",
+              "help_decay": 0.995,
+              "positive_weight": 0.5
+            },
+            "fit_threshold": 20.440009793013882,
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_low",
+            "score": -10.775849390860271,
+            "source_family": "stage6",
+            "target_relationship": "hostile"
+          },
+          {
+            "case_id": "stage6_hostile_low_v2",
+            "correct": true,
+            "family_name": "L2_dual_trace",
+            "fit_params": {
+              "betrayal_decay": 0.995,
+              "clock": "global",
+              "help_decay": 0.995,
+              "positive_weight": 0.5
+            },
+            "fit_threshold": 20.440009793013882,
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_low",
+            "score": -5.416058663273919,
+            "source_family": "stage6",
+            "target_relationship": "hostile"
+          },
+          {
+            "case_id": "stage6_hostile_low_v3",
+            "correct": true,
+            "family_name": "L2_dual_trace",
+            "fit_params": {
+              "betrayal_decay": 0.995,
+              "clock": "global",
+              "help_decay": 0.995,
+              "positive_weight": 0.5
+            },
+            "fit_threshold": 20.440009793013882,
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_low",
+            "score": -5.068670663109195,
+            "source_family": "stage6",
+            "target_relationship": "hostile"
+          },
+          {
+            "case_id": "stage6_hostile_low_v4",
+            "correct": true,
+            "family_name": "L2_dual_trace",
+            "fit_params": {
+              "betrayal_decay": 0.995,
+              "clock": "global",
+              "help_decay": 0.995,
+              "positive_weight": 0.5
+            },
+            "fit_threshold": 20.440009793013882,
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_low",
+            "score": -7.410975221581615,
+            "source_family": "stage6",
+            "target_relationship": "hostile"
+          },
+          {
+            "case_id": "stage6_hostile_high_v1",
+            "correct": true,
+            "family_name": "L2_dual_trace",
+            "fit_params": {
+              "betrayal_decay": 0.995,
+              "clock": "global",
+              "help_decay": 0.995,
+              "positive_weight": 0.5
+            },
+            "fit_threshold": 20.440009793013882,
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_high",
+            "score": -10.625637357095599,
+            "source_family": "stage6",
+            "target_relationship": "hostile"
+          },
+          {
+            "case_id": "stage6_hostile_high_v2",
+            "correct": true,
+            "family_name": "L2_dual_trace",
+            "fit_params": {
+              "betrayal_decay": 0.995,
+              "clock": "global",
+              "help_decay": 0.995,
+              "positive_weight": 0.5
+            },
+            "fit_threshold": 20.440009793013882,
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_high",
+            "score": -5.585138213691327,
+            "source_family": "stage6",
+            "target_relationship": "hostile"
+          },
+          {
+            "case_id": "stage6_hostile_high_v3",
+            "correct": true,
+            "family_name": "L2_dual_trace",
+            "fit_params": {
+              "betrayal_decay": 0.995,
+              "clock": "global",
+              "help_decay": 0.995,
+              "positive_weight": 0.5
+            },
+            "fit_threshold": 20.440009793013882,
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_high",
+            "score": -4.998192861826248,
+            "source_family": "stage6",
+            "target_relationship": "hostile"
+          },
+          {
+            "case_id": "stage6_hostile_high_v4",
+            "correct": true,
+            "family_name": "L2_dual_trace",
+            "fit_params": {
+              "betrayal_decay": 0.995,
+              "clock": "global",
+              "help_decay": 0.995,
+              "positive_weight": 0.5
+            },
+            "fit_threshold": 20.440009793013882,
+            "pred_relationship": "hostile",
+            "quadrant": "hostile_high",
+            "score": -7.458519120310723,
+            "source_family": "stage6",
+            "target_relationship": "hostile"
+          }
+        ],
+        "summary": {
+          "accuracy": 0.90625,
+          "by_source_family": {
+            "stage3": {
+              "accuracy": 1.0,
+              "correct": 16,
+              "n": 16
+            },
+            "stage6": {
+              "accuracy": 0.8125,
+              "correct": 13,
+              "n": 16
+            }
+          },
+          "correct": 29,
+          "n": 32
+        }
+      },
+      "complexity_rank": 2,
+      "cross_family": {
+        "stage3_fit": {
+          "params": {
+            "betrayal_decay": 0.995,
+            "clock": "channel",
+            "help_decay": 0.995,
+            "positive_weight": 1.0
+          },
+          "threshold": 57.25967256846323
+        },
+        "stage3_fit_stage6_test": {
+          "accuracy": 0.75,
+          "by_source_family": {
+            "stage6": {
+              "accuracy": 0.75,
+              "correct": 12,
+              "n": 16
+            }
+          },
+          "correct": 12,
+          "n": 16
+        },
+        "stage6_fit": {
+          "params": {
+            "betrayal_decay": 0.995,
+            "clock": "channel",
+            "help_decay": 0.995,
+            "positive_weight": 0.5
+          },
+          "threshold": 0.0
+        },
+        "stage6_fit_stage3_test": {
+          "accuracy": 0.5,
+          "by_source_family": {
+            "stage3": {
+              "accuracy": 0.5,
+              "correct": 8,
+              "n": 16
+            }
+          },
+          "correct": 8,
+          "n": 16
+        }
+      },
+      "description": "separate positive and betrayal traces with independent decay",
+      "grid_size": 512
+    }
+  },
+  "interpretive_boundary": "Stage 16 is intentionally post-hoc to Stage 15 and tests how little additional relationship-state capacity closes the known two-family gap. Even a perfect result is not prospective generalization evidence. A fresh third-family holdout is required next.",
+  "minimal_exact_family": null,
+  "selection_rule": "smallest predeclared family with 32/32 all-32 capacity AND 32/32 combined-family LOOCV",
+  "source_stage3": "/storage/emulated/0/Download/ghost_cmi_llm_continuity_stage3_20260928_152045",
+  "source_stage6": "/storage/emulated/0/Download/ghost_cmi_llm_continuity_stage6_20260928_170219",
+  "winner_gate": null
+}

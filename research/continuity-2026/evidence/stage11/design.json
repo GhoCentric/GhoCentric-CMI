@@ -1,0 +1,14 @@
+{
+  "evaluation_contract": "Intent-conditioned fidelity. Judges receive the selected behavior objective and rendering boundary and decide whether the existing dialogue faithfully realizes it. Judges are explicitly forbidden from requiring recovery of hidden relationship/fear state.",
+  "generation_calls": 0,
+  "items": 60,
+  "judge_models": [
+    "gpt-5.6-terra",
+    "gpt-5.6-sol"
+  ],
+  "primary_endpoint": "strict dual-judge fidelity PASS",
+  "source_stage10": "/storage/emulated/0/Download/ghost_cmi_llm_continuity_stage10_20260928_200215",
+  "source_stage9": "/storage/emulated/0/Download/ghost_cmi_llm_continuity_stage9_20260928_194559",
+  "stage": "CMI_LLM_CONTINUITY_STAGE11_EVALUATOR_CALIBRATION",
+  "winner_gate": null
+}

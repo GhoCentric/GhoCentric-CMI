@@ -1,0 +1,17 @@
+{
+  "baseline": "Strong non-CMI full-history semantic reducer. Receives the complete ordered event history plus event-semantics contract and outputs only relationship_state and fear_band.",
+  "baseline_model": "gpt-5.6-sol",
+  "cases": 16,
+  "primary_endpoints": [
+    "joint semantic-state match",
+    "relationship-state match",
+    "fear-band match",
+    "all-repeats per-case stability",
+    "mean baseline input tokens"
+  ],
+  "repeats": 5,
+  "source_stage6": "/storage/emulated/0/Download/ghost_cmi_llm_continuity_stage6_20260928_170219",
+  "stage": "CMI_LLM_CONTINUITY_STAGE12_REPLACEABILITY_CHALLENGE",
+  "target": "Exact frozen Stage-6 CMI semantic state. This is a replaceability test: can a simpler non-CMI reducer reconstruct the state CMI already maintains? It is NOT a claim that CMI state is objective ground truth.",
+  "winner_gate": null
+}

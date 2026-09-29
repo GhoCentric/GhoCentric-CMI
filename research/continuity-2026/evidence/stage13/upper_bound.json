@@ -1,0 +1,186 @@
+{
+  "parameters": {
+    "fear": {
+      "clock": "global",
+      "decay": 0.995,
+      "positive_weight": 1.0,
+      "threshold": 2.3148810039798877,
+      "training_accuracy": 1.0,
+      "training_balanced_accuracy": 1.0,
+      "training_correct": 16,
+      "training_n": 16
+    },
+    "relationship": {
+      "clock": "channel",
+      "decay": 0.995,
+      "positive_weight": 0.5,
+      "threshold": 0.0,
+      "training_accuracy": 1.0,
+      "training_balanced_accuracy": 1.0,
+      "training_correct": 16,
+      "training_n": 16
+    }
+  },
+  "rows": [
+    {
+      "case_id": "friendly_low_v1",
+      "fear_score": -7.915494067154793,
+      "joint_correct": true,
+      "pred_fear": "low",
+      "pred_relationship": "friendly",
+      "relationship_score": 32.22476864371336,
+      "target_fear": "low",
+      "target_relationship": "friendly"
+    },
+    {
+      "case_id": "friendly_low_v2",
+      "fear_score": -8.774062193851371,
+      "joint_correct": true,
+      "pred_fear": "low",
+      "pred_relationship": "friendly",
+      "relationship_score": 24.48657981562607,
+      "target_fear": "low",
+      "target_relationship": "friendly"
+    },
+    {
+      "case_id": "friendly_low_v3",
+      "fear_score": 1.1778210375524336,
+      "joint_correct": true,
+      "pred_fear": "low",
+      "pred_relationship": "friendly",
+      "relationship_score": 0.23864341045669799,
+      "target_fear": "low",
+      "target_relationship": "friendly"
+    },
+    {
+      "case_id": "friendly_low_v4",
+      "fear_score": 0.48192246843029435,
+      "joint_correct": true,
+      "pred_fear": "low",
+      "pred_relationship": "friendly",
+      "relationship_score": 33.56249886557506,
+      "target_fear": "low",
+      "target_relationship": "friendly"
+    },
+    {
+      "case_id": "friendly_high_v1",
+      "fear_score": 3.2552078034403427,
+      "joint_correct": true,
+      "pred_fear": "high",
+      "pred_relationship": "friendly",
+      "relationship_score": 32.22476864371336,
+      "target_fear": "high",
+      "target_relationship": "friendly"
+    },
+    {
+      "case_id": "friendly_high_v2",
+      "fear_score": 9.557265130893704,
+      "joint_correct": true,
+      "pred_fear": "high",
+      "pred_relationship": "friendly",
+      "relationship_score": 24.48657981562607,
+      "target_fear": "high",
+      "target_relationship": "friendly"
+    },
+    {
+      "case_id": "friendly_high_v3",
+      "fear_score": 6.4590853412293185,
+      "joint_correct": true,
+      "pred_fear": "high",
+      "pred_relationship": "friendly",
+      "relationship_score": 0.23864341045669799,
+      "target_fear": "high",
+      "target_relationship": "friendly"
+    },
+    {
+      "case_id": "friendly_high_v4",
+      "fear_score": 2.9947296353915775,
+      "joint_correct": true,
+      "pred_fear": "high",
+      "pred_relationship": "friendly",
+      "relationship_score": 33.56249886557506,
+      "target_fear": "high",
+      "target_relationship": "friendly"
+    },
+    {
+      "case_id": "hostile_low_v1",
+      "fear_score": -7.819223983582643,
+      "joint_correct": true,
+      "pred_fear": "low",
+      "pred_relationship": "hostile",
+      "relationship_score": -16.485754310109776,
+      "target_fear": "low",
+      "target_relationship": "hostile"
+    },
+    {
+      "case_id": "hostile_low_v2",
+      "fear_score": -8.911506292155817,
+      "joint_correct": true,
+      "pred_fear": "low",
+      "pred_relationship": "hostile",
+      "relationship_score": -6.687924980149429,
+      "target_fear": "low",
+      "target_relationship": "hostile"
+    },
+    {
+      "case_id": "hostile_low_v3",
+      "fear_score": 1.6601085441958767,
+      "joint_correct": true,
+      "pred_fear": "low",
+      "pred_relationship": "hostile",
+      "relationship_score": -3.163959441785878,
+      "target_fear": "low",
+      "target_relationship": "hostile"
+    },
+    {
+      "case_id": "hostile_low_v4",
+      "fear_score": 0.19057508414636704,
+      "joint_correct": true,
+      "pred_fear": "low",
+      "pred_relationship": "hostile",
+      "relationship_score": -6.910040513555702,
+      "target_fear": "low",
+      "target_relationship": "hostile"
+    },
+    {
+      "case_id": "hostile_high_v1",
+      "fear_score": 3.282372761781021,
+      "joint_correct": true,
+      "pred_fear": "high",
+      "pred_relationship": "hostile",
+      "relationship_score": -16.485754310109776,
+      "target_fear": "high",
+      "target_relationship": "hostile"
+    },
+    {
+      "case_id": "hostile_high_v2",
+      "fear_score": 9.472017244222057,
+      "joint_correct": true,
+      "pred_fear": "high",
+      "pred_relationship": "hostile",
+      "relationship_score": -6.687924980149429,
+      "target_fear": "high",
+      "target_relationship": "hostile"
+    },
+    {
+      "case_id": "hostile_high_v3",
+      "fear_score": 6.349270282303209,
+      "joint_correct": true,
+      "pred_fear": "high",
+      "pred_relationship": "hostile",
+      "relationship_score": -3.163959441785878,
+      "target_fear": "high",
+      "target_relationship": "hostile"
+    },
+    {
+      "case_id": "hostile_high_v4",
+      "fear_score": 2.9696534637638985,
+      "joint_correct": true,
+      "pred_fear": "high",
+      "pred_relationship": "hostile",
+      "relationship_score": -6.910040513555702,
+      "target_fear": "high",
+      "target_relationship": "hostile"
+    }
+  ]
+}

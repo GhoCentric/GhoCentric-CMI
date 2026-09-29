@@ -1,0 +1,73 @@
+{
+  "diagnosis": "MODEL_SPECIFIC_JUDGE_BOUNDARY_ON_ONE_PHRASING",
+  "diagnosis_text": "The frozen Stage-9 dialogue sits on a stable model-specific judge boundary, while fresh renderings of the same authoritative intent are usually recovered correctly by both judges. This points to one ambiguous wording realization, not a selector failure or broad renderer failure.",
+  "fixed_dialogue": {
+    "gpt-5.6-sol": {
+      "accuracy": 1.0,
+      "class_counts": {
+        "COORDINATE": 12
+      },
+      "correct": 12,
+      "n": 12,
+      "wilson95": [
+        0.7575059933447592,
+        1.0
+      ]
+    },
+    "gpt-5.6-terra": {
+      "accuracy": 0.08333333333333333,
+      "class_counts": {
+        "COORDINATE": 1,
+        "TEMP_TEAMUP": 11
+      },
+      "correct": 1,
+      "n": 12,
+      "wilson95": [
+        0.014865094404917095,
+        0.35387991114111694
+      ]
+    }
+  },
+  "rerender": {
+    "judge_agreement": 11,
+    "judge_agreement_rate": 0.9166666666666666,
+    "judge_individual": {
+      "gpt-5.6-sol": {
+        "accuracy": 0.9166666666666666,
+        "class_counts": {
+          "COORDINATE": 11,
+          "TEMP_TEAMUP": 1
+        },
+        "correct": 11,
+        "n": 12
+      },
+      "gpt-5.6-terra": {
+        "accuracy": 0.8333333333333334,
+        "class_counts": {
+          "COORDINATE": 10,
+          "TEMP_TEAMUP": 2
+        },
+        "correct": 10,
+        "n": 12
+      }
+    },
+    "n": 12,
+    "strict_accuracy": 0.8333333333333334,
+    "strict_dual_judge_correct": 10,
+    "wilson95": [
+      0.5519691377470266,
+      0.9530348578161463
+    ]
+  },
+  "target": {
+    "case_id": "friendly_low_v1",
+    "expected_action": "COORDINATE",
+    "frozen_dialogue": "Agreed\u2014sixty seconds, no more. I\u2019ll cover the civilians and draw the raiders to the east; you hold the choke point, then we regroup at the north gate.",
+    "policy": "ambush",
+    "stage9_judge_classes": {
+      "gpt-5.6-sol": "COORDINATE",
+      "gpt-5.6-terra": "TEMP_TEAMUP"
+    }
+  },
+  "winner_gate": null
+}

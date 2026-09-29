@@ -1,0 +1,150 @@
+{
+  "arms": {
+    "full_history": {
+      "accuracy": 0.8333333333333334,
+      "correct": 40,
+      "mean_input_tokens": 2936,
+      "mean_prompt_chars": 14167,
+      "median_input_tokens": 2936.0,
+      "n": 48,
+      "wilson95": [
+        0.7042217159874441,
+        0.9130448642351444
+      ]
+    },
+    "raw_cmi_replication": {
+      "accuracy": 0.5,
+      "correct": 24,
+      "mean_input_tokens": 571.5,
+      "mean_prompt_chars": 2488,
+      "median_input_tokens": 571.5,
+      "n": 48,
+      "wilson95": [
+        0.36389330502679385,
+        0.6361066949732062
+      ]
+    },
+    "semantic_cmi": {
+      "accuracy": 0.5,
+      "correct": 24,
+      "mean_input_tokens": 583,
+      "mean_prompt_chars": 2514.5,
+      "median_input_tokens": 583.0,
+      "n": 48,
+      "wilson95": [
+        0.36389330502679385,
+        0.6361066949732062
+      ]
+    }
+  },
+  "deltas": {
+    "semantic_minus_full_pp": -33.333333333333336,
+    "semantic_minus_raw_pp": 0.0
+  },
+  "matched_tetrad": {
+    "full_history": {
+      "all_four_correct": 4,
+      "all_four_correct_rate": 0.3333333333333333,
+      "n_tetrads_x_repeats": 12,
+      "wilson95": [
+        0.13812009109121315,
+        0.6093779111272004
+      ]
+    },
+    "raw_cmi_replication": {
+      "all_four_correct": 0,
+      "all_four_correct_rate": 0.0,
+      "n_tetrads_x_repeats": 12,
+      "wilson95": [
+        2.7755575615628914e-17,
+        0.24249400665524085
+      ]
+    },
+    "semantic_cmi": {
+      "all_four_correct": 0,
+      "all_four_correct_rate": 0.0,
+      "n_tetrads_x_repeats": 12,
+      "wilson95": [
+        2.7755575615628914e-17,
+        0.24249400665524085
+      ]
+    }
+  },
+  "quadrants": {
+    "full_history": {
+      "friendly_high": {
+        "accuracy": 1.0,
+        "correct": 12,
+        "n": 12
+      },
+      "friendly_low": {
+        "accuracy": 0.5,
+        "correct": 6,
+        "n": 12
+      },
+      "hostile_high": {
+        "accuracy": 0.8333333333333334,
+        "correct": 10,
+        "n": 12
+      },
+      "hostile_low": {
+        "accuracy": 1.0,
+        "correct": 12,
+        "n": 12
+      }
+    },
+    "raw_cmi_replication": {
+      "friendly_high": {
+        "accuracy": 0.0,
+        "correct": 0,
+        "n": 12
+      },
+      "friendly_low": {
+        "accuracy": 0.0,
+        "correct": 0,
+        "n": 12
+      },
+      "hostile_high": {
+        "accuracy": 1.0,
+        "correct": 12,
+        "n": 12
+      },
+      "hostile_low": {
+        "accuracy": 1.0,
+        "correct": 12,
+        "n": 12
+      }
+    },
+    "semantic_cmi": {
+      "friendly_high": {
+        "accuracy": 0.0,
+        "correct": 0,
+        "n": 12
+      },
+      "friendly_low": {
+        "accuracy": 0.0,
+        "correct": 0,
+        "n": 12
+      },
+      "hostile_high": {
+        "accuracy": 1.0,
+        "correct": 12,
+        "n": 12
+      },
+      "hostile_low": {
+        "accuracy": 1.0,
+        "correct": 12,
+        "n": 12
+      }
+    }
+  },
+  "stage3_reference": {
+    "full_history_accuracy": 0.7708333333333334,
+    "raw_cmi_accuracy": 0.5
+  },
+  "token_ratios": {
+    "raw_over_full_history": 0.19465258855585832,
+    "semantic_over_full_history": 0.19856948228882834
+  },
+  "total_calls": 144
+}

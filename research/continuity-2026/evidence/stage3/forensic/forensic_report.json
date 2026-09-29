@@ -1,0 +1,488 @@
+{
+  "arms": {
+    "cmi_state": {
+      "action_accuracy": 0.5,
+      "action_wilson95": [
+        0.36389330502679385,
+        0.6361066949732062
+      ],
+      "both_factors_correct_rate": 0.5,
+      "fear_errors": 0,
+      "fear_factor_accuracy": 1.0,
+      "fear_factor_wilson95": [
+        0.9258998703338824,
+        0.9999999999999999
+      ],
+      "fear_ranges": {
+        "high": {
+          "max": 0.9961013793945312,
+          "mean": 0.9961013793945312,
+          "min": 0.9961013793945312,
+          "n": 24
+        },
+        "low": {
+          "max": 0.00389862060546875,
+          "mean": 0.00389862060546875,
+          "min": 0.00389862060546875,
+          "n": 24
+        }
+      },
+      "n": 48,
+      "parse_rate": 1.0,
+      "quadrants": {
+        "friendly_high": {
+          "action_accuracy": 0.0,
+          "fear_factor_accuracy": 1.0,
+          "n": 12,
+          "prediction_counts": {
+            "WITHDRAW": 12
+          },
+          "relationship_factor_accuracy": 0.0
+        },
+        "friendly_low": {
+          "action_accuracy": 0.0,
+          "fear_factor_accuracy": 1.0,
+          "n": 12,
+          "prediction_counts": {
+            "REFUSE": 12
+          },
+          "relationship_factor_accuracy": 0.0
+        },
+        "hostile_high": {
+          "action_accuracy": 1.0,
+          "fear_factor_accuracy": 1.0,
+          "n": 12,
+          "prediction_counts": {
+            "WITHDRAW": 12
+          },
+          "relationship_factor_accuracy": 1.0
+        },
+        "hostile_low": {
+          "action_accuracy": 1.0,
+          "fear_factor_accuracy": 1.0,
+          "n": 12,
+          "prediction_counts": {
+            "REFUSE": 12
+          },
+          "relationship_factor_accuracy": 1.0
+        }
+      },
+      "relationship_errors": 24,
+      "relationship_factor_accuracy": 0.5,
+      "relationship_factor_wilson95": [
+        0.36389330502679385,
+        0.6361066949732062
+      ],
+      "trust_ranges": {
+        "friendly": {
+          "max": 0.08875264950170747,
+          "mean": 0.08875264950170747,
+          "min": 0.08875264950170747,
+          "n": 24
+        },
+        "hostile": {
+          "max": -2.447458771448086,
+          "mean": -2.447458771448086,
+          "min": -2.447458771448086,
+          "n": 24
+        }
+      }
+    },
+    "event_counts": {
+      "action_accuracy": 0.1875,
+      "action_wilson95": [
+        0.10191390954847647,
+        0.31939867149284695
+      ],
+      "both_factors_correct_rate": 0.1875,
+      "fear_errors": 26,
+      "fear_factor_accuracy": 0.4583333333333333,
+      "fear_factor_wilson95": [
+        0.32575242292867446,
+        0.5970892545435019
+      ],
+      "fear_ranges": {
+        "high": {
+          "max": 0.9961013793945312,
+          "mean": 0.9961013793945312,
+          "min": 0.9961013793945312,
+          "n": 24
+        },
+        "low": {
+          "max": 0.00389862060546875,
+          "mean": 0.00389862060546875,
+          "min": 0.00389862060546875,
+          "n": 24
+        }
+      },
+      "n": 48,
+      "parse_rate": 1.0,
+      "quadrants": {
+        "friendly_high": {
+          "action_accuracy": 0.6666666666666666,
+          "fear_factor_accuracy": 0.6666666666666666,
+          "n": 12,
+          "prediction_counts": {
+            "CAUTIOUS": 8,
+            "HELP": 4
+          },
+          "relationship_factor_accuracy": 1.0
+        },
+        "friendly_low": {
+          "action_accuracy": 0.08333333333333333,
+          "fear_factor_accuracy": 0.08333333333333333,
+          "n": 12,
+          "prediction_counts": {
+            "CAUTIOUS": 11,
+            "HELP": 1
+          },
+          "relationship_factor_accuracy": 1.0
+        },
+        "hostile_high": {
+          "action_accuracy": 0.0,
+          "fear_factor_accuracy": 0.8333333333333334,
+          "n": 12,
+          "prediction_counts": {
+            "CAUTIOUS": 10,
+            "HELP": 2
+          },
+          "relationship_factor_accuracy": 0.0
+        },
+        "hostile_low": {
+          "action_accuracy": 0.0,
+          "fear_factor_accuracy": 0.25,
+          "n": 12,
+          "prediction_counts": {
+            "CAUTIOUS": 9,
+            "HELP": 3
+          },
+          "relationship_factor_accuracy": 0.0
+        }
+      },
+      "relationship_errors": 24,
+      "relationship_factor_accuracy": 0.5,
+      "relationship_factor_wilson95": [
+        0.36389330502679385,
+        0.6361066949732062
+      ],
+      "trust_ranges": {
+        "friendly": {
+          "max": 0.08875264950170747,
+          "mean": 0.08875264950170747,
+          "min": 0.08875264950170747,
+          "n": 24
+        },
+        "hostile": {
+          "max": -2.447458771448086,
+          "mean": -2.447458771448086,
+          "min": -2.447458771448086,
+          "n": 24
+        }
+      }
+    },
+    "full_history": {
+      "action_accuracy": 0.7708333333333334,
+      "action_wilson95": [
+        0.6346073590999655,
+        0.8669217373308877
+      ],
+      "both_factors_correct_rate": 0.7708333333333334,
+      "fear_errors": 10,
+      "fear_factor_accuracy": 0.7916666666666666,
+      "fear_factor_wilson95": [
+        0.6574109872738206,
+        0.882697270420944
+      ],
+      "fear_ranges": {
+        "high": {
+          "max": 0.9961013793945312,
+          "mean": 0.9961013793945312,
+          "min": 0.9961013793945312,
+          "n": 24
+        },
+        "low": {
+          "max": 0.00389862060546875,
+          "mean": 0.00389862060546875,
+          "min": 0.00389862060546875,
+          "n": 24
+        }
+      },
+      "n": 48,
+      "parse_rate": 1.0,
+      "quadrants": {
+        "friendly_high": {
+          "action_accuracy": 0.9166666666666666,
+          "fear_factor_accuracy": 0.9166666666666666,
+          "n": 12,
+          "prediction_counts": {
+            "CAUTIOUS": 11,
+            "REFUSE": 1
+          },
+          "relationship_factor_accuracy": 0.9166666666666666
+        },
+        "friendly_low": {
+          "action_accuracy": 0.5,
+          "fear_factor_accuracy": 0.5,
+          "n": 12,
+          "prediction_counts": {
+            "CAUTIOUS": 6,
+            "HELP": 6
+          },
+          "relationship_factor_accuracy": 1.0
+        },
+        "hostile_high": {
+          "action_accuracy": 0.75,
+          "fear_factor_accuracy": 0.8333333333333334,
+          "n": 12,
+          "prediction_counts": {
+            "CAUTIOUS": 1,
+            "REFUSE": 2,
+            "WITHDRAW": 9
+          },
+          "relationship_factor_accuracy": 0.9166666666666666
+        },
+        "hostile_low": {
+          "action_accuracy": 0.9166666666666666,
+          "fear_factor_accuracy": 0.9166666666666666,
+          "n": 12,
+          "prediction_counts": {
+            "REFUSE": 11,
+            "WITHDRAW": 1
+          },
+          "relationship_factor_accuracy": 1.0
+        }
+      },
+      "relationship_errors": 2,
+      "relationship_factor_accuracy": 0.9583333333333334,
+      "relationship_factor_wilson95": [
+        0.8602434412954456,
+        0.9884981065106133
+      ],
+      "trust_ranges": {
+        "friendly": {
+          "max": 0.08875264950170747,
+          "mean": 0.08875264950170747,
+          "min": 0.08875264950170747,
+          "n": 24
+        },
+        "hostile": {
+          "max": -2.447458771448086,
+          "mean": -2.447458771448086,
+          "min": -2.447458771448086,
+          "n": 24
+        }
+      }
+    },
+    "recent16": {
+      "action_accuracy": 0.20833333333333334,
+      "action_wilson95": [
+        0.11730272957905595,
+        0.34258901272617925
+      ],
+      "both_factors_correct_rate": 0.20833333333333334,
+      "fear_errors": 24,
+      "fear_factor_accuracy": 0.5,
+      "fear_factor_wilson95": [
+        0.36389330502679385,
+        0.6361066949732062
+      ],
+      "fear_ranges": {
+        "high": {
+          "max": 0.9961013793945312,
+          "mean": 0.9961013793945312,
+          "min": 0.9961013793945312,
+          "n": 24
+        },
+        "low": {
+          "max": 0.00389862060546875,
+          "mean": 0.00389862060546875,
+          "min": 0.00389862060546875,
+          "n": 24
+        }
+      },
+      "n": 48,
+      "parse_rate": 1.0,
+      "quadrants": {
+        "friendly_high": {
+          "action_accuracy": 0.5,
+          "fear_factor_accuracy": 0.5,
+          "n": 12,
+          "prediction_counts": {
+            "CAUTIOUS": 6,
+            "HELP": 2,
+            "REFUSE": 4
+          },
+          "relationship_factor_accuracy": 0.6666666666666666
+        },
+        "friendly_low": {
+          "action_accuracy": 0.0,
+          "fear_factor_accuracy": 0.25,
+          "n": 12,
+          "prediction_counts": {
+            "CAUTIOUS": 9,
+            "REFUSE": 3
+          },
+          "relationship_factor_accuracy": 0.75
+        },
+        "hostile_high": {
+          "action_accuracy": 0.0,
+          "fear_factor_accuracy": 0.75,
+          "n": 12,
+          "prediction_counts": {
+            "CAUTIOUS": 9,
+            "REFUSE": 3
+          },
+          "relationship_factor_accuracy": 0.25
+        },
+        "hostile_low": {
+          "action_accuracy": 0.3333333333333333,
+          "fear_factor_accuracy": 0.5,
+          "n": 12,
+          "prediction_counts": {
+            "CAUTIOUS": 6,
+            "HELP": 2,
+            "REFUSE": 4
+          },
+          "relationship_factor_accuracy": 0.3333333333333333
+        }
+      },
+      "relationship_errors": 24,
+      "relationship_factor_accuracy": 0.5,
+      "relationship_factor_wilson95": [
+        0.36389330502679385,
+        0.6361066949732062
+      ],
+      "trust_ranges": {
+        "friendly": {
+          "max": 0.08875264950170747,
+          "mean": 0.08875264950170747,
+          "min": 0.08875264950170747,
+          "n": 24
+        },
+        "hostile": {
+          "max": -2.447458771448086,
+          "mean": -2.447458771448086,
+          "min": -2.447458771448086,
+          "n": 24
+        }
+      }
+    }
+  },
+  "cmi_diagnosis": "RELATIONSHIP_DECODING_PRIMARY",
+  "cmi_diagnosis_text": "CMI preserved fear well enough for the LLM to decode it reliably, while relationship-factor decoding was the dominant failure.",
+  "four_distinct_outcomes_verified": true,
+  "important_boundary": "This pass diagnoses the LLM-facing representation using already-recorded Stage-3 outputs. It does not rerun the LLM and does not alter the original Stage-3 result.",
+  "rows": 192,
+  "same_count_contract_verified": true,
+  "source_stage": "CMI_LLM_CONTINUITY_STAGE3_SAME_COUNTS_DIFFERENT_ORDER",
+  "tetrad_checks": [
+    {
+      "four_distinct_actions": true,
+      "same_counts": true,
+      "states": {
+        "friendly_high": {
+          "expected_action": "CAUTIOUS",
+          "fear": 0.9961013793945312,
+          "relationship_state": "friendly"
+        },
+        "friendly_low": {
+          "expected_action": "HELP",
+          "fear": 0.00389862060546875,
+          "relationship_state": "friendly"
+        },
+        "hostile_high": {
+          "expected_action": "WITHDRAW",
+          "fear": 0.9961013793945312,
+          "relationship_state": "hostile"
+        },
+        "hostile_low": {
+          "expected_action": "REFUSE",
+          "fear": 0.00389862060546875,
+          "relationship_state": "hostile"
+        }
+      },
+      "tetrad_id": 0
+    },
+    {
+      "four_distinct_actions": true,
+      "same_counts": true,
+      "states": {
+        "friendly_high": {
+          "expected_action": "CAUTIOUS",
+          "fear": 0.9961013793945312,
+          "relationship_state": "friendly"
+        },
+        "friendly_low": {
+          "expected_action": "HELP",
+          "fear": 0.00389862060546875,
+          "relationship_state": "friendly"
+        },
+        "hostile_high": {
+          "expected_action": "WITHDRAW",
+          "fear": 0.9961013793945312,
+          "relationship_state": "hostile"
+        },
+        "hostile_low": {
+          "expected_action": "REFUSE",
+          "fear": 0.00389862060546875,
+          "relationship_state": "hostile"
+        }
+      },
+      "tetrad_id": 1
+    },
+    {
+      "four_distinct_actions": true,
+      "same_counts": true,
+      "states": {
+        "friendly_high": {
+          "expected_action": "CAUTIOUS",
+          "fear": 0.9961013793945312,
+          "relationship_state": "friendly"
+        },
+        "friendly_low": {
+          "expected_action": "HELP",
+          "fear": 0.00389862060546875,
+          "relationship_state": "friendly"
+        },
+        "hostile_high": {
+          "expected_action": "WITHDRAW",
+          "fear": 0.9961013793945312,
+          "relationship_state": "hostile"
+        },
+        "hostile_low": {
+          "expected_action": "REFUSE",
+          "fear": 0.00389862060546875,
+          "relationship_state": "hostile"
+        }
+      },
+      "tetrad_id": 2
+    },
+    {
+      "four_distinct_actions": true,
+      "same_counts": true,
+      "states": {
+        "friendly_high": {
+          "expected_action": "CAUTIOUS",
+          "fear": 0.9961013793945312,
+          "relationship_state": "friendly"
+        },
+        "friendly_low": {
+          "expected_action": "HELP",
+          "fear": 0.00389862060546875,
+          "relationship_state": "friendly"
+        },
+        "hostile_high": {
+          "expected_action": "WITHDRAW",
+          "fear": 0.9961013793945312,
+          "relationship_state": "hostile"
+        },
+        "hostile_low": {
+          "expected_action": "REFUSE",
+          "fear": 0.00389862060546875,
+          "relationship_state": "hostile"
+        }
+      },
+      "tetrad_id": 3
+    }
+  ]
+}

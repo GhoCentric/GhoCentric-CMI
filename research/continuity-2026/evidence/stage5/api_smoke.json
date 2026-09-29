@@ -1,0 +1,72 @@
+{
+  "gpt-5.6-sol": {
+    "expedition": {
+      "parsed_action": "JOIN",
+      "text": "ACTION: JOIN\nLINE: I'll come with you\u2014I trust you to watch my back.",
+      "usage": {
+        "input_tokens": 554,
+        "model": "gpt-5.6-sol",
+        "output_tokens": 22,
+        "response_id": "resp_0062094325f366d7006abace11dfa887d2a51058c77888679d",
+        "total_tokens": 576
+      }
+    },
+    "favor": {
+      "parsed_action": "HELP",
+      "text": "ACTION: HELP\nLINE: All right, I'll help you\u2014I'm trusting you on this.",
+      "usage": {
+        "input_tokens": 561,
+        "model": "gpt-5.6-sol",
+        "output_tokens": 23,
+        "response_id": "resp_0b83b95dc53bb98f006abace0b7d7087d28e5221250b0badf1",
+        "total_tokens": 584
+      }
+    },
+    "secret": {
+      "parsed_action": "SHARE",
+      "text": "ACTION: SHARE\nLINE: I trust you, so I'll tell you\u2014but please keep it safe.",
+      "usage": {
+        "input_tokens": 560,
+        "model": "gpt-5.6-sol",
+        "output_tokens": 24,
+        "response_id": "resp_060833eb2f2cc293006abace100ca887d299258d2ff3a755d6",
+        "total_tokens": 584
+      }
+    }
+  },
+  "gpt-5.6-terra": {
+    "expedition": {
+      "parsed_action": "JOIN",
+      "text": "ACTION: JOIN\nLINE: I trust you\u2014let\u2019s go together.",
+      "usage": {
+        "input_tokens": 554,
+        "model": "gpt-5.6-terra",
+        "output_tokens": 19,
+        "response_id": "resp_033e2e500a2bbbba006abace0a05a487d28af5b0cbd0108a51",
+        "total_tokens": 573
+      }
+    },
+    "favor": {
+      "parsed_action": "HELP",
+      "text": "ACTION: HELP\nLINE: I trust you\u2014tell me what you need, and I\u2019ll help.",
+      "usage": {
+        "input_tokens": 561,
+        "model": "gpt-5.6-terra",
+        "output_tokens": 25,
+        "response_id": "resp_00f25c8adb62069e006abace04466087d2aabc8265620eec4b",
+        "total_tokens": 586
+      }
+    },
+    "secret": {
+      "parsed_action": "SHARE",
+      "text": "ACTION: SHARE\nLINE: I trust you\u2014here is what I know.",
+      "usage": {
+        "input_tokens": 560,
+        "model": "gpt-5.6-terra",
+        "output_tokens": 20,
+        "response_id": "resp_0f913a4711166d17006abace0732d887d2a46835e26efdf602",
+        "total_tokens": 580
+      }
+    }
+  }
+}

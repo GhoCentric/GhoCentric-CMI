@@ -1,0 +1,30 @@
+{
+  "frozen_parameters": {
+    "fear": {
+      "clock": "global",
+      "decay": 0.995,
+      "positive_weight": 1.0,
+      "threshold": 2.3148810039798877,
+      "training_accuracy": 1.0,
+      "training_balanced_accuracy": 1.0,
+      "training_correct": 16,
+      "training_n": 16
+    },
+    "relationship": {
+      "clock": "channel",
+      "decay": 0.995,
+      "positive_weight": 0.5,
+      "threshold": 0.0,
+      "training_accuracy": 1.0,
+      "training_balanced_accuracy": 1.0,
+      "training_correct": 16,
+      "training_n": 16
+    }
+  },
+  "refitting": false,
+  "source_stage13": "/storage/emulated/0/Download/ghost_cmi_llm_continuity_stage13_20260928_204619",
+  "source_stage3": "/storage/emulated/0/Download/ghost_cmi_llm_continuity_stage3_20260928_152045",
+  "stage": "CMI_STAGE14_OUT_OF_FAMILY_REDUCER_TRANSFER",
+  "test_contract": "Exact Stage-13 all-16 parameters are applied unchanged to exact Stage-3 same-count/different-order histories.",
+  "winner_gate": null
+}

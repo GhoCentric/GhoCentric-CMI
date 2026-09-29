@@ -1,0 +1,15 @@
+{
+  "parsed": {
+    "fear_band": "low",
+    "quadrant": "friendly_low",
+    "relationship_state": "friendly"
+  },
+  "text": "RELATIONSHIP: friendly\nFEAR: low",
+  "usage": {
+    "input_tokens": 2911,
+    "model": "gpt-5.6-sol",
+    "output_tokens": 14,
+    "response_id": "resp_0e37e89c75138a03006abb0751202487d2b1b6e750eab9c236",
+    "total_tokens": 2925
+  }
+}

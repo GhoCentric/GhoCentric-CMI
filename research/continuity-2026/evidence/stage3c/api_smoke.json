@@ -1,0 +1,10 @@
+{
+  "text": "ACTION: REFUSE\nLINE: I can\u2019t risk trusting you with this.",
+  "usage": {
+    "input_tokens": 288,
+    "model": "gpt-5.6-luna",
+    "output_tokens": 20,
+    "response_id": "resp_0ab3fc1cebd01134006abac636978487d2b79ce493b26997ce",
+    "total_tokens": 308
+  }
+}

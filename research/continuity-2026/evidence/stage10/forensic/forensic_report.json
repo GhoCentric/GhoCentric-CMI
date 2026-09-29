@@ -1,0 +1,261 @@
+{
+  "all_renderings": [
+    {
+      "dialogue": "Agreed\u2014sixty seconds, no wasted movement. You cover the approach; I\u2019ll get the civilians out and hold the rear, then we regroup at the east gate.",
+      "failure_mode": "CORRECT",
+      "judge_agreement": true,
+      "judge_classes": {
+        "gpt-5.6-sol": "COORDINATE",
+        "gpt-5.6-terra": "COORDINATE"
+      },
+      "repeat": 0,
+      "strict_dual_judge_correct": true
+    },
+    {
+      "dialogue": "Agreed\u2014sixty seconds. I\u2019ll cover the civilians and hold the east side; you take the west approach, and we regroup at the escape route when I signal.",
+      "failure_mode": "CORRECT",
+      "judge_agreement": true,
+      "judge_classes": {
+        "gpt-5.6-sol": "COORDINATE",
+        "gpt-5.6-terra": "COORDINATE"
+      },
+      "repeat": 1,
+      "strict_dual_judge_correct": true
+    },
+    {
+      "dialogue": "Agreed\u2014sixty seconds, no more. I\u2019ll hold the eastern approach and cover the civilians; you take the west, and we regroup at the escape point when the time\u2019s up.",
+      "failure_mode": "ONE_JUDGE_CORRECT_ONE_WRONG",
+      "judge_agreement": false,
+      "judge_classes": {
+        "gpt-5.6-sol": "COORDINATE",
+        "gpt-5.6-terra": "TEMP_TEAMUP"
+      },
+      "repeat": 2,
+      "strict_dual_judge_correct": false
+    },
+    {
+      "dialogue": "Sixty seconds, then\u2014we hold this line together while the civilians get clear. Cover the east side; I\u2019ll take the approach from the west, and we regroup at the marked gate.",
+      "failure_mode": "CORRECT",
+      "judge_agreement": true,
+      "judge_classes": {
+        "gpt-5.6-sol": "COORDINATE",
+        "gpt-5.6-terra": "COORDINATE"
+      },
+      "repeat": 3,
+      "strict_dual_judge_correct": true
+    },
+    {
+      "dialogue": "Sixty seconds works\u2014I'll cover the civilians and hold the east side while you take the approach. Signal me when the path is clear, and we'll move together.",
+      "failure_mode": "CORRECT",
+      "judge_agreement": true,
+      "judge_classes": {
+        "gpt-5.6-sol": "COORDINATE",
+        "gpt-5.6-terra": "COORDINATE"
+      },
+      "repeat": 4,
+      "strict_dual_judge_correct": true
+    },
+    {
+      "dialogue": "\u201cAgreed\u2014sixty seconds. You take the eastern approach; I\u2019ll hold the western side and get the civilians moving. Signal me when the last one is clear, and we\u2019ll fall back together.\u201d",
+      "failure_mode": "CORRECT",
+      "judge_agreement": true,
+      "judge_classes": {
+        "gpt-5.6-sol": "COORDINATE",
+        "gpt-5.6-terra": "COORDINATE"
+      },
+      "repeat": 5,
+      "strict_dual_judge_correct": true
+    },
+    {
+      "dialogue": "\u201cAgreed\u2014sixty seconds. You cover the eastern approach while I move the civilians through the alley; we hold together until everyone\u2019s clear.\u201d",
+      "failure_mode": "CORRECT",
+      "judge_agreement": true,
+      "judge_classes": {
+        "gpt-5.6-sol": "COORDINATE",
+        "gpt-5.6-terra": "COORDINATE"
+      },
+      "repeat": 6,
+      "strict_dual_judge_correct": true
+    },
+    {
+      "dialogue": "Agreed\u2014take the front and draw their attention while I get the civilians moving. We regroup at the east gate in sixty seconds.",
+      "failure_mode": "CORRECT",
+      "judge_agreement": true,
+      "judge_classes": {
+        "gpt-5.6-sol": "COORDINATE",
+        "gpt-5.6-terra": "COORDINATE"
+      },
+      "repeat": 7,
+      "strict_dual_judge_correct": true
+    },
+    {
+      "dialogue": "\u201cAgreed\u2014sixty seconds, no more. I\u2019ll hold the eastern approach while you cover the civilians\u2019 retreat; regroup at the north gate when we\u2019re clear.\u201d",
+      "failure_mode": "CORRECT",
+      "judge_agreement": true,
+      "judge_classes": {
+        "gpt-5.6-sol": "COORDINATE",
+        "gpt-5.6-terra": "COORDINATE"
+      },
+      "repeat": 8,
+      "strict_dual_judge_correct": true
+    },
+    {
+      "dialogue": "Agreed\u2014sixty seconds, together. I\u2019ll hold the east approach and get the civilians moving; cover my flank, and we\u2019ll break for the extraction point on my signal.",
+      "failure_mode": "CORRECT",
+      "judge_agreement": true,
+      "judge_classes": {
+        "gpt-5.6-sol": "COORDINATE",
+        "gpt-5.6-terra": "COORDINATE"
+      },
+      "repeat": 9,
+      "strict_dual_judge_correct": true
+    },
+    {
+      "dialogue": "Agreed\u2014sixty seconds, no wasted motion. I\u2019ll cover the civilians and hold the east side; you take the west, and we regroup at the escape point when the minute\u2019s up.",
+      "failure_mode": "CORRECT",
+      "judge_agreement": true,
+      "judge_classes": {
+        "gpt-5.6-sol": "COORDINATE",
+        "gpt-5.6-terra": "COORDINATE"
+      },
+      "repeat": 10,
+      "strict_dual_judge_correct": true
+    },
+    {
+      "dialogue": "Agreed\u2014sixty seconds, no more. I\u2019ll hold the east side and get the civilians moving; cover my flank, and we\u2019ll break for the exit together.",
+      "failure_mode": "BOTH_JUDGES_AGREE_WRONG",
+      "judge_agreement": true,
+      "judge_classes": {
+        "gpt-5.6-sol": "TEMP_TEAMUP",
+        "gpt-5.6-terra": "TEMP_TEAMUP"
+      },
+      "repeat": 11,
+      "strict_dual_judge_correct": false
+    }
+  ],
+  "expected_action": "COORDINATE",
+  "fixed_dialogue": "Agreed\u2014sixty seconds, no more. I\u2019ll cover the civilians and draw the raiders to the east; you hold the choke point, then we regroup at the north gate.",
+  "fixed_dialogue_by_judge": {
+    "gpt-5.6-sol": {
+      "classes": {
+        "COORDINATE": 12
+      },
+      "correct": 12,
+      "n": 12
+    },
+    "gpt-5.6-terra": {
+      "classes": {
+        "COORDINATE": 1,
+        "TEMP_TEAMUP": 11
+      },
+      "correct": 1,
+      "n": 12
+    }
+  },
+  "interpretive_boundary": "This pass does not infer hidden model reasoning. A same-wrong-class miss is stronger evidence of surface-expression overlap than a one-judge split, but neither is a CMI-state or deterministic-selector failure.",
+  "misses": [
+    {
+      "dialogue": "Agreed\u2014sixty seconds, no more. I\u2019ll hold the eastern approach and cover the civilians; you take the west, and we regroup at the escape point when the time\u2019s up.",
+      "failure_mode": "ONE_JUDGE_CORRECT_ONE_WRONG",
+      "judge_agreement": false,
+      "judge_classes": {
+        "gpt-5.6-sol": "COORDINATE",
+        "gpt-5.6-terra": "TEMP_TEAMUP"
+      },
+      "repeat": 2,
+      "strict_dual_judge_correct": false
+    },
+    {
+      "dialogue": "Agreed\u2014sixty seconds, no more. I\u2019ll hold the east side and get the civilians moving; cover my flank, and we\u2019ll break for the exit together.",
+      "failure_mode": "BOTH_JUDGES_AGREE_WRONG",
+      "judge_agreement": true,
+      "judge_classes": {
+        "gpt-5.6-sol": "TEMP_TEAMUP",
+        "gpt-5.6-terra": "TEMP_TEAMUP"
+      },
+      "repeat": 11,
+      "strict_dual_judge_correct": false
+    }
+  ],
+  "rerender_count": 12,
+  "rerender_failure_mode_counts": {
+    "BOTH_JUDGES_AGREE_WRONG": 1,
+    "ONE_JUDGE_CORRECT_ONE_WRONG": 1
+  },
+  "rerender_misses": 2,
+  "rerender_strict_correct": 10,
+  "source_stage10": "/storage/emulated/0/Download/ghost_cmi_llm_continuity_stage10_20260928_200215",
+  "stage10_summary": {
+    "diagnosis": "MODEL_SPECIFIC_JUDGE_BOUNDARY_ON_ONE_PHRASING",
+    "diagnosis_text": "The frozen Stage-9 dialogue sits on a stable model-specific judge boundary, while fresh renderings of the same authoritative intent are usually recovered correctly by both judges. This points to one ambiguous wording realization, not a selector failure or broad renderer failure.",
+    "fixed_dialogue": {
+      "gpt-5.6-sol": {
+        "accuracy": 1.0,
+        "class_counts": {
+          "COORDINATE": 12
+        },
+        "correct": 12,
+        "n": 12,
+        "wilson95": [
+          0.7575059933447592,
+          1.0
+        ]
+      },
+      "gpt-5.6-terra": {
+        "accuracy": 0.08333333333333333,
+        "class_counts": {
+          "COORDINATE": 1,
+          "TEMP_TEAMUP": 11
+        },
+        "correct": 1,
+        "n": 12,
+        "wilson95": [
+          0.014865094404917095,
+          0.35387991114111694
+        ]
+      }
+    },
+    "rerender": {
+      "judge_agreement": 11,
+      "judge_agreement_rate": 0.9166666666666666,
+      "judge_individual": {
+        "gpt-5.6-sol": {
+          "accuracy": 0.9166666666666666,
+          "class_counts": {
+            "COORDINATE": 11,
+            "TEMP_TEAMUP": 1
+          },
+          "correct": 11,
+          "n": 12
+        },
+        "gpt-5.6-terra": {
+          "accuracy": 0.8333333333333334,
+          "class_counts": {
+            "COORDINATE": 10,
+            "TEMP_TEAMUP": 2
+          },
+          "correct": 10,
+          "n": 12
+        }
+      },
+      "n": 12,
+      "strict_accuracy": 0.8333333333333334,
+      "strict_dual_judge_correct": 10,
+      "wilson95": [
+        0.5519691377470266,
+        0.9530348578161463
+      ]
+    },
+    "target": {
+      "case_id": "friendly_low_v1",
+      "expected_action": "COORDINATE",
+      "frozen_dialogue": "Agreed\u2014sixty seconds, no more. I\u2019ll cover the civilians and draw the raiders to the east; you hold the choke point, then we regroup at the north gate.",
+      "policy": "ambush",
+      "stage9_judge_classes": {
+        "gpt-5.6-sol": "COORDINATE",
+        "gpt-5.6-terra": "TEMP_TEAMUP"
+      }
+    },
+    "winner_gate": null
+  }
+}

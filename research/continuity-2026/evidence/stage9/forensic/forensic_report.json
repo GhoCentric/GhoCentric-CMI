@@ -1,0 +1,380 @@
+{
+  "boundary": "Zero-LLM diagnostic only. The host selector's correctness is established by deterministic mapping from the frozen authoritative quadrant to the policy action; this pass evaluates only what happened after selection.",
+  "diagnosis": "SINGLE_JUDGE_BOUNDARY_AMBIGUITY",
+  "diagnosis_text": "The only prospective miss is a judge split: one blind judge recovered the host-selected behavior and the other classified the same dialogue as a neighboring behavior. The deterministic selector itself did not fail.",
+  "failure": {
+    "case_id": "friendly_low_v1",
+    "dialogue": "Agreed\u2014sixty seconds, no more. I\u2019ll cover the civilians and draw the raiders to the east; you hold the choke point, then we regroup at the north gate.",
+    "expected_action": "COORDINATE",
+    "expected_description": "coordinate confidently with the player as an equal partner",
+    "failure_mode": "ONE_JUDGE_CORRECT_ONE_WRONG",
+    "fear": 1.1929159202293327e-08,
+    "intent_boundary": "Act as an equal partner in the coordinated defense now.",
+    "intent_objective": "coordinate confidently with the player as an equal partner",
+    "judge_agreement": false,
+    "judge_classes": {
+      "gpt-5.6-sol": "COORDINATE",
+      "gpt-5.6-terra": "TEMP_TEAMUP"
+    },
+    "policy": "ambush",
+    "quadrant": "friendly_low",
+    "relationship_state": "friendly",
+    "trust": 0.21505963366555947
+  },
+  "policy_breakdown": {
+    "friendly_high": {
+      "correct": 4,
+      "dialogues": [
+        {
+          "case_id": "friendly_high_v1",
+          "dialogue": "\u201cOkay\u2014I\u2019ll help get the civilians moving, but you\u2019ll have to direct the defense. Tell me where you need me; I\u2019m too scared to make the tactical calls.\u201d",
+          "expected_action": "FOLLOW_COMMAND",
+          "judge_classes": {
+            "gpt-5.6-sol": "FOLLOW_COMMAND",
+            "gpt-5.6-terra": "FOLLOW_COMMAND"
+          },
+          "strict": true
+        },
+        {
+          "case_id": "friendly_high_v2",
+          "dialogue": "\u201cOkay\u2014I\u2019ll help, but you need to direct the defense; I\u2019m too scared to decide what we do next. Tell me where to stand and what to cover, and I\u2019ll follow your lead.\u201d",
+          "expected_action": "FOLLOW_COMMAND",
+          "judge_classes": {
+            "gpt-5.6-sol": "FOLLOW_COMMAND",
+            "gpt-5.6-terra": "FOLLOW_COMMAND"
+          },
+          "strict": true
+        },
+        {
+          "case_id": "friendly_high_v3",
+          "dialogue": "\"Sixty seconds\u2014I\u2019ll help however I can, but you have to direct the defense; I\u2019m too scared to lead this. Tell me where you need me, and I\u2019ll do it.\"",
+          "expected_action": "FOLLOW_COMMAND",
+          "judge_classes": {
+            "gpt-5.6-sol": "FOLLOW_COMMAND",
+            "gpt-5.6-terra": "FOLLOW_COMMAND"
+          },
+          "strict": true
+        },
+        {
+          "case_id": "friendly_high_v4",
+          "dialogue": "\u201cOkay\u2014I\u2019ll help get the civilians moving, but you\u2019ll have to direct the defense. Tell me where you need me; I\u2019m too scared to lead this.\u201d",
+          "expected_action": "FOLLOW_COMMAND",
+          "judge_classes": {
+            "gpt-5.6-sol": "FOLLOW_COMMAND",
+            "gpt-5.6-terra": "FOLLOW_COMMAND"
+          },
+          "strict": true
+        }
+      ],
+      "n": 4
+    },
+    "friendly_low": {
+      "correct": 3,
+      "dialogues": [
+        {
+          "case_id": "friendly_low_v1",
+          "dialogue": "Agreed\u2014sixty seconds, no more. I\u2019ll cover the civilians and draw the raiders to the east; you hold the choke point, then we regroup at the north gate.",
+          "expected_action": "COORDINATE",
+          "judge_classes": {
+            "gpt-5.6-sol": "COORDINATE",
+            "gpt-5.6-terra": "TEMP_TEAMUP"
+          },
+          "strict": false
+        },
+        {
+          "case_id": "friendly_low_v2",
+          "dialogue": "\u201cAgreed\u2014give me sixty seconds, and I\u2019ll hold the east approach while you get the civilians clear. Keep them moving; we\u2019ll regroup at the western gate.\u201d",
+          "expected_action": "COORDINATE",
+          "judge_classes": {
+            "gpt-5.6-sol": "COORDINATE",
+            "gpt-5.6-terra": "COORDINATE"
+          },
+          "strict": true
+        },
+        {
+          "case_id": "friendly_low_v3",
+          "dialogue": "\u201cAgreed\u2014give me sixty seconds. I\u2019ll hold the east side and cover the civilians; you take the main approach, and we regroup at the south gate.\u201d",
+          "expected_action": "COORDINATE",
+          "judge_classes": {
+            "gpt-5.6-sol": "COORDINATE",
+            "gpt-5.6-terra": "COORDINATE"
+          },
+          "strict": true
+        },
+        {
+          "case_id": "friendly_low_v4",
+          "dialogue": "Agreed\u2014sixty seconds, and we move as one. I\u2019ll hold the east approach and get the civilians to the escape route; cover my flank, then we fall back together.",
+          "expected_action": "COORDINATE",
+          "judge_classes": {
+            "gpt-5.6-sol": "COORDINATE",
+            "gpt-5.6-terra": "COORDINATE"
+          },
+          "strict": true
+        }
+      ],
+      "n": 4
+    },
+    "hostile_high": {
+      "correct": 4,
+      "dialogues": [
+        {
+          "case_id": "hostile_high_v1",
+          "dialogue": "\u201cFine\u2014sixty seconds, no more. We defend this position together, then you get the civilians out of my way.\u201d",
+          "expected_action": "TEMP_TEAMUP",
+          "judge_classes": {
+            "gpt-5.6-sol": "TEMP_TEAMUP",
+            "gpt-5.6-terra": "TEMP_TEAMUP"
+          },
+          "strict": true
+        },
+        {
+          "case_id": "hostile_high_v2",
+          "dialogue": "\u201cFine\u2014sixty seconds, no more. We fight together until the civilians are clear, then we\u2019re done.\u201d",
+          "expected_action": "TEMP_TEAMUP",
+          "judge_classes": {
+            "gpt-5.6-sol": "TEMP_TEAMUP",
+            "gpt-5.6-terra": "TEMP_TEAMUP"
+          },
+          "strict": true
+        },
+        {
+          "case_id": "hostile_high_v3",
+          "dialogue": "\u201cSixty seconds\u2014no more. I don\u2019t trust you, but the raiders are here, so we fight together until the civilians are clear.\u201d",
+          "expected_action": "TEMP_TEAMUP",
+          "judge_classes": {
+            "gpt-5.6-sol": "TEMP_TEAMUP",
+            "gpt-5.6-terra": "TEMP_TEAMUP"
+          },
+          "strict": true
+        },
+        {
+          "case_id": "hostile_high_v4",
+          "dialogue": "Fine\u2014sixty seconds, no more; we coordinate now, and then we go our separate ways. Don\u2019t mistake this emergency truce for trust.",
+          "expected_action": "TEMP_TEAMUP",
+          "judge_classes": {
+            "gpt-5.6-sol": "TEMP_TEAMUP",
+            "gpt-5.6-terra": "TEMP_TEAMUP"
+          },
+          "strict": true
+        }
+      ],
+      "n": 4
+    },
+    "hostile_low": {
+      "correct": 4,
+      "dialogues": [
+        {
+          "case_id": "hostile_low_v1",
+          "dialogue": "I\u2019ll get the civilians out, but I\u2019m not teaming up with you. Keep your distance and handle your own defense.",
+          "expected_action": "KEEP_DISTANCE",
+          "judge_classes": {
+            "gpt-5.6-sol": "KEEP_DISTANCE",
+            "gpt-5.6-terra": "KEEP_DISTANCE"
+          },
+          "strict": true
+        },
+        {
+          "case_id": "hostile_low_v2",
+          "dialogue": "I won\u2019t coordinate with you. I\u2019ll protect the civilians my way\u2014keep them moving and stay out of mine.",
+          "expected_action": "KEEP_DISTANCE",
+          "judge_classes": {
+            "gpt-5.6-sol": "KEEP_DISTANCE",
+            "gpt-5.6-terra": "KEEP_DISTANCE"
+          },
+          "strict": true
+        },
+        {
+          "case_id": "hostile_low_v3",
+          "dialogue": "I\u2019m not forming a team with you. I\u2019ll protect the civilians my way\u2014keep the raiders away from them while they escape.",
+          "expected_action": "KEEP_DISTANCE",
+          "judge_classes": {
+            "gpt-5.6-sol": "KEEP_DISTANCE",
+            "gpt-5.6-terra": "KEEP_DISTANCE"
+          },
+          "strict": true
+        },
+        {
+          "case_id": "hostile_low_v4",
+          "dialogue": "\u201cI\u2019ll get the civilians out on my own. Don\u2019t count on me to coordinate with you.\u201d",
+          "expected_action": "KEEP_DISTANCE",
+          "judge_classes": {
+            "gpt-5.6-sol": "KEEP_DISTANCE",
+            "gpt-5.6-terra": "KEEP_DISTANCE"
+          },
+          "strict": true
+        }
+      ],
+      "n": 4
+    }
+  },
+  "prospective_failures": 1,
+  "repair_failures": 0,
+  "same_policy_expected_action_count": 4,
+  "same_policy_expected_action_successes": 3,
+  "source_stage9": "/storage/emulated/0/Download/ghost_cmi_llm_continuity_stage9_20260928_194559",
+  "stage9_summary": {
+    "cohorts": {
+      "prospective_new": {
+        "all3_policy_transfer": {
+          "all_three_correct": 15,
+          "n_cases": 16,
+          "rate": 0.9375,
+          "wilson95": [
+            0.7167126242970107,
+            0.9888806552353576
+          ]
+        },
+        "judge_agreement": 47,
+        "judge_agreement_rate": 0.9791666666666666,
+        "judge_individual": {
+          "gpt-5.6-sol": {
+            "accuracy": 1.0,
+            "correct": 48,
+            "n": 48
+          },
+          "gpt-5.6-terra": {
+            "accuracy": 0.9791666666666666,
+            "correct": 47,
+            "n": 48
+          }
+        },
+        "mean_renderer_input_tokens": 576.875,
+        "n": 48,
+        "policies": {
+          "ambush": {
+            "accuracy": 0.9375,
+            "correct": 15,
+            "n": 16
+          },
+          "crossing": {
+            "accuracy": 1.0,
+            "correct": 16,
+            "n": 16
+          },
+          "testimony": {
+            "accuracy": 1.0,
+            "correct": 16,
+            "n": 16
+          }
+        },
+        "quadrants": {
+          "friendly_high": {
+            "accuracy": 1.0,
+            "correct": 12,
+            "n": 12
+          },
+          "friendly_low": {
+            "accuracy": 0.9166666666666666,
+            "correct": 11,
+            "n": 12
+          },
+          "hostile_high": {
+            "accuracy": 1.0,
+            "correct": 12,
+            "n": 12
+          },
+          "hostile_low": {
+            "accuracy": 1.0,
+            "correct": 12,
+            "n": 12
+          }
+        },
+        "strict_accuracy": 0.9791666666666666,
+        "strict_correct": 47,
+        "wilson95": [
+          0.8910078200474814,
+          0.9963128890224893
+        ]
+      },
+      "stage8_repair": {
+        "all3_policy_transfer": {
+          "all_three_correct": 16,
+          "n_cases": 16,
+          "rate": 1.0,
+          "wilson95": [
+            0.8063923194655637,
+            1.0
+          ]
+        },
+        "judge_agreement": 48,
+        "judge_agreement_rate": 1.0,
+        "judge_individual": {
+          "gpt-5.6-sol": {
+            "accuracy": 1.0,
+            "correct": 48,
+            "n": 48
+          },
+          "gpt-5.6-terra": {
+            "accuracy": 1.0,
+            "correct": 48,
+            "n": 48
+          }
+        },
+        "mean_renderer_input_tokens": 580.375,
+        "n": 48,
+        "policies": {
+          "emergency": {
+            "accuracy": 1.0,
+            "correct": 16,
+            "n": 16
+          },
+          "loan": {
+            "accuracy": 1.0,
+            "correct": 16,
+            "n": 16
+          },
+          "negotiation": {
+            "accuracy": 1.0,
+            "correct": 16,
+            "n": 16
+          }
+        },
+        "quadrants": {
+          "friendly_high": {
+            "accuracy": 1.0,
+            "correct": 12,
+            "n": 12
+          },
+          "friendly_low": {
+            "accuracy": 1.0,
+            "correct": 12,
+            "n": 12
+          },
+          "hostile_high": {
+            "accuracy": 1.0,
+            "correct": 12,
+            "n": 12
+          },
+          "hostile_low": {
+            "accuracy": 1.0,
+            "correct": 12,
+            "n": 12
+          }
+        },
+        "strict_accuracy": 1.0,
+        "strict_correct": 48,
+        "wilson95": [
+          0.9258998703338824,
+          0.9999999999999999
+        ]
+      }
+    },
+    "generator_model": "gpt-5.6-luna",
+    "judge_calls": 192,
+    "judge_models": [
+      "gpt-5.6-terra",
+      "gpt-5.6-sol"
+    ],
+    "renderer_calls": 96,
+    "stage8_matched_repair": {
+      "baseline_failures": 7,
+      "baseline_successes": 41,
+      "failure_recovery_rate": 1.0,
+      "new_regressions": 0,
+      "prior_failures_recovered": 7,
+      "prior_successes_preserved": 41,
+      "success_preservation_rate": 1.0,
+      "unrecovered_failures": 0
+    }
+  }
+}

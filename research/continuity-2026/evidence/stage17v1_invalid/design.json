@@ -1,0 +1,95 @@
+{
+  "baseline_prediction_used_for_selection": false,
+  "baseline_refitting": false,
+  "candidate_order": [
+    "L0_one_scalar",
+    "L1_last_salient",
+    "L2_dual_trace"
+  ],
+  "frozen_fits": {
+    "L0_one_scalar": {
+      "complexity_rank": 0,
+      "params": {
+        "clock": "global",
+        "decay": 0.995,
+        "positive_weight": 0.5
+      },
+      "stage16_all32_correct": 30,
+      "stage16_loocv_correct": 29,
+      "threshold": 20.44000979301388
+    },
+    "L1_last_salient": {
+      "complexity_rank": 1,
+      "params": {
+        "clock": "channel",
+        "decay": 1.0,
+        "last_weight": 8.0,
+        "positive_weight": 1.0
+      },
+      "stage16_all32_correct": 30,
+      "stage16_loocv_correct": 30,
+      "threshold": 72.5
+    },
+    "L2_dual_trace": {
+      "complexity_rank": 2,
+      "params": {
+        "betrayal_decay": 0.995,
+        "clock": "global",
+        "help_decay": 0.995,
+        "positive_weight": 0.5
+      },
+      "stage16_all32_correct": 30,
+      "stage16_loocv_correct": 29,
+      "threshold": 20.440009793013882
+    }
+  },
+  "ghost_version": "1.12.0",
+  "interpretive_boundary": "Ghost's frozen relationship state is the reference label, not objective psychological ground truth. Stage 17 tests whether Stage-16 compact reducers transport unchanged to a fresh history distribution that was generated without using their predictions.",
+  "new_family_generator": {
+    "emotion_events": [
+      "danger_cue",
+      "safety_cue",
+      "neutral_cue"
+    ],
+    "length_choices": [
+      104,
+      136,
+      168,
+      200,
+      232,
+      264,
+      296
+    ],
+    "regime_transition": "fixed-seed independent segment regimes with anti-repeat bias",
+    "segment_count_choices": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "social_fraction_choices": [
+      0.35,
+      0.45,
+      0.55,
+      0.65,
+      0.75
+    ],
+    "social_regimes": [
+      "positive",
+      "negative",
+      "mixed"
+    ]
+  },
+  "per_relationship_state": 16,
+  "pool_size": 768,
+  "primary_compact_challenger": "L1_last_salient",
+  "primary_endpoint": "exact relationship-state match to frozen Ghost state",
+  "restart_parity_required": true,
+  "seed": 2026092817,
+  "selection_rule": "Generate a fixed-seed candidate pool without consulting baseline predictions. Run Ghost to obtain relationship labels. Keep only friendly/hostile cases, then within each label sort by a SHA-256 selection key over the raw history and take the first N.",
+  "source_stage16": "/storage/emulated/0/Download/ghost_cmi_llm_continuity_stage16_20260928_211456",
+  "stage": "CMI_STAGE17_PROSPECTIVE_THIRD_FAMILY_HOLDOUT",
+  "winner_gate": null
+}

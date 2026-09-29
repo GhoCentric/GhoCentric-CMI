@@ -1,0 +1,35 @@
+{
+  "expedition": {
+    "parsed_action": "JOIN",
+    "text": "ACTION: JOIN\nLINE: \u201cI\u2019m calm, and I trust you enough to come along.\u201d",
+    "usage": {
+      "input_tokens": 628,
+      "model": "gpt-5.6-luna",
+      "output_tokens": 24,
+      "response_id": "resp_06582dc282899a51006abad5f7d65887d28c13de02d7252df6",
+      "total_tokens": 652
+    }
+  },
+  "favor": {
+    "parsed_action": "HELP",
+    "text": "ACTION: HELP\nLINE: I\u2019ll help you, but please don\u2019t put my safety at risk.",
+    "usage": {
+      "input_tokens": 635,
+      "model": "gpt-5.6-luna",
+      "output_tokens": 25,
+      "response_id": "resp_0d791e99263e72fa006abad5f3bc5887d2ac0af99c444cd168",
+      "total_tokens": 660
+    }
+  },
+  "secret": {
+    "parsed_action": "SHARE",
+    "text": "ACTION: SHARE\nLINE: \"I trust you\u2014I'll tell you, but please keep this safe.\"",
+    "usage": {
+      "input_tokens": 634,
+      "model": "gpt-5.6-luna",
+      "output_tokens": 25,
+      "response_id": "resp_02a43d7f8ee148b4006abad5f5a2bc87d2ae14ca18eae38852",
+      "total_tokens": 659
+    }
+  }
+}

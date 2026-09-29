@@ -1,0 +1,169 @@
+{
+  "all3_policy_transfer": {
+    "full_history": {
+      "all_three_correct": 3,
+      "n_cases": 16,
+      "rate": 0.1875,
+      "wilson95": [
+        0.06591599071428142,
+        0.4300888096197414
+      ]
+    },
+    "semantic_cmi": {
+      "all_three_correct": 11,
+      "n_cases": 16,
+      "rate": 0.6875,
+      "wilson95": [
+        0.44404355834740666,
+        0.8583535614521796
+      ]
+    }
+  },
+  "arms": {
+    "full_history": {
+      "judge_agreement": 48,
+      "judge_agreement_rate": 1.0,
+      "mean_generator_input_tokens": 3154.125,
+      "n": 48,
+      "strict_accuracy": 0.3958333333333333,
+      "strict_correct": 19,
+      "wilson95": [
+        0.2702082786059137,
+        0.5368959150745274
+      ]
+    },
+    "semantic_cmi": {
+      "judge_agreement": 47,
+      "judge_agreement_rate": 0.9791666666666666,
+      "mean_generator_input_tokens": 724.875,
+      "n": 48,
+      "strict_accuracy": 0.8541666666666666,
+      "strict_correct": 41,
+      "wilson95": [
+        0.7283282347525372,
+        0.9275175067339628
+      ]
+    }
+  },
+  "deltas": {
+    "semantic_minus_full_strict_pp": 45.83333333333333
+  },
+  "generation_calls": 96,
+  "generator_model": "gpt-5.6-luna",
+  "judge_calls": 192,
+  "judge_individual": {
+    "gpt-5.6-sol": {
+      "full_history": {
+        "accuracy": 0.3958333333333333,
+        "correct": 19,
+        "n": 48
+      },
+      "semantic_cmi": {
+        "accuracy": 0.875,
+        "correct": 42,
+        "n": 48
+      }
+    },
+    "gpt-5.6-terra": {
+      "full_history": {
+        "accuracy": 0.3958333333333333,
+        "correct": 19,
+        "n": 48
+      },
+      "semantic_cmi": {
+        "accuracy": 0.8541666666666666,
+        "correct": 41,
+        "n": 48
+      }
+    }
+  },
+  "judge_models": [
+    "gpt-5.6-terra",
+    "gpt-5.6-sol"
+  ],
+  "policies": {
+    "full_history": {
+      "emergency": {
+        "accuracy": 0.4375,
+        "correct": 7,
+        "n": 16
+      },
+      "loan": {
+        "accuracy": 0.5,
+        "correct": 8,
+        "n": 16
+      },
+      "negotiation": {
+        "accuracy": 0.25,
+        "correct": 4,
+        "n": 16
+      }
+    },
+    "semantic_cmi": {
+      "emergency": {
+        "accuracy": 0.875,
+        "correct": 14,
+        "n": 16
+      },
+      "loan": {
+        "accuracy": 0.8125,
+        "correct": 13,
+        "n": 16
+      },
+      "negotiation": {
+        "accuracy": 0.875,
+        "correct": 14,
+        "n": 16
+      }
+    }
+  },
+  "quadrants": {
+    "full_history": {
+      "friendly_high": {
+        "accuracy": 0.16666666666666666,
+        "correct": 2,
+        "n": 12
+      },
+      "friendly_low": {
+        "accuracy": 0.6666666666666666,
+        "correct": 8,
+        "n": 12
+      },
+      "hostile_high": {
+        "accuracy": 0.25,
+        "correct": 3,
+        "n": 12
+      },
+      "hostile_low": {
+        "accuracy": 0.5,
+        "correct": 6,
+        "n": 12
+      }
+    },
+    "semantic_cmi": {
+      "friendly_high": {
+        "accuracy": 0.9166666666666666,
+        "correct": 11,
+        "n": 12
+      },
+      "friendly_low": {
+        "accuracy": 1.0,
+        "correct": 12,
+        "n": 12
+      },
+      "hostile_high": {
+        "accuracy": 0.5833333333333334,
+        "correct": 7,
+        "n": 12
+      },
+      "hostile_low": {
+        "accuracy": 0.9166666666666666,
+        "correct": 11,
+        "n": 12
+      }
+    }
+  },
+  "token_ratios": {
+    "semantic_over_full_generator_input": 0.22981809535132564
+  }
+}

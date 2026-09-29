@@ -1,0 +1,89 @@
+{
+  "arms": {
+    "cmi_state": {
+      "accuracy": 1.0,
+      "accuracy_wilson95": [
+        0.9258998703338824,
+        0.9999999999999999
+      ],
+      "correct": 48,
+      "mean_input_tokens": 289.1875,
+      "mean_output_tokens": 24.666666666666668,
+      "mean_prompt_chars": 1275.6875,
+      "median_input_tokens": 289.0,
+      "n": 48,
+      "parse_rate": 1.0,
+      "parsed": 48
+    },
+    "full_history": {
+      "accuracy": 0.7708333333333334,
+      "accuracy_wilson95": [
+        0.6346073590999655,
+        0.8669217373308877
+      ],
+      "correct": 37,
+      "mean_input_tokens": 298,
+      "mean_output_tokens": 27.604166666666668,
+      "mean_prompt_chars": 1349,
+      "median_input_tokens": 298.0,
+      "n": 48,
+      "parse_rate": 1.0,
+      "parsed": 48
+    },
+    "recent8": {
+      "accuracy": 0.14583333333333334,
+      "accuracy_wilson95": [
+        0.0724824932660371,
+        0.2716717652474628
+      ],
+      "correct": 7,
+      "mean_input_tokens": 257,
+      "mean_output_tokens": 30.375,
+      "mean_prompt_chars": 1166,
+      "median_input_tokens": 257.0,
+      "n": 48,
+      "parse_rate": 1.0,
+      "parsed": 48
+    }
+  },
+  "input_token_ratios": {
+    "cmi_over_full_history": 0.9704278523489933,
+    "recent_over_full_history": 0.8624161073825504
+  },
+  "matched_pair": {
+    "cmi_state": {
+      "both_correct": 24,
+      "both_correct_rate": 1.0,
+      "n_pairs_x_repeats": 24,
+      "wilson95": [
+        0.8620237953250198,
+        1.0
+      ]
+    },
+    "full_history": {
+      "both_correct": 13,
+      "both_correct_rate": 0.5416666666666666,
+      "n_pairs_x_repeats": 24,
+      "wilson95": [
+        0.3507486535891948,
+        0.72108666268789
+      ]
+    },
+    "recent8": {
+      "both_correct": 0,
+      "both_correct_rate": 0.0,
+      "n_pairs_x_repeats": 24,
+      "wilson95": [
+        1.3877787807814457e-17,
+        0.13797620467498017
+      ]
+    }
+  },
+  "raw_deltas": {
+    "cmi_minus_full_history_accuracy_pp": 22.916666666666664,
+    "cmi_minus_full_history_pair_pp": 45.833333333333336,
+    "cmi_minus_recent_accuracy_pp": 85.41666666666666,
+    "cmi_minus_recent_pair_pp": 100.0
+  },
+  "total_calls": 144
+}

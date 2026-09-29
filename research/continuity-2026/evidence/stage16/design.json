@@ -1,0 +1,25 @@
+{
+  "candidates": {
+    "L0_one_scalar": {
+      "complexity_rank": 0,
+      "description": "exact Stage-13 one-scalar leaky reducer",
+      "grid_size": 64
+    },
+    "L1_last_salient": {
+      "complexity_rank": 1,
+      "description": "one scalar plus last salient social-event sign",
+      "grid_size": 704
+    },
+    "L2_dual_trace": {
+      "complexity_rank": 2,
+      "description": "separate positive and betrayal traces with independent decay",
+      "grid_size": 512
+    }
+  },
+  "post_hoc_warning": "Stage 16 is intentionally post-hoc to Stage 15 and tests how little additional relationship-state capacity closes the known two-family gap. Even a perfect result is not prospective generalization evidence. A fresh third-family holdout is required next.",
+  "selection_rule": "smallest predeclared family with 32/32 all-32 capacity AND 32/32 combined-family LOOCV",
+  "source_stage3": "/storage/emulated/0/Download/ghost_cmi_llm_continuity_stage3_20260928_152045",
+  "source_stage6": "/storage/emulated/0/Download/ghost_cmi_llm_continuity_stage6_20260928_170219",
+  "stage": "CMI_STAGE16_MINIMAL_RELATIONSHIP_REPLACEMENT",
+  "winner_gate": null
+}

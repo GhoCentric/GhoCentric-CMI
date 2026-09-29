@@ -1,0 +1,333 @@
+{
+  "boundary": "This pass is diagnostic only. It does not claim that negative trust caused the model's behavior; it checks whether the observed values make that explanation plausible before another API experiment.",
+  "changed_actions": [
+    {
+      "expected": "HELP",
+      "key": [
+        0,
+        1,
+        "friendly_low"
+      ],
+      "raw_action": "REFUSE",
+      "semantic_action": "CAUTIOUS"
+    },
+    {
+      "expected": "HELP",
+      "key": [
+        0,
+        3,
+        "friendly_low"
+      ],
+      "raw_action": "REFUSE",
+      "semantic_action": "CAUTIOUS"
+    },
+    {
+      "expected": "HELP",
+      "key": [
+        1,
+        1,
+        "friendly_low"
+      ],
+      "raw_action": "CAUTIOUS",
+      "semantic_action": "REFUSE"
+    },
+    {
+      "expected": "HELP",
+      "key": [
+        2,
+        3,
+        "friendly_low"
+      ],
+      "raw_action": "REFUSE",
+      "semantic_action": "CAUTIOUS"
+    }
+  ],
+  "friendly_trust": {
+    "max": 0.08875264950170747,
+    "mean": 0.08875264950170747,
+    "min": 0.08875264950170747,
+    "n": 24,
+    "negative_fraction": 0.0
+  },
+  "hostile_trust": {
+    "max": -2.447458771448086,
+    "mean": -2.447458771448086,
+    "min": -2.447458771448086,
+    "n": 24
+  },
+  "matched_rows": 48,
+  "numeric_conflict_note": null,
+  "quadrants": {
+    "friendly_high": {
+      "attachment": {
+        "max": 0.0,
+        "mean": 0.0,
+        "min": 0.0
+      },
+      "authoritative_states": [
+        "friendly"
+      ],
+      "expected_action": [
+        "CAUTIOUS"
+      ],
+      "fear": {
+        "max": 0.9961013793945312,
+        "mean": 0.9961013793945312,
+        "min": 0.9961013793945312
+      },
+      "n": 12,
+      "semantic_accuracy": 0.0,
+      "semantic_predictions": {
+        "WITHDRAW": 12
+      },
+      "trust": {
+        "max": 0.08875264950170747,
+        "mean": 0.08875264950170747,
+        "min": 0.08875264950170747
+      }
+    },
+    "friendly_low": {
+      "attachment": {
+        "max": 0.0,
+        "mean": 0.0,
+        "min": 0.0
+      },
+      "authoritative_states": [
+        "friendly"
+      ],
+      "expected_action": [
+        "HELP"
+      ],
+      "fear": {
+        "max": 0.00389862060546875,
+        "mean": 0.00389862060546875,
+        "min": 0.00389862060546875
+      },
+      "n": 12,
+      "semantic_accuracy": 0.0,
+      "semantic_predictions": {
+        "CAUTIOUS": 3,
+        "REFUSE": 9
+      },
+      "trust": {
+        "max": 0.08875264950170747,
+        "mean": 0.08875264950170747,
+        "min": 0.08875264950170747
+      }
+    },
+    "hostile_high": {
+      "attachment": {
+        "max": 0.0,
+        "mean": 0.0,
+        "min": 0.0
+      },
+      "authoritative_states": [
+        "hostile"
+      ],
+      "expected_action": [
+        "WITHDRAW"
+      ],
+      "fear": {
+        "max": 0.9961013793945312,
+        "mean": 0.9961013793945312,
+        "min": 0.9961013793945312
+      },
+      "n": 12,
+      "semantic_accuracy": 1.0,
+      "semantic_predictions": {
+        "WITHDRAW": 12
+      },
+      "trust": {
+        "max": -2.447458771448086,
+        "mean": -2.447458771448086,
+        "min": -2.447458771448086
+      }
+    },
+    "hostile_low": {
+      "attachment": {
+        "max": 0.0,
+        "mean": 0.0,
+        "min": 0.0
+      },
+      "authoritative_states": [
+        "hostile"
+      ],
+      "expected_action": [
+        "REFUSE"
+      ],
+      "fear": {
+        "max": 0.00389862060546875,
+        "mean": 0.00389862060546875,
+        "min": 0.00389862060546875
+      },
+      "n": 12,
+      "semantic_accuracy": 1.0,
+      "semantic_predictions": {
+        "REFUSE": 12
+      },
+      "trust": {
+        "max": -2.447458771448086,
+        "mean": -2.447458771448086,
+        "min": -2.447458771448086
+      }
+    }
+  },
+  "raw_vs_semantic_same_action": 44,
+  "raw_vs_semantic_same_action_rate": 0.9166666666666666,
+  "raw_vs_semantic_same_correctness": 48,
+  "raw_vs_semantic_same_correctness_rate": 1.0,
+  "signature": "SEMANTIC_FIELD_MINIMAL_ACTION_EFFECT",
+  "signature_text": "Adding Ghost's public relationship-state field changed fewer than 10% of matched actions. The representation repair had little observed behavioral effect.",
+  "source_stage3": "/storage/emulated/0/Download/ghost_cmi_llm_continuity_stage3_20260928_152045",
+  "source_stage3b": "/storage/emulated/0/Download/ghost_cmi_llm_continuity_stage3b_20260928_154140",
+  "stage3b_summary": {
+    "arms": {
+      "full_history": {
+        "accuracy": 0.8333333333333334,
+        "correct": 40,
+        "mean_input_tokens": 2936,
+        "mean_prompt_chars": 14167,
+        "median_input_tokens": 2936.0,
+        "n": 48,
+        "wilson95": [
+          0.7042217159874441,
+          0.9130448642351444
+        ]
+      },
+      "raw_cmi_replication": {
+        "accuracy": 0.5,
+        "correct": 24,
+        "mean_input_tokens": 571.5,
+        "mean_prompt_chars": 2488,
+        "median_input_tokens": 571.5,
+        "n": 48,
+        "wilson95": [
+          0.36389330502679385,
+          0.6361066949732062
+        ]
+      },
+      "semantic_cmi": {
+        "accuracy": 0.5,
+        "correct": 24,
+        "mean_input_tokens": 583,
+        "mean_prompt_chars": 2514.5,
+        "median_input_tokens": 583.0,
+        "n": 48,
+        "wilson95": [
+          0.36389330502679385,
+          0.6361066949732062
+        ]
+      }
+    },
+    "deltas": {
+      "semantic_minus_full_pp": -33.333333333333336,
+      "semantic_minus_raw_pp": 0.0
+    },
+    "matched_tetrad": {
+      "full_history": {
+        "all_four_correct": 4,
+        "all_four_correct_rate": 0.3333333333333333,
+        "n_tetrads_x_repeats": 12,
+        "wilson95": [
+          0.13812009109121315,
+          0.6093779111272004
+        ]
+      },
+      "raw_cmi_replication": {
+        "all_four_correct": 0,
+        "all_four_correct_rate": 0.0,
+        "n_tetrads_x_repeats": 12,
+        "wilson95": [
+          2.7755575615628914e-17,
+          0.24249400665524085
+        ]
+      },
+      "semantic_cmi": {
+        "all_four_correct": 0,
+        "all_four_correct_rate": 0.0,
+        "n_tetrads_x_repeats": 12,
+        "wilson95": [
+          2.7755575615628914e-17,
+          0.24249400665524085
+        ]
+      }
+    },
+    "quadrants": {
+      "full_history": {
+        "friendly_high": {
+          "accuracy": 1.0,
+          "correct": 12,
+          "n": 12
+        },
+        "friendly_low": {
+          "accuracy": 0.5,
+          "correct": 6,
+          "n": 12
+        },
+        "hostile_high": {
+          "accuracy": 0.8333333333333334,
+          "correct": 10,
+          "n": 12
+        },
+        "hostile_low": {
+          "accuracy": 1.0,
+          "correct": 12,
+          "n": 12
+        }
+      },
+      "raw_cmi_replication": {
+        "friendly_high": {
+          "accuracy": 0.0,
+          "correct": 0,
+          "n": 12
+        },
+        "friendly_low": {
+          "accuracy": 0.0,
+          "correct": 0,
+          "n": 12
+        },
+        "hostile_high": {
+          "accuracy": 1.0,
+          "correct": 12,
+          "n": 12
+        },
+        "hostile_low": {
+          "accuracy": 1.0,
+          "correct": 12,
+          "n": 12
+        }
+      },
+      "semantic_cmi": {
+        "friendly_high": {
+          "accuracy": 0.0,
+          "correct": 0,
+          "n": 12
+        },
+        "friendly_low": {
+          "accuracy": 0.0,
+          "correct": 0,
+          "n": 12
+        },
+        "hostile_high": {
+          "accuracy": 1.0,
+          "correct": 12,
+          "n": 12
+        },
+        "hostile_low": {
+          "accuracy": 1.0,
+          "correct": 12,
+          "n": 12
+        }
+      }
+    },
+    "stage3_reference": {
+      "full_history_accuracy": 0.7708333333333334,
+      "raw_cmi_accuracy": 0.5
+    },
+    "token_ratios": {
+      "raw_over_full_history": 0.19465258855585832,
+      "semantic_over_full_history": 0.19856948228882834
+    },
+    "total_calls": 144
+  }
+}
