@@ -1,0 +1,135 @@
+{
+  "adjudication": "MOTIVE_STATE_BOUNDARY_MINIMIZATION_RECORD_ESTABLISHED_PHASE1O",
+  "candidate_sha256": "52ec296b31ec8eaadac2f528a85f6777f6351f99d4a9db07dda23649bf1a6927",
+  "compact_profile_evaluator": {
+    "compact_profile_roundtrip_exact": true,
+    "evaluation_packet_checks": 1200,
+    "full_production_record_parity": true,
+    "restart_checks": 10,
+    "schema": "ghocentric.cmi.phase1o.compact-profile-evaluator.v1",
+    "validation_replacement_claimed": false
+  },
+  "focused_coverage": {
+    "covered_branches": 8,
+    "covered_lines": 37,
+    "excluded_lines": 0,
+    "missing_branches": 0,
+    "missing_lines": 0,
+    "num_branches": 8,
+    "num_partial_branches": 0,
+    "num_statements": 37,
+    "percent_branches_covered": 100.0,
+    "percent_branches_covered_display": "100",
+    "percent_covered": 100.0,
+    "percent_covered_display": "100",
+    "percent_statements_covered": 100.0,
+    "percent_statements_covered_display": "100"
+  },
+  "focused_tests": 7,
+  "history_causality": {
+    "current_field_dependence_beyond_latest_observed": false,
+    "current_motive_checks": 3600,
+    "full_public_state_difference_checks": 1200,
+    "full_public_state_equivalence": false,
+    "future_full_record_checks": 1200,
+    "history_reduction": {
+      "mira": {
+        "after_rows": 1,
+        "before_rows": 60,
+        "retained_sequence": 180
+      },
+      "rowan": {
+        "after_rows": 1,
+        "before_rows": 60,
+        "retained_sequence": 179
+      },
+      "sera": {
+        "after_rows": 1,
+        "before_rows": 60,
+        "retained_sequence": 178
+      }
+    },
+    "prior_history_backlog_evaluation_dependence_observed": false,
+    "profile_view_checks": 3600,
+    "reduced_history_limit": 1,
+    "reduced_snapshot_valid_roundtrip": true,
+    "schema": "ghocentric.cmi.phase1o.motive-history-causality.v1"
+  },
+  "history_lifecycle": {
+    "claim": "MotiveRuntime history is explicitly bounded at 64 records per agent. The public current motive field is the latest retained record; a valid latest-only snapshot preserves current motive and configured profiles. No separate motive cold-history archive is claimed.",
+    "cold_archive_claimed": false,
+    "current_field_is_latest_history_record": true,
+    "latest_only_snapshot_preserves_current_and_profiles": true,
+    "rows": [
+      {
+        "current_sequence": 64,
+        "history_rows": 64,
+        "sequence": 64
+      },
+      {
+        "current_sequence": 128,
+        "history_rows": 64,
+        "sequence": 128
+      },
+      {
+        "current_sequence": 512,
+        "history_rows": 64,
+        "sequence": 512
+      },
+      {
+        "current_sequence": 2048,
+        "history_rows": 64,
+        "sequence": 2048
+      }
+    ],
+    "runtime_history_bounded": true,
+    "runtime_history_limit": 64,
+    "schema": "ghocentric.cmi.phase1o.motive-history-lifecycle.v1"
+  },
+  "maintained_hash_pinned_regression_surface": {
+    "all_collected_passed": true,
+    "collected": 109,
+    "passed": 109
+  },
+  "next_falsification_target": "Phase 1P: continuity state ownership/minimization using the same source-first semantic-manifest workflow. Do not extend motives merely to accumulate more favorable numbers unless a concrete unresolved contract requires it.",
+  "non_claim": "Phase 1O does not claim the public/persisted profile shape, history, history_limit, or global sequence can be removed. motive_id remains part of the current public profile contract even though it is key-derived. History remains observable audit state and owns the current motive record. The compact evaluator does not replace production validation or authority, and no motive cold archive is claimed.",
+  "phase1_owner_status": "motives now have an explicit profile-ownership, redundant-id, compact-evaluation, prior-history causality, current-field, and bounded-history minimization record",
+  "predecessor": "eb000b5d43d97b77d488b8c071d75f20ef4e52e0",
+  "production_ghost_modified": false,
+  "profile_causal_necessity": {
+    "baseline_changes_score": true,
+    "causal_profile_payload": [
+      "baseline",
+      "weights"
+    ],
+    "profile_set_changes_evaluation_surface": true,
+    "redundant_profile_motive_id_is_not_part_of_candidate_payload": true,
+    "schema": "ghocentric.cmi.phase1o.motive-profile-necessity.v1",
+    "weights_change_score": true
+  },
+  "profile_ownership": {
+    "compact_expand_roundtrip_exact": true,
+    "compact_over_full_ratio": 0.8533196088522903,
+    "compact_profile_bytes": 1658,
+    "compact_profile_keys": [
+      "baseline",
+      "weights"
+    ],
+    "full_profile_bytes": 1943,
+    "motive_id_exactly_reconstructible_from_map_key": true,
+    "profile_count": 12,
+    "schema": "ghocentric.cmi.phase1o.motive-profile-ownership.v1",
+    "storage_is_telemetry_not_gate": true,
+    "stored_profile_keys": [
+      "motive_id",
+      "baseline",
+      "weights"
+    ]
+  },
+  "public_api_modified": false,
+  "schema": "ghocentric.cmi.phase1o.motive-state-ownership.evidence.v1",
+  "semantic_manifest_sha256": "d40cf167135b6cf06683db30c2c75f9966110440c6a115f5e37a6b644c897a04",
+  "supported_claim": "Current MotiveRuntime stores configuration profiles and bounded audit history. Within each profile, motive_id is exactly reconstructible from the enclosing profile-map key; baseline and weights are independently evaluation-causal. A pure compact-profile evaluator reproduced 1,200 exact production motive records across 10 restart checkpoints. Reducing motive history to one latest record and history_limit to one preserved another 1,200 exact future records, current-motive views, and profile views while full public snapshots remained different. Motive history is explicitly bounded at 64 records per agent.",
+  "test_sha256": "18d4c331dd1e06aaf90eaf19e62fcb0755602083493c4e4a057d543759ef9a3f",
+  "version_modified": false
+}

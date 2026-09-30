@@ -1,0 +1,84 @@
+{
+  "git_blobs": {
+    "ROADMAP.md": "ad1c7d1b814951a7011f73f99615c7a6a0b8fe9b",
+    "docs/evidence/v1.12-dev/attention_state_ownership_stage1n.json": "86fa5ee19bc0aa0b75a3058c9e94327cad6bace3",
+    "docs/evidence/v1.12-dev/semantic_continuity_manifest_phase1n.json": "1c90c86772a876682fe45c64fb6273d224392c07",
+    "docs/research/v1.12_attention_state_ownership_stage1n.md": "e9f5242bd5b1452684704d57f45c1a83ba6a5a22",
+    "ghost/affordances.py": "62837d0c2af333fcdc8c5997f18acafa28a689f1",
+    "ghost/agent.py": "27722b87109d5585b044d2d8ca59bb1cea1b5205",
+    "ghost/api.py": "e3394d361cc0992307d46c0f035058f0b8684e68",
+    "ghost/motives.py": "00270522ddd52542e05af8f96f837597e91c4a89",
+    "ghost_research/v112_attention_state_ownership_stage1n.py": "02b019e180f41ce8a7ca926aff6a0dc9471da40b",
+    "tests/test_agent_affordance_api_v1110.py": "8802fb59822b1eeb1da7ff92fb91a87e800628d3",
+    "tests/test_agent_api_v1110.py": "3fcf3e6a3964882df365fd509481b0a6dfa0b521",
+    "tests/test_agent_motive_api_v1110.py": "a75744f2ec824d5f7ad42bcfdde4ca38517982a1",
+    "tests/test_agent_values_goals_api_v1110.py": "a9bcb3268ee64bd59ef414d291fda641963f149f",
+    "tests/test_motive_runtime_v1110.py": "0faf29af561e270274d6b549a9e59f516fd4eae9",
+    "tests/test_v112_attention_state_ownership_stage1n.py": "b7f89d4232e0112a0f1624c000183e2873037ea8"
+  },
+  "head": "eb000b5d43d97b77d488b8c071d75f20ef4e52e0",
+  "motives": {
+    "default_history_limit": 64,
+    "important_boundaries": {
+      "baseline_is_evaluation_causal": true,
+      "current_motive_field_is_latest_history_record": true,
+      "history_is_bounded_observable_audit_state": true,
+      "motive_id_is_reconstructible_from_profile_map_key": true,
+      "no_motive_cold_archive_is_claimed": true,
+      "prior_history_backlog_is_not_read_by_evaluate": true,
+      "profile_set_is_evaluation_causal": true,
+      "sequence_is_required_for_exact_public_record_identity": true,
+      "weights_are_evaluation_causal": true
+    },
+    "live_internal_fields": [
+      "history_limit",
+      "_sequence",
+      "_profiles",
+      "_history"
+    ],
+    "profile_causal_candidate_keys": [
+      "baseline",
+      "weights"
+    ],
+    "profile_stored_keys": [
+      "motive_id",
+      "baseline",
+      "weights"
+    ],
+    "runtime_class": "MotiveRuntime",
+    "signal_packet_version": "1.0",
+    "snapshot_keys": [
+      "schema_version",
+      "history_limit",
+      "sequence",
+      "profiles",
+      "history"
+    ],
+    "snapshot_schema_version": "1.0"
+  },
+  "parent": "b7cc017148f88aeb411ff6ebe22d3f28c4deb1a6",
+  "phase1n": {
+    "adjudication": "ATTENTION_STATE_BOUNDARY_MINIMIZATION_RECORD_ESTABLISHED_PHASE1N",
+    "next_owner": "motives"
+  },
+  "phase1n_semantic_manifest_sha256": "1da6102907677b792a263bfb9eb09a610c06bba4eccce11efce41e0218260186",
+  "repository": "GhoCentric/GhoCentric-CMI",
+  "roadmap": {
+    "next_owner_after_phase1o": "continuity",
+    "phase1_exit_requires_major_subsystem_minimization_record": true,
+    "phase1_owner": "motives",
+    "provenance_history_requires_explicit_bounded_lifecycle": true
+  },
+  "rules": {
+    "full_public_state_differences_are_not_hidden_by_evaluation_projection": true,
+    "git_blob_identity_is_authoritative_for_source_shape": true,
+    "prior_expensive_evidence_is_reused_only_after_exact_hash_validation": true,
+    "production_files_are_not_modified_by_research_candidates": true,
+    "runtime_semantics_are_verified_not_guessed": true,
+    "stage_a_source_discovery_precedes_stage_b_experiment": true,
+    "stage_b_pins_manifest_sha256": true,
+    "telemetry_is_not_promoted_to_gate_post_hoc": true
+  },
+  "schema": "ghocentric.cmi.semantic-continuity-manifest.phase1o.v1",
+  "source": "GitHub connector, exact immutable commit"
+}
