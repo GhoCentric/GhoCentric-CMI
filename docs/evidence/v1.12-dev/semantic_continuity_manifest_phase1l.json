@@ -1,0 +1,127 @@
+{
+  "epistemic": {
+    "authoritative_model": "append-only record ledger plus tick and sequence",
+    "derived_indexes": [
+      "_by_id",
+      "_facts",
+      "_beliefs",
+      "_latest"
+    ],
+    "hot_ledger_retention": {
+      "bounded_in_epistemic_runtime": false,
+      "history_limit_field_present": false,
+      "phase1d_lifecycle_gap_remains": true
+    },
+    "live_internal_fields": [
+      "_tick",
+      "_sequence",
+      "_records",
+      "_by_id",
+      "_facts",
+      "_beliefs",
+      "_latest"
+    ],
+    "persisted_runtime_fields": [
+      "tick",
+      "sequence",
+      "records"
+    ],
+    "production_compact_codec": {
+      "authoritative": false,
+      "legacy_observation_schema": "ghost.stage9c.incremental-observation.v1",
+      "legacy_records_schema": "ghost.stage9c.incremental-epistemic-records.v1",
+      "lossless": true,
+      "module": "ghost._persistence_codec",
+      "observation_schema": "ghost.persistence.observation-codec.v1",
+      "private_persistence_shadow": true,
+      "records_schema": "ghost.persistence.epistemic-records.v1"
+    },
+    "record_kinds": [
+      "fact",
+      "observation",
+      "report",
+      "evidence",
+      "belief",
+      "tick"
+    ],
+    "runtime_class": "EpistemicRuntime",
+    "snapshot_keys": [
+      "schema_version",
+      "tick",
+      "sequence",
+      "records"
+    ]
+  },
+  "git_blobs": {
+    "ROADMAP.md": "ad1c7d1b814951a7011f73f99615c7a6a0b8fe9b",
+    "docs/evidence/v1.12-dev/atomic_recovery_stage9e.json": "fc6f265f9320fd2a17b3232fa6534357d13bd5f9",
+    "docs/evidence/v1.12-dev/compact_epistemic_stage9b.json": "ce90cf21951d39604ad2c066678656db074145c2",
+    "docs/evidence/v1.12-dev/incremental_compact_stage9c.json": "38dea33bc6e4eb413570d1af897d998258ea4a8f",
+    "docs/evidence/v1.12-dev/integrated_production_stage10c.json": "2a1df37393d3f7b1c37038f3f33e3778836985a5",
+    "docs/evidence/v1.12-dev/persistence_runtime_stage10b.json": "87607618919f4a5236b5fd3726912b3065519655",
+    "docs/evidence/v1.12-dev/persistence_shadow_stage10a.json": "a220a84cdfc5291c899175e2a9f8027d9aacb56a",
+    "docs/evidence/v1.12-dev/relationship_social_kernel_stage1k.json": "d002c2a08ed8c47540848b919fc2e5d8fab475fa",
+    "docs/evidence/v1.12-dev/restart_continue_stage9d.json": "887931df7077ab55bbfa35e1dc181b32e306cce8",
+    "docs/evidence/v1.12-dev/semantic_continuity_manifest_phase1k.json": "e89497d10f6c98e7050bae16c8b6ca309fe2449d",
+    "docs/research/v1.12_relationship_social_kernel_stage1k.md": "36976e97e7238e7666d80db077aa6c1dcdf1015b",
+    "ghost/_persistence_codec.py": "beee69f72a9b0e62186ff2529a6d4a864db11dbf",
+    "ghost/epistemic.py": "18c42b63aa07540caaec015c2f55bf2285b8268a",
+    "ghost_research/v112_relationship_social_kernel_stage1k.py": "dd5f5728a557b874e8d06517ee9e70e1b61ef90c",
+    "tests/test_api_epistemic_v180.py": "5b30da926c900ac491bce9d32b45cee5fdb48366",
+    "tests/test_epistemic_v180.py": "129c131665f224ff5bdbf6212a6223b316402894",
+    "tests/test_strict_snapshot_validation_v180.py": "1fa0cf86e63348392019a3b15531a3b5e9f50c64",
+    "tests/test_v112_incremental_compact_stage9c.py": "83391491a714d4f5b652a46824403dd9b0f3e7fd",
+    "tests/test_v112_persistence_shadow_stage10a.py": "c18acf63fa3e1749c0e71066ab2396fec5f790d7",
+    "tests/test_v112_relationship_social_kernel_stage1k.py": "eaeefbae39af8740617eef10c51cd38a85f16208"
+  },
+  "head": "2da1423043eb6b84d5672280c163421dbb66494b",
+  "parent": "e787db674402541f0d28e80a6392e32497f52074",
+  "phase1k_semantic_manifest_sha256": "531437ad8bb51a81c23d743c49fbad7b92788296c1179c55c01b60dffd55486f",
+  "prior_evidence": {
+    "stage10a": {
+      "path": "docs/evidence/v1.12-dev/persistence_shadow_stage10a.json",
+      "strict_verdict": "V112_PERSISTENCE_SHADOW_STAGE10A_PASS"
+    },
+    "stage10b": {
+      "path": "docs/evidence/v1.12-dev/persistence_runtime_stage10b.json",
+      "strict_verdict": "V112_PERSISTENCE_RUNTIME_STAGE10B_PASS"
+    },
+    "stage10c": {
+      "path": "docs/evidence/v1.12-dev/integrated_production_stage10c.json",
+      "strict_verdict": "V112_INTEGRATED_PRODUCTION_STAGE10C_PASS"
+    },
+    "stage9b": {
+      "path": "docs/evidence/v1.12-dev/compact_epistemic_stage9b.json",
+      "strict_verdict": "V112_COMPACT_EPISTEMIC_STAGE9B_PASS"
+    },
+    "stage9c": {
+      "path": "docs/evidence/v1.12-dev/incremental_compact_stage9c.json",
+      "strict_verdict": "V112_INCREMENTAL_COMPACT_STAGE9C_PASS"
+    },
+    "stage9d": {
+      "path": "docs/evidence/v1.12-dev/restart_continue_stage9d.json",
+      "strict_verdict": "V112_RESTART_CONTINUE_STAGE9D_PASS"
+    },
+    "stage9e": {
+      "path": "docs/evidence/v1.12-dev/atomic_recovery_stage9e.json",
+      "strict_verdict": "V112_ATOMIC_RECOVERY_STAGE9E_PASS"
+    }
+  },
+  "repository": "GhoCentric/GhoCentric-CMI",
+  "roadmap": {
+    "next_owner_after_phase1l": "interpretation",
+    "phase1_exit_requires_major_subsystem_minimization_record": true,
+    "phase1_owner": "epistemic state",
+    "provenance_history_requires_bounded_lifecycle": true
+  },
+  "rules": {
+    "git_blob_identity_is_authoritative_for_source_shape": true,
+    "prior_expensive_evidence_is_reused_only_after_exact_hash_and_verdict_validation": true,
+    "production_files_are_not_modified_by_research_candidates": true,
+    "runtime_semantics_are_verified_not_guessed": true,
+    "stage_a_source_discovery_precedes_stage_b_experiment": true,
+    "stage_b_pins_manifest_sha256": true
+  },
+  "schema": "ghocentric.cmi.semantic-continuity-manifest.phase1l.v1",
+  "source": "GitHub connector, exact immutable commit"
+}

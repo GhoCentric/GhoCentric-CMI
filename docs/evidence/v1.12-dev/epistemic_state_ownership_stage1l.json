@@ -1,0 +1,166 @@
+{
+  "adjudication": "EPISTEMIC_AUTHORITATIVE_STATE_MINIMIZATION_RECORD_ESTABLISHED_PHASE1L",
+  "candidate_sha256": "8c9e65a517e9957ce93d5660057431778fa920b064d52005dddfc9824f395d5e",
+  "existing_hash_pinned_regression_surface": {
+    "all_collected_passed": true,
+    "collected": 164,
+    "passed": 164
+  },
+  "focused_coverage": {
+    "covered_branches": 6,
+    "covered_lines": 23,
+    "excluded_lines": 0,
+    "missing_branches": 0,
+    "missing_lines": 0,
+    "num_branches": 6,
+    "num_partial_branches": 0,
+    "num_statements": 23,
+    "percent_branches_covered": 100.0,
+    "percent_branches_covered_display": "100",
+    "percent_covered": 100.0,
+    "percent_covered_display": "100",
+    "percent_statements_covered": 100.0,
+    "percent_statements_covered_display": "100"
+  },
+  "focused_tests": 6,
+  "hot_ledger_lifecycle": {
+    "automatic_hot_ledger_bound_observed": false,
+    "claim": "Current EpistemicRuntime remains append-only in hot state. This experiment does not treat lossless compact persistence as a retention policy; Phase 1D still requires an explicit bounded/relevant hot-history lifecycle.",
+    "history_limit_present": false,
+    "phase1d_retention_lifecycle_gap_remains": true,
+    "rows": [
+      {
+        "observed_records": 100,
+        "requested_minimum_records": 100,
+        "sequence": 100
+      },
+      {
+        "observed_records": 500,
+        "requested_minimum_records": 500,
+        "sequence": 500
+      },
+      {
+        "observed_records": 1000,
+        "requested_minimum_records": 1000,
+        "sequence": 1000
+      },
+      {
+        "observed_records": 2000,
+        "requested_minimum_records": 2000,
+        "sequence": 2000
+      }
+    ],
+    "schema": "ghocentric.cmi.phase1l.hot-ledger-lifecycle.v1"
+  },
+  "next_falsification_target": "Phase 1M: interpretation state ownership/minimization, using the same source-first semantic-manifest workflow. Do not return to relationship expansion by default.",
+  "non_claim": "Phase 1L does not claim the append-only epistemic ledger is lifecycle-bounded, does not make private compact persistence authoritative, does not delete the derived indexes, and does not prove a production latency SLO. The hot-ledger retention/lifecycle requirement remains open for Phase 1D.",
+  "ownership": {
+    "all_derived_indexes_exact_from_ledger": true,
+    "claim": "The current authoritative EpistemicRuntime persistence state is schema_version plus tick, sequence, and the append-only records ledger. _by_id, _facts, _beliefs, and _latest are reconstructible derived indexes rather than independent persisted state.",
+    "continuation_exact": true,
+    "continuation_steps": 100,
+    "derived_index_count": 4,
+    "derived_indexes": [
+      "_by_id",
+      "_facts",
+      "_beliefs",
+      "_latest"
+    ],
+    "live_internal_fields": [
+      "_tick",
+      "_sequence",
+      "_records",
+      "_by_id",
+      "_facts",
+      "_beliefs",
+      "_latest"
+    ],
+    "ownership_summary": {
+      "belief_index_count": 180,
+      "derived_index_names": [
+        "by_id",
+        "facts",
+        "beliefs",
+        "latest"
+      ],
+      "fact_index_count": 4,
+      "latest_belief_count": 5,
+      "persisted_runtime_fields": [
+        "tick",
+        "sequence",
+        "records"
+      ],
+      "record_count": 572
+    },
+    "persisted_runtime_field_count": 3,
+    "persisted_runtime_fields": [
+      "tick",
+      "sequence",
+      "records"
+    ],
+    "record_count": 572,
+    "record_kinds": [
+      "belief",
+      "evidence",
+      "fact",
+      "observation",
+      "report",
+      "tick"
+    ],
+    "restore_exact": true,
+    "schema": "ghocentric.cmi.phase1l.epistemic-ownership.v1",
+    "sequence_equals_record_count": true,
+    "snapshot_key_count_including_schema": 4
+  },
+  "phase1_owner_status": "epistemic state now has an explicit Phase-1 minimization/ownership record",
+  "predecessor": "2da1423043eb6b84d5672280c163421dbb66494b",
+  "prior_stage9b_through_stage10c_reused": true,
+  "production_compact_restart": {
+    "levels": [
+      {
+        "compact_bytes": 37776,
+        "compact_over_full_ratio": 0.860599157079394,
+        "continuation_exact": true,
+        "continuation_steps": 40,
+        "derived_indexes_exact_after_restore": true,
+        "full_bytes": 43895,
+        "records": 103,
+        "roundtrip_exact": true,
+        "steps": 32
+      },
+      {
+        "compact_bytes": 220388,
+        "compact_over_full_ratio": 0.8959590210586227,
+        "continuation_exact": true,
+        "continuation_steps": 40,
+        "derived_indexes_exact_after_restore": true,
+        "full_bytes": 245980,
+        "records": 408,
+        "roundtrip_exact": true,
+        "steps": 128
+      },
+      {
+        "compact_bytes": 2002901,
+        "compact_over_full_ratio": 0.9509200356838156,
+        "continuation_exact": true,
+        "continuation_steps": 40,
+        "derived_indexes_exact_after_restore": true,
+        "full_bytes": 2106277,
+        "records": 1628,
+        "roundtrip_exact": true,
+        "steps": 512
+      }
+    ],
+    "production_codec_is_private_non_authoritative": true,
+    "schema": "ghocentric.cmi.phase1l.current-production-compact-restart.v1",
+    "storage_is_telemetry_not_gate": true,
+    "timing_is_not_measured": true
+  },
+  "production_ghost_modified": false,
+  "public_api_modified": false,
+  "schema": "ghocentric.cmi.phase1l.epistemic-state-ownership.evidence.v1",
+  "semantic_manifest_sha256": "72cf768452dccd2cdc78837a296546286b1ec762232a76d41b8e0191d7ec8688",
+  "supported_claim": "Current EpistemicRuntime authoritative persisted state is the append-only record ledger plus tick and sequence; its four lookup/current-belief maps are derived indexes that reconstruct exactly from the ledger. The current production compact codec losslessly roundtrips that state and restored runtimes continue exactly in the Phase-1L mixed workload. Prior Stage-9B through Stage-10C evidence remains exact and positive under the current production hashes.",
+  "test_sha256": "446666f739744cbba709d626c87ff2ab5fb2e16c703e86301f958d3287ba7851",
+  "version_modified": false
+}
