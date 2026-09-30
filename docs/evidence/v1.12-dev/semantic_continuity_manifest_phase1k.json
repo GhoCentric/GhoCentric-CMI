@@ -1,0 +1,75 @@
+{
+  "git_blobs": {
+    "ROADMAP.md": "ad1c7d1b814951a7011f73f99615c7a6a0b8fe9b",
+    "docs/evidence/v1.12-dev/relationship_exact_kernel_stage1j.json": "a2af743456ad415abe65ba6c7b5645e17b129131",
+    "docs/evidence/v1.12-dev/semantic_continuity_manifest_phase1j.json": "3307c292ab508afe4359d1fe2bb670355c6888a0",
+    "docs/research/v1.12_relationship_exact_kernel_stage1j.md": "93ee562296dcf81db431703949564b0142a51550",
+    "ghost/api.py": "e3394d361cc0992307d46c0f035058f0b8684e68",
+    "ghost/engine.py": "badf18604e80ac903cf000b44b49ef463f637c85",
+    "ghost/relationships.py": "29389cc0d4730bbb060b162ef035529646faa7d4",
+    "ghost_research/v112_relationship_exact_kernel_stage1j.py": "59945da3e98d29bc85fedfbf0ea700af46d9b2d5",
+    "tests/test_compound_mutation_atomicity_v180.py": "2ad1310b1f416203653e0c3c7fa1def9eebde82f",
+    "tests/test_public_boundary_copy_isolation_v180.py": "49bca19787574e0c104c4334b4ef00a35151d3bc",
+    "tests/test_public_social_propagation_bridge.py": "bf5cfd86ab5ef56abebb622c7e7028944617486f",
+    "tests/test_relationship_branch_contracts_v180.py": "fc2721a2688d5b2502869c18633981884b7f8cf6",
+    "tests/test_scale_safety_v170.py": "44e9f28d3e327bf368fc73ba3025bcaa4e4e4d99",
+    "tests/test_scenario_intensity_authority_v180.py": "330a4199800c4d416b877deaa3610daf228790dd",
+    "tests/test_social_propagation_v160.py": "3881debfd13ea6c6639b3f9ffd04e0242d739916",
+    "tests/test_v112_relationship_exact_kernel_stage1j.py": "89287414e6a7368cf54e39fa47afad65beb6d589"
+  },
+  "head": "e787db674402541f0d28e80a6392e32497f52074",
+  "parent": "f7f1ae70131d7e09ce5fd018f3808d04d19b3fcd",
+  "phase1j_semantic_manifest_sha256": "5bda110ba7df5dd4320afc8a2e7a3434da47bfc9f82fcbf9bf0e803cfc89923e",
+  "relationship_social": {
+    "direct_event_update_remains_phase1i_phase1j_authority": true,
+    "heat_pressure_bonus": {
+      "major_negative_shift": 0.15,
+      "near_break": 0.2,
+      "relationship_broken": 0.3,
+      "state_shift": 0.1
+    },
+    "observer_delta_multiplier": {
+      "negative": -0.2,
+      "positive": 0.05,
+      "stable": 0.0
+    },
+    "observer_order_is_input_order_after_validation": true,
+    "observer_reservoir_cap": "RelationshipGraph.max_reservoir",
+    "positive_direction_heat_multiplier": 0.4,
+    "propagation_log_max_packets": 25,
+    "social_channel": "social",
+    "social_event_name": "social_propagation",
+    "source_and_target_observers_are_skipped": true,
+    "source_methods": [
+      "_social_heat_from_diagnostics",
+      "_apply_social_delta",
+      "propagate_social_event"
+    ],
+    "target_scope": "R4 social consequence kernel only",
+    "validation_and_atomic_rollback_remain_production_authority": true,
+    "world_effect_multiplier": {
+      "fear_delta": 0.08,
+      "guard_suspicion_delta": 0.35,
+      "order_delta": -0.04,
+      "pressure_delta": 0.2,
+      "resentment_delta": 0.08
+    },
+    "zero_trust_delta_skips_observer_mutation": true
+  },
+  "repository": "GhoCentric/GhoCentric-CMI",
+  "roadmap": {
+    "after_phase1k_return_to_remaining_phase1_subsystem_owners": true,
+    "phase1_exit_requires_every_major_subsystem_evidence_minimization_record": true,
+    "relationship_policy": "harden before expanding"
+  },
+  "rules": {
+    "candidate_does_not_claim_validation_or_transaction_replacement": true,
+    "git_blob_identity_is_authoritative_for_source_shape": true,
+    "production_files_are_not_modified_by_research_candidates": true,
+    "runtime_semantics_are_verified_not_guessed": true,
+    "stage_a_source_discovery_precedes_stage_b_experiment": true,
+    "stage_b_pins_manifest_sha256": true
+  },
+  "schema": "ghocentric.cmi.semantic-continuity-manifest.phase1k.v1",
+  "source": "GitHub connector, exact immutable commit"
+}

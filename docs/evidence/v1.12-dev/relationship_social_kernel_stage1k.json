@@ -1,0 +1,120 @@
+{
+  "adjudication": "RELATIONSHIP_SOCIAL_CONSEQUENCE_KERNEL_CANDIDATE_SURVIVES_PHASE1K",
+  "candidate_sha256": "5f8c6cb76a9e743fca1e900b03b321aef74db937cfca9f8e50f46c412b0eb9fe",
+  "complexity": {
+    "candidate": {
+      "decision_nodes": 5,
+      "function_loc": 46,
+      "max_function_loc": 21,
+      "module_lines": 52,
+      "statement_nodes": 23
+    },
+    "candidate_over_production_function_loc_ratio": 0.41818181818181815,
+    "comparison_note": "Conservative comparison: production baseline counts only _social_heat_from_diagnostics + _apply_social_delta. Candidate additionally contains observer-delta and world-effect formulas that live inside propagate_social_event, so omitted production orchestration LOC can only make the measured simplification ratio harder to satisfy.",
+    "passes": true,
+    "production_conservative_baseline": {
+      "decision_nodes": 8,
+      "function_loc": 110,
+      "methods": [
+        "_social_heat_from_diagnostics",
+        "_apply_social_delta"
+      ],
+      "statement_nodes": 40
+    },
+    "thresholds": {
+      "candidate_max_function_loc_max": 25,
+      "candidate_module_lines_max": 65,
+      "decision_nodes_must_not_exceed_production": true,
+      "function_loc_ratio_max": 0.55
+    }
+  },
+  "focused_coverage": {
+    "covered_branches": 10,
+    "covered_lines": 23,
+    "excluded_lines": 0,
+    "missing_branches": 0,
+    "missing_lines": 0,
+    "num_branches": 10,
+    "num_partial_branches": 0,
+    "num_statements": 23,
+    "percent_branches_covered": 100.0,
+    "percent_branches_covered_display": "100",
+    "percent_covered": 100.0,
+    "percent_covered_display": "100",
+    "percent_statements_covered": 100.0,
+    "percent_statements_covered_display": "100"
+  },
+  "focused_tests": 24,
+  "helper_parity": {
+    "heat_checks": 240,
+    "invalid_input_validation_replacement_claimed": false,
+    "observer_delta_checks": 1920,
+    "schema": "ghocentric.cmi.phase1k.helper-parity.v1",
+    "valid_domain_only": true,
+    "world_effect_checks": 240
+  },
+  "maintained_relationship_tests": 459,
+  "next_falsification_target": "Return to the Phase-1 subsystem inventory and select the next unresolved major owner (epistemic state, interpretation, attention, motives, continuity, or causal/history lifecycle) using the roadmap and existing evidence rather than continuing relationship work by default.",
+  "non_claim": "Phase 1K does not replace social input validation, observer normalization, transactional rollback, direct event updates, public API/world orchestration, or production authority. Those contracts remain in production and are protected by the maintained relationship regression surface.",
+  "phase1g_plus_phase1h_plus_phase1i_plus_phase1j_focused_regressions": 98,
+  "predecessor": "e787db674402541f0d28e80a6392e32497f52074",
+  "production_ghost_modified": false,
+  "prospective": {
+    "atomic_rollback_replacement_claimed": false,
+    "direct_event_replacement_claimed": false,
+    "full_packet_checks": 1200,
+    "full_relationship_state_checks": 1200,
+    "incidents": 1200,
+    "intensities": [
+      0.0,
+      1e-06,
+      0.03125,
+      0.2,
+      0.333333,
+      0.5,
+      0.73,
+      0.999999,
+      1.0
+    ],
+    "observer_packets": 2736,
+    "pair_order_checks": 1200,
+    "phase1g_compact_restarts": 10,
+    "propagation_log_bound_checks": 1200,
+    "public_event_types": [
+      "apology",
+      "attack",
+      "betrayal",
+      "cooperate",
+      "deceive",
+      "disengage",
+      "gift",
+      "greet",
+      "help",
+      "insult",
+      "manipulate",
+      "neutral",
+      "pressure",
+      "theft",
+      "threat"
+    ],
+    "scale_observer_probe": 100,
+    "schema": "ghocentric.cmi.phase1k.social-prospective.v1",
+    "validation_replacement_claimed": false,
+    "zero_consequence_incidents": 250
+  },
+  "public_api_modified": false,
+  "relationship_arc_status": "Phase 1K closes the planned relationship minimization/hardening sequence for Phase 1. Further relationship expansion is not justified here; the roadmap should return to remaining major subsystem owners and Phase-1 exit criteria.",
+  "schema": "ghocentric.cmi.phase1k.relationship-social-kernel.evidence.v1",
+  "semantic_manifest_sha256": "531437ad8bb51a81c23d743c49fbad7b92788296c1179c55c01b60dffd55486f",
+  "social_delta_parity": {
+    "full_record_checks": 308,
+    "phase1h_transition_composition_exact": true,
+    "reservoir_cap_edges_covered": true,
+    "return_packet_checks": 308,
+    "schema": "ghocentric.cmi.phase1k.social-delta-parity.v1",
+    "stored_state_precedence_covered": true
+  },
+  "supported_claim": "A pure, production-independent research kernel reproduces the current R4 social consequence math for heat, observer trust deltas, bounded observer reservoir updates, observer transition/diagnostic composition, and world-effect scaling. It preserves full social packets and relationship state across a 1,200-incident mixed public-event workload, bounded propagation history, a 100-observer scale probe, and repeated Phase-1G compact restarts.",
+  "test_sha256": "9baa9c464880b0fb89a3a2daf13cce7ea3992b8c2ab90d5b106015f79c4e51a9",
+  "version_modified": false
+}
