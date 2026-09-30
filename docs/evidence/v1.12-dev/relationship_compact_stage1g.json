@@ -1,0 +1,253 @@
+{
+  "candidate_sha256": "dcee75849692693efaf8e0b69e0f5a9c150d893de4b63ed7b102dcbfb947a1e8",
+  "experiment": {
+    "adjudication": "RELATIONSHIP_COMPACT_STATE_CANDIDATE_SURVIVES_PHASE1G",
+    "candidate_scope": "lossless relationship-state representation only; current production relationship transition logic remains authoritative",
+    "constraints": {
+      "candidate_encoder_receives_no_host_decision_function": true,
+      "candidate_encoder_receives_no_task_registry": true,
+      "candidate_is_research_only": true,
+      "production_authority_move_justified": false,
+      "production_relationship_source_modified": false,
+      "public_api_modified": false,
+      "relationship_backing_container_identity_preserved_on_restore": true,
+      "relationship_pair_insertion_order_preserved": true,
+      "relationship_pair_order_is_publicly_observable_via_tick": true,
+      "relationship_state_restore_is_in_place_not_rebound": true,
+      "timing_is_telemetry_not_gate": true,
+      "transition_logic_replacement_tested": false
+    },
+    "long_horizon": {
+      "compact_restart_points": 20,
+      "events": 2400,
+      "exact_final_snapshot": true,
+      "final_snapshot_digest": "46cc33dfb2fc78c03c8b240e4d18baabe3ded8beca18db4b3aa4becceb306c31"
+    },
+    "next_if_negative": "Attribute which relationship fields defeat state minimization before attempting any transition-logic simplification.",
+    "next_if_positive": "Test whether transition-logic complexity can be reduced independently while preserving this exact compact-state/restart/prospective-decision contract.",
+    "prospective": {
+      "all_preregistered_intensities_covered": [
+        0.0,
+        1e-06,
+        0.03125,
+        0.2,
+        0.333333,
+        0.5,
+        0.73,
+        0.999999,
+        1.0
+      ],
+      "all_public_event_types_covered": [
+        "apology",
+        "attack",
+        "betrayal",
+        "cooperate",
+        "deceive",
+        "disengage",
+        "gift",
+        "greet",
+        "help",
+        "insult",
+        "manipulate",
+        "neutral",
+        "pressure",
+        "theft",
+        "threat"
+      ],
+      "host_decision_checks": 2640,
+      "out_of_family_note": "Phase 1F used only help/betrayal representative events; Phase 1G prospective continuation uses all 15 public event types and nine preregistered intensity values.",
+      "return_packet_checks": 2640,
+      "rows": [
+        {
+          "compact_bytes_at_checkpoint": 63691,
+          "current_relationship_bytes_at_checkpoint": 118195,
+          "decision_checks": 220,
+          "final_snapshot_digest": "425bbd3ef11225655a5326a7a2ad12740bd91cf6860d02048c652b66621471f4",
+          "future_events": 220,
+          "seed": 0,
+          "warmup_events": 180
+        },
+        {
+          "compact_bytes_at_checkpoint": 63357,
+          "current_relationship_bytes_at_checkpoint": 117861,
+          "decision_checks": 220,
+          "final_snapshot_digest": "89eaadcb7773f45a9815c59ffb034e220ecda822fc17ebc41358c6c69b936b2f",
+          "future_events": 220,
+          "seed": 1,
+          "warmup_events": 180
+        },
+        {
+          "compact_bytes_at_checkpoint": 63461,
+          "current_relationship_bytes_at_checkpoint": 117965,
+          "decision_checks": 220,
+          "final_snapshot_digest": "c5960abe93d4cfbb280b6f15c9c8f4d3400f2f96f035fbaabf0ef2e109ec0dba",
+          "future_events": 220,
+          "seed": 2,
+          "warmup_events": 180
+        },
+        {
+          "compact_bytes_at_checkpoint": 63137,
+          "current_relationship_bytes_at_checkpoint": 117641,
+          "decision_checks": 220,
+          "final_snapshot_digest": "e611fbb08357211565821ee7c70d89823a1e412d91b6e8e9a696d4c43c2a5e60",
+          "future_events": 220,
+          "seed": 3,
+          "warmup_events": 180
+        },
+        {
+          "compact_bytes_at_checkpoint": 63331,
+          "current_relationship_bytes_at_checkpoint": 117835,
+          "decision_checks": 220,
+          "final_snapshot_digest": "7f976b1add17ec6b368e0ba629d77eb2dfea986026b129d1e1065aa490d8c8e7",
+          "future_events": 220,
+          "seed": 4,
+          "warmup_events": 180
+        },
+        {
+          "compact_bytes_at_checkpoint": 64602,
+          "current_relationship_bytes_at_checkpoint": 118269,
+          "decision_checks": 220,
+          "final_snapshot_digest": "40c0f10342f011a718be31eb92e81813332819391d42e6bd7ede7294742b1ffc",
+          "future_events": 220,
+          "seed": 5,
+          "warmup_events": 180
+        },
+        {
+          "compact_bytes_at_checkpoint": 63489,
+          "current_relationship_bytes_at_checkpoint": 117993,
+          "decision_checks": 220,
+          "final_snapshot_digest": "fc038bf734f877449a903e3e0ebbd04f2e1b23215393cbbe89c13be8172692bf",
+          "future_events": 220,
+          "seed": 6,
+          "warmup_events": 180
+        },
+        {
+          "compact_bytes_at_checkpoint": 63595,
+          "current_relationship_bytes_at_checkpoint": 118099,
+          "decision_checks": 220,
+          "final_snapshot_digest": "ff2c14b45e13abd2869f1b4bb68f951e9f20c838e797d904842b471f3c3eefdf",
+          "future_events": 220,
+          "seed": 7,
+          "warmup_events": 180
+        },
+        {
+          "compact_bytes_at_checkpoint": 63833,
+          "current_relationship_bytes_at_checkpoint": 118337,
+          "decision_checks": 220,
+          "final_snapshot_digest": "95b4365f06926a66db74f663a00f7b09ba09ab6231e3f12875c360ef55eb5db3",
+          "future_events": 220,
+          "seed": 8,
+          "warmup_events": 180
+        },
+        {
+          "compact_bytes_at_checkpoint": 64345,
+          "current_relationship_bytes_at_checkpoint": 118012,
+          "decision_checks": 220,
+          "final_snapshot_digest": "8fa14911fe61c971d23eec8b64ea392e1befd1c5116b57dfd03ef3f42a1a72e9",
+          "future_events": 220,
+          "seed": 9,
+          "warmup_events": 180
+        },
+        {
+          "compact_bytes_at_checkpoint": 64363,
+          "current_relationship_bytes_at_checkpoint": 118030,
+          "decision_checks": 220,
+          "final_snapshot_digest": "8e9da8042508701db60cc68ece54c3f7509c5cf024e524bf43806225043956d4",
+          "future_events": 220,
+          "seed": 10,
+          "warmup_events": 180
+        },
+        {
+          "compact_bytes_at_checkpoint": 64191,
+          "current_relationship_bytes_at_checkpoint": 117858,
+          "decision_checks": 220,
+          "final_snapshot_digest": "4f5af6bf2481e339d91a26d74c45248e10c00562cf7cbf6e05c7615223189ed5",
+          "future_events": 220,
+          "seed": 11,
+          "warmup_events": 180
+        }
+      ],
+      "scenarios": 12
+    },
+    "scale": [
+      {
+        "bytes_saved": -747,
+        "compact_bytes": 2298,
+        "current_bytes": 1551,
+        "decode_us": 56.797,
+        "encode_us": 483.398,
+        "pairs": 1,
+        "peak_python_alloc_bytes": 3032,
+        "ratio": 1.4816247582205029,
+        "relationship_digest": "1fae502d45c013b9956c3a2455ca8a4f8f12b8f84aef645faed5ee9995b7a89f"
+      },
+      {
+        "bytes_saved": 5677,
+        "compact_bytes": 9974,
+        "current_bytes": 15651,
+        "decode_us": 383.164,
+        "encode_us": 1194.843,
+        "pairs": 10,
+        "peak_python_alloc_bytes": 12608,
+        "ratio": 0.6372755734457862,
+        "relationship_digest": "0cfe5c01ec33d8e3b760c5a4819f3a5c513ba7b789fbf74843f0723eeb940ce4"
+      },
+      {
+        "bytes_saved": 69936,
+        "compact_bytes": 85808,
+        "current_bytes": 155744,
+        "decode_us": 3607.774,
+        "encode_us": 8065.039,
+        "pairs": 100,
+        "peak_python_alloc_bytes": 116792,
+        "ratio": 0.5509554140127388,
+        "relationship_digest": "429d5998dd65c6a8bcac34d49835b52238b85d5f16c1c1442d43f3df112a3f61"
+      },
+      {
+        "bytes_saved": 355536,
+        "compact_bytes": 424802,
+        "current_bytes": 780338,
+        "decode_us": 18018.281,
+        "encode_us": 37913.985,
+        "pairs": 500,
+        "peak_python_alloc_bytes": 574712,
+        "ratio": 0.5443820498296892,
+        "relationship_digest": "75922ed803a531ae859c638605a97ff2f8e85c89f6bd1a6f40d408fb1b0d474c"
+      }
+    ],
+    "schema": "ghocentric.cmi.phase1g.relationship-compact-prospective.v1",
+    "storage_thresholds": {
+      "pairs_100_ratio_max": 0.7,
+      "pairs_10_ratio_max": 0.85,
+      "pairs_500_ratio_max": 0.65
+    },
+    "storage_thresholds_pass": true,
+    "strict_correctness_verdict": "PHASE1G_PROSPECTIVE_PARITY_PASS"
+  },
+  "focused_coverage": {
+    "covered_branches": 62,
+    "covered_lines": 93,
+    "excluded_lines": 0,
+    "missing_branches": 0,
+    "missing_lines": 0,
+    "num_branches": 62,
+    "num_partial_branches": 0,
+    "num_statements": 93,
+    "percent_branches_covered": 100.0,
+    "percent_branches_covered_display": "100",
+    "percent_covered": 100.0,
+    "percent_covered_display": "100",
+    "percent_statements_covered": 100.0,
+    "percent_statements_covered_display": "100"
+  },
+  "focused_tests": 28,
+  "maintained_relationship_tests": 459,
+  "non_claim": "Phase 1G does not replace relationship transition logic, does not prove the relationship subsystem as a whole is minimal, does not move production authority, and does not treat timing telemetry as a release threshold.",
+  "predecessor": "f50aa556a5df7ded4a8d3edb823ca0d68f79d981",
+  "production_ghost_modified": false,
+  "public_api_modified": false,
+  "schema": "ghocentric.cmi.phase1g.relationship-compact.evidence.v1",
+  "supported_claim": "A task-blind, research-only lossless compact representation of current relationship state preserved exact state reconstruction, repeated compact restart continuation, all public relationship event types, preregistered prospective intensities, return packets including observable relationship-pair ordering, downstream host-decision projections, and final full snapshots under the Phase-1G workloads.",
+  "test_sha256": "f28bbb4e8f2ea76a0489bb3e2525ad2eb96554db57af8269eb8c43a319355a06",
+  "version_modified": false
+}
