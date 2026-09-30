@@ -1,0 +1,175 @@
+{
+  "adjudication": "INTERPRETATION_STATE_BOUNDARY_MINIMIZATION_RECORD_ESTABLISHED_PHASE1M",
+  "candidate_sha256": "2c3b2cb3c35cff0faa49b24f5b41420e6453f1dc227aa861e544d2503f7f8909",
+  "focused_coverage": {
+    "covered_branches": 4,
+    "covered_lines": 26,
+    "excluded_lines": 0,
+    "missing_branches": 0,
+    "missing_lines": 0,
+    "num_branches": 4,
+    "num_partial_branches": 0,
+    "num_statements": 26,
+    "percent_branches_covered": 100.0,
+    "percent_branches_covered_display": "100",
+    "percent_covered": 100.0,
+    "percent_covered_display": "100",
+    "percent_statements_covered": 100.0,
+    "percent_statements_covered_display": "100"
+  },
+  "focused_tests": 7,
+  "history_lifecycle": {
+    "claim": "InterpretationRuntime has an explicit 64-entry per-agent diagnostic-history bound. The continuity optimization layer separately retains one hot entry and uses a bounded 64-entry cold-history archive per subsystem/agent. Maintained continuity tests are rerun separately in Phase 1M.",
+    "continuity_history_cold_limit": 64,
+    "continuity_optimization_hot_history_keep": 1,
+    "local_phase1d_history_boundary_present": true,
+    "rows": [
+      {
+        "history_rows": 64,
+        "sequence": 64
+      },
+      {
+        "history_rows": 64,
+        "sequence": 128
+      },
+      {
+        "history_rows": 64,
+        "sequence": 512
+      },
+      {
+        "history_rows": 64,
+        "sequence": 2048
+      }
+    ],
+    "runtime_history_bounded": true,
+    "runtime_history_limit": 64,
+    "schema": "ghocentric.cmi.phase1m.interpretation-history-lifecycle.v1"
+  },
+  "hysteresis_state_necessity": {
+    "active_arm_after": true,
+    "active_not_derivable_from_level_and_threshold_alone": true,
+    "different_active_state": true,
+    "inactive_arm_after": false,
+    "level_after": 0.54,
+    "level_before": 0.6,
+    "same_levels": true,
+    "schema": "ghocentric.cmi.phase1m.hysteresis-state-necessity.v1",
+    "threshold": {
+      "enter": 0.65,
+      "exit": 0.5
+    }
+  },
+  "maintained_hash_pinned_regression_surface": {
+    "all_collected_passed": true,
+    "collected": 308,
+    "passed": 308
+  },
+  "next_falsification_target": "Phase 1N: attention state ownership/minimization using the same source-first semantic-manifest workflow. Do not extend interpretation merely to accumulate more favorable numbers unless a concrete unresolved contract requires it.",
+  "non_claim": "Phase 1M does not claim baseline or history can be removed from the public or persisted contract. Baseline remains observable configuration metadata; history remains observable and is consumed by continuity machinery. The causal projection is a transition-math boundary, not a drop-in production snapshot replacement. No production interpretation implementation is replaced.",
+  "phase1_owner_status": "interpretation now has an explicit state-ownership, causal-boundary, hysteresis-necessity, and bounded-history minimization record",
+  "predecessor": "5f4df3e79c232005e2dd3cb54a6ac58e9611e7da",
+  "production_ghost_modified": false,
+  "public_api_modified": false,
+  "schema": "ghocentric.cmi.phase1m.interpretation-state-ownership.evidence.v1",
+  "semantic_manifest_sha256": "4fe8a02f27b24f01843e117edd56f829a15ec4c1378705e815cbd3c898a6a600",
+  "state_ownership": {
+    "all_derived_state_views_exact": true,
+    "all_public_packets_exact_across_restart_shadow": true,
+    "derived_get_state_keys": [
+      "agent",
+      "active_interpretations",
+      "strongest_interpretation",
+      "strongest_level"
+    ],
+    "derived_state_checks": 2400,
+    "final_history_lengths": {
+      "mira": 64,
+      "rowan": 64,
+      "sera": 64
+    },
+    "history_bound_exact": true,
+    "history_limit": 64,
+    "live_internal_fields": [
+      "history_limit",
+      "_sequence",
+      "_agents"
+    ],
+    "packet_checks": 800,
+    "restart_checks": 10,
+    "schema": "ghocentric.cmi.phase1m.interpretation-state-ownership.v1",
+    "snapshot_keys": [
+      "schema_version",
+      "history_limit",
+      "sequence",
+      "agents"
+    ],
+    "stored_agent_keys": [
+      "levels",
+      "baseline",
+      "thresholds",
+      "sensitivities",
+      "rules",
+      "active",
+      "history"
+    ]
+  },
+  "supported_claim": "Current InterpretationRuntime stores seven per-agent fields while four get_state presentation fields are exactly derived. The active map is genuine hysteresis state and cannot be reconstructed from level/threshold alone. Across the prospective Phase-1M probe, levels/thresholds/sensitivities/rules/active were sufficient to reproduce the current evaluate_action transition fingerprint when baseline differed and prior bounded-history backlog was reduced to each agent's latest valid hot entry. Runtime diagnostic history is explicitly bounded at 64 entries per agent, with production continuity optimization separately configured for one hot entry and a bounded 64-entry cold archive.",
+  "test_sha256": "e845d51594ec8c936e7aa4dd3d0dfdc736fc604f67a1b5c4e2dd603fef2706f7",
+  "transition_causal_projection": {
+    "all_transition_fingerprints_equal": true,
+    "all_transition_projections_equal": true,
+    "claim_boundary": "This demonstrates that baseline and the prior bounded-history backlog beyond the latest valid hot entry do not feed the current InterpretationRuntime.evaluate_action transition math in this prospective workload. It does not establish full public-state equivalence: baseline and history remain observable stored state, and history has downstream continuity consumers. Their production removal is not justified by this probe.",
+    "excluded_from_transition_projection": [
+      "baseline",
+      "history"
+    ],
+    "history_reduction": {
+      "mira": {
+        "after_rows": 1,
+        "before_rows": 53,
+        "retained_sequence": 159
+      },
+      "rowan": {
+        "after_rows": 1,
+        "before_rows": 53,
+        "retained_sequence": 158
+      },
+      "sera": {
+        "after_rows": 1,
+        "before_rows": 54,
+        "retained_sequence": 160
+      }
+    },
+    "history_reduction_policy": "retain latest valid hot entry per agent",
+    "initial_full_public_state_equal": false,
+    "reduced_snapshot_valid_roundtrip": true,
+    "schema": "ghocentric.cmi.phase1m.transition-causal-projection.v1",
+    "storage_telemetry": {
+      "mira": {
+        "full_stored_agent_bytes": 47957,
+        "ratio": 0.01538878578726776,
+        "transition_projection_bytes": 738
+      },
+      "rowan": {
+        "full_stored_agent_bytes": 46666,
+        "ratio": 0.01613594479921142,
+        "transition_projection_bytes": 753
+      },
+      "sera": {
+        "full_stored_agent_bytes": 58081,
+        "ratio": 0.012689175461854996,
+        "transition_projection_bytes": 737
+      }
+    },
+    "transition_causal_candidate_keys": [
+      "levels",
+      "thresholds",
+      "sensitivities",
+      "rules",
+      "active"
+    ],
+    "transition_fingerprint_checks": 1200,
+    "transition_projection_checks": 3600
+  },
+  "version_modified": false
+}

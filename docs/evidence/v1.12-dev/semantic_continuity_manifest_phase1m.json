@@ -1,0 +1,98 @@
+{
+  "git_blobs": {
+    "ROADMAP.md": "ad1c7d1b814951a7011f73f99615c7a6a0b8fe9b",
+    "docs/evidence/v1.12-dev/epistemic_state_ownership_stage1l.json": "67985e58a513b87d8f341ba30f03c972b6e73842",
+    "docs/evidence/v1.12-dev/semantic_continuity_manifest_phase1l.json": "24f397bfc48aa9f6a305432ffc5201ba0ee3ba72",
+    "docs/research/v1.12_epistemic_state_ownership_stage1l.md": "251321d7ee30500d5497df4e6aea6aa5e49abd99",
+    "ghost/api.py": "e3394d361cc0992307d46c0f035058f0b8684e68",
+    "ghost/continuity_history.py": "cd5eecebe0ed50c73cdad77d9f1065800778bbd2",
+    "ghost/continuity_optimization.py": "26f1b5d1b4dc5a5c3961932bf53659c202242054",
+    "ghost/interpretation.py": "63756c382d30a29af34a01236aa4846e765ae8a1",
+    "ghost_research/v112_epistemic_state_ownership_stage1l.py": "5f3e7526f1caf66451c5932256e07567b6f642c2",
+    "tests/test_continuity_optimization_production_v1110.py": "07112c0d4372e069cf8b1cb9d9278d47264b46f7",
+    "tests/test_continuity_optimization_public_contract_v1110.py": "4fe1d7f426043df8fa7c08159220f22df66b9061",
+    "tests/test_continuity_optimization_value_v1110.py": "79aaaabb0c5d1344fa2bdca124c0d45916ae831f",
+    "tests/test_interpretation_api_v1100.py": "11d125b02699568a9aa24753329b4618bc43ecfd",
+    "tests/test_interpretation_dynamics_torture_v1100.py": "0d862344369cbfff640c320e8a442649b629ddb4",
+    "tests/test_interpretation_runtime_v1100.py": "c56deb45388d0583f5d7924b212c07c90c213224",
+    "tests/test_phase6_cognitive_integration_hardening_v1100.py": "7bbf227c49eff0fac2b9a0ba92c98f766f823ef1",
+    "tests/test_v112_epistemic_state_ownership_stage1l.py": "5b1ff4e7ae47475fd33aa54d8c0dcb816715dc38"
+  },
+  "head": "5f4df3e79c232005e2dd3cb54a6ac58e9611e7da",
+  "interpretation": {
+    "bounded_history": {
+      "continuity_cold_history_limit": 64,
+      "continuity_hot_history_keep": 1,
+      "runtime_history_limit": 64
+    },
+    "default_history_limit": 64,
+    "derived_get_state_keys": [
+      "agent",
+      "active_interpretations",
+      "strongest_interpretation",
+      "strongest_level"
+    ],
+    "important_boundaries": {
+      "active_is_hysteresis_state": true,
+      "active_not_derivable_from_level_alone_in_hysteresis_band": true,
+      "baseline_is_stored_public_configuration_metadata": true,
+      "derived_get_state_fields_are_not_stored": true,
+      "history_has_downstream_continuity_consumers": true,
+      "history_is_stored_bounded_diagnostic_provenance": true
+    },
+    "live_internal_fields": [
+      "history_limit",
+      "_sequence",
+      "_agents"
+    ],
+    "runtime_class": "InterpretationRuntime",
+    "snapshot_keys": [
+      "schema_version",
+      "history_limit",
+      "sequence",
+      "agents"
+    ],
+    "snapshot_schema_version": "1.0",
+    "stored_agent_keys": [
+      "levels",
+      "baseline",
+      "thresholds",
+      "sensitivities",
+      "rules",
+      "active",
+      "history"
+    ],
+    "transition_causal_candidate_keys": [
+      "levels",
+      "thresholds",
+      "sensitivities",
+      "rules",
+      "active"
+    ]
+  },
+  "parent": "2da1423043eb6b84d5672280c163421dbb66494b",
+  "phase1l": {
+    "adjudication": "EPISTEMIC_AUTHORITATIVE_STATE_MINIMIZATION_RECORD_ESTABLISHED_PHASE1L",
+    "next_owner": "interpretation"
+  },
+  "phase1l_semantic_manifest_sha256": "72cf768452dccd2cdc78837a296546286b1ec762232a76d41b8e0191d7ec8688",
+  "repository": "GhoCentric/GhoCentric-CMI",
+  "roadmap": {
+    "next_owner_after_phase1m": "attention",
+    "phase1_exit_requires_major_subsystem_minimization_record": true,
+    "phase1_owner": "interpretation",
+    "provenance_history_requires_explicit_bounded_lifecycle": true
+  },
+  "rules": {
+    "full_public_packet_differences_are_not_hidden_by_transition_projection": true,
+    "git_blob_identity_is_authoritative_for_source_shape": true,
+    "prior_expensive_evidence_is_reused_only_after_exact_hash_validation": true,
+    "production_files_are_not_modified_by_research_candidates": true,
+    "runtime_semantics_are_verified_not_guessed": true,
+    "stage_a_source_discovery_precedes_stage_b_experiment": true,
+    "stage_b_pins_manifest_sha256": true,
+    "telemetry_is_not_promoted_to_gate_post_hoc": true
+  },
+  "schema": "ghocentric.cmi.semantic-continuity-manifest.phase1m.v1",
+  "source": "GitHub connector, exact immutable commit"
+}
