@@ -1,0 +1,108 @@
+{
+  "attention": {
+    "bounded_history": {
+      "continuity_cold_history_limit": 64,
+      "continuity_hot_history_keep": 1,
+      "runtime_history_limit": 64
+    },
+    "config_keys": [
+      "entry_threshold",
+      "exit_threshold",
+      "build_rate",
+      "release_rate",
+      "interrupt_threshold",
+      "interrupt_release",
+      "max_suppression"
+    ],
+    "default_history_limit": 64,
+    "derived_get_state_keys": [
+      "agent",
+      "flow_depth",
+      "attention_gain"
+    ],
+    "flow_transition_causal_candidate_keys": [
+      "flow_pressure",
+      "flow_active",
+      "config"
+    ],
+    "important_boundaries": {
+      "config_is_transition_causal": true,
+      "derived_get_state_fields_are_not_stored": true,
+      "flow_active_is_hysteresis_state": true,
+      "flow_active_not_derivable_from_pressure_alone_in_hysteresis_band": true,
+      "flow_pressure_is_transition_causal": true,
+      "history_is_bounded_observable_diagnostic_provenance": true,
+      "latest_history_record_is_consumed_by_motive_signals": true,
+      "prior_history_backlog_is_consumed_by_continuity_history_machinery": true,
+      "salience_bridge_is_stateless": true
+    },
+    "live_internal_fields": [
+      "history_limit",
+      "_sequence",
+      "_agents"
+    ],
+    "runtime_class": "AttentionRuntime",
+    "snapshot_keys": [
+      "schema_version",
+      "history_limit",
+      "sequence",
+      "agents"
+    ],
+    "snapshot_schema_version": "1.0",
+    "stored_agent_keys": [
+      "flow_pressure",
+      "flow_active",
+      "config",
+      "history"
+    ]
+  },
+  "git_blobs": {
+    "ROADMAP.md": "ad1c7d1b814951a7011f73f99615c7a6a0b8fe9b",
+    "docs/evidence/v1.12-dev/interpretation_state_ownership_stage1m.json": "afbcd4c2ab9e130a88493e6a566081961d3592e4",
+    "docs/evidence/v1.12-dev/semantic_continuity_manifest_phase1m.json": "a5893c50970a3ca5ea3e979dd0e6cfaf225df512",
+    "docs/research/v1.12_interpretation_state_ownership_stage1m.md": "b3ff8a27c20b6ff462284310604277435a7dc328",
+    "ghost/api.py": "e3394d361cc0992307d46c0f035058f0b8684e68",
+    "ghost/attention.py": "a2d40730e0c4f4bb0ed0afbb696f27e0ef116cdb",
+    "ghost/continuity_history.py": "cd5eecebe0ed50c73cdad77d9f1065800778bbd2",
+    "ghost/continuity_optimization.py": "26f1b5d1b4dc5a5c3961932bf53659c202242054",
+    "ghost/motives.py": "00270522ddd52542e05af8f96f837597e91c4a89",
+    "ghost/salience_bridge.py": "799b9deeca7b9be849980658aece845c0d6bc31a",
+    "ghost_research/v112_interpretation_state_ownership_stage1m.py": "71bccbae62338c95a9845b10ef4112d73024ec39",
+    "tests/test_agent_motive_api_v1110.py": "a75744f2ec824d5f7ad42bcfdde4ca38517982a1",
+    "tests/test_attention_api_v1100.py": "538ddba360f66bd47a2e36bc71053e47435595ef",
+    "tests/test_attention_dynamics_torture_v1100.py": "aae3ba1e24a398d0c720c3013529c7532e9f964d",
+    "tests/test_attention_runtime_v1100.py": "4cfa53aab4249cfe6d7960f7f76f8f907c9156df",
+    "tests/test_continuity_optimization_production_v1110.py": "07112c0d4372e069cf8b1cb9d9278d47264b46f7",
+    "tests/test_continuity_optimization_public_contract_v1110.py": "4fe1d7f426043df8fa7c08159220f22df66b9061",
+    "tests/test_continuity_optimization_value_v1110.py": "79aaaabb0c5d1344fa2bdca124c0d45916ae831f",
+    "tests/test_motive_runtime_v1110.py": "0faf29af561e270274d6b549a9e59f516fd4eae9",
+    "tests/test_phase6_cognitive_integration_hardening_v1100.py": "7bbf227c49eff0fac2b9a0ba92c98f766f823ef1",
+    "tests/test_v112_interpretation_state_ownership_stage1m.py": "b934ffae54038f5b36c70e22f35a04fc8d6087a1"
+  },
+  "head": "b7cc017148f88aeb411ff6ebe22d3f28c4deb1a6",
+  "parent": "5f4df3e79c232005e2dd3cb54a6ac58e9611e7da",
+  "phase1m": {
+    "adjudication": "INTERPRETATION_STATE_BOUNDARY_MINIMIZATION_RECORD_ESTABLISHED_PHASE1M",
+    "next_owner": "attention"
+  },
+  "phase1m_semantic_manifest_sha256": "4fe8a02f27b24f01843e117edd56f829a15ec4c1378705e815cbd3c898a6a600",
+  "repository": "GhoCentric/GhoCentric-CMI",
+  "roadmap": {
+    "next_owner_after_phase1n": "motives",
+    "phase1_exit_requires_major_subsystem_minimization_record": true,
+    "phase1_owner": "attention",
+    "provenance_history_requires_explicit_bounded_lifecycle": true
+  },
+  "rules": {
+    "full_public_state_differences_are_not_hidden_by_transition_projection": true,
+    "git_blob_identity_is_authoritative_for_source_shape": true,
+    "prior_expensive_evidence_is_reused_only_after_exact_hash_validation": true,
+    "production_files_are_not_modified_by_research_candidates": true,
+    "runtime_semantics_are_verified_not_guessed": true,
+    "stage_a_source_discovery_precedes_stage_b_experiment": true,
+    "stage_b_pins_manifest_sha256": true,
+    "telemetry_is_not_promoted_to_gate_post_hoc": true
+  },
+  "schema": "ghocentric.cmi.semantic-continuity-manifest.phase1n.v1",
+  "source": "GitHub connector, exact immutable commit"
+}

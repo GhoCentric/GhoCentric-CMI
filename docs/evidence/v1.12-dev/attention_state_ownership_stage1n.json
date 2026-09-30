@@ -1,0 +1,176 @@
+{
+  "adjudication": "ATTENTION_STATE_BOUNDARY_MINIMIZATION_RECORD_ESTABLISHED_PHASE1N",
+  "candidate_sha256": "663b5c6d3a0c8b51277b5f3a858fbb49df2c09c41d76945e9b37db90e23bda39",
+  "causal_necessity": {
+    "active_twin_different_next_active": true,
+    "active_twin_same_next_pressure": true,
+    "all_three_transition_causal_fields_necessary": true,
+    "config_changes_next_transition": true,
+    "flow_active_is_real_hysteresis_state": true,
+    "flow_pressure_changes_next_transition": true,
+    "hysteresis_entry_threshold": 0.72,
+    "hysteresis_exit_threshold": 0.44,
+    "hysteresis_level": 0.6,
+    "schema": "ghocentric.cmi.phase1n.attention-causal-necessity.v1"
+  },
+  "flow_transition_causal_projection": {
+    "all_motive_signal_packets_equal": true,
+    "all_step_packets_equal": true,
+    "all_transition_projections_equal": true,
+    "claim_boundary": "This demonstrates that prior attention-history backlog beyond the latest retained record, and the amount of hot-history retention itself, did not feed current AttentionRuntime flow-transition math or motive signal construction in this prospective workload. It does not establish public/persisted state equivalence: history_limit and history remain observable, and older attention history has downstream continuity consumers.",
+    "excluded_from_flow_transition_projection": [
+      "history"
+    ],
+    "flow_transition_causal_candidate_keys": [
+      "flow_pressure",
+      "flow_active",
+      "config"
+    ],
+    "full_public_state_difference_checks": 1200,
+    "full_public_state_equivalence": false,
+    "history_reduction": {
+      "mira": {
+        "after_rows": 1,
+        "before_rows": 60,
+        "retained_sequence": 180
+      },
+      "rowan": {
+        "after_rows": 1,
+        "before_rows": 60,
+        "retained_sequence": 179
+      },
+      "sera": {
+        "after_rows": 1,
+        "before_rows": 60,
+        "retained_sequence": 178
+      }
+    },
+    "idle_advance_checks": 60,
+    "motive_signal_packet_checks": 1200,
+    "reduced_history_limit": 1,
+    "reduced_snapshot_valid_roundtrip": true,
+    "schema": "ghocentric.cmi.phase1n.attention-causal-projection.v1",
+    "step_packet_checks": 1200,
+    "storage_telemetry": {
+      "mira": {
+        "full_stored_agent_bytes": 56506,
+        "ratio": 0.004017272502035182,
+        "transition_projection_bytes": 227
+      },
+      "rowan": {
+        "full_stored_agent_bytes": 56285,
+        "ratio": 0.003961979212934175,
+        "transition_projection_bytes": 223
+      },
+      "sera": {
+        "full_stored_agent_bytes": 56429,
+        "ratio": 0.0040227542575626005,
+        "transition_projection_bytes": 227
+      }
+    },
+    "transition_projection_checks": 3600
+  },
+  "focused_coverage": {
+    "covered_branches": 6,
+    "covered_lines": 27,
+    "excluded_lines": 0,
+    "missing_branches": 0,
+    "missing_lines": 0,
+    "num_branches": 6,
+    "num_partial_branches": 0,
+    "num_statements": 27,
+    "percent_branches_covered": 100.0,
+    "percent_branches_covered_display": "100",
+    "percent_covered": 100.0,
+    "percent_covered_display": "100",
+    "percent_statements_covered": 100.0,
+    "percent_statements_covered_display": "100"
+  },
+  "focused_tests": 7,
+  "history_lifecycle": {
+    "claim": "AttentionRuntime has an explicit 64-entry per-agent diagnostic-history bound. The motive signal builder produces the same current packet from the full hot history or only its latest record, while continuity optimization separately retains one hot entry and a bounded 64-entry cold archive.",
+    "continuity_history_cold_limit": 64,
+    "continuity_optimization_hot_history_keep": 1,
+    "latest_record_only_motive_packet_exact": true,
+    "older_history_has_continuity_consumers": true,
+    "rows": [
+      {
+        "history_rows": 64,
+        "latest_history_sequence": 64,
+        "sequence": 64
+      },
+      {
+        "history_rows": 64,
+        "latest_history_sequence": 128,
+        "sequence": 128
+      },
+      {
+        "history_rows": 64,
+        "latest_history_sequence": 512,
+        "sequence": 512
+      },
+      {
+        "history_rows": 64,
+        "latest_history_sequence": 2048,
+        "sequence": 2048
+      }
+    ],
+    "runtime_history_bounded": true,
+    "runtime_history_limit": 64,
+    "schema": "ghocentric.cmi.phase1n.attention-history-lifecycle.v1"
+  },
+  "maintained_hash_pinned_regression_surface": {
+    "all_collected_passed": true,
+    "collected": 439,
+    "passed": 439
+  },
+  "next_falsification_target": "Phase 1O: motives state ownership/minimization using the same source-first semantic-manifest workflow. Do not extend attention merely to accumulate more favorable numbers unless a concrete unresolved contract requires it.",
+  "non_claim": "Phase 1N does not claim attention history or history_limit can be removed from the public/persisted contract. They remain observable, latest attention history feeds motive diagnostics/signals, and older bounded history has continuity consumers. The three-field projection is a flow-transition boundary, not a drop-in production snapshot replacement. No production attention implementation is replaced.",
+  "phase1_owner_status": "attention now has an explicit state-ownership, three-field causal-necessity, history-backlog boundary, downstream-motive boundary, and bounded-history record",
+  "predecessor": "b7cc017148f88aeb411ff6ebe22d3f28c4deb1a6",
+  "production_ghost_modified": false,
+  "public_api_modified": false,
+  "schema": "ghocentric.cmi.phase1n.attention-state-ownership.evidence.v1",
+  "semantic_manifest_sha256": "1da6102907677b792a263bfb9eb09a610c06bba4eccce11efce41e0218260186",
+  "state_ownership": {
+    "all_derived_state_views_exact": true,
+    "all_step_packets_exact_across_restart_shadow": true,
+    "derived_get_state_keys": [
+      "agent",
+      "flow_depth",
+      "attention_gain"
+    ],
+    "derived_state_checks": 2400,
+    "final_history_lengths": {
+      "mira": 64,
+      "rowan": 64,
+      "sera": 64
+    },
+    "history_bound_exact": true,
+    "history_limit": 64,
+    "idle_advance_checks": 40,
+    "live_internal_fields": [
+      "history_limit",
+      "_sequence",
+      "_agents"
+    ],
+    "restart_checks": 10,
+    "schema": "ghocentric.cmi.phase1n.attention-state-ownership.v1",
+    "snapshot_keys": [
+      "schema_version",
+      "history_limit",
+      "sequence",
+      "agents"
+    ],
+    "step_packet_checks": 800,
+    "stored_agent_keys": [
+      "flow_pressure",
+      "flow_active",
+      "config",
+      "history"
+    ]
+  },
+  "supported_claim": "Current AttentionRuntime stores four per-agent fields while three get_state presentation fields are exactly derived. Flow pressure, flow-active hysteresis state, and config each independently affect future attention transitions and form the tested per-agent flow-transition causal core. Across the prospective Phase-1N probe, reducing hot attention history to one latest record and history_limit to one preserved 1,200 exact future step packets, idle-flow advancement, the three-field transition projection, and current motive signal packets. Runtime diagnostic history is explicitly bounded at 64 entries per agent, with continuity optimization configured for one hot entry and a bounded 64-entry cold archive.",
+  "test_sha256": "d2b38d9a53c48e4140a8ad8486c7c2aadcfb19f673e055f1646b2b1cbede406e",
+  "version_modified": false
+}
