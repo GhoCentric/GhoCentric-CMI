@@ -1,0 +1,133 @@
+{
+  "adjudication": "RELATIONSHIP_DYNAMIC_UPDATE_KERNEL_CANDIDATE_SURVIVES_PHASE1I",
+  "boundary_parity": {
+    "dynamic_events": [
+      "apologize",
+      "attack",
+      "betrayal",
+      "gift",
+      "greet",
+      "help",
+      "insult",
+      "theft",
+      "threat"
+    ],
+    "event_parity_checks": 273,
+    "personalities": [
+      "balanced",
+      "forgiving",
+      "resentful",
+      "volatile"
+    ],
+    "schema": "ghocentric.cmi.phase1i.boundary-parity.v1",
+    "sparse_event_parameter_fallbacks": true,
+    "sparse_tick_decay_fields_supported_by_production": false,
+    "tick_parity_checks": 4
+  },
+  "candidate_sha256": "d94cfe8dfab8f8b460391677a6e13555d5df91e7ba6aa923950936502f7d1fb0",
+  "complexity": {
+    "candidate_event": {
+      "decision_nodes": 9,
+      "loc": 78,
+      "statement_nodes": 51
+    },
+    "candidate_module_lines": 105,
+    "candidate_tick": {
+      "decision_nodes": 0,
+      "loc": 9,
+      "statement_nodes": 3
+    },
+    "event_loc_over_r1_span_ratio": 0.2932330827067669,
+    "passes": true,
+    "production_r1": {
+      "decision_nodes": 12,
+      "executable_lines": 229,
+      "source_span": 266,
+      "statement_nodes": 84
+    },
+    "production_r1_range": [
+      1006,
+      1271
+    ],
+    "production_r3": {
+      "decision_nodes": 1,
+      "executable_lines": 67,
+      "source_span": 78,
+      "statement_nodes": 28
+    },
+    "production_r3_range": [
+      1720,
+      1797
+    ],
+    "production_relationship_sha256": "a6d0887c4c962fe27f7d7a7c8d244ba049246f12fc4f8254aab4d92d23a913d7",
+    "thresholds": {
+      "candidate_module_max_lines": 110,
+      "event_decisions_must_not_exceed_r1": true,
+      "event_loc_over_r1_span_max": 0.45,
+      "event_max_loc": 80,
+      "tick_loc_over_r3_span_max": 0.3
+    },
+    "tick_loc_over_r3_span_ratio": 0.11538461538461539
+  },
+  "focused_coverage": {
+    "covered_branches": 12,
+    "covered_lines": 57,
+    "excluded_lines": 0,
+    "missing_branches": 0,
+    "missing_lines": 0,
+    "num_branches": 12,
+    "num_partial_branches": 0,
+    "num_statements": 57,
+    "percent_branches_covered": 100.0,
+    "percent_branches_covered_display": "100",
+    "percent_covered": 100.0,
+    "percent_covered_display": "100",
+    "percent_statements_covered": 100.0,
+    "percent_statements_covered_display": "100"
+  },
+  "focused_tests": 25,
+  "maintained_relationship_tests": 459,
+  "next_falsification_target": "Phase 1J: isolate the separate exact-event/API relationship transition family and test whether it can be simplified or unified without violating the frozen Phase-1G compact-state, Phase-1H transition, and Phase-1I dynamic-update contracts.",
+  "non_claim": "Phase 1I does not simplify or replace the separate R2 exact-event transition family, R4 social propagation, production relationship authority, public API, or persistence schema. Sparse pos_decay/neg_decay tick fallback is also not claimed because current production directly indexes those per-pair fields.",
+  "phase1g_plus_phase1h_focused_regressions": 58,
+  "predecessor": "e6c58d9e7d015d3738208f0269ecb8cf67e7ae6c",
+  "production_ghost_modified": false,
+  "prospective": {
+    "downstream_host_decision_checks": 2400,
+    "dynamic_event_types": [
+      "apologize",
+      "attack",
+      "betrayal",
+      "gift",
+      "greet",
+      "help",
+      "insult",
+      "theft",
+      "threat"
+    ],
+    "event_core_metadata_checks": 2400,
+    "events": 2400,
+    "intensities": [
+      0.0,
+      1e-06,
+      0.03125,
+      0.2,
+      0.333333,
+      0.5,
+      0.73,
+      0.999999,
+      1.0
+    ],
+    "phase1g_backing_identity_preserved": true,
+    "phase1g_compact_restarts": 20,
+    "phase1g_pair_order_preserved": true,
+    "phase1h_transition_contract_preserved": true,
+    "schema": "ghocentric.cmi.phase1i.prospective.v1",
+    "tick_relationship_checks": 22594
+  },
+  "public_api_modified": false,
+  "schema": "ghocentric.cmi.phase1i.relationship-update-kernel.evidence.v1",
+  "supported_claim": "A pure, production-independent research kernel reproduces the current R1 dynamic relationship reservoir/shock/maturity/recent-memory/attachment update law and R3 asymmetric reservoir tick decay exactly across boundary, personality, sparse-event-parameter, prospective, compact-restart, and long-horizon workloads while preserving the Phase-1G compact-state and Phase-1H transition contracts.",
+  "test_sha256": "91f218b76869be8f62fa4b4c3663bfb6d5cd4157d9b2e08a171cde7665e06bfd",
+  "version_modified": false
+}
