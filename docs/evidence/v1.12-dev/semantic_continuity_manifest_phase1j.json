@@ -1,0 +1,241 @@
+{
+  "api": {
+    "configured_event_mode": "configured_relationship_event",
+    "default_apply_event_calls_engine_apply_event": true,
+    "default_apply_event_has_raw_apply_delta_branch": false,
+    "default_event_mode": "canonical_relationship_event",
+    "default_map_derived_from_relationship_public_event_map": true
+  },
+  "git_blobs": {
+    "ROADMAP.md": "ad1c7d1b814951a7011f73f99615c7a6a0b8fe9b",
+    "docs/evidence/v1.12-dev/relationship_compact_stage1g.json": "d66b1463105cc9aa043fd80bc88e918aa665a433",
+    "docs/evidence/v1.12-dev/relationship_transition_kernel_stage1h.json": "43978b3972c0c86fe05004215ef71a2e44746162",
+    "docs/evidence/v1.12-dev/relationship_update_kernel_stage1i.json": "171e24539b3fbd2b1559217494dbe95dfcecb9f6",
+    "ghost/api.py": "e3394d361cc0992307d46c0f035058f0b8684e68",
+    "ghost/engine.py": "badf18604e80ac903cf000b44b49ef463f637c85",
+    "ghost/relationships.py": "29389cc0d4730bbb060b162ef035529646faa7d4",
+    "ghost_research/v112_relationship_compact_stage1g.py": "1463c286d5caf66808831f231c244d2037118629",
+    "ghost_research/v112_relationship_transition_kernel_stage1h.py": "3b30acd2e62edfc69070a4cbc410a4ad02d945f7",
+    "ghost_research/v112_relationship_update_kernel_stage1i.py": "042a1f24fcea2e05052a1c35b68baaf7c201437a",
+    "pyproject.toml": "b5ac84f2d450458bbe263bb16aa32a25988e36dd",
+    "tests/test_relationship_mutation_pipeline_v180.py": "f20a574bf4394e8da9149af13336e577cf7ec0dd",
+    "tests/test_v112_relationship_compact_stage1g.py": "4d7351a3d134f25227e10b8c28951d4ea01bb355",
+    "tests/test_v112_relationship_transition_kernel_stage1h.py": "c54732c9e6b41dd606271eaeb2291f7d495516e2",
+    "tests/test_v112_relationship_update_kernel_stage1i.py": "0a2701bd468759dd43633d93b4b840221f35fe7d"
+  },
+  "head": "f7f1ae70131d7e09ce5fd018f3808d04d19b3fcd",
+  "parent": "e6c58d9e7d015d3738208f0269ecb8cf67e7ae6c",
+  "relationship": {
+    "aliases": {
+      "apologize": "apologize",
+      "apology": "apology",
+      "betray": "betrayal",
+      "betrayal": "betrayal",
+      "steal": "theft",
+      "theft": "theft"
+    },
+    "apology_and_apologize_are_distinct": true,
+    "apology_recovery_fraction": 0.25,
+    "custom_event_spec_mode": "exact",
+    "dynamic_events": [
+      "apologize",
+      "attack",
+      "betrayal",
+      "gift",
+      "greet",
+      "help",
+      "insult",
+      "theft",
+      "threat"
+    ],
+    "event_specs": {
+      "apologize": {
+        "base_amount": 0.1,
+        "channel": "pos",
+        "mode": "dynamic",
+        "public": false
+      },
+      "apology": {
+        "mode": "exact",
+        "public_trust": 0.05,
+        "recovery_fraction": 0.25,
+        "trust": 0.05
+      },
+      "attack": {
+        "base_amount": 0.35,
+        "channel": "neg",
+        "mode": "dynamic",
+        "public_trust": -0.35
+      },
+      "betrayal": {
+        "attachment": -0.5,
+        "base_amount": 0.7,
+        "channel": "neg",
+        "mode": "dynamic",
+        "public_trust": -0.8
+      },
+      "cooperate": {
+        "attachment": 0.02,
+        "mode": "exact",
+        "public_trust": 0.08,
+        "trust": 0.08
+      },
+      "deceive": {
+        "mode": "exact",
+        "public_trust": -0.15,
+        "trust": -0.15
+      },
+      "disengage": {
+        "mode": "exact",
+        "public_trust": 0.01,
+        "trust": 0.01
+      },
+      "gift": {
+        "base_amount": 0.16,
+        "channel": "pos",
+        "mode": "dynamic",
+        "public_trust": 0.16
+      },
+      "greet": {
+        "attachment": 0.01,
+        "base_amount": 0.04,
+        "channel": "pos",
+        "mode": "dynamic",
+        "public_trust": 0.02
+      },
+      "help": {
+        "attachment": 0.05,
+        "base_amount": 0.12,
+        "channel": "pos",
+        "mode": "dynamic",
+        "public_trust": 0.2
+      },
+      "insult": {
+        "base_amount": 0.15,
+        "channel": "neg",
+        "mode": "dynamic",
+        "public_trust": -0.3
+      },
+      "manipulate": {
+        "mode": "exact",
+        "public_trust": -0.1,
+        "trust": -0.1
+      },
+      "neutral": {
+        "mode": "exact",
+        "public_trust": 0.0,
+        "trust": 0.0
+      },
+      "pressure": {
+        "mode": "exact",
+        "public_trust": -0.08,
+        "trust": -0.08
+      },
+      "theft": {
+        "attachment": -0.2,
+        "base_amount": 0.45,
+        "channel": "neg",
+        "mode": "dynamic",
+        "public_trust": -0.6
+      },
+      "threat": {
+        "base_amount": 0.22,
+        "channel": "neg",
+        "mode": "dynamic",
+        "public_trust": -0.5
+      }
+    },
+    "exact_events": [
+      "apology",
+      "cooperate",
+      "deceive",
+      "disengage",
+      "manipulate",
+      "neutral",
+      "pressure"
+    ],
+    "exact_kernel_method": "_apply_exact_event",
+    "internal_only_events": [
+      "apologize"
+    ],
+    "public_event_map": {
+      "apology": {
+        "trust": 0.05
+      },
+      "attack": {
+        "trust": -0.35
+      },
+      "betrayal": {
+        "attachment": -0.5,
+        "trust": -0.8
+      },
+      "cooperate": {
+        "attachment": 0.02,
+        "trust": 0.08
+      },
+      "deceive": {
+        "trust": -0.15
+      },
+      "disengage": {
+        "trust": 0.01
+      },
+      "gift": {
+        "trust": 0.16
+      },
+      "greet": {
+        "attachment": 0.01,
+        "trust": 0.02
+      },
+      "help": {
+        "attachment": 0.05,
+        "trust": 0.2
+      },
+      "insult": {
+        "trust": -0.3
+      },
+      "manipulate": {
+        "trust": -0.1
+      },
+      "neutral": {
+        "trust": 0.0
+      },
+      "pressure": {
+        "trust": -0.08
+      },
+      "theft": {
+        "attachment": -0.2,
+        "trust": -0.6
+      },
+      "threat": {
+        "trust": -0.5
+      }
+    },
+    "public_events": [
+      "apology",
+      "attack",
+      "betrayal",
+      "cooperate",
+      "deceive",
+      "disengage",
+      "gift",
+      "greet",
+      "help",
+      "insult",
+      "manipulate",
+      "neutral",
+      "pressure",
+      "theft",
+      "threat"
+    ]
+  },
+  "repository": "GhoCentric/GhoCentric-CMI",
+  "rules": {
+    "git_blob_identity_is_authoritative_for_source_shape": true,
+    "production_files_are_not_modified_by_research_candidates": true,
+    "runtime_discoverable_semantics_are_verified_not_guessed": true,
+    "stage_a_source_discovery_precedes_stage_b_experiment": true,
+    "stage_b_pins_manifest_sha256": true
+  },
+  "schema": "ghocentric.cmi.semantic-continuity-manifest.phase1j.v1",
+  "source": "GitHub connector, exact immutable commit"
+}

@@ -1,0 +1,277 @@
+{
+  "adjudication": "RELATIONSHIP_EXACT_EVENT_KERNEL_CANDIDATE_SURVIVES_PHASE1J",
+  "candidate_sha256": "bec0ca5a9d05c5aee561e956e7e8a481316baa89d1f331966751d058873064b5",
+  "complexity": {
+    "candidate": {
+      "decision_nodes": 6,
+      "function_loc": 64,
+      "max_function_loc": 62,
+      "module_lines": 77,
+      "statement_nodes": 32
+    },
+    "candidate_over_production_function_loc_ratio": 0.27705627705627706,
+    "comparison_note": "This is an apples-to-apples comparison against RelationshipGraph._apply_exact_event; Phase-1H transition/diagnostic helpers are frozen dependencies and are not counted as candidate replacement surface.",
+    "passes": true,
+    "production_apply_exact_event": {
+      "decision_nodes": 7,
+      "function_loc": 231,
+      "statement_nodes": 47
+    },
+    "thresholds": {
+      "candidate_max_function_loc_max": 65,
+      "candidate_module_lines_max": 85,
+      "decision_nodes_must_not_exceed_production": true,
+      "function_loc_ratio_max": 0.45
+    }
+  },
+  "exact_parity": {
+    "apology_cap_exercised_checks": 112,
+    "built_in_full_record_checks": 1512,
+    "configured_full_record_checks": 5,
+    "exact_events": [
+      "apology",
+      "cooperate",
+      "deceive",
+      "disengage",
+      "manipulate",
+      "neutral",
+      "pressure"
+    ],
+    "initial_state_cases": 6,
+    "intensities": [
+      0.0,
+      1e-06,
+      0.03125,
+      0.2,
+      0.333333,
+      0.5,
+      0.73,
+      0.999999,
+      1.0
+    ],
+    "personalities": [
+      "balanced",
+      "forgiving",
+      "resentful",
+      "volatile"
+    ],
+    "phase1h_transition_composition_exact": true,
+    "schema": "ghocentric.cmi.phase1j.exact-kernel-parity.v1",
+    "stored_state_precedence_checks": 1
+  },
+  "focused_coverage": {
+    "covered_branches": 12,
+    "covered_lines": 32,
+    "excluded_lines": 0,
+    "missing_branches": 0,
+    "missing_lines": 0,
+    "num_branches": 12,
+    "num_partial_branches": 0,
+    "num_statements": 32,
+    "percent_branches_covered": 100.0,
+    "percent_branches_covered_display": "100",
+    "percent_covered": 100.0,
+    "percent_covered_display": "100",
+    "percent_statements_covered": 100.0,
+    "percent_statements_covered_display": "100"
+  },
+  "focused_tests": 15,
+  "maintained_relationship_tests": 459,
+  "next_falsification_target": "Phase 1K: isolate/minimize R4 social heat and observer propagation while pinning the committed Phase-1J semantic manifest and preserving the frozen Phase-1G/1H/1I/1J contracts.",
+  "non_claim": "Phase 1J does not move the research exact kernel into production, does not claim blanket exact->dynamic unification is behavior-preserving, does not replace direct apply_delta semantics, and does not simplify R4 social propagation.",
+  "phase1g_plus_phase1h_plus_phase1i_focused_regressions": 83,
+  "predecessor": "f7f1ae70131d7e09ce5fd018f3808d04d19b3fcd",
+  "production_ghost_modified": false,
+  "prospective": {
+    "downstream_host_decision_checks": 2400,
+    "dynamic_event_checks": 1280,
+    "events": 2400,
+    "exact_event_checks": 1120,
+    "phase1g_backing_identity_preserved": true,
+    "phase1g_compact_restarts": 20,
+    "phase1g_pair_order_preserved": true,
+    "phase1h_transition_contract_preserved": true,
+    "phase1i_dynamic_contract_preserved": true,
+    "phase1j_exact_contract_preserved": true,
+    "public_event_types": [
+      "apology",
+      "attack",
+      "betrayal",
+      "cooperate",
+      "deceive",
+      "disengage",
+      "gift",
+      "greet",
+      "help",
+      "insult",
+      "manipulate",
+      "neutral",
+      "pressure",
+      "theft",
+      "threat"
+    ],
+    "schema": "ghocentric.cmi.phase1j.combined-public-shadow.v1",
+    "tick_relationship_checks": 22591
+  },
+  "public_api_modified": false,
+  "schema": "ghocentric.cmi.phase1j.relationship-exact-kernel.evidence.v1",
+  "semantic_manifest_sha256": "5bda110ba7df5dd4320afc8a2e7a3434da47bfc9f82fcbf9bf0e803cfc89923e",
+  "supported_claim": "A pure, production-independent research kernel reproduces the current RelationshipGraph exact-mode event update law, including apology recovery capping, exact positive/negative reservoir accumulation, attachment and arbitrary extra deltas, recent-event memory, maturity progression, and Phase-1H transition/diagnostic composition. The combined Phase-1I dynamic plus Phase-1J exact shadow preserves all 15 public relationship events across 2,400 prospective events, repeated Phase-1G compact restarts, Phase-1H transition behavior, and downstream host decisions.",
+  "test_sha256": "2d390ed5ad2eb4b318a1f9973d7665ad147bc9002cc47c722297336c4c0ba478",
+  "unification_falsification": {
+    "claim": "At least one current exact-mode relationship event changes semantics if routed through the Phase-1I dynamic reservoir law; therefore a blanket exact->dynamic collapse is not behavior-preserving.",
+    "mismatch_events": [
+      "apology",
+      "cooperate",
+      "deceive",
+      "disengage",
+      "manipulate",
+      "pressure"
+    ],
+    "naive_full_exact_family_to_phase1i_unification_rejected": true,
+    "rows": [
+      {
+        "equal_core": false,
+        "event": "apology",
+        "exact_applied_delta": 0.0,
+        "exact_core": {
+          "attachment": 0.25,
+          "maturity": 0.61,
+          "neg": 0.5,
+          "pos": 1.5,
+          "recent_event_magnitude": 0.17000000000000004
+        },
+        "exact_requested_delta": 0.05,
+        "hypothetical_dynamic_core": {
+          "attachment": 0.25,
+          "maturity": 0.61,
+          "neg": 0.5,
+          "pos": 1.5077905073649756,
+          "recent_event_magnitude": 0.17000000000000004
+        }
+      },
+      {
+        "equal_core": false,
+        "event": "cooperate",
+        "exact_applied_delta": 0.08,
+        "exact_core": {
+          "attachment": 0.27,
+          "maturity": 0.61,
+          "neg": 0.5,
+          "pos": 1.58,
+          "recent_event_magnitude": 0.17600000000000002
+        },
+        "exact_requested_delta": 0.08,
+        "hypothetical_dynamic_core": {
+          "attachment": 0.27,
+          "maturity": 0.61,
+          "neg": 0.5,
+          "pos": 1.5124648117839607,
+          "recent_event_magnitude": 0.17600000000000002
+        }
+      },
+      {
+        "equal_core": false,
+        "event": "deceive",
+        "exact_applied_delta": -0.15,
+        "exact_core": {
+          "attachment": 0.25,
+          "maturity": 0.61,
+          "neg": 0.65,
+          "pos": 1.5,
+          "recent_event_magnitude": 0.19000000000000003
+        },
+        "exact_requested_delta": -0.15,
+        "hypothetical_dynamic_core": {
+          "attachment": 0.25,
+          "maturity": 0.61,
+          "neg": 0.5594,
+          "pos": 1.5,
+          "recent_event_magnitude": 0.19000000000000003
+        }
+      },
+      {
+        "equal_core": false,
+        "event": "disengage",
+        "exact_applied_delta": 0.01,
+        "exact_core": {
+          "attachment": 0.25,
+          "maturity": 0.61,
+          "neg": 0.5,
+          "pos": 1.51,
+          "recent_event_magnitude": 0.16200000000000003
+        },
+        "exact_requested_delta": 0.01,
+        "hypothetical_dynamic_core": {
+          "attachment": 0.25,
+          "maturity": 0.61,
+          "neg": 0.5,
+          "pos": 1.501558101472995,
+          "recent_event_magnitude": 0.16200000000000003
+        }
+      },
+      {
+        "equal_core": false,
+        "event": "manipulate",
+        "exact_applied_delta": -0.1,
+        "exact_core": {
+          "attachment": 0.25,
+          "maturity": 0.61,
+          "neg": 0.6,
+          "pos": 1.5,
+          "recent_event_magnitude": 0.18000000000000002
+        },
+        "exact_requested_delta": -0.1,
+        "hypothetical_dynamic_core": {
+          "attachment": 0.25,
+          "maturity": 0.61,
+          "neg": 0.5396,
+          "pos": 1.5,
+          "recent_event_magnitude": 0.18000000000000002
+        }
+      },
+      {
+        "equal_core": true,
+        "event": "neutral",
+        "exact_applied_delta": 0.0,
+        "exact_core": {
+          "attachment": 0.25,
+          "maturity": 0.61,
+          "neg": 0.5,
+          "pos": 1.5,
+          "recent_event_magnitude": 0.16000000000000003
+        },
+        "exact_requested_delta": 0.0,
+        "hypothetical_dynamic_core": {
+          "attachment": 0.25,
+          "maturity": 0.61,
+          "neg": 0.5,
+          "pos": 1.5,
+          "recent_event_magnitude": 0.16000000000000003
+        }
+      },
+      {
+        "equal_core": false,
+        "event": "pressure",
+        "exact_applied_delta": -0.08,
+        "exact_core": {
+          "attachment": 0.25,
+          "maturity": 0.61,
+          "neg": 0.58,
+          "pos": 1.5,
+          "recent_event_magnitude": 0.17600000000000002
+        },
+        "exact_requested_delta": -0.08,
+        "hypothetical_dynamic_core": {
+          "attachment": 0.25,
+          "maturity": 0.61,
+          "neg": 0.53168,
+          "pos": 1.5,
+          "recent_event_magnitude": 0.17600000000000002
+        }
+      }
+    ],
+    "schema": "ghocentric.cmi.phase1j.unification-falsification.v1"
+  },
+  "version_modified": false
+}
