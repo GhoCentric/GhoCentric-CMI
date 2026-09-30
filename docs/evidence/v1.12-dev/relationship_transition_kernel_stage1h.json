@@ -1,0 +1,124 @@
+{
+  "candidate_sha256": "04e14421909b62b5626af47eb23601134ca49fb4da21d30d3123637d7afa82d1",
+  "complexity": {
+    "candidate": {
+      "decision_nodes": 19,
+      "function_loc": 45,
+      "functions": 5,
+      "max_function_loc": 17
+    },
+    "candidate_over_production_function_loc_ratio": 0.5,
+    "passes": true,
+    "production": {
+      "decision_nodes": 22,
+      "function_loc": 90,
+      "functions": 5,
+      "max_function_loc": 49
+    },
+    "production_methods": [
+      "_classify_state",
+      "_trigger_for_transition",
+      "_near_break",
+      "_pressure_label",
+      "_direction_label"
+    ],
+    "thresholds": {
+      "decision_nodes_must_not_exceed_production": true,
+      "function_loc_ratio_max": 0.75,
+      "max_function_loc_must_not_exceed_production": true
+    }
+  },
+  "experiment": {
+    "adjudication": "RELATIONSHIP_TRANSITION_KERNEL_CANDIDATE_SURVIVES_PHASE1H",
+    "constraints": {
+      "candidate_imports_production_relationship_code": false,
+      "candidate_is_research_only": true,
+      "event_specific_shock_math_replaced": false,
+      "production_authority_move_justified": false,
+      "production_relationship_source_modified": false,
+      "public_api_modified": false,
+      "relationship_backing_container_identity_preserved_by_stage1g": true,
+      "relationship_compact_stage1g_contract_reused": true,
+      "relationship_pair_order_preserved_by_stage1g": true,
+      "reservoir_update_math_replaced": false,
+      "timing_is_not_a_phase1h_claim": true
+    },
+    "exhaustive_private_helper_parity": {
+      "classification_checks": 2009,
+      "direction_checks": 19,
+      "pressure_checks": 4104,
+      "transition_checks": 9
+    },
+    "long_horizon": {
+      "compact_restarts": 20,
+      "event_checks": 2400,
+      "events": 2400,
+      "tick_relationship_checks": 22767
+    },
+    "next_falsification_target": "Attempt a separate research-only simplification of the dynamic reservoir/shock/maturity event-update kernel while preserving the Phase-1G compact-state contract and the Phase-1H transition-metadata kernel exactly.",
+    "prospective": {
+      "compact_restarts": 36,
+      "event_checks": 2640,
+      "host_decision_checks": 31284,
+      "intensities": [
+        0.0,
+        1e-06,
+        0.03125,
+        0.2,
+        0.333333,
+        0.5,
+        0.73,
+        0.999999,
+        1.0
+      ],
+      "public_event_types": [
+        "apology",
+        "attack",
+        "betrayal",
+        "cooperate",
+        "deceive",
+        "disengage",
+        "gift",
+        "greet",
+        "help",
+        "insult",
+        "manipulate",
+        "neutral",
+        "pressure",
+        "theft",
+        "threat"
+      ],
+      "scenarios": 12,
+      "tick_relationship_checks": 28644
+    },
+    "schema": "ghocentric.cmi.phase1h.relationship-transition-kernel.v1",
+    "strict_correctness_verdict": "PHASE1H_TRANSITION_KERNEL_PARITY_PASS"
+  },
+  "focused_coverage": {
+    "covered_branches": 30,
+    "covered_lines": 45,
+    "excluded_lines": 0,
+    "missing_branches": 0,
+    "missing_lines": 0,
+    "num_branches": 30,
+    "num_partial_branches": 0,
+    "num_statements": 45,
+    "percent_branches_covered": 100.0,
+    "percent_branches_covered_display": "100",
+    "percent_covered": 100.0,
+    "percent_covered_display": "100",
+    "percent_statements_covered": 100.0,
+    "percent_statements_covered_display": "100"
+  },
+  "focused_tests": 30,
+  "maintained_relationship_tests": 459,
+  "non_claim": "Phase 1H does not replace relationship reservoir updates, event-specific shock/maturity math, propagation logic, or production authority. It isolates and simplifies only the transition/diagnostic decision kernel.",
+  "phase1g_compact_regression_tests": 28,
+  "predecessor": "715c505af75909794756449f7f670494e8756c71",
+  "production_ghost_modified": false,
+  "public_api_modified": false,
+  "schema": "ghocentric.cmi.phase1h.relationship-transition-kernel.evidence.v1",
+  "supported_claim": "A pure, production-independent research kernel reproduces the current relationship state classification, transition/trigger selection, pressure labels, and direction labels exactly across exhaustive private-helper parity matrices plus live prospective event/tick workloads, repeated Phase-1G compact restart boundaries, a 2,400-event horizon, and downstream host-decision projections.",
+  "test_sha256": "ce7ecf35573cde14c91eec9c5021d1f0defba349fa2dc45354ccb23ce4c34688",
+  "version_modified": false
+}
