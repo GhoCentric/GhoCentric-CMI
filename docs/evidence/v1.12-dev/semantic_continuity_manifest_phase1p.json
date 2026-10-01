@@ -1,0 +1,119 @@
+{
+  "continuity": {
+    "causal_fields": [
+      "release_rate",
+      "switch_threshold",
+      "current_leader",
+      "activation"
+    ],
+    "derived_public_keys": [
+      "agent"
+    ],
+    "important_boundaries": {
+      "activation_is_present_relevance_state": true,
+      "agent_id_is_reconstructible_from_agent_map_key": true,
+      "causal_episodes_are_external_to_hot_runtime": true,
+      "continuity_runtime_owns_no_history": true,
+      "current_leader_is_foreground_hysteresis_state": true,
+      "diagnostic_history_is_externalized_by_optimization_layer": true,
+      "release_rate_is_time_decay_causal": true,
+      "switch_threshold_is_foreground_transition_causal": true
+    },
+    "live_internal_fields": [
+      "_agents"
+    ],
+    "optimization": {
+      "cold_history_limit": 64,
+      "compression_level": 6,
+      "hot_history_keep": 1,
+      "projection_budget": 3,
+      "projection_enter": 0.5677369475438927,
+      "projection_exit": 0.44304749212474753,
+      "schema": "ghost.continuity_optimization.v1"
+    },
+    "runtime_class": "ContinuityRuntime",
+    "snapshot_keys": [
+      "schema_version",
+      "agents"
+    ],
+    "snapshot_schema_version": "1.0",
+    "stored_agent_keys": [
+      "release_rate",
+      "switch_threshold",
+      "current_leader",
+      "activation"
+    ]
+  },
+  "git_blobs": {
+    "ROADMAP.md": "ad1c7d1b814951a7011f73f99615c7a6a0b8fe9b",
+    "continuity_benchmark_v1110/run_stage9_candidate_selection.py": "ac57b65e363f6a13d8d72bea4548543dbc11411e",
+    "docs/evidence/v1.12-dev/motive_state_ownership_stage1o.json": "be14710ab82fb2b5f0ef30dbdc424b0c50743ad0",
+    "docs/evidence/v1.12-dev/semantic_continuity_manifest_phase1o.json": "0f4e9e764e321f667671d087c820e794442bcf65",
+    "docs/evidence/v1.12-dev/stage9_history_owner_repair.json": "689c72e48e7da26c77a670b14d8a4572a2e3808e",
+    "docs/research/v1.12_motive_state_ownership_stage1o.md": "75c79a5691a22ce3956b452729cafd7bdac130c1",
+    "docs/research/v1.12_stage9_history_owner_repair.md": "073ffc3a776adbaa637946619fbf95a65e258ebc",
+    "ghost/api.py": "e3394d361cc0992307d46c0f035058f0b8684e68",
+    "ghost/continuity.py": "7639619d61152d5f798726995d4f8921ee53a5b5",
+    "ghost/continuity_history.py": "cd5eecebe0ed50c73cdad77d9f1065800778bbd2",
+    "ghost/continuity_optimization.py": "26f1b5d1b4dc5a5c3961932bf53659c202242054",
+    "ghost/episode_store.py": "26318f511f1c3ef372f0ebc327918f14933fd435",
+    "ghost_research/v112_motive_state_ownership_stage1o.py": "694a678272753c37d954c389cf6fe2fe93286344",
+    "tests/test_continuity_optimization_production_v1110.py": "07112c0d4372e069cf8b1cb9d9278d47264b46f7",
+    "tests/test_continuity_optimization_public_contract_v1110.py": "4fe1d7f426043df8fa7c08159220f22df66b9061",
+    "tests/test_continuity_optimization_quality_v1110.py": "2a15a0709b94c4a9dd7991e112cf03d90492d802",
+    "tests/test_continuity_optimization_value_v1110.py": "79aaaabb0c5d1344fa2bdca124c0d45916ae831f",
+    "tests/test_m3_continuity_production_engineering.py": "8ccf2a4a578de1dbb371fba0100e7ec42805432d",
+    "tests/test_m3_continuity_production_quality.py": "6b881033a7210905f3cf44d329bb4892425ee68c",
+    "tests/test_npc_continuity_stage9_quality_v1110.py": "26af5832aa7163f4e0d73a2605aff00ce61d6153",
+    "tests/test_npc_continuity_stage9_runner_coverage_v1110.py": "00fb8028c5bc89bf4b9602237f25c489e2eed2fd",
+    "tests/test_npc_continuity_stage9_v1110.py": "d8995a9f26e485353235c8b36c0ab3c152042027",
+    "tests/test_v112_motive_state_ownership_stage1o.py": "8d63a950448bc58b2f06496b0d5ff528811f344e"
+  },
+  "head": "09e9c4b115a0f66088859cc64d86089d8363ee01",
+  "parent": "ef2965166bb16785d26b9fbce8147cb8a7bff6fa",
+  "phase1o": {
+    "adjudication": "MOTIVE_STATE_BOUNDARY_MINIMIZATION_RECORD_ESTABLISHED_PHASE1O",
+    "next_owner": "continuity"
+  },
+  "phase1o_semantic_manifest_sha256": "d40cf167135b6cf06683db30c2c75f9966110440c6a115f5e37a6b644c897a04",
+  "repository": "GhoCentric/GhoCentric-CMI",
+  "roadmap": {
+    "next_owner_after_phase1p": "causal/history storage",
+    "phase1_exit_requires_major_subsystem_minimization_record": true,
+    "phase1_owner": "continuity",
+    "provenance_history_requires_explicit_bounded_lifecycle": true
+  },
+  "rules": {
+    "git_blob_identity_is_authoritative_for_source_shape": true,
+    "no_field_is_removed_only_because_it_looks_redundant": true,
+    "prior_expensive_evidence_is_reused_only_after_exact_hash_validation": true,
+    "production_files_are_not_modified_by_research_candidates": true,
+    "rollback_may_delete_only_targets_proven_absent_before_current_run": true,
+    "runtime_semantics_are_verified_not_guessed": true,
+    "stage_a_source_discovery_precedes_stage_b_experiment": true,
+    "stage_b_pins_manifest_sha256": true
+  },
+  "schema": "ghocentric.cmi.semantic-continuity-manifest.phase1p.v1",
+  "source": "GitHub connector, exact immutable commit",
+  "stage9_history_owner_repair": {
+    "classification": "STAGE9_OLD_COLD_SEED_EXACTLY_MATCHES_CURRENT_PRODUCTION_COLD_OWNER",
+    "cold_counts": {
+      "attention": 64,
+      "emotion": 64,
+      "interpretation": 64
+    },
+    "cold_sequence_range": [
+      56,
+      119
+    ],
+    "commit": "09e9c4b115a0f66088859cc64d86089d8363ee01",
+    "maintained_continuity": {
+      "collected": 47,
+      "passed": 47
+    },
+    "parent": "ef2965166bb16785d26b9fbce8147cb8a7bff6fa",
+    "production_ghost_modified": false,
+    "stage9_policy_modified": false,
+    "two_run_determinism": true
+  }
+}

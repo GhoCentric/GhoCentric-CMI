@@ -1,0 +1,104 @@
+{
+  "adjudication": "CONTINUITY_HOT_STATE_MINIMIZATION_RECORD_ESTABLISHED_PHASE1P",
+  "candidate_sha256": "8d1b5489ef9b4d4268758934f8d20f2ab51a51697be98d5baabf92fb6d0fa3fc",
+  "causal_necessity": {
+    "activation_salience_causal": true,
+    "all_four_stored_agent_fields_necessary_under_probes": true,
+    "current_leader_hysteresis_causal": true,
+    "release_rate_time_causal": true,
+    "schema": "ghocentric.cmi.phase1p.continuity-causal-necessity.v1",
+    "smaller_field_projection_justified": false,
+    "switch_threshold_foreground_causal": true
+  },
+  "focused_coverage": {
+    "covered_branches": 18,
+    "covered_lines": 74,
+    "excluded_lines": 0,
+    "missing_branches": 0,
+    "missing_lines": 0,
+    "num_branches": 18,
+    "num_partial_branches": 0,
+    "num_statements": 74,
+    "percent_branches_covered": 100.0,
+    "percent_branches_covered_display": "100",
+    "percent_covered": 100.0,
+    "percent_covered_display": "100",
+    "percent_statements_covered": 100.0,
+    "percent_statements_covered_display": "100"
+  },
+  "focused_tests": 10,
+  "history_and_episode_ownership": {
+    "causal_episode_store_deferred_to_next_owner": true,
+    "cold_archive_manifest_verified": true,
+    "cold_archive_roundtrip_exact": true,
+    "cold_history_limit_per_subsystem_agent": 64,
+    "cold_history_subsystems_exercised": 3,
+    "cold_history_total_rows": 192,
+    "compression_level": 6,
+    "continuity_runtime_owns_episode_archive": false,
+    "continuity_runtime_owns_history": false,
+    "hot_history_keep": 1,
+    "optimization_packet_exact": true,
+    "pending_history_bound_exact": true,
+    "projection_budget": 3,
+    "schema": "ghocentric.cmi.phase1p.continuity-history-ownership.v1"
+  },
+  "immediate_predecessor_repair": {
+    "classification": "STAGE9_OLD_COLD_SEED_EXACTLY_MATCHES_CURRENT_PRODUCTION_COLD_OWNER",
+    "commit": "09e9c4b115a0f66088859cc64d86089d8363ee01",
+    "maintained_continuity": "47/47",
+    "production_ghost_modified": false
+  },
+  "independent_reducer_parity": {
+    "all_internal_states_exact": true,
+    "all_packets_exact": true,
+    "all_public_views_exact": true,
+    "checks": {
+      "foreground": 400,
+      "ingest": 400,
+      "public_state": 4800,
+      "recall": 400,
+      "tick": 400
+    },
+    "operation_checks": 1600,
+    "schema": "ghocentric.cmi.phase1p.continuity-reducer-parity.v1",
+    "validation_replacement_claimed": false
+  },
+  "maintained_hash_pinned_regression_surface": {
+    "all_collected_passed": true,
+    "collected": 47,
+    "passed": 47
+  },
+  "next_falsification_target": "Phase 1Q: causal/history storage ownership and lifecycle, including episode archive state, retention, provenance/reconstruction guarantees, and explicit hot/cold growth boundaries. Use the same source-first semantic-manifest workflow.",
+  "non_claim": "Phase 1P does not claim the four-field ContinuityRuntime state can be reduced further, does not replace production validation, continuity optimization, history archives, or episode storage, and does not adjudicate the causal episode-store schema/lifecycle. Causal/history storage is the next Phase-1 owner.",
+  "phase1_owner_status": "continuity now has an explicit hot-state ownership, four-field causal-necessity, independent-reducer, restart, and history-boundary minimization record",
+  "predecessor": "09e9c4b115a0f66088859cc64d86089d8363ee01",
+  "production_ghost_modified": false,
+  "public_api_modified": false,
+  "schema": "ghocentric.cmi.phase1p.continuity-state-ownership.evidence.v1",
+  "semantic_manifest_sha256": "30a352e3c5859fe57ade307d7da0c8016088d3f6747576fa5e9116bfb57cada7",
+  "state_ownership": {
+    "all_packets_exact": true,
+    "all_snapshots_exact": true,
+    "derived_agent_field_exact": true,
+    "derived_public_fields": [
+      "agent"
+    ],
+    "derived_state_checks": 2400,
+    "packet_checks": 800,
+    "restart_checks": 10,
+    "schema": "ghocentric.cmi.phase1p.continuity-state-ownership.v1",
+    "stored_agent_fields": [
+      "release_rate",
+      "switch_threshold",
+      "current_leader",
+      "activation"
+    ],
+    "top_level_live_fields": [
+      "_agents"
+    ]
+  },
+  "supported_claim": "ContinuityRuntime owns one top-level agent map. Each agent's hot snapshot contains release_rate, switch_threshold, current_leader, and activation; the public agent field is key-derived. Phase 1P independently demonstrated that all four stored fields affect current continuity semantics and therefore found no justified smaller per-agent field projection. A pure research reducer reproduced 1,600 recall/interpretation/tick/foreground operations exactly, including public views. ContinuityRuntime itself owns neither diagnostic history nor causal episode storage. Diagnostic history is externalized into one hot record plus a bounded 64-record cold window per subsystem/agent.",
+  "test_sha256": "a231cc331564cbf2a5ac736648a865a4fdf0949ab2c0f13a274be47735a0a87f",
+  "version_modified": false
+}
