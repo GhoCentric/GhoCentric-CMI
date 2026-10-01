@@ -1,0 +1,65 @@
+{
+  "claim": "The historical Stage-9 seed expected 64 cold records per subsystem. Current production owns those same exact 64 cold records at sequences 56..119; the historical Stage-7 wrapper archive is now empty because production compaction archives first. The repair changes only the Stage-9 seed read path to the current production cold-history owner.",
+  "classification": "STAGE9_OLD_COLD_SEED_EXACTLY_MATCHES_CURRENT_PRODUCTION_COLD_OWNER",
+  "coverage_test_after_sha256": "cb91fe125fc052ae2375c787cbc9930db3a52a3e5a290fc080bb9837655d3c9d",
+  "coverage_test_before_sha256": "f45e9fa6f2444b12beea50c6506831c26a1c54c6e9d4718f0ead8326d823cb4a",
+  "maintained_continuity": {
+    "collected": 47,
+    "passed": 47
+  },
+  "non_claim": "This does not change Ghost production behavior, Stage-9 selection policy, benchmark workloads, compression representation, hot/cold retention rules, or historical evidence. It does not seed from expanded cold+hot history.",
+  "postpatch_seed": {
+    "cold_not_expanded_boundary": true,
+    "counts": {
+      "attention": 64,
+      "emotion": 64,
+      "interpretation": 64
+    },
+    "schema": "ghocentric.cmi.stage9-history-owner-repair.postpatch.v2",
+    "sequence_range": [
+      56,
+      119
+    ],
+    "two_run_determinism": true
+  },
+  "predecessor": "ef2965166bb16785d26b9fbce8147cb8a7bff6fa",
+  "prepatch_cold_owner_equivalence": {
+    "classification": "STAGE9_OLD_COLD_SEED_EXACTLY_MATCHES_CURRENT_PRODUCTION_COLD_OWNER",
+    "cold_payload_exact": {
+      "attention": true,
+      "emotion": true,
+      "interpretation": true
+    },
+    "episode_id_lists_equal": true,
+    "events_per_arm": 120,
+    "historical_cold_counts": {
+      "attention": 64,
+      "emotion": 64,
+      "interpretation": 64
+    },
+    "historical_hot_counts": {
+      "attention": 1,
+      "emotion": 1,
+      "interpretation": 1
+    },
+    "production_cold_counts": {
+      "attention": 64,
+      "emotion": 64,
+      "interpretation": 64
+    },
+    "production_hot_counts": {
+      "attention": 1,
+      "emotion": 1,
+      "interpretation": 1
+    },
+    "schema": "ghocentric.cmi.stage9-history-owner-repair.prepatch.v2"
+  },
+  "production_ghost_modified": false,
+  "representation_modified": false,
+  "runner_after_sha256": "4691c5141697cc0d392d51947100a113d31acb07000a0afe4a60fdfc1940611f",
+  "runner_before_sha256": "d89833b338edf95b2437732cf098dc0d95142ac41b7ca42d72ae9d0210a462e2",
+  "schema": "ghocentric.cmi.stage9-history-owner-repair.v2",
+  "seed_owner_read_path_modified": true,
+  "stage9_policy_modified": false,
+  "workloads_modified": false
+}

@@ -19,7 +19,7 @@ import tempfile
 import time
 import tracemalloc
 
-from .run_stage8_cold_compaction import _cold_records, _populate
+from .run_stage8_cold_compaction import _populate
 from .stage7_optimization_variants import optimized_factory
 from .stage8_cold_history_variants import (
     COMPRESSION_LEVELS,
@@ -55,12 +55,23 @@ def _median_us(callable_, repeats: int = 5) -> float:
     return statistics.median(rows)
 
 
+def _production_cold_records(system) -> dict[str, list[dict]]:
+    optimization = system._ghost._continuity_optimization
+    history = optimization.history
+    if history is None:
+        raise RuntimeError("Stage-9 seed requires current production cold history")
+    return {
+        subsystem: history.records(subsystem, "npc")
+        for subsystem in ("interpretation", "emotion", "attention")
+    }
+
+
 def _seed_records(root: Path) -> dict[str, list[dict]]:
     system = optimized_factory("ghost_lazy_sparse", root / "seed", "stage9-seed")
     try:
         _populate(system, 120)
         system.snapshot()
-        records = _cold_records(system)
+        records = _production_cold_records(system)
         if {name: len(rows) for name, rows in records.items()} != {
             "interpretation": 64,
             "emotion": 64,

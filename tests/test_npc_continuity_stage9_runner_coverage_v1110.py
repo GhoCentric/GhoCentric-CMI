@@ -3,6 +3,7 @@ from __future__ import annotations
 import json
 import runpy
 import sys
+from types import SimpleNamespace
 
 import pytest
 
@@ -95,9 +96,21 @@ def test_failure_guards_are_executable(tmp_path, monkeypatch):
     class SeedSystem:
         def snapshot(self): return {}
         def close(self): pass
+    missing_history = SimpleNamespace(
+        _ghost=SimpleNamespace(
+            _continuity_optimization=SimpleNamespace(history=None),
+        ),
+    )
+    with pytest.raises(RuntimeError, match="production cold history"):
+        runner._production_cold_records(missing_history)
+
     monkeypatch.setattr(runner, "optimized_factory", lambda *args, **kwargs: SeedSystem())
     monkeypatch.setattr(runner, "_populate", lambda *args, **kwargs: [])
-    monkeypatch.setattr(runner, "_cold_records", lambda system: {"interpretation": [], "emotion": [], "attention": []})
+    monkeypatch.setattr(
+        runner,
+        "_production_cold_records",
+        lambda system: {"interpretation": [], "emotion": [], "attention": []},
+    )
     with pytest.raises(RuntimeError, match="64/64/64"):
         runner._seed_records(tmp_path / "seed")
 
