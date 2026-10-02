@@ -1,0 +1,10 @@
+checkpoint,candidate,durable_bytes,baseline_sqlite_bytes,ratio_to_sqlite,temporally_bounded_total,bounded_active_only,exact_record_slots,summary_slots,sealed_segments
+256,bounded_tail_commit,29731,147456,0.2016262478298611,True,True,64,4,0
+256,full_lossless_compressed,29324,147456,0.19886610243055555,False,False,256,0,0
+256,tiered_lossless,58938,147456,0.3996988932291667,False,True,64,0,2
+1024,bounded_tail_commit,29893,507904,0.05885561050907258,True,True,64,4,0
+1024,full_lossless_compressed,115789,507904,0.22797418409778225,False,False,1024,0,0
+1024,tiered_lossless,178314,507904,0.3510781565020161,False,True,64,0,8
+4096,bounded_tail_commit,30119,1986560,0.01516138450386598,True,True,64,4,0
+4096,full_lossless_compressed,462405,1986560,0.23276669217139176,False,False,4096,0,0
+4096,tiered_lossless,656910,1986560,0.3306771504510309,False,True,64,0,32

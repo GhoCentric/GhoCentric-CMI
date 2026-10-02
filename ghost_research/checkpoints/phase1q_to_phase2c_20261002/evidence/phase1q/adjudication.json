@@ -1,0 +1,22 @@
+{
+  "classification": "PHASE1D_CAUSAL_EPISODE_LIFECYCLE_GAP_CONFIRMED",
+  "gap_confirmed": true,
+  "head": "37e80da4bf081ff01d176fb446534754bc465533",
+  "next_experiment": "Design a bounded causal-episode lifecycle candidate only after preserving exact explicit recall, ambiguity semantics, provenance/integrity, restart pairing, determinism, and fail-closed no-silent-loss behavior.",
+  "non_claims": [
+    "this diagnostic does not choose a retention policy",
+    "this diagnostic does not authorize deletion or compaction",
+    "this diagnostic does not change production code",
+    "this diagnostic does not claim old causal episodes are semantically disposable"
+  ],
+  "schema": "ghocentric.cmi.phase1q.lifecycle-diagnostic.v1",
+  "supported_claims": [
+    "causal episodes are externally durable and append-only under current source",
+    "default max_records is None",
+    "1024/1024 default records retained exactly through reopen",
+    "explicit capacity is fail-closed backpressure and does not evict",
+    "hot snapshot excludes causal episode payloads",
+    "hot snapshot boundedness does not bound the durable archive",
+    "episode identity, manifest pairing, and per-record integrity are guarded"
+  ]
+}

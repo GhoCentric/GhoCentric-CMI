@@ -1,0 +1,164 @@
+[
+  {
+    "actual_age": 16,
+    "dimension": "betrayal",
+    "emotion_name": "anger",
+    "emotion_strength": 0.95,
+    "nominal_age": 16,
+    "sequence": 1008,
+    "target_class": "high"
+  },
+  {
+    "actual_age": 17,
+    "dimension": "betrayal",
+    "emotion_name": "anger",
+    "emotion_strength": 0.35,
+    "nominal_age": 16,
+    "sequence": 1007,
+    "target_class": "medium"
+  },
+  {
+    "actual_age": 18,
+    "dimension": "betrayal",
+    "emotion_name": "anger",
+    "emotion_strength": 0.03,
+    "nominal_age": 16,
+    "sequence": 1006,
+    "target_class": "low"
+  },
+  {
+    "actual_age": 64,
+    "dimension": "threat",
+    "emotion_name": "fear",
+    "emotion_strength": 0.95,
+    "nominal_age": 64,
+    "sequence": 960,
+    "target_class": "high"
+  },
+  {
+    "actual_age": 65,
+    "dimension": "threat",
+    "emotion_name": "fear",
+    "emotion_strength": 0.35,
+    "nominal_age": 64,
+    "sequence": 959,
+    "target_class": "medium"
+  },
+  {
+    "actual_age": 66,
+    "dimension": "threat",
+    "emotion_name": "fear",
+    "emotion_strength": 0.03,
+    "nominal_age": 64,
+    "sequence": 958,
+    "target_class": "low"
+  },
+  {
+    "actual_age": 128,
+    "dimension": "respect",
+    "emotion_name": "hope",
+    "emotion_strength": 0.95,
+    "nominal_age": 128,
+    "sequence": 896,
+    "target_class": "high"
+  },
+  {
+    "actual_age": 129,
+    "dimension": "respect",
+    "emotion_name": "hope",
+    "emotion_strength": 0.35,
+    "nominal_age": 128,
+    "sequence": 895,
+    "target_class": "medium"
+  },
+  {
+    "actual_age": 130,
+    "dimension": "respect",
+    "emotion_name": "hope",
+    "emotion_strength": 0.03,
+    "nominal_age": 128,
+    "sequence": 894,
+    "target_class": "low"
+  },
+  {
+    "actual_age": 256,
+    "dimension": "betrayal",
+    "emotion_name": "anger",
+    "emotion_strength": 0.95,
+    "nominal_age": 256,
+    "sequence": 768,
+    "target_class": "high"
+  },
+  {
+    "actual_age": 257,
+    "dimension": "betrayal",
+    "emotion_name": "anger",
+    "emotion_strength": 0.35,
+    "nominal_age": 256,
+    "sequence": 767,
+    "target_class": "medium"
+  },
+  {
+    "actual_age": 258,
+    "dimension": "betrayal",
+    "emotion_name": "anger",
+    "emotion_strength": 0.03,
+    "nominal_age": 256,
+    "sequence": 766,
+    "target_class": "low"
+  },
+  {
+    "actual_age": 512,
+    "dimension": "threat",
+    "emotion_name": "fear",
+    "emotion_strength": 0.95,
+    "nominal_age": 512,
+    "sequence": 512,
+    "target_class": "high"
+  },
+  {
+    "actual_age": 513,
+    "dimension": "threat",
+    "emotion_name": "fear",
+    "emotion_strength": 0.35,
+    "nominal_age": 512,
+    "sequence": 511,
+    "target_class": "medium"
+  },
+  {
+    "actual_age": 514,
+    "dimension": "threat",
+    "emotion_name": "fear",
+    "emotion_strength": 0.03,
+    "nominal_age": 512,
+    "sequence": 510,
+    "target_class": "low"
+  },
+  {
+    "actual_age": 768,
+    "dimension": "respect",
+    "emotion_name": "hope",
+    "emotion_strength": 0.95,
+    "nominal_age": 768,
+    "sequence": 256,
+    "target_class": "high"
+  },
+  {
+    "actual_age": 769,
+    "dimension": "respect",
+    "emotion_name": "hope",
+    "emotion_strength": 0.35,
+    "nominal_age": 768,
+    "sequence": 255,
+    "target_class": "medium"
+  },
+  {
+    "actual_age": 770,
+    "dimension": "respect",
+    "emotion_name": "hope",
+    "emotion_strength": 0.03,
+    "nominal_age": 768,
+    "sequence": 254,
+    "target_class": "low"
+  }
+]

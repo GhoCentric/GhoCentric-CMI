@@ -1,0 +1,52 @@
+{
+  "bounded_retention_or_compaction_observed": false,
+  "checkpoints": {
+    "1": {
+      "file_bytes": 24576,
+      "manifest": {
+        "archive_schema": "ghost.causal_episode_archive.v1",
+        "content_digest": "039e4b1e82c82a0cd1ea28045a042de570035a60ffe4257e488db821c4fb75ff",
+        "record_count": 1,
+        "schema": "ghost.causal_episode_archive_manifest.v1"
+      },
+      "record_count": 1
+    },
+    "1024": {
+      "file_bytes": 262144,
+      "manifest": {
+        "archive_schema": "ghost.causal_episode_archive.v1",
+        "content_digest": "385eaaeb510c77bfc3513ef6bdc00744a45dfb08eb4277b07cd5496d9a23f75e",
+        "record_count": 1024,
+        "schema": "ghost.causal_episode_archive_manifest.v1"
+      },
+      "record_count": 1024
+    },
+    "256": {
+      "file_bytes": 90112,
+      "manifest": {
+        "archive_schema": "ghost.causal_episode_archive.v1",
+        "content_digest": "dc7cf4b353a7118c2b750c3f6343fd11212cab5a0e95a00b16b069d766e4ad34",
+        "record_count": 256,
+        "schema": "ghost.causal_episode_archive_manifest.v1"
+      },
+      "record_count": 256
+    },
+    "64": {
+      "file_bytes": 36864,
+      "manifest": {
+        "archive_schema": "ghost.causal_episode_archive.v1",
+        "content_digest": "f3de16625b4a180c799885c8bf8cfd785275992b4785821a6beafccb6effbc62",
+        "record_count": 64,
+        "schema": "ghost.causal_episode_archive_manifest.v1"
+      },
+      "record_count": 64
+    }
+  },
+  "default_max_records": null,
+  "first_middle_last_exact_after_reopen": true,
+  "first_middle_last_exact_before_close": true,
+  "reopen_manifest_exact": true,
+  "retained_records": 1024,
+  "schema": "ghocentric.cmi.phase1q.default-growth.v1",
+  "silent_eviction_observed": false
+}

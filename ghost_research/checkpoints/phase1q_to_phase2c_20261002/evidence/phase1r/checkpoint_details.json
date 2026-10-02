@@ -1,0 +1,143 @@
+{
+  "1024": {
+    "baseline_manifest": {
+      "archive_schema": "ghost.causal_episode_archive.v1",
+      "content_digest": "49b1a7eef81cdf97b5b0d88c9edde5bc5a15dfc36e5f705d93950b2a995bc279",
+      "record_count": 1024,
+      "schema": "ghost.causal_episode_archive_manifest.v1"
+    },
+    "baseline_sqlite_bytes": 507904,
+    "candidates": {
+      "bounded_tail_commit": {
+        "baseline_sqlite_bytes": 507904,
+        "bounded_active_only": true,
+        "candidate": "bounded_tail_commit",
+        "checkpoint": 1024,
+        "durable_bytes": 29893,
+        "exact_record_slots": 64,
+        "ratio_to_sqlite": 0.05885561050907258,
+        "sealed_segments": 0,
+        "summary_slots": 4,
+        "temporally_bounded_total": true
+      },
+      "full_lossless_compressed": {
+        "baseline_sqlite_bytes": 507904,
+        "bounded_active_only": false,
+        "candidate": "full_lossless_compressed",
+        "checkpoint": 1024,
+        "durable_bytes": 115789,
+        "exact_record_slots": 1024,
+        "ratio_to_sqlite": 0.22797418409778225,
+        "sealed_segments": 0,
+        "summary_slots": 0,
+        "temporally_bounded_total": false
+      },
+      "tiered_lossless": {
+        "baseline_sqlite_bytes": 507904,
+        "bounded_active_only": true,
+        "candidate": "tiered_lossless",
+        "checkpoint": 1024,
+        "durable_bytes": 178314,
+        "exact_record_slots": 64,
+        "ratio_to_sqlite": 0.3510781565020161,
+        "sealed_segments": 8,
+        "summary_slots": 0,
+        "temporally_bounded_total": false
+      }
+    }
+  },
+  "256": {
+    "baseline_manifest": {
+      "archive_schema": "ghost.causal_episode_archive.v1",
+      "content_digest": "bc9618b5506866b4b4f16b2f4b20b213e27f1652b1aecbca07b4a16aa7c0a51b",
+      "record_count": 256,
+      "schema": "ghost.causal_episode_archive_manifest.v1"
+    },
+    "baseline_sqlite_bytes": 147456,
+    "candidates": {
+      "bounded_tail_commit": {
+        "baseline_sqlite_bytes": 147456,
+        "bounded_active_only": true,
+        "candidate": "bounded_tail_commit",
+        "checkpoint": 256,
+        "durable_bytes": 29731,
+        "exact_record_slots": 64,
+        "ratio_to_sqlite": 0.2016262478298611,
+        "sealed_segments": 0,
+        "summary_slots": 4,
+        "temporally_bounded_total": true
+      },
+      "full_lossless_compressed": {
+        "baseline_sqlite_bytes": 147456,
+        "bounded_active_only": false,
+        "candidate": "full_lossless_compressed",
+        "checkpoint": 256,
+        "durable_bytes": 29324,
+        "exact_record_slots": 256,
+        "ratio_to_sqlite": 0.19886610243055555,
+        "sealed_segments": 0,
+        "summary_slots": 0,
+        "temporally_bounded_total": false
+      },
+      "tiered_lossless": {
+        "baseline_sqlite_bytes": 147456,
+        "bounded_active_only": true,
+        "candidate": "tiered_lossless",
+        "checkpoint": 256,
+        "durable_bytes": 58938,
+        "exact_record_slots": 64,
+        "ratio_to_sqlite": 0.3996988932291667,
+        "sealed_segments": 2,
+        "summary_slots": 0,
+        "temporally_bounded_total": false
+      }
+    }
+  },
+  "4096": {
+    "baseline_manifest": {
+      "archive_schema": "ghost.causal_episode_archive.v1",
+      "content_digest": "0e19e9497a73ac3230ef45b351c13113ee2ad0f149d107e1d1808c8fe4606824",
+      "record_count": 4096,
+      "schema": "ghost.causal_episode_archive_manifest.v1"
+    },
+    "baseline_sqlite_bytes": 1986560,
+    "candidates": {
+      "bounded_tail_commit": {
+        "baseline_sqlite_bytes": 1986560,
+        "bounded_active_only": true,
+        "candidate": "bounded_tail_commit",
+        "checkpoint": 4096,
+        "durable_bytes": 30119,
+        "exact_record_slots": 64,
+        "ratio_to_sqlite": 0.01516138450386598,
+        "sealed_segments": 0,
+        "summary_slots": 4,
+        "temporally_bounded_total": true
+      },
+      "full_lossless_compressed": {
+        "baseline_sqlite_bytes": 1986560,
+        "bounded_active_only": false,
+        "candidate": "full_lossless_compressed",
+        "checkpoint": 4096,
+        "durable_bytes": 462405,
+        "exact_record_slots": 4096,
+        "ratio_to_sqlite": 0.23276669217139176,
+        "sealed_segments": 0,
+        "summary_slots": 0,
+        "temporally_bounded_total": false
+      },
+      "tiered_lossless": {
+        "baseline_sqlite_bytes": 1986560,
+        "bounded_active_only": true,
+        "candidate": "tiered_lossless",
+        "checkpoint": 4096,
+        "durable_bytes": 656910,
+        "exact_record_slots": 64,
+        "ratio_to_sqlite": 0.3306771504510309,
+        "sealed_segments": 32,
+        "summary_slots": 0,
+        "temporally_bounded_total": false
+      }
+    }
+  }
+}

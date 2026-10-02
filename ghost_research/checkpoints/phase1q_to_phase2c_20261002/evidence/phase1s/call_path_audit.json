@@ -1,0 +1,12 @@
+{
+  "dimension_recall_path": "recall_dimension -> episode_store.resolve_dimension",
+  "episode_store_methods_referenced_from_ghost_api": [
+    "get",
+    "manifest",
+    "register",
+    "resolve_dimension"
+  ],
+  "explicit_old_recall_path": "recall_episode -> episode_store.get",
+  "interpretation": "The experiment does not assume this proves all runtime independence; forward-state parity is tested dynamically below.",
+  "write_path": "_record_continuity_episodes -> episode_store.register"
+}

@@ -1,0 +1,8 @@
+policy,kind,budget,forward_hot_state_exact,retained_probe_exact,target_count_retained,target_count_total,high_targets_retained,high_targets_total,material_targets_retained,material_targets_total,material_fraction,captured_behavior_value,captured_value_fraction,episode_archive_bytes,episode_archive_ratio_to_exact,meets_95pct_value,meets_95pct_material
+adaptive_64,adaptive,64,True,True,18,18,6,6,18,18,1.0,7.809401453957222,1.0,36864,0.140625,True,True
+fixed_64,fixed,64,True,True,3,18,1,6,3,18,0.16666666666666666,1.1394599710460904,0.14590874572963553,36864,0.140625,False,False
+adaptive_128,adaptive,128,True,True,18,18,6,6,18,18,1.0,7.809401453957222,1.0,57344,0.21875,True,True
+fixed_128,fixed,128,True,True,6,18,2,6,6,18,0.3333333333333333,2.684851029153914,0.34379728651207087,53248,0.203125,False,False
+adaptive_256,adaptive,256,True,True,18,18,6,6,18,18,1.0,7.809401453957222,1.0,90112,0.34375,True,True
+fixed_256,fixed,256,True,True,9,18,3,6,9,18,0.5,3.904700726978611,0.5,90112,0.34375,False,False
+fixed_512,fixed,512,True,True,12,18,4,6,12,18,0.6666666666666666,5.044160698024702,0.6459087457296355,147456,0.5625,False,False

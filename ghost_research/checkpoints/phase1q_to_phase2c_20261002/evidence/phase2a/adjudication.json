@@ -1,0 +1,156 @@
+{
+  "capacity_metric": {
+    "material_count_coverage_used_for_classification": false,
+    "primary": "minimum full payloads capturing >=95% total future exact-payload behavioral value",
+    "reason": "95% material-label coverage is a cardinality floor and would tautologically scale with material count"
+  },
+  "classification": "FULL_PAYLOAD_VALUE_DEMAND_SCALES_WITH_HISTORY_AND_MATERIAL_DENSITY",
+  "density_axis": {
+    "growth_25_50": 1.9821428571428572,
+    "growth_50_75": 1.4954954954954955,
+    "horizon": 240,
+    "k95_value": [
+      56,
+      111,
+      166
+    ],
+    "log_log_beta": 0.9888793605509201,
+    "target_densities": [
+      0.25,
+      0.5,
+      0.75
+    ]
+  },
+  "distinct_payload_gate": {
+    "all_intended_positive_payloads_unique": true
+  },
+  "horizon_axis": {
+    "density": 0.5,
+    "growth_120_240": 1.9821428571428572,
+    "growth_240_480": 2.0,
+    "horizons": [
+      120,
+      240,
+      480
+    ],
+    "k95_value": [
+      56,
+      111,
+      222
+    ],
+    "log_log_beta": 0.9935304721462505
+  },
+  "next_falsification_target": "TREAT FULL HISTORICAL PAYLOAD AS AN EXTERNAL/EXPANDING ARCHIVE CAPABILITY; DESIGN BOUNDED HOT/STUB INDEX PLUS EXTERNAL PAYLOAD STORE AND TEST RECALL LATENCY/INTEGRITY",
+  "non_claims": [
+    "Phase 2A measures behavioral value retention under the frozen Stage-6 host projection; it is not cross-host proof.",
+    "The material-count 95% floor is reported only descriptively and is not evidence of capacity scaling by itself.",
+    "A scaling result does not mean hot memory must be unbounded; it means exact historical payload should not be assumed to fit a fixed local full-fidelity tier.",
+    "Phase 2A does not solve stub lifecycle or external archive implementation."
+  ],
+  "phase": "2A",
+  "phase1z_evidence_sha256": "b9349d485111eef16fed621bba785b8e98c5e3b91ea0aab71030794775ae33ec",
+  "production_mutation": false,
+  "required_head": "37e80da4bf081ff01d176fb446534754bc465533",
+  "workloads": [
+    {
+      "descriptive_95_material_count_floor": 57,
+      "final_relevant_emotion_max": 2.1909149567591708e-08,
+      "horizon": 120,
+      "intended_positive_count": 60,
+      "label": "h120_d50",
+      "label_sha256": "cd4024f0454d904f96393c98f1d70e672d222cc4043874c43936824026608e74",
+      "mean_negative_future_value": 1.4065300737327714e-09,
+      "mean_positive_future_value": 0.13198236410900208,
+      "min95_value_ratio_to_horizon": 0.4666666666666667,
+      "min95_value_ratio_to_positive_count": 0.9333333333333333,
+      "min_full_payloads_95_value": 56,
+      "realized_material_count": 60,
+      "realized_material_density": 0.5,
+      "restart_exact": true,
+      "signed_value_gap": 0.131982362702472,
+      "target_density": 0.5,
+      "total_future_value": 7.918941930931929,
+      "unique_positive_payloads": 60
+    },
+    {
+      "descriptive_95_material_count_floor": 57,
+      "final_relevant_emotion_max": 4.9447757640532835e-09,
+      "horizon": 240,
+      "intended_positive_count": 60,
+      "label": "h240_d25",
+      "label_sha256": "b3f564c0f963e6d0700a3bf8939d0b0222ce93df5ec2bca788aae89fa5f20498",
+      "mean_negative_future_value": 3.060838899347948e-10,
+      "mean_positive_future_value": 0.1396454670480471,
+      "min95_value_ratio_to_horizon": 0.23333333333333334,
+      "min95_value_ratio_to_positive_count": 0.9333333333333333,
+      "min_full_payloads_95_value": 56,
+      "realized_material_count": 60,
+      "realized_material_density": 0.25,
+      "restart_exact": true,
+      "signed_value_gap": 0.1396454667419632,
+      "target_density": 0.25,
+      "total_future_value": 8.378728077977925,
+      "unique_positive_payloads": 60
+    },
+    {
+      "descriptive_95_material_count_floor": 114,
+      "final_relevant_emotion_max": 1.8813679479387606e-08,
+      "horizon": 240,
+      "intended_positive_count": 120,
+      "label": "h240_d50",
+      "label_sha256": "963558901ba0351290460f649764dad42acb8f09417bb761121fc83973830181",
+      "mean_negative_future_value": 1.2041834805793973e-09,
+      "mean_positive_future_value": 0.13279079233890917,
+      "min95_value_ratio_to_horizon": 0.4625,
+      "min95_value_ratio_to_positive_count": 0.925,
+      "min_full_payloads_95_value": 111,
+      "realized_material_count": 120,
+      "realized_material_density": 0.5,
+      "restart_exact": true,
+      "signed_value_gap": 0.1327907911347257,
+      "target_density": 0.5,
+      "total_future_value": 15.934895225171116,
+      "unique_positive_payloads": 120
+    },
+    {
+      "descriptive_95_material_count_floor": 171,
+      "final_relevant_emotion_max": 1.8813679479387606e-08,
+      "horizon": 240,
+      "intended_positive_count": 180,
+      "label": "h240_d75",
+      "label_sha256": "e99955b79a5817b993b1618078fe54d5784211677dfea851d12b91cabadf8a28",
+      "mean_negative_future_value": 2.4083669127431184e-09,
+      "mean_positive_future_value": 0.14947356979776408,
+      "min95_value_ratio_to_horizon": 0.6916666666666667,
+      "min95_value_ratio_to_positive_count": 0.9222222222222223,
+      "min_full_payloads_95_value": 166,
+      "realized_material_count": 180,
+      "realized_material_density": 0.75,
+      "restart_exact": true,
+      "signed_value_gap": 0.14947356738939716,
+      "target_density": 0.75,
+      "total_future_value": 26.905242708099546,
+      "unique_positive_payloads": 180
+    },
+    {
+      "descriptive_95_material_count_floor": 228,
+      "final_relevant_emotion_max": 2.2303875111513094e-08,
+      "horizon": 480,
+      "intended_positive_count": 240,
+      "label": "h480_d50",
+      "label_sha256": "61a8774e0c320850092f4da37faa6cb49e440b3d3dd8aee661e93438fd568dd4",
+      "mean_negative_future_value": 1.4282202432920997e-09,
+      "mean_positive_future_value": 0.13338195465428396,
+      "min95_value_ratio_to_horizon": 0.4625,
+      "min95_value_ratio_to_positive_count": 0.925,
+      "min_full_payloads_95_value": 222,
+      "realized_material_count": 240,
+      "realized_material_density": 0.5,
+      "restart_exact": true,
+      "signed_value_gap": 0.13338195322606372,
+      "target_density": 0.5,
+      "total_future_value": 32.011669459801006,
+      "unique_positive_payloads": 240
+    }
+  ]
+}

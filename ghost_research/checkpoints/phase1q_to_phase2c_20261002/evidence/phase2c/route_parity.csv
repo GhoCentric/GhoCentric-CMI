@@ -1,0 +1,4 @@
+route,exact
+local_full,True
+stub_external,True
+external_only,True

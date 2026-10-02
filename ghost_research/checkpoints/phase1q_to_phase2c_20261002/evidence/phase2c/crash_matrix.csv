@@ -1,0 +1,15 @@
+scenario,failpoint,expected,observed,full,stubs
+external_only,after_begin,OLD,OLD,128,128
+external_only,after_full_delete,OLD,OLD,128,128
+external_only,after_full_insert,OLD,OLD,128,128
+external_only,after_stub_delete,OLD,OLD,128,128
+external_only,after_stub_insert,OLD,OLD,128,128
+external_only,after_metadata,OLD,OLD,128,128
+external_only,after_commit,NEW,NEW,128,128
+stub_hit,after_begin,OLD,OLD,128,128
+stub_hit,after_full_delete,OLD,OLD,128,128
+stub_hit,after_full_insert,OLD,OLD,128,128
+stub_hit,after_stub_delete,OLD,OLD,128,128
+stub_hit,after_stub_insert,OLD,OLD,128,128
+stub_hit,after_metadata,OLD,OLD,128,128
+stub_hit,after_commit,NEW,NEW,128,128

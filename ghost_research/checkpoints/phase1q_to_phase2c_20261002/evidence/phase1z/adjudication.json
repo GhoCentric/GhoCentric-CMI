@@ -1,0 +1,227 @@
+{
+  "adversarial_premise": {
+    "future_value_gap": 0.21265147489281686,
+    "negative_decoy_mean_future_value": 3.678506140294616e-09,
+    "negative_decoy_mean_l1": 1.05,
+    "passed": true,
+    "positive_core_mean_future_value": 0.212651478571323,
+    "positive_core_mean_l1": 1.05
+  },
+  "anti_leakage": {
+    "feature_table_sha256": "7c6252474122e4c1c26ebb5f8f2e42fa855a9ee0554360e4bb068a7d9ec3291c",
+    "features_created_before_future_labels": true,
+    "future_label_table_sha256": "0850fcb7053787fd410a398e4323044a41b8d553453a8c616b9f89a8cf12ee39",
+    "new_workload": true,
+    "retained_sets_frozen_before_future_labels": true,
+    "selection_packet_sha256": "7fcb90b4e7af0ea607491d2310f64c0d0bff5152f694072ca6c6a436ac68e1b4"
+  },
+  "classification": "NEW_WORKLOAD_CAPACITY_FLOOR_EXCEEDS_VALIDATED_128_TIER",
+  "frozen_selectors": {
+    "control": "recency",
+    "learned_weights": false,
+    "mechanistic": "host_emotion_projection",
+    "primary": "payload_relevant_l1",
+    "score_changes": false
+  },
+  "future_value": {
+    "class_stats": {
+      "joy_noise": {
+        "count": 40,
+        "material_count": 0,
+        "mean_future_value": 0.0,
+        "mean_host_emotion_projection": 0.0,
+        "mean_payload_relevant_l1": 0.0
+      },
+      "low_relevant": {
+        "count": 40,
+        "material_count": 40,
+        "mean_future_value": 0.021094459281690455,
+        "mean_host_emotion_projection": 0.022261154763835896,
+        "mean_payload_relevant_l1": 0.08
+      },
+      "mixed_conflict": {
+        "count": 40,
+        "material_count": 40,
+        "mean_future_value": 0.12945359680259277,
+        "mean_host_emotion_projection": 0.12246032242441356,
+        "mean_payload_relevant_l1": 0.97
+      },
+      "negative_decoy": {
+        "count": 40,
+        "material_count": 0,
+        "mean_future_value": 3.678506140294616e-09,
+        "mean_host_emotion_projection": 0.15310768884107892,
+        "mean_payload_relevant_l1": 1.05
+      },
+      "positive_core": {
+        "count": 40,
+        "material_count": 40,
+        "mean_future_value": 0.212651478571323,
+        "mean_host_emotion_projection": 0.17936174455446668,
+        "mean_payload_relevant_l1": 1.05
+      },
+      "positive_counter": {
+        "count": 40,
+        "material_count": 40,
+        "mean_future_value": 0.11000040853603876,
+        "mean_host_emotion_projection": 0.10254721797997304,
+        "mean_payload_relevant_l1": 0.6725
+      }
+    },
+    "material_count": 160,
+    "total": 18.927997874806046
+  },
+  "next_falsification_target": "REPLICATE THE NEW ORACLE CAPACITY FLOOR BEFORE BLAMING ONLINE SELECTION; DO NOT TUNE SELECTOR OR MUTATE PRODUCTION",
+  "non_claims": [
+    "Phase 1Z is a new adversarial event workload but still uses the frozen Stage-6 behavior projection; it is cross-workload evidence, not cross-host generalization.",
+    "The oracle is a capacity ceiling only, not an implementable selector.",
+    "A pass does not authorize production; the next replication must change the host policy/task.",
+    "Phase 1Z does not address exact-stub lifecycle growth from Phase 1X."
+  ],
+  "oracle": {
+    "min_95_both": 152,
+    "min_95_material": 152,
+    "min_95_value": 119,
+    "post_hoc_only": true
+  },
+  "phase": "1Z",
+  "phase1y_evidence_sha256": "58096c4620e9015474768ba0e9563a6bd0bfdf1cd23074673197b75f733c577f",
+  "production_mutation": false,
+  "required_head": "37e80da4bf081ff01d176fb446534754bc465533",
+  "selector_comparison": [
+    {
+      "budget": 64,
+      "material_fraction": 0.23125,
+      "material_retained": 37,
+      "meets_gate": false,
+      "oracle_material_fraction": 0.4,
+      "oracle_overlap": 37,
+      "oracle_value_fraction": 0.6386270564472011,
+      "selector": "payload_relevant_l1",
+      "value_efficiency_vs_oracle": 0.664634911676682,
+      "value_fraction": 0.42445383725612484
+    },
+    {
+      "budget": 64,
+      "material_fraction": 0.25625,
+      "material_retained": 41,
+      "meets_gate": false,
+      "oracle_material_fraction": 0.4,
+      "oracle_overlap": 41,
+      "oracle_value_fraction": 0.6386270564472011,
+      "selector": "host_emotion_projection",
+      "value_efficiency_vs_oracle": 0.7382113608345027,
+      "value_fraction": 0.47144174840562103
+    },
+    {
+      "budget": 64,
+      "material_fraction": 0.26875,
+      "material_retained": 43,
+      "meets_gate": false,
+      "oracle_material_fraction": 0.4,
+      "oracle_overlap": 10,
+      "oracle_value_fraction": 0.6386270564472011,
+      "selector": "recency",
+      "value_efficiency_vs_oracle": 0.4139543721695146,
+      "value_fraction": 0.2643624622020663
+    },
+    {
+      "budget": 96,
+      "material_fraction": 0.3625,
+      "material_retained": 58,
+      "meets_gate": false,
+      "oracle_material_fraction": 0.6,
+      "oracle_overlap": 58,
+      "oracle_value_fraction": 0.8328575603522613,
+      "selector": "payload_relevant_l1",
+      "value_efficiency_vs_oracle": 0.7112877655391887,
+      "value_fraction": 0.59240139311538
+    },
+    {
+      "budget": 96,
+      "material_fraction": 0.35,
+      "material_retained": 56,
+      "meets_gate": false,
+      "oracle_material_fraction": 0.6,
+      "oracle_overlap": 56,
+      "oracle_value_fraction": 0.8328575603522613,
+      "selector": "host_emotion_projection",
+      "value_efficiency_vs_oracle": 0.684595902361087,
+      "value_fraction": 0.5701708730676098
+    },
+    {
+      "budget": 96,
+      "material_fraction": 0.4,
+      "material_retained": 64,
+      "meets_gate": false,
+      "oracle_material_fraction": 0.6,
+      "oracle_overlap": 32,
+      "oracle_value_fraction": 0.8328575603522613,
+      "selector": "recency",
+      "value_efficiency_vs_oracle": 0.45032129842858043,
+      "value_fraction": 0.37505349798389015
+    },
+    {
+      "budget": 128,
+      "material_fraction": 0.55,
+      "material_retained": 88,
+      "meets_gate": false,
+      "oracle_material_fraction": 0.8,
+      "oracle_overlap": 88,
+      "oracle_value_fraction": 0.9664791626467922,
+      "selector": "payload_relevant_l1",
+      "value_efficiency_vs_oracle": 0.7997321886998562,
+      "value_fraction": 0.7729244960763234
+    },
+    {
+      "budget": 128,
+      "material_fraction": 0.55,
+      "material_retained": 88,
+      "meets_gate": false,
+      "oracle_material_fraction": 0.8,
+      "oracle_overlap": 88,
+      "oracle_value_fraction": 0.9664791626467922,
+      "selector": "host_emotion_projection",
+      "value_efficiency_vs_oracle": 0.7886128617382623,
+      "value_fraction": 0.7621778982652863
+    },
+    {
+      "budget": 128,
+      "material_fraction": 0.5375,
+      "material_retained": 86,
+      "meets_gate": false,
+      "oracle_material_fraction": 0.8,
+      "oracle_overlap": 72,
+      "oracle_value_fraction": 0.9664791626467922,
+      "selector": "recency",
+      "value_efficiency_vs_oracle": 0.5108457212140902,
+      "value_fraction": 0.49372174488069054
+    }
+  ],
+  "workload": {
+    "chapters": 4,
+    "consequence_varies_by_chapter": true,
+    "event_classes": [
+      "positive_core",
+      "negative_decoy",
+      "mixed_conflict",
+      "joy_noise",
+      "low_relevant",
+      "positive_counter"
+    ],
+    "events": 240,
+    "events_per_class": 40,
+    "final_cooldown": 256,
+    "future_value_formula": "RMS(default Stage-6 behavior distance, foreground-ablated Stage-6 behavior distance)",
+    "material_threshold": 0.015,
+    "mixed_signed_emotion_profiles": true,
+    "negative_mirror_decoys": true,
+    "restart_at": 120,
+    "retrieval_strength": 0.9,
+    "revisions": {
+      "event_120": "threat -0.12",
+      "event_180": "respect -0.10",
+      "event_60": "betrayal -0.12"
+    }
+  }
+}

@@ -1,0 +1,182 @@
+{
+  "architecture": {
+    "authoritative_owner": "external exact archive",
+    "cache_authoritative": false,
+    "cache_reconstructible": true,
+    "local_full_capacity": 128,
+    "local_stub_capacity": 128,
+    "stub_required_for_correctness": false
+  },
+  "cache_loss": {
+    "authoritative_external_unchanged": true,
+    "exact_recall_probes": 3,
+    "rebuilt_counts": [
+      128,
+      128
+    ]
+  },
+  "classification": "AUTHORITATIVE_EXTERNAL_HISTORY_WITH_CRASH_ATOMIC_BOUNDED_CACHE_VALIDATED_RESEARCH_ONLY",
+  "crash_atomicity": {
+    "failpoints": [
+      "after_begin",
+      "after_full_delete",
+      "after_full_insert",
+      "after_stub_delete",
+      "after_stub_insert",
+      "after_metadata",
+      "after_commit"
+    ],
+    "journal_mode": "DELETE",
+    "matrix": [
+      {
+        "expected": "OLD",
+        "failpoint": "after_begin",
+        "full": 128,
+        "observed": "OLD",
+        "scenario": "external_only",
+        "stubs": 128
+      },
+      {
+        "expected": "OLD",
+        "failpoint": "after_full_delete",
+        "full": 128,
+        "observed": "OLD",
+        "scenario": "external_only",
+        "stubs": 128
+      },
+      {
+        "expected": "OLD",
+        "failpoint": "after_full_insert",
+        "full": 128,
+        "observed": "OLD",
+        "scenario": "external_only",
+        "stubs": 128
+      },
+      {
+        "expected": "OLD",
+        "failpoint": "after_stub_delete",
+        "full": 128,
+        "observed": "OLD",
+        "scenario": "external_only",
+        "stubs": 128
+      },
+      {
+        "expected": "OLD",
+        "failpoint": "after_stub_insert",
+        "full": 128,
+        "observed": "OLD",
+        "scenario": "external_only",
+        "stubs": 128
+      },
+      {
+        "expected": "OLD",
+        "failpoint": "after_metadata",
+        "full": 128,
+        "observed": "OLD",
+        "scenario": "external_only",
+        "stubs": 128
+      },
+      {
+        "expected": "NEW",
+        "failpoint": "after_commit",
+        "full": 128,
+        "observed": "NEW",
+        "scenario": "external_only",
+        "stubs": 128
+      },
+      {
+        "expected": "OLD",
+        "failpoint": "after_begin",
+        "full": 128,
+        "observed": "OLD",
+        "scenario": "stub_hit",
+        "stubs": 128
+      },
+      {
+        "expected": "OLD",
+        "failpoint": "after_full_delete",
+        "full": 128,
+        "observed": "OLD",
+        "scenario": "stub_hit",
+        "stubs": 128
+      },
+      {
+        "expected": "OLD",
+        "failpoint": "after_full_insert",
+        "full": 128,
+        "observed": "OLD",
+        "scenario": "stub_hit",
+        "stubs": 128
+      },
+      {
+        "expected": "OLD",
+        "failpoint": "after_stub_delete",
+        "full": 128,
+        "observed": "OLD",
+        "scenario": "stub_hit",
+        "stubs": 128
+      },
+      {
+        "expected": "OLD",
+        "failpoint": "after_stub_insert",
+        "full": 128,
+        "observed": "OLD",
+        "scenario": "stub_hit",
+        "stubs": 128
+      },
+      {
+        "expected": "OLD",
+        "failpoint": "after_metadata",
+        "full": 128,
+        "observed": "OLD",
+        "scenario": "stub_hit",
+        "stubs": 128
+      },
+      {
+        "expected": "NEW",
+        "failpoint": "after_commit",
+        "full": 128,
+        "observed": "NEW",
+        "scenario": "stub_hit",
+        "stubs": 128
+      }
+    ],
+    "real_process_death": true,
+    "scenarios": [
+      "external_only",
+      "stub_hit"
+    ],
+    "synchronous": "FULL",
+    "torn_states": 0,
+    "trials": 14
+  },
+  "next_falsification_target": "CREATE A GIT RESEARCH CHECKPOINT FOR PHASES 1Q-2C, THEN REPLICATE THE TIERED ARCHITECTURE UNDER A SECOND HOST/TASK BEFORE ANY PRODUCTION IMPLEMENTATION",
+  "non_claims": [
+    "Research cache only; production cache code is unchanged.",
+    "The exact episode is already durable in the external archive before promotion; new-event multi-store ingestion atomicity is not implemented here.",
+    "Concurrent promotion races/public external-recall API remain unresolved.",
+    "Second-host/task replication is still required before production implementation."
+  ],
+  "phase": "2C",
+  "phase2b_evidence_sha256": "c34babd0096043a8833a6dfabb82cf8d63920defd12a03c5d4747a3cc2382aad",
+  "production_mutation": false,
+  "promotion_demotion": {
+    "authoritative_external_unchanged": true,
+    "rolling_promotions": 96,
+    "route_parity": [
+      {
+        "exact": true,
+        "route": "local_full"
+      },
+      {
+        "exact": true,
+        "route": "stub_external"
+      },
+      {
+        "exact": true,
+        "route": "external_only"
+      }
+    ]
+  },
+  "required_head": "37e80da4bf081ff01d176fb446534754bc465533"
+}

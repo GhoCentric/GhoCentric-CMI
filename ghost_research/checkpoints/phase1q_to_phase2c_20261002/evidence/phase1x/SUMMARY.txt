@@ -1,0 +1,27 @@
+GHOCENTRIC CMI — PHASE 1X HYBRID PAYLOAD-STUB REPRESENTATION
+================================================================================
+required_head=37e80da4bf081ff01d176fb446534754bc465533
+phase1w_evidence_sha256=88057ad0b43bf9a52c0cc26cc9a7cc7911371063ca0ce851c7872a0650cf7330
+episodes=250
+full_tier=128
+stub_tier=122
+full_exact=128/128
+stub_generic_exact=122/122
+max_full_behavior_distance=0.000000000000
+max_stub_behavior_distance=0.000000000000
+current_production_bytes=90112
+compressed_full_250_bytes=98304
+hybrid_128_bytes=73728
+hybrid_96_bytes=65536
+stub_only_250_bytes=45056
+hybrid_128_ratio_to_production=0.818181818
+hybrid_128_ratio_to_compressed_full=0.750000000
+restart_cycles=5
+full_payload_tamper_detected=True
+stub_identity_tamper_detected=True
+
+CLASSIFICATION=HYBRID_PAYLOAD_STUB_REPRESENTATION_VALIDATED_RESEARCH_ONLY
+NEXT=ONLINE FULL-PAYLOAD SELECTION SIGNALS AGAINST THE PHASE1W ORACLE; THEN STUB-LIFECYCLE/EXTERNALIZATION ADJUDICATION BECAUSE EXACT ID STUBS STILL GROW WITH DISTINCT EPISODES
+
+IMPORTANT_LIMITATION=Exact episode-ID stubs remain one-per-distinct-memory; byte reduction is not temporal boundedness.
+Production mutation: NONE

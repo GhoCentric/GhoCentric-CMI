@@ -1,0 +1,129 @@
+{
+  "baseline_manifest_at_max_n": {
+    "archive_schema": "ghost.causal_episode_archive.v1",
+    "content_digest": "0e19e9497a73ac3230ef45b351c13113ee2ad0f149d107e1d1808c8fe4606824",
+    "record_count": 4096,
+    "schema": "ghost.causal_episode_archive_manifest.v1"
+  },
+  "candidate_interpretation": {
+    "bounded_tail_commit": "Temporally bounded exact tail plus fixed-cardinality historical commitments. Preserves recent exact records and dimension status/count, but cannot satisfy today's arbitrary old episode reconstruction or complete ambiguous episode-id list.",
+    "full_lossless_compressed": "Preserves the current contract exactly, restart, and integrity; compression reduces representation size but does not create a temporal bound.",
+    "tiered_lossless": "Bounds the active exact tail while sealing older exact records into lossless compressed segments. Preserves the current contract, but total durable history still grows as segments accumulate."
+  },
+  "classification": "NO_TESTED_CURRENT_CONTRACT_BOUNDED_EXACT_CANDIDATE",
+  "contract_constraint": "Exact arbitrary historical reconstruction over an unbounded stream of potentially distinct episode records requires information that grows with the stream unless old exact information is externalized or the recall contract is explicitly bounded/relaxed.",
+  "growth": {
+    "bounded_tail_commit": {
+      "bytes_by_checkpoint": {
+        "1024": 29893,
+        "256": 29731,
+        "4096": 30119
+      },
+      "growth_256_to_4096": 1.013050351484982,
+      "record_slots_by_checkpoint": {
+        "1024": 64,
+        "256": 64,
+        "4096": 64
+      },
+      "sealed_segments_by_checkpoint": {
+        "1024": 0,
+        "256": 0,
+        "4096": 0
+      },
+      "structural_temporal_bound": true
+    },
+    "full_lossless_compressed": {
+      "bytes_by_checkpoint": {
+        "1024": 115789,
+        "256": 29324,
+        "4096": 462405
+      },
+      "growth_256_to_4096": 15.76882417132724,
+      "record_slots_by_checkpoint": {
+        "1024": 1024,
+        "256": 256,
+        "4096": 4096
+      },
+      "sealed_segments_by_checkpoint": {
+        "1024": 0,
+        "256": 0,
+        "4096": 0
+      },
+      "structural_temporal_bound": false
+    },
+    "tiered_lossless": {
+      "bytes_by_checkpoint": {
+        "1024": 178314,
+        "256": 58938,
+        "4096": 656910
+      },
+      "growth_256_to_4096": 11.145780311513795,
+      "record_slots_by_checkpoint": {
+        "1024": 64,
+        "256": 64,
+        "4096": 64
+      },
+      "sealed_segments_by_checkpoint": {
+        "1024": 8,
+        "256": 2,
+        "4096": 32
+      },
+      "structural_temporal_bound": false
+    }
+  },
+  "next_falsification_target": "LIFECYCLE CONTRACT ADJUDICATION: exact-forever vs finite exact horizon + commitment vs explicitly externalized archival tier",
+  "non_claim": "Phase 1R does not claim these are the only possible storage encodings. It distinguishes storage optimization from lifecycle boundedness and does not authorize a production retention policy.",
+  "phase": "1R",
+  "production_mutation": false,
+  "semantic_results": {
+    "bounded_tail_commit": {
+      "bounded_active_only": true,
+      "current_contract_exact": false,
+      "dimension_resolution_exact": false,
+      "dimension_status_and_count_exact": true,
+      "exact_historical_reconstruction": false,
+      "get_all_episode_ids_exact": false,
+      "historical_whole_stream_commitment": true,
+      "logical_records_exact": false,
+      "oldest_episode_exact": false,
+      "recent_tail_exact": true,
+      "restart_exact": false,
+      "tamper_detected": true,
+      "temporally_bounded_total": true,
+      "viable_under_current_contract": false
+    },
+    "full_lossless_compressed": {
+      "bounded_active_only": false,
+      "current_contract_exact": true,
+      "dimension_resolution_exact": true,
+      "dimension_status_and_count_exact": true,
+      "exact_historical_reconstruction": true,
+      "get_all_episode_ids_exact": true,
+      "historical_whole_stream_commitment": true,
+      "logical_records_exact": true,
+      "oldest_episode_exact": true,
+      "recent_tail_exact": true,
+      "restart_exact": true,
+      "tamper_detected": true,
+      "temporally_bounded_total": false,
+      "viable_under_current_contract": false
+    },
+    "tiered_lossless": {
+      "bounded_active_only": true,
+      "current_contract_exact": true,
+      "dimension_resolution_exact": true,
+      "dimension_status_and_count_exact": true,
+      "exact_historical_reconstruction": true,
+      "get_all_episode_ids_exact": true,
+      "historical_whole_stream_commitment": true,
+      "logical_records_exact": true,
+      "oldest_episode_exact": true,
+      "recent_tail_exact": true,
+      "restart_exact": true,
+      "tamper_detected": true,
+      "temporally_bounded_total": false,
+      "viable_under_current_contract": false
+    }
+  },
+  "viable_candidates_under_current_contract": []
+}

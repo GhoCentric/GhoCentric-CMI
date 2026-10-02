@@ -1,0 +1,8 @@
+{
+  "different_content_identity_collision_refused": true,
+  "episode_id_reconstructible_from_agent_and_sequences": true,
+  "identical_duplicate_idempotent": true,
+  "payload_tamper_detected": true,
+  "schema": "ghocentric.cmi.phase1q.integrity.v1",
+  "stale_manifest_pairing_refused": true
+}

@@ -1,0 +1,10 @@
+{
+  "accepted": 64,
+  "accepted_records_unchanged_on_refusal": true,
+  "classification": "CAPACITY_IS_FAIL_CLOSED_BACKPRESSURE_NOT_RETENTION",
+  "manifest_unchanged_on_refusal": true,
+  "max_records": 64,
+  "next_insert_refused": true,
+  "schema": "ghocentric.cmi.phase1q.capacity.v1",
+  "silent_eviction_observed": false
+}

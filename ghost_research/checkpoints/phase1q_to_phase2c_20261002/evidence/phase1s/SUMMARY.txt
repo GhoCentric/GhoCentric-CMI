@@ -1,0 +1,35 @@
+GHOCENTRIC CMI — PHASE 1S LIFECYCLE CONTRACT ADJUDICATION
+==========================================================================
+required_head=37e80da4bf081ff01d176fb446534754bc465533
+phase1r_evidence_sha256=d816065623443b86308798837dacc698405bf8d38fcf04eccda69d7d23495447
+classification=LIFECYCLE_GAP_CONTAINED_TO_HISTORICAL_RECALL_CONTRACT
+severity=REAL_ARCHITECTURAL_ISSUE_NOT_CORE_CONTINUITY_FAILURE
+
+AGGREGATE GATES
+finite_forward_exact=true
+finite_restart_exact=true
+finite_recent_exact=true
+finite_ambiguous_behavior_exact=true
+finite_old_exact_recall_lost_as_expected=true
+finite_old_unique_effect_lost=true
+finite_active_counts_bounded=true
+finite_manifest_tamper_detected=true
+external_current_contract_exact=true
+external_active_tier_bounded=true
+external_archive_retains_all_records=true
+
+STORAGE
+exact_forever_active_records=384
+exact_forever_active_bytes=528384
+finite_64_active_records=64 active_bytes=458752
+finite_128_active_records=128 active_bytes=479232
+finite_256_active_records=256 active_bytes=512000
+external_exact_64_active_records=64
+external_exact_64_active_bytes=458752
+external_exact_64_external_records=384
+external_exact_64_external_bytes=110592
+
+NEXT
+HORIZON VALUE ADJUDICATION + EXPLICIT EXPIRED-RECALL API SEMANTICS BEFORE ANY PRODUCTION MUTATION
+
+Production mutation: NONE

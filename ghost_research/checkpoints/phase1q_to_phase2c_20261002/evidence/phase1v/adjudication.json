@@ -1,0 +1,165 @@
+{
+  "baseline": {
+    "episode_bytes": 90112,
+    "episode_count": 256,
+    "final_behavior_digest": "d29e33458e91571b76be0b07da017b77e9239ac23fc579ce21de08e64eed1c89",
+    "final_observation_digest": "a51e974f4fcfd2935303303dcde7d8aa20011b698e05b605a24aa4525d4f730d",
+    "manifest": {
+      "archive_schema": "ghost.causal_episode_archive.v1",
+      "content_digest": "0776656c8d831169a35e9b303a898d9b4b016a59ec1b629c77984c92aa286e18",
+      "record_count": 256,
+      "schema": "ghost.causal_episode_archive_manifest.v1"
+    },
+    "restart_exact": true
+  },
+  "candidate_summary": {
+    "class_stats": {
+      "affect_decoy": {
+        "count": 64,
+        "material_count": 64,
+        "mean_excess_value": 0.0356616429017054,
+        "mean_raw_distance": 0.08066164290170538,
+        "total_excess_value": 2.2823451457091455
+      },
+      "affect_only": {
+        "count": 64,
+        "material_count": 64,
+        "mean_excess_value": 0.07266418674280913,
+        "mean_raw_distance": 0.11766418674280911,
+        "total_excess_value": 4.650507951539784
+      },
+      "combined": {
+        "count": 64,
+        "material_count": 64,
+        "mean_excess_value": 0.35565798711927704,
+        "mean_raw_distance": 0.400657987119277,
+        "total_excess_value": 22.76211117563373
+      },
+      "structural_low": {
+        "count": 64,
+        "material_count": 64,
+        "mean_excess_value": 0.2870750423677278,
+        "mean_raw_distance": 0.3320750423677278,
+        "total_excess_value": 18.37280271153458
+      }
+    },
+    "material_count": 256,
+    "total_candidates": 256,
+    "total_excess_value": 48.06776698441724
+  },
+  "classification": "CAPACITY_FLOOR_ABOVE_128_CONFIRMED_SELECTOR_NEAR_ORACLE_AT_VIABLE_BUDGET",
+  "next_falsification_target": "DO NOT OPTIMIZE 64/128 AS PRIMARY EXACT-MEMORY BUDGETS; REPLICATE THE ORACLE FLOOR ON NARRATIVE/CAUSAL HOST TASKS AND KEEP EXTERNAL EXACT ARCHIVE AS SAFETY BASELINE",
+  "non_claims": [
+    "The oracle is not implementable as a production selector because it uses measured future recall value.",
+    "The 256-candidate controlled workload is an upper-bound experiment, not a representative distribution of all game memories.",
+    "The generic recall floor comes from exact Phase-1U predecessor evidence and is subtracted only for oracle value attribution.",
+    "No retention budget or selector is authorized for production by Phase 1V alone."
+  ],
+  "oracle": {
+    "first_tested_oracle_sufficient_budget": 256,
+    "min_records_95_both": 244,
+    "min_records_95_material": 244,
+    "min_records_95_value": 178,
+    "post_hoc_upper_bound_only": true
+  },
+  "phase": "1V",
+  "phase1u_evidence_file": "/storage/emulated/0/Download/PHASE1U_ADVERSARIAL_RETENTION_20261001_193348.zip",
+  "phase1u_evidence_sha256": "6e0698a9ceb181bda08371b81f60bc927b4304c38c62026d12371b9e2b032123",
+  "predecessor": {
+    "classification": "ADAPTIVE_RETENTION_NOT_YET_JUSTIFIED_UNDER_ADVERSARIAL_WORKLOAD",
+    "generic_recall_floor": 0.044999999999999984,
+    "material_excess": 0.015,
+    "material_threshold": 0.059999999999999984,
+    "prior_structural_distance": 0.3570868535785117
+  },
+  "production_mutation": false,
+  "required_head": "37e80da4bf081ff01d176fb446534754bc465533",
+  "selector_comparison": [
+    {
+      "budget": 32,
+      "diverse_material_fraction": 0.125,
+      "diverse_material_gap_to_oracle": 0.0,
+      "diverse_meets_95pct": false,
+      "diverse_value_efficiency_vs_oracle": 0.6810953737246515,
+      "diverse_value_fraction": 0.1904129572736827,
+      "oracle_material_fraction": 0.125,
+      "oracle_meets_95pct": false,
+      "oracle_value_fraction": 0.27956871331012967,
+      "recency_material_fraction": 0.125,
+      "recency_value_fraction": 0.12066457524977509
+    },
+    {
+      "budget": 64,
+      "diverse_material_fraction": 0.25,
+      "diverse_material_gap_to_oracle": 0.0,
+      "diverse_meets_95pct": false,
+      "diverse_value_efficiency_vs_oracle": 0.7731565536956234,
+      "diverse_value_fraction": 0.38284052000895974,
+      "oracle_material_fraction": 0.25,
+      "oracle_meets_95pct": false,
+      "oracle_value_fraction": 0.4951655886236936,
+      "recency_material_fraction": 0.25,
+      "recency_value_fraction": 0.24745998791527232
+    },
+    {
+      "budget": 128,
+      "diverse_material_fraction": 0.5,
+      "diverse_material_gap_to_oracle": 0.0,
+      "diverse_meets_95pct": false,
+      "diverse_value_efficiency_vs_oracle": 0.823890582417508,
+      "diverse_value_fraction": 0.7050601741324892,
+      "oracle_material_fraction": 0.5,
+      "oracle_meets_95pct": false,
+      "oracle_value_fraction": 0.8557691872914245,
+      "recency_material_fraction": 0.5,
+      "recency_value_fraction": 0.4969345812921389
+    },
+    {
+      "budget": 192,
+      "diverse_material_fraction": 0.75,
+      "diverse_material_gap_to_oracle": 0.0,
+      "diverse_meets_95pct": false,
+      "diverse_value_efficiency_vs_oracle": 0.9827657001255615,
+      "diverse_value_fraction": 0.9439806749718155,
+      "oracle_material_fraction": 0.75,
+      "oracle_meets_95pct": false,
+      "oracle_value_fraction": 0.9605348201012808,
+      "recency_material_fraction": 0.75,
+      "recency_value_fraction": 0.7525400120847276
+    },
+    {
+      "budget": 256,
+      "diverse_material_fraction": 1.0,
+      "diverse_material_gap_to_oracle": 0.0,
+      "diverse_meets_95pct": true,
+      "diverse_value_efficiency_vs_oracle": 1.0,
+      "diverse_value_fraction": 1.0,
+      "oracle_material_fraction": 1.0,
+      "oracle_meets_95pct": true,
+      "oracle_value_fraction": 1.0,
+      "recency_material_fraction": 1.0,
+      "recency_value_fraction": 1.0
+    }
+  ],
+  "workload": {
+    "all_events_are_oracle_candidates": true,
+    "budgets": [
+      32,
+      64,
+      128,
+      192,
+      256
+    ],
+    "events": 256,
+    "recent_fraction_for_diverse_selector": 0.5,
+    "restart_at": 128,
+    "retrieval_strength": 0.9,
+    "sufficiency": 0.95,
+    "target_classes": [
+      "structural_low",
+      "affect_decoy",
+      "affect_only",
+      "combined"
+    ]
+  }
+}

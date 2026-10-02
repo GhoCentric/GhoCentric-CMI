@@ -1,0 +1,614 @@
+{
+  "evidence": [
+    {
+      "evidence_zip_sha256": "211fe5a86c5f63fab67b6ced1580728cd72d2264855d9e54e37578e645438b3d",
+      "extracted_text_members": [
+        "SHA256SUMS.txt",
+        "adjudication.json",
+        "capacity.json",
+        "default_growth.json",
+        "hot_archive_boundary.json",
+        "integrity.json",
+        "source_policy.json"
+      ],
+      "members": [
+        {
+          "bytes": 892,
+          "extracted": true,
+          "name": "SHA256SUMS.txt",
+          "sha256": "5f2921cce6c3935b038dc4c6ea13c3456fcdd7869cb9c486b0358885f048121b"
+        },
+        {
+          "bytes": 1218,
+          "extracted": true,
+          "name": "adjudication.json",
+          "sha256": "b7cfd934d1f952311f9666949e89ab50b35c3408dee0635446e020bf68c19761"
+        },
+        {
+          "bytes": 324,
+          "extracted": true,
+          "name": "capacity.json",
+          "sha256": "b7c3da4e874de2d9ca1872d26168a05c6af2622d29c648a60aa5f1a5d2717b3f"
+        },
+        {
+          "bytes": 1743,
+          "extracted": true,
+          "name": "default_growth.json",
+          "sha256": "495d308ce7edb9adb552594037f5d368a6c0863b3fc0deba46fcf273a7fccb56"
+        },
+        {
+          "bytes": 458,
+          "extracted": true,
+          "name": "hot_archive_boundary.json",
+          "sha256": "a792009e1d7e4f38d0192d1edab21f2e20d1bb5fe2c5a67cf57f9d4e39aebf8a"
+        },
+        {
+          "bytes": 292,
+          "extracted": true,
+          "name": "integrity.json",
+          "sha256": "b7fa3562b6c659c34cd9bfbccc6222361b3354bbea9bbc74c8c7ecfd0444fa68"
+        },
+        {
+          "bytes": 1057,
+          "extracted": true,
+          "name": "source_policy.json",
+          "sha256": "78b4fc777fea34f3ae11cde95d26f45cbdf5e75233504562013da5d2ed773c3d"
+        }
+      ],
+      "phase": "1Q",
+      "source_filename": "PHASE1Q_DIAGNOSTIC_20261001_172750.zip",
+      "zip_bytes": 3430
+    },
+    {
+      "evidence_zip_sha256": "d816065623443b86308798837dacc698405bf8d38fcf04eccda69d7d23495447",
+      "extracted_text_members": [
+        "SUMMARY.txt",
+        "adjudication.json",
+        "candidate_growth.csv",
+        "checkpoint_details.json",
+        "source_manifest.json"
+      ],
+      "members": [
+        {
+          "bytes": 1575,
+          "extracted": true,
+          "name": "SUMMARY.txt",
+          "sha256": "cb3f073d8b25e8f784b72041f4d94e5c258e948581ba9f718200465a3e19cd31"
+        },
+        {
+          "bytes": 4949,
+          "extracted": true,
+          "name": "adjudication.json",
+          "sha256": "f228271a52fb75958e77ffa7e78152db6dc53c47fe2fd024fe68260caf37f4d4"
+        },
+        {
+          "bytes": 870,
+          "extracted": true,
+          "name": "candidate_growth.csv",
+          "sha256": "288c2ae5fbcdc2abeb59ff1c8050b96b1b604afc49d2040a9443ef61f2b0a693"
+        },
+        {
+          "bytes": 4703,
+          "extracted": true,
+          "name": "checkpoint_details.json",
+          "sha256": "402c212b14bbaf3ac3502c0df310b47fd177aa757bf0c7484f345d7d1921cbbc"
+        },
+        {
+          "bytes": 1123,
+          "extracted": true,
+          "name": "source_manifest.json",
+          "sha256": "b9be97c8719987cf1aa7e0224d58594cf0a6194cacc00f75973239135658266c"
+        }
+      ],
+      "phase": "1R",
+      "source_filename": "PHASE1R_BOUNDED_LIFECYCLE_20261001_173947.zip",
+      "zip_bytes": 4519
+    },
+    {
+      "evidence_zip_sha256": "97d7fe6d2ab0a536eab26618bfc46f8ad83dfbcd6e0e36f739f37b9942aeefac",
+      "extracted_text_members": [
+        "SUMMARY.txt",
+        "adjudication.json",
+        "call_path_audit.json",
+        "forward_parity.csv"
+      ],
+      "members": [
+        {
+          "bytes": 1314,
+          "extracted": true,
+          "name": "SUMMARY.txt",
+          "sha256": "269e32ad5fc679dbe3f025c9ccadb7f69763d0964c999737dc704ac41141f672"
+        },
+        {
+          "bytes": 282402,
+          "extracted": true,
+          "name": "adjudication.json",
+          "sha256": "bb1a1c91db197826d94f35b9f11cc73f95d0f9d91135307d12f2edde7a6e47ec"
+        },
+        {
+          "bytes": 496,
+          "extracted": true,
+          "name": "call_path_audit.json",
+          "sha256": "70588520861da8992cc0dd0deea232c4c172830bb4d71b8b989b6e6d94d61274"
+        },
+        {
+          "bytes": 1387,
+          "extracted": true,
+          "name": "forward_parity.csv",
+          "sha256": "d85ace3558c24159ee04f1233d8aff5aa5295db263ddbf7817de6d138c8b2b02"
+        }
+      ],
+      "phase": "1S",
+      "source_filename": "PHASE1S_LIFECYCLE_CONTRACT_20261001_184539.zip",
+      "zip_bytes": 54831
+    },
+    {
+      "evidence_zip_sha256": "aa519da928662fe84c646ceda5a70fe2f5d40f060eab822a45a3095a67b6f9ad",
+      "extracted_text_members": [
+        "SUMMARY.txt",
+        "adjudication.json",
+        "policy_value_curve.csv",
+        "target_manifest.json",
+        "target_value_curve.csv"
+      ],
+      "members": [
+        {
+          "bytes": 1730,
+          "extracted": true,
+          "name": "SUMMARY.txt",
+          "sha256": "89dddff160e0f3a897cc5ce77fef4b7de556a345e71065bf59af39ae892ab4fc"
+        },
+        {
+          "bytes": 13412,
+          "extracted": true,
+          "name": "adjudication.json",
+          "sha256": "41fa457e985883cbf633dbe17810275cf57162369e97435290655360bea34fcc"
+        },
+        {
+          "bytes": 1146,
+          "extracted": true,
+          "name": "policy_value_curve.csv",
+          "sha256": "0fc928ac56bb13152121db9c7c36642757a3321ae040f8289389be5d16d22931"
+        },
+        {
+          "bytes": 3426,
+          "extracted": true,
+          "name": "target_manifest.json",
+          "sha256": "e008ca84006112563c366e1be4262f6bdc4a56991748136e95dd3cfd607e82cc"
+        },
+        {
+          "bytes": 1382,
+          "extracted": true,
+          "name": "target_value_curve.csv",
+          "sha256": "76d18765006b03c89989450742002b817c7388207a042e79fe4885f5e0a596d0"
+        }
+      ],
+      "phase": "1T",
+      "source_filename": "PHASE1T_RETENTION_VALUE_20261001_191541.zip",
+      "zip_bytes": 5275
+    },
+    {
+      "evidence_zip_sha256": "6e0698a9ceb181bda08371b81f60bc927b4304c38c62026d12371b9e2b032123",
+      "extracted_text_members": [
+        "SUMMARY.txt",
+        "adjudication.json",
+        "expired_id_semantics.json",
+        "selector_ablation.csv",
+        "target_manifest.json",
+        "target_value.csv"
+      ],
+      "members": [
+        {
+          "bytes": 1145,
+          "extracted": true,
+          "name": "SUMMARY.txt",
+          "sha256": "249710f0eb9a71b98808fcf7ca158b6894a47a86fa8f61fde693949a653ce737"
+        },
+        {
+          "bytes": 26504,
+          "extracted": true,
+          "name": "adjudication.json",
+          "sha256": "3ee5abf1677135c94b3326974a97c9e88805b0ce4ba9f796247d37a60db80621"
+        },
+        {
+          "bytes": 973,
+          "extracted": true,
+          "name": "expired_id_semantics.json",
+          "sha256": "42e21b496dd3fa8491f31c5f6ad6011a490b443dd28eb16dc0968167a4adbbe5"
+        },
+        {
+          "bytes": 1964,
+          "extracted": true,
+          "name": "selector_ablation.csv",
+          "sha256": "ce561aacc87cbc15e0affb0539c3eead087033ce53d04c46aa61af661f278c67"
+        },
+        {
+          "bytes": 4569,
+          "extracted": true,
+          "name": "target_manifest.json",
+          "sha256": "0441d2b294c17a4c54fac8f354130c6f29bdf812227f23302c785df0f0e0bf88"
+        },
+        {
+          "bytes": 2276,
+          "extracted": true,
+          "name": "target_value.csv",
+          "sha256": "113b72431783d0aba2825fabfca6bde3a86978ddbf786a592985a79640d034fb"
+        }
+      ],
+      "phase": "1U",
+      "source_filename": "PHASE1U_ADVERSARIAL_RETENTION_20261001_193348.zip",
+      "zip_bytes": 7193
+    },
+    {
+      "evidence_zip_sha256": "e3687feead1fcadecc91a2a9b73da2ed664c9e3249a21e867f1e081161b53843",
+      "extracted_text_members": [
+        "SUMMARY.txt",
+        "adjudication.json",
+        "candidate_value.csv",
+        "oracle_frontier.csv",
+        "selector_vs_oracle.csv"
+      ],
+      "members": [
+        {
+          "bytes": 1515,
+          "extracted": true,
+          "name": "SUMMARY.txt",
+          "sha256": "11049f3009d0e97992f887e114f8bfa68060b40ce2d6a608e5d8fcdba4369407"
+        },
+        {
+          "bytes": 6058,
+          "extracted": true,
+          "name": "adjudication.json",
+          "sha256": "e14a9f8fa72a9dbc8733f36885d2b0a923beea207fb408eee7df44211170d19b"
+        },
+        {
+          "bytes": 26884,
+          "extracted": true,
+          "name": "candidate_value.csv",
+          "sha256": "5f7f9b9a3ecb94aad532f4bfdebaabdd43a30163e506c1e4f459acbbf97ecb19"
+        },
+        {
+          "bytes": 16865,
+          "extracted": true,
+          "name": "oracle_frontier.csv",
+          "sha256": "3a69861a628495b7783cf781e9793938ae5e250ce5561c20f22d688198e5b98c"
+        },
+        {
+          "bytes": 754,
+          "extracted": true,
+          "name": "selector_vs_oracle.csv",
+          "sha256": "9407316f0a8284a889a515b4092723428f980e689c5d829ee3d1e6750e0fb2c3"
+        }
+      ],
+      "phase": "1V",
+      "source_filename": "PHASE1V_ORACLE_RETENTION_20261001_194846.zip",
+      "zip_bytes": 13615
+    },
+    {
+      "evidence_zip_sha256": "88057ad0b43bf9a52c0cc26cc9a7cc7911371063ca0ce851c7872a0650cf7330",
+      "extracted_text_members": [
+        "SUMMARY.txt",
+        "adjudication.json",
+        "diverse_vs_exact_payload_oracle.csv",
+        "exact_payload_oracle_frontier.csv",
+        "matched_episode_value.csv"
+      ],
+      "members": [
+        {
+          "bytes": 1624,
+          "extracted": true,
+          "name": "SUMMARY.txt",
+          "sha256": "74324a9d2832f54ed8ea3687cb0ce9528a1bfb447fbddc61e3a9653883dec1f9"
+        },
+        {
+          "bytes": 6552,
+          "extracted": true,
+          "name": "adjudication.json",
+          "sha256": "a354e34e38915c310210b6a8673c4a38582dee2f04ec83cfa9a056c439bf0756"
+        },
+        {
+          "bytes": 583,
+          "extracted": true,
+          "name": "diverse_vs_exact_payload_oracle.csv",
+          "sha256": "038f678c3e5ee1d15c3f9a55695291fc54bed4ee6b97cf9f5e4d3044effa7157"
+        },
+        {
+          "bytes": 13376,
+          "extracted": true,
+          "name": "exact_payload_oracle_frontier.csv",
+          "sha256": "fe571bf5fd8bded0648dfda398d198f273c69e60e0ac598df1842d972e3c9fa5"
+        },
+        {
+          "bytes": 21636,
+          "extracted": true,
+          "name": "matched_episode_value.csv",
+          "sha256": "6b7a243820bee0d13d75bf2d385e700f6a51e4ff2629f7d0572b51311d395983"
+        }
+      ],
+      "phase": "1W",
+      "source_filename": "PHASE1W_EXACT_EPISODE_INCREMENTAL_20261001_215321.zip",
+      "zip_bytes": 10880
+    },
+    {
+      "evidence_zip_sha256": "42028a56684cc5d52821ef4ac86ab619681febe17c7acc4a4a49025935716129",
+      "extracted_text_members": [
+        "SUMMARY.txt",
+        "adjudication.json",
+        "storage_attribution.csv"
+      ],
+      "members": [
+        {
+          "bytes": 1169,
+          "extracted": true,
+          "name": "SUMMARY.txt",
+          "sha256": "c79e9d5bb0fcaafb7066523d389d89704a875990e489ad3aa3ec380b96569f10"
+        },
+        {
+          "bytes": 3018,
+          "extracted": true,
+          "name": "adjudication.json",
+          "sha256": "7984ae29fe207856b19f1ed137a8eaad4b30d8d1e6e2110f6f4c0c998ddd2d27"
+        },
+        {
+          "bytes": 343,
+          "extracted": true,
+          "name": "storage_attribution.csv",
+          "sha256": "414d22cf7e559c00ae7c9bc36eab7486e66acae2acfbb34b84400a77f9cdfffd"
+        }
+      ],
+      "phase": "1X",
+      "source_filename": "PHASE1X_HYBRID_PAYLOAD_STUB_20261001_231157.zip",
+      "zip_bytes": 2561
+    },
+    {
+      "evidence_zip_sha256": "58096c4620e9015474768ba0e9563a6bd0bfdf1cd23074673197b75f733c577f",
+      "extracted_text_members": [
+        "SUMMARY.txt",
+        "adjudication.json",
+        "frozen_online_selections.json",
+        "online_features_unlabeled.csv",
+        "online_selector_vs_oracle.csv",
+        "signal_diagnostics.csv"
+      ],
+      "members": [
+        {
+          "bytes": 1807,
+          "extracted": true,
+          "name": "SUMMARY.txt",
+          "sha256": "57613d0f7d43feda136e17924a8acb929ff6e833a85497c1c661e0279153c970"
+        },
+        {
+          "bytes": 17355,
+          "extracted": true,
+          "name": "adjudication.json",
+          "sha256": "006ea997057ab9ac6569ab808d1c836fddaf21bd32381620b60c67446457374f"
+        },
+        {
+          "bytes": 57982,
+          "extracted": true,
+          "name": "frozen_online_selections.json",
+          "sha256": "91ab8b2ea7bfe82cf38987dffb8d95b1bb258a3822f64973e62fc47603be15aa"
+        },
+        {
+          "bytes": 92961,
+          "extracted": true,
+          "name": "online_features_unlabeled.csv",
+          "sha256": "4eda4cc1872673555fa407a625b2e312a22fb83e3db3a519b7a2599d9f350688"
+        },
+        {
+          "bytes": 3741,
+          "extracted": true,
+          "name": "online_selector_vs_oracle.csv",
+          "sha256": "483bb855ccd66a2e2bee78eea31f3dbb9e68f95767164c4846ab5ed6fddf7967"
+        },
+        {
+          "bytes": 445,
+          "extracted": true,
+          "name": "signal_diagnostics.csv",
+          "sha256": "9737d21ba4bafdcb24de984248ab6e719f8ca040835f7668438158d939ee7852"
+        }
+      ],
+      "phase": "1Y",
+      "source_filename": "PHASE1Y_ONLINE_PAYLOAD_SIGNALS_20261002_005213.zip",
+      "zip_bytes": 25167
+    },
+    {
+      "evidence_zip_sha256": "b9349d485111eef16fed621bba785b8e98c5e3b91ea0aab71030794775ae33ec",
+      "extracted_text_members": [
+        "SUMMARY.txt",
+        "adjudication.json",
+        "frozen_online_selections.json",
+        "frozen_selectors_vs_oracle.csv",
+        "future_value_labels.csv",
+        "online_features_unlabeled.csv",
+        "oracle_frontier.csv"
+      ],
+      "members": [
+        {
+          "bytes": 1750,
+          "extracted": true,
+          "name": "SUMMARY.txt",
+          "sha256": "c3d214d817d2de7610f9412b23ea3779cac05497a3a074caf8c19a025a0bef71"
+        },
+        {
+          "bytes": 7641,
+          "extracted": true,
+          "name": "adjudication.json",
+          "sha256": "a423d509b168af7dfaa8a8ce65c59a10760159e63f3ecdfedd33e74901507e6b"
+        },
+        {
+          "bytes": 19473,
+          "extracted": true,
+          "name": "frozen_online_selections.json",
+          "sha256": "321fd27a9599e149958edb7c4da1355a47b41238ad06d84d6d9e8a4fc5f722db"
+        },
+        {
+          "bytes": 1078,
+          "extracted": true,
+          "name": "frozen_selectors_vs_oracle.csv",
+          "sha256": "f173acb9ac76643fe9826093b25858002b0ea58567604842cf9e9438082f5038"
+        },
+        {
+          "bytes": 35750,
+          "extracted": true,
+          "name": "future_value_labels.csv",
+          "sha256": "0850fcb7053787fd410a398e4323044a41b8d553453a8c616b9f89a8cf12ee39"
+        },
+        {
+          "bytes": 18412,
+          "extracted": true,
+          "name": "online_features_unlabeled.csv",
+          "sha256": "7c6252474122e4c1c26ebb5f8f2e42fa855a9ee0554360e4bb068a7d9ec3291c"
+        },
+        {
+          "bytes": 14123,
+          "extracted": true,
+          "name": "oracle_frontier.csv",
+          "sha256": "bb02b1ba6e7eb01a9b54a97de220078cf92a2b10bd7268b74f318dd562be2ad9"
+        }
+      ],
+      "phase": "1Z",
+      "source_filename": "PHASE1Z_FROZEN_SELECTOR_REPLICATION_20261002_010815.zip",
+      "zip_bytes": 19625
+    },
+    {
+      "evidence_zip_sha256": "7039ae52ccfa93303453690ff796a2a753355d60eabf0b3428f1242c48e13ef4",
+      "extracted_text_members": [
+        "SUMMARY.txt",
+        "adjudication.json",
+        "h120_d50_future_values.csv",
+        "h240_d25_future_values.csv",
+        "h240_d50_future_values.csv",
+        "h240_d75_future_values.csv",
+        "h480_d50_future_values.csv",
+        "scaling_summary.csv"
+      ],
+      "members": [
+        {
+          "bytes": 933,
+          "extracted": true,
+          "name": "SUMMARY.txt",
+          "sha256": "f49343321c1723ea289f75a0ae0e5b20a247b9836fda2f711e0b478ff01d9829"
+        },
+        {
+          "bytes": 6167,
+          "extracted": true,
+          "name": "adjudication.json",
+          "sha256": "e17db10af078e3c430871bf16dc7516cdc81aeecde6478ad9f9742c4bab634d9"
+        },
+        {
+          "bytes": 17158,
+          "extracted": true,
+          "name": "h120_d50_future_values.csv",
+          "sha256": "cd4024f0454d904f96393c98f1d70e672d222cc4043874c43936824026608e74"
+        },
+        {
+          "bytes": 35123,
+          "extracted": true,
+          "name": "h240_d25_future_values.csv",
+          "sha256": "b3f564c0f963e6d0700a3bf8939d0b0222ce93df5ec2bca788aae89fa5f20498"
+        },
+        {
+          "bytes": 34357,
+          "extracted": true,
+          "name": "h240_d50_future_values.csv",
+          "sha256": "963558901ba0351290460f649764dad42acb8f09417bb761121fc83973830181"
+        },
+        {
+          "bytes": 33441,
+          "extracted": true,
+          "name": "h240_d75_future_values.csv",
+          "sha256": "e99955b79a5817b993b1618078fe54d5784211677dfea851d12b91cabadf8a28"
+        },
+        {
+          "bytes": 68895,
+          "extracted": true,
+          "name": "h480_d50_future_values.csv",
+          "sha256": "61a8774e0c320850092f4da37faa6cb49e440b3d3dd8aee661e93438fd568dd4"
+        },
+        {
+          "bytes": 1613,
+          "extracted": true,
+          "name": "scaling_summary.csv",
+          "sha256": "98a3d74bcadbebd7cd3343ac9ae9e106841f6feae6cc64431460d3f04a093963"
+        }
+      ],
+      "phase": "2A",
+      "source_filename": "PHASE2A_FULL_PAYLOAD_CAPACITY_SCALING_20261002_012536.zip",
+      "zip_bytes": 51501
+    },
+    {
+      "evidence_zip_sha256": "c34babd0096043a8833a6dfabb82cf8d63920defd12a03c5d4747a3cc2382aad",
+      "extracted_text_members": [
+        "SUMMARY.txt",
+        "adjudication.json",
+        "scaling_telemetry.csv"
+      ],
+      "members": [
+        {
+          "bytes": 885,
+          "extracted": true,
+          "name": "SUMMARY.txt",
+          "sha256": "818b149e7c05f425ebcaa55b1439f46430cd00fdcad650953814f8866886b763"
+        },
+        {
+          "bytes": 7108,
+          "extracted": true,
+          "name": "adjudication.json",
+          "sha256": "5ee98b0cf1a8ae27656505c7ab2bd8c8cd16415df18ca0163a369a8c18e50a6f"
+        },
+        {
+          "bytes": 1842,
+          "extracted": true,
+          "name": "scaling_telemetry.csv",
+          "sha256": "da0e55c390bb71197b0f90b4ac025b9552b32390023b0ca77b63f4c9135d3a47"
+        }
+      ],
+      "phase": "2B",
+      "source_filename": "PHASE2B_TIERED_EXTERNAL_ARCHIVE_20261002_015245.zip",
+      "zip_bytes": 3970
+    },
+    {
+      "evidence_zip_sha256": "26fc334245e9c533b04147e4e3348949acedcf49d6db32e2ef3d67f4bc82ee3a",
+      "extracted_text_members": [
+        "SUMMARY.txt",
+        "adjudication.json",
+        "crash_matrix.csv",
+        "route_parity.csv"
+      ],
+      "members": [
+        {
+          "bytes": 581,
+          "extracted": true,
+          "name": "SUMMARY.txt",
+          "sha256": "df9a354d0530238bfa3837eca3924e53faab23fdafb723edde8f446a8f08762f"
+        },
+        {
+          "bytes": 4739,
+          "extracted": true,
+          "name": "adjudication.json",
+          "sha256": "810d4b32eec4ac802add71fc397c4f4629aea79cf50e5c67113d97ed251821f9"
+        },
+        {
+          "bytes": 672,
+          "extracted": true,
+          "name": "crash_matrix.csv",
+          "sha256": "a2fe89e29a2dcadfdf267d3ed7518e216dd2ab4aa05f6dc2126f8540458d227d"
+        },
+        {
+          "bytes": 70,
+          "extracted": true,
+          "name": "route_parity.csv",
+          "sha256": "1287529514c2a69798403a04696bf0810d09982f2e23f1c8b8f66ef4b9865eca"
+        }
+      ],
+      "phase": "2C",
+      "source_filename": "PHASE2C_CACHE_CRASH_ATOMICITY_20261002_024516.zip",
+      "zip_bytes": 2212
+    }
+  ],
+  "origin_url": "https://github.com/GhoCentric/GhoCentric-CMI.git",
+  "production_source_mutated_by_checkpoint": false,
+  "schema": "ghocentric.research_checkpoint.phase1q_to_phase2c.v1",
+  "source_head": "37e80da4bf081ff01d176fb446534754bc465533"
+}

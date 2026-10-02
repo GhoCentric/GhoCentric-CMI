@@ -1,0 +1,18 @@
+{
+  "archive_record_counts": {
+    "1": 1,
+    "256": 256,
+    "64": 64
+  },
+  "continuity_runtime_unchanged": true,
+  "episode_payload_present_in_hot_snapshot": false,
+  "hot_snapshot_bounded_independently_of_archive": true,
+  "hot_snapshot_boundedness_implies_archive_boundedness": false,
+  "samples": {
+    "1": 1763,
+    "256": 1765,
+    "64": 1764
+  },
+  "schema": "ghocentric.cmi.phase1q.hot-archive-boundary.v1",
+  "snapshot_byte_delta_1_to_256": 2
+}

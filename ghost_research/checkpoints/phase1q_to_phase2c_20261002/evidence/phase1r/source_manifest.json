@@ -1,0 +1,34 @@
+{
+  "contract_under_test": {
+    "boundedness": "total durable representation has a fixed temporal record bound",
+    "dimension_resolution": "exact status/count/all episode_ids or unique record",
+    "explicit_episode_id_recall": "exact retained production record",
+    "integrity": "durable tamper is detected",
+    "logical_archive_reconstruction": "all exact retained records",
+    "restart": "candidate durable form reconstructs identical query behavior"
+  },
+  "phase": "1R",
+  "phase1q_evidence_file": "/storage/emulated/0/Download/PHASE1Q_DIAGNOSTIC_20261001_172750.zip",
+  "phase1q_evidence_sha256": "211fe5a86c5f63fab67b6ced1580728cd72d2264855d9e54e37578e645438b3d",
+  "production_mutation": false,
+  "required_head": "37e80da4bf081ff01d176fb446534754bc465533",
+  "workload": {
+    "agent_count": 1,
+    "checkpoints": [
+      256,
+      1024,
+      4096
+    ],
+    "dimensions": [
+      "betrayal",
+      "loyalty",
+      "respect",
+      "threat"
+    ],
+    "fixed_dimension_cardinality": true,
+    "high_entropy_source_fields": true,
+    "records": 4096,
+    "tail_cap": 64,
+    "tier_segment_size": 128
+  }
+}

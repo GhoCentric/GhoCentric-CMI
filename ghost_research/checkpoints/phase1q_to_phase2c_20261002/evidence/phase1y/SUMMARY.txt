@@ -1,0 +1,30 @@
+GHOCENTRIC CMI — PHASE 1Y ONLINE FULL-PAYLOAD SIGNAL DISCOVERY
+================================================================================
+required_head=37e80da4bf081ff01d176fb446534754bc465533
+phase1x_evidence_sha256=42028a56684cc5d52821ef4ac86ab619681febe17c7acc4a4a49025935716129
+phase1w_label_evidence_sha256=88057ad0b43bf9a52c0cc26cc9a7cc7911371063ca0ce851c7872a0650cf7330
+feature_table_sha256=4eda4cc1872673555fa407a625b2e312a22fb83e3db3a519b7a2599d9f350688
+selection_packet_sha256=ee0662edf9051204d2eaed881f4ac6ed464a7125376cac94e3af08175cf50876
+features_frozen_before_label_load=True
+selectors_frozen_before_label_load=True
+learned_weights=False
+oracle_min_both=96
+minimum_online_qualifying_budget=128
+qualifying_selectors_at_minimum=actual_relevant_emotion_delta_l1,host_emotion_projection,novelty_weighted_host_projection,payload_relevant_l1,payload_relevant_max
+
+SIGNAL DIAGNOSTICS
+recency: pearson=0.009763 auc=0.506667
+payload_all_l1: pearson=0.352025 auc=0.666667
+payload_relevant_l1: pearson=0.972358 auc=1.000000
+payload_relevant_max: pearson=0.972358 auc=1.000000
+actual_relevant_emotion_delta_l1: pearson=0.957083 auc=1.000000
+host_emotion_projection: pearson=0.939596 auc=1.000000
+event_total_behavior_delta: pearson=0.820169 auc=0.891200
+novelty_weighted_host_projection: pearson=0.932958 auc=1.000000
+
+CLASSIFICATION=PREDECLARED_ONLINE_SIGNAL_REACHES_VALIDATED_128_TIER_CONTROLLED_ONLY
+NEXT=FREEZE THE QUALIFYING ONLINE SCORE AND REPLICATE IT ON NARRATIVE/CAUSAL HOST TASKS WITH NEW EVENT DISTRIBUTIONS BEFORE ANY PRODUCTION CANDIDATE
+
+IMPORTANT_LIMITATION=Same controlled workload as Phase 1W labels; success is not generalization.
+ARCHITECTURE_LIMITATION=Exact stubs still grow one-per-distinct-episode; Phase 1Y does not solve lifecycle boundedness.
+Production mutation: NONE

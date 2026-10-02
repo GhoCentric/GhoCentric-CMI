@@ -1,0 +1,23 @@
+{
+  "checkpoint": "phase1q_to_phase2c_20261002",
+  "gate_execution": "reused_exact_v1_gate_artifacts_after_formatting_only_failure",
+  "next_target": "replicate tiered authoritative-external-history architecture under a second host/task before production implementation",
+  "phase1v_status": "retained_for_provenance_but_global_recall_floor_invalid",
+  "production_source_changed": false,
+  "project_version_changed": false,
+  "public_api_changed": false,
+  "repair_version": "v2",
+  "schema": "ghocentric.research_checkpoint.metadata.v2",
+  "source_parent": "37e80da4bf081ff01d176fb446534754bc465533",
+  "source_pins": {
+    "continuity_benchmark_v1110/contract.py": "49ed8f06ead5f013bbaaa033ab718a1010ca6c88",
+    "continuity_benchmark_v1110/ghost_adapter.py": "3818c14672f9579084b1f321ab96fc8cfc72f27e",
+    "continuity_benchmark_v1110/stage6_behavior_policy.py": "30cb6e2be70134e5fbedf3ffc7255f083c830f4c",
+    "ghost/api.py": "e3394d361cc0992307d46c0f035058f0b8684e68",
+    "ghost/continuity.py": "7639619d61152d5f798726995d4f8921ee53a5b5",
+    "ghost/continuity_optimization.py": "26f1b5d1b4dc5a5c3961932bf53659c202242054",
+    "ghost/emotions.py": "09810e02112201e3fea4fda709e2443f9d1d6217",
+    "ghost/episode_store.py": "26318f511f1c3ef372f0ebc327918f14933fd435"
+  },
+  "text_canonicalization": "utf8_lf_strip_trailing_spaces_tabs"
+}

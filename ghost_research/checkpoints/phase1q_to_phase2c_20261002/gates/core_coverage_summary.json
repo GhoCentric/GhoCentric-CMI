@@ -1,0 +1,8 @@
+{
+  "branch_coverage": "100%",
+  "branches": 3222,
+  "covered_branches": 3222,
+  "covered_statements": 7803,
+  "statement_coverage": "100%",
+  "statements": 7803
+}

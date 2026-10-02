@@ -1,0 +1,25 @@
+{
+  "core_coverage": {
+    "branches": 3222,
+    "covered_branches": 3222,
+    "covered_statements": 7803,
+    "deselected": 1,
+    "json_sha256": "e668a4fac05bc4f574eb570613b0cb9d36729da2daa9791827f3d4e91efdc7a6",
+    "log_sha256": "3bf4d1ef635268c5897bcb807ab17f58b17080746d6f8b9b4e2b26271e775318",
+    "statements": 7803,
+    "summary_sha256": "d69deb9e985af1c90b67d6c3bdd207fa8a0a6382c98790506937d4417a461422",
+    "tests_passed": 3831,
+    "warnings": 5
+  },
+  "evidence_zips_verified": 13,
+  "full_regression": {
+    "log_sha256": "baff39fef09dd23629cc09ea5bd760f0f9e286914d1f73e78f7dad28321713c3",
+    "passed": 3828,
+    "skipped": 1,
+    "warnings": 4
+  },
+  "reason": "v1 passed all expensive gates then failed only git diff --check on trailing whitespace/CRLF",
+  "rerun": false,
+  "schema": "ghocentric.checkpoint_gate_reuse.v1",
+  "source_parent": "37e80da4bf081ff01d176fb446534754bc465533"
+}

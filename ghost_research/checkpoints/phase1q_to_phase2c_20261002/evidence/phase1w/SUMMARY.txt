@@ -1,0 +1,29 @@
+GHOCENTRIC CMI — PHASE 1W EXACT EPISODE INCREMENTAL VALUE
+========================================================================================
+required_head=37e80da4bf081ff01d176fb446534754bc465533
+phase1v_evidence_sha256=e3687feead1fcadecc91a2a9b73da2ed664c9e3249a21e867f1e081161b53843
+phase1v_all_material_degeneracy=CONFIRMED
+empty_payload_smoke_distance=0.000000000000
+positive_payload_smoke_distance=0.125692695
+events=250
+material_exact_payload_episodes=100
+total_incremental_value=8.760471376
+max_empty_payload_distance=0.000000000000
+min_full_payloads_95_value=96
+min_full_payloads_95_material=95
+min_full_payloads_95_both=96
+first_tested_oracle_sufficient_budget=128
+
+CLASS STATS
+no_payload_structural: mean=0.000000000 total=0.000000000 material=0/50 winner_changes=0
+joy_decoy: mean=0.000000000 total=0.000000000 material=0/50 winner_changes=0
+affect_only: mean=0.101542824 total=5.077141176 material=50/50 winner_changes=202
+structural_low: mean=0.003810335 total=0.190516729 material=0/50 winner_changes=0
+combined: mean=0.069856269 total=3.492813470 material=50/50 winner_changes=17
+
+CAPACITY_CLASSIFICATION=MIDRANGE_EXACT_PAYLOAD_TIER_SUFFICIENT_IN_PRINCIPLE
+SELECTOR_CLASSIFICATION=SELECTOR_GAP_REMAINS_AGAINST_CORRECTED_ORACLE
+CLASSIFICATION=MIDRANGE_EXACT_PAYLOAD_TIER_SUFFICIENT_IN_PRINCIPLE__SELECTOR_GAP_REMAINS_AGAINST_CORRECTED_ORACLE
+NEXT=TEST PAYLOAD-STUB REPRESENTATION: RETAIN CHEAP EPISODE ID/AGENT/DIMENSION FOR MATCHED GENERIC RECALL WHILE KEEPING FULL HISTORICAL PAYLOAD ONLY FOR THE CORRECTED ORACLE-SIZED TIER; EXTERNAL EXACT ARCHIVE REMAINS SAFETY BASELINE
+
+Production mutation: NONE

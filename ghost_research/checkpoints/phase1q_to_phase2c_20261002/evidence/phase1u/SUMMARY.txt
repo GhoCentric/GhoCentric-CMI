@@ -1,0 +1,33 @@
+GHOCENTRIC CMI — PHASE 1U ADVERSARIAL ADAPTIVE RETENTION
+================================================================================
+required_head=37e80da4bf081ff01d176fb446534754bc465533
+phase1t_evidence_sha256=aa519da928662fe84c646ceda5a70fe2f5d40f060eab822a45a3095a67b6f9ad
+joy_decoy_distance=0.045000000000
+low_affect_structural_distance=0.357086854
+baseline_episodes=1536
+baseline_episode_bytes=389120
+
+TARGET CLASS VALUE
+structural_low: mean=0.347543871 total=2.085263225 material=6/6
+affect_decoy: mean=0.044993420 total=0.269960520 material=6/6
+affect_only: mean=0.173708256 total=1.042249537 material=6/6
+combined: mean=0.478756935 total=2.872541608 material=6/6
+
+SMALLEST >=95% VALUE + MATERIAL
+recency=NONE
+affect=NONE
+relevant_affect=NONE
+diverse=NONE
+random=NONE
+
+EXPIRED ID SEMANTICS
+expired_ids=1472
+exact_tombstone_bytes=81920
+fixed_bloom_bytes=2048
+bloom_false_positives_10000=43
+bloom_theoretical_fp=0.004831490
+
+CLASSIFICATION=ADAPTIVE_RETENTION_NOT_YET_JUSTIFIED_UNDER_ADVERSARIAL_WORKLOAD
+NEXT=KEEP EXTERNAL EXACT ARCHIVE AS SAFETY BASELINE AND REDESIGN RETENTION SIGNALS BEFORE PRODUCTION
+
+Production mutation: NONE

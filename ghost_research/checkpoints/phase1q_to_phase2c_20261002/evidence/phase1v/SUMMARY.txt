@@ -1,0 +1,25 @@
+GHOCENTRIC CMI — PHASE 1V ORACLE RETENTION CAPACITY BOUND
+==============================================================================
+required_head=37e80da4bf081ff01d176fb446534754bc465533
+phase1u_evidence_sha256=6e0698a9ceb181bda08371b81f60bc927b4304c38c62026d12371b9e2b032123
+generic_recall_floor=0.045000000
+material_threshold=0.060000000
+candidates=256
+material_candidates=256
+total_excess_value=48.067766984
+min_records_95_value=178
+min_records_95_material=244
+min_records_95_both=244
+first_tested_oracle_sufficient_budget=256
+
+BUDGET COMPARISON
+budget=32 oracle_value=0.279569 oracle_material=0.125000 diverse_value=0.190413 diverse_material=0.125000 diverse_efficiency=0.681095
+budget=64 oracle_value=0.495166 oracle_material=0.250000 diverse_value=0.382841 diverse_material=0.250000 diverse_efficiency=0.773157
+budget=128 oracle_value=0.855769 oracle_material=0.500000 diverse_value=0.705060 diverse_material=0.500000 diverse_efficiency=0.823891
+budget=192 oracle_value=0.960535 oracle_material=0.750000 diverse_value=0.943981 diverse_material=0.750000 diverse_efficiency=0.982766
+budget=256 oracle_value=1.000000 oracle_material=1.000000 diverse_value=1.000000 diverse_material=1.000000 diverse_efficiency=1.000000
+
+CLASSIFICATION=CAPACITY_FLOOR_ABOVE_128_CONFIRMED_SELECTOR_NEAR_ORACLE_AT_VIABLE_BUDGET
+NEXT=DO NOT OPTIMIZE 64/128 AS PRIMARY EXACT-MEMORY BUDGETS; REPLICATE THE ORACLE FLOOR ON NARRATIVE/CAUSAL HOST TASKS AND KEEP EXTERNAL EXACT ARCHIVE AS SAFETY BASELINE
+
+Production mutation: NONE

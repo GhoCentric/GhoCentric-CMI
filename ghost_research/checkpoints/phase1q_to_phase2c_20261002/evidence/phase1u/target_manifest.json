@@ -1,0 +1,242 @@
+[
+  {
+    "actual_age": 32,
+    "dimension": "betrayal",
+    "emotion_profile": {
+      "joy": 0.01
+    },
+    "nominal_age": 32,
+    "sequence": 1504,
+    "target_class": "structural_low"
+  },
+  {
+    "actual_age": 33,
+    "dimension": "weather",
+    "emotion_profile": {
+      "joy": 0.95
+    },
+    "nominal_age": 32,
+    "sequence": 1503,
+    "target_class": "affect_decoy"
+  },
+  {
+    "actual_age": 34,
+    "dimension": "weather",
+    "emotion_profile": {
+      "anger": 0.65
+    },
+    "nominal_age": 32,
+    "sequence": 1502,
+    "target_class": "affect_only"
+  },
+  {
+    "actual_age": 35,
+    "dimension": "betrayal",
+    "emotion_profile": {
+      "anger": 0.55
+    },
+    "nominal_age": 32,
+    "sequence": 1501,
+    "target_class": "combined"
+  },
+  {
+    "actual_age": 96,
+    "dimension": "threat",
+    "emotion_profile": {
+      "joy": 0.01
+    },
+    "nominal_age": 96,
+    "sequence": 1440,
+    "target_class": "structural_low"
+  },
+  {
+    "actual_age": 97,
+    "dimension": "weather",
+    "emotion_profile": {
+      "joy": 0.95
+    },
+    "nominal_age": 96,
+    "sequence": 1439,
+    "target_class": "affect_decoy"
+  },
+  {
+    "actual_age": 98,
+    "dimension": "weather",
+    "emotion_profile": {
+      "fear": 0.65
+    },
+    "nominal_age": 96,
+    "sequence": 1438,
+    "target_class": "affect_only"
+  },
+  {
+    "actual_age": 99,
+    "dimension": "threat",
+    "emotion_profile": {
+      "fear": 0.55
+    },
+    "nominal_age": 96,
+    "sequence": 1437,
+    "target_class": "combined"
+  },
+  {
+    "actual_age": 192,
+    "dimension": "respect",
+    "emotion_profile": {
+      "joy": 0.01
+    },
+    "nominal_age": 192,
+    "sequence": 1344,
+    "target_class": "structural_low"
+  },
+  {
+    "actual_age": 193,
+    "dimension": "weather",
+    "emotion_profile": {
+      "joy": 0.95
+    },
+    "nominal_age": 192,
+    "sequence": 1343,
+    "target_class": "affect_decoy"
+  },
+  {
+    "actual_age": 194,
+    "dimension": "weather",
+    "emotion_profile": {
+      "hope": 0.65
+    },
+    "nominal_age": 192,
+    "sequence": 1342,
+    "target_class": "affect_only"
+  },
+  {
+    "actual_age": 195,
+    "dimension": "respect",
+    "emotion_profile": {
+      "hope": 0.55
+    },
+    "nominal_age": 192,
+    "sequence": 1341,
+    "target_class": "combined"
+  },
+  {
+    "actual_age": 384,
+    "dimension": "betrayal",
+    "emotion_profile": {
+      "joy": 0.01
+    },
+    "nominal_age": 384,
+    "sequence": 1152,
+    "target_class": "structural_low"
+  },
+  {
+    "actual_age": 385,
+    "dimension": "weather",
+    "emotion_profile": {
+      "joy": 0.95
+    },
+    "nominal_age": 384,
+    "sequence": 1151,
+    "target_class": "affect_decoy"
+  },
+  {
+    "actual_age": 386,
+    "dimension": "weather",
+    "emotion_profile": {
+      "anger": 0.65
+    },
+    "nominal_age": 384,
+    "sequence": 1150,
+    "target_class": "affect_only"
+  },
+  {
+    "actual_age": 387,
+    "dimension": "betrayal",
+    "emotion_profile": {
+      "anger": 0.55
+    },
+    "nominal_age": 384,
+    "sequence": 1149,
+    "target_class": "combined"
+  },
+  {
+    "actual_age": 768,
+    "dimension": "threat",
+    "emotion_profile": {
+      "joy": 0.01
+    },
+    "nominal_age": 768,
+    "sequence": 768,
+    "target_class": "structural_low"
+  },
+  {
+    "actual_age": 769,
+    "dimension": "weather",
+    "emotion_profile": {
+      "joy": 0.95
+    },
+    "nominal_age": 768,
+    "sequence": 767,
+    "target_class": "affect_decoy"
+  },
+  {
+    "actual_age": 770,
+    "dimension": "weather",
+    "emotion_profile": {
+      "fear": 0.65
+    },
+    "nominal_age": 768,
+    "sequence": 766,
+    "target_class": "affect_only"
+  },
+  {
+    "actual_age": 771,
+    "dimension": "threat",
+    "emotion_profile": {
+      "fear": 0.55
+    },
+    "nominal_age": 768,
+    "sequence": 765,
+    "target_class": "combined"
+  },
+  {
+    "actual_age": 1152,
+    "dimension": "respect",
+    "emotion_profile": {
+      "joy": 0.01
+    },
+    "nominal_age": 1152,
+    "sequence": 384,
+    "target_class": "structural_low"
+  },
+  {
+    "actual_age": 1153,
+    "dimension": "weather",
+    "emotion_profile": {
+      "joy": 0.95
+    },
+    "nominal_age": 1152,
+    "sequence": 383,
+    "target_class": "affect_decoy"
+  },
+  {
+    "actual_age": 1154,
+    "dimension": "weather",
+    "emotion_profile": {
+      "hope": 0.65
+    },
+    "nominal_age": 1152,
+    "sequence": 382,
+    "target_class": "affect_only"
+  },
+  {
+    "actual_age": 1155,
+    "dimension": "respect",
+    "emotion_profile": {
+      "hope": 0.55
+    },
+    "nominal_age": 1152,
+    "sequence": 381,
+    "target_class": "combined"
+  }
+]

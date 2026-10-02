@@ -1,0 +1,180 @@
+{
+  "baseline": {
+    "episode_archive_bytes": 90112,
+    "episode_count": 250,
+    "final_observation_digest": "00789cceec8086ad599dabd56f32e1ade5aa095ebb028ff8fca03832b70ef0e3",
+    "manifest": {
+      "archive_schema": "ghost.causal_episode_archive.v1",
+      "content_digest": "a9b5364c39f0bf59c46e7f7476252ea60576d916bf88ed0f6620512567eda8a1",
+      "record_count": 250,
+      "schema": "ghost.causal_episode_archive_manifest.v1"
+    },
+    "restart_exact": true
+  },
+  "capacity_classification": "MIDRANGE_EXACT_PAYLOAD_TIER_SUFFICIENT_IN_PRINCIPLE",
+  "classification": "MIDRANGE_EXACT_PAYLOAD_TIER_SUFFICIENT_IN_PRINCIPLE__SELECTOR_GAP_REMAINS_AGAINST_CORRECTED_ORACLE",
+  "incremental_value": {
+    "class_stats": {
+      "affect_only": {
+        "count": 50,
+        "material_count": 50,
+        "mean_incremental_distance": 0.10154282352954207,
+        "total_incremental_distance": 5.077141176477103,
+        "winner_change_total": 202
+      },
+      "combined": {
+        "count": 50,
+        "material_count": 50,
+        "mean_incremental_distance": 0.06985626940721407,
+        "total_incremental_distance": 3.4928134703607037,
+        "winner_change_total": 17
+      },
+      "joy_decoy": {
+        "count": 50,
+        "material_count": 0,
+        "mean_incremental_distance": 0.0,
+        "total_incremental_distance": 0.0,
+        "winner_change_total": 0
+      },
+      "no_payload_structural": {
+        "count": 50,
+        "material_count": 0,
+        "mean_incremental_distance": 0.0,
+        "total_incremental_distance": 0.0,
+        "winner_change_total": 0
+      },
+      "structural_low": {
+        "count": 50,
+        "material_count": 0,
+        "mean_incremental_distance": 0.0038103345764355506,
+        "total_incremental_distance": 0.19051672882177753,
+        "winner_change_total": 0
+      }
+    },
+    "empty_payload_count": 50,
+    "material_count": 100,
+    "max_empty_payload_distance": 0.0,
+    "total": 8.760471375659584
+  },
+  "matched_control": {
+    "empty_payload_smoke_distance": 0.0,
+    "historical_emotion_payload_applied": false,
+    "positive_payload_smoke_distance": 0.12569269479073644,
+    "same_agent": true,
+    "same_attention_path": true,
+    "same_continuity_recall_path": true,
+    "same_dimension": true,
+    "same_episode_id": true,
+    "same_lookup_status": true,
+    "same_retrieval_strength": true
+  },
+  "next_falsification_target": "TEST PAYLOAD-STUB REPRESENTATION: RETAIN CHEAP EPISODE ID/AGENT/DIMENSION FOR MATCHED GENERIC RECALL WHILE KEEPING FULL HISTORICAL PAYLOAD ONLY FOR THE CORRECTED ORACLE-SIZED TIER; EXTERNAL EXACT ARCHIVE REMAINS SAFETY BASELINE",
+  "non_claims": [
+    "The matched generic control is a research ablation using a pinned private production helper; it is not a public API proposal.",
+    "This isolates full historical emotion-payload value but does not solve bounded exact episode-ID membership.",
+    "The oracle uses measured future value and is not implementable as a production selector.",
+    "The balanced Stage-6 workload is not yet a narrative/causal host-task replication.",
+    "No production retention or stub policy is authorized by Phase 1W alone."
+  ],
+  "oracle": {
+    "first_tested_oracle_sufficient_budget": 128,
+    "min_full_payloads_95_both": 96,
+    "min_full_payloads_95_material": 95,
+    "min_full_payloads_95_value": 96,
+    "post_hoc_upper_bound_only": true
+  },
+  "phase": "1W",
+  "phase1v_autopsy": {
+    "all_material_degeneracy_confirmed": true,
+    "capacity_classification_accepted": false,
+    "prior_material_count": 256,
+    "prior_min_records_95_both": 244,
+    "prior_min_records_95_material": 244,
+    "prior_total_candidates": 256,
+    "reason": "The global recall-floor method classified every Phase-1V episode as material, making the 244-record material floor tautological."
+  },
+  "phase1v_evidence_file": "/storage/emulated/0/Download/PHASE1V_ORACLE_RETENTION_20261001_194846.zip",
+  "phase1v_evidence_sha256": "e3687feead1fcadecc91a2a9b73da2ed664c9e3249a21e867f1e081161b53843",
+  "production_mutation": false,
+  "required_head": "37e80da4bf081ff01d176fb446534754bc465533",
+  "selector_classification": "SELECTOR_GAP_REMAINS_AGAINST_CORRECTED_ORACLE",
+  "selector_comparison": [
+    {
+      "budget": 32,
+      "diverse_material_fraction": 0.23,
+      "diverse_material_gap_to_oracle": 0.09,
+      "diverse_meets_95pct": false,
+      "diverse_value_efficiency_vs_oracle": 0.49740398217336634,
+      "diverse_value_fraction": 0.1998110317086912,
+      "oracle_material_fraction": 0.32,
+      "oracle_meets_95pct": false,
+      "oracle_value_fraction": 0.40170774434823203
+    },
+    {
+      "budget": 64,
+      "diverse_material_fraction": 0.45,
+      "diverse_material_gap_to_oracle": 0.19,
+      "diverse_meets_95pct": false,
+      "diverse_value_efficiency_vs_oracle": 0.544257172546433,
+      "diverse_value_fraction": 0.3837566408041394,
+      "oracle_material_fraction": 0.64,
+      "oracle_meets_95pct": false,
+      "oracle_value_fraction": 0.7051016691404272
+    },
+    {
+      "budget": 128,
+      "diverse_material_fraction": 0.63,
+      "diverse_material_gap_to_oracle": 0.37,
+      "diverse_meets_95pct": false,
+      "diverse_value_efficiency_vs_oracle": 0.561990191228628,
+      "diverse_value_fraction": 0.5572345951614054,
+      "oracle_material_fraction": 1.0,
+      "oracle_meets_95pct": true,
+      "oracle_value_fraction": 0.9915379375984732
+    },
+    {
+      "budget": 192,
+      "diverse_material_fraction": 0.73,
+      "diverse_material_gap_to_oracle": 0.27,
+      "diverse_meets_95pct": false,
+      "diverse_value_efficiency_vs_oracle": 0.6818884677318032,
+      "diverse_value_fraction": 0.6818884677318032,
+      "oracle_material_fraction": 1.0,
+      "oracle_meets_95pct": true,
+      "oracle_value_fraction": 1.0
+    },
+    {
+      "budget": 250,
+      "diverse_material_fraction": 1.0,
+      "diverse_material_gap_to_oracle": 0.0,
+      "diverse_meets_95pct": true,
+      "diverse_value_efficiency_vs_oracle": 1.0,
+      "diverse_value_fraction": 1.0,
+      "oracle_material_fraction": 1.0,
+      "oracle_meets_95pct": true,
+      "oracle_value_fraction": 1.0
+    }
+  ],
+  "workload": {
+    "budgets": [
+      32,
+      64,
+      128,
+      192,
+      250
+    ],
+    "classes": [
+      "no_payload_structural",
+      "joy_decoy",
+      "affect_only",
+      "structural_low",
+      "combined"
+    ],
+    "events": 250,
+    "events_per_class": 50,
+    "material_incremental_distance": 0.015,
+    "restart_at": 125,
+    "retrieval_strength": 0.9,
+    "sufficiency": 0.95
+  }
+}

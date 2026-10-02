@@ -1,0 +1,74 @@
+{
+  "baseline": {
+    "current_production_bytes": 90112,
+    "episodes": 250,
+    "manifest": {
+      "archive_schema": "ghost.causal_episode_archive.v1",
+      "content_digest": "a9b5364c39f0bf59c46e7f7476252ea60576d916bf88ed0f6620512567eda8a1",
+      "record_count": 250,
+      "schema": "ghost.causal_episode_archive_manifest.v1"
+    },
+    "restart_exact": true
+  },
+  "classification": "HYBRID_PAYLOAD_STUB_REPRESENTATION_VALIDATED_RESEARCH_ONLY",
+  "integrity": {
+    "deterministic_rebuild": true,
+    "full_payload_tamper_detected": true,
+    "stub_identity_tamper_detected": true
+  },
+  "next_falsification_target": "ONLINE FULL-PAYLOAD SELECTION SIGNALS AGAINST THE PHASE1W ORACLE; THEN STUB-LIFECYCLE/EXTERNALIZATION ADJUDICATION BECAUSE EXACT ID STUBS STILL GROW WITH DISTINCT EPISODES",
+  "non_claims": [
+    "Phase 1X does not validate an online selector; the 128 full IDs are post-hoc oracle-selected from Phase 1W.",
+    "Exact ID stubs still grow with the number of distinct episodes, so the hybrid representation reduces bytes but does not by itself prove bounded total durable history.",
+    "The research hybrid archive is read-only after construction and is not a crash-atomic production write design.",
+    "No public API or production persistence contract is changed by this experiment."
+  ],
+  "parity": {
+    "full_ids_exact": 128,
+    "full_ids_tested": 128,
+    "max_full_behavior_distance": 0.0,
+    "max_stub_behavior_distance": 0.0,
+    "restart_cycles": 5,
+    "stub_ids_exact": 122,
+    "stub_ids_tested": 122
+  },
+  "phase": "1X",
+  "phase1w_evidence_file": "/storage/emulated/0/Download/PHASE1W_EXACT_EPISODE_INCREMENTAL_20261001_215321.zip",
+  "phase1w_evidence_sha256": "88057ad0b43bf9a52c0cc26cc9a7cc7911371063ca0ce851c7872a0650cf7330",
+  "production_mutation": false,
+  "representation": {
+    "codec": "canonical-json+zlib6",
+    "exact_id_membership_retained_for_all": true,
+    "full_tier": 128,
+    "full_tier_selection": "post_hoc_phase1w_oracle_representation_test_only",
+    "schema": "ghost.research.hybrid_episode_archive.v1",
+    "stub_fields": [
+      "episode_id",
+      "agent",
+      "dimension"
+    ],
+    "stub_runtime_emotion_profile": {},
+    "total_stub_membership_temporally_bounded": false
+  },
+  "required_head": "37e80da4bf081ff01d176fb446534754bc465533",
+  "semantic_gates": {
+    "deterministic_rebuild": true,
+    "episode_id_membership_250_exact": true,
+    "full_payload_tamper_detected": true,
+    "full_tier_128_exact_recall": true,
+    "restart_exact": true,
+    "stub_identity_tamper_detected": true,
+    "stub_tier_122_matches_generic": true
+  },
+  "storage": {
+    "compressed_full_250_bytes": 98304,
+    "current_production_bytes": 90112,
+    "hybrid_128_bytes": 73728,
+    "hybrid_128_ratio_to_compressed_full": 0.75,
+    "hybrid_128_ratio_to_production": 0.8181818181818182,
+    "hybrid_96_bytes": 65536,
+    "hybrid_96_ratio_to_production": 0.7272727272727273,
+    "stub_only_250_bytes": 45056,
+    "stub_only_ratio_to_production": 0.5
+  }
+}

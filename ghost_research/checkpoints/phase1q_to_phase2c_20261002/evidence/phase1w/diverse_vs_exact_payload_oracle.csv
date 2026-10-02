@@ -1,0 +1,6 @@
+budget,oracle_value_fraction,oracle_material_fraction,oracle_meets_95pct,diverse_value_fraction,diverse_material_fraction,diverse_meets_95pct,diverse_value_efficiency_vs_oracle,diverse_material_gap_to_oracle
+32,0.40170774434823203,0.32,False,0.1998110317086912,0.23,False,0.49740398217336634,0.09
+64,0.7051016691404272,0.64,False,0.3837566408041394,0.45,False,0.544257172546433,0.19
+128,0.9915379375984732,1.0,True,0.5572345951614054,0.63,False,0.561990191228628,0.37
+192,1.0,1.0,True,0.6818884677318032,0.73,False,0.6818884677318032,0.27
+250,1.0,1.0,True,1.0,1.0,True,1.0,0.0

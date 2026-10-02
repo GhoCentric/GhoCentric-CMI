@@ -1,0 +1,50 @@
+GHOCENTRIC CMI — PHASE 1R BOUNDED CAUSAL-HISTORY LIFECYCLE ADJUDICATION
+==============================================================================
+required_head=37e80da4bf081ff01d176fb446534754bc465533
+phase1q_evidence_sha256=211fe5a86c5f63fab67b6ced1580728cd72d2264855d9e54e37578e645438b3d
+classification=NO_TESTED_CURRENT_CONTRACT_BOUNDED_EXACT_CANDIDATE
+viable_candidates=NONE
+
+[bounded_tail_commit]
+current_contract_exact=False
+restart_exact=False
+tamper_detected=True
+temporally_bounded_total=True
+recent_tail_exact=True
+oldest_episode_exact=False
+bytes_256=29731
+bytes_1024=29893
+bytes_4096=30119
+growth_256_to_4096=1.013050
+
+[full_lossless_compressed]
+current_contract_exact=True
+restart_exact=True
+tamper_detected=True
+temporally_bounded_total=False
+recent_tail_exact=True
+oldest_episode_exact=True
+bytes_256=29324
+bytes_1024=115789
+bytes_4096=462405
+growth_256_to_4096=15.768824
+
+[tiered_lossless]
+current_contract_exact=True
+restart_exact=True
+tamper_detected=True
+temporally_bounded_total=False
+recent_tail_exact=True
+oldest_episode_exact=True
+bytes_256=58938
+bytes_1024=178314
+bytes_4096=656910
+growth_256_to_4096=11.145780
+
+CONTRACT CONSTRAINT
+Exact arbitrary historical reconstruction over an unbounded stream of potentially distinct episode records requires information that grows with the stream unless old exact information is externalized or the recall contract is explicitly bounded/relaxed.
+
+NEXT
+LIFECYCLE CONTRACT ADJUDICATION: exact-forever vs finite exact horizon + commitment vs explicitly externalized archival tier
+
+Production mutation: NONE

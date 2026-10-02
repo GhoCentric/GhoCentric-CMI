@@ -1,0 +1,29 @@
+{
+  "exact_tombstones": {
+    "bytes": 81920,
+    "expired_vs_never_existed_exactly_distinguishable": true,
+    "growth": "monotonic with distinct expired IDs",
+    "records": 1472
+  },
+  "expired_ids": 1472,
+  "external_exact_archive": {
+    "evidence": "Phase 1S already demonstrated exact external archive parity and bounded active tier.",
+    "exact_expired_status_possible": true,
+    "total_storage_bounded": false
+  },
+  "fixed_bloom_hint": {
+    "bits": 16384,
+    "bytes": 2048,
+    "empirical_false_positive_rate": 0.0043,
+    "exact_expired_status": false,
+    "false_negatives": 0,
+    "false_positives_on_10000_never_ids": 43,
+    "hashes": 7,
+    "theoretical_false_positive_rate": 0.0048314898634170865
+  },
+  "plain_bounded_archive": {
+    "expired_vs_never_existed_exactly_distinguishable": false,
+    "reason": "Both absent IDs resolve to the same missing/KeyError path without additional membership state."
+  },
+  "representative_policy": "diverse_64"
+}

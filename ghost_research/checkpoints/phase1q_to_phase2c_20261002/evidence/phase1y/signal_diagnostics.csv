@@ -1,0 +1,9 @@
+selector,pearson_value,material_auc
+recency,0.009763437792016936,0.5066666666666667
+payload_all_l1,0.35202471428041865,0.6666666666666666
+payload_relevant_l1,0.9723580396894959,1.0
+payload_relevant_max,0.9723580396894959,1.0
+actual_relevant_emotion_delta_l1,0.9570833581024332,1.0
+host_emotion_projection,0.9395964762118933,1.0
+event_total_behavior_delta,0.8201689657270496,0.8912
+novelty_weighted_host_projection,0.932958377532247,1.0

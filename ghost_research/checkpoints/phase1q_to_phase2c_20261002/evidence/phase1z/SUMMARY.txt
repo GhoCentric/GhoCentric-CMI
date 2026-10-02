@@ -1,0 +1,31 @@
+GHOCENTRIC CMI — PHASE 1Z FROZEN SELECTOR CROSS-WORKLOAD REPLICATION
+================================================================================
+required_head=37e80da4bf081ff01d176fb446534754bc465533
+phase1y_evidence_sha256=58096c4620e9015474768ba0e9563a6bd0bfdf1cd23074673197b75f733c577f
+feature_table_sha256=7c6252474122e4c1c26ebb5f8f2e42fa855a9ee0554360e4bb068a7d9ec3291c
+selection_packet_sha256=7fcb90b4e7af0ea607491d2310f64c0d0bff5152f694072ca6c6a436ac68e1b4
+future_label_table_sha256=0850fcb7053787fd410a398e4323044a41b8d553453a8c616b9f89a8cf12ee39
+events=240
+material_count=160
+total_future_value=18.927997875
+oracle_min_95_value=119
+oracle_min_95_material=152
+oracle_min_95_both=152
+
+CLASS STATS
+positive_core: mean_value=0.212651479 material=40/40 mean_l1=1.050000000 mean_projection=0.179361745
+negative_decoy: mean_value=0.000000004 material=0/40 mean_l1=1.050000000 mean_projection=0.153107689
+mixed_conflict: mean_value=0.129453597 material=40/40 mean_l1=0.970000000 mean_projection=0.122460322
+joy_noise: mean_value=0.000000000 material=0/40 mean_l1=0.000000000 mean_projection=0.000000000
+low_relevant: mean_value=0.021094459 material=40/40 mean_l1=0.080000000 mean_projection=0.022261155
+positive_counter: mean_value=0.110000409 material=40/40 mean_l1=0.672500000 mean_projection=0.102547218
+
+BUDGET 128
+payload_relevant_l1: value=0.772924496 material=0.550000000 gate=False
+host_emotion_projection: value=0.762177898 material=0.550000000 gate=False
+recency: value=0.493721745 material=0.537500000 gate=False
+
+CLASSIFICATION=NEW_WORKLOAD_CAPACITY_FLOOR_EXCEEDS_VALIDATED_128_TIER
+NEXT=REPLICATE THE NEW ORACLE CAPACITY FLOOR BEFORE BLAMING ONLINE SELECTION; DO NOT TUNE SELECTOR OR MUTATE PRODUCTION
+
+Production mutation: NONE

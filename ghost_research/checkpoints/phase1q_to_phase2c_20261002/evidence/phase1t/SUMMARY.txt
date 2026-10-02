@@ -1,0 +1,33 @@
+GHOCENTRIC CMI — PHASE 1T EPISODIC RETENTION VALUE CURVE
+========================================================================
+required_head=37e80da4bf081ff01d176fb446534754bc465533
+phase1s_evidence_sha256=97d7fe6d2ab0a536eab26618bfc46f8ad83dfbcd6e0e36f739f37b9942aeefac
+events=1024
+targets=18
+material_targets=18
+total_behavior_distance_value=7.809401454
+proxy_value_pearson=0.813945033
+
+POLICIES
+adaptive_64: budget=64 value=1.000000 material=1.000000 targets=18/18 high=6/6 bytes=36864 ratio=0.140625
+fixed_64: budget=64 value=0.145909 material=0.166667 targets=3/18 high=1/6 bytes=36864 ratio=0.140625
+adaptive_128: budget=128 value=1.000000 material=1.000000 targets=18/18 high=6/6 bytes=57344 ratio=0.218750
+fixed_128: budget=128 value=0.343797 material=0.333333 targets=6/18 high=2/6 bytes=53248 ratio=0.203125
+adaptive_256: budget=256 value=1.000000 material=1.000000 targets=18/18 high=6/6 bytes=90112 ratio=0.343750
+fixed_256: budget=256 value=0.500000 material=0.500000 targets=9/18 high=3/6 bytes=90112 ratio=0.343750
+fixed_512: budget=512 value=0.645909 material=0.666667 targets=12/18 high=4/6 bytes=147456 ratio=0.562500
+
+smallest_fixed_meeting_95pct=NONE
+smallest_adaptive_meeting_95pct=adaptive_64
+adaptive128_minus_fixed512_value_fraction=0.354091254
+
+CLASSIFICATION=ADAPTIVE_RETENTION_EARNS_NEXT_CANDIDATE
+NEXT=ADVERSARIAL ADAPTIVE-RETENTION VALIDATION + EXPIRED-ID SEMANTICS; NO PRODUCTION MUTATION YET
+
+EXPIRED-ID SEMANTICS
+A fixed-size whole-history digest cannot exactly distinguish an expired
+episode_id from an id that never existed. Exact EXPIRED semantics therefore
+needs an exact membership index, an external exact archive/index, or a
+caller-supplied verifiable proof.
+
+Production mutation: NONE
