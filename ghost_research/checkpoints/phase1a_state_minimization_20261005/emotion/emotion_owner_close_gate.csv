@@ -1,0 +1,9 @@
+criterion,status,basis
+Every discovered persisted field has a documented ownership classification supported by F1 evidence or explicit source/public/persistence contract.,PASS,F1 13-field classifications + frozen candidate authority/reconstruction mapping
+A simplest credible replacement is either validated under F2-F6 or explicitly rejected by evidence.,PASS,emotion_split_sparse_v2 was tested through F2-F6 and is explicitly rejected for production by F6 resource evidence
+Restart and supported-schema semantics are adjudicated.,PASS,F3 v2 exact current/legacy snapshot-restart-migration equivalence
+Downstream host decisions are adjudicated prospectively for any candidate that changes authoritative state.,PASS,F4 prospective emotion-sensitive host-decision equivalence
+Long-horizon and bounded-history semantics are adjudicated.,PASS,F5 exact long-horizon and bounded-history equivalence through 16H
+Persistence/resource claims are measured with frozen methods.,PASS,F6 persistence exactness + frozen storage/timing/peak-memory measurement
+An explicit Phase-1 emotion ownership/minimization evidence record is written.,PASS,this exact emotion ownership/minimization closure evidence record
+Production remains unchanged unless a later guarded production patch separately passes all required gates.,PASS,all evidence runs and this adjudication report production_mutation=NONE

@@ -1,0 +1,10 @@
+roadmap_1a_category,status
+owned state,PASS
+mutation inputs,PASS
+causal consumers,PASS
+invariants,PASS
+persistence footprint,PASS
+restart requirements,PASS
+current evidence,PASS
+simplest credible replacement,PASS
+prospective falsifier,PASS

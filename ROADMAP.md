@@ -49,6 +49,22 @@ This is the immediate next phase.
 
 ## 1A. State-minimization audit
 
+> **Status — COMPLETE (2026-10-05).**
+>
+> All eight subsystem owner/minimization records are closed. The emotion audit
+> rejected the current `emotion_split_sparse_v2` production replacement on the
+> frozen resource ship boundary despite semantic/persistence equivalence. The
+> causal/history audit supports bounded runtime/cache state over an expanding
+> authoritative external exact-history archive as a **research-only**
+> architecture; it does not authorize production implementation.
+>
+> Evidence checkpoint:
+> `ghost_research/checkpoints/phase1a_state_minimization_20261005/`.
+>
+> This closes **1A only**. Roadmap **1D remains partial**, the overall Phase 1
+> exit is **not met**, and the next ordered target is **1B Core/schema
+> separation**.
+
 Audit every major subsystem:
 
 ```text

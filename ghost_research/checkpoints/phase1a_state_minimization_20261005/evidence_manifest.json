@@ -1,0 +1,61 @@
+{
+  "committed_files": [
+    {
+      "bytes": 1320,
+      "path": "causal_history/ROADMAP_1A_CAUSAL_HISTORY_OWNER_CLOSURE.md",
+      "sha256": "a0027ed35f2e5fc520873c3834348324c588980f9cc33d082c62c648a504437a"
+    },
+    {
+      "bytes": 240,
+      "path": "causal_history/causal_history_1a_checklist.csv",
+      "sha256": "f06b7497515349d8b915b3a165d977f291864ec351340012043002654d8d609f"
+    },
+    {
+      "bytes": 13688,
+      "path": "causal_history/causal_history_phase1a_owner_record.json",
+      "sha256": "29458065b203e521fa956ac2282211cdedf15606694862ac96a622d85a7b70e0"
+    },
+    {
+      "bytes": 1770,
+      "path": "emotion/ROADMAP_1A_EMOTION_OWNER_CLOSURE.md",
+      "sha256": "847839650fbed776da8f25d228d72ae5357f3ea413df819fb74535629587d3a3"
+    },
+    {
+      "bytes": 1380,
+      "path": "emotion/emotion_owner_close_gate.csv",
+      "sha256": "290439b1f6efc378a103303309663b22fafb4c5262704cae631552e187d62d79"
+    },
+    {
+      "bytes": 23012,
+      "path": "emotion/emotion_phase1a_owner_record.json",
+      "sha256": "54597ebd7fbb6086c69d6801be89e404fe8ab786dbb5b9c7d072ee27b5090050"
+    },
+    {
+      "bytes": 1411,
+      "path": "emotion/emotion_ship_gate_matrix.csv",
+      "sha256": "ddc08cd3422ad47b00bcf5a66793d14ed9a3eb58846b8f3615bd6a72a3146d13"
+    },
+    {
+      "bytes": 662,
+      "path": "evidence_index.csv",
+      "sha256": "7d0ff7d64937fb09e4e58b0c17914000342223b7a635d611a969b85395db4526"
+    }
+  ],
+  "external_evidence": [
+    {
+      "closure_evidence_zip_sha256": "db0e07b4ffe4ead8c59a342f3b3f1c69b1a7f0090e7a26f512d0d6b175aff36b",
+      "owner": "emotion",
+      "owner_record_sha256": "a7e8a3636797d08327d4eb6a7d8813bb20cf76e43ba6d95f7205996aef81a478",
+      "source_filename": "PHASE1A_EMOTION_OWNER_CLOSURE_20261005_095715.zip"
+    },
+    {
+      "closure_evidence_zip_sha256": "3b319346e36d968b3720bc9277065d3f88afb71ed73d5c27758551a3dfaa6627",
+      "owner": "causal/history storage",
+      "owner_record_sha256": "af54b57aadf750d30ec26163c578a9862d51a044ad6d7eb536507f3049000972",
+      "source_filename": "PHASE1A_CAUSAL_HISTORY_OWNER_CLOSURE_20261005_101824.zip"
+    }
+  ],
+  "parent_head": "155d4908bf1f53225702de00f782408deb71c715",
+  "raw_binary_evidence_committed": false,
+  "schema": "ghocentric.research_checkpoint.phase1a.evidence-manifest.v1"
+}

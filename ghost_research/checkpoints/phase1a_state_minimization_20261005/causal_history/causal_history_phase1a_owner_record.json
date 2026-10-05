@@ -1,0 +1,285 @@
+{
+  "causal_history_owner_status": "COMPLETE",
+  "checkpoint": "phase1q_to_phase2c_20261002",
+  "checkpoint_blobs": {
+    "ghost_research/checkpoints/phase1q_to_phase2c_20261002/README.md": "9d0fe808b4a9f9e9c207861d2b48d7913c68a723",
+    "ghost_research/checkpoints/phase1q_to_phase2c_20261002/checkpoint_metadata.json": "b2bd78307511e92f34943b4297c1c4c9a12a3bfb",
+    "ghost_research/checkpoints/phase1q_to_phase2c_20261002/evidence/phase2c/adjudication.json": "d4aa75e4153bb121bd5849a4ac7b1afc5fd9b264",
+    "ghost_research/checkpoints/phase1q_to_phase2c_20261002/evidence_index.csv": "47f333058addacce038ff675eb6237411a02a5e8",
+    "ghost_research/checkpoints/phase1q_to_phase2c_20261002/evidence_manifest.json": "9017eabb758f5489cf96e1c4c390bc0d7ddc2fba"
+  },
+  "classification": "CAUSAL_HISTORY_PHASE1A_OWNER_CLOSED_BOUNDED_RUNTIME_EXTERNAL_AUTHORITATIVE_HISTORY_RESEARCH_ONLY",
+  "derived_subsystem_counts_after": {
+    "complete": 8,
+    "partial": 0
+  },
+  "documentation": {
+    "causal_consumers": {
+      "exact_historical_recall_contract": "arbitrary historical exact reconstruction/ambiguity semantics require retained exact information",
+      "live_continuity_separation": "1S/checkpoint evidence isolates the unbounded requirement to historical recall rather than hot live continuity",
+      "routed_recall_behavior": "2B exact routed record/state/behavior parity"
+    },
+    "current_evidence": {
+      "1Q": {
+        "classification": "PHASE1D_CAUSAL_EPISODE_LIFECYCLE_GAP_CONFIRMED",
+        "evidence_zip_sha256": "211fe5a86c5f63fab67b6ced1580728cd72d2264855d9e54e37578e645438b3d",
+        "source_filename": "PHASE1Q_DIAGNOSTIC_20261001_172750.zip"
+      },
+      "1R": {
+        "classification": "NO_TESTED_CURRENT_CONTRACT_BOUNDED_EXACT_CANDIDATE",
+        "evidence_zip_sha256": "d816065623443b86308798837dacc698405bf8d38fcf04eccda69d7d23495447",
+        "source_filename": "PHASE1R_BOUNDED_LIFECYCLE_20261001_173947.zip"
+      },
+      "1S": {
+        "classification": "LIFECYCLE_GAP_CONTAINED_TO_HISTORICAL_RECALL_CONTRACT",
+        "evidence_zip_sha256": "97d7fe6d2ab0a536eab26618bfc46f8ad83dfbcd6e0e36f739f37b9942aeefac",
+        "source_filename": "PHASE1S_LIFECYCLE_CONTRACT_20261001_184539.zip"
+      },
+      "1T": {
+        "classification": "ADAPTIVE_RETENTION_EARNS_NEXT_CANDIDATE",
+        "evidence_zip_sha256": "aa519da928662fe84c646ceda5a70fe2f5d40f060eab822a45a3095a67b6f9ad",
+        "source_filename": "PHASE1T_RETENTION_VALUE_20261001_191541.zip"
+      },
+      "1U": {
+        "classification": "ADAPTIVE_RETENTION_NOT_YET_JUSTIFIED_UNDER_ADVERSARIAL_WORKLOAD",
+        "evidence_zip_sha256": "6e0698a9ceb181bda08371b81f60bc927b4304c38c62026d12371b9e2b032123",
+        "source_filename": "PHASE1U_ADVERSARIAL_RETENTION_20261001_193348.zip"
+      },
+      "1V": {
+        "classification": "CAPACITY_FLOOR_ABOVE_128_CONFIRMED_SELECTOR_NEAR_ORACLE_AT_VIABLE_BUDGET",
+        "evidence_zip_sha256": "e3687feead1fcadecc91a2a9b73da2ed664c9e3249a21e867f1e081161b53843",
+        "source_filename": "PHASE1V_ORACLE_RETENTION_20261001_194846.zip"
+      },
+      "1W": {
+        "classification": "MIDRANGE_EXACT_PAYLOAD_TIER_SUFFICIENT_IN_PRINCIPLE__SELECTOR_GAP_REMAINS_AGAINST_CORRECTED_ORACLE",
+        "evidence_zip_sha256": "88057ad0b43bf9a52c0cc26cc9a7cc7911371063ca0ce851c7872a0650cf7330",
+        "source_filename": "PHASE1W_EXACT_EPISODE_INCREMENTAL_20261001_215321.zip"
+      },
+      "1X": {
+        "classification": "HYBRID_PAYLOAD_STUB_REPRESENTATION_VALIDATED_RESEARCH_ONLY",
+        "evidence_zip_sha256": "42028a56684cc5d52821ef4ac86ab619681febe17c7acc4a4a49025935716129",
+        "source_filename": "PHASE1X_HYBRID_PAYLOAD_STUB_20261001_231157.zip"
+      },
+      "1Y": {
+        "classification": "PREDECLARED_ONLINE_SIGNAL_REACHES_VALIDATED_128_TIER_CONTROLLED_ONLY",
+        "evidence_zip_sha256": "58096c4620e9015474768ba0e9563a6bd0bfdf1cd23074673197b75f733c577f",
+        "source_filename": "PHASE1Y_ONLINE_PAYLOAD_SIGNALS_20261002_005213.zip"
+      },
+      "1Z": {
+        "classification": "NEW_WORKLOAD_CAPACITY_FLOOR_EXCEEDS_VALIDATED_128_TIER",
+        "evidence_zip_sha256": "b9349d485111eef16fed621bba785b8e98c5e3b91ea0aab71030794775ae33ec",
+        "source_filename": "PHASE1Z_FROZEN_SELECTOR_REPLICATION_20261002_010815.zip"
+      },
+      "2A": {
+        "classification": "FULL_PAYLOAD_VALUE_DEMAND_SCALES_WITH_HISTORY_AND_MATERIAL_DENSITY",
+        "evidence_zip_sha256": "7039ae52ccfa93303453690ff796a2a753355d60eabf0b3428f1242c48e13ef4",
+        "source_filename": "PHASE2A_FULL_PAYLOAD_CAPACITY_SCALING_20261002_012536.zip"
+      },
+      "2B": {
+        "classification": "BOUNDED_LOCAL_RUNTIME_WITH_EXPANDING_EXTERNAL_EXACT_HISTORY_VALIDATED_RESEARCH_ONLY",
+        "evidence_zip_sha256": "c34babd0096043a8833a6dfabb82cf8d63920defd12a03c5d4747a3cc2382aad",
+        "source_filename": "PHASE2B_TIERED_EXTERNAL_ARCHIVE_20261002_015245.zip"
+      },
+      "2C": {
+        "classification": "AUTHORITATIVE_EXTERNAL_HISTORY_WITH_CRASH_ATOMIC_BOUNDED_CACHE_VALIDATED_RESEARCH_ONLY",
+        "evidence_zip_sha256": "26fc334245e9c533b04147e4e3348949acedcf49d6db32e2ef3d67f4bc82ee3a",
+        "source_filename": "PHASE2C_CACHE_CRASH_ATOMICITY_20261002_024516.zip"
+      }
+    },
+    "invariants": {
+      "authoritative_exact_history": "2C external exact archive",
+      "cache_crash_atomicity": "14/14 process-death trials; 0 torn states",
+      "cache_loss_recovery": "3/3 exact post-rebuild recall probes",
+      "cache_reconstructible": true,
+      "identity_integrity": "1Q guarded episode identity/manifest pairing/per-record integrity",
+      "no_silent_loss": "1Q explicit capacity is fail-closed backpressure"
+    },
+    "mutation_inputs": {
+      "concurrent_multi_process_cache_mutation": "UNRESOLVED_FOR_PRODUCTION",
+      "new_event_multi_store_ingestion_atomicity": "UNRESOLVED_FOR_PRODUCTION",
+      "production_source_policy": "append-only unless explicit capacity refuses a new record",
+      "research_cache_mutations": "promotion/demotion over bounded non-authoritative cache"
+    },
+    "owned_state": {
+      "bounded_local_full_cache": 128,
+      "bounded_optional_stub_cache": 128,
+      "cache_authoritative": false,
+      "production_current_policy": [
+        "causal episodes are externally durable and append-only under current source",
+        "default max_records is None",
+        "1024/1024 default records retained exactly through reopen",
+        "explicit capacity is fail-closed backpressure and does not evict",
+        "hot snapshot excludes causal episode payloads",
+        "hot snapshot boundedness does not bound the durable archive",
+        "episode identity, manifest pairing, and per-record integrity are guarded"
+      ],
+      "research_authoritative_owner": "external exact archive",
+      "stub_required_for_correctness": false
+    },
+    "persistence_footprint": {
+      "2B_hot_snapshot_ratio_max_min": 1.0,
+      "2B_local_storage_ratio_max_min": 1.0,
+      "external_exact_history": "expanding authoritative archive",
+      "hot_runtime": "bounded",
+      "local_full_cache_records": 128,
+      "local_stub_cache_records": 128,
+      "total_historical_storage_bounded": false
+    },
+    "prospective_falsifier": {
+      "current_candidate_falsification_status": "bounded local / authoritative external architecture survived the frozen 2B/2C research tests",
+      "phase1v_global_floor_allowed_as_evidence": false,
+      "production_promotion_requires": [
+        "second genuinely different host/task replication",
+        "production-safe new-event ingestion ordering/atomicity",
+        "concurrent/multi-process cache mutation semantics",
+        "external archive segmentation/compaction and very-long-horizon lifecycle",
+        "public external-recall path without private research helper dependence"
+      ]
+    },
+    "restart_requirements": {
+      "2B_restart_exact": true,
+      "2C_process_death_trials": 14,
+      "2C_torn_states": 0,
+      "cache_is_disposable": true,
+      "external_archive_must_remain_authoritative": true
+    },
+    "simplest_credible_replacement": {
+      "architecture": [
+        "bounded hot continuity state",
+        "bounded local full-payload cache",
+        "bounded optional stub cache",
+        "expanding authoritative external exact-history archive"
+      ],
+      "status": "VALIDATED_RESEARCH_ONLY_NOT_AUTHORIZED_FOR_PRODUCTION_IMPLEMENTATION",
+      "stubs_required_for_correctness": false,
+      "why_external_exact_history": "FULL_PAYLOAD_VALUE_DEMAND_SCALES_WITH_HISTORY_AND_MATERIAL_DENSITY",
+      "why_not_fixed_local_exact_history": "Exact arbitrary historical reconstruction over an unbounded stream of potentially distinct episode records requires information that grows with the stream unless old exact information is externalized or the recall contract is explicitly bounded/relaxed."
+    }
+  },
+  "emotion_owner_closure_evidence_sha256": "db0e07b4ffe4ead8c59a342f3b3f1c69b1a7f0090e7a26f512d0d6b175aff36b",
+  "evidence_zip_chain": [
+    {
+      "filename": "PHASE1Q_DIAGNOSTIC_20261001_172750.zip",
+      "phase": "1Q",
+      "sha256": "211fe5a86c5f63fab67b6ced1580728cd72d2264855d9e54e37578e645438b3d"
+    },
+    {
+      "filename": "PHASE1R_BOUNDED_LIFECYCLE_20261001_173947.zip",
+      "phase": "1R",
+      "sha256": "d816065623443b86308798837dacc698405bf8d38fcf04eccda69d7d23495447"
+    },
+    {
+      "filename": "PHASE1S_LIFECYCLE_CONTRACT_20261001_184539.zip",
+      "phase": "1S",
+      "sha256": "97d7fe6d2ab0a536eab26618bfc46f8ad83dfbcd6e0e36f739f37b9942aeefac"
+    },
+    {
+      "filename": "PHASE1T_RETENTION_VALUE_20261001_191541.zip",
+      "phase": "1T",
+      "sha256": "aa519da928662fe84c646ceda5a70fe2f5d40f060eab822a45a3095a67b6f9ad"
+    },
+    {
+      "filename": "PHASE1U_ADVERSARIAL_RETENTION_20261001_193348.zip",
+      "phase": "1U",
+      "sha256": "6e0698a9ceb181bda08371b81f60bc927b4304c38c62026d12371b9e2b032123"
+    },
+    {
+      "filename": "PHASE1V_ORACLE_RETENTION_20261001_194846.zip",
+      "phase": "1V",
+      "sha256": "e3687feead1fcadecc91a2a9b73da2ed664c9e3249a21e867f1e081161b53843"
+    },
+    {
+      "filename": "PHASE1W_EXACT_EPISODE_INCREMENTAL_20261001_215321.zip",
+      "phase": "1W",
+      "sha256": "88057ad0b43bf9a52c0cc26cc9a7cc7911371063ca0ce851c7872a0650cf7330"
+    },
+    {
+      "filename": "PHASE1X_HYBRID_PAYLOAD_STUB_20261001_231157.zip",
+      "phase": "1X",
+      "sha256": "42028a56684cc5d52821ef4ac86ab619681febe17c7acc4a4a49025935716129"
+    },
+    {
+      "filename": "PHASE1Y_ONLINE_PAYLOAD_SIGNALS_20261002_005213.zip",
+      "phase": "1Y",
+      "sha256": "58096c4620e9015474768ba0e9563a6bd0bfdf1cd23074673197b75f733c577f"
+    },
+    {
+      "filename": "PHASE1Z_FROZEN_SELECTOR_REPLICATION_20261002_010815.zip",
+      "phase": "1Z",
+      "sha256": "b9349d485111eef16fed621bba785b8e98c5e3b91ea0aab71030794775ae33ec"
+    },
+    {
+      "filename": "PHASE2A_FULL_PAYLOAD_CAPACITY_SCALING_20261002_012536.zip",
+      "phase": "2A",
+      "sha256": "7039ae52ccfa93303453690ff796a2a753355d60eabf0b3428f1242c48e13ef4"
+    },
+    {
+      "filename": "PHASE2B_TIERED_EXTERNAL_ARCHIVE_20261002_015245.zip",
+      "phase": "2B",
+      "sha256": "c34babd0096043a8833a6dfabb82cf8d63920defd12a03c5d4747a3cc2382aad"
+    },
+    {
+      "filename": "PHASE2C_CACHE_CRASH_ATOMICITY_20261002_024516.zip",
+      "phase": "2C",
+      "sha256": "26fc334245e9c533b04147e4e3348949acedcf49d6db32e2ef3d67f4bc82ee3a"
+    }
+  ],
+  "head": "155d4908bf1f53225702de00f782408deb71c715",
+  "owner_record_sha256": "af54b57aadf750d30ec26163c578a9862d51a044ad6d7eb536507f3049000972",
+  "phase1v_global_floor_status": "INVALID_NOT_ARCHITECTURAL_EVIDENCE",
+  "predecessor_roadmap_audit_sha256": "afc3fd52c4f79ae96997ab7676fb59d6a1ad90eafc1af95e3937ed66e78fc1be",
+  "production_mutation": false,
+  "research_architecture_status": "VALIDATED_RESEARCH_ONLY_PRODUCTION_IMPLEMENTATION_NOT_AUTHORIZED",
+  "roadmap_1a_documentation_checklist": [
+    {
+      "category": "owned state",
+      "status": "PASS"
+    },
+    {
+      "category": "mutation inputs",
+      "status": "PASS"
+    },
+    {
+      "category": "causal consumers",
+      "status": "PASS"
+    },
+    {
+      "category": "invariants",
+      "status": "PASS"
+    },
+    {
+      "category": "persistence footprint",
+      "status": "PASS"
+    },
+    {
+      "category": "restart requirements",
+      "status": "PASS"
+    },
+    {
+      "category": "current evidence",
+      "status": "PASS"
+    },
+    {
+      "category": "simplest credible replacement",
+      "status": "PASS"
+    },
+    {
+      "category": "prospective falsifier",
+      "status": "PASS"
+    }
+  ],
+  "roadmap_1a_status_after_this_record": "COMPLETE",
+  "roadmap_1d_status": "REMAINS_PARTIAL",
+  "roadmap_blob": "ad1c7d1b814951a7011f73f99615c7a6a0b8fe9b",
+  "roadmap_item": "1A State-minimization audit \u2014 causal/history storage",
+  "roadmap_phase1_exit": false,
+  "schema": "ghocentric.cmi.phase1a.causal-history-owner-record.v1",
+  "scientific_boundary": [
+    "Closing the 1A owner means the minimization/evidence record is complete, not that the 2C research architecture is production-ready.",
+    "The authoritative external archive is intentionally expanding; only hot/runtime and local cache state are bounded.",
+    "Phase 1V's invalid global recall-floor interpretation is excluded from architectural evidence.",
+    "Second-host replication and production operational lifecycle questions remain prospective falsifiers/implementation gates.",
+    "Roadmap 1D remains partial and is not silently closed by this 1A owner adjudication.",
+    "Roadmap Phase 1 remains incomplete after 1A because 1B/1C/1D still require closure."
+  ]
+}

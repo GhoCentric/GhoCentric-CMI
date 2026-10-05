@@ -1,0 +1,33 @@
+{
+  "causal_history": {
+    "owner_status": "COMPLETE",
+    "phase1v_global_floor": "INVALID_NOT_ARCHITECTURAL_EVIDENCE",
+    "production_source_changed": false,
+    "research_architecture_status": "VALIDATED_RESEARCH_ONLY_PRODUCTION_IMPLEMENTATION_NOT_AUTHORIZED",
+    "roadmap_1d_status": "REMAINS_PARTIAL"
+  },
+  "emotion": {
+    "candidate_production_disposition": "REJECTED_FOR_PRODUCTION_SIMPLIFICATION_CURRENT_V2_RESOURCE_NONREGRESSION_NOT_MET",
+    "current_candidate": "emotion_split_sparse_v2",
+    "owner_status": "COMPLETE",
+    "resource_boundary": {
+      "deterministic_storage_verdict": "MIXED_STORAGE_RESULT",
+      "live_state_memory_preserved_all_fixtures": false,
+      "production_source_changed": false
+    }
+  },
+  "next_target": "Roadmap 1B \u2014 Decouple CMI Core from psychology schemas",
+  "parent_head": "155d4908bf1f53225702de00f782408deb71c715",
+  "phase": "Roadmap 1A \u2014 State-minimization audit",
+  "production_source_changed": false,
+  "project_version_changed": false,
+  "public_api_changed": false,
+  "roadmap_blob_before_checkpoint": "ad1c7d1b814951a7011f73f99615c7a6a0b8fe9b",
+  "roadmap_phase1_exit": false,
+  "schema": "ghocentric.cmi.phase1a.state-minimization-summary.v1",
+  "status": "COMPLETE",
+  "subsystem_owner_counts": {
+    "complete": 8,
+    "partial": 0
+  }
+}

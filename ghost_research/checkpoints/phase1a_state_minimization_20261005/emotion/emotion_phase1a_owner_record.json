@@ -1,0 +1,595 @@
+{
+  "F1_evidence_sha256": "1f77b2852a98808e0071f3bd79a66c052041ed2ad2deb823bb8b0c1d8bdef132",
+  "candidate_freeze_evidence_sha256": "7d18ac34276625bdc0fc4889f4cb2c7dc8507d974affb9d2b27eebc02f426b83",
+  "candidate_production_disposition": "REJECTED_FOR_PRODUCTION_SIMPLIFICATION_CURRENT_V2_RESOURCE_NONREGRESSION_NOT_MET",
+  "candidate_semantic_validation": true,
+  "candidate_ship_accepted": false,
+  "classification": "EMOTION_PHASE1A_OWNER_CLOSED_CURRENT_V2_REJECTED_FOR_PRODUCTION_RESOURCE_EVIDENCE",
+  "derived_subsystem_counts_after": {
+    "complete": 7,
+    "partial": 1,
+    "remaining_partial_owner": "causal/history storage"
+  },
+  "discovery_evidence_sha256": "e05245c904af01e81bb06696c98f9abea64d1d5051b624967b77999c342688e4",
+  "documentation": {
+    "causal_consumers": {
+      "F1_salience_bridge_witness_field_count": 7,
+      "F4_actual_host_consumer": "continuity_benchmark_v1110.stage6_behavior_policy",
+      "F4_downstream_pipeline": [
+        "public emotion state",
+        "production salience bridge",
+        "production AttentionRuntime",
+        "production ContinuityRuntime foreground",
+        "frozen Stage-6 architecture-neutral host behavior policy"
+      ],
+      "static_reference_count": 66,
+      "static_references_are_not_causal_proof": true
+    },
+    "current_evidence": {
+      "F1": "EMOTION_PHASE1A_F1_FIELD_CAUSAL_INTERVENTION_COMPLETE",
+      "F2": "EMOTION_PHASE1A_V2_F2_EXACT_EQUIVALENCE_PASS",
+      "F3": "EMOTION_PHASE1A_V2_F3_SNAPSHOT_RESTART_MIGRATION_EQUIVALENCE_PASS",
+      "F4": "EMOTION_PHASE1A_V2_F4_PROSPECTIVE_DOWNSTREAM_EQUIVALENCE_PASS",
+      "F5": "EMOTION_PHASE1A_V2_F5_LONG_HORIZON_BOUNDED_HISTORY_PASS",
+      "F6": "EMOTION_PHASE1A_V2_F6_PERSISTENCE_RESOURCE_MEASUREMENT_COMPLETE"
+    },
+    "invariants": {
+      "bounded_history_invariants": "F5 PASS",
+      "deterministic_exact_equivalence": "F2 PASS",
+      "snapshot_restart_schema_invariants": "F3 PASS",
+      "source_validation_call_count": 7
+    },
+    "mutation_inputs": {
+      "method_inventory_count": 18,
+      "public_mutation_entrypoints": [
+        {
+          "args": [
+            "self",
+            "event",
+            "impulses"
+          ],
+          "line": 288,
+          "method": "configure_event_profile",
+          "source_sha256": "8d5449fd26be4724fc9d0d1a6116e38a829ca169315397aa7581672cb257a6a4",
+          "writes_or_mutating_calls": [
+            "self._customized_profiles.add(...)",
+            "self._event_profiles[event_name]"
+          ]
+        },
+        {
+          "args": [
+            "self",
+            "agent",
+            "initial",
+            "baseline",
+            "sensitivities",
+            "inertia",
+            "salience_bias",
+            "spotlight_switch_margin"
+          ],
+          "line": 308,
+          "method": "register_agent",
+          "source_sha256": "a893dfc770f4b3b64c0a7a5a9d55e732c45e9797d29839edc20b326494a6aee8",
+          "writes_or_mutating_calls": [
+            "self._agents[agent_id]",
+            "state['baseline'].update(...)",
+            "state['inertia'].update(...)",
+            "state['levels'].update(...)",
+            "state['salience_bias'].update(...)",
+            "state['sensitivities'].update(...)",
+            "state['spotlight_switch_margin']"
+          ]
+        },
+        {
+          "args": [
+            "self",
+            "agent",
+            "event",
+            "intensity",
+            "source",
+            "context_modifiers",
+            "impulse_overrides"
+          ],
+          "line": 513,
+          "method": "apply_event",
+          "source_sha256": "2dbb876fc0ee36a229553242aa6d0da9aa2428efa0de192e725c02fa1aea43e7",
+          "writes_or_mutating_calls": [
+            "self._sequence",
+            "state['history'].append(...)",
+            "state['history'][:-self.history_limit]",
+            "state['levels'][name]"
+          ]
+        },
+        {
+          "args": [
+            "self",
+            "agent",
+            "steps"
+          ],
+          "line": 613,
+          "method": "tick",
+          "source_sha256": "09b3d7527ae8d5ea3847987e22acb1b9be861f14e93623845cca86cf61797dd5",
+          "writes_or_mutating_calls": [
+            "state['levels'][name]"
+          ]
+        },
+        {
+          "args": [
+            "cls",
+            "snapshot"
+          ],
+          "line": 672,
+          "method": "from_snapshot",
+          "source_sha256": "4cc482df6d781e879670022ddc24dfa334df805a558126e7b71a3e000ad398c5",
+          "writes_or_mutating_calls": [
+            "runtime._agents",
+            "runtime._customized_profiles",
+            "runtime._event_profiles",
+            "runtime._sequence"
+          ]
+        }
+      ]
+    },
+    "owned_state": {
+      "F1_field_classifications": [
+        {
+          "classes": [
+            "TRANSITION_CAUSAL",
+            "PUBLIC_CONTRACT_REQUIRED",
+            "PERSISTENCE_REQUIRED"
+          ],
+          "field": "baseline",
+          "persistence_required": true,
+          "public_contract": true,
+          "scope": "per_agent_persisted",
+          "transition_causal": true
+        },
+        {
+          "classes": [
+            "PUBLIC_CONTRACT_REQUIRED",
+            "PERSISTENCE_REQUIRED"
+          ],
+          "field": "history",
+          "persistence_required": true,
+          "public_contract": true,
+          "scope": "per_agent_persisted",
+          "transition_causal": false
+        },
+        {
+          "classes": [
+            "TRANSITION_CAUSAL",
+            "PUBLIC_CONTRACT_REQUIRED",
+            "PERSISTENCE_REQUIRED"
+          ],
+          "field": "inertia",
+          "persistence_required": true,
+          "public_contract": true,
+          "scope": "per_agent_persisted",
+          "transition_causal": true
+        },
+        {
+          "classes": [
+            "TRANSITION_CAUSAL",
+            "PUBLIC_CONTRACT_REQUIRED",
+            "PERSISTENCE_REQUIRED"
+          ],
+          "field": "levels",
+          "persistence_required": true,
+          "public_contract": true,
+          "scope": "per_agent_persisted",
+          "transition_causal": true
+        },
+        {
+          "classes": [
+            "TRANSITION_CAUSAL",
+            "PUBLIC_CONTRACT_REQUIRED",
+            "PERSISTENCE_REQUIRED"
+          ],
+          "field": "salience_bias",
+          "persistence_required": true,
+          "public_contract": true,
+          "scope": "per_agent_persisted",
+          "transition_causal": true
+        },
+        {
+          "classes": [
+            "TRANSITION_CAUSAL",
+            "PUBLIC_CONTRACT_REQUIRED",
+            "PERSISTENCE_REQUIRED"
+          ],
+          "field": "sensitivities",
+          "persistence_required": true,
+          "public_contract": true,
+          "scope": "per_agent_persisted",
+          "transition_causal": true
+        },
+        {
+          "classes": [
+            "TRANSITION_CAUSAL",
+            "PUBLIC_CONTRACT_REQUIRED",
+            "PERSISTENCE_REQUIRED"
+          ],
+          "field": "spotlight_emotion",
+          "persistence_required": true,
+          "public_contract": true,
+          "scope": "per_agent_persisted",
+          "transition_causal": true
+        },
+        {
+          "classes": [
+            "TRANSITION_CAUSAL",
+            "PUBLIC_CONTRACT_REQUIRED",
+            "PERSISTENCE_REQUIRED"
+          ],
+          "field": "spotlight_switch_margin",
+          "persistence_required": true,
+          "public_contract": true,
+          "scope": "per_agent_persisted",
+          "transition_causal": true
+        },
+        {
+          "classes": [
+            "TRANSITION_CAUSAL",
+            "PUBLIC_CONTRACT_REQUIRED",
+            "PERSISTENCE_REQUIRED"
+          ],
+          "field": "_agents",
+          "persistence_required": true,
+          "public_contract": true,
+          "scope": "runtime_top_level",
+          "transition_causal": true
+        },
+        {
+          "classes": [
+            "PUBLIC_CONTRACT_REQUIRED",
+            "PERSISTENCE_REQUIRED"
+          ],
+          "field": "_customized_profiles",
+          "persistence_required": true,
+          "public_contract": true,
+          "scope": "runtime_top_level",
+          "transition_causal": false
+        },
+        {
+          "classes": [
+            "TRANSITION_CAUSAL",
+            "PUBLIC_CONTRACT_REQUIRED",
+            "PERSISTENCE_REQUIRED"
+          ],
+          "field": "_event_profiles",
+          "persistence_required": true,
+          "public_contract": true,
+          "scope": "runtime_top_level",
+          "transition_causal": true
+        },
+        {
+          "classes": [
+            "PUBLIC_CONTRACT_REQUIRED",
+            "PERSISTENCE_REQUIRED"
+          ],
+          "field": "_sequence",
+          "persistence_required": true,
+          "public_contract": true,
+          "scope": "runtime_top_level",
+          "transition_causal": false
+        },
+        {
+          "classes": [
+            "PUBLIC_CONTRACT_REQUIRED",
+            "PERSISTENCE_REQUIRED"
+          ],
+          "field": "history_limit",
+          "persistence_required": true,
+          "public_contract": true,
+          "scope": "runtime_top_level",
+          "transition_causal": false
+        }
+      ],
+      "F1_field_count": 13,
+      "candidate_authority_mapping": [
+        {
+          "candidate_owner": "kernel.agents[*].levels",
+          "production_owner": "per-agent levels",
+          "status": "RETAINED_EXPLICIT"
+        },
+        {
+          "candidate_owner": "kernel.agents[*].baseline_sparse + frozen default 0.0",
+          "production_owner": "per-agent baseline",
+          "status": "RETAINED_SEMANTICS_SPARSE_REPRESENTATION"
+        },
+        {
+          "candidate_owner": "kernel.agents[*].sensitivities_sparse + frozen default 1.0",
+          "production_owner": "per-agent sensitivities",
+          "status": "RETAINED_SEMANTICS_SPARSE_REPRESENTATION"
+        },
+        {
+          "candidate_owner": "kernel.agents[*].inertia_sparse + frozen production inertia defaults",
+          "production_owner": "per-agent inertia",
+          "status": "RETAINED_SEMANTICS_SPARSE_REPRESENTATION"
+        },
+        {
+          "candidate_owner": "kernel.agents[*].salience_bias_sparse + frozen default 1.0",
+          "production_owner": "per-agent salience_bias",
+          "status": "RETAINED_SEMANTICS_SPARSE_REPRESENTATION"
+        },
+        {
+          "candidate_owner": "kernel.agents[*].spotlight_emotion",
+          "production_owner": "per-agent spotlight_emotion",
+          "status": "RETAINED_EXPLICIT"
+        },
+        {
+          "candidate_owner": "kernel.agents[*].spotlight_switch_margin",
+          "production_owner": "per-agent spotlight_switch_margin",
+          "status": "RETAINED_EXPLICIT"
+        },
+        {
+          "candidate_owner": "sidecar.history[*]",
+          "production_owner": "per-agent history",
+          "status": "RETAINED_AUTHORITATIVE_SIDECAR"
+        },
+        {
+          "candidate_owner": "kernel.agents key set",
+          "production_owner": "_agents membership/container",
+          "status": "RETAINED_SEMANTICS_NEW_CONTAINER_SHAPE"
+        },
+        {
+          "candidate_owner": "frozen default profiles + kernel.custom_profiles overlay",
+          "production_owner": "_event_profiles",
+          "status": "RETAINED_SEMANTICS_RECONSTRUCTED_FULL_MAP"
+        },
+        {
+          "candidate_owner": "kernel.custom_profiles key set",
+          "production_owner": "_customized_profiles",
+          "status": "RECONSTRUCTED_IDENTITY_NOT_DELETED"
+        },
+        {
+          "candidate_owner": "sidecar.sequence",
+          "production_owner": "_sequence",
+          "status": "RETAINED_AUTHORITATIVE_SIDECAR"
+        },
+        {
+          "candidate_owner": "sidecar.history_limit",
+          "production_owner": "history_limit",
+          "status": "RETAINED_AUTHORITATIVE_SIDECAR"
+        }
+      ],
+      "persisted_agent_keys": [
+        "baseline",
+        "history",
+        "inertia",
+        "levels",
+        "salience_bias",
+        "sensitivities",
+        "spotlight_emotion",
+        "spotlight_switch_margin"
+      ],
+      "production_top_level_owned_fields": [
+        "_agents",
+        "_customized_profiles",
+        "_event_profiles",
+        "_sequence",
+        "history_limit"
+      ]
+    },
+    "persistence_footprint": {
+      "F6_storage_measurements": [
+        {
+          "candidate_compatible_snapshot_bytes": 64382,
+          "candidate_file_sha256": "b522af7b46b61cb2c3b27ff5ae4a83bd5a2b6e37a4a3c3f2e34710c5b5df208a",
+          "candidate_native_bundle_bytes": 63294,
+          "candidate_owned_live_state_bytes": 129620,
+          "failures": [],
+          "fixture": "R1_SINGLE_DEFAULT_H64",
+          "live_state_byte_ratio_candidate_over_production": 0.9466841951504528,
+          "production_canonical_snapshot_bytes": 64382,
+          "production_file_sha256": "61f9555ebefad4ecb7a89b47a1427f2024e57be660351a068a6e88641ca7e241",
+          "production_owned_live_state_bytes": 136920,
+          "snapshot_byte_ratio_candidate_over_production": 0.9831008667018732
+        },
+        {
+          "candidate_compatible_snapshot_bytes": 73877,
+          "candidate_file_sha256": "c9e03b47329b09857ed4124abd1da57df0b3658015ad39b17beb09ae3100ef9a",
+          "candidate_native_bundle_bytes": 72914,
+          "candidate_owned_live_state_bytes": 165928,
+          "failures": [],
+          "fixture": "R2_SINGLE_CONFIGURED_CUSTOM_H64",
+          "live_state_byte_ratio_candidate_over_production": 0.9643332461569756,
+          "production_canonical_snapshot_bytes": 73877,
+          "production_file_sha256": "4d56198d3922c9b3fae9bf75c3d440b1d8977a893d3ca275b55369c2bf691350",
+          "production_owned_live_state_bytes": 172065,
+          "snapshot_byte_ratio_candidate_over_production": 0.9869648199033528
+        },
+        {
+          "candidate_compatible_snapshot_bytes": 252793,
+          "candidate_file_sha256": "b0ad8cf7b3f6092eba9bb9810cf908017e4e94b1496b098ebbd9daf9edbec00c",
+          "candidate_native_bundle_bytes": 251422,
+          "candidate_owned_live_state_bytes": 517686,
+          "failures": [],
+          "fixture": "R3_MULTI8_H32",
+          "live_state_byte_ratio_candidate_over_production": 0.9993166550845495,
+          "production_canonical_snapshot_bytes": 252793,
+          "production_file_sha256": "68150d8c63202af2c05330a559fe7c418b1dc99929a7b14d55f595e25372a80c",
+          "production_owned_live_state_bytes": 518040,
+          "snapshot_byte_ratio_candidate_over_production": 0.994576590332802
+        },
+        {
+          "candidate_compatible_snapshot_bytes": 509946,
+          "candidate_file_sha256": "c4611913f2d9c4e5f8443236733668467e0140b3f4105b011792050775a22465",
+          "candidate_native_bundle_bytes": 507135,
+          "candidate_owned_live_state_bytes": 1066799,
+          "failures": [],
+          "fixture": "R4_MULTI32_H16",
+          "live_state_byte_ratio_candidate_over_production": 1.0188790791494433,
+          "production_canonical_snapshot_bytes": 509946,
+          "production_file_sha256": "f3170feaa1c70c94a4059e9ef0d872144a385baed9afab3bec0c937ef66d47a3",
+          "production_owned_live_state_bytes": 1047032,
+          "snapshot_byte_ratio_candidate_over_production": 0.9944876516337023
+        }
+      ],
+      "F6_storage_verdict": "MIXED_STORAGE_RESULT",
+      "current_schema": "1.1",
+      "supported_schemas": [
+        "1.0",
+        "1.1"
+      ]
+    },
+    "prospective_falsifier": {
+      "all_discovery_questions_covered": true,
+      "candidate_was_repaired_only_after_adjudicated_F3_failure": true,
+      "contract_classification": "EMOTION_PHASE1A_PROSPECTIVE_FALSIFICATION_CONTRACT_FROZEN",
+      "frozen_experiment_sequence": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6"
+      ],
+      "prospective_host_decision_test": "F4 PASS"
+    },
+    "restart_requirements": {
+      "supported_schemas": [
+        "1.0",
+        "1.1"
+      ],
+      "v1_candidate_failure": {
+        "classification": "EMOTION_PHASE1A_F3_SNAPSHOT_RESTART_MIGRATION_EQUIVALENCE_FAIL",
+        "failure_classes": [
+          "LEGACY_SCHEMA_1_0_UNSUPPORTED"
+        ]
+      },
+      "v2_candidate_result": "EMOTION_PHASE1A_V2_F3_SNAPSHOT_RESTART_MIGRATION_EQUIVALENCE_PASS"
+    },
+    "simplest_credible_replacement": {
+      "candidate_id": "emotion_split_sparse_v2",
+      "candidate_source_sha256": "62e366800e6f4e6eb0269f47a259365a676e24dca332febbf202d780bc2e90b0",
+      "persistence_status": "VALIDATED_F3_AND_F6",
+      "production_disposition": "REJECTED_FOR_PRODUCTION_SIMPLIFICATION_CURRENT_V2_RESOURCE_NONREGRESSION_NOT_MET",
+      "resource_status": "REJECTED_BY_F6_RESOURCE_EVIDENCE",
+      "semantic_deletions": [],
+      "semantic_equivalence_status": "VALIDATED_IN_FROZEN_F2_F5_DOMAINS"
+    }
+  },
+  "emotion_owner_status": "COMPLETE",
+  "falsification_contract_evidence_sha256": "6f84119c4668039aa91d54a19517dcab19d73eaf8d3c8b84afe82621c7340b46",
+  "head": "155d4908bf1f53225702de00f782408deb71c715",
+  "owner_close_gate": [
+    {
+      "basis": "F1 13-field classifications + frozen candidate authority/reconstruction mapping",
+      "criterion": "Every discovered persisted field has a documented ownership classification supported by F1 evidence or explicit source/public/persistence contract.",
+      "status": "PASS"
+    },
+    {
+      "basis": "emotion_split_sparse_v2 was tested through F2-F6 and is explicitly rejected for production by F6 resource evidence",
+      "criterion": "A simplest credible replacement is either validated under F2-F6 or explicitly rejected by evidence.",
+      "status": "PASS"
+    },
+    {
+      "basis": "F3 v2 exact current/legacy snapshot-restart-migration equivalence",
+      "criterion": "Restart and supported-schema semantics are adjudicated.",
+      "status": "PASS"
+    },
+    {
+      "basis": "F4 prospective emotion-sensitive host-decision equivalence",
+      "criterion": "Downstream host decisions are adjudicated prospectively for any candidate that changes authoritative state.",
+      "status": "PASS"
+    },
+    {
+      "basis": "F5 exact long-horizon and bounded-history equivalence through 16H",
+      "criterion": "Long-horizon and bounded-history semantics are adjudicated.",
+      "status": "PASS"
+    },
+    {
+      "basis": "F6 persistence exactness + frozen storage/timing/peak-memory measurement",
+      "criterion": "Persistence/resource claims are measured with frozen methods.",
+      "status": "PASS"
+    },
+    {
+      "basis": "this exact emotion ownership/minimization closure evidence record",
+      "criterion": "An explicit Phase-1 emotion ownership/minimization evidence record is written.",
+      "status": "PASS"
+    },
+    {
+      "basis": "all evidence runs and this adjudication report production_mutation=NONE",
+      "criterion": "Production remains unchanged unless a later guarded production patch separately passes all required gates.",
+      "status": "PASS"
+    }
+  ],
+  "owner_record_sha256": "a7e8a3636797d08327d4eb6a7d8813bb20cf76e43ba6d95f7205996aef81a478",
+  "phase1_exit_after_this_record": false,
+  "predecessor_roadmap_audit_sha256": "afc3fd52c4f79ae96997ab7676fb59d6a1ad90eafc1af95e3937ed66e78fc1be",
+  "production_mutation": false,
+  "roadmap_1a_status_after_this_record": "PARTIAL",
+  "roadmap_blob": "ad1c7d1b814951a7011f73f99615c7a6a0b8fe9b",
+  "roadmap_item": "1A State-minimization audit \u2014 emotion",
+  "schema": "ghocentric.cmi.phase1a.emotion-owner-record.v1",
+  "scientific_boundary": [
+    "Owner closure means the Roadmap 1A emotion minimization record is complete; it does not mean the replacement candidate should ship.",
+    "emotion_split_sparse_v2 is semantically/persistently equivalent only in the finite frozen tested domains.",
+    "F6 explicitly prevents a performance/memory-preservation claim for current v2.",
+    "Roadmap 1A remains partial because causal/history storage remains the final partial subsystem owner in the predecessor audit.",
+    "Roadmap Phase 1 remains incomplete; 1B, 1C, and 1D are not closed by this record."
+  ],
+  "ship_gates": {
+    "deterministic_state": {
+      "evidence": "v2 F2 exact transition/reconstruction equivalence",
+      "status": "PASS"
+    },
+    "downstream_host_decisions": {
+      "evidence": "v2 F4: 11/12 emotion-sensitive cases, 636 decision changes under emotion ablation, zero candidate mismatches",
+      "status": "PASS"
+    },
+    "long_horizon_stability": {
+      "evidence": "v2 F5: 928 events per rerun, H=[3, 7, 16, 32], exact through 16H",
+      "status": "PASS"
+    },
+    "memory": {
+      "evidence": {
+        "live_state_non_regression_all_fixtures": false,
+        "live_state_regression_fixtures": [
+          {
+            "candidate_owned_live_state_bytes": 1066799,
+            "fixture": "R4_MULTI32_H16",
+            "production_owned_live_state_bytes": 1047032,
+            "ratio": 1.0188790791494433
+          }
+        ],
+        "snapshot_non_regression_all_fixtures": true,
+        "storage_verdict": "MIXED_STORAGE_RESULT"
+      },
+      "status": "NOT_PRESERVED_ALL_FROZEN_FIXTURES"
+    },
+    "performance": {
+      "evidence": {
+        "event_transition_median_ratio_candidate_over_production": 4.310329207377998,
+        "host_specific_budget": null,
+        "restore_native_median_ratio_candidate_over_production": 0.7606220571212635,
+        "snapshot_construction_median_ratio_candidate_over_production": 0.9624509905636478,
+        "tick_median_ratio_candidate_over_production": 4.47045939941784,
+        "timing_is_correctness_gate": false
+      },
+      "status": "NOT_PRESERVED_IN_FROZEN_TERMUX_MEASUREMENT"
+    },
+    "persistence_compatibility": {
+      "evidence": "v2 F3 + F6 persistence roundtrip/continuation: zero failures",
+      "status": "PASS"
+    },
+    "public_contract_or_explicit_migration": {
+      "evidence": "v2 F2 + F3; legacy 1.0 ingress repair frozen before rerun",
+      "status": "PASS"
+    },
+    "restart_parity": {
+      "evidence": "v2 F3 full current/legacy restart and migration equivalence",
+      "status": "PASS"
+    }
+  },
+  "v1_F2_evidence_sha256": "9d707458673703af6ad014c0d427cb519d07981a39750e2d12a82811fb8d948c",
+  "v1_F3_failure_evidence_sha256": "15d9d729e9a7658aa29ed98b991981a613c3a6700f807f535283ad388581cfbd",
+  "v2_F2_evidence_sha256": "32a43c02b1da97a6d83209e9bde60268f6c1d66c80b3b8c9b561d484f1283bb6",
+  "v2_F3_evidence_sha256": "587731ddf0a0fd1f438bbd68e8a797d1563b96626b01d790421017ad60b27c8b",
+  "v2_F4_evidence_sha256": "291139c55945f9940476430c542d344ece53a27442d8263e6fac00338b0a2b63",
+  "v2_F5_evidence_sha256": "074a04b336644bacdfb3316b3228f760f20c92115fbff14694de8df0ed9c770a",
+  "v2_F6_evidence_sha256": "02bad38dff230be68fae5da40e869de6c7f51c4734c2d72aa48f826990620582",
+  "v2_implementation_evidence_sha256": "ef4a6a8f0a01461cd27d72113b61c9fce560a6391e8d4524a4ce885b97c8d1e0",
+  "v2_repair_freeze_evidence_sha256": "6e520b1e6ed5f473f6179b23f122b523b3871b1c34b5d5fc5c6c5a08090a1219"
+}

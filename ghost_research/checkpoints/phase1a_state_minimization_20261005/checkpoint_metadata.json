@@ -1,0 +1,20 @@
+{
+  "causal_history_closure_evidence_sha256": "3b319346e36d968b3720bc9277065d3f88afb71ed73d5c27758551a3dfaa6627",
+  "checkpoint": "phase1a_state_minimization_20261005",
+  "emotion_closure_evidence_sha256": "db0e07b4ffe4ead8c59a342f3b3f1c69b1a7f0090e7a26f512d0d6b175aff36b",
+  "next_target": "1B Core/schema separation",
+  "parent_head": "155d4908bf1f53225702de00f782408deb71c715",
+  "production_source_changed": false,
+  "project_version_changed": false,
+  "public_api_changed": false,
+  "raw_evidence_zips_committed": false,
+  "roadmap_1a_status": "COMPLETE",
+  "roadmap_1d_status": "PARTIAL",
+  "roadmap_phase1_exit": false,
+  "schema": "ghocentric.research_checkpoint.phase1a.metadata.v1",
+  "scope": "Roadmap 1A closure evidence and roadmap status only",
+  "subsystem_owner_counts": {
+    "complete": 8,
+    "partial": 0
+  }
+}

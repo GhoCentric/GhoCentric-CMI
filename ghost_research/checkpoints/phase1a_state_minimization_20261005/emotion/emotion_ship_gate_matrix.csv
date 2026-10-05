@@ -1,0 +1,9 @@
+gate,status,evidence
+deterministic_state,PASS,v2 F2 exact transition/reconstruction equivalence
+restart_parity,PASS,v2 F3 full current/legacy restart and migration equivalence
+public_contract_or_explicit_migration,PASS,v2 F2 + F3; legacy 1.0 ingress repair frozen before rerun
+downstream_host_decisions,PASS,"v2 F4: 11/12 emotion-sensitive cases, 636 decision changes under emotion ablation, zero candidate mismatches"
+long_horizon_stability,PASS,"v2 F5: 928 events per rerun, H=[3, 7, 16, 32], exact through 16H"
+persistence_compatibility,PASS,v2 F3 + F6 persistence roundtrip/continuation: zero failures
+performance,NOT_PRESERVED_IN_FROZEN_TERMUX_MEASUREMENT,"{""event_transition_median_ratio_candidate_over_production"":4.310329207377998,""host_specific_budget"":null,""restore_native_median_ratio_candidate_over_production"":0.7606220571212635,""snapshot_construction_median_ratio_candidate_over_production"":0.9624509905636478,""tick_median_ratio_candidate_over_production"":4.47045939941784,""timing_is_correctness_gate"":false}"
+memory,NOT_PRESERVED_ALL_FROZEN_FIXTURES,"{""live_state_non_regression_all_fixtures"":false,""live_state_regression_fixtures"":[{""candidate_owned_live_state_bytes"":1066799,""fixture"":""R4_MULTI32_H16"",""production_owned_live_state_bytes"":1047032,""ratio"":1.0188790791494433}],""snapshot_non_regression_all_fixtures"":true,""storage_verdict"":""MIXED_STORAGE_RESULT""}"
